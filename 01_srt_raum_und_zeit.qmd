@@ -461,13 +461,12 @@ Ausgangslage: Der Passagier sitzt genau in der Zugmitte. Gleichzeitig schlagen a
   <li>Im Zugsystem ruht der Passagier in der Mitte des Zuges. Da Licht sich in beide Richtungen mit derselben Geschwindigkeit $c$ ausbreitet, muss der vordere Blitz im Zugsystem früher eingeschlagen sein als der hintere.</li>
 </ol>
 
-Überprüfe deine Überlegung mit der folgenden Simulation.
+Die folgende Simulation visualisiert das Gedankenexperiment.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="lightning" data-srt-motion-control data-srt-label="Zwei Blitzereignisse und bewegter Beobachter im Zug"></div>
-  <figcaption class="srt-workbook-caption">Visualisierung: Zwei gleichzeitige Blitzereignisse im Bahnsteigsystem; der Passagier empfängt ein Lichtsignal zuerst.</figcaption>
 </figure>
 ```
 :::

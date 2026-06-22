@@ -1,5 +1,9 @@
 # Ausflug: Wie funktioniert ein Laser? {#sec-laser-ausflug}
 
+::: {.callout-warning title="Im Aufbau"}
+Diese Seite befindet sich noch im Aufbau und wird nur knapp ausfallen.
+:::
+
 ::: {.mp-box .mp-context .mp-compact}
 <div class="mp-title">Ausblick</div>
 
@@ -9,7 +13,8 @@ Im modernen Michelson-Morley-Aufbau dient ein **Laser** als Lichtquelle, weil se
 
 Geplante Themen:
 
+- der Rubinlaser als erster funktionierender Laser,
 - stimulierte Emission und Besetzungsinversion,
-- der Resonator als Rückkopplung,
-- Kohärenz und warum sie für Interferenzexperimente entscheidend ist.
+- der Resonator,
+- die besonderen Eigenschaften von Laserlicht.
 :::

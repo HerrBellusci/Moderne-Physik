@@ -1,16 +1,51 @@
 # Spezielle Relativitätstheorie II: Impuls und Energie
 
-::: {.mp-box .mp-context .mp-compact}
-<div class="mp-title">Ausblick</div>
+::: {.callout-warning title="Im Aufbau"}
+Diese Seite befindet sich noch im Aufbau. Der zweite Teil der speziellen Relativitätstheorie wird bewusst **wesentlich weniger umfangreich** als der erste Teil (Raum und Zeit).
+:::
 
-Dieses Kapitel ist noch in Arbeit.
+::: {.callout-note title="Relevanz"}
+Kaum eine Formel ist so berühmt wie $E = m\,c^2$. Sie steckt hinter ganz unterschiedlichen Dingen: Die Sonne strahlt nur deshalb seit Milliarden Jahren, weil sie in ihrem Inneren laufend einen winzigen Teil ihrer Masse in Energie umwandelt. Ein Kernkraftwerk gewinnt seine Leistung aus demselben Prinzip. Auch die zerstörerische Wucht einer Atombombe beruht darauf.
+:::
 
-Im ersten Teil ging es um Raum und Zeit: Gleichzeitigkeit, Zeitdilatation und Längenkontraktion. Im zweiten Teil verschiebt sich der Blick auf **Impuls und Energie**. Die zentrale Frage lautet: Wie müssen wir Impuls und Energie beschreiben, damit die Erhaltungssätze auch bei sehr hohen Geschwindigkeiten weiterhin gelten?
+## Relativistischer Impuls
 
-Geplante Themen:
+::: {.mp-goal-strip}
+Du <u>erläuterst</u>, warum der klassische Impuls $p = m\,v$ von der Wahl des Bezugssystems abhängt.
 
-- relativistischer Impuls und seine Abweichung vom klassischen Ausdruck $p = m\,v$,
-- relativistische Energie, Ruheenergie und die Beziehung $E = m\,c^2$,
-- der Zusammenhang von Energie, Impuls und Masse,
-- Anwendungen, etwa in der Teilchenphysik und bei Kernprozessen.
+Du <u>begründest</u>, warum man den Impuls mit der invarianten Eigenzeit bildet, und <u>leitest</u> damit $p = \gamma\,m\,v$ her.
+:::
+
+Klassisch ist der Impuls
+
+$$p = m\,v = m\,\frac{\Delta s}{\Delta t}.$$
+
+Darin steckt die Zeit $\Delta t$, die *wir* in unserem Bezugssystem messen. Das ist unbefriedigend: Ein Beobachter, der sich relativ zu uns bewegt, misst für denselben Vorgang eine andere Zeit $\Delta t$ und käme so auf einen anderen Impuls. Der klassische Impuls hängt also davon ab, *wer* ihn misst.
+
+Wir suchen deshalb eine Zeit, auf die sich **alle** Beobachter einigen können. Genau das leistet die **Eigenzeit** $\Delta t_0$, die wir schon aus Kapitel 1 kennen: die Zeit, die eine *mitbewegte* Uhr in ihrem eigenen Ruhesystem misst, also eine Uhr, die direkt am Objekt sitzt und mit ihm mitfliegt.
+
+Der entscheidende Punkt: Über die Anzeige dieser *einen* Uhr sind sich alle Inertialsysteme einig. Welche Zahl die mitbewegte Uhr zu Beginn und am Ende des Vorgangs zeigt, ist eine konkrete physikalische Tatsache und hängt nicht davon ab, von welchem System aus man hinschaut. Die Eigenzeit ist deshalb eine **invariante** Größe.
+
+Aus Kapitel 1 wissen wir außerdem, wie sich unsere gemessene Zeit dazu verhält: Wegen der Zeitdilatation ordnet jedes von außen beobachtende System demselben Vorgang eine **längere** Zeit zu,
+
+$$\Delta t = \gamma\,\Delta t_0 \qquad (\gamma \geq 1).$$
+
+Die Eigenzeit ist damit zugleich das *kleinstmögliche* Zeitintervall.
+
+Wir bilden den Impuls deshalb mit dieser invarianten Zeit:
+
+$$p = m\,\frac{\Delta s}{\Delta t_0}.$$
+
+Mit $\Delta t_0 = \dfrac{\Delta t}{\gamma}$ folgt sofort
+
+$$p = m\,\frac{\Delta s}{\Delta t / \gamma} = \gamma\,m\,\frac{\Delta s}{\Delta t} = \gamma\,m\,v.$$
+
+Dass diese Wahl wirklich die richtige ist, zeigt sich erst danach: Nur mit $p = \gamma\,m\,v$ bleibt der Impuls in *jedem* Bezugssystem erhalten. Die Eigenzeit liefert also genau den Baustein, der diese Bedingung erfüllt.
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+Der relativistische Impuls lautet
+$$p = \gamma\,m\,v \qquad\text{mit}\qquad \gamma = \frac{1}{\sqrt{1 - v^2/c^2}}.$$
+Für kleine Geschwindigkeiten ($v \ll c$) ist $\gamma \approx 1$, und man erhält wieder den klassischen Ausdruck $p = m\,v$. Erst nahe der Lichtgeschwindigkeit wächst der Impuls über alle Grenzen.
 :::
