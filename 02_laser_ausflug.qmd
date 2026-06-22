@@ -1,7 +1,7 @@
 # Ausflug: Wie funktioniert ein Laser? {#sec-laser-ausflug}
 
 ::: {.callout-warning title="Im Aufbau"}
-Diese Seite befindet sich noch im Aufbau und wird nur knapp ausfallen.
+Diese Seite befindet sich noch im Aufbau.
 :::
 
 ::: {.mp-box .mp-context .mp-compact}
