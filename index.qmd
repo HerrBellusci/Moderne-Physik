@@ -1,0 +1,27 @@
+# Vorwort {.unnumbered}
+
+Dieses Arbeitsheft nutzt farbige Kästen. Die **Farbe zeigt die Funktion** eines Kastens an. So erkennst du auf einen Blick, was ein Kasten von dir möchte. Die folgende Legende stellt die Kästen kurz vor.
+
+::: {.callout-note title="Relevanz"}
+**Blau (Kontext):** Warum ist das Thema wichtig oder im Alltag relevant?
+:::
+
+::: {.mp-goal-strip}
+**Grün (Lernziele):** Was du nach einem Abschnitt können sollst.
+:::
+
+::: {.mp-box .mp-task .mp-compact}
+**Grau (Aufgabe):** Hier wirst du selbst aktiv (Denkcheck, Berechnung, Transfer, Schreibaufgabe).
+:::
+
+::: {.mp-box .mp-math .mp-compact}
+**Violett (Herleitung):** Der mathematische Weg, Schritt für Schritt.
+:::
+
+::: {.mp-box .mp-core .mp-compact}
+**Gold (Wissen sichern):** Kernaussagen und Definitionen, also das Wichtigste eines Kapitels zum Behalten.
+:::
+
+::: {.mp-box .mp-misconception .mp-compact}
+**Rot (Achtung):** Häufige Präkonzepte.
+:::

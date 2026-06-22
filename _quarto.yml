@@ -1,0 +1,26 @@
+project:
+  type: book
+  resources:
+    - assets/**
+    - "Videos einbinden/**"
+
+book:
+  title: "Interaktives Quarto-Workbook Moderne Physik"
+  author: "Physik PH Karlsruhe"
+  date: today
+  chapters:
+    - index.qmd
+    - 01_srt_raum_und_zeit.qmd
+    - 03_srt_impuls_und_energie.qmd
+    - 02_laser_ausflug.qmd
+
+lang: de
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    css:
+      - assets/learning-boxes.css
+    toc: true
+    number-sections: true

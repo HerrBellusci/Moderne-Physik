@@ -1,0 +1,15 @@
+# Ausflug: Wie funktioniert ein Laser? {#sec-laser-ausflug}
+
+::: {.mp-box .mp-context .mp-compact}
+<div class="mp-title">Ausblick</div>
+
+Dieser Ausflug ist noch in Arbeit.
+
+Im modernen Michelson-Morley-Aufbau dient ein **Laser** als Lichtquelle, weil sein Licht schmalbandig, gebündelt und über lange Wegstrecken kohärent ist. Wie dieses besondere Licht entsteht, wird hier später erklärt.
+
+Geplante Themen:
+
+- stimulierte Emission und Besetzungsinversion,
+- der Resonator als Rückkopplung,
+- Kohärenz und warum sie für Interferenzexperimente entscheidend ist.
+:::

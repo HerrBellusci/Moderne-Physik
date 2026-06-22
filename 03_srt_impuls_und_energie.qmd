@@ -1,0 +1,16 @@
+# Spezielle Relativitätstheorie II: Impuls und Energie
+
+::: {.mp-box .mp-context .mp-compact}
+<div class="mp-title">Ausblick</div>
+
+Dieses Kapitel ist noch in Arbeit.
+
+Im ersten Teil ging es um Raum und Zeit: Gleichzeitigkeit, Zeitdilatation und Längenkontraktion. Im zweiten Teil verschiebt sich der Blick auf **Impuls und Energie**. Die zentrale Frage lautet: Wie müssen wir Impuls und Energie beschreiben, damit die Erhaltungssätze auch bei sehr hohen Geschwindigkeiten weiterhin gelten?
+
+Geplante Themen:
+
+- relativistischer Impuls und seine Abweichung vom klassischen Ausdruck $p = m\,v$,
+- relativistische Energie, Ruheenergie und die Beziehung $E = m\,c^2$,
+- der Zusammenhang von Energie, Impuls und Masse,
+- Anwendungen, etwa in der Teilchenphysik und bei Kernprozessen.
+:::

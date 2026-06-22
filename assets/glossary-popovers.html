@@ -1,0 +1,175 @@
+<script>
+(function () {
+  const GLOSSARY_PAGE = "19_glossar.html";
+  const LINK_SELECTOR = 'a[href*="19_glossar"][href*="#gls-"]';
+  const popoverInstances = new Map();
+  let glossaryEntriesPromise = null;
+
+  function normalizeHash(hash) {
+    if (!hash) return "";
+    return decodeURIComponent(hash.replace(/^#/, ""));
+  }
+
+  function getGlossaryId(link) {
+    try {
+      const url = new URL(link.getAttribute("href"), window.location.href);
+      return normalizeHash(url.hash);
+    } catch (error) {
+      const match = link.getAttribute("href")?.match(/#(gls-[A-Za-z0-9_-]+)/);
+      return match ? match[1] : "";
+    }
+  }
+
+  function firstParagraph(entry) {
+    const paragraph = entry.querySelector("p");
+    if (!paragraph) {
+      return { html: "", text: "" };
+    }
+    return {
+      html: paragraph.innerHTML.replace(/\s+/g, " ").trim(),
+      text: paragraph.textContent?.replace(/\s+/g, " ").trim() || ""
+    };
+  }
+
+  function entryTitle(entry) {
+    const heading = entry.querySelector("h3");
+    return heading?.textContent?.replace(/^\d+(\.\d+)*\s*/, "").trim() || "Glossar";
+  }
+
+  function entriesFromDocument(doc) {
+    const entries = new Map();
+    doc.querySelectorAll(".glossary-entry[id]").forEach((entry) => {
+      const definition = firstParagraph(entry);
+      entries.set(entry.id, {
+        title: entryTitle(entry),
+        definitionHtml: definition.html,
+        definitionText: definition.text
+      });
+    });
+    return entries;
+  }
+
+  function typesetMath(element) {
+    if (!element) return;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(element);
+      return;
+    }
+    if (window.MathJax?.typesetPromise) {
+      window.MathJax.typesetPromise([element]).catch(() => {});
+      return;
+    }
+    if (window.MathJax?.typeset) {
+      window.MathJax.typeset([element]);
+      return;
+    }
+    if (window.renderMathInElement) {
+      window.renderMathInElement(element);
+    }
+  }
+
+  function loadGlossaryEntries() {
+    if (glossaryEntriesPromise) return glossaryEntriesPromise;
+
+    glossaryEntriesPromise = new Promise((resolve) => {
+      if (document.querySelector(".glossary-entry[id]")) {
+        resolve(entriesFromDocument(document));
+        return;
+      }
+
+      fetch(GLOSSARY_PAGE)
+        .then((response) => response.ok ? response.text() : "")
+        .then((html) => {
+          if (!html) {
+            resolve(new Map());
+            return;
+          }
+          const doc = new DOMParser().parseFromString(html, "text/html");
+          resolve(entriesFromDocument(doc));
+        })
+        .catch(() => resolve(new Map()));
+    });
+
+    return glossaryEntriesPromise;
+  }
+
+  function isTouchEvent(event) {
+    return event.pointerType === "touch" || event.pointerType === "pen";
+  }
+
+  function showPopover(link) {
+    const instance = popoverInstances.get(link);
+    if (instance) instance.show();
+  }
+
+  function hideOtherPopovers(currentLink) {
+    popoverInstances.forEach((instance, link) => {
+      if (link !== currentLink) instance.hide();
+    });
+  }
+
+  function initPopover(link, data) {
+    if (!window.bootstrap?.Popover || !data?.definitionHtml) return;
+
+    link.classList.add("glossary-link");
+    link.setAttribute("data-glossary-ready", "true");
+    link.setAttribute("aria-label", `${data.title}: ${data.definitionText}`);
+
+    const instance = new window.bootstrap.Popover(link, {
+      container: "body",
+      content: `${data.definitionHtml} <span class="glossary-popover-hint">(Klick: Glossareintrag öffnen)</span>`,
+      customClass: "glossary-popover",
+      html: true,
+      placement: "top",
+      title: data.title,
+      trigger: "hover focus"
+    });
+    popoverInstances.set(link, instance);
+
+    link.addEventListener("shown.bs.popover", () => {
+      const popoverId = link.getAttribute("aria-describedby");
+      typesetMath(popoverId ? document.getElementById(popoverId) : null);
+    });
+
+    link.addEventListener("pointerdown", (event) => {
+      if (!isTouchEvent(event)) return;
+      if (link.dataset.glossaryTouchOpen === "true") {
+        link.dataset.glossaryTouchOpen = "false";
+        return;
+      }
+      event.preventDefault();
+      link.dataset.glossaryTouchOpen = "true";
+      hideOtherPopovers(link);
+      showPopover(link);
+    });
+
+    link.addEventListener("blur", () => {
+      link.dataset.glossaryTouchOpen = "false";
+    });
+  }
+
+  function enhanceGlossaryLinks() {
+    const links = Array.from(document.querySelectorAll(LINK_SELECTOR));
+    if (links.length === 0) return;
+
+    links.forEach((link) => {
+      link.classList.add("glossary-link");
+      link.setAttribute("data-glossary-link", "true");
+    });
+
+    loadGlossaryEntries().then((entries) => {
+      links.forEach((link) => {
+        const id = getGlossaryId(link);
+        const data = entries.get(id);
+        initPopover(link, data);
+      });
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", enhanceGlossaryLinks);
+  } else {
+    enhanceGlossaryLinks();
+  }
+})();
+</script>

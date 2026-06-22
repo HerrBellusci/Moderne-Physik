@@ -1,0 +1,304 @@
+.srt-workbook-figure {
+  margin: 1rem 0;
+}
+
+.srt-workbook-stage {
+  position: relative;
+  width: min(100%, 862px);
+  margin: 0 auto;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  background: #f7f9fb;
+  overflow: hidden;
+}
+
+.srt-workbook-overlay-motion {
+  position: absolute;
+  z-index: 2;
+  top: 0.65rem;
+  right: 0.65rem;
+  min-width: 6.25rem;
+  min-height: 2rem;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  background: #1f2937;
+  color: #fff;
+  font: 800 0.75rem/1 Inter, "Segoe UI", system-ui, sans-serif;
+  cursor: pointer;
+}
+
+.srt-workbook-overlay-motion:hover {
+  background: #334155;
+}
+
+.srt-workbook-overlay-motion:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.45);
+  outline-offset: 2px;
+}
+
+.srt-workbook-stage svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 862 / 506;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+.srt-workbook-image {
+  display: block;
+  width: min(100%, 862px);
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 18px;
+  background: #f7f9fb;
+}
+
+.srt-workbook-stage .label {
+  font-size: 16px;
+  font-weight: 850;
+  fill: #172033;
+}
+
+.srt-workbook-stage .tiny,
+.srt-workbook-stage .note-small {
+  font-size: 12px;
+  fill: #5c6678;
+}
+
+.srt-workbook-stage .formula {
+  font-size: 25px;
+  font-weight: 850;
+  fill: #172033;
+}
+
+.srt-workbook-caption {
+  max-width: 862px;
+  margin: 0.45rem auto 0;
+  color: #516173;
+  font-size: 0.92rem;
+}
+
+.srt-workbook-figure--caption-inside {
+  width: min(100%, 862px);
+  margin: 1rem auto;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  background: #f7f9fb;
+  overflow: hidden;
+}
+
+.srt-workbook-figure--caption-inside .srt-workbook-stage {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.srt-workbook-image-figure .srt-workbook-image {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.srt-workbook-figure--caption-inside .srt-workbook-caption {
+  max-width: none;
+  margin: 0;
+  padding: 0.7rem 1rem 0.85rem;
+  border-top: 1px solid rgba(23, 32, 51, 0.1);
+  background: #f7f9fb;
+}
+
+.srt-workbook-controls {
+  width: min(100%, 862px);
+  margin: 0.55rem auto 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  align-items: stretch;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+.srt-workbook-controls *,
+.srt-workbook-controls *::before,
+.srt-workbook-controls *::after {
+  box-sizing: border-box;
+}
+
+.srt-workbook-control-group {
+  min-width: min(100%, 12rem);
+  margin: 0;
+  padding: 0.55rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  align-items: center;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  background: #f7f9fb;
+}
+
+.srt-workbook-control-group legend {
+  padding: 0 0.35rem;
+  color: #516173;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.srt-workbook-control-button {
+  min-height: 44px;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  border-radius: 8px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.srt-workbook-control-button:hover {
+  background: #f4f7ff;
+}
+
+.srt-workbook-control-button:focus-visible,
+.srt-workbook-range input:focus-visible {
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
+}
+
+.srt-workbook-control-button[aria-pressed="true"] {
+  background: #2563eb;
+  color: #fff;
+}
+
+.srt-workbook-control-button:disabled {
+  border-color: rgba(23, 32, 51, 0.14);
+  background: #edf1f5;
+  color: #7a8795;
+  cursor: not-allowed;
+}
+
+.srt-workbook-motion-button {
+  margin-left: auto;
+}
+
+.srt-workbook-range {
+  min-width: min(100%, 13rem);
+  flex: 1 1 13rem;
+  display: grid;
+  gap: 0.25rem;
+  color: #172033;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.srt-workbook-range-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.srt-workbook-range-value {
+  color: #516173;
+  white-space: nowrap;
+}
+
+.srt-workbook-range input {
+  width: 100%;
+  min-height: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .srt-workbook-controls {
+    display: grid;
+    gap: 0.7rem;
+  }
+
+  .srt-workbook-control-group {
+    width: 100%;
+  }
+
+  .srt-workbook-control-button {
+    flex: 1 1 auto;
+  }
+
+  .srt-workbook-motion-button {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+.srt-workbook-fallback {
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  background: #f7f9fb;
+}
+
+.srt-video-frame {
+  width: min(100%, 862px);
+  margin: 0.75rem auto 0;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.srt-video-frame iframe,
+.srt-video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.srt-video-frame video {
+  object-fit: contain;
+}
+
+.mp-context {
+  --mp-accent: #2563eb;
+  --mp-bg: #f4f7ff;
+  border-color: rgba(37, 99, 235, 0.26);
+}
+
+.mp-question,
+.mp-strategy,
+.mp-test {
+  --mp-accent: #0097a7;
+  --mp-bg: #f0fbfc;
+  border-color: rgba(0, 151, 167, 0.28);
+}
+
+.mp-phenomenon,
+.mp-prototype,
+.mp-concept,
+.mp-eval {
+  --mp-accent: #516173;
+  --mp-bg: #f8fafb;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-didaktik {
+  --mp-accent: #6d5dfc;
+  --mp-bg: #f7f5ff;
+  border-color: rgba(109, 93, 252, 0.28);
+}
+
+.mp-mathe {
+  --mp-accent: #6d5dfc;
+  --mp-bg: #f7f5ff;
+  border-color: rgba(109, 93, 252, 0.28);
+}
+
+.mp-didaktik summary {
+  cursor: pointer;
+  color: var(--mp-accent);
+  font-weight: 800;
+}
