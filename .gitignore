@@ -7,6 +7,8 @@ __pycache__/
 *.pyc
 
 .codex
+AGENTS.md
+CLAUDE.md
 .DS_Store
 Thumbs.db
 .vscode/

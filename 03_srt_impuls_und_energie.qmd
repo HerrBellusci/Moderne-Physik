@@ -1,51 +1,244 @@
-# Spezielle Relativitätstheorie II: Impuls und Energie
+# Relativistischer Impuls und relativistische Energie {#sec-srt-impuls-energie}
 
-::: {.callout-warning title="Im Aufbau"}
-Diese Seite befindet sich noch im Aufbau. Der zweite Teil der speziellen Relativitätstheorie wird bewusst **wesentlich weniger umfangreich** als der erste Teil (Raum und Zeit).
+::: {.content-visible when-format="html"}
+```{=html}
+<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
+<script src="assets/animations/shared/core.js"></script>
+<script src="assets/animations/srt/used/energie/kinetische-energie.js"></script>
+<script src="assets/animations/shared/srt-workbook.js"></script>
+```
 :::
 
 ::: {.callout-note title="Relevanz"}
-Kaum eine Formel ist so berühmt wie $E = m\,c^2$. Sie steckt hinter ganz unterschiedlichen Dingen: Die Sonne strahlt nur deshalb seit Milliarden Jahren, weil sie in ihrem Inneren laufend einen winzigen Teil ihrer Masse in Energie umwandelt. Ein Kernkraftwerk gewinnt seine Leistung aus demselben Prinzip. Auch die zerstörerische Wucht einer Atombombe beruht darauf.
+In der klassischen Physik kennst du Impuls und Energie als Erhaltungsgrößen. Bei Stößen und Umwandlungen bleibt die Gesamtmenge erhalten. In der speziellen Relativitätstheorie soll das ebenfalls gelten, und zwar in jedem Inertialsystem. Dafür müssen die Formeln angepasst werden.
+
+Beim Impuls führt das auf $p = \gamma\,m\,v$. Bei der Energie führt es auf $E = \gamma\,m\,c^2$. Für ruhende Körper bleibt daraus $E_0 = m\,c^2$. Diese Formel für die Ruheenergie gehört zu den bekanntesten Formeln der Naturwissenschaft. Wie sie unter anderem erklären kann, warum die Sonne so hell strahlt, erfährst du in diesem Kapitel.
 :::
 
 ## Relativistischer Impuls
 
-::: {.mp-goal-strip}
-Du <u>erläuterst</u>, warum der klassische Impuls $p = m\,v$ von der Wahl des Bezugssystems abhängt.
-
-Du <u>begründest</u>, warum man den Impuls mit der invarianten Eigenzeit bildet, und <u>leitest</u> damit $p = \gamma\,m\,v$ her.
+::: {.callout-note title="Relevanz"}
+Teilchenbeschleuniger steuern geladene Teilchen mit starken Magneten auf ihrer Bahn. Um die nötige Magnetfeldstärke zu berechnen, muss man den Impuls der Teilchen genau kennen. In solchen Anlagen erreichen Teilchen Geschwindigkeiten von weit über $50\,\%$ der Lichtgeschwindigkeit. Dann reicht der klassische Impuls nicht mehr aus. Wie der relativistische Impuls mathematisch beschrieben wird und welche Bedingungen er erfüllen muss, darum geht es in diesem Abschnitt.
 :::
 
-Klassisch ist der Impuls
+::: {.mp-goal-strip}
+Du <u>nennst</u> die Formel für den relativistischen Impuls.
+
+Du <u>erläuterst</u>, welche Bedingungen der relativistische Impuls erfüllen soll.
+
+Du <u>berechnest</u> den klassischen und den relativistischen Impuls.
+:::
+
+Den Impuls hast du in der klassischen Physik so kennengelernt:
 
 $$p = m\,v = m\,\frac{\Delta s}{\Delta t}.$$
 
-Darin steckt die Zeit $\Delta t$, die *wir* in unserem Bezugssystem messen. Das ist unbefriedigend: Ein Beobachter, der sich relativ zu uns bewegt, misst für denselben Vorgang eine andere Zeit $\Delta t$ und käme so auf einen anderen Impuls. Der klassische Impuls hängt also davon ab, *wer* ihn misst.
+Dabei ist $\Delta s$ die zurückgelegte Strecke und $\Delta t$ die Zeit, die ein Beobachter misst.
 
-Wir suchen deshalb eine Zeit, auf die sich **alle** Beobachter einigen können. Genau das leistet die **Eigenzeit** $\Delta t_0$, die wir schon aus Kapitel 1 kennen: die Zeit, die eine *mitbewegte* Uhr in ihrem eigenen Ruhesystem misst, also eine Uhr, die direkt am Objekt sitzt und mit ihm mitfliegt.
+Der Impuls ist eine **Erhaltungsgröße**. Bei einem isolierten Stoß ist der Gesamtimpuls vor dem Stoß und nach dem Stoß gleich groß:
 
-Der entscheidende Punkt: Über die Anzeige dieser *einen* Uhr sind sich alle Inertialsysteme einig. Welche Zahl die mitbewegte Uhr zu Beginn und am Ende des Vorgangs zeigt, ist eine konkrete physikalische Tatsache und hängt nicht davon ab, von welchem System aus man hinschaut. Die Eigenzeit ist deshalb eine **invariante** Größe.
+$$p_\text{ges} = \text{const}.$$
 
-Aus Kapitel 1 wissen wir außerdem, wie sich unsere gemessene Zeit dazu verhält: Wegen der Zeitdilatation ordnet jedes von außen beobachtende System demselben Vorgang eine **längere** Zeit zu,
+In der speziellen Relativitätstheorie funktioniert das mit der klassischen Definition $p = m\,v$ nicht mehr. Bei sehr schnellen Teilchen bleibt der Gesamtimpuls dann nicht in jedem Inertialsystem erhalten.
 
-$$\Delta t = \gamma\,\Delta t_0 \qquad (\gamma \geq 1).$$
+Wir haben nun zwei Möglichkeiten: Entweder geben wir die Impulserhaltung auf, oder wir definieren den Impuls neu. Der zweite Weg führt zum relativistischen Impuls. Die neue Definition soll zwei Bedingungen erfüllen:
 
-Die Eigenzeit ist damit zugleich das *kleinstmögliche* Zeitintervall.
+1. **Korrespondenzprinzip:** Für kleine Geschwindigkeiten ($v \ll c$) soll wieder der klassische Impuls $p = m\,v$ herauskommen.
+2. **Erhaltung:** Der Gesamtimpuls soll in jedem Inertialsystem konstant bleiben.
 
-Wir bilden den Impuls deshalb mit dieser invarianten Zeit:
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+<u>Nenne</u> und <u>begründe</u>, welches der beiden Einsteinschen Postulate hinter der zweiten Bedingung steckt.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Das erste Postulat, das Relativitätsprinzip: Die Naturgesetze haben in allen Inertialsystemen dieselbe Form. Ein Erhaltungssatz ist ein solches Naturgesetz. Würde die Impulserhaltung nur in einem Bezugssystem gelten, wäre dieses System ausgezeichnet. Das widerspricht dem Relativitätsprinzip.</p>
+</details>
+
+::: {.mp-box .mp-math}
+<div class="mp-title">Definition mit Eigenzeit</div>
+
+Für die neue Definition ersetzen wir die vom Beobachter gemessene Zeit $\Delta t$ durch die Eigenzeit $\Delta t_0$ des Teilchens:
 
 $$p = m\,\frac{\Delta s}{\Delta t_0}.$$
 
-Mit $\Delta t_0 = \dfrac{\Delta t}{\gamma}$ folgt sofort
+Die Eigenzeit ist die Zeit, die eine mitbewegte Uhr misst. Aus Kapitel 1 gilt:
 
-$$p = m\,\frac{\Delta s}{\Delta t / \gamma} = \gamma\,m\,\frac{\Delta s}{\Delta t} = \gamma\,m\,v.$$
+$$\Delta t = \gamma\,\Delta t_0.$$
 
-Dass diese Wahl wirklich die richtige ist, zeigt sich erst danach: Nur mit $p = \gamma\,m\,v$ bleibt der Impuls in *jedem* Bezugssystem erhalten. Die Eigenzeit liefert also genau den Baustein, der diese Bedingung erfüllt.
+Damit ist
+
+$$\Delta t_0 = \frac{\Delta t}{\gamma}.$$
+
+Mit $\Delta t_0 = \Delta t / \gamma$ folgt:
+
+$$p = m\,\frac{\Delta s}{\Delta t_0}
+= m\,\frac{\Delta s}{\Delta t / \gamma}
+= \gamma\,m\,\frac{\Delta s}{\Delta t}
+= \gamma\,m\,v.$$
+:::
+
+So erhält man den relativistischen Impuls:
+
+$$p = \gamma\,m\,v.$$
+
+Für kleine Geschwindigkeiten gilt $\gamma \approx 1$. Dann wird aus dem relativistischen Impuls wieder näherungsweise der klassische Impuls:
+
+$$p = \gamma\,m\,v \approx m\,v.$$
+
+Nahe der Lichtgeschwindigkeit wächst $\gamma$ stark. Der Impuls wächst dann viel stärker, als die klassische Formel erwarten lässt.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+In der Protonentherapie werden Tumoren mit schnellen Protonen bestrahlt. Magnetfelder lenken den Protonenstrahl und richten ihn auf das Zielgebiet. Wie stark ein Magnet ein Proton ablenkt, hängt von seinem Impuls ab. Wird der Impuls falsch berechnet, kann der Strahl von der geplanten Bahn abweichen und gesundes Gewebe stärker treffen. Ein Proton ($m = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$) bewegt sich mit $v = 0{,}60\,c$. <u>Berechne</u> den klassischen Impuls und den relativistischen Impuls. <u>Vergleiche</u> beide Werte.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>$v = 0{,}60 \cdot 3{,}0 \cdot 10^8\,\mathrm{m/s} = 1{,}8 \cdot 10^8\,\mathrm{m/s}$.</p>
+<p>Klassisch: $p = m\,v \approx 1{,}67 \cdot 10^{-27}\,\mathrm{kg} \cdot 1{,}8 \cdot 10^8\,\mathrm{m/s} \approx 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
+<p>Relativistisch: $\gamma = 1/\sqrt{1 - 0{,}60^2} = 1{,}25$.</p>
+<p>$p = \gamma\,m\,v \approx 1{,}25 \cdot 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s} \approx 3{,}8 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
+<p>Der relativistische Impuls ist etwa $25\,\%$ größer als der klassische Wert.</p>
+</details>
 
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
 Der relativistische Impuls lautet
-$$p = \gamma\,m\,v \qquad\text{mit}\qquad \gamma = \frac{1}{\sqrt{1 - v^2/c^2}}.$$
-Für kleine Geschwindigkeiten ($v \ll c$) ist $\gamma \approx 1$, und man erhält wieder den klassischen Ausdruck $p = m\,v$. Erst nahe der Lichtgeschwindigkeit wächst der Impuls über alle Grenzen.
+$$p = \gamma\,m\,v.$$
+Für $v \ll c$ ist $\gamma \approx 1$. Der klassische Impuls $p = m\,v$ bleibt dann eine gute Näherung.
 :::
+
+## Relativistische Energie
+
+::: {.callout-note title="Relevanz"}
+Die Formel $E_0 = m\,c^2$ gehört zu den bekanntesten Formeln der Naturwissenschaft. Sie verknüpft Masse und Energie über den Faktor $c^2$. In der Sonne wird bei Kernfusion ein kleiner Teil der Ruheenergie in andere Energieformen umgewandelt. So lässt sich verstehen, warum schon wenig Masse sehr viel Energie liefern kann.
+:::
+
+::: {.mp-goal-strip}
+Du <u>nennst</u> die Formeln für Ruheenergie, Gesamtenergie und kinetische Energie.
+
+Du <u>erläuterst</u> die Bedeutung der Ruheenergie $E_0 = m\,c^2$.
+
+Du <u>berechnest</u> Ruheenergie, Gesamtenergie und kinetische Energie.
+:::
+
+Eine weitere Folgerung der speziellen Relativitätstheorie lautet: Masse und Energie sind äquivalent. Diese Aussage steckt in der Formel
+
+$$E_0 = m\,c^2.$$
+
+Die Energie $E_0$ heißt **Ruheenergie**.
+
+Die Formel sagt nicht: Nur ruhende Körper besitzen Energie. Sie benennt den Energieanteil, der zur Masse gehört. Dieser Anteil ist enorm, weil die Masse mit $c^2$ multipliziert wird.
+
+Kommt Bewegung hinzu, besitzt der Körper zusätzlich kinetische Energie. Wenn keine potenzielle Energie vorhanden ist, ist die Gesamtenergie
+
+$$E = E_0 + K = m\,c^2 + K.$$
+
+Diese Gesamtenergie definieren wir relativistisch durch:
+
+$$E = \gamma\,m\,c^2.$$
+
+Diese Definition erfüllt die Forderung, dass die Gesamtenergie in einem isolierten System erhalten bleibt. Wir leiten sie hier nicht her. Eine mathematische Herleitung aus dem relativistischen Impuls ist möglich. Du findest sie zum Beispiel im Giancoli [@giancoli2010physik, S. 1248--1249].
+
+Für $v = 0$ ist $\gamma = 1$. Dann wird aus der Gesamtenergie die Ruheenergie:
+
+$$E = m\,c^2 = E_0.$$
+
+Stellst du die Gleichung nach der kinetischen Energie um, erhältst du:
+
+$$K = E - E_0 = \gamma\,m\,c^2 - m\,c^2 = (\gamma - 1)\,m\,c^2.$$
+
+Für kleine Geschwindigkeiten ist diese Energie fast gleich der klassischen kinetischen Energie $K = \frac{1}{2}\,m\,v^2$. Nahe der Lichtgeschwindigkeit wächst $\gamma$ sehr stark. Ein Körper mit Masse kann die Lichtgeschwindigkeit nicht erreichen, weil dafür unbegrenzt viel kinetische Energie nötig wäre.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="kinetic-energy-plot" data-srt-label="Relativistische und klassische kinetische Energie in Abhängigkeit von der Geschwindigkeit"></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier ein interaktiver Graph zur relativistischen kinetischen Energie $K = (\gamma - 1)\,m\,c^2$.
+:::
+:::
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+Ein Körper besitzt wegen seiner Masse die Ruheenergie
+$$E_0 = m\,c^2.$$
+Bewegt er sich, besitzt er die Gesamtenergie
+$$E = \gamma\,m\,c^2.$$
+Die kinetische Energie ist der zusätzliche Anteil:
+$$K = (\gamma - 1)\,m\,c^2.$$
+:::
+
+Die Gesamtenergie eines isolierten Systems bleibt erhalten. Wenn bei einer Reaktion Ruheenergie abnimmt, muss eine andere Energieform zunehmen.
+
+Ein Beispiel ist die Sonne.
+
+In der Sonne verschmelzen Wasserstoffkerne zu Helium. Die entstehenden Teilchen haben zusammen etwas weniger Ruhemasse als die Ausgangsteilchen. Diese Massedifferenz verschwindet nicht. Sie erscheint als Energie.
+
+Für die frei werdende Energie gilt:
+
+$$E_\text{frei} = \Delta m\,c^2.$$
+
+Dabei ist $\Delta m$ die fehlende Masse nach der Reaktion. Weil $c^2$ sehr groß ist, liefert schon eine kleine Massedifferenz viel Energie. So kann die Sonne über sehr lange Zeit große Energiemengen abstrahlen.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+<u>Erläutere</u> mithilfe von $E_0 = m\,c^2$, warum eine kleine Massedifferenz in der Sonne viel Energie liefern kann.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Bei der Fusion ist die Masse der entstehenden Teilchen etwas kleiner als die Masse der Ausgangsteilchen. Diese Massendifferenz $\Delta m$ entspricht der frei werdenden Energie $E_\text{frei} = \Delta m\,c^2$. Da $c^2$ sehr groß ist, kann schon eine kleine Massendifferenz viel Energie liefern.</p>
+</details>
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+<u>Berechne</u> die Ruheenergie eines Elektrons mit $m = 9{,}11 \cdot 10^{-31}\,\mathrm{kg}$ in Joule.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>$E_0 = m\,c^2 = 9{,}11 \cdot 10^{-31}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 8{,}2 \cdot 10^{-14}\,\mathrm{J}$.</p>
+</details>
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+<u>Berechne</u> für ein Proton mit $m = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$ und $v = 0{,}80\,c$ die Ruheenergie, die Gesamtenergie und die kinetische Energie.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>$\gamma = 1/\sqrt{1 - 0{,}80^2} \approx 1{,}67$.</p>
+<p>$E_0 = m\,c^2 \approx 1{,}67 \cdot 10^{-27}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 1{,}50 \cdot 10^{-10}\,\mathrm{J}$.</p>
+<p>$E = \gamma\,m\,c^2 \approx 1{,}67 \cdot 1{,}50 \cdot 10^{-10}\,\mathrm{J} \approx 2{,}51 \cdot 10^{-10}\,\mathrm{J}$.</p>
+<p>$K = E - E_0 \approx 1{,}01 \cdot 10^{-10}\,\mathrm{J}$.</p>
+</details>
