@@ -1241,8 +1241,3 @@ Relativistische Effekte treten nicht einzeln auf. Wenn sich zwei Inertialsysteme
 Es gibt viele weitere scheinbare Paradoxa der speziellen Relativitätstheorie. Recherchiere gerne nach ihnen. Beispiele sind das Zwillingsparadoxon, das Eisenbahnparadoxon oder das Raumschiffparadoxon.
 
 Mit diesem Kapitel hast du eine Art Grundwerkzeug bekommen, um einige dieser Paradoxa zu analysieren und möglicherweise sogar selbst aufzulösen.
-
-## Literatur {.unnumbered}
-
-::: {#refs}
-:::

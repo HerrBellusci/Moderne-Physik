@@ -1,4 +1,4 @@
-# Relativistischer Impuls und relativistische Energie {#sec-srt-impuls-energie}
+# Spezielle Relativitätstheorie II: Impuls und Energie {#sec-srt-impuls-energie}
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -175,6 +175,121 @@ In der HTML-Version erscheint hier ein interaktiver Graph zur relativistischen k
 :::
 :::
 
+Die Gesamtenergie eines isolierten Systems bleibt erhalten. Wenn bei einer Reaktion Ruheenergie abnimmt, muss eine andere Energieform zunehmen. Ein Beispiel ist die Sonne.
+
+In der Sonne verschmelzen Wasserstoffkerne über mehrere Schritte zu Helium. Die entstehenden Teilchen haben zusammen etwas weniger Ruhemasse als die Ausgangsteilchen. Diese Massedifferenz verschwindet nicht. Sie erscheint als Energie. Für die frei werdende Energie gilt:
+
+$$E_\text{frei} = \Delta m\,c^2.$$
+
+Dabei ist $\Delta m$ die fehlende Masse nach der Reaktion.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+Auf der Erde trifft senkrecht zur Sonne eine Strahlungsleistung von etwa $S \approx 1{,}36 \cdot 10^3\,\mathrm{\frac{W}{m^2}}$ auf. Diese Leistung verteilt sich gleichmäßig auf eine Kugel um die Sonne, auf deren Oberfläche die Erde liegt. <u>Berechne</u>, wie viel Masse die Sonne pro Sekunde in Strahlung umwandelt.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure">
+  <svg class="srt-workbook-image" viewBox="0 0 800 380" role="img" xmlns="http://www.w3.org/2000/svg" aria-label="Die Sonne strahlt in alle Richtungen. Im Abstand der Erde verteilt sich ihre Leistung auf eine Kugel mit der Fläche A gleich 4 Pi r Quadrat. Auf einen Quadratmeter dieser Kugel auf der Erde trifft die Bestrahlungsstärke S.">
+    <defs>
+      <marker id="ray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+        <path d="M0 0 L10 5 L0 10 z" fill="#ef8a17"/>
+      </marker>
+    </defs>
+
+    <circle cx="300" cy="190" r="150" fill="none" stroke="#5c6678" stroke-width="1.6" stroke-dasharray="6 7"/>
+
+    <g stroke="#ef8a17" stroke-width="2.4" marker-end="url(#ray)">
+      <line x1="328" y1="218" x2="388" y2="278"/>
+      <line x1="300" y1="232" x2="300" y2="312"/>
+      <line x1="272" y1="218" x2="212" y2="278"/>
+      <line x1="268" y1="190" x2="178" y2="190"/>
+      <line x1="272" y1="162" x2="212" y2="102"/>
+      <line x1="300" y1="148" x2="300" y2="68"/>
+      <line x1="328" y1="162" x2="388" y2="102"/>
+    </g>
+
+    <line x1="338" y1="190" x2="442" y2="190" stroke="#172033" stroke-width="1.6"/>
+    <line x1="338" y1="184" x2="338" y2="196" stroke="#172033" stroke-width="1.6"/>
+    <line x1="442" y1="184" x2="442" y2="196" stroke="#172033" stroke-width="1.6"/>
+    <text x="390" y="181" text-anchor="middle" font-size="14" font-weight="800" fill="#172033">r</text>
+
+    <circle cx="300" cy="190" r="32" fill="#ffc83d" stroke="#e0991a" stroke-width="2"/>
+    <text x="300" y="195" text-anchor="middle" font-size="13" font-weight="800" fill="#7a5300">Sonne</text>
+
+    <circle cx="450" cy="190" r="9" fill="#2f6fb0" stroke="#1b3f63" stroke-width="2"/>
+    <text x="450" y="216" text-anchor="middle" font-size="13" font-weight="700" fill="#1b3f63">Erde</text>
+
+    <line x1="458" y1="186" x2="560" y2="120" stroke="#9aa6b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+    <line x1="458" y1="196" x2="560" y2="260" stroke="#9aa6b8" stroke-width="1.2" stroke-dasharray="4 4"/>
+
+    <rect x="560" y="120" width="224" height="140" rx="10" fill="#ffffff" stroke="#5c6678" stroke-width="1.6"/>
+    <text x="672" y="146" text-anchor="middle" font-size="14" font-weight="800" fill="#172033">S &#8776; 1,36&#183;10&#179; W/m&#178;</text>
+    <rect x="596" y="176" width="52" height="52" rx="4" fill="#dce8f5" stroke="#2f6fb0" stroke-width="2"/>
+    <text x="622" y="206" text-anchor="middle" font-size="12" font-weight="800" fill="#1b3f63">1 m&#178;</text>
+    <g stroke="#ef8a17" stroke-width="2.2" marker-end="url(#ray)">
+      <line x1="566" y1="188" x2="592" y2="188"/>
+      <line x1="566" y1="202" x2="592" y2="202"/>
+      <line x1="566" y1="216" x2="592" y2="216"/>
+    </g>
+    <text x="700" y="206" text-anchor="middle" font-size="12" font-weight="600" fill="#5c6678">trifft senkrecht</text>
+  </svg>
+  <figcaption class="srt-workbook-caption">Skizze zur Aufgabe.</figcaption>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Skizze: die Sonne im Mittelpunkt, eine Kugel im Abstand der Erde mit der Fläche $A = 4\pi r^2$ und ein Quadratmeter auf der Erde, auf den die Bestrahlungsstärke $S$ trifft.
+:::
+:::
+
+Tipp: Bestimme zuerst die gesamte Strahlungsleistung der Sonne aus der Leistung pro Fläche und der Kugeloberfläche im Abstand Erde-Sonne. Wandle dann die pro Sekunde abgestrahlte Energie in eine Masse um.
+
+Gegeben: Abstand Erde-Sonne $r \approx 1{,}5 \cdot 10^{11}\,\mathrm{m}$, Lichtgeschwindigkeit $c \approx 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}}$.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Kugeloberfläche im Erdabstand:</p>
+
+$$A = 4\pi r^2 = 4\pi \cdot (1{,}5 \cdot 10^{11}\,\mathrm{m})^2 \approx 2{,}8 \cdot 10^{23}\,\mathrm{m^2}.$$
+
+<p>Gesamte Strahlungsleistung der Sonne:</p>
+
+$$P = S \cdot A \approx 1{,}36 \cdot 10^3\,\mathrm{\tfrac{W}{m^2}} \cdot 2{,}8 \cdot 10^{23}\,\mathrm{m^2} \approx 3{,}8 \cdot 10^{26}\,\mathrm{W}.$$
+
+<p>In einer Sekunde strahlt die Sonne die Energie $E = P \cdot t \approx 3{,}8 \cdot 10^{26}\,\mathrm{J}$ ab. Aus $E = \Delta m\,c^2$ folgt:</p>
+
+$$\Delta m = \frac{E}{c^2} \approx \frac{3{,}8 \cdot 10^{26}\,\mathrm{J}}{(3{,}0 \cdot 10^8\,\mathrm{m/s})^2} \approx 4{,}2 \cdot 10^9\,\mathrm{kg}.$$
+
+<p>Die Sonne verliert pro Sekunde also rund 4 Millionen Tonnen Masse.</p>
+</details>
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+In Kapitel 1 hast du das Myon aus der kosmischen Strahlung kennengelernt. Es fliegt mit $v = 0{,}998\,c$, dazu gehört der Lorentzfaktor $\gamma \approx 15{,}8$. Seine Masse ist $m \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg}$.
+
+<u>Berechne</u> die Ruheenergie $E_0$, die Gesamtenergie $E$ und die kinetische Energie $K$ des Myons.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>$E_0 = m\,c^2 \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 1{,}7 \cdot 10^{-11}\,\mathrm{J}$.</p>
+<p>$E = \gamma\,E_0 \approx 15{,}8 \cdot 1{,}7 \cdot 10^{-11}\,\mathrm{J} \approx 2{,}7 \cdot 10^{-10}\,\mathrm{J}$.</p>
+<p>$K = E - E_0 = (\gamma - 1)\,E_0 \approx 14{,}8 \cdot 1{,}7 \cdot 10^{-11}\,\mathrm{J} \approx 2{,}5 \cdot 10^{-10}\,\mathrm{J}$.</p>
+<p>Die kinetische Energie ist also fast 15-mal so groß wie die Ruheenergie. Das passt dazu, dass sich das Myon mit $0{,}998\,c$ sehr nah an der Lichtgeschwindigkeit bewegt.</p>
+</details>
+
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
@@ -185,60 +300,3 @@ $$E = \gamma\,m\,c^2.$$
 Die kinetische Energie ist der zusätzliche Anteil:
 $$K = (\gamma - 1)\,m\,c^2.$$
 :::
-
-Die Gesamtenergie eines isolierten Systems bleibt erhalten. Wenn bei einer Reaktion Ruheenergie abnimmt, muss eine andere Energieform zunehmen.
-
-Ein Beispiel ist die Sonne.
-
-In der Sonne verschmelzen Wasserstoffkerne zu Helium. Die entstehenden Teilchen haben zusammen etwas weniger Ruhemasse als die Ausgangsteilchen. Diese Massedifferenz verschwindet nicht. Sie erscheint als Energie.
-
-Für die frei werdende Energie gilt:
-
-$$E_\text{frei} = \Delta m\,c^2.$$
-
-Dabei ist $\Delta m$ die fehlende Masse nach der Reaktion. Weil $c^2$ sehr groß ist, liefert schon eine kleine Massedifferenz viel Energie. So kann die Sonne über sehr lange Zeit große Energiemengen abstrahlen.
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
-  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
-  Denkcheck
-</span>
-
-<u>Erläutere</u> mithilfe von $E_0 = m\,c^2$, warum eine kleine Massedifferenz in der Sonne viel Energie liefern kann.
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-<p>Bei der Fusion ist die Masse der entstehenden Teilchen etwas kleiner als die Masse der Ausgangsteilchen. Diese Massendifferenz $\Delta m$ entspricht der frei werdenden Energie $E_\text{frei} = \Delta m\,c^2$. Da $c^2$ sehr groß ist, kann schon eine kleine Massendifferenz viel Energie liefern.</p>
-</details>
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
-  Berechnung
-</span>
-
-<u>Berechne</u> die Ruheenergie eines Elektrons mit $m = 9{,}11 \cdot 10^{-31}\,\mathrm{kg}$ in Joule.
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-<p>$E_0 = m\,c^2 = 9{,}11 \cdot 10^{-31}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 8{,}2 \cdot 10^{-14}\,\mathrm{J}$.</p>
-</details>
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
-  Berechnung
-</span>
-
-<u>Berechne</u> für ein Proton mit $m = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$ und $v = 0{,}80\,c$ die Ruheenergie, die Gesamtenergie und die kinetische Energie.
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-<p>$\gamma = 1/\sqrt{1 - 0{,}80^2} \approx 1{,}67$.</p>
-<p>$E_0 = m\,c^2 \approx 1{,}67 \cdot 10^{-27}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 1{,}50 \cdot 10^{-10}\,\mathrm{J}$.</p>
-<p>$E = \gamma\,m\,c^2 \approx 1{,}67 \cdot 1{,}50 \cdot 10^{-10}\,\mathrm{J} \approx 2{,}51 \cdot 10^{-10}\,\mathrm{J}$.</p>
-<p>$K = E - E_0 \approx 1{,}01 \cdot 10^{-10}\,\mathrm{J}$.</p>
-</details>
