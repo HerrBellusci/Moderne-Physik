@@ -1,20 +1,191 @@
 # Ausflug: Wie funktioniert ein Laser? {#sec-laser-ausflug}
 
+::: {.content-visible when-format="html"}
+```{=html}
+<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
+<script src="assets/animations/shared/core.js"></script>
+<script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
+<script src="assets/animations/laser/used/monochromasie.js"></script>
+<script src="assets/animations/shared/srt-workbook.js"></script>
+```
+:::
+
 ::: {.callout-warning title="Im Aufbau"}
-Diese Seite befindet sich noch im Aufbau.
+Diese Seite befindet sich noch im Aufbau. Das Gerüst steht, die Abschnitte werden nach und nach gefüllt.
 :::
 
-::: {.mp-box .mp-context .mp-compact}
-<div class="mp-title">Ausblick</div>
+::: {.callout-note title="Relevanz"}
+Laser begegnen dir ständig im Alltag. An der Supermarktkasse lesen sie den Barcode. Bei Veranstaltungen erzeugen sie Lichtshows. In Präsentationen dienen sie als Pointer. In der Medizin schneiden und veröden sie Gewebe.
 
-Dieser Ausflug ist noch in Arbeit.
-
-Im modernen Michelson-Morley-Aufbau dient ein **Laser** als Lichtquelle, weil sein Licht schmalbandig, gebündelt und über lange Wegstrecken kohärent ist. Wie dieses besondere Licht entsteht, wird hier später erklärt.
-
-Geplante Themen:
-
-- der Rubinlaser als erster funktionierender Laser,
-- stimulierte Emission und Besetzungsinversion,
-- der Resonator,
-- die besonderen Eigenschaften von Laserlicht.
+So unterschiedlich diese Anwendungen sind: Ihnen allen liegt dieselbe Erkenntnis aus der Quantenmechanik zugrunde. Was dieses Licht so besonders macht und wie es entsteht, erfährst du in diesem Kapitel.
 :::
+
+<!-- ====================================================================== -->
+<!-- Muster je Abschnitt (wie Kapitel 1):                                   -->
+<!--   1. Relevanz  ::: {.callout-note title="Relevanz"}                    -->
+<!--   2. Lernziele ::: {.mp-goal-strip}  (KMK-Operatoren in <u>...</u>)    -->
+<!--   3. Inhalt + Boxen (mp-task, mp-definition, mp-math, mp-misconception)-->
+<!--   4. Kernaussage ::: {.mp-box .mp-core} am Abschnittsende               -->
+<!-- ====================================================================== -->
+
+## Stimulierte Emission
+
+::: {.callout-note title="Relevanz"}
+Einen Laser kennst du aus dem Alltag, etwa den roten Punkt eines Pointers. Sein Licht ist meist einfarbig (monochromatisch) und bleibt über große Entfernungen ein schmaler Strahl, es divergiert kaum.
+
+Aber was ist ein Laser überhaupt? Das Wort ist ein Akronym. **LASER** steht für „Light Amplification by Stimulated Emission of Radiation", auf Deutsch: Lichtverstärkung durch stimulierte Emission von Strahlung. Der Kern steckt schon im Namen, die stimulierte Emission. Was das ist, klärt dieser Abschnitt.
+:::
+
+::: {.mp-goal-strip}
+Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission.
+:::
+
+Vielleicht kennst du nachleuchtende Sterne an Zimmerdecken oder Leuchtstreifen auf Uhren. Zuerst liegen sie im Licht. Später schaltest du das Licht aus, und sie leuchten noch eine Weile weiter.
+
+Daran siehst du eine wichtige Grundidee: Materie kann Energie aus Licht aufnehmen und später wieder als Licht abgeben.
+
+Bei Atomen läuft dieser Energieaustausch in festen Schritten. Ein Atom besitzt bestimmte **Energieniveaus**. Wir betrachten hier zwei davon: Das niedrigere Niveau nennen wir $E_1$. Es steht hier für den Grundzustand. Das höhere Niveau nennen wir $E_2$. Befindet sich das Atom dort, ist es angeregt. Der Energieabstand zwischen beiden Niveaus ist
+
+$$
+\Delta E = E_2 - E_1.
+$$
+
+Ein Photon trägt die Energie $E_\text{Photon} = h f$. Dabei ist $h$ das Plancksche Wirkungsquantum und $f$ die Frequenz des Lichts. Ein Atom im Grundzustand kann ein Photon aufnehmen, wenn dessen Energie genau zum Abstand der beiden Energieniveaus passt:
+
+$$
+E_\text{Photon} = h f = \Delta E = E_2 - E_1
+$$
+
+Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man **Absorption**.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-absorption" data-srt-motion-control data-srt-label="Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand."></div>
+  <figcaption class="srt-workbook-caption">Absorption: Ein passendes Photon hebt das Atom vom Grundzustand in den angeregten Zustand.</figcaption>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Animation: Ein Photon trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand.
+:::
+:::
+
+Ein angeregtes Atom kann später wieder in ein niedrigeres Energieniveau wechseln. Die frei werdende Energie verlässt das Atom als neues Photon. Dieser Vorgang heißt **spontane Emission**.
+
+Der Vorgang startet im angeregten Atom selbst. Der genaue Zeitpunkt ist zufällig. Auch die Richtung des ausgesandten Photons ist zufällig. Viele Atome senden bei spontaner Emission in viele Richtungen. Das Licht ist ungeordnet.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-spontane-emission" data-srt-motion-control data-srt-label="Spontane Emission: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon aus. Zeitpunkt und Richtung sind zufällig."></div>
+  <figcaption class="srt-workbook-caption">Spontane Emission: Ein angeregtes Atom sendet von selbst ein Photon aus. Richtung und Zeitpunkt sind zufällig.</figcaption>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Animation: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon in zufälliger Richtung aus.
+:::
+:::
+
+Für den Laser ist ein dritter Fall entscheidend: Ein passendes Photon trifft auf ein Atom, das bereits angeregt ist. Das ankommende Photon bleibt erhalten und läuft weiter. Zugleich wechselt das Atom in das niedrigere Energieniveau und sendet ein zweites Photon aus.
+
+Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und dieselbe Frequenz. Sie laufen in dieselbe Richtung und schwingen im gleichen Takt. Dieser Vorgang heißt **stimulierte Emission**.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-stimulierte-emission" data-srt-motion-control data-srt-label="Stimulierte Emission: Ein passendes Photon trifft auf ein angeregtes Atom. Das ankommende Photon läuft weiter und löst ein zweites gleiches Photon aus."></div>
+  <figcaption class="srt-workbook-caption">Stimulierte Emission: Ein passendes Photon löst ein zweites gleiches Photon aus.</figcaption>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Animation: Ein passendes Photon trifft auf ein angeregtes Atom. Danach laufen zwei gleiche Photonen weiter.
+:::
+:::
+
+Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst ein zweites, gleichartiges Photon aus. Wie daraus im Laser eine Verstärkung werden kann, klärt der nächste Abschnitt.
+
+Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
+
+1. Bei der **Absorption** nimmt ein Atom ein Photon auf.
+2. Bei der **spontanen Emission** sendet ein angeregtes Atom von selbst ein Photon aus.
+3. Bei der **stimulierten Emission** löst ein passendes Photon die Aussendung eines zweiten Photons aus.
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+Ein Atom kann ein Photon absorbieren und dadurch in einen angeregten Zustand wechseln. Ein angeregtes Atom kann spontan ein Photon aussenden. Bei der stimulierten Emission löst ein passendes Photon die Aussendung eines zweiten, gleichartigen Photons aus. Für Lichtverstärkung muss dieser Vorgang häufiger auftreten als Absorption.
+:::
+
+## Besetzungsinversion und Lasermedium
+
+::: {.callout-note title="Relevanz"}
+<!-- TODO: warum stimulierte Emission normalerweise nicht überwiegt und wie man das umdreht -->
+:::
+
+::: {.mp-goal-strip}
+Du <u>erklärst</u>, was eine Besetzungsinversion ist.
+
+Du <u>begründest</u>, warum ein Lasermedium gepumpt werden muss und wozu ein metastabiles Niveau dient.
+:::
+
+<!-- TODO Inhalt: Pumpen, metastabiler Zustand, Drei-Niveau-System (Ausblick: Vier-Niveau). -->
+
+<!-- TODO Box: ::: {.mp-box .mp-definition} Besetzungsinversion -->
+
+<!-- TODO Aufgabe: ::: {.mp-box .mp-task} -->
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+<!-- TODO -->
+:::
+
+## Aufbau eines Lasers: der erste Laser
+
+::: {.callout-note title="Relevanz"}
+<!-- TODO: alles zusammengeführt am historischen Beispiel des Rubinlasers -->
+:::
+
+::: {.mp-goal-strip}
+Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator.
+
+Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
+:::
+
+<!-- TODO Inhalt: Resonator (zwei Spiegel, einer teildurchlässig), Rückkopplung, Verstärkung. -->
+<!-- TODO Rubinlaser als konkretes Beispiel: Rubinstab, Blitzlampe, 694 nm; Drei-Niveau-System. -->
+
+<!-- TODO Box: ::: {.mp-box .mp-context} Überblick Aufbau -->
+
+<!-- TODO Rechnung/Aufgabe zur Wellenlänge 694 nm (E = h·c/λ) als grüne callout-tip oder mp-details -->
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+<!-- TODO -->
+:::
+
+<!-- ====================================================================== -->
+<!-- SPÄTER: ## Warum Laserlicht diese Eigenschaften hat (nach dem Resonator)-->
+<!--   Hier die quantitative Erklärung der Eigenschaften kausal verankern:  -->
+<!--   - Monochromasie/zeitliche Kohärenz über Wellenzug-Länge: Δf ≈ 1/τ    -->
+<!--   - Bündelung beugungsbegrenzt: θ ≈ λ/D, Fokus ~ λ                      -->
+<!--   - Ordnung entsteht durch stimulierte Emission + Modenauswahl im      -->
+<!--     Resonator (optischer Oszillator).                                   -->
+<!-- ====================================================================== -->
+
+<!-- ====================================================================== -->
+<!-- OPTIONAL / später (erst entscheiden, wenn der Kern steht):             -->
+<!--   ## Weitere Lasertypen                                                -->
+<!--     - He-Ne-Laser (Vier-Niveau-System, Kontrast zum Rubin)             -->
+<!--     - Halbleiterlaser                                                   -->
+<!-- ====================================================================== -->

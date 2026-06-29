@@ -258,6 +258,16 @@
   margin-bottom: 0.75rem;
 }
 
+.mp-details.mp-misconception {
+  border-color: rgba(194, 65, 75, 0.28);
+  border-left: 0.38rem solid var(--mp-red);
+  background: #fff5f6;
+}
+
+.mp-details.mp-misconception summary {
+  color: var(--mp-red);
+}
+
 a.glossary-link {
   color: inherit;
   text-decoration-line: underline;

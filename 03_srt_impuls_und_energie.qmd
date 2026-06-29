@@ -12,7 +12,7 @@
 ::: {.callout-note title="Relevanz"}
 In der klassischen Physik kennst du Impuls und Energie als Erhaltungsgrößen. Bei Stößen und Umwandlungen bleibt die Gesamtmenge erhalten. In der speziellen Relativitätstheorie soll das ebenfalls gelten, und zwar in jedem Inertialsystem. Dafür müssen die Formeln angepasst werden.
 
-Beim Impuls führt das auf $p = \gamma\,m\,v$. Bei der Energie führt es auf $E = \gamma\,m\,c^2$. Für ruhende Körper bleibt daraus $E_0 = m\,c^2$. Diese Formel für die Ruheenergie gehört zu den bekanntesten Formeln der Naturwissenschaft. Wie sie unter anderem erklären kann, warum die Sonne so hell strahlt, erfährst du in diesem Kapitel.
+Beim Impuls führt das auf $p = \gamma\,m_0\,v$. Bei der Energie führt es auf $E = \gamma\,m_0\,c^2$. Für ruhende Körper bleibt daraus $E_0 = m_0\,c^2$. Diese Formel für die Ruheenergie gehört zu den bekanntesten Formeln der Naturwissenschaft. Wie sie unter anderem erklären kann, warum die Sonne so hell strahlt, erfährst du in diesem Kapitel.
 :::
 
 ## Relativistischer Impuls
@@ -31,7 +31,7 @@ Du <u>berechnest</u> den klassischen und den relativistischen Impuls.
 
 Den Impuls hast du in der klassischen Physik so kennengelernt:
 
-$$p = m\,v = m\,\frac{\Delta s}{\Delta t}.$$
+$$p = m_0\,v = m_0\,\frac{\Delta s}{\Delta t}.$$
 
 Dabei ist $\Delta s$ die zurückgelegte Strecke und $\Delta t$ die Zeit, die ein Beobachter misst.
 
@@ -39,11 +39,11 @@ Der Impuls ist eine **Erhaltungsgröße**. Bei einem isolierten Stoß ist der Ge
 
 $$p_\text{ges} = \text{const}.$$
 
-In der speziellen Relativitätstheorie funktioniert das mit der klassischen Definition $p = m\,v$ nicht mehr. Bei sehr schnellen Teilchen bleibt der Gesamtimpuls dann nicht in jedem Inertialsystem erhalten.
+In der speziellen Relativitätstheorie funktioniert das mit der klassischen Definition $p = m_0\,v$ nicht mehr. Bei sehr schnellen Teilchen ändert sich der Gesamtimpuls je nach Inertialsystem.
 
 Wir haben nun zwei Möglichkeiten: Entweder geben wir die Impulserhaltung auf, oder wir definieren den Impuls neu. Der zweite Weg führt zum relativistischen Impuls. Die neue Definition soll zwei Bedingungen erfüllen:
 
-1. **Korrespondenzprinzip:** Für kleine Geschwindigkeiten ($v \ll c$) soll wieder der klassische Impuls $p = m\,v$ herauskommen.
+1. **Korrespondenzprinzip:** Für kleine Geschwindigkeiten ($v \ll c$) soll wieder der klassische Impuls $p = m_0\,v$ herauskommen.
 2. **Erhaltung:** Der Gesamtimpuls soll in jedem Inertialsystem konstant bleiben.
 
 ::: {.mp-box .mp-task}
@@ -63,9 +63,9 @@ Wir haben nun zwei Möglichkeiten: Entweder geben wir die Impulserhaltung auf, o
 ::: {.mp-box .mp-math}
 <div class="mp-title">Definition mit Eigenzeit</div>
 
-Für die neue Definition ersetzen wir die vom Beobachter gemessene Zeit $\Delta t$ durch die Eigenzeit $\Delta t_0$ des Teilchens:
+Für die neue Definition ersetzen wir die vom Beobachter gemessene Zeit $\Delta t$ durch die Eigenzeit $\Delta t_0$:
 
-$$p = m\,\frac{\Delta s}{\Delta t_0}.$$
+$$p = m_0\,\frac{\Delta s}{\Delta t_0}.$$
 
 Die Eigenzeit ist die Zeit, die eine mitbewegte Uhr misst. Aus Kapitel 1 gilt:
 
@@ -77,19 +77,30 @@ $$\Delta t_0 = \frac{\Delta t}{\gamma}.$$
 
 Mit $\Delta t_0 = \Delta t / \gamma$ folgt:
 
-$$p = m\,\frac{\Delta s}{\Delta t_0}
-= m\,\frac{\Delta s}{\Delta t / \gamma}
-= \gamma\,m\,\frac{\Delta s}{\Delta t}
-= \gamma\,m\,v.$$
+$$p = m_0\,\frac{\Delta s}{\Delta t_0}
+= m_0\,\frac{\Delta s}{\Delta t / \gamma}
+= \gamma\,m_0\,\frac{\Delta s}{\Delta t}
+= \gamma\,m_0\,v.$$
 :::
 
 So erhält man den relativistischen Impuls:
 
-$$p = \gamma\,m\,v.$$
+$$p = \gamma\,m_0\,v.$$
+
+<details class="mp-details mp-misconception">
+<summary>Mehr Geschwindigkeit, mehr Masse?</summary>
+
+In vielen älteren Büchern liest du, dass mehr Geschwindigkeit zu mehr Masse führt. Dahinter steckt die Schreibweise $p = m_\text{rel}\,v$ mit der „relativistischen Masse" $m_\text{rel} = \gamma\,m_0$. So sieht es aus, als würde die Masse mit der Geschwindigkeit wachsen.
+
+Diese Schreibweise hat einen Haken: In die Impulsformel $p = m_\text{rel}\,v$ passt $m_\text{rel}$. In andere Formeln wie $F = m\,a$ oder $E_\text{kin} = \frac{1}{2}\,m\,v^2$ darfst du sie aber nicht einsetzen, dort liefert sie falsche Ergebnisse [@giancoli2010physik, S. 1247].
+
+Sauberer ist eine feste Masse: die Ruhemasse $m_0$. Den Faktor $\gamma$ schreiben wir getrennt: $p = \gamma\,m_0\,v$. Mit „Masse" ist in diesem Workbook immer die Ruhemasse gemeint.
+
+</details>
 
 Für kleine Geschwindigkeiten gilt $\gamma \approx 1$. Dann wird aus dem relativistischen Impuls wieder näherungsweise der klassische Impuls:
 
-$$p = \gamma\,m\,v \approx m\,v.$$
+$$p = \gamma\,m_0\,v \approx m_0\,v.$$
 
 Nahe der Lichtgeschwindigkeit wächst $\gamma$ stark. Der Impuls wächst dann viel stärker, als die klassische Formel erwarten lässt.
 
@@ -99,15 +110,15 @@ Nahe der Lichtgeschwindigkeit wächst $\gamma$ stark. Der Impuls wächst dann vi
   Berechnung
 </span>
 
-In der Protonentherapie werden Tumoren mit schnellen Protonen bestrahlt. Magnetfelder lenken den Protonenstrahl und richten ihn auf das Zielgebiet. Wie stark ein Magnet ein Proton ablenkt, hängt von seinem Impuls ab. Wird der Impuls falsch berechnet, kann der Strahl von der geplanten Bahn abweichen und gesundes Gewebe stärker treffen. Ein Proton ($m = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$) bewegt sich mit $v = 0{,}60\,c$. <u>Berechne</u> den klassischen Impuls und den relativistischen Impuls. <u>Vergleiche</u> beide Werte.
+In der Protonentherapie werden Tumoren mit schnellen Protonen bestrahlt. Magnetfelder lenken den Protonenstrahl und richten ihn auf das Zielgebiet. Wie stark ein Magnet ein Proton ablenkt, hängt von seinem Impuls ab. Wird der Impuls falsch berechnet, kann der Strahl von der geplanten Bahn abweichen und gesundes Gewebe stärker treffen. Ein Proton ($m_0 = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$) bewegt sich mit $v = 0{,}60\,c$. <u>Berechne</u> den klassischen Impuls und den relativistischen Impuls. <u>Vergleiche</u> beide Werte.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 <p>$v = 0{,}60 \cdot 3{,}0 \cdot 10^8\,\mathrm{m/s} = 1{,}8 \cdot 10^8\,\mathrm{m/s}$.</p>
-<p>Klassisch: $p = m\,v \approx 1{,}67 \cdot 10^{-27}\,\mathrm{kg} \cdot 1{,}8 \cdot 10^8\,\mathrm{m/s} \approx 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
+<p>Klassisch: $p = m_0\,v \approx 1{,}67 \cdot 10^{-27}\,\mathrm{kg} \cdot 1{,}8 \cdot 10^8\,\mathrm{m/s} \approx 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
 <p>Relativistisch: $\gamma = 1/\sqrt{1 - 0{,}60^2} = 1{,}25$.</p>
-<p>$p = \gamma\,m\,v \approx 1{,}25 \cdot 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s} \approx 3{,}8 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
+<p>$p = \gamma\,m_0\,v \approx 1{,}25 \cdot 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s} \approx 3{,}8 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
 <p>Der relativistische Impuls ist etwa $25\,\%$ größer als der klassische Wert.</p>
 </details>
 
@@ -115,27 +126,27 @@ In der Protonentherapie werden Tumoren mit schnellen Protonen bestrahlt. Magnetf
 <div class="mp-title">Kernaussage</div>
 
 Der relativistische Impuls lautet
-$$p = \gamma\,m\,v.$$
-Für $v \ll c$ ist $\gamma \approx 1$. Der klassische Impuls $p = m\,v$ bleibt dann eine gute Näherung.
+$$p = \gamma\,m_0\,v.$$
+Für $v \ll c$ ist $\gamma \approx 1$. Der klassische Impuls $p = m_0\,v$ bleibt dann eine gute Näherung.
 :::
 
 ## Relativistische Energie
 
 ::: {.callout-note title="Relevanz"}
-Die Formel $E_0 = m\,c^2$ gehört zu den bekanntesten Formeln der Naturwissenschaft. Sie verknüpft Masse und Energie über den Faktor $c^2$. In der Sonne wird bei Kernfusion ein kleiner Teil der Ruheenergie in andere Energieformen umgewandelt. So lässt sich verstehen, warum schon wenig Masse sehr viel Energie liefern kann.
+Die Formel $E_0 = m_0\,c^2$ gehört zu den bekanntesten Formeln der Naturwissenschaft. Sie verknüpft Masse und Energie über den Faktor $c^2$. In der Sonne wird bei Kernfusion ein kleiner Teil der Ruheenergie in andere Energieformen umgewandelt. So lässt sich verstehen, warum schon wenig Masse sehr viel Energie liefern kann.
 :::
 
 ::: {.mp-goal-strip}
 Du <u>nennst</u> die Formeln für Ruheenergie, Gesamtenergie und kinetische Energie.
 
-Du <u>erläuterst</u> die Bedeutung der Ruheenergie $E_0 = m\,c^2$.
+Du <u>erläuterst</u> die Bedeutung der Ruheenergie $E_0 = m_0\,c^2$.
 
 Du <u>berechnest</u> Ruheenergie, Gesamtenergie und kinetische Energie.
 :::
 
 Eine weitere Folgerung der speziellen Relativitätstheorie lautet: Masse und Energie sind äquivalent. Diese Aussage steckt in der Formel
 
-$$E_0 = m\,c^2.$$
+$$E_0 = m_0\,c^2.$$
 
 Die Energie $E_0$ heißt **Ruheenergie**.
 
@@ -143,23 +154,25 @@ Die Formel sagt nicht: Nur ruhende Körper besitzen Energie. Sie benennt den Ene
 
 Kommt Bewegung hinzu, besitzt der Körper zusätzlich kinetische Energie. Wenn keine potenzielle Energie vorhanden ist, ist die Gesamtenergie
 
-$$E = E_0 + K = m\,c^2 + K.$$
+$$E = E_0 + K = m_0\,c^2 + K.$$
 
 Diese Gesamtenergie definieren wir relativistisch durch:
 
-$$E = \gamma\,m\,c^2.$$
+$$E = \gamma\,m_0\,c^2.$$
 
 Diese Definition erfüllt die Forderung, dass die Gesamtenergie in einem isolierten System erhalten bleibt. Wir leiten sie hier nicht her. Eine mathematische Herleitung aus dem relativistischen Impuls ist möglich. Du findest sie zum Beispiel im Giancoli [@giancoli2010physik, S. 1248--1249].
 
 Für $v = 0$ ist $\gamma = 1$. Dann wird aus der Gesamtenergie die Ruheenergie:
 
-$$E = m\,c^2 = E_0.$$
+$$E = m_0\,c^2 = E_0.$$
 
 Stellst du die Gleichung nach der kinetischen Energie um, erhältst du:
 
-$$K = E - E_0 = \gamma\,m\,c^2 - m\,c^2 = (\gamma - 1)\,m\,c^2.$$
+$$K = E - E_0 = \gamma\,m_0\,c^2 - m_0\,c^2 = (\gamma - 1)\,m_0\,c^2.$$
 
-Für kleine Geschwindigkeiten ist diese Energie fast gleich der klassischen kinetischen Energie $K = \frac{1}{2}\,m\,v^2$. Nahe der Lichtgeschwindigkeit wächst $\gamma$ sehr stark. Ein Körper mit Masse kann die Lichtgeschwindigkeit nicht erreichen, weil dafür unbegrenzt viel kinetische Energie nötig wäre.
+Diese Energie hat zwei Grenzfälle. Für kleine Geschwindigkeiten geht sie in die klassische kinetische Energie $K = \frac{1}{2}\,m_0\,v^2$ über. Das ist das **Korrespondenzprinzip**: Für $v \ll c$ bleibt die klassische Formel eine gute Näherung. Nahe der Lichtgeschwindigkeit wächst $\gamma$ stark, und beide Formeln laufen weit auseinander. Ein Körper mit Masse kann die Lichtgeschwindigkeit nicht erreichen, weil dafür unbegrenzt viel kinetische Energie nötig wäre.
+
+Daran siehst du den **Gültigkeitsbereich**: Die relativistische Formel gilt immer, die klassische nur für langsame Körper. Im Graphen siehst du beide Kurven im Vergleich.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -171,7 +184,7 @@ Für kleine Geschwindigkeiten ist diese Energie fast gleich der klassischen kine
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier ein interaktiver Graph zur relativistischen kinetischen Energie $K = (\gamma - 1)\,m\,c^2$.
+In der HTML-Version erscheint hier ein interaktiver Graph zur relativistischen kinetischen Energie $K = (\gamma - 1)\,m_0\,c^2$.
 :::
 :::
 
@@ -179,7 +192,7 @@ Die Gesamtenergie eines isolierten Systems bleibt erhalten. Wenn bei einer Reakt
 
 In der Sonne verschmelzen Wasserstoffkerne über mehrere Schritte zu Helium. Die entstehenden Teilchen haben zusammen etwas weniger Ruhemasse als die Ausgangsteilchen. Diese Massedifferenz verschwindet nicht. Sie erscheint als Energie. Für die frei werdende Energie gilt:
 
-$$E_\text{frei} = \Delta m\,c^2.$$
+$$E_\text{frei} = \Delta m_0\,c^2.$$
 
 Dabei ist $\Delta m$ die fehlende Masse nach der Reaktion.
 
@@ -264,9 +277,9 @@ $$A = 4\pi r^2 = 4\pi \cdot (1{,}5 \cdot 10^{11}\,\mathrm{m})^2 \approx 2{,}8 \c
 
 $$P = S \cdot A \approx 1{,}36 \cdot 10^3\,\mathrm{\tfrac{W}{m^2}} \cdot 2{,}8 \cdot 10^{23}\,\mathrm{m^2} \approx 3{,}8 \cdot 10^{26}\,\mathrm{W}.$$
 
-<p>In einer Sekunde strahlt die Sonne die Energie $E = P \cdot t \approx 3{,}8 \cdot 10^{26}\,\mathrm{J}$ ab. Aus $E = \Delta m\,c^2$ folgt:</p>
+<p>In einer Sekunde strahlt die Sonne die Energie $E = P \cdot t \approx 3{,}8 \cdot 10^{26}\,\mathrm{J}$ ab. Aus $E = \Delta m_0\,c^2$ folgt:</p>
 
-$$\Delta m = \frac{E}{c^2} \approx \frac{3{,}8 \cdot 10^{26}\,\mathrm{J}}{(3{,}0 \cdot 10^8\,\mathrm{m/s})^2} \approx 4{,}2 \cdot 10^9\,\mathrm{kg}.$$
+$$\Delta m_0 = \frac{E}{c^2} \approx \frac{3{,}8 \cdot 10^{26}\,\mathrm{J}}{(3{,}0 \cdot 10^8\,\mathrm{m/s})^2} \approx 4{,}2 \cdot 10^9\,\mathrm{kg}.$$
 
 <p>Die Sonne verliert pro Sekunde also rund 4 Millionen Tonnen Masse.</p>
 </details>
@@ -277,14 +290,14 @@ $$\Delta m = \frac{E}{c^2} \approx \frac{3{,}8 \cdot 10^{26}\,\mathrm{J}}{(3{,}0
   Berechnung
 </span>
 
-In Kapitel 1 hast du das Myon aus der kosmischen Strahlung kennengelernt. Es fliegt mit $v = 0{,}998\,c$, dazu gehört der Lorentzfaktor $\gamma \approx 15{,}8$. Seine Masse ist $m \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg}$.
+In Kapitel 1 hast du das Myon aus der kosmischen Strahlung kennengelernt. Es fliegt mit $v = 0{,}998\,c$, dazu gehört der Lorentzfaktor $\gamma \approx 15{,}8$. Seine Masse ist $m_0 \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg}$.
 
 <u>Berechne</u> die Ruheenergie $E_0$, die Gesamtenergie $E$ und die kinetische Energie $K$ des Myons.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>$E_0 = m\,c^2 \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 1{,}7 \cdot 10^{-11}\,\mathrm{J}$.</p>
+<p>$E_0 = m_0\,c^2 \approx 1{,}88 \cdot 10^{-28}\,\mathrm{kg} \cdot (3{,}0 \cdot 10^8\,\mathrm{m/s})^2 \approx 1{,}7 \cdot 10^{-11}\,\mathrm{J}$.</p>
 <p>$E = \gamma\,E_0 \approx 15{,}8 \cdot 1{,}7 \cdot 10^{-11}\,\mathrm{J} \approx 2{,}7 \cdot 10^{-10}\,\mathrm{J}$.</p>
 <p>$K = E - E_0 = (\gamma - 1)\,E_0 \approx 14{,}8 \cdot 1{,}7 \cdot 10^{-11}\,\mathrm{J} \approx 2{,}5 \cdot 10^{-10}\,\mathrm{J}$.</p>
 <p>Die kinetische Energie ist also fast 15-mal so groß wie die Ruheenergie. Das passt dazu, dass sich das Myon mit $0{,}998\,c$ sehr nah an der Lichtgeschwindigkeit bewegt.</p>
@@ -294,9 +307,9 @@ In Kapitel 1 hast du das Myon aus der kosmischen Strahlung kennengelernt. Es fli
 <div class="mp-title">Kernaussage</div>
 
 Ein Körper besitzt wegen seiner Masse die Ruheenergie
-$$E_0 = m\,c^2.$$
+$$E_0 = m_0\,c^2.$$
 Bewegt er sich, besitzt er die Gesamtenergie
-$$E = \gamma\,m\,c^2.$$
+$$E = \gamma\,m_0\,c^2.$$
 Die kinetische Energie ist der zusätzliche Anteil:
-$$K = (\gamma - 1)\,m\,c^2.$$
+$$K = (\gamma - 1)\,m_0\,c^2.$$
 :::

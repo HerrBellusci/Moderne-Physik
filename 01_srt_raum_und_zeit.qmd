@@ -13,6 +13,7 @@
 <script src="assets/animations/srt/used/gleichzeitigkeit/relativitaet-gleichzeitigkeit.js"></script>
 <script src="assets/animations/srt/used/zeitdilatation/lichtuhr.js"></script>
 <script src="assets/animations/srt/used/zeitdilatation/lorentzfaktor.js"></script>
+<script src="assets/animations/srt/used/invarianz/drehung-abstand.js"></script>
 <script src="assets/animations/srt/used/zeitdilatation/myon-erdsystem.js"></script>
 <script src="assets/animations/srt/used/laengenkontraktion/ausgangsproblem.js"></script>
 <script src="assets/animations/srt/used/doppler/doppler-allgemein.js"></script>
@@ -128,8 +129,6 @@ In der HTML-Version erscheint hier eine Visualisierung zu gleichförmig geradlin
 </ol>
 
 ::: {.mp-box .mp-misconception}
-<div class="mp-title">Präkonzept: Geschwindigkeit ist Schnelligkeit</div>
-
 Die Schüleraussage beruht auf der verbreiteten Vorstellung, Geschwindigkeit beschreibe nur, wie schnell sich ein Körper bewegt. Dabei wird übersehen, dass die Geschwindigkeit ein Vektor ist und auch eine Richtung besitzt. Bei der Kreisbewegung bleibt zwar das **Tempo**, also der Betrag der Geschwindigkeit, konstant. Die Richtung der Geschwindigkeit ändert sich jedoch fortlaufend. Deshalb ist der Körper beschleunigt [@schecker2018, S. 66].
 :::
 </details>
@@ -513,6 +512,16 @@ $$
 $$
 
 Diese von der mitbewegten Lichtuhr gemessene Zeit heißt Eigenzeit $\Delta t_0$.
+
+<details class="mp-details mp-misconception">
+<summary>Was bedeutet die kleine 0?</summary>
+<p>Die kleine $0$ heißt: aus der Ruhe betrachtet. Sie markiert eine Größe, die im eigenen Ruhesystem des Objekts gemessen wird. Genauso begegnet sie dir später bei der Eigenlänge $L_0$, der Ruhemasse $m_0$ und der Ruheenergie $E_0$.</p>
+<p>Solche Größen sind invariant. Die kleine Simulation soll dir ein Gefühl dafür geben, was das bedeutet:</p>
+<figure class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="drehung-invarianz" data-srt-motion-control data-srt-label="Die Punkte A und B drehen sich auf Kreisbahnen um den Ursprung des Koordinatensystems. Ihre Koordinaten ändern sich fortlaufend, ihr Abstand bleibt konstant."></div>
+</figure>
+<p>Drehen sich die Punkte A und B um den Ursprung, ändern sich ihre Koordinaten fortlaufend. Der Abstand zwischen ihnen bleibt gleich, er ist invariant.</p>
+</details>
 
 Für die Person am Bahnsteig bewegt sich der Zug während der Laufzeit des Lichtpulses nach rechts. Deshalb verläuft der Lichtweg diagonal und ist länger als $2D$. Die Zeitdauer, die dem Tick im Bahnsteigsystem zugeordnet wird, bezeichnen wir mit $\Delta t$.
 
@@ -1233,7 +1242,7 @@ Im Garagensystem passt das Auto kurz vollständig in die Garage. Im Autosystem i
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-Relativistische Effekte treten nicht einzeln auf. Wenn sich zwei Inertialsysteme relativ zueinander bewegen, treten Längenkontraktion, Zeitdilatation und Relativität der Gleichzeitigkeit gemeinsam auf. Viele scheinbare Paradoxien lösen sich auf, wenn man diese Effekte nicht getrennt voneinander betrachtet.
+Relativistische Effekte treten nicht einzeln auf. Wenn sich zwei Inertialsysteme relativ zueinander bewegen, treten Längenkontraktion, Zeitdilatation und Relativität der Gleichzeitigkeit gemeinsam auf. Viele scheinbare Paradoxien lösen sich auf, wenn man diese Effekte gemeinsam betrachtet.
 :::
 
 #### Ausblick: Weitere Paradoxa

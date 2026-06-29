@@ -1,6 +1,6 @@
 # Vorwort {.unnumbered}
 
-Dieses Arbeitsheft nutzt farbige Kästen. Die **Farbe zeigt die Funktion** eines Kastens an. So erkennst du auf einen Blick, was ein Kasten von dir möchte. Die folgende Legende stellt die Kästen kurz vor.
+Dieses Arbeitsheft nutzt farbige Kästen. Die **Farbe zeigt die Funktion** eines Kastens an. So erkennst du auf einen Blick, wozu ein Kasten dient. Die folgende Legende stellt die Kästen kurz vor.
 
 ::: {.callout-note title="Relevanz"}
 **Blau (Kontext):** Warum ist das Thema wichtig oder im Alltag relevant?
@@ -23,5 +23,5 @@ Dieses Arbeitsheft nutzt farbige Kästen. Die **Farbe zeigt die Funktion** eines
 :::
 
 ::: {.mp-box .mp-misconception .mp-compact}
-**Rot (Achtung):** Häufige Präkonzepte.
+**Rot (Achtung):** Didaktischer Hinweis.
 :::
