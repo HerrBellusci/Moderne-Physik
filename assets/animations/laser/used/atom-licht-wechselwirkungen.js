@@ -137,12 +137,12 @@
       "stroke-linecap": "round"
     }, parent);
 
-    SRT.addText(parent, ATOM.x0 - 52, ATOM.e2 + 5, "E2", "label", {
+    SRT.addText(parent, ATOM.x0 - 52, ATOM.e2 + 5, "E₂", "label", {
       fill: LEVEL,
       "font-size": 14,
       "font-weight": "850"
     });
-    SRT.addText(parent, ATOM.x0 - 52, ATOM.e1 + 5, "E1", "label", {
+    SRT.addText(parent, ATOM.x0 - 52, ATOM.e1 + 5, "E₁", "label", {
       fill: LEVEL,
       "font-size": 14,
       "font-weight": "850"
@@ -207,13 +207,22 @@
     }
   }
 
+  // Deterministischer Pseudozufall je Durchlauf: gleicher Durchlauf sieht
+  // immer gleich aus, jeder neue Durchlauf bekommt Zeitpunkt und Richtung neu.
+  function rand01(seed) {
+    const s = Math.sin(seed * 127.1 + 311.7) * 43758.5453;
+    return s - Math.floor(s);
+  }
+
   function drawSpontaneous({ parent, t, SRT }) {
-    const cycle = (t % 4800) / 4800;
+    const period = 4800;
+    const run = Math.floor(t / period);
+    const cycle = (t % period) / period;
     const phase = -t * 0.012 + 0.7;
-    const event = 0.42;
+    const event = 0.3 + rand01(run) * 0.28;
     const after = clamp((cycle - event) / (1 - event), 0, 1);
     const electronY = cycle < event ? ATOM.e2 : mix(ATOM.e2, ATOM.e1, ease(after * 2.2));
-    const angle = -0.38;
+    const angle = rand01(run + 57) * Math.PI * 2;
 
     background(parent, SRT);
     drawAtom(parent, SRT, electronY, { transition: cycle > event ? "down" : null });

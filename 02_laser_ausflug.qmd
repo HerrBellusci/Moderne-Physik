@@ -9,6 +9,7 @@
 <script src="assets/animations/laser/used/metastabil.js"></script>
 <script src="assets/animations/laser/used/resonator.js"></script>
 <script src="assets/animations/laser/used/spektren-zoom.js"></script>
+<script src="assets/animations/laser/used/rubinlaser.js"></script>
 <script src="assets/animations/shared/srt-workbook.js"></script>
 ```
 :::
@@ -59,7 +60,7 @@ $$
 E_\text{Photon} = h f = \Delta E = E_2 - E_1
 $$
 
-Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man **Absorption**. Die Darstellung zeigt diesen Übergang.
+Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man **Absorption**. Die Darstellung zeigt diesen Übergang. Der große Kreis deutet das Atom an. Der blaue Punkt steht für den Energiezustand des Atoms: Er sitzt auf dem Niveau, in dem sich das Atom gerade befindet.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -129,7 +130,9 @@ In der HTML-Version erscheint hier eine Darstellung: Ein passendes Photon trifft
 :::
 :::
 
-Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst eine exakte Kopie seiner selbst aus. Alle Photonen aus derselben Kette solcher Kopiervorgänge haben eine feste Phasenbeziehung zueinander. Solches Licht nennt man **kohärent**. Die Kohärenz ist eine der besonderen Eigenschaften des Laserlichts. Die stimulierte Emission legt dafür den Grund. Wie aus vielen einzelnen Ketten ein einziger geordneter Strahl wird, siehst du im Abschnitt zum Resonator.
+Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst eine exakte Kopie seiner selbst aus. Jede Kopie kann weitere Kopien auslösen. Alle Photonen aus derselben Kette schwingen im gleichen Takt: Wellenberg liegt auf Wellenberg, Wellental auf Wellental.
+
+Der Begriff Kohärenz verlangt weniger: Zwei Wellen heißen **kohärent**, wenn ihre Phasenverschiebung zueinander konstant bleibt. Die Wellen dürfen gegeneinander versetzt sein, solange der Versatz gleich bleibt. Die Photonen aus derselben Kette erfüllen diese Bedingung in der strengsten Form: Ihr Versatz ist null. Die Kohärenz ist eine der besonderen Eigenschaften des Laserlichts. Die stimulierte Emission legt dafür den Grund. Wie aus vielen einzelnen Ketten ein einziger geordneter Strahl wird, siehst du im Abschnitt zum Resonator.
 
 Kohärentes Licht interferiert besonders gut. Laser werden in modernen Michelson-Interferometern eingesetzt, etwa bei Messungen von Gravitationswellen, wie in [Abschnitt 1.2](01_srt_raum_und_zeit.qmd#michelson-morley-experiment) erwähnt.
 
@@ -138,6 +141,22 @@ Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
 1. Bei der **Absorption** nimmt ein Atom ein Photon auf.
 2. Bei der **spontanen Emission** sendet ein angeregtes Atom von selbst ein Photon aus.
 3. Bei der **stimulierten Emission** löst ein passendes Photon die Aussendung eines zweiten Photons aus.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Bei der spontanen und bei der stimulierten Emission sendet ein angeregtes Atom ein Photon aus.
+
+<u>Vergleiche</u> die beiden Vorgänge nach Auslöser, Zeitpunkt und Richtung des ausgesandten Photons.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Die spontane Emission startet im Atom selbst. Zeitpunkt und Richtung des Photons sind zufällig. Die stimulierte Emission wird von einem passenden Photon ausgelöst. Sie geschieht beim Eintreffen dieses Photons, und das neue Photon läuft in dieselbe Richtung wie das auslösende. Es schwingt zudem im gleichen Takt: Die beiden Photonen sind kohärent.</p>
+</details>
 
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
@@ -169,7 +188,7 @@ Was mit einem passenden Photon geschieht, hängt von der Besetzung der Energieni
 
 Für Verstärkung braucht man die umgekehrte Besetzung. Es müssen mehr Atome im höheren Niveau $E_2$ sitzen als im tieferen $E_1$. Dann kann ein passendes Photon im Medium viele weitere Photonen auslösen. Diese Umkehr der Besetzung heißt **Besetzungsinversion**.
 
-In der Animation schaltest du zwischen normaler Besetzung und Besetzungsinversion um. Jedes Atom zeigt seine beiden Niveaus $E_1$ und $E_2$. Der Punkt steht für den Energiezustand des Atoms: sitzt er oben auf $E_2$, ist das Atom angeregt, unten auf $E_1$ ist es im Grundzustand. Bei normaler Besetzung wird ein durchlaufendes Photon absorbiert, und angeregte Atome emittieren spontan in zufällige Richtungen. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen.
+In der Animation schaltest du zwischen normaler Besetzung und Besetzungsinversion um. Jedes Atom zeigt seine beiden Niveaus $E_1$ und $E_2$. Der Punkt zeigt wieder den Energiezustand des Atoms: sitzt er oben auf $E_2$, ist das Atom angeregt, unten auf $E_1$ ist es im Grundzustand. Bei normaler Besetzung wird ein durchlaufendes Photon absorbiert, und angeregte Atome emittieren spontan in zufällige Richtungen. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -190,6 +209,22 @@ In der HTML-Version erscheint hier eine Animation mit einem Umschalter zwischen 
 
 Von einer Besetzungsinversion spricht man, wenn ein höheres Energieniveau von mehr Atomen besetzt ist als ein tieferes. Dann kann ein passendes Photon im Lasermedium weitere gleiche Photonen auslösen.
 :::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Lichtstrahl mit passender Photonenenergie durchquert ein Medium im thermischen Gleichgewicht.
+
+<u>Begründe</u>, dass der Strahl beim Durchgang schwächer wird.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Im thermischen Gleichgewicht sitzen fast alle Atome im Grundzustand. Ein passendes Photon trifft darum weit häufiger auf ein Atom im Grundzustand als auf ein angeregtes Atom. Absorption tritt viel häufiger auf als stimulierte Emission: Es verschwinden mehr Photonen aus dem Strahl, als durch stimulierte Emission hinzukommen. Die Zahl der Photonen nimmt ab, der Strahl wird schwächer.</p>
+</details>
 
 Für eine Besetzungsinversion braucht ein Laser zweierlei.
 
@@ -212,6 +247,23 @@ Die folgende Simulation zeigt diese Analogie und ein Drei-Niveau-System mit meta
 In der HTML-Version erscheint hier eine Darstellung: Eine Kugel rollt einen Berg hinab und bleibt in einer Mulde auf halbem Weg liegen, bevor sie weiter nach unten zum Grundzustand rollt. Die Mulde steht für das metastabile Niveau. Daneben steht ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand.
 :::
 :::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+Am Kapitelanfang standen die nachleuchtenden Sterne an der Zimmerdecke: Sie liegen zuerst im Licht und leuchten nach dem Ausschalten noch minutenlang weiter.
+
+<u>Erkläre</u> das Nachleuchten mit dem Modell des metastabilen Niveaus.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Das Licht regt die Teilchen des Leuchtstoffs an, sie nehmen Energie auf. Ein Teil der Teilchen gelangt in metastabile Zustände und bleibt dort deutlich länger als in gewöhnlichen angeregten Zuständen. Die spontane Emission tritt stark verzögert auf: Die gespeicherte Energie wird über Minuten nach und nach als Licht abgegeben. Die Sterne leuchten weiter, obwohl die Lichtquelle aus ist.</p>
+<p>Reale Leuchtstoffe nutzen zusätzlich weitere Zwischenschritte, um die Energie so lange zu speichern. Der Kern bleibt: Zustände, aus denen die Emission stark verzögert erfolgt.</p>
+</details>
 
 Zweitens braucht der Laser eine Energiezufuhr von außen. Sie bringt Atome überhaupt erst in höhere Energieniveaus. Von dort können sie in das metastabile Niveau gelangen. Bei der stimulierten Emission wechseln Atome vom metastabilen Niveau in ein tieferes Niveau und senden Photonen aus. Die Besetzung des metastabilen Niveaus nimmt dabei ab. Damit die Besetzungsinversion erhalten bleibt, muss immer wieder Energie zugeführt werden. Diese Energiezufuhr heißt **Pumpen**. Je nach Lasertyp geschieht das durch eine Blitzlampe, eine andere Lichtquelle oder einen elektrischen Strom.
 
@@ -345,26 +397,6 @@ In der HTML-Version erscheint hier ein interaktives Diagramm: vier Spektren im s
 :::
 :::
 
-Der Spiegelabstand ist dabei nicht auf einen einzigen Wert festgelegt. Zu fast jedem Abstand passt eine Wellenlänge aus dem Verstärkungsbereich des Mediums. Der Abstand wählt aus, welche Wellenlänge sich aufbaut.
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
-  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
-  Denkcheck
-</span>
-
-Ein Photon entsteht im Lasermedium durch spontane Emission und läuft schräg zur Resonatorachse.
-
-<u>Begründe</u>, dass es den Laserstrahl kaum aufbaut.
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-
-Das Photon trifft die Spiegel nicht immer wieder. Es verlässt das Lasermedium nach kurzer Zeit. Damit durchquert es das Medium nur selten und löst kaum stimulierte Emission in Strahlrichtung aus. Für den Laserstrahl werden vor allem Photonen verstärkt, die entlang der Resonatorachse laufen.
-
-</details>
-
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
@@ -374,7 +406,9 @@ Der Resonator besteht aus zwei Spiegeln mit dem Lasermedium dazwischen. Er schic
 ## Aufbau eines Lasers: der erste Laser
 
 ::: {.callout-note title="Relevanz"}
-<!-- TODO: alles zusammengeführt am historischen Beispiel des Rubinlasers -->
+1960 baute der Physiker Theodore Maiman den ersten funktionierenden Laser. Sein Lasermedium war ein Rubinkristall. Dieser erste Laser ist bis heute im Einsatz: In Hautarztpraxen entfernen Rubinlaser zum Beispiel Tattoos.
+
+Bisher kennst du die Bausteine einzeln: ein Lasermedium mit Besetzungsinversion, das Pumpen und den Resonator. In diesem Abschnitt setzt du sie am Beispiel des Rubinlasers zu einem echten Gerät zusammen.
 :::
 
 ::: {.mp-goal-strip}
@@ -383,16 +417,114 @@ Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Re
 Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
 :::
 
-<!-- TODO Rubinlaser als konkretes Beispiel: Rubinstab, Blitzlampe, 694 nm; Drei-Niveau-System. -->
+Rubin ist ein Kristall: Korund (Aluminiumoxid) mit einer kleinen Beimischung von Chrom. Einige Aluminium-Ionen im Kristallgitter sind durch **Chrom-Ionen** ersetzt. Diese Chrom-Ionen geben dem Rubin seine rote Farbe, und sie liefern die Energieniveaus für den Laser. Der Kristall hält die Ionen nur an ihrem Platz: Das eigentliche Lasermedium sind die Chrom-Ionen.
 
-<!-- TODO Box: ::: {.mp-box .mp-context} Überblick Aufbau -->
+Die Chrom-Ionen bilden das Drei-Niveau-System aus dem letzten Abschnitt: den Grundzustand, ein hohes Pumpniveau und dazwischen ein metastabiles Niveau. Um den Rubinstab liegt eine **Blitzlampe**. Ihr grünes und blaues Licht hebt die Chrom-Ionen vom Grundzustand in das Pumpniveau. Von dort wechseln sie schnell in das metastabile Niveau und sammeln sich.
 
-<!-- TODO Rechnung/Aufgabe zur Wellenlänge 694 nm (E = h·c/λ) als grüne callout-tip oder mp-details -->
+Das untere Niveau des Laserübergangs ist beim Rubin der Grundzustand. Für eine Besetzungsinversion muss die Blitzlampe also mehr als die Hälfte aller Chrom-Ionen anheben. Ein kurzer, sehr heller Blitz schafft das. Der Rubinlaser arbeitet in Pulsen: Auf jeden Blitz folgt ein Laserpuls.
+
+An den Enden des Stabs sitzen die beiden Spiegel des Resonators. Nach dem Blitz startet ein spontan ausgesandtes Photon auf dem Laserübergang die Lawine: Es löst an angeregten Chrom-Ionen stimulierte Emission aus. Der Resonator wählt die Richtung entlang der Stabachse aus und schickt das Licht immer wieder durch den Stab. Durch den teildurchlässigen Spiegel verlässt ein roter Laserpuls den Kristall. Seine Wellenlänge: 694 nm.
+
+Die Animation zeigt einen Puls des Rubinlasers. Die Blitzlampe blitzt, die Chrom-Ionen sammeln sich im metastabilen Niveau, dann verlässt der rote Laserpuls den Stab durch den teildurchlässigen Spiegel. Das Niveauschema darunter zeigt denselben Ablauf für ein einzelnes Chrom-Ion.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-rubinlaser" data-srt-motion-control data-srt-label="Schema eines Rubinlasers. Oben der Aufbau: ein Rubinstab zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel, umgeben von einer wendelförmigen Blitzlampe. Die Lampe blitzt, danach baut sich rotes Licht im Stab auf und ein roter Laserstrahl mit 694 Nanometern tritt rechts aus. Unten das Drei-Niveau-System der Chrom-Ionen: Ein Punkt zeigt den Energiezustand eines Chrom-Ions, das gepumpt wird, schnell in das metastabile Niveau wechselt und beim Laserübergang in den Grundzustand zurückfällt."></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Animation: oben der Aufbau des Rubinlasers mit Rubinstab, Blitzlampe und den beiden Spiegeln, unten das Drei-Niveau-System der Chrom-Ionen. Die Lampe blitzt, die Ionen sammeln sich im metastabilen Niveau, und ein roter Laserpuls mit 694 nm verlässt den Stab durch den teildurchlässigen Spiegel.
+:::
+:::
+
+::: {.mp-box .mp-context}
+<div class="mp-title">Der Rubinlaser im Überblick</div>
+
+- **Lasermedium:** Chrom-Ionen im Rubinstab. Sie bilden ein Drei-Niveau-System mit metastabilem Niveau.
+- **Pumpquelle:** eine Blitzlampe um den Stab. Ihr Licht stellt die Besetzungsinversion her.
+- **Resonator:** zwei Spiegel an den Stabenden, einer teildurchlässig. Dort tritt der Laserpuls aus.
+:::
+
+Wie groß die Energie eines einzelnen Photons im Laserpuls ist, rechnest du jetzt selbst nach.
+
+:::: {.mp-box .mp-math}
+<div class="mp-title">Rechnung</div>
+
+<span class="mp-task-kind mp-task-kind-derive" aria-label="Stift und Papier">
+  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  Stift und Papier
+</span>
+
+Beim Laserübergang gibt ein Chrom-Ion ein Photon mit der Wellenlänge $\lambda = 694\,\mathrm{nm}$ ab.
+
+**Deine Aufgabe:** <u>Berechne</u> die Energie dieses Photons. Verwende $E_\text{Photon} = h f$ mit $h = 6{,}626 \cdot 10^{-34}\,\mathrm{Js}$ und die Lichtgeschwindigkeit $c = 3{,}00 \cdot 10^{8}\,\tfrac{\mathrm{m}}{\mathrm{s}}$.
+
+Wähle deinen Einstieg:
+
+::: {.panel-tabset}
+
+### Ganz allein
+
+Hier bekommst du keine Hilfe, und das ist Absicht. Du kennst beide nötigen Zusammenhänge schon. Geh erst zu „Mit Hinweisen", wenn du wirklich feststeckst.
+
+### Mit Hinweisen
+
+- In $E_\text{Photon} = h f$ steht die Frequenz, gegeben ist aber die Wellenlänge. Beide hängen über $c = \lambda \cdot f$ zusammen.
+- Rechne die Wellenlänge in Meter um: $694\,\mathrm{nm} = 6{,}94 \cdot 10^{-7}\,\mathrm{m}$.
+- Kontrolle über die Größenordnung: Photonen des sichtbaren Lichts tragen einige $10^{-19}\,\mathrm{J}$.
+
+### Schritt für Schritt
+
+1. <u>Stelle</u> $c = \lambda \cdot f$ nach $f$ um.
+2. <u>Berechne</u> $f$ mit $\lambda = 6{,}94 \cdot 10^{-7}\,\mathrm{m}$.
+3. <u>Setze</u> $f$ in $E_\text{Photon} = h f$ ein und <u>berechne</u> die Energie.
+
+:::
+
+<details class="mp-details">
+<summary>Kontrollrechnung anzeigen</summary>
+
+$$
+\begin{aligned}
+f &= \frac{c}{\lambda}
+  = \frac{3{,}00 \cdot 10^{8}\,\tfrac{\mathrm{m}}{\mathrm{s}}}{6{,}94 \cdot 10^{-7}\,\mathrm{m}}
+  \approx 4{,}32 \cdot 10^{14}\,\mathrm{Hz} \\[10pt]
+E_\text{Photon} &= h f
+  \approx 6{,}626 \cdot 10^{-34}\,\mathrm{Js} \cdot 4{,}32 \cdot 10^{14}\,\mathrm{Hz}
+  \approx 2{,}86 \cdot 10^{-19}\,\mathrm{J}
+\end{aligned}
+$$
+
+Diese Energie ist der Abstand zwischen dem metastabilen Niveau und dem Grundzustand der Chrom-Ionen.
+
+</details>
+::::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Der kurze Laserpuls zerlegt die Farbpigmente in der Haut. Das gelingt nur, wenn das Pigment das Laserlicht absorbiert. Zur Erinnerung: Ein Körper zeigt die Farbe des Lichts, das er zurückstreut; die übrigen Anteile absorbiert er. Ein Patient möchte ein rotes Tattoo entfernen lassen.
+
+<u>Beurteile</u>, ob der Rubinlaser mit seiner Wellenlänge von 694 nm (rotes Licht) dafür geeignet ist.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet.</p>
+<p>Der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht. Eine andere Wellenlänge gehört zu einem anderen Laserübergang: Der Arzt braucht einen Laser mit einem anderen Lasermedium.</p>
+</details>
 
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-<!-- TODO -->
+Der Rubinlaser vereint die drei Bausteine des Lasers. Das Lasermedium sind Chrom-Ionen in einem Korund-Kristall; sie bilden ein Drei-Niveau-System mit metastabilem Niveau. Eine Blitzlampe pumpt die Ionen und stellt die Besetzungsinversion her. Zwei Spiegel an den Stabenden bilden den Resonator. Durch den teildurchlässigen Spiegel verlässt ein roter Laserpuls mit der Wellenlänge 694 nm den Kristall.
 :::
 
 <!-- ====================================================================== -->
