@@ -5,7 +5,10 @@
 <link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
-<script src="assets/animations/laser/used/monochromasie.js"></script>
+<script src="assets/animations/laser/used/besetzungsinversion.js"></script>
+<script src="assets/animations/laser/used/metastabil.js"></script>
+<script src="assets/animations/laser/used/resonator.js"></script>
+<script src="assets/animations/laser/used/spektren-zoom.js"></script>
 <script src="assets/animations/shared/srt-workbook.js"></script>
 ```
 :::
@@ -17,7 +20,7 @@ Diese Seite befindet sich noch im Aufbau. Das Gerüst steht, die Abschnitte werd
 ::: {.callout-note title="Relevanz"}
 Laser begegnen dir ständig im Alltag. An der Supermarktkasse lesen sie den Barcode. Bei Veranstaltungen erzeugen sie Lichtshows. In Präsentationen dienen sie als Pointer. In der Medizin schneiden und veröden sie Gewebe.
 
-So unterschiedlich diese Anwendungen sind: Ihnen allen liegt dieselbe Erkenntnis aus der Quantenmechanik zugrunde. Was dieses Licht so besonders macht und wie es entsteht, erfährst du in diesem Kapitel.
+So unterschiedlich diese Anwendungen sind: Ihnen allen liegt dieselbe Erkenntnis aus der Quantenphysik zugrunde. Was dieses Licht so besonders macht und wie es entsteht, erfährst du in diesem Kapitel.
 :::
 
 <!-- ====================================================================== -->
@@ -56,62 +59,79 @@ $$
 E_\text{Photon} = h f = \Delta E = E_2 - E_1
 $$
 
-Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man **Absorption**.
+Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man **Absorption**. Die Darstellung zeigt diesen Übergang.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="laser-absorption" data-srt-motion-control data-srt-label="Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand."></div>
-  <figcaption class="srt-workbook-caption">Absorption: Ein passendes Photon hebt das Atom vom Grundzustand in den angeregten Zustand.</figcaption>
 </figure>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: Ein Photon trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand.
+In der HTML-Version erscheint hier eine Darstellung: Ein Photon trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand.
 :::
 :::
 
 Ein angeregtes Atom kann später wieder in ein niedrigeres Energieniveau wechseln. Die frei werdende Energie verlässt das Atom als neues Photon. Dieser Vorgang heißt **spontane Emission**.
 
-Der Vorgang startet im angeregten Atom selbst. Der genaue Zeitpunkt ist zufällig. Auch die Richtung des ausgesandten Photons ist zufällig. Viele Atome senden bei spontaner Emission in viele Richtungen. Das Licht ist ungeordnet.
+Der Vorgang startet im angeregten Atom selbst. Der genaue Zeitpunkt ist zufällig. Auch die Richtung des ausgesandten Photons ist zufällig. Viele Atome senden bei spontaner Emission in viele Richtungen. Das Licht ist ungeordnet. Die Darstellung zeigt eine solche zufällige Emission.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="laser-spontane-emission" data-srt-motion-control data-srt-label="Spontane Emission: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon aus. Zeitpunkt und Richtung sind zufällig."></div>
-  <figcaption class="srt-workbook-caption">Spontane Emission: Ein angeregtes Atom sendet von selbst ein Photon aus. Richtung und Zeitpunkt sind zufällig.</figcaption>
 </figure>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon in zufälliger Richtung aus.
+In der HTML-Version erscheint hier eine Darstellung: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon in zufälliger Richtung aus.
 :::
 :::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Atom absorbiert Photonen der Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Nun trifft ein intensiver Lichtpuls auf das Atom. Er enthält sehr viele Photonen der Frequenz $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$.
+
+<u>Prüfe</u>, ob Photonen aus diesem Lichtpuls absorbiert werden können.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Nein. Für einen einzelnen Absorptionsvorgang zählt die Energie eines einzelnen Photons. Zu diesem Abstand der Energieniveaus gehört die Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Ein Photon mit $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$ hat eine niedrigere Frequenz und damit eine geringere Energie. Sehr viele solche Photonen bedeuten hohe Intensität. Die Energie pro Photon bleibt aber zu klein. Photonen aus diesem Lichtpuls werden für diesen Übergang nicht absorbiert.
+
+</details>
 
 Für den Laser ist ein dritter Fall entscheidend: Ein passendes Photon trifft auf ein Atom, das bereits angeregt ist. Das ankommende Photon bleibt erhalten und läuft weiter. Zugleich wechselt das Atom in das niedrigere Energieniveau und sendet ein zweites Photon aus.
 
-Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und dieselbe Frequenz. Sie laufen in dieselbe Richtung und schwingen im gleichen Takt. Dieser Vorgang heißt **stimulierte Emission**.
+Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und dieselbe Frequenz. Sie laufen in dieselbe Richtung und schwingen im gleichen Takt. Dieser Vorgang heißt **stimulierte Emission**. Die Darstellung zeigt, wie aus einem Photon zwei werden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="laser-stimulierte-emission" data-srt-motion-control data-srt-label="Stimulierte Emission: Ein passendes Photon trifft auf ein angeregtes Atom. Das ankommende Photon läuft weiter und löst ein zweites gleiches Photon aus."></div>
-  <figcaption class="srt-workbook-caption">Stimulierte Emission: Ein passendes Photon löst ein zweites gleiches Photon aus.</figcaption>
 </figure>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: Ein passendes Photon trifft auf ein angeregtes Atom. Danach laufen zwei gleiche Photonen weiter.
+In der HTML-Version erscheint hier eine Darstellung: Ein passendes Photon trifft auf ein angeregtes Atom. Danach laufen zwei gleiche Photonen weiter.
 :::
 :::
 
-Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst ein zweites, gleichartiges Photon aus. Wie daraus im Laser eine Verstärkung werden kann, klärt der nächste Abschnitt.
+Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst eine exakte Kopie seiner selbst aus. Alle Photonen aus derselben Kette solcher Kopiervorgänge haben eine feste Phasenbeziehung zueinander. Solches Licht nennt man **kohärent**. Die Kohärenz ist eine der besonderen Eigenschaften des Laserlichts. Die stimulierte Emission legt dafür den Grund. Wie aus vielen einzelnen Ketten ein einziger geordneter Strahl wird, siehst du im Abschnitt zum Resonator.
+
+Kohärentes Licht interferiert besonders gut. Laser werden in modernen Michelson-Interferometern eingesetzt, etwa bei Messungen von Gravitationswellen, wie in [Abschnitt 1.2](01_srt_raum_und_zeit.qmd#michelson-morley-experiment) erwähnt.
 
 Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
 
@@ -122,31 +142,233 @@ Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-Ein Atom kann ein Photon absorbieren und dadurch in einen angeregten Zustand wechseln. Ein angeregtes Atom kann spontan ein Photon aussenden. Bei der stimulierten Emission löst ein passendes Photon die Aussendung eines zweiten, gleichartigen Photons aus. Für Lichtverstärkung muss dieser Vorgang häufiger auftreten als Absorption.
+Ein Atom kann ein Photon absorbieren und dadurch in einen angeregten Zustand wechseln. Ein angeregtes Atom kann spontan ein Photon aussenden. Bei der stimulierten Emission löst ein passendes Photon die Aussendung eines zweiten, gleichartigen Photons aus. 
 :::
 
 ## Besetzungsinversion und Lasermedium
 
 ::: {.callout-note title="Relevanz"}
-<!-- TODO: warum stimulierte Emission normalerweise nicht überwiegt und wie man das umdreht -->
+Im letzten Abschnitt hast du die stimulierte Emission kennengelernt, den Kern des Lasers. Bekannt ist sie seit 1917 [@einstein1972quantum]. Der erste Laser gelang trotzdem erst 1960, über vierzig Jahre später.
+
+Ein wesentlicher Grund für diese Lücke steckt in diesem Abschnitt. Ein Laser verstärkt Licht nur, wenn mehr Atome im höheren der beiden beteiligten Energieniveaus sitzen als im tieferen. In gewöhnlicher Materie stellt sich das nie von selbst ein. Man braucht ein besonderes Medium und muss ihm von außen Energie zuführen, um diesen Zustand herzustellen.
+
+Nicht jedes Material taugt als Lasermedium. Welche Eigenschaften ein solches Medium mitbringen muss, klärt dieser Abschnitt.
 :::
 
 ::: {.mp-goal-strip}
 Du <u>erklärst</u>, was eine Besetzungsinversion ist.
 
-Du <u>begründest</u>, warum ein Lasermedium gepumpt werden muss und wozu ein metastabiles Niveau dient.
+Du <u>begründest</u>, dass ein Lasermedium gepumpt werden muss, und <u>erklärst</u>, wozu ein metastabiles Niveau dient.
 :::
 
-<!-- TODO Inhalt: Pumpen, metastabiler Zustand, Drei-Niveau-System (Ausblick: Vier-Niveau). -->
+Stell dir eine La-Ola-Welle im Stadion vor. Sie läuft durch die Ränge, weil immer neue Zuschauer aufspringen. Damit sie weiterläuft, müssen entlang ihres Wegs genug Leute bereit sein aufzuspringen. Sind zu wenige bereit, bricht die Welle ab.
 
-<!-- TODO Box: ::: {.mp-box .mp-definition} Besetzungsinversion -->
+Ein Photon, dessen Energie zum Abstand zweier Niveaus passt, kann zweierlei bewirken. Trifft es ein Atom im Grundzustand $E_1$, kann es absorbiert werden. Trifft es ein angeregtes Atom im Niveau $E_2$, kann es stimulierte Emission auslösen: Ein zweites, gleiches Photon kommt hinzu. Beide Vorgänge sind pro Atom gleich wahrscheinlich. Im Bild der La-Ola-Welle entspricht ein angeregtes Atom einem Zuschauer, der bereit ist aufzuspringen.
 
-<!-- TODO Aufgabe: ::: {.mp-box .mp-task} -->
+Was mit einem passenden Photon geschieht, hängt von der Besetzung der Energieniveaus ab. Im thermischen Gleichgewicht, dem normalen Zustand der Materie, sitzen fast alle Atome im Grundzustand. Ein passendes Photon trifft dann meist auf ein Atom im Grundzustand und wird absorbiert.
+
+Für Verstärkung braucht man die umgekehrte Besetzung. Es müssen mehr Atome im höheren Niveau $E_2$ sitzen als im tieferen $E_1$. Dann kann ein passendes Photon im Medium viele weitere Photonen auslösen. Diese Umkehr der Besetzung heißt **Besetzungsinversion**.
+
+In der Animation schaltest du zwischen normaler Besetzung und Besetzungsinversion um. Jedes Atom zeigt seine beiden Niveaus $E_1$ und $E_2$. Der Punkt steht für den Energiezustand des Atoms: sitzt er oben auf $E_2$, ist das Atom angeregt, unten auf $E_1$ ist es im Grundzustand. Bei normaler Besetzung wird ein durchlaufendes Photon absorbiert, und angeregte Atome emittieren spontan in zufällige Richtungen. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-besetzungsinversion" data-srt-motion-control data-srt-label="Interaktive Darstellung mit Umschalter zwischen normaler Besetzung und Besetzungsinversion. Ein Photon läuft durch das Medium. Jedes Atom hat zwei Niveaus, ein Punkt zeigt den Energiezustand des Atoms. Bei normaler Besetzung wird das Photon absorbiert und angeregte Atome emittieren spontan. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen."></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Animation mit einem Umschalter zwischen normaler Besetzung und Besetzungsinversion.
+:::
+:::
+
+::: {.mp-box .mp-definition}
+<div class="mp-title">Besetzungsinversion</div>
+
+Von einer Besetzungsinversion spricht man, wenn ein höheres Energieniveau von mehr Atomen besetzt ist als ein tieferes. Dann kann ein passendes Photon im Lasermedium weitere gleiche Photonen auslösen.
+:::
+
+Für eine Besetzungsinversion braucht ein Laser zweierlei.
+
+Erstens braucht er ein Material, dessen Atome ein metastabiles Niveau besitzen. **Metastabil** bedeutet hier: Die Atome bleiben in einem solchen Niveau deutlich länger als in einem gewöhnlichen angeregten Zustand, oft tausend- bis millionenfach. Spontane Emission ist in diesem Zustand weiterhin möglich, tritt aber verzögert auf. So kann die Zahl der Atome in diesem Niveau steigen.
+
+Das metastabile Niveau kannst du dir mit einer Kugel am Berg vorstellen. Oben hat die Kugel potenzielle Energie. Auf einem glatten Hang rollt sie schnell bis nach unten. Befindet sich auf halbem Weg eine Mulde, bleibt die Kugel dort kurz liegen, bevor sie weiterrollt. Die Mulde entspricht dem metastabilen Niveau.
+
+Die folgende Simulation zeigt diese Analogie und ein Drei-Niveau-System mit metastabilem Niveau.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-metastabil" data-srt-motion-control data-srt-label="Eine Kugel rollt einen Berg hinab und bleibt in einer Mulde auf halbem Weg liegen, bevor sie weiter zum Grundzustand rollt. Die Mulde steht für das metastabile Niveau. Rechts zeigt ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand."></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Darstellung: Eine Kugel rollt einen Berg hinab und bleibt in einer Mulde auf halbem Weg liegen, bevor sie weiter nach unten zum Grundzustand rollt. Die Mulde steht für das metastabile Niveau. Daneben steht ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand.
+:::
+:::
+
+Zweitens braucht der Laser eine Energiezufuhr von außen. Sie bringt Atome überhaupt erst in höhere Energieniveaus. Von dort können sie in das metastabile Niveau gelangen. Bei der stimulierten Emission wechseln Atome vom metastabilen Niveau in ein tieferes Niveau und senden Photonen aus. Die Besetzung des metastabilen Niveaus nimmt dabei ab. Damit die Besetzungsinversion erhalten bleibt, muss immer wieder Energie zugeführt werden. Diese Energiezufuhr heißt **Pumpen**. Je nach Lasertyp geschieht das durch eine Blitzlampe, eine andere Lichtquelle oder einen elektrischen Strom.
+
+<details class="mp-details mp-misconception">
+<summary>Warum reichen zwei Niveaus nicht?</summary>
+<p>Man könnte versuchen, die Atome mit Licht direkt vom Grundzustand $E_1$ in das obere Laserniveau $E_2$ zu pumpen. Das scheitert an einem Wettlauf: Dasselbe Pumplicht passt auch zum Übergang nach unten. Es löst an bereits angeregten Atomen stimulierte Emission aus, und beide Vorgänge sind pro Atom gleich wahrscheinlich.</p>
+<p>Solange mehr Atome unten sitzen, überwiegt die Absorption. Je näher die Besetzung an die Hälfte rückt, desto öfter trifft das Pumplicht ein angeregtes Atom und schickt es wieder nach unten. Mit zwei Niveaus ist höchstens Gleichbesetzung erreichbar, eine Inversion nie.</p>
+<p>Das metastabile Niveau umgeht diesen Wettlauf. Gepumpt wird auf ein höheres Niveau, von dort gelangen die Atome in das metastabile Niveau. Der Laserübergang startet dort und hat eine andere Energie als das Pumplicht. Das Pumplicht kann die Atome aus diesem Niveau nicht wieder nach unten treiben.</p>
+</details>
 
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-<!-- TODO -->
+Damit ein Lasermedium Licht verstärken kann, braucht es eine Besetzungsinversion: Mehr Atome befinden sich im höheren Energieniveau als im tieferen. Dann kann ein passendes Photon auf dem Laserübergang weitere gleiche Photonen auslösen. Ein metastabiles Niveau sorgt dafür, dass diese Besetzung lange genug bestehen kann. Durch Pumpen wird dem Lasermedium immer wieder Energie zugeführt, damit die Besetzungsinversion erhalten bleibt.
+:::
+
+## Der Resonator
+
+::: {.callout-note title="Relevanz"}
+Eine Taschenlampe kann sehr hell sein. Ihr Licht breitet sich trotzdem kegelförmig aus. Ein Laserpointer bleibt über mehrere Meter ein enger Lichtfleck.
+
+Das Lasermedium allein erklärt diese Bündelung noch nicht. Es kann Licht verstärken, aber es legt die Richtung des Strahls nicht fest. Diese Aufgabe übernimmt der Resonator.
+:::
+
+::: {.mp-goal-strip}
+Du <u>beschreibst</u> den Aufbau eines optischen Resonators.
+
+Du <u>erklärst</u>, wie der Resonator Richtungsauswahl, Rückkopplung und Auskopplung ermöglicht.
+
+Du <u>erläuterst</u> die Resonanzbedingung im Resonator.
+:::
+
+Bis hierhin kann das Lasermedium Licht verstärken. Für einen Laser bleiben aber zwei Probleme offen:
+
+- Die entstehenden Photonen laufen zufällig in alle Richtungen.
+- Bei einem einzigen Durchgang durch das Medium bleibt die Intensität des Lichts gering.
+
+Im gepumpten Medium löst schon ein einzelnes Photon eine Lawine gleicher Photonen durch stimulierte Emission aus. Dieses erste Photon entsteht durch spontane Emission, seine Richtung ist zufällig. Die ganze Lawine läuft dann in diese zufällige Richtung. Die meisten dieser Photonen verlassen das Medium seitlich oder schräg. Der enge Laserstrahl, den du kennst, entsteht so noch nicht.
+
+Der Resonator löst dieses Problem durch zwei Spiegel. Zwischen ihnen liegt das Lasermedium. Ein Spiegel reflektiert möglichst vollständig. Der zweite Spiegel ist teildurchlässig. Er reflektiert den größten Teil des Lichts zurück und lässt einen kleineren Teil austreten. Auf dieser Seite tritt der Laserstrahl aus.
+
+::: {.mp-box .mp-definition}
+<div class="mp-title">Optischer Resonator</div>
+
+Ein optischer Resonator ist eine Anordnung aus zwei gegenüberliegenden Spiegeln. Licht kann zwischen ihnen hin- und herlaufen. Im Laser liegt das Lasermedium zwischen den Spiegeln.
+:::
+
+Nur Licht, das ungefähr entlang der Resonatorachse läuft, trifft die Spiegel immer wieder. Dieses Licht durchquert das Lasermedium mehrfach. Bei jedem Durchgang kann es an angeregten Atomen stimulierte Emission auslösen. Die neu entstehenden Photonen haben dieselbe Frequenz und laufen in dieselbe Richtung.
+
+Schräg ausgesandtes Licht verlässt den Resonator nach kurzer Zeit. Es wird kaum weiter verstärkt. Der Resonator wählt damit eine Richtung aus: Entlang der Spiegelachse wächst die Zahl der Photonen. Die Lichtintensität nimmt zu.
+
+Die folgende Simulation zeigt diesen Unterschied. Schalte zwischen beiden Aufbauten um. Ohne Resonator laufen die Photonen in alle Richtungen aus dem Medium. Mit Resonator läuft das Licht zwischen den Spiegeln hin und her. Es durchquert das gepumpte Medium mehrfach, wird verstärkt und tritt durch den teildurchlässigen Spiegel als Laserstrahl aus.
+
+In der Simulation stehen rote Punkte für einzelne Photonen. Diese Punktdarstellung ersetzt die längeren Wellenzüge, damit viele Photonen gleichzeitig sichtbar bleiben.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-resonator" data-srt-motion-control data-srt-label="Interaktive Darstellung eines Lasermediums mit angeregten Atomen. Pumplicht regt Atome an. Ein Umschalter wechselt zwischen zwei Aufbauten. Ohne Resonator laufen Photonen in viele Richtungen aus dem Medium. Mit Resonator schließen ein voll reflektierender und ein teildurchlässiger Spiegel das Medium ein. Achsnahes Licht läuft zwischen den Spiegeln hin und her, wird verstärkt und tritt rechts als Laserstrahl aus."></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Simulation mit Umschalter: Ohne Resonator senden die angeregten Atome Photonen in alle Richtungen aus, die das Medium verlassen. Mit Resonator schließen zwei Spiegel das Medium ein. Das Licht läuft zwischen ihnen hin und her, wird bei jedem Durchgang verstärkt und tritt durch den teildurchlässigen Spiegel als Laserstrahl aus.
+:::
+:::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Photon entsteht im Lasermedium durch spontane Emission und läuft schräg zur Resonatorachse.
+
+<u>Begründe</u>, dass es den Laserstrahl kaum aufbaut.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Das Photon trifft die Spiegel nicht immer wieder. Es verlässt das Lasermedium nach kurzer Zeit. Damit durchquert es das Medium nur selten und löst kaum stimulierte Emission in Strahlrichtung aus. Für den Laserstrahl werden vor allem Photonen verstärkt, die entlang der Resonatorachse laufen.
+
+</details>
+
+Bisher hast du das Licht in diesem Kapitel als Strom von Photonen betrachtet, auch die Simulation zeigt einzelne Lichtteilchen. Dieses Teilchenbild eignet sich gut für die stimulierte Emission: Ein Photon löst ein zweites aus. Es zeigt aber nur eine Seite des Lichts. Licht lässt sich auch als Welle beschreiben. Erst in diesem Wellenbild wird eine zweite Eigenschaft des Resonators sichtbar, auf die schon sein Name hinweist.
+
+Im Wellenbild läuft eine Lichtwelle zwischen den Spiegeln hin und her. Nach einem Hin- und Rückweg trifft sie wieder auf sich selbst. Passt sie phasenrichtig, verstärkt sie sich bei jedem Umlauf durch konstruktive Interferenz. Passt sie nicht, löscht sie sich über viele Umläufe aus. Das kennst du von einer stehenden Schallwelle zwischen zwei Enden, etwa im Kundtschen Rohr aus der Akustik.
+
+Im einfachen Modell passt die Resonatorlänge $L$, wenn ein ganzzahliges Vielfaches der halben Wellenlänge zwischen die Spiegel passt:
+
+$$
+L = m \cdot \frac{\lambda}{2}
+\qquad \text{mit} \qquad m = 1, 2, 3, \dots
+$$
+
+Dann bildet sich eine stehende Welle aus. Solche passenden Wellen nennt man **Resonatormoden**. Sie bauen sich mit jedem Umlauf stärker auf. Andere Wellenlängen passen schlechter zur Spiegelanordnung und werden unterdrückt. Der Resonator wählt so wenige, genau festgelegte Wellenlängen aus. Das trägt dazu bei, dass Laserlicht sehr einfarbig ist.
+
+<details class="mp-details mp-misconception">
+<summary>Muss der Spiegelabstand exakt stimmen?</summary>
+<p>Die Bedingung $L = m \cdot \frac{\lambda}{2}$ kann den Eindruck erwecken, eine stehende Welle entstehe nur bei ganz bestimmten Spiegelabständen. Beim Kundtschen Rohr stimmt das: Dort liegen Wellenlänge und Rohrlänge in derselben Größenordnung, und zwischen zwei passenden Längen liegt ein deutlicher Abstand.</p>
+<p>Beim Laser ist die Wellenlänge des Lichts um viele Größenordnungen kleiner als der Spiegelabstand. Die Zahl $m$ liegt bei Hunderttausenden. Springt $m$ um eins weiter, ändert sich die passende Wellenlänge nur winzig. Dicht neben jeder Wellenlänge liegt also schon die nächste Resonatormode.</p>
+<p>Dazu kommt: Der Übergang zwischen den Energieniveaus liefert kein perfekt einfarbiges Licht, sondern Licht in einem schmalen Wellenlängenbereich. Die Bedingung $E_\text{Photon} = \Delta E$ aus dem ersten Abschnitt gilt mit einer entsprechend kleinen Toleranz. In diesem Bereich liegen immer passende Moden. Eine stehende Welle bildet sich damit bei praktisch jedem Spiegelabstand aus.</p>
+<p>Das erklärt auch den Unterschied zur Spektrallampe, etwa einer Natriumdampflampe: Ihre Linie zeigt die volle Breite des Übergangs. Beim Laser schwingen aus diesem Bereich nur wenige, viel schmalere Resonatormoden an, oft eine einzige.</p>
+</details>
+
+Der Spiegelabstand ist dabei nicht auf einen einzigen Wert festgelegt. Zu fast jedem Abstand passt eine Wellenlänge aus dem Verstärkungsbereich des Mediums. Der Abstand wählt aus, welche Wellenlänge sich aufbaut.
+
+Wie klein das $\Delta\lambda$ beim Laser ist, siehst du im Vergleich mit anderen Lichtquellen, von breit nach schmal:
+
+- **Glühlampe:** das ganze sichtbare Spektrum, sehr großes $\Delta\lambda$.
+- **Leuchtdiode:** ein Farbbereich von einigen zehn Nanometern.
+- **Spektrallampe:** einzelne Linien, jede mit kleiner, aber messbarer Breite.
+- **Laser:** die schmalste Linie, um viele Größenordnungen kleiner als bei der Spektrallampe.
+
+Die folgende Darstellung zeigt die vier Spektren im selben Bildausschnitt um 589 nm, alle auf gleiche Höhe gebracht. Mit dem Regler zoomst du in die Wellenlängenachse hinein. Zuerst sehen Spektrallampe und Laser gleich aus: zwei schmale Striche. Erst bei starkem Zoom zeigt die Linie der Spektrallampe ihre Breite. Der Laser bleibt auch dann ein schmaler Strich.
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-spektren-zoom" data-srt-viewbox-h="560" data-srt-label="Interaktives Diagramm mit vier Spektren übereinander: Glühlampe, Leuchtdiode, Spektrallampe und Laser, jeweils Intensität über der Wellenlänge. Ein Zoomregler verkleinert den dargestellten Wellenlängenbereich von 300 Nanometern bis auf unter ein Tausendstel Nanometer. Beim Hineinzoomen werden Glühlampe und Leuchtdiode praktisch konstant, die Linie der Spektrallampe zeigt ihre Breite, die Linie des Lasers bleibt ein schmaler Strich."></div>
+</figure>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier ein interaktives Diagramm: vier Spektren im selben Ausschnitt, von der Glühlampe bis zum Laser. Ein Zoomregler verkleinert den dargestellten Wellenlängenbereich Schritt für Schritt. Glühlampe und Leuchtdiode werden dabei praktisch konstant, die Linie der Spektrallampe zeigt ihre Breite, die Linie des Lasers bleibt ein schmaler Strich.
+:::
+:::
+
+Der Spiegelabstand ist dabei nicht auf einen einzigen Wert festgelegt. Zu fast jedem Abstand passt eine Wellenlänge aus dem Verstärkungsbereich des Mediums. Der Abstand wählt aus, welche Wellenlänge sich aufbaut.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Photon entsteht im Lasermedium durch spontane Emission und läuft schräg zur Resonatorachse.
+
+<u>Begründe</u>, dass es den Laserstrahl kaum aufbaut.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Das Photon trifft die Spiegel nicht immer wieder. Es verlässt das Lasermedium nach kurzer Zeit. Damit durchquert es das Medium nur selten und löst kaum stimulierte Emission in Strahlrichtung aus. Für den Laserstrahl werden vor allem Photonen verstärkt, die entlang der Resonatorachse laufen.
+
+</details>
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+Der Resonator besteht aus zwei Spiegeln mit dem Lasermedium dazwischen. Er schickt passendes Licht immer wieder durch das Medium. So wird Licht entlang einer bestimmten Richtung bevorzugt verstärkt. Die Resonanzbedingung wählt passende Wellen aus. Ein teildurchlässiger Spiegel koppelt einen Teil des Lichts als Laserstrahl aus.
 :::
 
 ## Aufbau eines Lasers: der erste Laser
@@ -161,7 +383,6 @@ Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Re
 Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
 :::
 
-<!-- TODO Inhalt: Resonator (zwei Spiegel, einer teildurchlässig), Rückkopplung, Verstärkung. -->
 <!-- TODO Rubinlaser als konkretes Beispiel: Rubinstab, Blitzlampe, 694 nm; Drei-Niveau-System. -->
 
 <!-- TODO Box: ::: {.mp-box .mp-context} Überblick Aufbau -->
