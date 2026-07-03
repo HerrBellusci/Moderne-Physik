@@ -1,23 +1,24 @@
 (function () {
   const W = 862;
-  const H = 506;
+  const H_AUFBAU = 280;
+  const H_NIVEAUS = 270;
   const INK = "#172033";
   const MUTED = "#64748b";
   const LEVEL = "#334155";
   const PUMP = "#2563eb";
   const RED = "#e11d48";
 
-  // Aufbau-Schema oben
+  // Aufbau-Schema
   const ROD = { x0: 214, x1: 606, y0: 128, y1: 188, cy: 158 };
   const MIR_L = { x0: 198, x1: 212 };
   const MIR_R = { x0: 608, x1: 622 };
 
-  // Drei-Niveau-Schema unten
+  // Drei-Niveau-Schema
   const LX0 = 350;
   const LX1 = 620;
-  const E3 = 322;
-  const E2 = 372;
-  const E1 = 456;
+  const E3 = 82;
+  const E2 = 132;
+  const E1 = 216;
   const DOT_X = 440;
 
   const CYCLE = 6400;
@@ -26,6 +27,16 @@
   function ease(v) { const x = clamp(v, 0, 1); return x * x * (3 - 2 * x); }
   function mix(a, b, p) { return a + (b - a) * clamp(p, 0, 1); }
   function ramp(p, a, b) { return ease((p - a) / (b - a)); }
+
+  function phases(t) {
+    const p = (t % CYCLE) / CYCLE;
+    return {
+      p,
+      flash: ramp(p, 0.05, 0.10) * (1 - ramp(p, 0.22, 0.28)),
+      glow: ramp(p, 0.34, 0.50) * (1 - ramp(p, 0.84, 0.95)),
+      beam: ramp(p, 0.50, 0.56) * (1 - ramp(p, 0.84, 0.95))
+    };
+  }
 
   function vArrow(parent, SRT, x, y1, y2, color, opacity, dash) {
     const attrs = {
@@ -118,7 +129,7 @@
   }
 
   function drawNiveaus(parent, SRT, p, flash, beam) {
-    SRT.addText(parent, (LX0 + LX1) / 2, 292, "Drei-Niveau-System der Chrom-Ionen", "label", { fill: INK, "font-size": 14, "font-weight": "800", "text-anchor": "middle" });
+    SRT.addText(parent, (LX0 + LX1) / 2, 42, "Drei-Niveau-System der Chrom-Ionen", "label", { fill: INK, "font-size": 14, "font-weight": "800", "text-anchor": "middle" });
 
     const levels = [
       { y: E3, key: "E₃", name: "Pumpniveau" },
@@ -150,20 +161,21 @@
     }, parent);
   }
 
-  function draw({ parent, t, SRT }) {
-    SRT.clear(parent);
-    SRT.el("rect", { x: 0, y: 0, width: W, height: H, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
-
-    const p = (t % CYCLE) / CYCLE;
-    const flash = ramp(p, 0.05, 0.10) * (1 - ramp(p, 0.22, 0.28));
-    const glow = ramp(p, 0.34, 0.50) * (1 - ramp(p, 0.84, 0.95));
-    const beam = ramp(p, 0.50, 0.56) * (1 - ramp(p, 0.84, 0.95));
-
-    drawAufbau(parent, SRT, flash, glow, beam);
-    drawNiveaus(parent, SRT, p, flash, beam);
-  }
-
   window.SRTSlide.register("laser-rubinlaser", {
-    render: draw
+    render: ({ parent, t, SRT }) => {
+      SRT.clear(parent);
+      SRT.el("rect", { x: 0, y: 0, width: W, height: H_AUFBAU, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
+      const { flash, glow, beam } = phases(t);
+      drawAufbau(parent, SRT, flash, glow, beam);
+    }
+  });
+
+  window.SRTSlide.register("laser-rubinlaser-niveaus", {
+    render: ({ parent, t, SRT }) => {
+      SRT.clear(parent);
+      SRT.el("rect", { x: 0, y: 0, width: W, height: H_NIVEAUS, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
+      const { p, flash, beam } = phases(t);
+      drawNiveaus(parent, SRT, p, flash, beam);
+    }
   });
 })();
