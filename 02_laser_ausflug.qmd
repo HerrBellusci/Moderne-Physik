@@ -46,6 +46,10 @@ Aber was ist ein Laser überhaupt? Das Wort ist ein Akronym. **LASER** steht fü
 
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission.
+
+Du <u>prüfst</u> mit der Bedingung $E_\text{Photon} = \Delta E$, ob ein Atom ein Photon absorbieren kann.
+
+Du <u>vergleichst</u> spontane und stimulierte Emission und <u>gibst an</u>, wann zwei Wellen kohärent heißen.
 :::
 
 Vielleicht kennst du nachleuchtende Sterne an Zimmerdecken oder Leuchtstreifen auf Uhren. Zuerst liegen sie im Licht. Später schaltest du das Licht aus, und sie leuchten noch eine Weile weiter.
@@ -181,7 +185,9 @@ Nicht jedes Material taugt als Lasermedium. Welche Eigenschaften ein solches Med
 ::: {.mp-goal-strip}
 Du <u>erklärst</u>, was eine Besetzungsinversion ist.
 
-Du <u>begründest</u>, dass ein Lasermedium gepumpt werden muss, und <u>erklärst</u>, wozu ein metastabiles Niveau dient.
+Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss.
+
+Du <u>erklärst</u>, wozu ein metastabiles Niveau dient.
 :::
 
 Stell dir eine La-Ola-Welle im Stadion vor. Sie läuft durch die Ränge, weil immer neue Zuschauer aufspringen. Damit sie weiterläuft, müssen entlang ihres Wegs genug Leute bereit sein aufzuspringen. Sind zu wenige bereit, bricht die Welle ab.
@@ -315,9 +321,11 @@ Das Lasermedium allein erklärt diese Bündelung noch nicht. Es kann Licht verst
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> den Aufbau eines optischen Resonators.
 
-Du <u>erklärst</u>, wie der Resonator Richtungsauswahl, Rückkopplung und Auskopplung ermöglicht.
+Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird.
 
-Du <u>erläuterst</u> die Resonanzbedingung im Resonator.
+Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
+
+Du <u>nennst</u> die besonderen Eigenschaften des Laserlichts.
 :::
 
 Bis hierhin kann das Lasermedium Licht verstärken. Für einen Laser bleiben aber zwei Probleme offen:
@@ -387,6 +395,32 @@ L = m \cdot \frac{\lambda}{2}
 $$
 
 Dann bildet sich eine stehende Welle aus. Solche passenden Wellen nennt man **Resonatormoden**. Sie bauen sich mit jedem Umlauf stärker auf. Andere Wellenlängen passen schlechter zur Spiegelanordnung und werden unterdrückt. Der Resonator wählt so wenige, genau festgelegte Wellenlängen aus. Das trägt dazu bei, dass Laserlicht sehr einfarbig ist.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Resonator ist $L = 35\,\mathrm{cm}$ lang. Das Lasermedium verstärkt rotes Licht mit $\lambda = 700\,\mathrm{nm}$.
+
+<u>Berechne</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Die Resonanzbedingung $L = m \cdot \frac{\lambda}{2}$ wird nach $m$ aufgelöst:
+
+$$
+m = \frac{2L}{\lambda}
+  = \frac{2 \cdot 0{,}35\,\mathrm{m}}{7{,}00 \cdot 10^{-7}\,\mathrm{m}}
+  = 1\,000\,000.
+$$
+
+Eine Million halber Wellenlängen passt zwischen die Spiegel.
+
+</details>
 
 <details class="mp-details mp-misconception">
 <summary>Muss der Spiegelabstand exakt stimmen?</summary>
@@ -652,11 +686,6 @@ Der Rubinlaser vereint die drei Bausteine des Lasers. Das Lasermedium sind Chrom
 <!-- SPÄTER optional: Bündelung quantitativ (beugungsbegrenzt θ ≈ λ/D).     -->
 <!-- ====================================================================== -->
 
-<!-- ====================================================================== -->
-<!-- ENTWURF (Preview, zur Durchsicht): der folgende He-Ne-Abschnitt.       -->
-<!-- Ausgelagerter Laserdioden-Entwurf: entwurf-laserdiode.md               -->
-<!-- ====================================================================== -->
-
 ## Ein zweiter Lasertyp: der Helium-Neon-Laser
 
 ::: {.callout-note title="Relevanz"}
@@ -784,3 +813,67 @@ Verstärkt wird dagegen nur ein einziger Übergang: der Laserübergang des Neons
 
 Der Helium-Neon-Laser ist ein Gaslaser mit dauerhaftem Strahl. Eine Gasentladung regt die Heliumatome an; durch Stöße übergeben sie ihre Energie an das Neon und füllen dessen oberes Laserniveau. Der Laserübergang liefert rotes Licht mit 632,8 nm und endet in einem Niveau, das sich schnell leert. Für die Besetzungsinversion genügt darum schwaches, ständiges Pumpen: Der Laser arbeitet im Dauerstrichbetrieb.
 :::
+
+## Sichern und anwenden
+
+::: {.callout-note title="Relevanz"}
+Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt sicherst du die Grundideen dieses Kapitels in deiner eigenen Sprache. Anschließend wendest du den Bauplan des Lasers an und vergleichst die beiden Lasertypen dieses Kapitels.
+:::
+
+### In eigener Sprache erklären
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-write" aria-label="Schreibaufgabe">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 20h4l11-11-4-4L4 16v4Z"></path>
+    <path d="m13.5 6.5 4 4"></path>
+  </svg>
+  Schreibaufgabe
+</span>
+
+<u>Formuliere</u> eine zusammenhängende Erklärung dieses Kapitels in deiner eigenen Sprache. Stell dir vor, du <u>erklärst</u> jemandem aus deinem Kurs, wie ein Laser funktioniert. Benutze dafür gerne auch Skizzen.
+
+Nutze die **Lernziele** der einzelnen Abschnitte als Leitfaden. Hangle dich an ihnen entlang, formuliere aber selbst. Schreibe nicht ab, sondern erkläre es so, wie du es verstanden hast:
+
+- **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission und <u>vergleichst</u> die beiden Emissionsarten.
+- **Besetzungsinversion:** Du <u>erklärst</u>, was eine Besetzungsinversion ist, <u>begründest</u>, dass ein Lasermedium gepumpt werden muss, und <u>erklärst</u>, wozu ein metastabiles Niveau dient.
+- **Resonator:** Du <u>erklärst</u>, wie der Resonator Richtung und Wellenlänge des Laserlichts auswählt, und <u>nennst</u> die besonderen Eigenschaften des Laserlichts.
+- **Rubinlaser:** Du <u>beschreibst</u> den Aufbau aus Lasermedium, Pumpquelle und Resonator und <u>erklärst</u> das Zusammenwirken der drei Bauteile.
+- **Helium-Neon-Laser:** Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht.
+:::
+
+### Anwendung: Zwei Lasertypen im Vergleich
+
+Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit Besetzungsinversion, eine Pumpquelle und ein Resonator. An jeder dieser drei Stellen sind sie verschieden gebaut, und ein Unterschied prägt den Charakter der beiden Geräte: Der eine blitzt, der andere leuchtet.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+<u>Vergleiche</u> Rubinlaser und Helium-Neon-Laser nach Lasermedium, Pumpquelle und Niveausystem.
+
+<u>Begründe</u> mit dem unteren Laserniveau, dass der Rubinlaser einzelne Pulse liefert, während der Helium-Neon-Laser mit schwachem, ständigem Pumpen dauerhaft leuchtet.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+| | Rubinlaser | Helium-Neon-Laser |
+|---|---|---|
+| Lasermedium | Chrom-Ionen im Rubinstab | Neonatome im Helium-Neon-Gasgemisch |
+| Pumpquelle | Blitzlampe um den Stab | Gasentladung, Energieübergabe über Helium-Stöße |
+| Niveausystem | Drei-Niveau-System | Vier-Niveau-System |
+| Betriebsart | Pulsbetrieb | Dauerstrichbetrieb |
+| Wellenlänge | 694 nm | 632,8 nm |
+
+Beim Rubinlaser ist das untere Laserniveau der Grundzustand. Dort sitzen zu Beginn alle Chrom-Ionen. Für eine Besetzungsinversion muss die Blitzlampe mehr als die Hälfte aller Ionen anheben. Das schafft nur ein kurzer, sehr heller Blitz, und nach dem Laserpuls ist die Inversion verbraucht: Der Rubinlaser blitzt.
+
+Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und leert sich von selbst sehr schnell. Es ist praktisch immer leer, und schon wenige Neonatome im oberen Laserniveau ergeben eine Besetzungsinversion. Eine schwache, ständig laufende Gasentladung hält diesen Zustand aufrecht: Der Helium-Neon-Laser leuchtet ununterbrochen.
+
+</details>
+
+#### Ausblick: Weitere Lasertypen
+
+Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?
