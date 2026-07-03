@@ -210,7 +210,7 @@ Die Messidee des Michelson-Morley-Experiments besteht darin, in einem Interferom
 
 In der Schwimmeranalogie entspricht das einem Wechsel der Schwimmrichtung: Wer zuerst quer zur Strömung und anschließend mit oder gegen die Strömung schwimmt, benötigt für die Strecke eine andere Zeit. Beim Licht sollte sich eine solche Änderung der Laufzeit als Verschiebung des Interferenzmusters zeigen.
 
-Die folgende Animation zeigt dir den Aufbau eines Michelson-Interferometers. Klicke nacheinander auf die fünf Bauteile, um sie einzublenden.
+Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interferometers. Klicke nacheinander auf die fünf Bauteile, um sie einzublenden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -220,7 +220,7 @@ Die folgende Animation zeigt dir den Aufbau eines Michelson-Interferometers. Kli
 ```
 :::
 
-Die zweite Animation zeigt dir, welche Veränderung beim Drehen erwartet wurde und was tatsächlich beobachtet wurde. Verändere dazu die Ausrichtung der Apparatur mit dem Rotationsregler.
+Die zweite Simulation zeigt dir, welche Veränderung beim Drehen erwartet wurde und was tatsächlich beobachtet wurde. Verändere dazu die Ausrichtung der Apparatur mit dem Rotationsregler.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -229,7 +229,7 @@ Die zweite Animation zeigt dir, welche Veränderung beim Drehen erwartet wurde u
 </figure>
 <details class="mp-details">
   <summary>Optional: Das Michelson-Interferometer genauer betrachtet</summary>
-  <p>Diese beiden Animationen sind Zusatzmaterial. Sie können dir helfen, das Messprinzip eines Michelson-Interferometers besser zu verstehen.</p>
+  <p>Diese beiden Simulationen sind Zusatzmaterial. Sie können dir helfen, das Messprinzip eines Michelson-Interferometers besser zu verstehen.</p>
   <p>Ergänzend zeigt ein <a href="https://www.youtube.com/watch?v=8YgVQHbHR0I">Realvideo zum Michelson-Interferometer</a>, wie Laser, Strahlteiler, Spiegel und aufgeweiteter Strahl zu sichtbaren Interferenzringen führen.</p>
   <figure class="srt-workbook-figure">
     <div class="srt-workbook-stage" data-srt-animation="interference" data-srt-label="Interferenz als Messprinzip des Michelson-Interferometers"></div>
@@ -243,7 +243,7 @@ Die zweite Animation zeigt dir, welche Veränderung beim Drehen erwartet wurde u
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheinen hier Animationen zu Aufbau, Äther-Erwartung, Nullresultat und optionalem Interferenzsignal.
+In der HTML-Version erscheinen hier interaktive Darstellungen zu Aufbau, Äther-Erwartung, Nullresultat und optionalem Interferenzsignal.
 
 Ergänzendes Realvideo zum Michelson-Interferometer: https://www.youtube.com/watch?v=8YgVQHbHR0I
 :::
@@ -313,7 +313,7 @@ Aus der Alltagserfahrung könnte man erwarten: Bewegt sich eine Lichtquelle, dan
 2. **Konstanz der Lichtgeschwindigkeit:** Licht breitet sich im Vakuum in allen Inertialsystemen mit derselben Geschwindigkeit $c$ aus, unabhängig von der Bewegung der Lichtquelle oder der beobachtenden Person.
 :::
 
-Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende Animation. Hierbei werden zwei Lichtquellen verglichen: jeweils eine ruhende und eine bewegte. Mit dem Schieberegler veränderst du die Relativgeschwindigkeit. Über die Buttons „Erdsystem“ und „Raumschiffsystem“ wechselst du das Bezugssystem. Das Häkchen „klassische Erwartung“ blendet zum Vergleich ein, welche Geschwindigkeit man nach der klassischen Geschwindigkeitsaddition erwarten würde.
+Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende Simulation. Hierbei werden zwei Lichtquellen verglichen: jeweils eine ruhende und eine bewegte. Mit dem Schieberegler veränderst du die Relativgeschwindigkeit. Über die Buttons „Erdsystem“ und „Raumschiffsystem“ wechselst du das Bezugssystem. Das Häkchen „klassische Erwartung“ blendet zum Vergleich ein, welche Geschwindigkeit man nach der klassischen Geschwindigkeitsaddition erwarten würde.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -321,7 +321,7 @@ Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende 
   <div class="zp2-stage">
     <button class="zp2-play" type="button" aria-pressed="true">Pause</button>
 
-    <canvas aria-label="Animation: Lichtpulse aus bewegter und ruhender Quelle">
+    <canvas aria-label="Simulation: Lichtpulse aus bewegter und ruhender Quelle">
       Dein Browser unterstützt die Canvas-Darstellung nicht.
     </canvas>
 
@@ -407,7 +407,7 @@ Im Bahnsteigsystem bewegt sich der Zug während der Lichtlaufzeit weiter. Das hi
 
 Verglichen werden dabei zwei Ereignisse: Das Licht erreicht das vordere Zugende und das Licht erreicht das hintere Zugende. Gleichzeitigkeit ist also keine absolute Eigenschaft dieser beiden Ereignisse, sondern hängt vom Inertialsystem ab.
 
-Die folgende Simulation zeigt das Gedankenexperiment im Zug- und im Bahnsteigsystem.
+Die folgende Animation zeigt das Gedankenexperiment im Zug- und im Bahnsteigsystem.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -460,7 +460,7 @@ Ausgangslage: Der Passagier sitzt genau in der Zugmitte. Gleichzeitig schlagen a
   <li>Im Zugsystem ruht der Passagier in der Mitte des Zuges. Da Licht sich in beide Richtungen mit derselben Geschwindigkeit $c$ ausbreitet, muss der vordere Blitz im Zugsystem früher eingeschlagen sein als der hintere.</li>
 </ol>
 
-Die folgende Simulation visualisiert das Gedankenexperiment.
+Die folgende Animation visualisiert das Gedankenexperiment.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -516,7 +516,7 @@ Diese von der mitbewegten Lichtuhr gemessene Zeit heißt Eigenzeit $\Delta t_0$.
 <details class="mp-details mp-misconception">
 <summary>Was bedeutet die kleine 0?</summary>
 <p>Die kleine $0$ heißt: aus der Ruhe betrachtet. Sie markiert eine Größe, die im eigenen Ruhesystem des Objekts gemessen wird. Genauso begegnet sie dir später bei der Eigenlänge $L_0$, der Ruhemasse $m_0$ und der Ruheenergie $E_0$.</p>
-<p>Solche Größen sind invariant. Die kleine Simulation soll dir ein Gefühl dafür geben, was das bedeutet:</p>
+<p>Solche Größen sind invariant. Die kleine Animation soll dir ein Gefühl dafür geben, was das bedeutet:</p>
 <figure class="srt-workbook-figure">
   <div class="srt-workbook-stage" data-srt-animation="drehung-invarianz" data-srt-motion-control data-srt-label="Die Punkte A und B drehen sich auf Kreisbahnen um den Ursprung des Koordinatensystems. Ihre Koordinaten ändern sich fortlaufend, ihr Abstand bleibt konstant."></div>
 </figure>
@@ -525,7 +525,7 @@ Diese von der mitbewegten Lichtuhr gemessene Zeit heißt Eigenzeit $\Delta t_0$.
 
 Für die Person am Bahnsteig bewegt sich der Zug während der Laufzeit des Lichtpulses nach rechts. Deshalb verläuft der Lichtweg diagonal und ist länger als $2D$. Die Zeitdauer, die dem Tick im Bahnsteigsystem zugeordnet wird, bezeichnen wir mit $\Delta t$.
 
-Die Animation zeigt nicht zwei verschiedene Lichtuhren. Links und rechts ist derselbe Tick derselben Lichtuhr dargestellt: links aus Sicht der mitfahrenden Person und rechts aus Sicht der Person am Bahnsteig. Nach dem [zweiten Einsteinschen Postulat](#einsteinsche-postulate) breitet sich Licht in beiden Inertialsystemen mit derselben Geschwindigkeit $c$ aus.
+Die Simulation zeigt nicht zwei verschiedene Lichtuhren. Links und rechts ist derselbe Tick derselben Lichtuhr dargestellt: links aus Sicht der mitfahrenden Person und rechts aus Sicht der Person am Bahnsteig. Nach dem [zweiten Einsteinschen Postulat](#einsteinsche-postulate) breitet sich Licht in beiden Inertialsystemen mit derselben Geschwindigkeit $c$ aus.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -773,7 +773,7 @@ Ausgangspunkt ist diesmal ein Problem: Aus Sicht der Erde lässt sich das Myonen
 
 Im Erdsystem beträgt der Abstand zwischen Entstehungsort und Boden etwa $L_0 \approx 10\,\mathrm{km}$. Das ist die Eigenlänge der ruhenden Atmosphärenstrecke. Wenn man diese Strecke im Myon-System zunächst klassisch, also noch ohne Längenkontraktion, genauso lang lässt, entsteht sofort ein Widerspruch: Während der kurzen mittleren Eigenlebensdauer des Myons dürfte der Boden gar nicht rechtzeitig ankommen.
 
-Die Simulation zeigt dieses Ausgangsproblem aus Sicht des Myons: Das Myon ruht, Erde und Atmosphäre bewegen sich auf es zu, aber die Atmosphärenstrecke ist noch nicht kontrahiert.
+Die Animation zeigt dieses Ausgangsproblem aus Sicht des Myons: Das Myon ruht, Erde und Atmosphäre bewegen sich auf es zu, aber die Atmosphärenstrecke ist noch nicht kontrahiert.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -785,7 +785,7 @@ Die Simulation zeigt dieses Ausgangsproblem aus Sicht des Myons: Das Myon ruht, 
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier die Simulation „Ausgangsproblem“: Das Myon ruht, die unverkürzte Atmosphäre bewegt sich auf das Myon zu, aber der Boden erreicht das Myon während seiner mittleren Eigenlebensdauer nicht.
+In der HTML-Version erscheint hier die Animation „Ausgangsproblem“: Das Myon ruht, die unverkürzte Atmosphäre bewegt sich auf das Myon zu, aber der Boden erreicht das Myon während seiner mittleren Eigenlebensdauer nicht.
 :::
 :::
 
@@ -884,7 +884,7 @@ $$
 L = \frac{L_0}{\gamma} \approx \frac{10\,\mathrm{km}}{15{,}8} \approx 0{,}63\,\mathrm{km}.
 $$
 
-Die folgende Simulation zeigt dieselbe Situation nun mit kontrahierter Atmosphärenstrecke.
+Die folgende Animation zeigt dieselbe Situation nun mit kontrahierter Atmosphärenstrecke.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -896,7 +896,7 @@ Die folgende Simulation zeigt dieselbe Situation nun mit kontrahierter Atmosphä
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Simulation zur Lösung im Myon-System: Die verkürzte Atmosphäre bewegt sich auf das ruhende Myon zu, sodass der Erdboden das Myon erreicht.
+In der HTML-Version erscheint hier eine Animation zur Lösung im Myon-System: Die verkürzte Atmosphäre bewegt sich auf das ruhende Myon zu, sodass der Erdboden das Myon erreicht.
 :::
 :::
 
@@ -947,7 +947,7 @@ Den Doppler-Effekt von Schall hast du im Alltag sicher schon erlebt: Fährt ein 
 
 Woran liegt die Änderung der Tonhöhe? Der Ton, den du hörst, hängt von der Frequenz der Schallwelle ab, also davon, wie viele Wellenfronten pro Sekunde dein Ohr erreichen. Bewegt sich die Quelle auf dich zu, folgen die Wellenfronten dichter aufeinander, ihr Abstand (die Wellenlänge) wird kleiner: Pro Sekunde erreichen dich mehr davon, die Frequenz steigt, der Ton wird höher. Entfernt sich die Quelle, wächst der Abstand der Wellenfronten wieder, dich erreichen weniger pro Sekunde, die Frequenz sinkt, der Ton wird tiefer.
 
-Folgende Simulation liefert ein Bild von diesem Vorgang. Dabei rücken die Wellenfronten vor der bewegten Quelle dichter zusammen (höhere Frequenz) und gehen hinter ihr weiter auseinander (niedrigere Frequenz).
+Folgende Animation liefert ein Bild von diesem Vorgang. Dabei rücken die Wellenfronten vor der bewegten Quelle dichter zusammen (höhere Frequenz) und gehen hinter ihr weiter auseinander (niedrigere Frequenz).
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -1103,7 +1103,7 @@ In der HTML-Version erscheint hier eine Skizze: Die Quelle entfernt sich vom Beo
 :::
 ::::
 
-In der folgenden Animation kannst du die Geschwindigkeit der Quelle einstellen und beobachten, wie sich eine Spektrallinie nach Rot (Entfernung) oder Blau (Annäherung) verschiebt. Die Animation ist dabei nicht quantitativ exakt; sie dient lediglich als repräsentatives Bild, das die Richtung der Verschiebung veranschaulicht.
+In der folgenden Simulation kannst du die Geschwindigkeit der Quelle einstellen und beobachten, wie sich eine Spektrallinie nach Rot (Entfernung) oder Blau (Annäherung) verschiebt. Die Simulation ist dabei nicht quantitativ exakt; sie dient lediglich als repräsentatives Bild, das die Richtung der Verschiebung veranschaulicht.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -1208,7 +1208,7 @@ Die folgende Simulation visualisiert diese Problemstellung.
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine interaktive Animation mit Umschalter zwischen den Bezugssystemen. Im Ruhesystem der Garage ist das Auto auf $3\,\mathrm{m}$ kontrahiert und passt vollständig hinein, sodass beide Tore kurz gleichzeitig schließen. Im Ruhesystem des Autos ist die Garage auf $2{,}4\,\mathrm{m}$ kontrahiert; die beiden Tore schließen nacheinander, sodass das Auto nie gleichzeitig von beiden Toren eingeschlossen ist.
+In der HTML-Version erscheint hier eine Simulation mit Umschalter zwischen den Bezugssystemen. Im Ruhesystem der Garage ist das Auto auf $3\,\mathrm{m}$ kontrahiert und passt vollständig hinein, sodass beide Tore kurz gleichzeitig schließen. Im Ruhesystem des Autos ist die Garage auf $2{,}4\,\mathrm{m}$ kontrahiert; die beiden Tore schließen nacheinander, sodass das Auto nie gleichzeitig von beiden Toren eingeschlossen ist.
 :::
 :::
 
