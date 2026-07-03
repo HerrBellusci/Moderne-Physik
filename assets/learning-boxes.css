@@ -94,6 +94,12 @@
   border-color: rgba(161, 98, 7, 0.30);
 }
 
+.mp-context {
+  --mp-accent: var(--mp-gold);
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
+}
+
 .mp-task {
   --mp-accent: var(--mp-ink);
   --mp-bg: #f7f9fb;
