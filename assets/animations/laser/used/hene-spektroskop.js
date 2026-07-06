@@ -169,9 +169,6 @@
 
     if (pos === "strahl") {
       spectrumLine(632.8, "#ff2d2d", 5, 1);
-      SRT.addText(parent, mapX(632.8) + 12, (lineTop + lineBottom) / 2 + 4, "632,8 nm", "label", {
-        fill: "#fda4af", "font-size": 12.5, "font-weight": "800", "text-anchor": "start"
-      });
     } else {
       LINES.forEach((line) => {
         spectrumLine(line.nm, line.color, line.w, line.o);

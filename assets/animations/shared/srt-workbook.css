@@ -263,9 +263,9 @@
 }
 
 .mp-context {
-  --mp-accent: #2563eb;
-  --mp-bg: #f4f7ff;
-  border-color: rgba(37, 99, 235, 0.26);
+  --mp-accent: #a16207;
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
 }
 
 .mp-question,

@@ -47,9 +47,9 @@ Aber was ist ein Laser überhaupt? Das Wort ist ein Akronym. **LASER** steht fü
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission.
 
-Du <u>prüfst</u> mit der Bedingung $E_\text{Photon} = \Delta E$, ob ein Atom ein Photon absorbieren kann.
+Du <u>prüfst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann.
 
-Du <u>vergleichst</u> spontane und stimulierte Emission und <u>gibst an</u>, wann zwei Wellen kohärent heißen.
+Du <u>vergleichst</u> spontane und stimulierte Emission.
 :::
 
 Vielleicht kennst du nachleuchtende Sterne an Zimmerdecken oder Leuchtstreifen auf Uhren. Zuerst liegen sie im Licht. Später schaltest du das Licht aus, und sie leuchten noch eine Weile weiter.
@@ -122,7 +122,7 @@ Nein. Für einen einzelnen Absorptionsvorgang zählt die Energie eines einzelnen
 
 Für den Laser ist ein dritter Fall entscheidend: Ein passendes Photon trifft auf ein Atom, das bereits angeregt ist. Das ankommende Photon bleibt erhalten und läuft weiter. Zugleich wechselt das Atom in das niedrigere Energieniveau und sendet ein zweites Photon aus.
 
-Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und dieselbe Frequenz. Sie laufen in dieselbe Richtung und schwingen im gleichen Takt. Dieser Vorgang heißt **stimulierte Emission**. Die Animation zeigt, wie aus einem Photon zwei werden.
+Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und wegen $E_\text{Photon} = h f$ auch dieselbe Frequenz. Vor allem aber laufen beide danach in dieselbe Richtung und schwingen im gleichen Takt: wie zwei Zwillingssoldaten, die nach dem Salutieren gemeinsam losmarschieren, in dieselbe Richtung und im Gleichschritt. Dieser Vorgang heißt **stimulierte Emission**. Die Animation zeigt, wie aus einem Photon zwei werden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -140,9 +140,9 @@ In der HTML-Version erscheint hier eine Animation: Ein passendes Photon trifft a
 
 Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst eine exakte Kopie seiner selbst aus. Jede Kopie kann weitere Kopien auslösen. Was heißt dabei „im gleichen Takt"? Licht lässt sich in zwei Bildern beschreiben: als Strom von Photonen und als Welle. Beide Bilder gehören zum selben Licht; je nach Phänomen ist das eine oder das andere das passende Werkzeug. Im Wellenbild laufen die Wellen aus derselben Kette im Gleichschritt: Wellenberg liegt auf Wellenberg, Wellental auf Wellental.
 
-Der Begriff Kohärenz verlangt weniger: Zwei Wellen heißen **kohärent**, wenn ihre Phasenverschiebung zueinander konstant bleibt. Die Wellen dürfen gegeneinander versetzt sein, solange der Versatz gleich bleibt. Die Photonen aus derselben Kette erfüllen diese Bedingung in der strengsten Form: Ihr Versatz ist null. Die Kohärenz ist eine der besonderen Eigenschaften des Laserlichts. Die stimulierte Emission legt dafür den Grund. Im Medium starten solche Ketten allerdings an vielen Stellen und in viele Richtungen. Wie daraus ein einziger geordneter Strahl wird, klärt der Abschnitt zum Resonator. Dort schauen wir uns auch die Kohärenz genauer an.
+Für diesen Gleichschritt hat die Physik ein Wort: Solche Wellen heißen **kohärent**. Der Begriff verlangt weniger: Kohärente Wellen dürfen gegeneinander versetzt sein, solange der Versatz fest bleibt. Im Bild der Soldaten: Einer tritt immer etwas später auf als der andere, der zeitliche Abstand zwischen ihren Schritten bleibt dabei gleich. Die Wellenzüge aus derselben Kette zeigen den strengsten Fall, ihr Versatz ist null. Im Medium starten solche Ketten allerdings an vielen Stellen und in viele Richtungen. Wie daraus ein einziger geordneter Strahl wird, klärt der Abschnitt zum Resonator.
 
-Gebraucht wird diese Ordnung überall dort, wo Licht mit Licht überlagert wird: Interferenzversuche gelingen nur mit kohärentem Licht. Moderne Michelson-Interferometer, etwa bei der Messung von Gravitationswellen in [Abschnitt 1.2](01_srt_raum_und_zeit.qmd#michelson-morley-experiment), arbeiten darum mit Laserlicht.
+Dort bekommt auch die Kohärenz die Aufmerksamkeit, die der Begriff verdient: Sie taucht als Eigenschaft des ganzen Laserlichts wieder auf. Hier nur so viel: Kohärentes Licht brauchst du überall dort, wo es um Interferenz geht, wo Licht mit Licht überlagert wird. Moderne Michelson-Interferometer, etwa bei der Messung von Gravitationswellen in [Abschnitt 1.2](01_srt_raum_und_zeit.qmd#michelson-morley-experiment), arbeiten darum mit Laserlicht.
 
 Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
 
@@ -163,7 +163,7 @@ Bei der spontanen und bei der stimulierten Emission sendet ein angeregtes Atom e
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Die spontane Emission startet im Atom selbst. Zeitpunkt und Richtung des Photons sind zufällig. Die stimulierte Emission wird von einem passenden Photon ausgelöst. Sie geschieht beim Eintreffen dieses Photons, und das neue Photon läuft in dieselbe Richtung wie das auslösende. Es schwingt zudem im gleichen Takt: Die beiden Photonen sind kohärent.</p>
+<p>Die spontane Emission startet im Atom selbst. Zeitpunkt und Richtung des Photons sind zufällig. Die stimulierte Emission wird von einem passenden Photon ausgelöst. Sie geschieht beim Eintreffen dieses Photons, und das neue Photon läuft in dieselbe Richtung wie das auslösende. Es schwingt zudem im gleichen Takt.</p>
 </details>
 
 ::: {.mp-box .mp-core}
@@ -199,7 +199,7 @@ Was mit einem passenden Photon geschieht, hängt von der Besetzung der Energieni
 ::: {.mp-box .mp-definition}
 <div class="mp-title">Besetzungsinversion</div>
 
-Von einer Besetzungsinversion spricht man, wenn ein höheres Energieniveau von mehr Atomen besetzt ist als ein tieferes. Dann kann ein passendes Photon im Lasermedium weitere gleiche Photonen auslösen.
+Von einer Besetzungsinversion spricht man, wenn ein höheres Energieniveau von mehr Atomen besetzt ist als ein tieferes. Verglichen werden dabei genau die beiden Niveaus des Übergangs, um den es geht; die Besetzung aller anderen Niveaus spielt für die Inversion keine Rolle. Herrscht Inversion, kann ein passendes Photon im Lasermedium weitere gleiche Photonen auslösen.
 :::
 
 In der Simulation schaltest du zwischen normaler Besetzung und Besetzungsinversion um. Jedes Atom zeigt seine beiden Niveaus $E_1$ und $E_2$. Der Punkt zeigt wieder den Energiezustand des Atoms: sitzt er oben auf $E_2$, ist das Atom angeregt, unten auf $E_1$ ist es im Grundzustand. Bei normaler Besetzung wird ein durchlaufendes Photon absorbiert, und angeregte Atome emittieren spontan in zufällige Richtungen. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen.
@@ -231,14 +231,14 @@ $N_2$ ist die Zahl der Atome im höheren Niveau. $N_1$ ist die Zahl der Atome im
 In der Formel steckt folgende Aussage. Der Exponent ist bei jeder Temperatur negativ, das Verhältnis $N_2/N_1$ bleibt immer kleiner als 1. Heizt man das Medium, steigt $N_2$ zwar an. Selbst wenn die Temperatur unendlich groß sein könnte, erreicht die Besetzung höchstens die Gleichbesetzung $N_2 = N_1$. Eine Besetzungsinversion ist im thermischen Gleichgewicht unerreichbar, egal bei welcher Temperatur.
 
 ::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
-  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
-  Denkcheck
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
 </span>
 
 Ein Medium enthält $10^{20}$ Atome. Der Übergang hat den Energieabstand $E_2 - E_1 = 2{,}0\,\mathrm{eV} = 3{,}2 \cdot 10^{-19}\,\mathrm{J}$, das entspricht rotem Licht. Das Medium liegt bei Raumtemperatur vor: $T = 300\,\mathrm{K}$, $k_\mathrm{B} = 1{,}38 \cdot 10^{-23}\,\tfrac{\mathrm{J}}{\mathrm{K}}$.
 
-<u>Berechne</u> das Besetzungsverhältnis $N_2/N_1$ und <u>gib an</u>, wie viele der $10^{20}$ Atome demnach angeregt sind.
+<u>Berechne</u> das Besetzungsverhältnis $N_2/N_1$ und daraus, wie viele der $10^{20}$ Atome angeregt sind.
 :::
 
 <details class="mp-details">
@@ -256,7 +256,7 @@ Damit gilt $N_2/N_1 = e^{-77} \approx 10^{-34}$. Von den $10^{20}$ Atomen sind i
 
 </details>
 
-Der erste Schritt zur Inversion ist eine Energiezufuhr von außen. Sie hebt Atome in höhere Energieniveaus und bringt das Medium aus dem thermischen Gleichgewicht. Diese Energiezufuhr heißt **Pumpen**. Je nach Lasertyp geschieht das durch eine Blitzlampe, eine andere Lichtquelle oder einen elektrischen Strom.
+Der erste Schritt zur Inversion ist eine Energiezufuhr von außen. Sie hebt Atome in höhere Energieniveaus und bringt das Medium aus dem thermischen Gleichgewicht. Diese Energiezufuhr heißt **Pumpen**. Je nach Lasertyp geschieht das mit Licht, etwa aus einer Blitzlampe, oder mit einem elektrischen Strom, der durch ein Gas oder einen Halbleiter fließt.
 
 Pumpen allein reicht aber noch nicht. Man könnte versuchen, die Atome mit Licht direkt vom Grundzustand $E_1$ in das obere Laserniveau $E_2$ zu pumpen. Das scheitert an einem Wettlauf: Dasselbe Pumplicht passt auch zum Übergang nach unten. Es löst an bereits angeregten Atomen stimulierte Emission aus, und beide Vorgänge sind pro Atom gleich wahrscheinlich.
 
@@ -315,7 +315,7 @@ Damit ein Lasermedium Licht verstärken kann, braucht es eine Besetzungsinversio
 ::: {.callout-note title="Relevanz"}
 Eine Taschenlampe kann sehr hell sein. Ihr Licht breitet sich trotzdem kegelförmig aus. Ein Laserpointer bleibt über mehrere Meter ein enger Lichtfleck.
 
-Das Lasermedium allein erklärt diese Bündelung noch nicht. Es kann Licht verstärken, aber es legt die Richtung des Strahls nicht fest. Diese Aufgabe übernimmt der Resonator.
+Hinter diesem Unterschied steckt ein neues Bauteil: der Resonator. Um ihn geht es in diesem Abschnitt.
 :::
 
 ::: {.mp-goal-strip}
@@ -397,9 +397,9 @@ $$
 Dann bildet sich eine stehende Welle aus. Solche passenden Wellen nennt man **Resonatormoden**. Sie bauen sich mit jedem Umlauf stärker auf. Andere Wellenlängen passen schlechter zur Spiegelanordnung und werden unterdrückt. Der Resonator wählt so wenige, genau festgelegte Wellenlängen aus. Das trägt dazu bei, dass Laserlicht sehr einfarbig ist.
 
 ::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
-  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
-  Denkcheck
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
 </span>
 
 Ein Resonator ist $L = 35\,\mathrm{cm}$ lang. Das Lasermedium verstärkt rotes Licht mit $\lambda = 700\,\mathrm{nm}$.
@@ -458,7 +458,7 @@ Damit kennst du die besonderen Eigenschaften des Laserlichts und ihre Ursachen i
 <details class="mp-details">
 <summary>Vertiefung: Eigenschaften des Laserlichts</summary>
 
-Aus dem Abschnitt zur stimulierten Emission kennst du die Definition: Zwei Wellen heißen kohärent, wenn ihre Phasenverschiebung zueinander konstant bleibt. Diese Definition greift physikalisch etwas kurz; den Vorbehalt dazu findest du am Ende dieser Vertiefung. Für die Eigenschaften des Laserlichts reicht sie. Man unterscheidet zwei Arten von Kohärenz: eine längs des Strahls und eine quer dazu.
+Laserlicht ist besonders gut geordnet: Es ist zeitlich und räumlich viel kohärenter als Licht aus den meisten anderen Quellen. Zwei Wellen heißen kohärent, wenn ihre Phasenverschiebung zueinander konstant bleibt. Das ist der feste Versatz aus dem Abschnitt zur stimulierten Emission. Man unterscheidet zwei Arten von Kohärenz: zeitliche und räumliche Kohärenz.
 
 **Zeitliche Kohärenz** betrifft den zeitlichen Verlauf der Welle an einem festen Ort. Vergleiche die Welle dort mit der Welle, die kurze Zeit $\tau$ später ankommt. Bleibt die Phasenverschiebung dabei konstant, ist das Licht zeitlich kohärent. Die Zeitspanne, über die das gilt, heißt Kohärenzzeit $\tau_c$. Sie hängt direkt an der Breite $\Delta\lambda$ der Spektrallinie: Je schmaler die Linie, desto länger hält die Welle ihren Takt. „Sehr einfarbig" und „zeitlich kohärent" beschreiben dieselbe Eigenschaft, einmal im Spektrum und einmal im Wellenzug.
 
@@ -498,7 +498,9 @@ In der HTML-Version erscheint hier eine Simulation mit zwei Umschaltern: eine Fa
 :::
 :::
 
-Die beiden Arten sind unabhängig voneinander. Eine Spektrallampe mit Farbfilter liefert zeitlich recht kohärentes Licht. Räumlich bleibt es ungeordnet: Jedes Atom der ausgedehnten Lampe sendet unabhängig von den anderen, die Punkte des Lichtflecks schwingen ohne feste Beziehung zueinander. Mit einer winzigen Lochblende lässt sich auch Lampenlicht räumlich ordnen: Der kleine Ausschnitt wirkt wie ein einzelner Sender. Dabei geht fast das gesamte Licht verloren. So arbeiteten Interferenzversuche vor dem Laser. Der Laser liefert die räumliche Ordnung ohne diesen Verlust.
+Zeitliche und räumliche Kohärenz lassen sich getrennt verändern. Eine Spektrallampe mit Farbfilter liefert zeitlich recht kohärentes Licht: Der Farbfilter lässt nur einen schmalen Wellenlängenbereich durch. Räumlich bleibt ihr Licht nur über kleine Bereiche geordnet: Die Lampe ist eine ausgedehnte Quelle.
+
+Wie konnten Michelson und Morley 1887 dann Interferenzstreifen beobachten, ganz ohne Laser? In heutigen Abbildungen und Demonstrationen steckt im Michelson-Interferometer meist einer; im Originalversuch ([Abschnitt 1.2](01_srt_raum_und_zeit.qmd#michelson-morley-experiment)) gab es nur Lampenlicht. Die Antwort steckt im halbdurchlässigen Spiegel: Er teilt jeden Wellenzug in zwei Kopien, die am Ende wieder aufeinandertreffen. Jede Welle überlagert sich also mit ihrer eigenen Kopie, und mit der ist sie automatisch kohärent, solange der Wegunterschied der beiden Arme kleiner bleibt als ihre Kohärenzlänge. Bei Lampenlicht ist diese Kohärenzlänge winzig: Die beiden Arme mussten fast exakt gleich lang sein, das Einstellen war Feinarbeit. Ein Laser macht solche Tischversuche mit seiner großen Kohärenzlänge bequem. Kilometerlange Interferometer wie zur Messung von Gravitationswellen sind auf ihn angewiesen: Nur Laserlicht bleibt über solche Strecken gebündelt und schwingt dort noch als ununterbrochener Wellenzug, ohne Phasensprung.
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Vorbehalt</div>
@@ -509,10 +511,10 @@ Diese Vertiefung und ihre Simulationen vereinfachen die Bedeutung von Kohärenz 
 - Es divergiert kaum und bleibt gebündelt.
 - Es eignet sich hervorragend für Interferenzversuche.
 
-Die strenge Theorie dahinter arbeitet statistisch: Sie mittelt das Produkt zweier Feldstärken über die Zeit (Korrelationsfunktionen) und kennt alle Zwischenstufen zwischen kohärent und inkohärent. Diese Theorie ist mathematisch anspruchsvoll, und für das Verständnis, wie ein Laser funktioniert, brauchst du sie nicht. Sie beschreibt präzise, was sein Licht auszeichnet. Für dieses Workbook reicht das Bild der festen Phasenbeziehung: der Grenzfall vollständiger Kohärenz.
+Die strenge Theorie dahinter arbeitet statistisch: Sie mittelt das Produkt zweier Feldstärken über die Zeit (Korrelationsfunktionen) und kennt alle Zwischenstufen zwischen kohärent und inkohärent. Diese Theorie ist mathematisch anspruchsvoll, und für das Verständnis, wie ein Laser funktioniert, brauchst du sie nicht. Sie beschreibt präzise, was sein Licht auszeichnet. Für dieses Workbook reicht das Bild der festen Phasenbeziehung.
 :::
 
-Beim Laser haben beide Arten dieselbe Ursache: Die stimulierte Emission füllt eine einzige Mode des Resonators mit Photonen. Eine Mode hat eine feste Wellenlänge, und ihr Licht läuft parallel zur Resonatorachse. Das eine bedeutet zeitliche, das andere räumliche Kohärenz. Keine der besonderen Eigenschaften des Laserlichts erzeugt die anderen: Sie entstehen gemeinsam, weil praktisch das gesamte Licht in derselben Mode steckt.
+Beim Laser haben beide Arten dieselbe Ursache: Die stimulierte Emission füllt eine einzige Mode des Resonators mit Photonen. Eine Mode hat eine feste Wellenlänge, und ihr Licht läuft parallel zur Resonatorachse. Die feste Wellenlänge hängt mit der zeitlichen Kohärenz zusammen, die gemeinsame Richtung mit der räumlichen. Keine der besonderen Eigenschaften des Laserlichts erzeugt die anderen: Sie entstehen gemeinsam, weil praktisch das gesamte Licht in derselben Mode steckt und die stimulierte Emission die Wellenzüge in fester Phasenbeziehung zueinander hält.
 
 </details>
 
@@ -525,7 +527,7 @@ Der Resonator besteht aus zwei Spiegeln mit dem Lasermedium dazwischen. Er schic
 ## Aufbau eines Lasers: der erste Laser
 
 ::: {.callout-note title="Relevanz"}
-1960 baute der Physiker Theodore Maiman den ersten funktionierenden Laser. Sein Lasermedium war ein Rubinkristall. Dieser erste Laser ist bis heute im Einsatz: In Hautarztpraxen entfernen Rubinlaser zum Beispiel Tattoos.
+1960 baute der Physiker Theodore Maiman den ersten funktionierenden Laser. Sein Lasermedium war ein Rubinkristall. Schon neun Jahre später vermaßen die Pulse eines Rubinlasers die Entfernung zum Mond, und bis heute ist dieser Lasertyp im Einsatz: In Hautarztpraxen entfernen Rubinlaser zum Beispiel Tattoos.
 :::
 
 ::: {.mp-goal-strip}
@@ -536,7 +538,7 @@ Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bautei
 
 Bisher kennst du die Bausteine einzeln: ein Lasermedium mit Besetzungsinversion, das Pumpen und den Resonator. Jetzt setzt du sie am Beispiel des Rubinlasers zu einem echten Gerät zusammen.
 
-Rubin ist ein Kristall: Korund (Aluminiumoxid) mit einer kleinen Beimischung von Chrom. Einige Aluminium-Ionen im Kristallgitter sind durch **Chrom-Ionen** ersetzt. Diese Chrom-Ionen geben dem Rubin seine rote Farbe, und sie liefern die Energieniveaus für den Laser. Der Kristall hält die Ionen nur an ihrem Platz: Das eigentliche Lasermedium sind die Chrom-Ionen.
+Rubin ist ein Kristall: Korund (Aluminiumoxid) mit einer kleinen Beimischung von Chrom. Einige Aluminium-Ionen im Kristallgitter sind durch **Chrom-Ionen** ersetzt. In der Gitterumgebung des Korunds besitzen diese Chrom-Ionen die passenden Energieniveaus für den Laser. Sie geben dem Rubin auch seine rote Farbe. Das Lasermedium ist der Rubinkristall als Ganzes. Die aktiven Zentren darin sind die Chrom-Ionen.
 
 Die Chrom-Ionen bilden das Drei-Niveau-System aus dem letzten Abschnitt: den Grundzustand, ein hohes Pumpniveau und dazwischen ein metastabiles Niveau. Um den Rubinstab liegt eine **Blitzlampe**. Ihr grünes und blaues Licht hebt die Chrom-Ionen vom Grundzustand in das Pumpniveau. Von dort wechseln sie schnell in das metastabile Niveau und sammeln sich.
 
@@ -597,65 +599,10 @@ In der HTML-Version erscheint hier eine Animation: der Aufbau des Rubinlasers mi
 ::: {.mp-box .mp-context}
 <div class="mp-title">Der Rubinlaser im Überblick</div>
 
-- **Lasermedium:** Chrom-Ionen im Rubinstab. Sie bilden ein Drei-Niveau-System mit metastabilem Niveau.
+- **Lasermedium:** Rubinstab mit Chrom-Ionen. Die Chrom-Ionen bilden ein Drei-Niveau-System mit metastabilem Niveau.
 - **Pumpquelle:** eine Blitzlampe um den Stab. Ihr Licht stellt die Besetzungsinversion her.
 - **Resonator:** zwei Spiegel an den Stabenden, einer teildurchlässig. Dort tritt der Laserpuls aus.
 :::
-
-Wie groß die Energie eines einzelnen Photons im Laserpuls ist, rechnest du jetzt selbst nach.
-
-:::: {.mp-box .mp-math}
-<div class="mp-title">Rechnung</div>
-
-<span class="mp-task-kind mp-task-kind-derive" aria-label="Stift und Papier">
-  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
-  Stift und Papier
-</span>
-
-Beim Laserübergang gibt ein Chrom-Ion ein Photon mit der Wellenlänge $\lambda = 694\,\mathrm{nm}$ ab.
-
-**Deine Aufgabe:** <u>Berechne</u> die Energie dieses Photons. Verwende $E_\text{Photon} = h f$ mit $h = 6{,}626 \cdot 10^{-34}\,\mathrm{Js}$ und die Lichtgeschwindigkeit $c = 3{,}00 \cdot 10^{8}\,\tfrac{\mathrm{m}}{\mathrm{s}}$.
-
-Wähle deinen Einstieg:
-
-::: {.panel-tabset}
-
-### Ganz allein
-
-Hier bekommst du keine Hilfe, und das ist Absicht. Du kennst beide nötigen Zusammenhänge schon. Geh erst zu „Mit Hinweisen", wenn du wirklich feststeckst.
-
-### Mit Hinweisen
-
-- In $E_\text{Photon} = h f$ steht die Frequenz, gegeben ist aber die Wellenlänge. Beide hängen über $c = \lambda \cdot f$ zusammen.
-- Rechne die Wellenlänge in Meter um: $694\,\mathrm{nm} = 6{,}94 \cdot 10^{-7}\,\mathrm{m}$.
-- Kontrolle über die Größenordnung: Photonen des sichtbaren Lichts tragen einige $10^{-19}\,\mathrm{J}$.
-
-### Schritt für Schritt
-
-1. <u>Stelle</u> $c = \lambda \cdot f$ nach $f$ um.
-2. <u>Berechne</u> $f$ mit $\lambda = 6{,}94 \cdot 10^{-7}\,\mathrm{m}$.
-3. <u>Setze</u> $f$ in $E_\text{Photon} = h f$ ein und <u>berechne</u> die Energie.
-
-:::
-
-<details class="mp-details">
-<summary>Kontrollrechnung anzeigen</summary>
-
-$$
-\begin{aligned}
-f &= \frac{c}{\lambda}
-  = \frac{3{,}00 \cdot 10^{8}\,\tfrac{\mathrm{m}}{\mathrm{s}}}{6{,}94 \cdot 10^{-7}\,\mathrm{m}}
-  \approx 4{,}32 \cdot 10^{14}\,\mathrm{Hz} \\[10pt]
-E_\text{Photon} &= h f
-  \approx 6{,}626 \cdot 10^{-34}\,\mathrm{Js} \cdot 4{,}32 \cdot 10^{14}\,\mathrm{Hz}
-  \approx 2{,}86 \cdot 10^{-19}\,\mathrm{J}
-\end{aligned}
-$$
-
-Diese Energie ist der Abstand zwischen dem metastabilen Niveau und dem Grundzustand der Chrom-Ionen.
-
-</details>
-::::
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
@@ -674,10 +621,16 @@ Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Der kurze
 <p>Der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht. Eine andere Wellenlänge gehört zu einem anderen Laserübergang: Der Arzt braucht einen Laser mit einem anderen Lasermedium.</p>
 </details>
 
+::: {.mp-box .mp-fact}
+<div class="mp-title">Mit dem Rubinlaser zum Mond</div>
+
+Im Juli 1969 stellten die Astronauten von Apollo 11 einen Spiegelreflektor auf dem Mond auf. Am 1. August 1969 gelang am Lick-Observatorium in Kalifornien der erste Treffer: Die Blitze eines Rubinlasers liefen durch ein 3-Meter-Teleskop zum Reflektor und zurück, Laufzeit rund 2,5 Sekunden für etwa 770&#8239;000 km. Aus der Laufzeit folgt die Entfernung zum Mond, so genau wie mit keiner Methode zuvor. Unterwegs geht fast das gesamte Licht verloren: Trotz der starken Bündelung läuft der Strahl auf dem langen Weg auseinander, denn perfekt parallel ist kein Lichtstrahl, auch kein Laserstrahl. Am Mond war der Blitz mehrere Kilometer breit, der Reflektor misst nur etwa einen halben Meter. Von den etwa $3 \cdot 10^{17}$ Photonen eines Blitzes erreichten am Ende nur einzelne den Detektor. Gemessen wird so bis heute, inzwischen mit anderen Lasertypen.
+:::
+
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-Der Rubinlaser vereint die drei Bausteine des Lasers. Das Lasermedium sind Chrom-Ionen in einem Korund-Kristall; sie bilden ein Drei-Niveau-System mit metastabilem Niveau. Eine Blitzlampe pumpt die Ionen und stellt die Besetzungsinversion her. Zwei Spiegel an den Stabenden bilden den Resonator. Durch den teildurchlässigen Spiegel verlässt ein roter Laserpuls mit der Wellenlänge 694 nm den Kristall.
+Der Rubinlaser vereint die drei Bausteine des Lasers. Das Lasermedium ist ein Korund-Kristall mit Chrom-Ionen; die Chrom-Ionen bilden ein Drei-Niveau-System mit metastabilem Niveau. Eine Blitzlampe pumpt die Ionen und stellt die Besetzungsinversion her. Zwei Spiegel an den Stabenden bilden den Resonator. Durch den teildurchlässigen Spiegel verlässt ein roter Laserpuls mit der Wellenlänge 694 nm den Kristall.
 :::
 
 <!-- ====================================================================== -->
@@ -730,7 +683,15 @@ Die Elektronenstöße heben vor allem Heliumatome in einen angeregten Zustand an
 <p>Beim Stoß ist das kein Hindernis, die fehlenden 0,05 eV liefert die Bewegungsenergie der Atome. Im Gas stoßen die Atome ständig zusammen, die Übergabe klappt darum zuverlässig.</p>
 </details>
 
-Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau leert sich von selbst sehr schnell weiter. Es ist darum praktisch immer leer, und schon wenige Neonatome im oberen Niveau ergeben eine Besetzungsinversion. Man spricht von einem **Vier-Niveau-System**: Grundzustand, unteres und oberes Laserniveau und darüber der Pumpweg. Eine schwache, dauernd laufende Gasentladung hält die Inversion aufrecht, der Strahl leuchtet ununterbrochen: Man nennt das **Dauerstrichbetrieb**.
+Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau leert sich von selbst sehr schnell weiter. Es ist darum praktisch immer leer, und schon wenige Neonatome im oberen Niveau sind mehr als im unteren: Zwischen diesen beiden Niveaus herrscht Besetzungsinversion, obwohl fast alle Neonatome im Grundzustand sitzen. Ein Zahlenbeispiel für 1000 Neonatome, angeordnet wie im Niveauschema:
+
+| Niveau | Besetzung |
+|---|---:|
+| oberes Laserniveau | 10 Atome |
+| unteres Laserniveau | 0 Atome |
+| Grundzustand | 990 Atome |
+
+Für die Inversion zählt nur der Vergleich der beiden Laserniveaus: 10 gegen 0. Die 990 Atome im Grundzustand stören den Laser nicht: Das rote Photon passt zu keinem Übergang aus dem Grundzustand und wird von ihnen nicht absorbiert. Man spricht von einem **Vier-Niveau-System**: Grundzustand, unteres und oberes Laserniveau und darüber der Pumpweg. Eine schwache, dauernd laufende Gasentladung hält die Inversion aufrecht, der Strahl leuchtet ununterbrochen: Man nennt das **Dauerstrichbetrieb**.
 
 Das Bild zeigt das Niveauschema: Ein Elektronenstoß regt das Helium an, ein Stoß übergibt die Energie an das Neon, der Laserübergang liefert das rote Licht, und das untere Niveau leert sich schnell.
 
@@ -766,40 +727,6 @@ Das Helium wird von den Elektronen der Gasentladung angeregt und speichert die E
 
 </details>
 
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
-  Transfer
-</span>
-
-Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält mehrere Farben, also verschiedene Wellenlängen, ähnlich wie bei einer Leuchtreklame. Der Laserstrahl enthält nur eine einzige Wellenlänge: 632,8 nm.
-
-<u>Begründe</u> diesen Unterschied.
-
-:::: {.content-visible when-format="html"}
-```{=html}
-<figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="450" data-srt-label="Schaltbare Grafik: der Aufbau des Helium-Neon-Lasers, davor ein Gitterspektroskop. Hält man es seitlich ans Rohr, zeigt das Spektrum darunter viele farbige Linien zwischen 450 und 700 Nanometern. Hält man es in den Laserstrahl, zeigt das Spektrum genau eine rote Linie bei 632,8 Nanometern."></div>
-</figure>
-```
-::::
-
-:::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine schaltbare Grafik: Ein Gitterspektroskop vor dem seitlichen Licht des Rohrs zeigt viele Spektrallinien, im Laserstrahl nur eine einzige rote Linie bei 632,8 nm.
-:::
-::::
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-
-Jede Wellenlänge gehört zu einem bestimmten Übergang zwischen zwei Energieniveaus: $E_\text{Photon} = \Delta E$. Die Gasentladung regt Helium- und Neonatome in viele verschiedene Niveaus an. Beim Zurückfallen senden die Atome spontan Photonen auf vielen verschiedenen Übergängen aus, und zu jedem Übergang gehört eine andere Wellenlänge. Das seitliche Licht enthält darum viele Farben, wie das Licht einer Leuchtreklame.
-
-Verstärkt wird dagegen nur ein einziger Übergang: der Laserübergang des Neons mit 632,8 nm. Nur auf ihm besteht die Besetzungsinversion, nur sein Licht läuft im Resonator immer wieder durch das Medium und wächst zur Lawine an. Der Laserstrahl enthält darum nur diese eine Wellenlänge.
-
-</details>
-
 ::: {.mp-box .mp-context}
 <div class="mp-title">Der Helium-Neon-Laser im Überblick</div>
 
@@ -808,16 +735,74 @@ Verstärkt wird dagegen nur ein einziger Übergang: der Laserübergang des Neons
 - **Resonator:** zwei Spiegel an den Rohrenden, einer teildurchlässig. Dort tritt der dauerhafte Laserstrahl aus.
 :::
 
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält mehrere Farben, also verschiedene Wellenlängen. Der Laserstrahl enthält nur eine einzige Wellenlänge: 632,8 nm.
+
+<u>Begründe</u> diesen Unterschied.
+
+:::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="450" data-srt-label="Schaltbare Grafik: der Aufbau des Helium-Neon-Lasers, davor ein Gitterspektroskop. Hält man es seitlich ans Rohr, zeigt das Spektrum darunter viele farbige Linien zwischen 450 und 700 Nanometern. Hält man es in den Laserstrahl, zeigt das Spektrum genau eine rote Linie."></div>
+</figure>
+```
+::::
+
+:::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine schaltbare Grafik: Ein Gitterspektroskop vor dem seitlichen Licht des Rohrs zeigt viele Spektrallinien, im Laserstrahl nur eine einzige rote Linie.
+:::
+::::
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Jede Wellenlänge gehört zu einem bestimmten Übergang zwischen zwei Energieniveaus: $E_\text{Photon} = \Delta E$. Die Gasentladung regt Helium- und Neonatome in viele verschiedene Niveaus an. Beim Zurückfallen senden die Atome spontan Photonen auf vielen verschiedenen Übergängen aus, und zu jedem Übergang gehört eine andere Wellenlänge. Das seitliche Licht enthält deshalb viele Farben.
+
+Verstärkt wird dagegen nur ein einziger Übergang: der Laserübergang des Neons mit 632,8 nm. Nur auf ihm besteht die Besetzungsinversion, nur sein Licht läuft im Resonator immer wieder durch das Medium und wächst zur Lawine an. Der Laserstrahl enthält darum nur diese eine Wellenlänge.
+
+</details>
+
 ::: {.mp-box .mp-core}
 <div class="mp-title">Kernaussage</div>
 
-Der Helium-Neon-Laser ist ein Gaslaser mit dauerhaftem Strahl. Eine Gasentladung regt die Heliumatome an; durch Stöße übergeben sie ihre Energie an das Neon und füllen dessen oberes Laserniveau. Der Laserübergang liefert rotes Licht mit 632,8 nm und endet in einem Niveau, das sich schnell leert. Für die Besetzungsinversion genügt darum schwaches, ständiges Pumpen: Der Laser arbeitet im Dauerstrichbetrieb.
+Der Helium-Neon-Laser ist ein Gaslaser mit dauerhaftem Strahl. Gepumpt wird mit einer Gasentladung, einem Stromfluss durch das Gas: Deren Elektronen regen die Heliumatome an; durch Stöße übergeben diese ihre Energie an das Neon und füllen dessen oberes Laserniveau. Der Laserübergang liefert rotes Licht mit 632,8 nm und endet in einem Niveau, das sich schnell leert und darum praktisch leer bleibt. Schon wenige Atome im oberen Laserniveau sind mehr als im fast leeren unteren: Besetzungsinversion. Die schwache, ständig laufende Entladung hält sie aufrecht: Der Strahl leuchtet ununterbrochen, im Dauerstrichbetrieb.
+:::
+
+## Gefahren des Laserlichts
+
+::: {.callout-note title="Relevanz"}
+Ein gelbes Dreieck mit einem Strahlensymbol: Dieses Warnzeichen findest du am Laserpointer, an Lasergeräten im Labor und manchmal sogar im eigenen Keller, am Kasten des Glasfaser-Anschlusses. Dort überträgt unsichtbares infrarotes Laserlicht die Internetdaten. Ausgerechnet der Laserpointer mit seinem einen Milliwatt trägt ein Warnzeichen, während die 60-Watt-Glühlampe keines braucht. Dieser Abschnitt klärt, was Laserlicht gefährlich macht und wie du dich schützt.
+:::
+
+::: {.mp-goal-strip}
+Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann.
+:::
+
+![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](assets/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
+
+Ein gewöhnlicher Laserpointer hat eine Leistung von etwa einem Milliwatt: weniger als ein Zehntausendstel einer 60-Watt-Glühlampe. Die Glühlampe kannst du anschauen, sie blendet höchstens. Der Blick in den Laserstrahl kann das Auge dagegen dauerhaft schädigen. Der Unterschied liegt in der Bündelung.
+
+Die Glühlampe verteilt ihre Leistung in alle Richtungen. Durch die Pupille fällt nur ein winziger Bruchteil, und weil die Lampe ausgedehnt ist, verteilt sich dieser Bruchteil auf der Netzhaut über einen größeren Fleck. Der Laserstrahl passt dagegen vollständig durch die Pupille: Seine gesamte Leistung kommt im Auge an. Die Augenlinse bündelt das parallele Laserlicht weiter auf einen winzigen Fleck der Netzhaut, wenige hundertstel Millimeter klein. Dort übertrifft die Bestrahlungsstärke die der Glühlampe um viele Größenordnungen. Die Netzhaut kann verbrennen; solche Schäden sind teils irreparabel und werden oft erst spät bemerkt. Das gilt auch für unsichtbares Laserlicht im nahen Infrarot: Das Auge ist bis etwa 1200 nm durchlässig und fokussiert einen solchen Strahl genauso, nur siehst du ihn dabei nicht.
+
+Lasergeräte tragen darum eine Kennzeichnung mit einer **Laserklasse**. Sie reicht von Klasse 1 (ungefährlich oder Strahlung vollständig eingeschlossen) über Klasse 2 (nur sichtbares Licht; bei kurzem Blick unter 0,25 Sekunden fürs Auge ungefährlich; hierzu gehören zugelassene Laserpointer) und Klasse 3 (gefährlich für das Auge) bis Klasse 4 (gefährlich für Auge und Haut, selbst gestreutes Licht; dazu Brandgefahr). Ab Klasse 3 gehören Schutzbrille und geschultes Personal dazu. Laser zur Materialbearbeitung und viele Forschungslaser sind Klasse 4.
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Kernaussage</div>
+
+Gefährlich macht den Laser seine Bündelung, die Leistung kann klein sein: Der parallele Strahl passt vollständig durch die Pupille, und die Augenlinse fokussiert ihn auf einen winzigen Fleck der Netzhaut. Blicke nie in einen Laserstrahl, auch nicht in einen reflektierten, und richte einen Laser nie auf Menschen, Tiere oder Fahrzeuge. Die Laserklasse auf dem Gerät (1 bis 4) gibt an, wie gefährlich die zugängliche Strahlung ist.
 :::
 
 ## Sichern und anwenden
 
 ::: {.callout-note title="Relevanz"}
-Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt sicherst du die Grundideen dieses Kapitels in deiner eigenen Sprache. Anschließend wendest du den Bauplan des Lasers an und vergleichst die beiden Lasertypen dieses Kapitels.
+Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt sicherst du die Grundideen dieses Kapitels in deiner eigenen Sprache und prüfst dein Verständnis an typischen Fehlvorstellungen. Anschließend vergleichst du die beiden Lasertypen dieses Kapitels.
 :::
 
 ### In eigener Sprache erklären
@@ -835,14 +820,50 @@ Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf 
 
 Nutze die **Lernziele** der einzelnen Abschnitte als Leitfaden. Hangle dich an ihnen entlang, formuliere aber selbst. Schreibe nicht ab, sondern erkläre es so, wie du es verstanden hast:
 
-- **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission und <u>vergleichst</u> die beiden Emissionsarten.
-- **Besetzungsinversion:** Du <u>erklärst</u>, was eine Besetzungsinversion ist, <u>begründest</u>, dass ein Lasermedium gepumpt werden muss, und <u>erklärst</u>, wozu ein metastabiles Niveau dient.
-- **Resonator:** Du <u>erklärst</u>, wie der Resonator Richtung und Wellenlänge des Laserlichts auswählt, und <u>nennst</u> die besonderen Eigenschaften des Laserlichts.
-- **Rubinlaser:** Du <u>beschreibst</u> den Aufbau aus Lasermedium, Pumpquelle und Resonator und <u>erklärst</u> das Zusammenwirken der drei Bauteile.
-- **Helium-Neon-Laser:** Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht.
+- **Stimulierte Emission:** Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission, <u>prüfst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann, und <u>vergleichst</u> die beiden Emissionsarten.
+- **Besetzungsinversion:** Du <u>erklärst</u>, was eine Besetzungsinversion ist, <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss, und <u>erklärst</u>, wozu ein metastabiles Niveau dient.
+- **Resonator:** Du <u>beschreibst</u> den Aufbau eines optischen Resonators, <u>erklärst</u>, wie er die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird, <u>erläuterst</u> die Resonanzbedingung, <u>wendest</u> sie <u>an</u> und <u>nennst</u> die besonderen Eigenschaften des Laserlichts.
+- **Rubinlaser:** Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator und <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
+- **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers, <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht, und <u>begründest</u>, dass ihm schwaches, ständiges Pumpen genügt.
+- **Gefahren des Laserlichts:** Du <u>erklärst</u> mit der Bündelung, dass schon ein schwacher Laser das Auge schädigen kann.
 :::
 
-### Anwendung: Zwei Lasertypen im Vergleich
+Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typischen Stolperfallen dieses Kapitels.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+<u>Beurteile</u>, welche der folgenden Aussagen zutreffen, und <u>korrigiere</u> die falschen.
+
+1. Sehr intensives Licht wird von einem Atom immer absorbiert.
+2. Wenn man ein Lasermedium stark genug erhitzt, entsteht eine Besetzungsinversion.
+3. Beim Rubinlaser muss die Blitzlampe mehr als die Hälfte aller Chrom-Ionen anheben, damit eine Besetzungsinversion entsteht.
+4. Bei jeder Besetzungsinversion ist mehr als die Hälfte aller Atome angeregt.
+5. In einem metastabilen Niveau gibt es keine spontane Emission.
+6. Erst der Resonator macht die Photonen untereinander gleich.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+<p><strong>1. Falsch.</strong> Für die Absorption zählt die Energie des einzelnen Photons: Sie muss zum Niveauabstand passen. Hohe Intensität bedeutet viele Photonen, sie ändert die Energie pro Photon aber nicht.</p>
+
+<p><strong>2. Falsch.</strong> Im thermischen Gleichgewicht ist das höhere Niveau immer schwächer besetzt. Selbst bei beliebig hoher Temperatur nähert sich die Besetzung höchstens der Gleichbesetzung.</p>
+
+<p><strong>3. Richtig.</strong> Das untere Laserniveau des Rubins ist der Grundzustand. Für eine Inversion müssen im oberen Laserniveau mehr Ionen sitzen als im Grundzustand, also mehr als die Hälfte aller Ionen. Erst dann trifft ein passendes Photon öfter auf ein angeregtes Ion als auf eines im Grundzustand, und aus einem Photon werden viele.</p>
+
+<p><strong>4. Falsch.</strong> Verglichen werden nur die beiden Niveaus des Laserübergangs. Beim Vier-Niveau-System des Neons ist das untere Laserniveau praktisch leer: Schon wenige angeregte Atome ergeben eine Inversion, während fast alle Atome im Grundzustand sitzen.</p>
+
+<p><strong>5. Falsch.</strong> Auch aus einem metastabilen Niveau tritt spontane Emission auf, nur deutlich verzögert. Genau diese Verzögerung erlaubt es, dort viele Atome anzusammeln.</p>
+
+<p><strong>6. Falsch.</strong> Die gleichartigen Photonen erzeugt die stimulierte Emission: Jedes neue Photon ist eine Kopie des auslösenden. Der Resonator wählt Richtung und Wellenlänge aus und schickt das Licht immer wieder durch das Medium.</p>
+
+</details>
+
+### Zwei Lasertypen im Vergleich
 
 Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit Besetzungsinversion, eine Pumpquelle und ein Resonator. An jeder dieser drei Stellen sind sie verschieden gebaut, und ein Unterschied prägt den Charakter der beiden Geräte: Der eine blitzt, der andere leuchtet.
 
@@ -852,9 +873,9 @@ Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit B
   Transfer
 </span>
 
-<u>Vergleiche</u> Rubinlaser und Helium-Neon-Laser nach Lasermedium, Pumpquelle und Niveausystem.
+<u>Vergleiche</u> Rubinlaser und Helium-Neon-Laser nach Lasermedium, Pumpquelle, Niveausystem und Betriebsart.
 
-<u>Begründe</u> mit dem unteren Laserniveau, dass der Rubinlaser einzelne Pulse liefert, während der Helium-Neon-Laser mit schwachem, ständigem Pumpen dauerhaft leuchtet.
+<u>Begründe</u> mit dem unteren Laserniveau, dass der Rubinlaser einzelne Pulse liefert, während der Helium-Neon-Laser dauerhaft leuchtet.
 :::
 
 <details class="mp-details">
@@ -862,7 +883,7 @@ Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit B
 
 | | Rubinlaser | Helium-Neon-Laser |
 |---|---|---|
-| Lasermedium | Chrom-Ionen im Rubinstab | Neonatome im Helium-Neon-Gasgemisch |
+| Lasermedium | Rubinstab mit Chrom-Ionen | Neonatome im Helium-Neon-Gasgemisch |
 | Pumpquelle | Blitzlampe um den Stab | Gasentladung, Energieübergabe über Helium-Stöße |
 | Niveausystem | Drei-Niveau-System | Vier-Niveau-System |
 | Betriebsart | Pulsbetrieb | Dauerstrichbetrieb |
@@ -874,6 +895,4 @@ Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und l
 
 </details>
 
-#### Ausblick: Weitere Lasertypen
-
-Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?
+**Ausblick: Weitere Lasertypen.** Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?

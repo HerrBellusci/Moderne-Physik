@@ -100,6 +100,12 @@
   border-color: rgba(161, 98, 7, 0.30);
 }
 
+.mp-fact {
+  --mp-accent: #2563eb;
+  --mp-bg: #f4f7ff;
+  border-color: rgba(37, 99, 235, 0.26);
+}
+
 .mp-task {
   --mp-accent: var(--mp-ink);
   --mp-bg: #f7f9fb;
@@ -151,7 +157,8 @@
   background: #f0fbfc;
 }
 
-.mp-task-kind-calc {
+.mp-task-kind-calc,
+.mp-task-kind-calculate {
   color: #516173;
   border-color: rgba(81, 97, 115, 0.24);
   background: #f8fafb;
