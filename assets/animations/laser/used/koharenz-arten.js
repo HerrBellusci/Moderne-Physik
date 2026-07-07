@@ -5,6 +5,7 @@
   const K_MONO = 0.24;
   const K_MULTI = [0.19, 0.215, 0.24, 0.27, 0.3];
   const PHI_MULTI = [0, 2.1, 4.4, 1.2, 3.4];
+  const PHI_OFFSET = [0, 1.1, 2.4, 0.8, 1.7];
   const COLORS_MULTI = ["#e11d48", "#f59e0b", "#16a34a", "#2563eb", "#7c3aed"];
   const COLOR_MONO = "#e11d48";
   const ANGLES_FAN = [-13, -6.5, 0, 6.5, 13];
@@ -43,7 +44,8 @@
 
   function rayWave(state, i) {
     if (state.color === "mono") {
-      return { k: K_MONO, phi: 0, stroke: COLOR_MONO };
+      const phi = state.phase === "offset" ? PHI_OFFSET[i] : 0;
+      return { k: K_MONO, phi, stroke: COLOR_MONO };
     }
     return { k: K_MULTI[i], phi: PHI_MULTI[i], stroke: COLORS_MULTI[i] };
   }
@@ -100,13 +102,15 @@
 
     if (state.color === "mono") {
       const sMid = (x1 - MAIN.x - 52) * 0.62;
-      const n = Math.round((K_MONO * sMid - t * C_SPEED * K_MONO - Math.PI / 2) / (2 * Math.PI));
-      const sN = (Math.PI / 2 + 2 * Math.PI * n) / K_MONO + t * C_SPEED;
       const flat = state.dirs === "parallel";
+      const aligned = state.phase !== "offset";
       let fd = "";
       const pts = [];
       for (let i = 0; i < 5; i += 1) {
         const g = rayGeometry(state, i);
+        const w = rayWave(state, i);
+        const n = Math.round((w.k * sMid - t * C_SPEED * w.k + w.phi - Math.PI / 2) / (2 * Math.PI));
+        const sN = (Math.PI / 2 - w.phi + 2 * Math.PI * n) / w.k + t * C_SPEED;
         pts.push({ x: g.ox + sN * g.cos, y: g.oy + sN * g.sin });
       }
       pts.forEach((p, idx) => {
@@ -128,7 +132,7 @@
         }, parent);
       });
       SRT.addText(parent, pts[0].x, MAIN.y + 48, flat
-        ? "ebene Wellenfront"
+        ? (aligned ? "ebene Wellenfront" : "Front mit festem Versatz")
         : "gekrümmte Wellenfront", "label", {
         fill: flat ? "#16a34a" : "#dc2626",
         "font-size": 12,
@@ -157,7 +161,9 @@
       "font-weight": "800"
     });
     SRT.addText(parent, INFO.x + 20, INFO.y + 52, par
-      ? "räumlich kohärent: ja, parallele Wellenzüge halten den Versatz quer zum Strahl fest"
+      ? (mono && state.phase === "offset"
+        ? "räumlich kohärent: ja, der Versatz ist fest und wandert unverändert mit"
+        : "räumlich kohärent: ja, parallele Wellenzüge halten den Versatz quer zum Strahl fest")
       : "räumlich kohärent: nein, aufgefächert wächst der Versatz quer zum Strahl immer weiter", "label", {
       fill: par ? "#16a34a" : "#dc2626",
       "font-size": 12,
@@ -178,7 +184,7 @@
 
   window.SRTSlide.register("laser-koharenz-arten", {
     showMotionControl: false,
-    initialState: { color: "mono", dirs: "parallel" },
+    initialState: { color: "mono", dirs: "parallel", phase: "aligned" },
     controls: [
       {
         type: "group",
@@ -213,6 +219,26 @@
             ariaLabel: "Wellenzüge laufen aufgefächert in verschiedene Richtungen",
             pressed: (state) => state.dirs === "fan",
             apply: (state) => { state.dirs = "fan"; }
+          }
+        ]
+      },
+      {
+        type: "group",
+        label: (state) => (state.color === "multi" ? "Versatz (nur bei einer Farbe)" : "Versatz"),
+        controls: [
+          {
+            label: "gleichphasig",
+            ariaLabel: "Wellenzüge starten gleichphasig",
+            pressed: (state) => state.phase !== "offset",
+            disabled: (state) => state.color === "multi",
+            apply: (state) => { state.phase = "aligned"; }
+          },
+          {
+            label: "fester Versatz",
+            ariaLabel: "Wellenzüge haben einen festen Phasenversatz gegeneinander",
+            pressed: (state) => state.phase === "offset",
+            disabled: (state) => state.color === "multi",
+            apply: (state) => { state.phase = "offset"; }
           }
         ]
       }
