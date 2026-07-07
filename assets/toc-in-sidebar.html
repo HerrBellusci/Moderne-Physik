@@ -1,0 +1,32 @@
+<script>
+// Verschiebt das Seiten-Inhaltsverzeichnis (Unterüberschriften) in der linken
+// Seitenleiste direkt unter den Eintrag des aktuellen Kapitels.
+document.addEventListener("DOMContentLoaded", function () {
+  var toc = document.querySelector("#quarto-sidebar #TOC");
+  var active = document.querySelector("#quarto-sidebar .sidebar-link.active");
+  if (!toc || !active) return;
+  var item = active.closest("li.sidebar-item");
+  if (!item) return;
+  var title = toc.querySelector("#toc-title");
+  if (title) title.remove();
+  toc.classList.add("toc-under-chapter");
+  item.appendChild(toc);
+});
+</script>
+<style>
+#quarto-sidebar .toc-under-chapter {
+  margin: 0.15rem 0 0.4rem 0.65rem;
+  padding-left: 0.6rem;
+  border-left: 1px solid var(--bs-border-color, #dee2e6);
+  font-size: 0.86em;
+}
+#quarto-sidebar .toc-under-chapter > ul {
+  padding-left: 0;
+}
+#quarto-sidebar .toc-under-chapter ul {
+  list-style: none;
+}
+#quarto-sidebar .toc-under-chapter ul ul {
+  padding-left: 0.75rem;
+}
+</style>

@@ -10,6 +10,7 @@ book:
   date: today
   chapters:
     - index.qmd
+    - 00_konzeption.qmd
     - 01_srt_raum_und_zeit.qmd
     - 03_srt_impuls_und_energie.qmd
     - 02_laser_ausflug.qmd
@@ -23,5 +24,8 @@ format:
     theme: cosmo
     css:
       - assets/learning-boxes.css
+    include-after-body: assets/toc-in-sidebar.html
     toc: true
-    number-sections: true
+    toc-location: left
+    toc-depth: 3
+    number-sections: false

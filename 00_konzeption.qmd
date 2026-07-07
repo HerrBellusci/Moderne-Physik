@@ -1,0 +1,57 @@
+# Konzeption des Workbooks {.unnumbered #sec-konzeption}
+
+Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern; es ist für das Selbststudium gedacht.
+
+## Die Sprache
+
+Im gesamten Workbook wird der Leser direkt angesprochen („du"). Das folgt dem Personalisierungsprinzip (Mayer): Lernende verarbeiten Inhalte tiefer, wenn ein Text sie persönlich und im Gesprächsstil anspricht, weil sie ihn dann wie einen Gesprächspartner behandeln und aktiver mitdenken. Für ein Selbstlernmaterial wiegt das doppelt, denn das Workbook ersetzt das erklärende Gespräch mit einer Lehrperson.
+
+## Der Kapitelanfang
+
+### Die Hauptüberschrift
+
+Die Hauptüberschrift benennt den Themenbereich und dahinter die tragenden Konzepte des Kapitels, z. B. „Spezielle Relativitätstheorie I: Raum und Zeit" oder „Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator". So ist das Kapitel im Inhaltsverzeichnis eindeutig auffindbar und die Überschrift zeigt vor dem Lesen, welche großen Ideen kommen; das Neugier-Wecken übernimmt der Einstiegstext darunter. Gegen eine Überschrift, die selbst Neugier weckt (etwa „Der Laser: Licht verstärkt Licht"), wurde bewusst entschieden: Eine kurze und zugleich fachlich haltbare Aussage findet sich voraussichtlich nur für einen Teil der Themengebiete, und die Überschriften sollen im ganzen Workbook einer Linie folgen.
+
+### Der Einstieg
+
+Direkt unter der Hauptüberschrift steht Fließtext: Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Dabei greift er die tragenden Konzepte aus der Überschrift auf und stellt sie in einen Zusammenhang, den die Unterkapitel danach Schritt für Schritt einlösen.
+
+## Die Unterkapitel
+
+### Die Überschrift
+
+Jedes Unterkapitel behandelt ein Konzept, und seine Überschrift benennt es, z. B. „Stimulierte Emission" oder „Resonator". So dient sie im Inhaltsverzeichnis als Orientierung und beim Zurückscrollen als Anker.
+
+### Die Lernziele
+
+Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele: Sie machen dem Leser transparent, was in diesem Unterkapitel gelernt wird.
+
+Operationalisiert heißt: Jedes Lernziel ist mit einem Operator formuliert, einem handlungsleitenden Verb aus den Vorgaben der Kultusministerkonferenz. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Die Operationalisierung hat unteranderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
+
+Die Lernziele stehen in einer grünen Box: Sie sind kein fachlicher Inhalt, sondern Lernziele, und die Box hebt sie sichtbar vom erklärenden Fließtext ab. So sieht das Element aus:
+
+::: {.mp-goal-strip}
+Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen.
+
+Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein.
+:::
+
+### Der Fließtext
+
+Nach den Lernzielen folgt der Fließtext: Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das der Leser kennt, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Der Grund kommt aus der Lernpsychologie: Neues wird verstanden und behalten, wenn es an vorhandenes Wissen angeknüpft wird; ohne diesen Anker bleibt es isoliertes Auswendigwissen.
+
+### Die Veranschaulichungen
+
+In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks: Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den der Leser durch eigene Eingriffe verändern soll, eine Simulation. 
+
+Entscheidend ist der Kontext: Jede Veranschaulichung wird dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
+
+- Räumliches auf einen Blick: Ein Aufbau braucht im Text mehrere Sätze, im Bild einen Blick.
+- Beleg: Ein Video führt das Phänomen vor, statt es nur zu behaupten.
+- Dynamik: Eine Animation zeigt einen Ablauf als Ablauf.
+- Ursache und Wirkung selbst erfahren: In der Simulation verändert der Leser Parameter und prüft seine eigene Erwartung.
+- Unsichtbares sichtbar machen: Photonen, Energieniveaus und Atome bekommen eine anschauliche Gestalt. Dass es sich bei solchen Darstellungen um Modellvorstellungen handelt (niemand kann ein Photon als Kugel oder Welle sehen), stellt das Vorwort des Workbooks einmal zentral klar.
+
+Die Erklärung der Konzepte bleibt dabei beim Text.
+
+Jede Veranschaulichung bekommt eine Unterschrift, und der Text greift auf, was sie zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich.
