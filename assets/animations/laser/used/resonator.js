@@ -481,7 +481,7 @@
     drawRect(parent, SRT, 0, 0, W, H, 8, "#ffffff", "#e2e8f0", 1);
 
     drawRect(parent, SRT, GEO.medL, GEO.medT, GEO.medW, GEO.medH, 10, MED_FILL, MED_EDGE, 1);
-    SRT.addText(parent, (GEO.medL + GEO.medR) / 2, GEO.medB + 45, "aktives Medium", "label", {
+    SRT.addText(parent, (GEO.medL + GEO.medR) / 2, GEO.medB - 12, "Lasermedium", "label", {
       fill: MUTED,
       "font-size": 13,
       "font-weight": "850",

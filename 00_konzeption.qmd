@@ -1,30 +1,58 @@
 # Konzeption des Workbooks {.unnumbered #sec-konzeption}
 
+::: {.content-visible when-format="html"}
+```{=html}
+<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
+<script src="assets/animations/shared/core.js"></script>
+<script src="assets/animations/srt/used/doppler/doppler-herleitung.js"></script>
+<script src="assets/animations/laser/used/resonator.js"></script>
+<script src="assets/animations/shared/srt-workbook.js"></script>
+```
+:::
+
 Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern; es ist für das Selbststudium gedacht.
 
-## Die Sprache
+## Übergreifendes
 
-Im gesamten Workbook wird der Leser direkt angesprochen („du"). Das folgt dem Personalisierungsprinzip (Mayer): Lernende verarbeiten Inhalte tiefer, wenn ein Text sie persönlich und im Gesprächsstil anspricht, weil sie ihn dann wie einen Gesprächspartner behandeln und aktiver mitdenken. Für ein Selbstlernmaterial wiegt das doppelt, denn das Workbook ersetzt das erklärende Gespräch mit einer Lehrperson.
+### Sprache
 
-## Der Kapitelanfang
+Im gesamten Workbook werden die Lesenden direkt angesprochen („du"). Das folgt dem Personalisierungsprinzip (Mayer): Lernende verarbeiten Inhalte tiefer, wenn ein Text sie persönlich und im Gesprächsstil anspricht, weil sie ihn dann wie ein Gegenüber behandeln und aktiver mitdenken. Für ein Selbstlernmaterial ist das relevant, denn das Workbook ersetzt das erklärende Gespräch mit einer Lehrperson.
 
-### Die Hauptüberschrift
+Personenbezeichnungen stehen in neutraler Form („die Lesenden", „die Studierenden"): So sind alle Geschlechter angesprochen, und der Lesefluss bleibt erhalten. Im Workbook selbst übernimmt die du-Ansprache das meiste, denn „du" ist geschlechtsneutral.
+
+### Querverweise
+
+Begriffe werden dort erklärt, wo sie eingeführt werden. Greift ein späteres Kapitel einen Begriff wieder auf, führt ein Querverweis zu dieser Stelle. Die eingebaute Volltextsuche übernimmt die Funktion eines Registers; auf ein Glossar wird verzichtet, denn es würde die Erklärungen nur verkürzt verdoppeln.
+
+### Der Rand
+
+Der rechte Seitenrand wird gezielt genutzt, nach dem Grundsatz: Der Rand trägt Kurzes und Ergänzendes, der Haupttext trägt den Inhalt. Auf schmalen Bildschirmen rückt Randinhalt automatisch in die Hauptspalte. Genutzt wird der Rand für:
+
+- Begriffs-Stichwörter: Führt der Fließtext einen Fachbegriff ein, der keine eigene Unterkapitel-Überschrift hat (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission), steht der Begriff als Stichwort am Rand. So bleibt die Einführungsstelle beim Scrollen auffindbar, und die Hervorhebung wandert aus dem Text an den Rand: Der Fließtext bleibt ruhig, Fettdruck entfällt. Das Muster ist aus Lehrwerken vertraut (Giancoli).
+
+So sieht das Begriffs-Stichwort aus:
+
+Manche angeregte Zustände behalten ihre Energie deutlich länger als gewöhnliche: Sie heißen metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Der Fließtext läuft ungestört weiter und erklärt das Konzept in Ruhe.
+
+## Kapitelanfang
+
+### Hauptüberschrift
 
 Die Hauptüberschrift benennt den Themenbereich und dahinter die tragenden Konzepte des Kapitels, z. B. „Spezielle Relativitätstheorie I: Raum und Zeit" oder „Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator". So ist das Kapitel im Inhaltsverzeichnis eindeutig auffindbar und die Überschrift zeigt vor dem Lesen, welche großen Ideen kommen; das Neugier-Wecken übernimmt der Einstiegstext darunter. Gegen eine Überschrift, die selbst Neugier weckt (etwa „Der Laser: Licht verstärkt Licht"), wurde bewusst entschieden: Eine kurze und zugleich fachlich haltbare Aussage findet sich voraussichtlich nur für einen Teil der Themengebiete, und die Überschriften sollen im ganzen Workbook einer Linie folgen.
 
-### Der Einstieg
+### Einstieg
 
-Direkt unter der Hauptüberschrift steht Fließtext: Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Dabei greift er die tragenden Konzepte aus der Überschrift auf und stellt sie in einen Zusammenhang, den die Unterkapitel danach Schritt für Schritt einlösen.
+Direkt unter der Hauptüberschrift steht Fließtext: Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Am Ende nennt er die tragenden Konzepte aus der Überschrift noch einmal im Zusammenhang: ein, zwei Sätze, die andeuten, wie die Konzepte zusammen das Kapitel ergeben, in der Reihenfolge, in der die Unterkapitel sie behandeln. So bleibt die Begriffsliste der Überschrift keine tote Aufzählung, und der Fahrplan des Kapitels ist gesetzt.
 
-## Die Unterkapitel
+## Unterkapitel
 
-### Die Überschrift
+### Überschrift
 
-Jedes Unterkapitel behandelt ein Konzept, und seine Überschrift benennt es, z. B. „Stimulierte Emission" oder „Resonator". So dient sie im Inhaltsverzeichnis als Orientierung und beim Zurückscrollen als Anker.
+Jedes Unterkapitel behandelt ein Hauptkonzept, und seine Überschrift benennt es, z. B. „Stimulierte Emission" oder „Resonator". So dient sie im Inhaltsverzeichnis als Orientierung und beim Zurückscrollen als Anker. Begriffe, die dabei mit eingeführt werden, bekommen ein Stichwort am Rand (siehe „Der Rand").
 
-### Die Lernziele
+### Lernziele
 
-Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele: Sie machen dem Leser transparent, was in diesem Unterkapitel gelernt wird.
+Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele: Sie machen den Lesenden transparent, was in diesem Unterkapitel gelernt wird.
 
 Operationalisiert heißt: Jedes Lernziel ist mit einem Operator formuliert, einem handlungsleitenden Verb aus den Vorgaben der Kultusministerkonferenz. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Die Operationalisierung hat unteranderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
 
@@ -36,22 +64,252 @@ Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen.
 Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein.
 :::
 
-### Der Fließtext
+### Fließtext
 
-Nach den Lernzielen folgt der Fließtext: Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das der Leser kennt, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Der Grund kommt aus der Lernpsychologie: Neues wird verstanden und behalten, wenn es an vorhandenes Wissen angeknüpft wird; ohne diesen Anker bleibt es isoliertes Auswendigwissen.
+Nach den Lernzielen folgt der Fließtext: Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das die Lesenden kennen, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Der Grund kommt aus der Lernpsychologie: Neues wird verstanden und behalten, wenn es an vorhandenes Wissen angeknüpft wird; ohne diesen Anker bleibt es isoliertes Auswendigwissen.
 
-### Die Veranschaulichungen
+### Veranschaulichungen
 
-In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks: Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den der Leser durch eigene Eingriffe verändern soll, eine Simulation. 
+In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks: Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den die Lesenden durch eigene Eingriffe verändern sollen, eine Simulation.
 
 Entscheidend ist der Kontext: Jede Veranschaulichung wird dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
 
 - Räumliches auf einen Blick: Ein Aufbau braucht im Text mehrere Sätze, im Bild einen Blick.
 - Beleg: Ein Video führt das Phänomen vor, statt es nur zu behaupten.
 - Dynamik: Eine Animation zeigt einen Ablauf als Ablauf.
-- Ursache und Wirkung selbst erfahren: In der Simulation verändert der Leser Parameter und prüft seine eigene Erwartung.
+- Ursache und Wirkung selbst erfahren: In der Simulation verändern die Lesenden Parameter und prüfen ihre eigene Erwartung.
 - Unsichtbares sichtbar machen: Photonen, Energieniveaus und Atome bekommen eine anschauliche Gestalt. Dass es sich bei solchen Darstellungen um Modellvorstellungen handelt (niemand kann ein Photon als Kugel oder Welle sehen), stellt das Vorwort des Workbooks einmal zentral klar.
 
 Die Erklärung der Konzepte bleibt dabei beim Text.
 
-Jede Veranschaulichung bekommt eine Unterschrift, und der Text greift auf, was sie zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich.
+Jede Veranschaulichung bekommt eine Unterschrift: Sie benennt, was zu sehen ist und unter welchen Bedingungen; die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich.
+
+Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke folgend, und zwar überall: auch bei Skizzen und Simulationen innerhalb von Aufgaben. Eine Platzierung am Rand wurde erprobt und verworfen: Für die breiten Simulationen ist der Rand zu schmal, und innerhalb von Boxen ist er technisch kaum erreichbar. So sieht das Element aus:
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="laser-resonator" data-srt-motion-control data-srt-label="Interaktive Darstellung eines Lasermediums mit angeregten Atomen. Pumplicht regt Atome an. Ein Umschalter wechselt zwischen zwei Aufbauten. Ohne Resonator laufen Photonen in viele Richtungen aus dem Medium. Mit Resonator schließen ein voll reflektierender und ein teildurchlässiger Spiegel das Medium ein. Achsnahes Licht läuft zwischen den Spiegeln hin und her, wird verstärkt und tritt rechts als Laserstrahl aus."></div>
+  <figcaption>Simulation eines Lasermediums mit und ohne Resonator (umschaltbar).</figcaption>
+</figure>
+```
+:::
+
+### Formeln
+
+Zentrale Formeln stehen abgesetzt auf einer eigenen Zeile und werden nummeriert: So können Text und Aufgaben auf sie verweisen, auch über Kapitelgrenzen hinweg. In Herleitungen und Rechnungen bekommt nur das Ergebnis eine Nummer, die Umformungsschritte dorthin stehen ohne. Kurze Ausdrücke und bereits eingeführte Formeln laufen im Satz mit, ohne eigene Zeile und ohne Nummer. Die Variablen einer Formel und ihre Bedeutung erläutert der Fließtext. Wo es sinnvoll ist, unterstreicht ein Diagramm die Bedeutung. In Rechnungen mit Gleichungssystemen bekommen die Gleichungen römische Ziffern (I, II, III): So lassen sich Rechenschritte benennen („II in I einsetzen"), getrennt von der kapitelweiten Formelnummerierung.
+
+### Aufgaben
+
+Graue Boxen sind Aufgaben. Sie stehen direkt bei dem Konzept, auf das sie sich beziehen: Ein Workbook ist zum Arbeiten gedacht, und die aktive Auseinandersetzung wirkt unmittelbar nach der Erklärung am stärksten. Aufgaben stehen an Gelenkstellen: nach einer abgeschlossenen Erklärung, vor dem nächsten Gedanken. So bleibt der Lesefluss erhalten.
+
+Alle Aufgaben teilen dieselbe Form: graue Box, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt: Erst kommt der eigene Versuch, dann der Vergleich; das Verbergen ist hier der Zweck. In den Unterkapiteln gibt es vier Aufgabentypen; ein fünfter, die Schreibaufgabe, hat ihren festen Platz im Kapitelabschluss.
+
+::: {.column-margin .mp-discuss}
+<div class="mp-title">Zur Diskussion</div>
+Braucht das Workbook die sichtbare Unterteilung in vier Aufgabentypen, oder genügt eine einheitliche Aufgaben-Box für alles?
+
+Dafür: Der Typ sagt vor dem Lesen, welche Denkleistung kommt. Hinter jedem Typ steht eine eigene didaktische Idee.
+
+Dagegen: Mehr sichtbare Vielfalt im Layout. Vier Begriffe müssen konsistent verwendet werden, mit Grenzfällen bei der Zuordnung. Der unterstrichene Operator sagt die verlangte Leistung ohnehin.
+:::
+
+#### Denk-Check
+
+Kleine Aufgaben, die ein Konzept direkt im Text prüfen und für den aktiven Umgang im Workbook sorgen. Sie bleiben bewusst klein und beziehen sich auf das, was unmittelbar davor erklärt wurde. So sieht das Element aus, mit eingeklappter Lösung:
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Ein Atom absorbiert Photonen der Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Nun trifft ein intensiver Lichtpuls auf das Atom. Er enthält sehr viele Photonen der Frequenz $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$.
+
+<u>Prüfe</u>, ob Photonen aus diesem Lichtpuls absorbiert werden können.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Nein. Für einen einzelnen Absorptionsvorgang zählt die Energie eines einzelnen Photons. Zu diesem Abstand der Energieniveaus gehört die Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Ein Photon mit $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$ hat eine niedrigere Frequenz und damit eine geringere Energie.
+
+</details>
+
+#### Berechnung
+
+Berechnungsaufgaben geben ein Gefühl für die Größenverhältnisse einer Formel und üben den aktiven Umgang mit physikalischen Formeln. Gestufte Hilfen („Ganz allein", „Mit Hinweisen", „Schritt für Schritt") lassen dieselbe Aufgabe mit unterschiedlichem Vorwissen lösen.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+Ein Proton ($m_0 = 1{,}67 \cdot 10^{-27}\,\mathrm{kg}$) bewegt sich mit $v = 0{,}60\,c$. <u>Berechne</u> den klassischen Impuls und den relativistischen Impuls. <u>Vergleiche</u> beide Werte.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>$v = 0{,}60 \cdot 3{,}0 \cdot 10^8\,\mathrm{m/s} = 1{,}8 \cdot 10^8\,\mathrm{m/s}$.</p>
+<p>Klassisch: $p = m_0\,v \approx 3{,}0 \cdot 10^{-19}\,\mathrm{kg\,m/s}$. Relativistisch: $\gamma = 1/\sqrt{1 - 0{,}60^2} = 1{,}25$, also $p = \gamma\,m_0\,v \approx 3{,}8 \cdot 10^{-19}\,\mathrm{kg\,m/s}$.</p>
+<p>Der relativistische Impuls ist etwa $25\,\%$ größer als der klassische Wert.</p>
+</details>
+
+#### Transfer
+
+Transferaufgaben übertragen das Konzept auf eine neue Situation, die der Text nicht behandelt hat: ein Alltagsphänomen, eine veränderte Anordnung oder eine Verbindung mit anderem Wissen aus dem Themenbereich.
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Das gelingt nur, wenn das Pigment das Laserlicht absorbiert. Ein Patient möchte ein rotes Tattoo entfernen lassen.
+
+<u>Beurteile</u>, ob der Rubinlaser mit seiner Wellenlänge von 694 nm (rotes Licht) dafür geeignet ist.
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet; der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht.</p>
+</details>
+
+#### Herleitung
+
+Eine Formel aus dem Text wird aktiv selbst hergeleitet, statt sie vorzurechnen. Das begründet die Formel auf argumentativer Ebene und verankert den Weg zu ihr: Die Formel selbst ist oft vergessen, der Weg dahin bleibt rekonstruierbar. Bei der Dopplerverschiebung etwa vergisst man schnell, wohin das Plus gehört (Rot- oder Blauverschiebung); mit den Bildern im Kopf lassen sich die drei Grundgleichungen aufstellen und die Formel daraus herleiten. Als Gerüst werden zwei Hilfswege angeboten: Sie betrachten die algebraische Seite der Herleitung und benennen die häufigsten Knackpunkte, an denen sie scheitern kann.
+
+:::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
+  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  Herleitung
+</span>
+
+Eine Lichtquelle bewegt sich mit der Geschwindigkeit $v$ auf den Beobachter zu. Gesucht ist die Wellenlänge $\lambda$, die der Beobachter misst.
+
+**(I) Eigenwellenlänge.** Im Ruhesystem der Quelle läuft eine Wellenfront während der Zeit $\Delta t_0$ um genau eine Eigenwellenlänge weiter:
+
+$$
+\lambda_0 = c\,\Delta t_0. \tag{I}
+$$
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="doppler-bzg-quelle" data-srt-viewbox-h="200" data-srt-label="Skizze im Bezugssystem der Quelle: Die ruhende Quelle S sendet Wellenfronten aus, deren Abstand die Eigenwellenlänge lambda 0 gleich c mal Δt 0 ist."></div>
+</figure>
+```
+:::
+
+**(II) Laufweg (aus der Skizze).** Zwischen zwei Wellenfronten vergeht im System des Beobachters die Zeit $\Delta t$. In dieser Zeit läuft die erste Wellenfront um $c\,\Delta t$ auf den Beobachter zu, während die Quelle ihr um $v\,\Delta t$ nachrückt. Die beiden Wellenfronten liegen dadurch enger beieinander; ihr Abstand, also die gemessene Wellenlänge, ist
+
+$$
+\lambda = c\,\Delta t - v\,\Delta t = (c - v)\,\Delta t. \tag{II}
+$$
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
+  <div class="srt-workbook-stage" data-srt-animation="doppler-bzg-beobachter" data-srt-viewbox-h="250" data-srt-label="Skizze im Bezugssystem des Beobachters: Seit der Aussendung von Wellenfront 1 an Punkt 1 ist die Zeit Delta t vergangen. Die Quelle ist nach Punkt 2 gerückt und sendet dort Wellenfront 2 aus, während Wellenfront 1 um c mal Delta t vorausgelaufen ist und die Quelle nur um v mal Delta t nachgerückt ist. Der Abstand der beiden Wellenfronten ist die beobachtete Wellenlänge lambda gleich c mal Delta t minus v mal Delta t."></div>
+</figure>
+```
+:::
+
+**(III) Zeitdilatation.**
+
+$$
+\Delta t = \frac{\Delta t_0}{\sqrt{1 - \frac{v^2}{c^2}}}. \tag{III}
+$$
+
+<u>Leite</u> mithilfe der Gleichungen (I), (II) und (III) eine Beziehung zwischen der beobachteten Wellenlänge $\lambda$ und der Eigenwellenlänge $\lambda_0$ <u>her</u>.
+
+Wähle deinen Einstieg:
+
+::: {.panel-tabset}
+
+### Ganz allein
+
+Hier bekommst du keine Hilfe, und das ist Absicht. Selbst zu knobeln festigt das Verständnis am stärksten. Sei dabei ruhig kreativ: Solche Gleichungen lassen sich auf vielen Wegen umformen, und der Weg in „Schritt für Schritt" muss nicht der sein, der für dich am besten passt. Geh erst zu „Mit Hinweisen", wenn du wirklich feststeckst.
+
+### Mit Hinweisen
+
+- Setze zuerst Gleichung (III) in Gleichung (II) ein.
+- Der wichtigste Umformungsschritt ist das Erweitern mit $c$. Dadurch entsteht unter der Wurzel der Ausdruck $c^2 - v^2$.
+- Danach kannst du Gleichung (I) verwenden, um $c\,\Delta t_0$ zu ersetzen.
+- Verwende anschließend die dritte binomische Formel: $c^2 - v^2 = (c-v)(c+v)$.
+
+### Schritt für Schritt
+
+1. Starte mit Gleichung (II): $\lambda = (c-v)\,\Delta t$.
+2. Setze Gleichung (III) für $\Delta t$ ein.
+3. Der gesamte Ausdruck ist nun ein Bruch: oben steht $(c-v)\,\Delta t_0$, unten die Wurzel $\sqrt{1-\frac{v^2}{c^2}}$. Erweitere diesen Bruch mit $c$, multipliziere also Zähler und Nenner mit $c$. Im Nenner steht dann $c\,\sqrt{1-\frac{v^2}{c^2}}$.
+4. Ziehe das $c$ im Nenner unter die Wurzel. So wird aus $c\,\sqrt{1-\frac{v^2}{c^2}}$ der Ausdruck $\sqrt{c^2-v^2}$.
+5. Im Zähler steht nun $c\,\Delta t_0$. Ersetze diesen Ausdruck mit Gleichung (I) durch $\lambda_0$.
+6. Zerlege den Wurzelausdruck mit der dritten binomischen Formel: $\sqrt{c^2-v^2}=\sqrt{(c-v)(c+v)}$.
+7. Schreibe den Faktor $(c-v)$ im Zähler als Wurzel und kürze unter der Wurzel.
+
+:::
+
+<details class="mp-details">
+<summary>Kontrollrechnung anzeigen</summary>
+
+$$
+\begin{aligned}
+\lambda &= (c-v)\,\Delta t
+  && \Big|\ \Delta t = \frac{\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}} \\[10pt]
+\lambda &= (c-v)\,\frac{\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}} \\[10pt]
+\lambda &= \frac{(c-v)\,\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}}
+  && \Big|\ \text{mit } c \text{ erweitern} \\[10pt]
+\lambda &= \frac{c\,\Delta t_0\,(c-v)}{c\,\sqrt{1-\frac{v^2}{c^2}}}
+  && \Big|\ c \text{ unter die Wurzel ziehen} \\[10pt]
+\lambda &= \frac{c\,\Delta t_0\,(c-v)}{\sqrt{c^2\left(1-\frac{v^2}{c^2}\right)}} \\[10pt]
+\lambda &= \frac{c\,\Delta t_0\,(c-v)}{\sqrt{c^2-v^2}}
+  && \Big|\ c\,\Delta t_0 = \lambda_0 \\[10pt]
+\lambda &= \frac{(c-v)\,\lambda_0}{\sqrt{c^2-v^2}}
+  && \Big|\ c^2-v^2=(c-v)(c+v) \\[10pt]
+\lambda &= \frac{(c-v)\,\lambda_0}{\sqrt{(c-v)(c+v)}} \\[10pt]
+\lambda &= \frac{\sqrt{(c-v)^2}}{\sqrt{(c-v)(c+v)}}\,\lambda_0
+  && \Big|\ \text{als eine Wurzel schreiben und kürzen} \\[10pt]
+\lambda &= \sqrt{\frac{(c-v)^2}{(c-v)(c+v)}}\,\lambda_0 \\[10pt]
+\lambda &= \sqrt{\frac{c-v}{c+v}}\,\lambda_0
+\end{aligned}
+$$
+
+</details>
+::::
+
+Zur Aufgabe wird eine Herleitung nur, wenn der Weg mehrere eigenständige Schritte und echte Knackpunkte enthält, an denen sich etwas lernen lässt. Kurze Wege aus ein, zwei Einsetz-Schritten zeigt der Fließtext direkt: Zwei Gleichungen ineinander einzusetzen hat als Aufgabe keinen echten Mehrwert, und würde jeder solche Schritt zur Aufgabe, wäre das Workbook mit Boxen überladen.
+
+Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist und Verständnis stiftet: Der Zielgruppe fehlt teils die mathematische Vorerfahrung, und das Workbook ersetzt kein physikalisches Fachbuch. An Stellen, wo der Weg zu einer Formel für die Lesenden interessant sein könnte, bietet ein Verweis auf die Fachliteratur eine schnelle Möglichkeit, bei Interesse tiefer einzusteigen.
+
+### Rote Kästen
+
+Rote Kästen sprechen einen naheliegenden oder verbreiteten falschen Gedanken aus und korrigieren ihn. Der Titel ist die falsche Annahme selbst, als Frage gestellt: So erkennen die Lesenden den eigenen Gedanken wieder, bevor die Korrektur kommt. Wo die Fachdidaktik eine Vorstellung dokumentiert hat, steht der Beleg dabei.
+
+Für die Zielgruppe leistet der Kasten doppelte Arbeit: Er korrigiert die eigene Vorstellung, und er schult den Blick für Schülervorstellungen, die künftige Lehrkräfte im Unterricht erkennen und aufgreifen müssen.
+
+Rote Kästen stehen an genau zwei Orten. Im Fließtext, wo der falsche Gedanke beim Erklären entsteht. Oder in der Lösung einer Aufgabe, die den falschen Gedanken gezielt provoziert: Dort wird die Korrektur erst nach dem eigenen Versuch sichtbar. So beurteilt in Kapitel 1 eine Aufgabe die Schüleraussage „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt", und erst die Lösung löst das Präkonzept Tempo gleich Geschwindigkeit auf.
+
+So sieht das Element aus:
+
+::: {.mp-box .mp-misconception}
+<div class="mp-title">Folgt auf die Absorption immer die Aussendung eines Photons?</div>
+Das Niveauschema legt das nahe: Das Atom nimmt Energie auf, sitzt eine Weile im angeregten Zustand und gibt die Energie als Photon wieder ab. Für ein einzelnes, ungestörtes Atom stimmt das auch.
+
+In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie auch ohne Licht loswerden, zum Beispiel durch Stöße mit seinen Nachbarn: Die Anregungsenergie geht dann in Bewegung über. Das schwarze T-Shirt nimmt diesen Weg: Es wird warm statt zu leuchten.
+:::
+
+### Goldene Kästen
+
+Gold ist wenigen Merksätzen vorbehalten, die als Fundament des ganzen Themas immer wieder gebraucht werden, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht: Wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt (z. B. „Einsteinsche Postulate").
+
+Alles Übrige trägt der Fließtext selbst, und es bleibt auffindbar: zentrale Formeln über ihre Nummern, Begriffe über die Rand-Stichwörter, Hauptkonzepte über die Überschriften.
+
+## Kapitelabschluss
+
+Jedes Kapitel endet mit dem Teil „Sichern und anwenden". Die Sicherung ist den Studierenden als Phase aus der Unterrichtsplanung vertraut; das Workbook macht sie ihnen im eigenen Lernen vor. Der Teil beginnt mit der Selbstprüfung: Die Lernziele aller Unterkapitel stehen hier gebündelt, und die Lesenden prüfen an ihnen selbstständig, was sie erreicht haben. Die Operationalisierung macht jedes Ziel einzeln prüfbar, dafür wurde sie eingeführt.
+
+Aus den Lernzielen schreiben die Lesenden anschließend eine eigene Zusammenfassung des Kapitels: eine Schreibaufgabe, der fünfte Aufgabentyp, der seinen festen Platz im Abschluss hat. Selbst Formuliertes wird tiefer verarbeitet als Wiedergelesenes, und die Lernziele geben der Zusammenfassung das Gerüst.
+
+Wo sich Konzepte des Kapitels zu einer größeren Anwendung verbinden lassen, folgt sie hier, etwa das Garagenparadoxon, das Längenkontraktion und Relativität der Gleichzeitigkeit zusammenführt. Solche Aufgaben nutzen dieselben Aufgabentypen wie die Unterkapitel.

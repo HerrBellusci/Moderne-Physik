@@ -12,6 +12,7 @@ book:
     - index.qmd
     - 00_konzeption.qmd
     - 01_srt_raum_und_zeit.qmd
+    - 01_srt_raum_und_zeit_umbau.qmd
     - 03_srt_impuls_und_energie.qmd
     - 02_laser_ausflug.qmd
     - references.qmd

@@ -165,9 +165,9 @@
 }
 
 .mp-task-kind-derive {
-  color: #6d5dfc;
-  border-color: rgba(109, 93, 252, 0.28);
-  background: #f7f5ff;
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+  background: #f8fafb;
 }
 
 .mp-task-kind-transfer {
@@ -316,4 +316,73 @@ a.glossary-link:focus-visible {
 .glossary-popover .popover-body {
   color: var(--mp-muted);
   line-height: 1.45;
+}
+
+/* Diskussions-Kommentare (temporär, für die Abstimmung mit der Betreuung) */
+.mp-discuss {
+  margin: 1rem 0;
+  padding: 0.7rem 1rem;
+  border: 2px dashed #b3760e;
+  border-radius: 0.5rem;
+  background: #fffaf0;
+}
+.mp-discuss .mp-title {
+  color: #b3760e;
+}
+
+/* Randnotiz: haengt rechts neben der Box im freien Rand,
+   auf der Hoehe, an der sie im Quelltext steht */
+.mp-box {
+  position: relative;
+}
+.mp-marginnote {
+  position: absolute;
+  left: calc(100% + 1.25rem);
+  width: min(13rem, 18vw);
+  font-size: 0.85em;
+  line-height: 1.45;
+  color: var(--mp-muted);
+}
+@media (max-width: 1199.98px) {
+  .mp-marginnote {
+    position: static;
+    width: auto;
+    margin: 0.5rem 0 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.2rem solid rgba(81, 97, 115, 0.3);
+  }
+}
+
+/* Begriffs-Stichwoerter am Rand: kraeftiger als Quartos Rand-Standard */
+.mp-randbegriff {
+  display: inline-block;
+  color: var(--mp-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Unterschriften unter Veranschaulichungen */
+.srt-workbook-figure figcaption {
+  max-width: 862px;
+  margin: 0.35rem auto 0;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
+}
+.srt-workbook-figure--caption-inside figcaption {
+  max-width: none;
+  margin: 0;
+  padding: 0.6rem 1rem 0.75rem;
+  border-top: 1px solid rgba(23, 32, 51, 0.1);
+  background: #f7f9fb;
+}
+
+/* Unterschriften unter eingebetteten Videos */
+.srt-video-caption {
+  width: min(100%, 862px);
+  margin: 0.35rem auto 0;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
 }
