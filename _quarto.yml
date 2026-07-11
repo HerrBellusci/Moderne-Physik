@@ -1,5 +1,6 @@
 project:
   type: book
+  post-render: tools/strip-polyfill.py
   resources:
     - assets/**
     - "Videos einbinden/**"
@@ -14,7 +15,9 @@ book:
     - 01_srt_raum_und_zeit.qmd
     - 01_srt_raum_und_zeit_umbau.qmd
     - 03_srt_impuls_und_energie.qmd
+    - 03_srt_impuls_und_energie_umbau.qmd
     - 02_laser_ausflug.qmd
+    - 02_laser_ausflug_umbau.qmd
     - references.qmd
 
 lang: de
@@ -22,9 +25,13 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: [cosmo, assets/no-webfont.scss]
+    html-math-method:
+      method: mathjax
+      url: assets/mathjax/tex-svg-full.js
     css:
       - assets/learning-boxes.css
+      - assets/fonts/source-sans-pro.css
     include-after-body: assets/toc-in-sidebar.html
     toc: true
     toc-location: left

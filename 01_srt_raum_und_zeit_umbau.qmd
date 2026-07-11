@@ -28,9 +28,9 @@ Wenn du in einer fremden Stadt ankommst und eine Navigations-App öffnest, zeigt
 
 Dazu empfängt dein Smartphone Signale von mehreren Satelliten. Weil sich diese Signale mit Lichtgeschwindigkeit ausbreiten, lässt sich aus ihrer Laufzeit der Abstand zu den Satelliten bestimmen. Dafür muss die Zeit extrem präzise gemessen werden: Schon kleinste Zeitabweichungen führen zu großen Fehlern bei der Positionsbestimmung.
 
-An dieser Stelle zeigt sich die praktische Bedeutung der Relativitätstheorie: Je größer die Relativgeschwindigkeit ist, desto stärker unterscheiden sich die von den Uhren gemessenen Zeiten. Dieser Effekt wird als Zeitdilatation bezeichnet.[Zeitdilatation]{.column-margin .mp-randbegriff} Ohne diese und weitere relativistische Korrekturen würde die berechnete Position nach einem Tag um etwa 11 Kilometer abweichen [@faraoni-2013, S. 54]. Dein Smartphone könnte dir dann nicht mehr zuverlässig anzeigen, in welchem Stadtteil du dich befindest.
+An dieser Stelle zeigt sich die praktische Bedeutung der Relativitätstheorie: Die Uhren in den Satelliten und die Uhren am Boden messen die Zeit unterschiedlich schnell. Je größer die Relativgeschwindigkeit ist, desto stärker unterscheiden sich die gemessenen Zeiten. Dieser Effekt wird als Zeitdilatation bezeichnet. Neben der Geschwindigkeit trägt vor allem auch die Gravitation zu den Unterschieden bei; sie ist Gegenstand der allgemeinen Relativitätstheorie. Ohne die relativistischen Korrekturen würde die berechnete Position nach einem Tag um etwa 11 Kilometer abweichen [@faraoni-2013, S. 54]. Dein Smartphone könnte dir dann nicht mehr zuverlässig anzeigen, in welchem Stadtteil du dich befindest.
 
-Die Satellitenuhren führen mitten hinein in die Fragen dieses Kapitels: Was du an Raum und Zeit misst, hängt vom Bezugssystem ab, von dem aus du misst. Das Kapitel führt Schritt für Schritt dorthin: von den Bezugssystemen über das Michelson-Morley-Experiment und die Einsteinschen Postulate zur Gleichzeitigkeit, zur Zeitdilatation und zur Längenkontraktion. Am Ende kannst du einordnen, was die Uhren in den Satelliten anders macht als deine Uhr am Boden.
+Die Satellitenuhren führen mitten hinein in die Fragen dieses Kapitels: Was du an Raum und Zeit misst, hängt vom Bezugssystem ab, von dem aus du misst. Das Kapitel führt Schritt für Schritt dorthin: von den Bezugssystemen über das Michelson-Morley-Experiment und die Einsteinschen Postulate zur Gleichzeitigkeit, zur Zeitdilatation, zur Längenkontraktion und zur Dopplerverschiebung des Lichts.
 
 ## Bezugssysteme und Inertialsysteme
 
@@ -40,9 +40,9 @@ Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen.
 Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein und <u>begründest</u> deine Zuordnung unter anderem mit dem ersten Newtonschen Axiom.
 :::
 
-Die spezielle Relativitätstheorie betrachtet nur Inertialsysteme. Dieser Abschnitt klärt, was ein Bezugssystem ist und wodurch sich ein Inertialsystem auszeichnet.
+Die spezielle Relativitätstheorie wird in Inertialsystemen formuliert. Dieser Abschnitt klärt, was ein Bezugssystem ist und wodurch sich ein Inertialsystem auszeichnet.
 
-Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich in Bewegung“. Physikalisch ist das ungenau: Ruhe und Bewegung werden immer in einem gewählten Bezugssystem beschrieben.[Bezugssystem]{.column-margin .mp-randbegriff} Ob ein Körper ruht oder sich bewegt, ist also keine absolute Eigenschaft, sondern eine relative Aussage zu einem Bezugssystem. Warum Bewegungen ohne ein festgelegtes Bezugssystem nicht eindeutig beschrieben werden können, zeigt das folgende Video.
+Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich in Bewegung“. Physikalisch ist das ungenau: Ruhe und Bewegung werden immer in einem gewählten Bezugssystem beschrieben. Ob ein Körper ruht oder sich bewegt, ist also keine absolute Eigenschaft, sondern eine relative Aussage zu einem Bezugssystem. Warum Bewegungen ohne ein festgelegtes Bezugssystem nicht eindeutig beschrieben werden können, zeigt das folgende Video.
 
 []{#sec-umbau-bezugssystem-beispiel}
 
@@ -83,11 +83,11 @@ Ein Bezugssystem brauchst du, um Bewegungen zu beschreiben. Es legt fest, von wo
 
 Stell dir vor, du sitzt wieder in einem gleichförmig fahrenden Zug. Deine Trinkflasche steht ruhig auf dem Tisch. Solange der Zug geradlinig und mit konstanter Geschwindigkeit fährt, gilt das erste Newtonsche Gesetz: Ohne eine resultierende Kraft ändert die Flasche ihren Bewegungszustand nicht.
 
-Am nächsten Bahnhof bremst der Zug. Die Trinkflasche kippt nach vorn. Aus dem Bezugssystem des Zuges scheint sie sich nach vorn zu bewegen, ohne dass eine entsprechende Kraft auf sie wirkt. Um diese Bewegung im bremsenden Zug zu erklären, wird eine Scheinkraft eingeführt.[Scheinkraft]{.column-margin .mp-randbegriff}
+Am nächsten Bahnhof bremst der Zug. Die Trinkflasche rutscht nach vorn; den Tisch stellen wir uns dafür idealisiert reibungsfrei vor. Aus dem Bezugssystem des Zuges setzt sich die Flasche in Bewegung, ohne dass eine entsprechende Kraft auf sie wirkt. Um diese Bewegung im bremsenden Zug zu erklären, wird eine Scheinkraft eingeführt.[Scheinkraft]{.column-margin .mp-randbegriff}
 
-Im Bezugssystem des Bahnsteigs lässt sich die Bewegung dagegen mit dem ersten Newtonschen Axiom erklären: Auf die Flasche wirkt keine resultierende Kraft, weshalb sie ihren Bewegungszustand beibehält. Während der Zug abbremst, bewegt sich die Flasche weiter und kippt um.
+Im Bezugssystem des Bahnsteigs lässt sich die Bewegung dagegen mit dem ersten Newtonschen Axiom erklären: Auf die Flasche wirkt keine resultierende Kraft, weshalb sie ihren Bewegungszustand beibehält. Während der Zug abbremst, bewegt sich die Flasche gleichförmig weiter und rutscht dadurch im Zug nach vorn.
 
-Bezugssysteme lassen sich danach unterscheiden, ob in ihnen das erste Newtonsche Axiom gilt oder nicht. Bezugssysteme, in denen es gilt, heißen Inertialsysteme.[Inertialsystem]{.column-margin .mp-randbegriff} Beschleunigte Bezugssysteme heißen Nicht-Inertialsysteme.[Nicht-Inertialsystem]{.column-margin .mp-randbegriff} Der Bahnsteig ist in diesem Beispiel ein Inertialsystem, der bremsende Zug dagegen ein Nicht-Inertialsystem.
+Bezugssysteme lassen sich danach unterscheiden, ob in ihnen das erste Newtonsche Axiom gilt oder nicht. Bezugssysteme, in denen es gilt, heißen Inertialsysteme. Beschleunigte Bezugssysteme heißen Nicht-Inertialsysteme. Der Bahnsteig ist in diesem Beispiel ein Inertialsystem, der bremsende Zug dagegen ein Nicht-Inertialsystem.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
@@ -101,7 +101,7 @@ Der rote Punkt kennzeichnet den Ursprung des betrachteten Bezugssystems. Die Ani
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="inertial" data-srt-motion-control data-srt-label="Vergleich von Inertialsystem und beschleunigten Systemen"></div>
-  <figcaption>Simulation der Bewegungen A, B und C aus Sicht des mitbewegten Bezugssystems (roter Punkt).</figcaption>
+  <figcaption>Animation der Bewegungen A, B und C aus Sicht des mitbewegten Bezugssystems (roter Punkt).</figcaption>
 </figure>
 ```
 :::
@@ -179,21 +179,19 @@ Du <u>beschreibst</u> den Aufbau eines Michelson-Interferometers und <u>erläute
 Du <u>interpretierst</u> das Nullresultat als Problem für die einfache Ätherhypothese.
 :::
 
-Die spezielle Relativitätstheorie wurde nicht unmittelbar aus dem Michelson-Morley-Experiment abgeleitet; Einstein erwähnte das Experiment in seiner Veröffentlichung von 1905 nicht [@einstein1905elektrodynamik]. Historisch ist das Experiment dennoch wichtig, weil sein Ergebnis die Ätherhypothese problematisch machte. Auch die dabei verwendete Interferometrie ist bis heute relevant: Weiterentwickelte Michelson-Interferometer werden beispielsweise zum Nachweis von Gravitationswellen eingesetzt.
-
 []{#sec-umbau-mm-problem}
 
 Schall braucht Luft, Wasserwellen brauchen Wasser. Im 19. Jahrhundert wurde Licht als elektromagnetische Welle verstanden. Damit lag die Frage nahe, ob auch Licht ein Trägermedium braucht: den Lichtäther.[Lichtäther]{.column-margin .mp-randbegriff} Der Äther sollte ein absolutes Bezugssystem festlegen, das als ruhend angesehen werden konnte.
 
-Die Erwartung von Michelson und Morley war: Die Bewegung der Erde relativ zum Äther müsste optisch messbar sein. Stell dir dazu einen Schwimmer vor: Je nachdem, ob er mit oder gegen die Strömung schwimmt, braucht er unterschiedlich lange. Genauso sollte auch Licht je nach Richtung unterschiedlich lange unterwegs sein. Diese unterschiedlichen Lichtlaufzeiten sollten den Äther nachweisbar machen.
+Die Erwartung von Michelson und Morley war: Die Bewegung der Erde relativ zum Äther müsste optisch messbar sein. Weil die Erde durch den ruhend gedachten Äther fliegt, sollte an ihr ein Ätherwind vorbeistreichen, ähnlich dem Fahrtwind beim Radfahren.[Ätherwind]{.column-margin .mp-randbegriff} Stell dir dazu zwei Personen vor, die in einem Fluss dieselbe Strecke schwimmen: eine quer zur Strömung hin und zurück, die andere flussabwärts und wieder flussaufwärts. Beide schwimmen gleich schnell relativ zum Wasser; gegenüber dem Ufer kommen sie je nach Richtung aber verschieden schnell voran. Für die Strecke längs der Strömung wird insgesamt mehr Zeit benötigt als für die Strecke quer dazu. Genauso sollte Licht, das sich relativ zum Äther immer gleich schnell ausbreitet, für gleich lange Strecken längs und quer zum Ätherwind unterschiedlich lange unterwegs sein. Diese unterschiedlichen Lichtlaufzeiten sollten den Äther nachweisbar machen.
 
 []{#sec-umbau-mm-messidee}
 
-Die Messidee des Michelson-Morley-Experiments besteht darin, in einem Interferometer einen Lichtstrahl aufzuteilen, die beiden Teilstrahlen auf senkrechten Wegen laufen zu lassen und sie anschließend wieder zu überlagern. Ein Laufzeitunterschied sollte sich als Änderung des Interferenzsignals zeigen. Beim Drehen der Apparatur änderte sich die Ausrichtung der Lichtwege zum angenommenen Ätherwind.
+Die Messidee des Michelson-Morley-Experiments besteht darin, in einem Interferometer einen Lichtstrahl aufzuteilen, die beiden Teilstrahlen auf zueinander senkrechten Wegen laufen zu lassen und sie anschließend wieder zu überlagern. Bei der Überlagerung entsteht ein Interferenzmuster.[Interferenzmuster]{.column-margin .mp-randbegriff} Ein Laufzeitunterschied sollte sich als Verschiebung dieses Musters zeigen. Beim Drehen der Apparatur änderte sich die Ausrichtung der Lichtwege zum angenommenen Ätherwind.
 
-In der Schwimmeranalogie entspricht das einem Wechsel der Schwimmrichtung: Wer zuerst quer zur Strömung und anschließend mit oder gegen die Strömung schwimmt, benötigt für die Strecke eine andere Zeit. Beim Licht sollte sich eine solche Änderung der Laufzeit als Verschiebung des Interferenzmusters zeigen.
+In der Schwimmanalogie entspricht das Drehen einem Rollentausch: Der Weg, der vorher quer zur Strömung lag, liegt danach längs zur Strömung, und die Laufzeiten der beiden Wege vertauschen sich. Beim Licht sollte sich eine solche Änderung der Laufzeiten als Verschiebung des Interferenzmusters zeigen.
 
-Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interferometers.[Michelson-Interferometer]{.column-margin .mp-randbegriff} Klicke nacheinander auf die fünf Bauteile, um sie einzublenden.
+Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interferometers.[Michelson-Interferometer]{.column-margin .mp-randbegriff} Er besteht aus fünf Bauteilen: einer Lichtquelle, einem halbdurchlässigen Strahlteiler, zwei Spiegeln an den Enden der beiden zueinander senkrechten Arme und einem Schirm, auf dem das Interferenzmuster sichtbar wird. Klicke nacheinander auf die fünf Bauteile, um sie einzublenden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -204,12 +202,12 @@ Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interfer
 ```
 :::
 
-Die zweite Simulation zeigt dir, welche Veränderung beim Drehen erwartet wurde und was tatsächlich beobachtet wurde. Verändere dazu die Ausrichtung der Apparatur mit dem Rotationsregler.
+Die folgende Simulation zeigt dir, welche Veränderung beim Drehen erwartet wurde und was tatsächlich beobachtet wurde. Verändere dazu die Ausrichtung der Apparatur mit dem Rotationsregler.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm"></div>
+  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm, mit Schieberegler für die Rotation der Apparatur"></div>
   <figcaption>Simulation zum Michelson-Morley-Experiment: Äthererwartung und Nullresultat auf dem Schirm im Vergleich (Ausrichtung drehbar).</figcaption>
 </figure>
 <p>Ein <a href="https://www.youtube.com/watch?v=8YgVQHbHR0I">Realvideo zum Michelson-Interferometer</a> zeigt, wie Laser, Strahlteiler, Spiegel und aufgeweiteter Strahl zu sichtbaren Interferenzringen führen.</p>
@@ -228,6 +226,8 @@ Ergänzendes Realvideo zum Michelson-Interferometer: https://www.youtube.com/wat
 
 Bei unterschiedlichen Ausrichtungen der Apparatur blieb das Interferenzmuster unverändert. Dieses sogenannte Nullresultat lieferte keinen Nachweis für den angenommenen Ätherwind und machte die einfache Vorstellung eines mechanischen Lichtäthers problematisch.[Nullresultat]{.column-margin .mp-randbegriff}
 
+Die spezielle Relativitätstheorie wurde nicht unmittelbar aus dem Michelson-Morley-Experiment abgeleitet; Einstein erwähnte das Experiment in seiner Veröffentlichung von 1905 nicht [@einstein1905elektrodynamik]. Auch die verwendete Interferometrie ist bis heute relevant: Weiterentwickelte Michelson-Interferometer werden beispielsweise zum Nachweis von Gravitationswellen eingesetzt.
+
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-write" aria-label="Skizzieren und erläutern">
   <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -238,16 +238,24 @@ Bei unterschiedlichen Ausrichtungen der Apparatur blieb das Interferenzmuster un
 </span>
 
 <u>Skizziere</u> den Aufbau eines Michelson-Interferometers und <u>erläutere</u>, wie damit ein Ätherwind nachgewiesen werden sollte.
+
+**Hinweis:** Deine Skizze sollte die Aufteilung des Lichtstrahls auf zwei zueinander senkrechte Wege und die anschließende Überlagerung auf dem Schirm zeigen.
 :::
 
-<p><strong>Hinweis:</strong> Deine Skizze sollte die Aufteilung des Lichtstrahls auf zwei senkrechte Wege und die anschließende Überlagerung auf dem Schirm zeigen.</p>
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<p>Die Skizze zeigt die fünf Bauteile: Eine Lichtquelle sendet einen Lichtstrahl auf einen halbdurchlässigen Strahlteiler. Er teilt den Strahl auf zwei zueinander senkrechte Arme auf. An deren Enden werfen zwei Spiegel die Teilstrahlen zurück, und hinter dem Strahlteiler überlagern sich die Teilstrahlen auf einem Schirm zu einem Interferenzmuster.</p>
+<p>Zur Erwartung: Die Erde sollte sich durch den Äther bewegen, an der Apparatur sollte also ein Ätherwind vorbeistreichen. Licht längs zum Ätherwind sollte für seinen Weg eine andere Zeit benötigen als Licht quer dazu. Beim Drehen der Apparatur vertauschen die Arme ihre Ausrichtung zum Ätherwind, und der Laufzeitunterschied sollte sich als Verschiebung des Interferenzmusters zeigen.</p>
+</details>
 
 ---
 
 ## Einsteinsche Postulate
 
 ::: {.mp-goal-strip}
-Du <u>nennst</u> die beiden Einsteinschen Postulate und <u>begründest</u> mit dem zweiten Postulat, warum auf der Erde für einen aus einem mit halber Lichtgeschwindigkeit fliegenden Raumschiff ausgesandten Lichtpuls nicht die anderthalbfache Lichtgeschwindigkeit gemessen wird.
+Du <u>nennst</u> die beiden Einsteinschen Postulate.
+
+Du <u>begründest</u> mit dem zweiten Postulat, dass auf der Erde für einen aus einem mit halber Lichtgeschwindigkeit fliegenden Raumschiff ausgesandten Lichtpuls die Geschwindigkeit $c$ gemessen wird und nicht die anderthalbfache Lichtgeschwindigkeit.
 :::
 
 Die Einsteinschen Postulate bilden den Ausgangspunkt der speziellen Relativitätstheorie. Mit ihnen lässt sich die Lichtausbreitung ohne die Annahme eines absolut ruhenden Äthersystems beschreiben. Zugleich führen sie zu einer neuen Beschreibung von Raum und Zeit.
@@ -267,7 +275,12 @@ $$
 c \approx 3{,}0 \cdot 10^8\,\mathrm{m/s}
 $$
 
-Aus der Alltagserfahrung könnte man erwarten: Bewegt sich eine Lichtquelle, dann wird ihre Geschwindigkeit zur Lichtgeschwindigkeit addiert. Für Licht gilt das jedoch nicht. Licht breitet sich im Vakuum unabhängig von der Bewegung der Lichtquelle aus. Diese Idee wird im zweiten Einsteinschen Postulat präzisiert.
+::: {.mp-box .mp-misconception}
+<div class="mp-title">Addiert sich die Geschwindigkeit der Quelle zur Lichtgeschwindigkeit?</div>
+Aus der Alltagserfahrung liegt das nahe: Die Geschwindigkeit der gehenden Person im Zug addiert sich einfach zur Geschwindigkeit des Zuges. Tatsächlich ist diese einfache Addition schon dort nur eine Näherung, bei Alltagsgeschwindigkeiten allerdings eine unmessbar gute. Beim Licht versagt sie vollständig: Licht breitet sich im Vakuum unabhängig von der Bewegung der Lichtquelle aus.
+:::
+
+Diese Eigenschaft des Lichts wird im zweiten Einsteinschen Postulat präzisiert.
 
 ::: {.mp-box .mp-core}
 <div class="mp-title">Einsteinsche Postulate</div>
@@ -276,7 +289,7 @@ Aus der Alltagserfahrung könnte man erwarten: Bewegt sich eine Lichtquelle, dan
 2. **Konstanz der Lichtgeschwindigkeit:** Licht breitet sich im Vakuum in allen Inertialsystemen mit derselben Geschwindigkeit $c$ aus, unabhängig von der Bewegung der Lichtquelle oder der beobachtenden Person.
 :::
 
-Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende Simulation. Hierbei werden zwei Lichtquellen verglichen: jeweils eine ruhende und eine bewegte. Mit dem Schieberegler veränderst du die Relativgeschwindigkeit. Über die Buttons „Erdsystem“ und „Raumschiffsystem“ wechselst du das Bezugssystem. Das Häkchen „klassische Erwartung“ blendet zum Vergleich ein, welche Geschwindigkeit man nach der klassischen Geschwindigkeitsaddition erwarten würde.
+Die folgende Simulation macht das zweite Postulat greifbarer. Sie vergleicht zwei Lichtquellen: eine ruhende und eine bewegte. Mit dem Schieberegler veränderst du die Relativgeschwindigkeit. Über die Buttons „Erdsystem“ und „Raumschiffsystem“ wechselst du das Bezugssystem. Das Häkchen „klassische Erwartung“ blendet zum Vergleich ein, welche Geschwindigkeit die klassische Geschwindigkeitsaddition liefern würde.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -309,6 +322,7 @@ Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende 
       </label>
     </div>
   </div>
+  <figcaption class="srt-video-caption">Simulation zur Konstanz der Lichtgeschwindigkeit: Lichtpulse aus einer ruhenden und einer bewegten Quelle, mit Regler für die Relativgeschwindigkeit, Umschalter zwischen Erd- und Raumschiffsystem und einblendbarer klassischer Erwartung.</figcaption>
 </figure>
 <script src="assets/animations/srt/used/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.js"></script>
 ```
@@ -337,15 +351,18 @@ Ein Raumschiff fliegt mit $0{,}5c$ auf die Erde zu und sendet einen Lichtpuls in
 <ol>
   <li>Die Person im Raumschiff misst für den Lichtpuls die Geschwindigkeit $c$ und nicht den klassischen Differenzwert $0{,}5c$.</li>
   <li>Auch die Person auf der Erde misst für den Lichtpuls die Geschwindigkeit $c$ und nicht die intuitive Summe $1{,}5c$.</li>
-  <li>Raumschiff und Erde werden als Inertialsysteme betrachtet. Nach dem zweiten Postulat hat Licht im Vakuum in beiden Systemen dieselbe Geschwindigkeit $c$, völlig unabhängig von der Bewegung der Lichtquelle oder des Beobachters.</li>
+  <li>Raumschiff und Erde werden als Inertialsysteme betrachtet. Nach dem zweiten Postulat hat Licht im Vakuum in beiden Systemen dieselbe Geschwindigkeit $c$, völlig unabhängig von der Bewegung der Lichtquelle oder der beobachtenden Person.</li>
 </ol>
 </details>
+
 ---
 
 ## Gleichzeitigkeit
 
 ::: {.mp-goal-strip}
-Du <u>begründest</u> am Zug-Gedankenexperiment, warum Gleichzeitigkeit vom Inertialsystem abhängt.
+Du <u>beschreibst</u> das Zug-Gedankenexperiment zur Gleichzeitigkeit im Zug- und im Bahnsteigsystem.
+
+Du <u>begründest</u> am Zug-Gedankenexperiment, dass Gleichzeitigkeit vom Inertialsystem abhängt.
 :::
 
 Im Alltag setzen wir meist voraus, dass es eine gemeinsame Gegenwart gibt: Zwei Ereignisse passieren gleichzeitig oder eben nicht. Das Zug-Gedankenexperiment stellt diese Vorstellung infrage.
@@ -360,7 +377,7 @@ Im Zugsystem ruht die Lichtquelle in der Mitte des Zuges. Die Wege zum vorderen 
 
 Im Bahnsteigsystem bewegt sich der Zug während der Lichtlaufzeit weiter. Das hintere Zugende kommt dem Lichtsignal entgegen, das vordere Zugende entfernt sich. Deshalb erreicht das Lichtsignal im Bahnsteigsystem das hintere Zugende zuerst.
 
-Verglichen werden dabei zwei Ereignisse: Das Licht erreicht das vordere Zugende und das Licht erreicht das hintere Zugende. Gleichzeitigkeit ist also keine absolute Eigenschaft dieser beiden Ereignisse, sondern hängt vom Inertialsystem ab.
+Verglichen werden dabei zwei räumlich getrennte Ereignisse: Das Licht erreicht das vordere Zugende und das Licht erreicht das hintere Zugende. Gleichzeitigkeit räumlich getrennter Ereignisse ist also keine absolute Eigenschaft, sondern hängt vom Inertialsystem ab.
 
 Die folgende Animation zeigt das Gedankenexperiment im Zug- und im Bahnsteigsystem.
 
@@ -368,7 +385,7 @@ Die folgende Animation zeigt das Gedankenexperiment im Zug- und im Bahnsteigsyst
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="sim" data-srt-motion-control data-srt-label="Relativität der Gleichzeitigkeit im Zug- und Bahnsteigsystem"></div>
-  <figcaption>Animation zur Relativität der Gleichzeitigkeit im Zug- und im Bahnsteigsystem.</figcaption>
+  <figcaption>Animation des Zug-Gedankenexperiments: Ein Lichtsignal läuft von der Zugmitte zu beiden Zugenden, dargestellt im Zug- und im Bahnsteigsystem.</figcaption>
 </figure>
 ```
 :::
@@ -387,24 +404,24 @@ Eine zweite Variante des Zug-Gedankenexperiments beginnt anders: Zwei Blitze sch
   Transfer
 </span>
 
-Der Zug bewegt sich im Bahnsteigsystem gleichförmig nach rechts. Am hinteren und am vorderen Zugende schlagen gleichzeitig zwei Blitze ein. Zu diesem Zeitpunkt sitzt der Passagier genau in der Mitte zwischen den beiden Zugenden.
+Der Zug bewegt sich im Bahnsteigsystem gleichförmig nach rechts. Am hinteren und am vorderen Zugende schlagen gleichzeitig zwei Blitze ein. Zu diesem Zeitpunkt sitzt eine Person genau in der Mitte zwischen den beiden Zugenden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="lightning-setup" data-srt-label="Ausgangslage mit zwei gleichzeitigen Blitzeinschlägen an den Zugenden, einem Passagier in der Zugmitte und Fahrtrichtung nach rechts"></div>
-  <figcaption>Skizze der Ausgangslage im Bahnsteigsystem: gleichzeitige Blitzeinschläge an beiden Zugenden, Passagier in der Zugmitte, Fahrtrichtung nach rechts.</figcaption>
+  <div class="srt-workbook-stage" data-srt-animation="lightning-setup" data-srt-label="Ausgangslage mit zwei gleichzeitigen Blitzeinschlägen an den Zugenden, einer Person in der Zugmitte und Fahrtrichtung nach rechts"></div>
+  <figcaption>Skizze der Ausgangslage im Bahnsteigsystem: gleichzeitige Blitzeinschläge an beiden Zugenden, Person in der Zugmitte, Fahrtrichtung nach rechts.</figcaption>
 </figure>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-Ausgangslage: Der Passagier sitzt genau in der Zugmitte. Gleichzeitig schlagen am hinteren und vorderen Zugende zwei Blitze ein. Der Zug bewegt sich im Bahnsteigsystem nach rechts.
+Ausgangslage: Eine Person sitzt genau in der Zugmitte. Gleichzeitig schlagen am hinteren und vorderen Zugende zwei Blitze ein. Der Zug bewegt sich im Bahnsteigsystem nach rechts.
 :::
 :::
 
-1. <u>Bestimme</u>, welches Lichtsignal den Passagier zuerst erreicht.
+1. <u>Bestimme</u>, welches Lichtsignal die Person in der Zugmitte zuerst erreicht.
 2. <u>Erkläre</u>, warum daraus nicht folgt, dass die Blitze im Bahnsteigsystem nacheinander eingeschlagen sind.
 3. <u>Begründe</u>, was im Zugsystem über die Reihenfolge der beiden Blitzereignisse gilt.
 
@@ -412,9 +429,9 @@ Ausgangslage: Der Passagier sitzt genau in der Zugmitte. Gleichzeitig schlagen a
 <summary>Mögliche Lösung anzeigen</summary>
 
 <ol>
-  <li>Das Lichtsignal vom vorderen Blitz erreicht den Passagier zuerst, weil er sich diesem Signal entgegenbewegt.</li>
-  <li>Daraus folgt nicht, dass die Blitze im Bahnsteigsystem nacheinander eingeschlagen sind. Im Bahnsteigsystem sind die beiden Blitzereignisse gleichzeitig; der unterschiedliche Empfang entsteht durch die Bewegung des Passagiers relativ zu den Lichtsignalen.</li>
-  <li>Im Zugsystem ruht der Passagier in der Mitte des Zuges. Da Licht sich in beide Richtungen mit derselben Geschwindigkeit $c$ ausbreitet, muss der vordere Blitz im Zugsystem früher eingeschlagen sein als der hintere.</li>
+  <li>Das Lichtsignal vom vorderen Blitz erreicht die Person in der Zugmitte zuerst, weil sie sich diesem Signal entgegenbewegt.</li>
+  <li>Daraus folgt nicht, dass die Blitze im Bahnsteigsystem nacheinander eingeschlagen sind. Im Bahnsteigsystem sind die beiden Blitzereignisse gleichzeitig; der unterschiedliche Empfang entsteht durch die Bewegung der Person relativ zu den Lichtsignalen.</li>
+  <li>Im Zugsystem ruht die Person in der Mitte des Zuges. Da Licht sich in beide Richtungen mit derselben Geschwindigkeit $c$ ausbreitet, muss der vordere Blitz im Zugsystem früher eingeschlagen sein als der hintere.</li>
 </ol>
 
 Die folgende Animation visualisiert das Gedankenexperiment.
@@ -422,25 +439,31 @@ Die folgende Animation visualisiert das Gedankenexperiment.
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="lightning" data-srt-motion-control data-srt-label="Zwei Blitzereignisse und bewegter Beobachter im Zug"></div>
-  <figcaption>Animation der beiden Lichtsignale und des bewegten Passagiers im Zug.</figcaption>
+  <div class="srt-workbook-stage" data-srt-animation="lightning" data-srt-motion-control data-srt-label="Zwei Blitzereignisse und bewegte Person im Zug"></div>
+  <figcaption>Animation der beiden Lichtsignale und der bewegten Person im Zug.</figcaption>
 </figure>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Transfer-Visualisierung mit zwei gleichzeitigen Blitzereignissen am hinteren und vorderen Zugende im Bahnsteigsystem und einem bewegten Passagier im Zug.
+In der HTML-Version erscheint hier eine Transfer-Visualisierung mit zwei gleichzeitigen Blitzereignissen am hinteren und vorderen Zugende im Bahnsteigsystem und einer bewegten Person im Zug.
 :::
 :::
 
 </details>
 :::
 
+---
+
 ## Zeitdilatation
 
 ::: {.mp-goal-strip}
-Du <u>erklärst</u> Zeitdilatation mithilfe der Lichtuhr, <u>leitest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ her und <u>wendest</u> sie auf die Myonen in der Atmosphäre <u>an</u>.
+Du <u>erklärst</u> die Zeitdilatation mithilfe der Lichtuhr.
+
+Du <u>leitest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ <u>her</u>.
+
+Du <u>wendest</u> die Zeitdilatation auf die Myonen in der Atmosphäre <u>an</u>.
 :::
 
 Am Anfang des Kapitels wurde deutlich, dass für die GPS-Ortung äußerst genaue Zeitmessungen notwendig sind. Die Zeitdilatation erklärt einen Teil der Zeitabweichungen, die bei GPS berücksichtigt werden müssen. Wie dieser Effekt bei relativ zueinander bewegten Inertialsystemen entsteht, zeigt dieser Abschnitt.
@@ -453,24 +476,11 @@ Eine Lichtuhr ist keine gewöhnliche Uhr, sondern ein idealisiertes Modell für 
 
 []{#sec-umbau-zeitdilatation-idee}
 
-Für dieses Gedankenexperiment betrachten wir eine Lichtuhr in einem gleichförmig fahrenden Zug. Eine Person fährt zusammen mit der Lichtuhr im Zug. Eine zweite Person steht am Bahnsteig und beobachtet denselben Vorgang. Diese Rollen bleiben während des gesamten Gedankenexperiment unverändert.
+Für dieses Gedankenexperiment betrachten wir eine Lichtuhr in einem gleichförmig fahrenden Zug. Eine Person fährt zusammen mit der Lichtuhr im Zug. Eine zweite Person steht am Bahnsteig und beobachtet denselben Vorgang. Diese Rollen bleiben während des gesamten Gedankenexperiments unverändert.
 
 Für die mitfahrende Person bewegt sich der Lichtpuls senkrecht vom unteren Spiegel zum oberen Spiegel und wieder zurück. Der Spiegelabstand beträgt $D$, der gesamte Lichtweg also $2D$. Die Lichtuhr misst für diesen Tick die Zeit $\Delta t_0 = \frac{2D}{c}$. Diese von der mitbewegten Lichtuhr gemessene Zeit heißt Eigenzeit $\Delta t_0$.[Eigenzeit]{.column-margin .mp-randbegriff}
 
 Die kleine $0$ heißt: aus der Ruhe betrachtet. Sie markiert eine Größe, die im eigenen Ruhesystem des Objekts gemessen wird. Genauso begegnet sie dir später bei der Eigenlänge $L_0$, der Ruhemasse $m_0$ und der Ruheenergie $E_0$.
-
-Solche Größen sind invariant.[invariant]{.column-margin .mp-randbegriff} Die kleine Animation soll dir ein Gefühl dafür geben, was das bedeutet:
-
-::: {.content-visible when-format="html"}
-```{=html}
-<figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="drehung-invarianz" data-srt-motion-control data-srt-label="Die Punkte A und B drehen sich auf Kreisbahnen um den Ursprung des Koordinatensystems. Ihre Koordinaten ändern sich fortlaufend, ihr Abstand bleibt konstant."></div>
-  <figcaption>Animation der Punkte A und B auf Kreisbahnen um den Ursprung: Die Koordinaten ändern sich fortlaufend, der Abstand bleibt konstant.</figcaption>
-</figure>
-```
-:::
-
-Drehen sich die Punkte A und B um den Ursprung, ändern sich ihre Koordinaten fortlaufend. Der Abstand zwischen ihnen bleibt gleich, er ist invariant.
 
 Für die Person am Bahnsteig bewegt sich der Zug während der Laufzeit des Lichtpulses nach rechts. Deshalb verläuft der Lichtweg diagonal und ist länger als $2D$. Die Zeitdauer, die dem Tick im Bahnsteigsystem zugeordnet wird, bezeichnen wir mit $\Delta t$.
 
@@ -479,8 +489,8 @@ Die Simulation zeigt nicht zwei verschiedene Lichtuhren. Links und rechts ist de
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="lightclock" data-srt-motion-control data-srt-label="Zeitdilatation mit einer Lichtuhr"></div>
-  <figcaption>Simulation zur Zeitdilatation mit einer Lichtuhr.</figcaption>
+  <div class="srt-workbook-stage" data-srt-animation="lightclock" data-srt-motion-control data-srt-label="Zeitdilatation mit einer Lichtuhr: derselbe Tick aus Sicht der mitfahrenden Person und der Person am Bahnsteig, mit Schieberegler für die Geschwindigkeit"></div>
+  <figcaption>Simulation zur Zeitdilatation: derselbe Tick derselben Lichtuhr im Zug- und im Bahnsteigsystem (Geschwindigkeit einstellbar).</figcaption>
 </figure>
 ```
 :::
@@ -491,15 +501,16 @@ In der HTML-Version erscheint hier die Lichtuhr-Visualisierung zur Zeitdilatatio
 :::
 :::
 
-Der Lichtweg ist länger, die Lichtgeschwindigkeit aber in beiden Inertialsystemen gleich groß. Deshalb benötigt der Lichtpuls aus Sicht der Person am Bahnsteig mehr Zeit für einen vollständigen Tick. Es gilt also $\Delta t > \Delta t_0$.
+Der Lichtweg ist länger, die Lichtgeschwindigkeit aber in beiden Inertialsystemen gleich groß. Deshalb benötigt der Lichtpuls aus Sicht der Person am Bahnsteig mehr Zeit für einen vollständigen Tick. Es gilt also $\Delta t > \Delta t_0$: Aus Sicht des Bahnsteigs geht die bewegte Uhr langsamer.
 
-::: {.mp-box .mp-secure .mp-compact}
-**Bewegte Uhren gehen langsamer.**
+::: {.mp-box .mp-misconception}
+<div class="mp-title">Geht die bewegte Uhr einfach falsch?</div>
+Nein, mit der Uhr ist technisch alles in Ordnung. Aus Sicht des Bahnsteigs ist jeder Vorgang im Zug betroffen, auch der Herzschlag einer Person im Zug. Nicht die Uhr versagt, sondern die Zeit selbst vergeht im Zugsystem langsamer, gemessen vom Bahnsteig aus.
 :::
 
-Damit ist kein technischer Fehler der Uhr gemeint. Aus Sicht des Bahnsteigs ist jeder Vorgang im Zug betroffen, auch der Herzschlag einer Person im Zug. Nicht die Uhr versagt, sondern die Zeit selbst vergeht im bewegten System langsamer.
+Die Zeitdilatation ist dabei wechselseitig: Auch die Person im Zug misst an einer am Bahnsteig ruhenden Uhr eine gedehnte Zeit, denn relativ zum Zug ist diese Uhr die bewegte.
 
-Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt bestimmen wir, in welchem Verhältnis $\Delta t$ und $\Delta t_0$ zueinander stehen. Dafür genügen der Satz des Pythagoras und einige Umformungen. Bei der Umformung tritt ein Faktor auf, der uns in der speziellen Relativitätstheorie noch öfter begegnet: der Lorentzfaktor.[Lorentzfaktor]{.column-margin .mp-randbegriff}
+Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt bestimmen wir, in welchem Verhältnis $\Delta t$ und $\Delta t_0$ zueinander stehen. Dafür genügen der Satz des Pythagoras und einige Umformungen. Bei der Umformung tritt ein Faktor auf, der uns in der speziellen Relativitätstheorie noch öfter begegnet: der Lorentzfaktor.
 
 :::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
@@ -509,7 +520,10 @@ Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt bestimmen w
 
 Im Bahnsteigsystem betrachten wir für den Satz des Pythagoras zunächst einen halben Tick. Der Lichtweg ist die Hypotenuse, $D$ ist die senkrechte Kathete und die seitliche Verschiebung der Lichtuhr ist die waagerechte Kathete:
 
-<img class="srt-workbook-image" src="assets/images/lichtuhr-pythagoras-halbtick.png" alt="Pythagoras-Dreieck für einen halben Tick der bewegten Lichtuhr">
+<figure class="srt-workbook-figure">
+  <img class="srt-workbook-image" src="assets/images/lichtuhr-pythagoras-halbtick.png" alt="Pythagoras-Dreieck für einen halben Tick der bewegten Lichtuhr">
+  <figcaption>Skizze zum halben Tick der bewegten Lichtuhr im Bahnsteigsystem: Der diagonale Lichtweg ist die Hypotenuse, der Spiegelabstand und die seitliche Verschiebung der Uhr sind die Katheten.</figcaption>
+</figure>
 
 $$
 \left(c\,\frac{\Delta t}{2}\right)^2
@@ -517,7 +531,7 @@ $$
 D^2 + \left(v\,\frac{\Delta t}{2}\right)^2
 $$
 
-**Deine Aufgabe:** Forme die Gleichung so um, dass $\Delta t$ allein steht. Ersetze $D$ mit $\Delta t_0 = \frac{2D}{c}$. Ziel ist eine Beziehung zwischen $\Delta t$ und $\Delta t_0$.
+**Deine Aufgabe:** <u>Leite</u> aus der Pythagoras-Gleichung und $\Delta t_0 = \frac{2D}{c}$ eine Beziehung zwischen $\Delta t$ und $\Delta t_0$ <u>her</u>. Forme dazu so um, dass $\Delta t$ allein steht.
 
 Wähle deinen Einstieg:
 
@@ -574,6 +588,7 @@ c^2\,\Delta t^2 - v^2\,\Delta t^2 &= c^2\,\Delta t_0^2 \\[8pt]
 $$
 
 </details>
+::::
 
 Der Faktor
 
@@ -581,14 +596,13 @@ $$
 \gamma = \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 $$ {#eq-umbau-lorentzfaktor}
 
-heißt Lorentzfaktor. Damit lässt sich das Ergebnis kurz schreiben als
+heißt Lorentzfaktor.[Lorentzfaktor]{.column-margin .mp-randbegriff} Damit lässt sich das Ergebnis kurz schreiben als
 
 $$
 \Delta t = \gamma\,\Delta t_0.
 $$ {#eq-umbau-zeitdilatation}
 
 Dabei ist $\Delta t_0$ die Eigenzeit, welche die mitfahrende Lichtuhr für ihren Tick misst. $\Delta t$ ist die Zeitdauer, die demselben Tick im Bahnsteigsystem zugeordnet wird.
-::::
 
 Wie stark sich die Zeit dehnt, hängt nach dieser Formel allein vom Verhältnis der Geschwindigkeit $v$ zur Lichtgeschwindigkeit $c$ ab.
 
@@ -597,7 +611,7 @@ Im folgenden Diagramm kannst du das selbst ausprobieren: Ziehe den Regler von kl
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="gamma-plot" data-srt-label="Lorentzfaktor γ in Abhängigkeit von der Geschwindigkeit"></div>
+  <div class="srt-workbook-stage" data-srt-animation="gamma-plot" data-srt-label="Lorentzfaktor γ in Abhängigkeit von der Geschwindigkeit, mit Schieberegler für die Relativgeschwindigkeit bis nahe c"></div>
   <figcaption>Simulation zum Lorentzfaktor γ in Abhängigkeit von der Geschwindigkeit (Regler bis nahe c).</figcaption>
 </figure>
 ```
@@ -609,7 +623,22 @@ In der HTML-Version erscheint hier ein interaktiver Graph zum Lorentzfaktor $\ga
 :::
 :::
 
-Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Als Beispiel: Selbst bei einer Relativgeschwindigkeit von $4\,317\,011{,}4\,\mathrm{km/h}$ (das sind $0{,}4\,\%$ der Lichtgeschwindigkeit) ist $\gamma \approx 1{,}000008$. Ob Auto, Bahn oder Verkehrsflugzeug: Die Abweichung von $1$ ist so winzig, dass die Zeitdilatation zwar berechenbar, aber häufig vernachlässigbar ist. Die klassische Physik bleibt eine gute Näherung. Man könnte bei solchen Geschwindigkeiten zwar relativistisch rechnen, in der Praxis wird aber meist klassisch gerechnet (Korrespondenzprinzip).[Korrespondenzprinzip]{.column-margin .mp-randbegriff}
+Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Selbst bei einer Relativgeschwindigkeit von rund $4{,}3$ Millionen $\mathrm{km/h}$ (das sind $0{,}4\,\%$ der Lichtgeschwindigkeit) ist $\gamma \approx 1{,}000008$. Auto, Bahn und Verkehrsflugzeug liegen weit darunter: Ihre Abweichung von $1$ ist noch winziger, die Zeitdilatation ist zwar berechenbar, aber häufig vernachlässigbar. Die klassische Physik bleibt eine gute Näherung. Man könnte bei solchen Geschwindigkeiten zwar relativistisch rechnen, in der Praxis wird aber meist klassisch gerechnet.[Korrespondenzprinzip]{.column-margin .mp-randbegriff}
+
+Noch ein Blick zurück auf die kleine $0$: Größen wie die Eigenzeit, die im eigenen Ruhesystem gemessen werden, sind invariant.[invariant]{.column-margin .mp-randbegriff} Über ihren Wert sind sich alle Inertialsysteme einig. Die kleine Animation soll dir ein Gefühl dafür geben, was das bedeutet:
+
+::: {.content-visible when-format="html"}
+```{=html}
+<figure class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="drehung-invarianz" data-srt-motion-control data-srt-label="Die Punkte A und B drehen sich auf Kreisbahnen um den Ursprung des Koordinatensystems. Ihre Koordinaten ändern sich fortlaufend, ihr Abstand bleibt konstant."></div>
+  <figcaption>Animation der Punkte A und B auf Kreisbahnen um den Ursprung: Die Koordinaten ändern sich fortlaufend, der Abstand bleibt konstant.</figcaption>
+</figure>
+```
+:::
+
+Drehen sich die Punkte A und B um den Ursprung, ändern sich ihre Koordinaten fortlaufend. Der Abstand zwischen ihnen bleibt gleich, er ist invariant.
+
+Ein Testfall für die Zeitdilatation kommt aus der Natur. Kosmische Strahlung trifft in der oberen Atmosphäre auf Atomkerne der Luft. In den entstehenden Teilchenschauern entstehen unter anderem Myonen. Ein Myon hat in seinem eigenen Ruhesystem eine mittlere Eigenlebensdauer von nur ungefähr $2{,}2\,\mathrm{\mu s}$ und zerfällt danach in andere Teilchen. Ein hochenergetisches Myon entsteht etwa $10\,\mathrm{km}$ über dem Boden und fliegt nahezu geradlinig mit ungefähr $v = 0{,}998\,c$ nach unten. Streuung und schräge Flugbahnen lassen wir dabei weg.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
@@ -617,13 +646,9 @@ Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Als Beispiel: Selbs
   Berechnung
 </span>
 
-Kosmische Strahlung trifft in der oberen Atmosphäre auf Atomkerne der Luft. In den entstehenden Teilchenschauern entstehen unter anderem Myonen. Ein Myon hat in seinem eigenen Ruhesystem eine mittlere Eigenlebensdauer von nur ungefähr $\Delta t_{0,\mathrm{M}} = 2{,}2\,\mathrm{\mu s}$ und zerfällt danach in andere Teilchen.
-
-Wir betrachten den Vorgang konsequent aus Sicht des ruhenden Erdsystems. Ein hochenergetisches Myon entsteht etwa $10\,\mathrm{km}$ über dem Boden und fliegt nahezu geradlinig mit ungefähr $v = 0{,}998\,c$ nach unten. Streuung und schräge Flugbahnen lassen wir dabei weg.
-
 **Das Rätsel:** Zwischen Entstehungsort und Detektor liegen rund $10\,\mathrm{km}$, und das bei einer mittleren Eigenlebensdauer von nur $2{,}2\,\mathrm{\mu s}$. Trotzdem werden solche Myonen am Erdboden tatsächlich nachgewiesen. Wie passt das zusammen?
 
-Rechne durchgehend aus der Erdperspektive. Gegeben sind die mittlere Eigenlebensdauer des Myons $\Delta t_{0,\mathrm{M}} = 2{,}2\,\mathrm{\mu s} = 2{,}2 \cdot 10^{-6}\,\mathrm{s}$, die Geschwindigkeit $v = 0{,}998\,c$ mit $c \approx 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}}$ und die Entstehungshöhe $h \approx 10\,\mathrm{km}$.
+Wir betrachten den Vorgang konsequent aus Sicht des ruhenden Erdsystems; rechne durchgehend aus der Erdperspektive. Gegeben sind die mittlere Eigenlebensdauer des Myons $\Delta t_{0,\mathrm{M}} = 2{,}2\,\mathrm{\mu s} = 2{,}2 \cdot 10^{-6}\,\mathrm{s}$, die Geschwindigkeit $v = 0{,}998\,c$ mit $c \approx 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}}$ und die Entstehungshöhe $h \approx 10\,\mathrm{km}$.
 
 Für diese Aufgabe nennen wir berechnete Flugstrecken $d$. So bleibt später klar: $d$ beschreibt, wie weit sich etwas während einer bestimmten Zeit bewegt; die Eigenlänge der Atmosphäre bekommt im nächsten Abschnitt ein eigenes Symbol.
 
@@ -679,7 +704,7 @@ $$
 d_\mathrm{E} = v\,\Delta t_\mathrm{E} \approx 0{,}998 \cdot 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}} \cdot 35 \cdot 10^{-6}\,\mathrm{s} \approx 10{,}5\,\mathrm{km}
 $$
 
-<p>Diese Flugstrecke ist größer als die Entstehungshöhe von etwa $10\,\mathrm{km}$. Aus der Erdperspektive reicht die zeitgedehnte mittlere Lebensdauer also gerade aus, damit das Myon den Detektor am Boden erreicht. Die folgende Animation <strong>mit Zeitdilatation</strong> veranschaulicht das:</p>
+<p>Diese Flugstrecke ist größer als die Entstehungshöhe von etwa $10\,\mathrm{km}$. Aus der Erdperspektive reicht die zeitgedehnte mittlere Lebensdauer also gerade aus, damit das Myon den Detektor am Boden erreicht. Die folgende Animation mit Zeitdilatation veranschaulicht das:</p>
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -705,7 +730,9 @@ In der HTML-Version erscheint hier eine Animation: Durch die im Erdsystem zeitge
 ## Längenkontraktion
 
 ::: {.mp-goal-strip}
-Du <u>erklärst</u> die Längenkontraktion über den Wechsel des Bezugssystems und <u>wendest</u> die Beziehung $L = L_0 / \gamma$ auf die Myonen <u>an</u>.
+Du <u>erklärst</u> die Längenkontraktion über den Wechsel des Bezugssystems.
+
+Du <u>wendest</u> die Beziehung $L = L_0 / \gamma$ auf die Myonen <u>an</u>.
 :::
 
 Ausgangspunkt ist diesmal ein Problem: Aus Sicht der Erde lässt sich das Myonen-Rätsel mit Zeitdilatation gut in den Griff bekommen. Wenn du aber gedanklich auf dem Myon mitreitest, ruhst du selbst. Nicht das Myon rast dann auf die Erde zu, sondern die Erde mitsamt Atmosphäre rast dir mit $v = 0{,}998\,c$ entgegen.
@@ -737,90 +764,31 @@ $$
 
 Das sind nur etwa $0{,}66\,\mathrm{km}$, viel weniger als $10\,\mathrm{km}$. Wie kann der Boden das Myon dann trotzdem erreichen? Die Lösung muss sein: Die bewegte Atmosphärenstrecke ist aus Sicht des Myons kürzer als ihre Eigenlänge $L_0$. Die Formel dafür gewinnen wir aus der Zeitdilatation.
 
-:::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
-  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
-  Herleitung
-</span>
-
-Für die Herleitung brauchst du nur drei Gleichungen.
-
-**(I) Zeitdilatation.**
+Dafür genügen drei Gleichungen. Die erste ist die Zeitdilatation selbst:
 
 $$
 \Delta t = \gamma\,\Delta t_0 \tag{I}
 $$
 
-**(II) Weg im Erdsystem.** Für die Länge im Erdsystem gilt:
+Die zweite beschreibt die Strecke im Erdsystem: Dort ruht die Atmosphäre, und das Myon durchquert sie während der Zeit $\Delta t$:
 
 $$
 L_0 = v\,\Delta t. \tag{II}
 $$
 
-**(III) Weg im Myon-System.** Für die Länge im Myon-System gilt:
+Die dritte beschreibt dieselbe Strecke im Myon-System: Dort zieht die Atmosphäre während der Eigenzeit $\Delta t_0$ vorbei:
 
 $$
 L = v\,\Delta t_0. \tag{III}
 $$
 
-**Deine Aufgabe:** <u>Leite</u> daraus eine Beziehung zwischen $L_0$ und $L$ <u>her</u>.
-
-Wähle deinen Einstieg:
-
-::: {.panel-tabset}
-
-### Ganz allein
-
-Hier bekommst du keine Hilfe, und das ist Absicht. Selbst zu knobeln festigt das Verständnis am stärksten. Sei dabei ruhig kreativ: Solche Gleichungen lassen sich auf vielen Wegen umformen, und der Weg in „Schritt für Schritt" muss nicht der sein, der für dich am besten passt. Geh erst zu „Mit Hinweisen", wenn du wirklich feststeckst.
-
-### Mit Hinweisen
-
-- Setze Gleichung (I) in Gleichung (II) ein.
-- Suche im Ergebnis den Term $v\,\Delta t_0$.
-- Ersetze diesen Term mit Gleichung (III).
-- Stelle anschließend nach $L$ um.
-
-### Schritt für Schritt
-
-1. Starte mit Gleichung (II): $L_0 = v\,\Delta t$.
-2. Setze Gleichung (I) ein: $L_0 = v\,\gamma\,\Delta t_0$.
-3. Nutze Gleichung (III), also $v\,\Delta t_0 = L$.
-4. Erhalte $L_0 = \gamma\,L$.
-5. Stelle diese Gleichung nach $L$ um.
-
-:::
-
-<details class="mp-details">
-<summary>Kontrollrechnung anzeigen</summary>
-
-$$
-\begin{aligned}
-L_0 &= v\,\Delta t
-  && \Big|\ \Delta t = \gamma\,\Delta t_0 \\[6pt]
-L_0 &= v\,\gamma\,\Delta t_0 \\[6pt]
-L &= v\,\Delta t_0
-  && \Big|\ v\,\Delta t_0 = L \\[6pt]
-L_0 &= \gamma\,L
-  && \Big|\ : \gamma \\[6pt]
-\frac{L_0}{\gamma} &= L \\[6pt]
-L &= \frac{L_0}{\gamma}
-\end{aligned}
-$$
-
-</details>
-
-Die bewegt gemessene Länge $L$ ist also um den Faktor $\gamma$ kleiner als die Eigenlänge $L_0$:
+Der Rest ist Einsetzen. Mit (I) wird aus (II) zunächst $L_0 = v\,\gamma\,\Delta t_0$. Darin steckt nach (III) die Länge $L = v\,\Delta t_0$, es gilt also $L_0 = \gamma\,L$. Umstellen nach $L$ zeigt: Die bewegt gemessene Länge ist um den Faktor $\gamma$ kleiner als die Eigenlänge $L_0$:
 
 $$
 L = \frac{L_0}{\gamma}.
 $$ {#eq-umbau-laengenkontraktion}
-::::
 
-::: {.mp-box .mp-secure .mp-compact}
-**Bewegte Strecken sind in Bewegungsrichtung verkürzt.**
-:::
-
-Für das Myon heißt das konkret: Aus seiner Sicht ist die Atmosphäre verkürzt auf
+Bewegte Strecken sind in Bewegungsrichtung verkürzt. Für das Myon heißt das konkret: Aus seiner Sicht ist die Atmosphäre verkürzt auf
 
 $$
 L = \frac{L_0}{\gamma} \approx \frac{10\,\mathrm{km}}{15{,}8} \approx 0{,}63\,\mathrm{km}.
@@ -873,7 +841,11 @@ $$
 ## Dopplerverschiebung des Lichts
 
 ::: {.mp-goal-strip}
-Du <u>erklärst</u> die Dopplerverschiebung des Lichts, <u>leitest</u> die Formel für die beobachtete Wellenlänge <u>her</u> und <u>begründest</u>, warum eine Rotverschiebung auf eine Bewegung von uns weg hinweist.
+Du <u>erklärst</u> die Dopplerverschiebung des Lichts.
+
+Du <u>leitest</u> die Formel für die beobachtete Wellenlänge <u>her</u>.
+
+Du <u>begründest</u>, dass eine Rotverschiebung auf eine Bewegung von uns weg hinweist.
 :::
 
 Das Licht ferner Galaxien kommt systematisch rotverschoben bei uns an, also mit größeren Wellenlängen, als die Atome es eigentlich aussenden. Daraus schloss man, dass sich die Galaxien von uns entfernen [@bennett2017cosmic, S. 615--616]. Warum eine Bewegung die Wellenlänge des Lichts überhaupt verschiebt und dieser Schluss möglich ist, darum geht es in diesem Abschnitt.
@@ -906,9 +878,9 @@ So ähnlich sich Schall und Licht hier beschreiben lassen, physikalisch sind sie
 Die Analogie erklärt die Richtung der Verschiebung: Annäherung führt zu kürzeren, Entfernung zu längeren Wellenlängen. Jetzt bestimmen wir, wie die Größe dieser Verschiebung von der Relativgeschwindigkeit abhängt.
 
 :::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
+<span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung: Blauverschiebung">
   <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
-  Herleitung
+  Herleitung: Blauverschiebung
 </span>
 
 Eine Lichtquelle bewegt sich mit der Geschwindigkeit $v$ auf den Beobachter zu. Gesucht ist die Wellenlänge $\lambda$, die der Beobachter misst.
@@ -1023,7 +995,22 @@ $$
 \lambda = \sqrt{\frac{c-v}{c+v}}\,\lambda_0
 $$ {#eq-umbau-doppler}
 
-Weil sich die Quelle nähert, ist $\lambda < \lambda_0$: Das Licht ist zu kürzeren Wellenlängen verschoben, also ins Blaue. Entfernt sich die Quelle stattdessen, dreht sich das Vorzeichen in Gleichung (II) um: Aus $(c-v)\,\Delta t$ wird $(c+v)\,\Delta t$. Führt man die Rechnung damit noch einmal durch, erhält man $\lambda = \sqrt{\dfrac{c + v}{c - v}}\,\lambda_0 > \lambda_0$, eine Rotverschiebung.
+Weil sich die Quelle nähert, ist $\lambda < \lambda_0$: Das Licht ist zu kürzeren Wellenlängen verschoben, also ins Blaue.
+::::
+
+Entfernt sich die Quelle stattdessen, dreht sich das Bild um: Das Licht wird ins Rote verschoben. Die Formel dafür rechnest du selbst nach, die Umformungen sind fast dieselben wie in der Herleitung eben.
+
+:::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung: Rotverschiebung">
+  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  Herleitung: Rotverschiebung
+</span>
+
+Die Quelle bewegt sich jetzt mit der Geschwindigkeit $v$ vom Beobachter weg. Sie rückt der ausgesendeten Wellenfront nicht mehr nach, sondern entfernt sich von ihr, wie die Skizze zeigt. Der Abstand zweier aufeinanderfolgender Wellenfronten wächst auf $(c+v)\,\Delta t$; in Gleichung (II) dreht sich das Vorzeichen um:
+
+$$
+\lambda = (c + v)\,\Delta t. \tag{II'}
+$$
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -1036,12 +1023,45 @@ Weil sich die Quelle nähert, ist $\lambda < \lambda_0$: Das Licht ist zu kürze
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Skizze: Die Quelle entfernt sich vom Beobachter. Wellenfront 1 wird an Punkt 1 ausgesendet; eine Periode $\Delta t$ später ist sie um $c\,\Delta t$ zum Beobachter vorgelaufen, während die Quelle ihr um $v\,\Delta t$ entgegengesetzt nachrückt und an Punkt 2 Wellenfront 2 aussendet. Der Abstand der beiden Wellenfronten ist die beobachtete Wellenlänge $\lambda = c\,\Delta t + v\,\Delta t > \lambda_0$, also eine Rotverschiebung.
+In der HTML-Version erscheint hier eine Skizze: Die Quelle entfernt sich vom Beobachter. Wellenfront 1 wird an Punkt 1 ausgesendet; eine Periode $\Delta t$ später ist sie um $c\,\Delta t$ zum Beobachter vorgelaufen, während die Quelle ihr um $v\,\Delta t$ entgegengesetzt nachrückt und an Punkt 2 Wellenfront 2 aussendet. Der Abstand der beiden Wellenfronten ist die beobachtete Wellenlänge $\lambda = c\,\Delta t + v\,\Delta t > \lambda_0$.
 :::
 :::
+
+**Deine Aufgabe:** <u>Leite</u> mit den Gleichungen (I), (II') und (III) die Formel für die Wellenlänge $\lambda$ bei einer sich entfernenden Quelle <u>her</u>.
+
+<details class="mp-details">
+<summary>Kontrollrechnung anzeigen</summary>
+
+$$
+\begin{aligned}
+\lambda &= (c+v)\,\Delta t
+  && \Big|\ \Delta t = \frac{\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}} \\[10pt]
+\lambda &= \frac{(c+v)\,\Delta t_0}{\sqrt{1-\frac{v^2}{c^2}}}
+  && \Big|\ \text{mit } c \text{ erweitern} \\[10pt]
+\lambda &= \frac{c\,\Delta t_0\,(c+v)}{c\,\sqrt{1-\frac{v^2}{c^2}}}
+  && \Big|\ c \text{ unter die Wurzel ziehen} \\[10pt]
+\lambda &= \frac{c\,\Delta t_0\,(c+v)}{\sqrt{c^2-v^2}}
+  && \Big|\ c\,\Delta t_0 = \lambda_0 \\[10pt]
+\lambda &= \frac{(c+v)\,\lambda_0}{\sqrt{c^2-v^2}}
+  && \Big|\ c^2-v^2=(c-v)(c+v) \\[10pt]
+\lambda &= \frac{(c+v)\,\lambda_0}{\sqrt{(c-v)(c+v)}}
+  && \Big|\ \text{als eine Wurzel schreiben und kürzen} \\[10pt]
+\lambda &= \sqrt{\frac{c+v}{c-v}}\,\lambda_0
+\end{aligned}
+$$
+
+</details>
 ::::
 
-In der folgenden Simulation kannst du die Geschwindigkeit der Quelle einstellen und beobachten, wie sich eine Spektrallinie nach Rot (Entfernung) oder Blau (Annäherung) verschiebt. Die Simulation ist dabei nicht quantitativ exakt; sie dient lediglich als repräsentatives Bild, das die Richtung der Verschiebung veranschaulicht.
+Als Ergebnis erhältst du:
+
+$$
+\lambda = \sqrt{\frac{c+v}{c-v}}\,\lambda_0
+$$ {#eq-umbau-doppler-rot}
+
+Wegen $\lambda > \lambda_0$ ist das Licht zu größeren Wellenlängen verschoben: eine Rotverschiebung.
+
+In der folgenden Simulation kannst du die Geschwindigkeit der Quelle einstellen und beobachten, wie sich eine Spektrallinie nach Rot (Entfernung) oder Blau (Annäherung) verschiebt. Die Lage der Spektrallinie wird dabei mit den Gleichungen @eq-umbau-doppler und @eq-umbau-doppler-rot berechnet und ist quantitativ korrekt. Das Wellenbild darunter ist dagegen eine schematische Darstellung: Es zeigt Stauchung und Dehnung der Wellenfronten nur qualitativ.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -1066,7 +1086,7 @@ In der HTML-Version erscheint hier ein interaktives Diagramm: Ein Geschwindigkei
 
 Eine Spektrallinie hat im Ruhesystem der Quelle die Wellenlänge $\lambda_0 = 500\,\mathrm{nm}$. Bei uns wird dieselbe Linie mit $\lambda = 530\,\mathrm{nm}$ gemessen.
 
-1. <u>Entscheide</u>, ob eine Rot- oder Blauverschiebung vorliegt.
+1. <u>Bestimme</u>, ob eine Rot- oder Blauverschiebung vorliegt, und <u>begründe</u> deine Zuordnung.
 2. <u>Begründe</u>, ob sich die Quelle auf uns zu oder von uns weg bewegt.
 :::
 
@@ -1081,7 +1101,19 @@ Eine Spektrallinie hat im Ruhesystem der Quelle die Wellenlänge $\lambda_0 = 50
 
 ## Sichern und anwenden
 
-Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt sicherst du deshalb die Grundideen dieses Kapitels in deiner eigenen Sprache. Anschließend löst du einen scheinbaren Widerspruch auf, indem du zwei Effekte miteinander verbindest.
+Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt prüfst du zuerst an den Lernzielen, was du erreicht hast. Danach sicherst du die Grundideen des Kapitels in deiner eigenen Sprache, und zum Schluss löst du einen scheinbaren Widerspruch auf, indem du zwei Effekte miteinander verbindest.
+
+### Lernziele prüfen
+
+Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einzelne, ob du es erfüllst. Für alles, was dir fehlt, führt dich das Inhaltsverzeichnis zur passenden Stelle.
+
+- **Bezugssysteme:** Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen. Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein und <u>begründest</u> deine Zuordnung unter anderem mit dem ersten Newtonschen Axiom.
+- **Michelson-Morley:** Du <u>beschreibst</u> den Aufbau eines Michelson-Interferometers und <u>erläuterst</u>, wie damit ein Ätherwind nachgewiesen werden sollte. Du <u>interpretierst</u> das Nullresultat als Problem für die einfache Ätherhypothese.
+- **Postulate:** Du <u>nennst</u> die beiden Einsteinschen Postulate und <u>begründest</u> mit dem zweiten Postulat, dass auf der Erde für einen aus einem mit halber Lichtgeschwindigkeit fliegenden Raumschiff ausgesandten Lichtpuls die Geschwindigkeit $c$ gemessen wird und nicht die anderthalbfache Lichtgeschwindigkeit.
+- **Gleichzeitigkeit:** Du <u>beschreibst</u> das Zug-Gedankenexperiment zur Gleichzeitigkeit im Zug- und im Bahnsteigsystem. Du <u>begründest</u> am Zug-Gedankenexperiment, dass Gleichzeitigkeit vom Inertialsystem abhängt.
+- **Zeitdilatation:** Du <u>erklärst</u> die Zeitdilatation mithilfe der Lichtuhr. Du <u>leitest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ <u>her</u>. Du <u>wendest</u> die Zeitdilatation auf die Myonen in der Atmosphäre <u>an</u>.
+- **Längenkontraktion:** Du <u>erklärst</u> die Längenkontraktion über den Wechsel des Bezugssystems. Du <u>wendest</u> die Beziehung $L = L_0 / \gamma$ auf die Myonen <u>an</u>.
+- **Dopplerverschiebung:** Du <u>erklärst</u> die Dopplerverschiebung des Lichts. Du <u>leitest</u> die Formel für die beobachtete Wellenlänge <u>her</u>. Du <u>begründest</u>, dass eine Rotverschiebung auf eine Bewegung von uns weg hinweist.
 
 ### In eigener Sprache erklären
 
@@ -1094,17 +1126,9 @@ Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf 
   Schreibaufgabe
 </span>
 
-<u>Formuliere</u> eine zusammenhängende Erklärung dieses Kapitels in deiner eigenen Sprache. Stell dir vor, du <u>erklärst</u> die spezielle Relativitätstheorie jemandem aus deinem Kurs. Benutze dafür gerne auch Skizzen, um deine Erklärungen zu veranschaulichen.
+<u>Erkläre</u> die Grundideen dieses Kapitels zusammenhängend in deiner eigenen Sprache. Stell dir vor, dein Publikum ist jemand aus deinem Kurs. Benutze dafür gerne auch Skizzen, um deine Erklärungen zu veranschaulichen.
 
-Nutze die **Lernziele** der einzelnen Abschnitte als Leitfaden. Hangle dich an ihnen entlang, formuliere aber selbst. Schreibe nicht ab, sondern erkläre es so, wie du es verstanden hast:
-
-- **Bezugssysteme:** Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen. Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein und <u>begründest</u> deine Zuordnung unter anderem mit dem ersten Newtonschen Axiom.
-- **Michelson-Morley:** Du <u>beschreibst</u> den Aufbau eines Michelson-Interferometers und <u>erläuterst</u>, wie damit ein Ätherwind nachgewiesen werden sollte. Du <u>interpretierst</u> das Nullresultat als Problem für die einfache Ätherhypothese.
-- **Postulate:** Du <u>nennst</u> die beiden Einsteinschen Postulate und <u>begründest</u> mit dem zweiten Postulat, warum auf der Erde für einen aus einem mit halber Lichtgeschwindigkeit fliegenden Raumschiff ausgesandten Lichtpuls nicht die anderthalbfache Lichtgeschwindigkeit gemessen wird.
-- **Gleichzeitigkeit:** Du <u>begründest</u> am Zug-Gedankenexperiment, warum Gleichzeitigkeit vom Inertialsystem abhängt.
-- **Zeitdilatation:** Du <u>erklärst</u> Zeitdilatation mithilfe der Lichtuhr und <u>wendest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ auf die Myonen in der Atmosphäre <u>an</u>.
-- **Längenkontraktion:** Du <u>erklärst</u> die Längenkontraktion über den Wechsel des Bezugssystems und <u>wendest</u> die Beziehung $L = L_0 / \gamma$ auf die Myonen <u>an</u>.
-- **Dopplerverschiebung:** Du <u>erklärst</u> die Dopplerverschiebung des Lichts und <u>begründest</u>, warum eine Rotverschiebung auf eine Bewegung von uns weg hinweist.
+Nutze die Lernziele aus der Prüfliste oben als Leitfaden. Hangle dich an ihnen entlang, formuliere aber selbst: Erkläre es so, wie du es verstanden hast.
 :::
 
 ### Anwendung: Das Garagenparadoxon
