@@ -12,11 +12,8 @@ book:
   chapters:
     - index.qmd
     - 00_konzeption.qmd
-    - 01_srt_raum_und_zeit.qmd
     - 01_srt_raum_und_zeit_umbau.qmd
-    - 03_srt_impuls_und_energie.qmd
     - 03_srt_impuls_und_energie_umbau.qmd
-    - 02_laser_ausflug.qmd
     - 02_laser_ausflug_umbau.qmd
     - references.qmd
 
