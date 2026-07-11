@@ -71,6 +71,17 @@ $$p = m_0\,\frac{\Delta s}{\Delta t_0}
 
 Diese Überlegung ist eine Plausibilisierung, keine Herleitung: Sie zeigt, wie die Eigenzeit auf den Faktor $\gamma$ führt. Dass gerade diese Ersetzung die passende ist, begründet sie nicht.
 
+::: {.column-margin .mp-discuss}
+<div class="mp-title">Zur Diskussion</div>
+Soll die Eigenzeitrechnung als Herleitung des relativistischen Impulses bezeichnet werden?
+
+Dafür: Sie führt mit der bereits bekannten Zeitdilatation unmittelbar zum Faktor $\gamma$. So verbindet sie die neue Impulsformel mit dem vorigen Kapitel.
+
+Dagegen: Der Ansatz $p = m_0\,\Delta s/\Delta t_0$ enthält den entscheidenden Schritt bereits. Die Rechnung begründet weder diesen Ansatz noch die Impulserhaltung in allen Inertialsystemen.
+
+Im Workbook steht die Rechnung deshalb als Plausibilisierung. Die Formel wird ohne Beweis angegeben. Eine vollständige Herleitung findet sich in der Fachliteratur.
+:::
+
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Mehr Geschwindigkeit, mehr Masse?</div>
 In vielen älteren Büchern liest du, dass mehr Geschwindigkeit zu mehr Masse führt. Dahinter steckt die Schreibweise $p = m_\text{rel}\,v$ mit der „relativistischen Masse“ $m_\text{rel} = \gamma\,m_0$. So sieht es aus, als würde die Masse mit der Geschwindigkeit wachsen.
