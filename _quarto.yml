@@ -20,9 +20,13 @@ book:
 lang: de
 bibliography: references.bib
 
+crossref:
+  chapters: true
+
 format:
   html:
     theme: [cosmo, assets/no-webfont.scss]
+    crossrefs-hover: false
     html-math-method:
       method: mathjax
       url: assets/mathjax/tex-svg-full.js

@@ -2,11 +2,11 @@
   const W = 862, H = 506;
 
   // Senkrechte "Fallstrecke" des Myons (schematisch, nicht maßstabsgetreu).
-  const MUON_X = 408;
-  const SKY_TOP = 112;
-  const GROUND_Y = 452;
+  const MUON_X = 431;
+  const SKY_TOP = 84;
+  const GROUND_Y = 448;
   const FULL_H = GROUND_Y - SKY_TOP;
-  const BAND = { x: 352, w: 112 };
+  const BAND = { x: 375, w: 112 };
 
   // Rein zur anschaulichen Taktung der Animation – NICHT der Wert aus der Rechnung.
   // Ein größerer Wert lässt die Überlebenskurve schneller fallen, sodass das
@@ -32,12 +32,6 @@
 
   function drawBackground(parent, SRT) {
     SRT.el("rect", { x: 0, y: 0, width: W, height: H, rx: 18, fill: "#f7f9fb" }, parent);
-    SRT.addText(parent, 431, 36, "Myon in der Atmosphäre, beobachtet vom Erdboden", "label", {
-      "text-anchor": "middle", fill: INK, "font-size": 18, "font-weight": "900"
-    });
-    SRT.addText(parent, 431, 58, "(Sicht eines ruhenden Beobachters im Erdsystem)", "tiny", {
-      "text-anchor": "middle", fill: MUTED, "font-size": 12, "font-weight": "700"
-    });
   }
 
   function drawScene(parent, SRT, view) {
@@ -48,11 +42,11 @@
     // Entstehung oben
     SRT.el("line", { x1: BAND.x - 8, y1: SKY_TOP, x2: BAND.x + BAND.w + 8, y2: SKY_TOP,
       stroke: AMBER, "stroke-width": 1.5, "stroke-dasharray": "4 4" }, parent);
-    SRT.addText(parent, BAND.x - 18, SKY_TOP - 8, "Entstehung in der oberen Atmosphäre", "tiny", {
-      "text-anchor": "end", fill: MUTED, "font-size": 12, "font-weight": "800"
+    SRT.addText(parent, BAND.x - 18, SKY_TOP - 2, "Entstehung", "tiny", {
+      "text-anchor": "end", fill: MUTED, "font-size": 13, "font-weight": "800"
     });
-    SRT.addText(parent, BAND.x - 18, SKY_TOP + 9, "(≈ 10 km Höhe)", "tiny", {
-      "text-anchor": "end", fill: MUTED, "font-size": 11, "font-weight": "700"
+    addMathText(parent, SRT, BAND.x - 18, SKY_TOP + 15, "h ≈ 10 km", "tiny", {
+      "text-anchor": "end", fill: MUTED, "font-size": 12, "font-weight": "700"
     });
 
     // Klassisch erwartete Reichweite (Eigen-Lebensdauer ohne Zeitdilatation)
@@ -60,12 +54,8 @@
     SRT.el("line", { x1: BAND.x - 8, y1: DEATH_Y, x2: BAND.x + BAND.w + 8, y2: DEATH_Y,
       stroke: WARN, "stroke-width": reachActive ? 1.8 : 1.2,
       "stroke-dasharray": "6 5", opacity: reachActive ? 0.9 : 0.35 }, parent);
-    SRT.addText(parent, BAND.x - 18, DEATH_Y - 4, "ohne Zeitdilatation", "tiny", {
-      "text-anchor": "end", fill: WARN, "font-size": 12, "font-weight": "850",
-      opacity: reachActive ? 1 : 0.45
-    });
-    SRT.addText(parent, BAND.x - 18, DEATH_Y + 12, "hier längst zerfallen", "tiny", {
-      "text-anchor": "end", fill: WARN, "font-size": 11, "font-weight": "750",
+    SRT.addText(parent, BAND.x + BAND.w + 18, DEATH_Y + 4, "Zerfall ohne Zeitdilatation", "tiny", {
+      "text-anchor": "start", fill: WARN, "font-size": 13, "font-weight": "800",
       opacity: reachActive ? 1 : 0.45
     });
 
@@ -77,55 +67,8 @@
       SRT.el("line", { x1: x, y1: GROUND_Y, x2: x - 8, y2: GROUND_Y + 10,
         stroke: INK, "stroke-width": 1.4 }, parent);
     }
-    SRT.addText(parent, BAND.x - 18, GROUND_Y + 22, "Erdoberfläche (Detektor)", "tiny", {
-      "text-anchor": "end", fill: INK, "font-size": 12, "font-weight": "850"
-    });
-  }
-
-  function drawExplain(parent, SRT, view) {
-    const x = 506, y = 96, w = 320, h = 232;
-    const accent = view === "classic" ? WARN : GOOD;
-    SRT.el("rect", { x, y, width: w, height: h, rx: 12, fill: "#ffffff",
-      stroke: "rgba(23,32,51,0.14)", "stroke-width": 2 }, parent);
-    SRT.el("rect", { x, y, width: 6, height: h, rx: 3, fill: accent }, parent);
-
-    const heading = view === "classic" ? "Ohne Zeitdilatation (klassisch)" : "Mit Zeitdilatation (relativistisch)";
-    SRT.addText(parent, x + 24, y + 34, heading, "label", {
-      fill: accent, "font-size": 16, "font-weight": "900"
-    });
-
-    const lines = view === "classic"
-      ? [
-          "Ein Myon lebt im Mittel nur",
-          "rund τ ≈ 2,2 µs (Eigenzeit).",
-          "",
-          "Klassisch käme es damit nur",
-          "wenige hundert Meter weit und",
-          "wäre weit oberhalb des Bodens",
-          "zerfallen, es dürfte den",
-          "Detektor nie erreichen."
-        ]
-      : [
-          "Vom Erdboden aus gemessen lebt",
-          "das schnelle Myon γ-mal länger.",
-          "",
-          "Die gedehnte Lebensdauer reicht,",
-          "um die ganze Strecke bis zum",
-          "Boden zurückzulegen.",
-          "",
-        ];
-    lines.forEach((line, i) => {
-      if (!line) return;
-      const attrs = {
-        fill: i === 0 ? INK : MUTED, "font-size": 13, "font-weight": i === 0 ? "850" : "700"
-      };
-      const ty = y + 62 + i * 19;
-      // Zeile mit dem griechischen τ im Mathe-Font setzen, sonst normale Schrift.
-      if (line.indexOf("τ") !== -1) {
-        addMathText(parent, SRT, x + 24, ty, line, "tiny", attrs);
-      } else {
-        SRT.addText(parent, x + 24, ty, line, "tiny", attrs);
-      }
+    SRT.addText(parent, BAND.x - 18, GROUND_Y + 24, "Erdoberfläche (Detektor)", "tiny", {
+      "text-anchor": "end", fill: INK, "font-size": 13, "font-weight": "800"
     });
   }
 
@@ -186,7 +129,6 @@
     SRT.clear(parent);
     drawBackground(parent, SRT);
     drawScene(parent, SRT, "classic");
-    drawExplain(parent, SRT, "classic");
 
     const fallDur = DEATH_P * FALL_MS;
     const cycle = fallDur + HOLD_MS;
@@ -204,7 +146,6 @@
     SRT.clear(parent);
     drawBackground(parent, SRT);
     drawScene(parent, SRT, "relativistic");
-    drawExplain(parent, SRT, "relativistic");
 
     const cycle = FALL_MS + HOLD_MS;
     const tc = t % cycle;

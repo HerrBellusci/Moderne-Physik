@@ -1,4 +1,4 @@
-# Spezielle Relativitätstheorie I: Raum und Zeit (Umbau) {.unnumbered}
+# Spezielle Relativitätstheorie I: Raum und Zeit (Umbau)
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -625,7 +625,7 @@ In der HTML-Version erscheint hier ein interaktiver Graph zum Lorentzfaktor $\ga
 
 Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Selbst bei einer Relativgeschwindigkeit von rund $4{,}3$ Millionen $\mathrm{km/h}$ (das sind $0{,}4\,\%$ der Lichtgeschwindigkeit) ist $\gamma \approx 1{,}000008$. Auto, Bahn und Verkehrsflugzeug liegen weit darunter: Ihre Abweichung von $1$ ist noch winziger, die Zeitdilatation ist zwar berechenbar, aber häufig vernachlässigbar. Die klassische Physik bleibt eine gute Näherung. Man könnte bei solchen Geschwindigkeiten zwar relativistisch rechnen, in der Praxis wird aber meist klassisch gerechnet.[Korrespondenzprinzip]{.column-margin .mp-randbegriff}
 
-Noch ein Blick zurück auf die kleine $0$: Größen wie die Eigenzeit, die im eigenen Ruhesystem gemessen werden, sind invariant.[invariant]{.column-margin .mp-randbegriff} Über ihren Wert sind sich alle Inertialsysteme einig. Die kleine Animation soll dir ein Gefühl dafür geben, was das bedeutet:
+Noch ein Blick zurück auf die kleine $0$: Größen wie die Eigenzeit, die im eigenen Ruhesystem gemessen werden, sind invariant.[invariant]{.column-margin .mp-randbegriff} Über ihren Wert sind sich alle Inertialsysteme einig. Das hebt die Zeitdilatation nicht auf: Vom Bahnsteig aus geht die bewegte Uhr weiterhin langsamer. Es bedeutet: Wer die Relativgeschwindigkeit kennt, kann den Wert der Eigenzeit mit @eq-umbau-zeitdilatation aus den eigenen Messwerten errechnen, in jedem Inertialsystem mit demselben Ergebnis. Die kleine Animation soll dir ein Gefühl dafür geben, was das bedeutet:
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -656,7 +656,7 @@ Für diese Aufgabe nennen wir berechnete Flugstrecken $d$. So bleibt später kla
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Ohne Zeitdilatation käme das Myon in seiner mittleren Eigenlebensdauer nur die Vergleichsstrecke</p>
+<p><strong>Zu 1.:</strong> Ohne Zeitdilatation käme das Myon in seiner mittleren Eigenlebensdauer nur die Vergleichsstrecke</p>
 
 $$
 d_\mathrm{kl} = v\,\Delta t_{0,\mathrm{M}} \approx 0{,}998 \cdot 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}} \cdot 2{,}2 \cdot 10^{-6}\,\mathrm{s} \approx 660\,\mathrm{m}
@@ -688,7 +688,7 @@ Berücksichtige nun die Zeitdilatation und löse damit das Rätsel.
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Der entscheidende Punkt: $\Delta t_{0,\mathrm{M}}$ ist die mittlere Eigenlebensdauer des Myons, also das Eigenzeitintervall zwischen Entstehung und Zerfall. Aus Sicht der Erde bewegt sich das Myon mit $v = 0{,}998\,c$, deshalb erscheint seine mittlere Lebensdauer im Erdsystem zeitgedehnt. In dieser Aufgabe nennen wir die im Erdsystem gemessene mittlere Lebensdauer $\Delta t_\mathrm{E}$:</p>
+<p><strong>Zu 2.:</strong> Der entscheidende Punkt: $\Delta t_{0,\mathrm{M}}$ ist die mittlere Eigenlebensdauer des Myons, also das Eigenzeitintervall zwischen Entstehung und Zerfall. Aus Sicht der Erde bewegt sich das Myon mit $v = 0{,}998\,c$, deshalb erscheint seine mittlere Lebensdauer im Erdsystem zeitgedehnt. In dieser Aufgabe nennen wir die im Erdsystem gemessene mittlere Lebensdauer $\Delta t_\mathrm{E}$:</p>
 
 $$
 \gamma = \frac{1}{\sqrt{1 - 0{,}998^2}} \approx 15{,}8
@@ -698,13 +698,13 @@ $$
 \Delta t_\mathrm{E} = \gamma\,\Delta t_{0,\mathrm{M}} \approx 15{,}8 \cdot 2{,}2\,\mathrm{\mu s} \approx 35\,\mathrm{\mu s}
 $$
 
-<p>In dieser im Erdsystem gemessenen Zeit legt das Myon näherungsweise folgende Flugstrecke zurück:</p>
+<p><strong>Zu 3.:</strong> In dieser im Erdsystem gemessenen Zeit legt das Myon näherungsweise folgende Flugstrecke zurück:</p>
 
 $$
 d_\mathrm{E} = v\,\Delta t_\mathrm{E} \approx 0{,}998 \cdot 3{,}0 \cdot 10^8\,\mathrm{\frac{m}{s}} \cdot 35 \cdot 10^{-6}\,\mathrm{s} \approx 10{,}5\,\mathrm{km}
 $$
 
-<p>Diese Flugstrecke ist größer als die Entstehungshöhe von etwa $10\,\mathrm{km}$. Aus der Erdperspektive reicht die zeitgedehnte mittlere Lebensdauer also gerade aus, damit das Myon den Detektor am Boden erreicht. Die folgende Animation mit Zeitdilatation veranschaulicht das:</p>
+<p><strong>Zu 4.:</strong> Diese Flugstrecke ist größer als die Entstehungshöhe von etwa $10\,\mathrm{km}$. Aus der Erdperspektive reicht die zeitgedehnte mittlere Lebensdauer also gerade aus, damit das Myon den Detektor am Boden erreicht. Die folgende Animation mit Zeitdilatation veranschaulicht das:</p>
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -873,9 +873,9 @@ In der HTML-Version erscheint hier eine Animation: Eine bewegte Quelle sendet We
 
 Dasselbe Bild gilt für Licht: Nähert sich eine Lichtquelle, wird ihr Licht zu kürzeren Wellenlängen verschoben, also ins Blaue; entfernt sie sich, zu längeren Wellenlängen, ins Rote.[Rot- und Blauverschiebung]{.column-margin .mp-randbegriff} Damit ist auch die Rotverschiebung der Galaxien vom Anfang dieses Abschnitts erklärt: Größere Wellenlängen bedeuten eine relative Bewegung von uns weg.
 
-So ähnlich sich Schall und Licht hier beschreiben lassen, physikalisch sind sie verschieden. Die Analogie hat also Grenzen, gibt aber ein erstaunlich gutes Gefühl dafür, welche Auswirkung der Doppler-Effekt auch auf Licht hat.
+So ähnlich sich Schall und Licht hier beschreiben lassen, physikalisch sind sie verschieden: Schall braucht ein Medium, die Luft. Licht breitet sich auch im Vakuum aus; ein vergleichbares Trägermedium ließ sich im [Michelson-Morley-Experiment](#michelson-morley-experiment) nicht nachweisen. Die Analogie hat also Grenzen, gibt aber ein erstaunlich gutes Gefühl dafür, welche Auswirkung der Doppler-Effekt auch auf Licht hat.
 
-Die Analogie erklärt die Richtung der Verschiebung: Annäherung führt zu kürzeren, Entfernung zu längeren Wellenlängen. Jetzt bestimmen wir, wie die Größe dieser Verschiebung von der Relativgeschwindigkeit abhängt.
+Die Analogie erklärt die Richtung der Verschiebung: Annäherung führt zu kürzeren, Entfernung zu längeren Wellenlängen. Jetzt bestimmst du selbst, wie die Größe dieser Verschiebung von der Relativgeschwindigkeit abhängt.
 
 :::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung: Blauverschiebung">
@@ -895,7 +895,7 @@ $$
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="doppler-bzg-quelle" data-srt-viewbox-h="200" data-srt-label="Skizze im Bezugssystem der Quelle: Die ruhende Quelle S sendet Wellenfronten aus, deren Abstand die Eigenwellenlänge lambda 0 gleich c mal Δt 0 ist."></div>
-  <figcaption>Skizze im Bezugssystem der Quelle: Der Abstand der Wellenfronten ist die Eigenwellenlänge $\lambda_0 = c\,\Delta t_0$.</figcaption>
+  <figcaption>Skizze im Bezugssystem der Quelle: Der Abstand der Wellenfronten ist die Eigenwellenlänge \(\lambda_0 = c\,\Delta t_0\).</figcaption>
 </figure>
 ```
 :::
@@ -916,7 +916,7 @@ $$
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="doppler-bzg-beobachter" data-srt-viewbox-h="250" data-srt-label="Skizze im Bezugssystem des Beobachters: Seit der Aussendung von Wellenfront 1 an Punkt 1 ist die Zeit Delta t vergangen. Die Quelle ist nach Punkt 2 gerückt und sendet dort Wellenfront 2 aus, während Wellenfront 1 um c mal Delta t vorausgelaufen ist und die Quelle nur um v mal Delta t nachgerückt ist. Der Abstand der beiden Wellenfronten ist die beobachtete Wellenlänge lambda gleich c mal Delta t minus v mal Delta t."></div>
-  <figcaption>Skizze im Bezugssystem des Beobachters für eine sich nähernde Quelle: Wellenfront 1 läuft um $c\,\Delta t$ voraus, die Quelle rückt um $v\,\Delta t$ nach.</figcaption>
+  <figcaption>Skizze im Bezugssystem des Beobachters für eine sich nähernde Quelle: Wellenfront 1 läuft um \(c\,\Delta t\) voraus, die Quelle rückt um \(v\,\Delta t\) nach.</figcaption>
 </figure>
 ```
 :::
@@ -1016,7 +1016,7 @@ $$
 ```{=html}
 <figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
   <div class="srt-workbook-stage" data-srt-animation="doppler-bzg-beobachter-entfernt" data-srt-viewbox-h="250" data-srt-label="Skizze im Bezugssystem des Beobachters für eine sich entfernende Quelle: Seit der Aussendung von Wellenfront 1 an Punkt 1 ist die Zeit Delta t vergangen. Die Quelle ist um v mal Delta t vom Beobachter weg nach Punkt 2 gerückt und sendet dort Wellenfront 2 aus, während Wellenfront 1 um c mal Delta t zum Beobachter vorausgelaufen ist. Der Abstand der beiden Wellenfronten ist die beobachtete Wellenlänge lambda gleich c mal Delta t plus v mal Delta t und damit größer als die Eigenwellenlänge."></div>
-  <figcaption>Skizze für eine sich entfernende Quelle: Der Abstand der Wellenfronten wächst auf $(c+v)\,\Delta t$.</figcaption>
+  <figcaption>Skizze für eine sich entfernende Quelle: Der Abstand der Wellenfronten wächst auf \((c+v)\,\Delta t\).</figcaption>
 </figure>
 ```
 :::

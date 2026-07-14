@@ -1,4 +1,4 @@
-# Spezielle Relativitätstheorie II: Impuls und Energie (Umbau) {.unnumbered #sec-srt-impuls-energie-umbau}
+# Spezielle Relativitätstheorie II: Impuls und Energie (Umbau) {#sec-srt-impuls-energie-umbau}
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -60,16 +60,16 @@ $$
 p = \gamma\,m_0\,v
 $$ {#eq-ie-impuls}
 
-Dabei ist $\gamma$ der Lorentzfaktor aus Kapitel 1, $m_0$ die Ruhemasse und $v$ die Geschwindigkeit des Körpers. Diese Definition ist so gewählt, dass der Gesamtimpuls in jedem Inertialsystem erhalten bleibt, und sie ist experimentell vielfach bestätigt.
+Dabei ist $\gamma$ der Lorentzfaktor aus Kapitel 1 (@eq-umbau-lorentzfaktor), $m_0$ die Ruhemasse und $v$ die Geschwindigkeit des Körpers. Diese Definition ist so gewählt, dass der Gesamtimpuls in jedem Inertialsystem erhalten bleibt, und sie ist experimentell vielfach bestätigt.
 
-Eine Überlegung mit der Eigenzeit macht den Faktor $\gamma$ zumindest plausibel. In der klassischen Formel steckt die Zeit $\Delta t$, die im gewählten Bezugssystem gemessen wird. Ersetzt man sie durch die Eigenzeit $\Delta t_0$, also die Zeit, die eine mit dem Körper mitbewegte Uhr misst, entsteht $p = m_0\,\frac{\Delta s}{\Delta t_0}$. Aus Kapitel 1 kennst du die Zeitdilatation $\Delta t = \gamma\,\Delta t_0$, umgestellt $\Delta t_0 = \frac{\Delta t}{\gamma}$. Einsetzen liefert
+Eine Überlegung mit der Eigenzeit macht den Faktor $\gamma$ zumindest plausibel. In der klassischen Formel steckt die Zeit $\Delta t$, die im gewählten Bezugssystem gemessen wird. Ersetzt man sie durch die Eigenzeit $\Delta t_0$, also die Zeit, die eine mit dem Körper mitbewegte Uhr misst, entsteht $p = m_0\,\frac{\Delta s}{\Delta t_0}$. Aus Kapitel 1 kennst du die Zeitdilatation $\Delta t = \gamma\,\Delta t_0$ (@eq-umbau-zeitdilatation), umgestellt $\Delta t_0 = \frac{\Delta t}{\gamma}$. Einsetzen liefert
 
 $$p = m_0\,\frac{\Delta s}{\Delta t_0}
 = m_0\,\frac{\Delta s}{\Delta t / \gamma}
 = \gamma\,m_0\,\frac{\Delta s}{\Delta t}
 = \gamma\,m_0\,v.$$
 
-Diese Überlegung ist eine Plausibilisierung, keine Herleitung: Sie zeigt, wie die Eigenzeit auf den Faktor $\gamma$ führt. Dass gerade diese Ersetzung die passende ist, begründet sie nicht.
+Diese Überlegung ist eine Stütze, kein Beweis: Sie zeigt, wie die Eigenzeit auf den Faktor $\gamma$ führt. Dass gerade diese Ersetzung die passende ist, begründet sie nicht. Eine Herleitung, die den Faktor $\gamma$ aus der Forderung der Impulserhaltung gewinnt (ein Gedankenexperiment mit einem elastischen Stoß), findest du im Giancoli [@giancoli2010physik, S. 1245--1247].
 
 ::: {.column-margin .mp-discuss}
 <div class="mp-title">Zur Diskussion</div>
@@ -79,7 +79,7 @@ Dafür: Sie führt mit der bereits bekannten Zeitdilatation unmittelbar zum Fakt
 
 Dagegen: Der Ansatz $p = m_0\,\Delta s/\Delta t_0$ enthält den entscheidenden Schritt bereits. Die Rechnung begründet weder diesen Ansatz noch die Impulserhaltung in allen Inertialsystemen.
 
-Im Workbook steht die Rechnung deshalb als Plausibilisierung. Die Formel wird ohne Beweis angegeben. Eine vollständige Herleitung findet sich in der Fachliteratur.
+Im Workbook steht die Rechnung deshalb als Stütze, nicht als Herleitung. Die Formel wird ohne Beweis angegeben; auf die vollständige Herleitung wird verwiesen.
 :::
 
 ::: {.mp-box .mp-misconception}

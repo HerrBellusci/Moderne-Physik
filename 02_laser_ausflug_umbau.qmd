@@ -1,4 +1,4 @@
-# Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator (Umbau) {.unnumbered #sec-umbau-laser}
+# Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator (Umbau) {#sec-umbau-laser}
 
 ::: {.content-visible when-format="html"}
 ```{=html}
