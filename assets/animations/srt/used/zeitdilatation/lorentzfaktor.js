@@ -146,7 +146,7 @@
 
   function drawGammaOneLine(parent, SRT) {
     const y = gammaToY(1);
-    addMathText(parent, SRT, PLOT.x + 12, y - 10, "Untergrenze: γ = 1", "tiny", {
+    addMathText(parent, SRT, PLOT.x + 12, y - 10, "Untergrenze: *γ* = 1", "tiny", {
       fill: "#2e7d50", "font-size": 12, "font-weight": "850"
     });
   }
@@ -218,7 +218,7 @@
         stroke: axisColor, "stroke-width": 1.4 }, parent);
     });
 
-    addMathText(parent, SRT, PLOT.x + PLOT.w / 2, PLOT.y + PLOT.h + 48, "v / c", "label", {
+    addMathText(parent, SRT, PLOT.x + PLOT.w / 2, PLOT.y + PLOT.h + 48, "*v* / *c*", "label", {
       "text-anchor": "middle", fill: "#172033", "font-size": 13, "font-weight": "850"
     });
     addMathText(parent, SRT, PLOT.x + 12, PLOT.y - 34, "γ", "label", {
@@ -236,13 +236,13 @@
     SRT.addText(parent, x + 16, y + 34, "Aktueller Wert", "label", {
       fill: "#172033", "font-size": 14, "font-weight": "900"
     });
-    addMathText(parent, SRT, x + 16, y + 68, `v/c = ${formatNumber(beta, 3)}`, "label", {
+    addMathText(parent, SRT, x + 16, y + 68, `*v*/*c* = ${formatNumber(beta, 3)}`, "label", {
       fill: "#6d5dfc", "font-size": 15, "font-weight": "900"
     });
-    SRT.addText(parent, x + 16, y + 86, `(${formatNumber(beta * 100, 1)} % von c)`, "tiny", {
+    SRT.addText(parent, x + 16, y + 86, `(${formatNumber(beta * 100, 1)} % von *c*)`, "tiny", {
       fill: "#6d5dfc", "font-size": 12, "font-weight": "850"
     });
-    addMathText(parent, SRT, x + 16, y + 116, `γ = ${formatGamma(g)}`, "label", {
+    addMathText(parent, SRT, x + 16, y + 116, `*γ* = ${formatGamma(g)}`, "label", {
       fill: "#c2414b", "font-size": 17, "font-weight": "900"
     });
 
@@ -265,7 +265,7 @@
     SRT.addText(parent, x + 16, y + 272, "Flugzeug, ISS):", "tiny", {
       fill: "#2e7d50", "font-size": 12, "font-weight": "900"
     });
-    addMathText(parent, SRT, x + 16, y + 290, "γ ≈ 1 (kaum messbar)", "tiny", {
+    addMathText(parent, SRT, x + 16, y + 290, "*γ* ≈ 1 (kaum messbar)", "tiny", {
       fill: "#2e7d50", "font-size": 11, "font-weight": "850"
     });
   }

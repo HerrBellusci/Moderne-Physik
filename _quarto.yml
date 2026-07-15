@@ -18,7 +18,13 @@ book:
     - references.qmd
 
 lang: de
-bibliography: references.bib
+filters:
+  - multibib
+citeproc: false
+multibib:
+  konzeption: references-konzeption.bib
+  grundlagen: references-grundlagen.bib
+  weiterfuehrend: references-weiterfuehrend.bib
 
 crossref:
   chapters: true

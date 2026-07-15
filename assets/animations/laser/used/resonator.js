@@ -502,13 +502,6 @@
         "font-weight": "800",
         "text-anchor": "middle"
       });
-    } else {
-      SRT.addText(parent, W / 2, H - 18, "Mit Resonator bleibt achsnahes Licht lange im Medium.", "label", {
-        fill: INK,
-        "font-size": 14,
-        "font-weight": "800",
-        "text-anchor": "middle"
-      });
     }
   }
 

@@ -26,8 +26,26 @@
     });
     if (styles.length) nextAttrs.style = styles.join("; ");
     const text = el("text", { x, y, class: className, ...nextAttrs }, parent);
-    text.textContent = value;
+    setMixedText(text, value);
     return text;
+  }
+
+  // Größenzeichen stehen kursiv (SI-Regeln, Konzeption „Formeln"):
+  // Abschnitte zwischen Sternchen ("*v* = 0,4 *c*") werden als kursive
+  // tspans gesetzt; Text ohne Sternchen bleibt unverändert.
+  function setMixedText(node, value) {
+    const str = String(value);
+    if (!str.includes("*")) {
+      node.textContent = str;
+      return;
+    }
+    str.split("*").forEach((part, index) => {
+      if (!part) return;
+      const tspan = document.createElementNS(NS, "tspan");
+      if (index % 2 === 1) tspan.setAttribute("font-style", "italic");
+      tspan.textContent = part;
+      node.appendChild(tspan);
+    });
   }
 
   function textLines(parent, lines, x, y, className, lineHeight = 24) {

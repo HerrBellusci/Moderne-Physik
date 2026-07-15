@@ -72,7 +72,7 @@
     math(parent, SRT, 220, y + 28, "S", MUTED, 15);
     crest(parent, SRT, 300, y, 20, WAVE);
     crest(parent, SRT, 450, y, 20, WAVE);
-    span(parent, SRT, 312, 450, y, "λ₀", INK);
+    span(parent, SRT, 312, 450, y, "*λ*₀", INK);
     observer(parent, SRT, 720, y);
   }
 
@@ -116,8 +116,8 @@
     observer(parent, SRT, 730, y);
 
     // Maße: v·Δt (Punkt 1 -> Quelle) und c·Δt (Punkt 1 -> Berg 1)
-    underbrace(parent, SRT, X1, xs, y + 44, "v·Δt", GREEN);
-    underbrace(parent, SRT, X1, xb1, y + 80, "c·Δt", WAVE);
+    underbrace(parent, SRT, X1, xs, y + 44, "*v*·Δ*t*", GREEN);
+    underbrace(parent, SRT, X1, xb1, y + 80, "*c*·Δ*t*", WAVE);
   }
 
   window.SRTSlide.register("doppler-bzg-quelle", {
@@ -172,8 +172,8 @@
     observer(parent, SRT, 770, y);
 
     // Maße: v·Δt (Quelle -> Punkt 1) und c·Δt (Punkt 1 -> Berg 1)
-    underbrace(parent, SRT, xs, xP1, y + 44, "v·Δt", GREEN);
-    underbrace(parent, SRT, xP1, xb1, y + 80, "c·Δt", WAVE);
+    underbrace(parent, SRT, xs, xP1, y + 44, "*v*·Δ*t*", GREEN);
+    underbrace(parent, SRT, xP1, xb1, y + 80, "*c*·Δ*t*", WAVE);
   }
 
   window.SRTSlide.register("doppler-bzg-beobachter-entfernt", {

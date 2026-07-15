@@ -95,7 +95,7 @@
       "B · Nullresultat", "mode-real", mode === "real", "#2e7d50");
 
     SRT.addText(parent, SLIDER.x0, SLIDER.y - 14,
-      `Rotation der Apparatur:  θ = ${rotationDeg.toFixed(0)}°`,
+      `Rotation der Apparatur:  *θ* = ${rotationDeg.toFixed(0)}°`,
       "label", { fill: "#ffffff", "font-size": 12, "text-anchor": "start" });
 
     SRT.el("line", {

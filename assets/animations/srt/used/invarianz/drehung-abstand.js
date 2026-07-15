@@ -137,19 +137,19 @@
     const ix = x + 18;
     SRT.addText(parent, ix, y + 30, "Koordinaten", "label", { fill: "#172033", "font-size": 14, "font-weight": 900 });
 
-    SRT.addText(parent, ix, y + 62, `A = (${fmt(A.x, 1)} | ${fmt(A.y, 1)})`, "label", { fill: COL.a, "font-size": 15, "font-weight": 900, "font-family": MATH_FONT });
-    SRT.addText(parent, ix, y + 88, `B = (${fmt(B.x, 1)} | ${fmt(B.y, 1)})`, "label", { fill: COL.b, "font-size": 15, "font-weight": 900, "font-family": MATH_FONT });
+    SRT.addText(parent, ix, y + 62, `*A* = (${fmt(A.x, 1)} | ${fmt(A.y, 1)})`, "label", { fill: COL.a, "font-size": 15, "font-weight": 900, "font-family": MATH_FONT });
+    SRT.addText(parent, ix, y + 88, `*B* = (${fmt(B.x, 1)} | ${fmt(B.y, 1)})`, "label", { fill: COL.b, "font-size": 15, "font-weight": 900, "font-family": MATH_FONT });
 
     SRT.el("line", { x1: ix, y1: y + 108, x2: x + w - 18, y2: y + 108, stroke: COL.panelLine, "stroke-width": 1.5 }, parent);
 
     SRT.addText(parent, ix, y + 134, "Differenz", "tiny", { fill: COL.muted, "font-size": 12, "font-weight": 850 });
-    SRT.addText(parent, ix, y + 160, `Δx = ${fmt(dx, 1)}`, "label", { fill: "#172033", "font-size": 15, "font-weight": 850, "font-family": MATH_FONT });
-    SRT.addText(parent, ix, y + 184, `Δy = ${fmt(dy, 1)}`, "label", { fill: "#172033", "font-size": 15, "font-weight": 850, "font-family": MATH_FONT });
+    SRT.addText(parent, ix, y + 160, `Δ*x* = ${fmt(dx, 1)}`, "label", { fill: "#172033", "font-size": 15, "font-weight": 850, "font-family": MATH_FONT });
+    SRT.addText(parent, ix, y + 184, `Δ*y* = ${fmt(dy, 1)}`, "label", { fill: "#172033", "font-size": 15, "font-weight": 850, "font-family": MATH_FONT });
 
     SRT.el("line", { x1: ix, y1: y + 204, x2: x + w - 18, y2: y + 204, stroke: COL.panelLine, "stroke-width": 1.5 }, parent);
 
     SRT.addText(parent, ix, y + 230, "Abstand (invariant)", "tiny", { fill: COL.invariant, "font-size": 12, "font-weight": 900 });
-    SRT.addText(parent, ix, y + 264, `d = ${fmt(dist, 2)}`, "label", { fill: COL.invariant, "font-size": 24, "font-weight": 900, "font-family": MATH_FONT });
+    SRT.addText(parent, ix, y + 264, `*d* = ${fmt(dist, 2)}`, "label", { fill: COL.invariant, "font-size": 24, "font-weight": 900, "font-family": MATH_FONT });
 
     SRT.addText(parent, ix, y + 304, "A und B drehen sich um", "tiny", { fill: COL.muted, "font-size": 12, "font-weight": 700 });
     SRT.addText(parent, ix, y + 320, "den Ursprung. Ihre Koordi-", "tiny", { fill: COL.muted, "font-size": 12, "font-weight": 700 });

@@ -175,8 +175,8 @@
     const restLen = base;
     const movingLen = base * gamma;
 
-    drawMagnitudeBar(parent, SRT, x, y, restLen, "Δt₀", "#0097a7");
-    drawMagnitudeBar(parent, SRT, x, y + gap, movingLen, "Δt", "#c2414b");
+    drawMagnitudeBar(parent, SRT, x, y, restLen, "Δ*t*₀", "#0097a7");
+    drawMagnitudeBar(parent, SRT, x, y + gap, movingLen, "Δ*t*", "#c2414b");
 
     // Markierung, wo Δt₀ endet: alles rechts davon auf dem Δt-Balken ist die Zeitdehnung
     SRT.el("line", { x1: x + restLen, y1: y - 12, x2: x + restLen, y2: y + gap + 12,
@@ -195,7 +195,7 @@
     const f = (b - BETA_MIN) / (BETA_MAX - BETA_MIN);
     const x = SL.x0 + (SL.x1 - SL.x0) * f;
     SRT.addText(parent, SL.x1 + 18, SL.y + 5,
-      `v = ${b.toFixed(2).replace(".", ",")} c`, "label", {
+      `*v* = ${b.toFixed(2).replace(".", ",")} *c*`, "label", {
       fill: "#172033", "font-size": 13, "font-weight": "850"
     });
     SRT.el("line", { x1: SL.x0, y1: SL.y, x2: SL.x1, y2: SL.y,

@@ -18,10 +18,10 @@
   // FWHM-Werte als Größenordnungen: Glühlampe sichtbarer Bereich,
   // LED-Halbwertsbreite, Doppler-Breite einer Na-Linie, einzelne Lasermode.
   const SOURCES = [
-    { name: "Glühlampe", dl: "Δλ ≈ 300 nm", center: 950, fwhm: 900, base: 140, fill: "#f2a65a", stroke: "#b9611f" },
-    { name: "Leuchtdiode", dl: "Δλ ≈ 30 nm", center: LAMBDA0, fwhm: 30, base: 240, fill: "#8ab8f0", stroke: "#2563eb" },
-    { name: "Spektrallampe", dl: "Δλ ≈ 0,002 nm", center: LAMBDA0, fwhm: 0.002, base: 340, fill: "#f3d36b", stroke: "#c79a1e" },
-    { name: "Laser", dl: "Δλ < 0,00001 nm", center: LAMBDA0, fwhm: 0.000001, base: 440, fill: "#e23b3b", stroke: "#b02525" }
+    { name: "Glühlampe", dl: "Δ*λ* ≈ 300 nm", center: 950, fwhm: 900, base: 140, fill: "#f2a65a", stroke: "#b9611f" },
+    { name: "Leuchtdiode", dl: "Δ*λ* ≈ 30 nm", center: LAMBDA0, fwhm: 30, base: 240, fill: "#8ab8f0", stroke: "#2563eb" },
+    { name: "Spektrallampe", dl: "Δ*λ* ≈ 0,002 nm", center: LAMBDA0, fwhm: 0.002, base: 340, fill: "#f3d36b", stroke: "#c79a1e" },
+    { name: "Laser", dl: "Δ*λ* < 0,00001 nm", center: LAMBDA0, fwhm: 0.000001, base: 440, fill: "#e23b3b", stroke: "#b02525" }
   ];
 
   const GAUSS_TO_SIGMA = 2 * Math.sqrt(Math.log(2)); // FWHM = 2·√(ln 2)·σ für exp(-((λ−λc)/σ)²)

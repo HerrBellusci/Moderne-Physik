@@ -1,27 +1,67 @@
 # Vorwort {.unnumbered}
 
-Dieses Arbeitsheft nutzt farbige Kästen. Die **Farbe zeigt die Funktion** eines Kastens an. So erkennst du auf einen Blick, wozu ein Kasten dient. Die folgende Legende stellt die Kästen kurz vor.
+Dieses interaktive Workbook führt dich durch Themen der modernen Physik. Es richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium aufgebaut: Erklärungen, Veranschaulichungen und Aufgaben greifen so ineinander, dass du eigenständig damit arbeiten kannst, in deinem Tempo und mit Pausen, wo du sie brauchst. Jedes Kapitel öffnet mit einer Situation aus Alltag, Natur oder Technik; innerhalb des Kapitels knüpft Neues an das an, was du schon kennst, mal an eine Alltagserfahrung, mal an das Ergebnis des vorigen Abschnitts.
 
-::: {.callout-note title="Relevanz"}
-**Blau (Kontext):** Warum ist das Thema wichtig oder im Alltag relevant?
-:::
+## So arbeitest du mit dem Workbook
+
+Jedes Unterkapitel beginnt mit zwei bis drei Lernzielen. Diese sind operationalisiert, wobei die Operatoren immer unterstrichen sind.
 
 ::: {.mp-goal-strip}
-**Grün (Lernziele):** Was du nach einem Abschnitt können sollst.
+Du <u>erkennst</u> Lernziele an diesem grünen Streifen.
 :::
 
-::: {.mp-box .mp-task .mp-compact}
-**Grau (Aufgabe):** Hier wirst du selbst aktiv (Denkcheck, Berechnung, Transfer, Schreibaufgabe).
+Die übrigen Elemente stellen sich am besten selbst vor.
+
+:::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Aufgaben stehen in grauen Kästen wie diesem. Das Piktogramm und der Titel nennen die Arbeitsform: Denkcheck, Berechnung, Herleitung, Transfer oder Schreibaufgabe. Bearbeite jede Aufgabe zuerst selbst und öffne dann erst die Lösung.
+::::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+So klappt eine Lösung auf. Bei längeren Herleitungen wählst du zusätzlich deinen Einstieg: ein freier Weg, Hinweise oder eine Rechnung in einzelnen Schritten.
+
+</details>
+
+::: {.mp-box .mp-misconception}
+<div class="mp-title">Rote Kästen</div>
+Rote Kästen greifen verbreitete Lernhürden oder Präkonzepte zu dem Thema auf. Ihr Titel ist die naheliegende Annahme, als Frage gestellt: So erkennst du deinen eigenen Gedanken wieder. Darunter steht, wie weit die Annahme trägt und was fachlich gilt.
 :::
 
-::: {.mp-box .mp-math .mp-compact}
-**Violett (Herleitung):** Der mathematische Weg, Schritt für Schritt.
+::: {.mp-box .mp-core}
+<div class="mp-title">Goldene Kästen</div>
+Gold ist den fachlichen Grundlagen vorbehalten, etwa den Einsteinschen Postulaten. Wenn du Gold siehst, weißt du: Das ist von zentraler Bedeutung für das Themengebiet.
 :::
 
-::: {.mp-box .mp-core .mp-compact}
-**Gold (Wissen sichern):** Kernaussagen und Definitionen, also das Wichtigste eines Kapitels zum Behalten.
-:::
+Führt der Text einen wichtigen Fachbegriff ein, steht er als Stichwort am rechten Rand.[Fachbegriff]{.column-margin .mp-randbegriff} Zentrale Formeln stehen abgesetzt auf einer eigenen Zeile und sind nummeriert:
 
-::: {.mp-box .mp-misconception .mp-compact}
-**Rot (Achtung):** Didaktischer Hinweis.
-:::
+$$
+E = m\,c^2
+$$ {#eq-vorwort-beispiel}
+
+Über die Nummer findest du eine Formel über Kapitelgrenzen hinweg wieder; ein Verweis darauf sieht im Text so aus: @eq-vorwort-beispiel.
+
+Den Abschluss jedes Kapitels bildet der Teil Sichern und anwenden. Dort prüfst du an den gebündelten Lernzielen, was du erreicht hast, fasst das Kapitel in eigenen Worten zusammen und verbindest mehrere Konzepte in größeren Aufgaben. Das Inhaltsverzeichnis führt dich zu den Kapiteln, und über die Volltextsuche kannst du das Workbook durchsuchen.
+
+## Veranschaulichungen
+
+Text und Bild zusammen können häufig zum Verständnis beitragen. Sprache und Bilder werden getrennt verarbeitet und stützen sich gegenseitig. Darum ergänzen Animationen, Simulationen, Diagramme, Bilder und Videos die Erklärungen. Nutze die Schalter und Regler, wechsle das Bezugssystem und beobachte, was sich ändert; bewegte Darstellungen lassen sich jederzeit pausieren.
+
+Keine dieser Veranschaulichungen zeigt ein reales Phänomen. Sie sind Denkstützen: Sie machen sichtbar, was sich der direkten Beobachtung entzieht, Photonen, Energieniveaus, Bezugssysteme.
+
+Die Animationen, Simulationen und die meisten Abbildungen sind eigene Entwicklungen. Entstanden sind sie KI-gestützt: aus eigenen Skizzen und Aufträgen, in mehreren Korrekturschleifen geprüft und angepasst. Übernommene Abbildungen tragen Quelle und Lizenz in der Bildunterschrift.
+
+
+## Lizenz
+
+Dieses Workbook steht unter der Lizenz CC BY-SA 4.0 (Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0 International). Du darfst die Inhalte teilen und bearbeiten, auch für deinen Unterricht, solange du „Physik PH Karlsruhe" als Quelle nennst und Bearbeitungen unter derselben Lizenz weitergibst. Der vollständige Lizenztext steht unter <https://creativecommons.org/licenses/by-sa/4.0/deed.de>.
+
+Von dieser Lizenz ausgenommen sind:
+
+- Übernommene Abbildungen: Sie tragen Quelle und Lizenz in der Bildunterschrift und behalten ihre eigenen Bedingungen.
+- Eingebundene Schriften und Software (z. B. MathJax): Sie stehen unter ihren jeweiligen Lizenzen; die Angaben dazu liegen im Quell-Repository.

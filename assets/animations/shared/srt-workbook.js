@@ -5,9 +5,6 @@
   const W = 862;
   const H = 506;
   const controllers = [];
-  const reduceMotionQuery = window.matchMedia
-    ? window.matchMedia("(prefers-reduced-motion: reduce)")
-    : { matches: false };
 
   function addGlow(svg) {
     const defs = SRT.el("defs", {}, svg);
@@ -295,7 +292,8 @@
     let elapsed = 0;
     let lastFrame = 0;
     let isVisible = false;
-    let motionEnabled = !reduceMotionQuery.matches;
+    // Bewegte Inhalte starten pausiert; Bewegung beginnt erst auf Klick.
+    let motionEnabled = false;
 
     function renderAt(t) {
       spec.render({ parent, t, mode, state, SRT });

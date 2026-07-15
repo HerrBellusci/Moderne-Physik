@@ -18,12 +18,12 @@
     const earthButton = root.querySelector('[data-zp2-frame="earth"]');
     const shipButton = root.querySelector('[data-zp2-frame="ship"]');
     const classicalCheckbox = root.querySelector(".zp2-classical");
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
     const state = {
       speed: Number(speedSlider.value),
       frame: "earth",
-      playing: !reduceMotion.matches,
+      // Startet pausiert; Bewegung beginnt erst auf Klick.
+      playing: false,
       showClassical: classicalCheckbox.checked,
       time: 0,
       visible: true
@@ -314,7 +314,8 @@
       const sign = state.frame === "earth" ? "+" : "\u2212";
       const formattedSpeed = state.speed.toFixed(2).replace(".", ",");
       const text = `v = ${sign}${formattedSpeed} c`;
-      speedValue.textContent = text;
+      // Größenzeichen kursiv nach SI-Regeln (Konzeption: Formelsatz)
+      speedValue.innerHTML = `<i>v</i> = ${sign}${formattedSpeed} <i>c</i>`;
       speedSlider.setAttribute("aria-valuetext", text);
     }
 

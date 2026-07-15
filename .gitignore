@@ -21,3 +21,8 @@ Unterrichtsphasen14.pdf
 **/*.quarto_ipynb
 
 physikalisch_kontext_dazu.txt
+
+TODO_konzeption.md
+notizen_prof_gespraech.md
+
+/.luarc.json

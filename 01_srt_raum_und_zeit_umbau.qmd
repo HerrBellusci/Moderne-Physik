@@ -196,7 +196,7 @@ Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interfer
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="aufbau" data-srt-label="Aufbau des Michelson-Interferometers"></div>
+  <div class="srt-workbook-stage" data-srt-animation="aufbau" data-srt-motion-control data-srt-label="Aufbau des Michelson-Interferometers"></div>
   <figcaption>Interaktive Abbildung: Aufbau des Michelson-Interferometers, Bauteile per Klick einblendbar.</figcaption>
 </figure>
 ```
@@ -207,7 +207,7 @@ Die folgende Simulation zeigt dir, welche Veränderung beim Drehen erwartet wurd
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm, mit Schieberegler für die Rotation der Apparatur"></div>
+  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-motion-control data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm, mit Schieberegler für die Rotation der Apparatur"></div>
   <figcaption>Simulation zum Michelson-Morley-Experiment: Äthererwartung und Nullresultat auf dem Schirm im Vergleich (Ausrichtung drehbar).</figcaption>
 </figure>
 <p>Ein <a href="https://www.youtube.com/watch?v=8YgVQHbHR0I">Realvideo zum Michelson-Interferometer</a> zeigt, wie Laser, Strahlteiler, Spiegel und aufgeweiteter Strahl zu sichtbaren Interferenzringen führen.</p>
@@ -269,7 +269,7 @@ Vermutlich erwartest du: Der Ball fällt im Zug nach unten. Für eine Person am 
 
 Diese Antworten entsprechen zwei Erwartungen aus der klassischen Physik: In gleichförmig bewegten Systemen gelten dieselben physikalischen Gesetze. Geschwindigkeiten werden in Alltagssituationen einfach addiert.
 
-Die Lichtgeschwindigkeit im Vakuum wird mit $c$ bezeichnet:
+Die Lichtgeschwindigkeit im Vakuum wird mit $c$ bezeichnet:[Lichtgeschwindigkeit]{.column-margin .mp-randbegriff}
 
 $$
 c \approx 3{,}0 \cdot 10^8\,\mathrm{m/s}
@@ -295,7 +295,7 @@ Die folgende Simulation macht das zweite Postulat greifbarer. Sie vergleicht zwe
 ```{=html}
 <figure class="zp2" data-zp2-animation>
   <div class="zp2-stage">
-    <button class="zp2-play" type="button" aria-pressed="true">Pause</button>
+    <button class="zp2-play" type="button" aria-pressed="false">Abspielen</button>
 
     <canvas aria-label="Simulation: Lichtpulse aus bewegter und ruhender Quelle">
       Dein Browser unterstützt die Canvas-Darstellung nicht.
@@ -305,7 +305,7 @@ Die folgende Simulation macht das zweite Postulat greifbarer. Sie vergleicht zwe
       <div class="zp2-group">
         <label class="zp2-label" for="zp2-speed">Relativgeschwindigkeit</label>
         <input class="zp2-speed" id="zp2-speed" type="range" min="0" max="0.8" step="0.05" value="0.4">
-        <span class="zp2-speed-value" aria-live="polite">v = +0,40 c</span>
+        <span class="zp2-speed-value" aria-live="polite"><i>v</i> = +0,40 <i>c</i></span>
       </div>
 
       <div class="zp2-group">
@@ -404,12 +404,12 @@ Eine zweite Variante des Zug-Gedankenexperiments beginnt anders: Zwei Blitze sch
   Transfer
 </span>
 
-Der Zug bewegt sich im Bahnsteigsystem gleichförmig nach rechts. Am hinteren und am vorderen Zugende schlagen gleichzeitig zwei Blitze ein. Zu diesem Zeitpunkt sitzt eine Person genau in der Mitte zwischen den beiden Zugenden.
+Der Zug bewegt sich im Bahnsteigsystem gleichförmig nach rechts. Am hinteren und am vorderen Zugende schlagen zwei Blitze ein, im Bahnsteigsystem gleichzeitig. Zu diesem Zeitpunkt sitzt eine Person genau in der Mitte zwischen den beiden Zugenden.
 
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="lightning-setup" data-srt-label="Ausgangslage mit zwei gleichzeitigen Blitzeinschlägen an den Zugenden, einer Person in der Zugmitte und Fahrtrichtung nach rechts"></div>
+  <div class="srt-workbook-stage" data-srt-animation="lightning-setup" data-srt-label="Ausgangslage mit zwei im Bahnsteigsystem gleichzeitigen Blitzeinschlägen an den Zugenden, einer Person in der Zugmitte und Fahrtrichtung nach rechts"></div>
   <figcaption>Skizze der Ausgangslage im Bahnsteigsystem: gleichzeitige Blitzeinschläge an beiden Zugenden, Person in der Zugmitte, Fahrtrichtung nach rechts.</figcaption>
 </figure>
 ```
@@ -417,7 +417,7 @@ Der Zug bewegt sich im Bahnsteigsystem gleichförmig nach rechts. Am hinteren un
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-Ausgangslage: Eine Person sitzt genau in der Zugmitte. Gleichzeitig schlagen am hinteren und vorderen Zugende zwei Blitze ein. Der Zug bewegt sich im Bahnsteigsystem nach rechts.
+Ausgangslage: Eine Person sitzt genau in der Zugmitte. Am hinteren und vorderen Zugende schlagen zwei Blitze ein, im Bahnsteigsystem gleichzeitig. Der Zug bewegt sich im Bahnsteigsystem nach rechts.
 :::
 :::
 

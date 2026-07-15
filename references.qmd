@@ -1,4 +1,21 @@
+---
+nocite: |
+  @*
+---
+
 # Literatur {.unnumbered}
 
-::: {#refs}
+## Grundlagen {.unnumbered}
+
+::: {#refs-grundlagen}
+:::
+
+## Weiterführende Literatur {.unnumbered}
+
+::: {#refs-weiterfuehrend}
+:::
+
+## Literatur zur Konzeption {.unnumbered}
+
+::: {#refs-konzeption}
 :::

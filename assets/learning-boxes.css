@@ -52,6 +52,11 @@
   border-color: rgba(194, 65, 75, 0.28);
 }
 
+.mp-misconception .mp-title::before {
+  content: "\26A0\FE0E\00A0";
+  font-weight: 800;
+}
+
 .mp-problem {
   --mp-accent: var(--mp-ink);
   --mp-bg: #f7f9fb;

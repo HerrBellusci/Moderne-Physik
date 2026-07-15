@@ -119,7 +119,7 @@
       { text: "Kinetische Energie " },
       { text: "K/(mc²)", math: true },
       { text: " in Abhängigkeit von " },
-      { text: "v/c", math: true }
+      { text: "*v*/*c*", math: true }
     ].forEach((segment) => {
       const tspan = SRT.el("tspan", segment.math ? { "font-family": MATH_FONT } : {}, title);
       tspan.textContent = segment.text;
@@ -212,7 +212,7 @@
         stroke: axisColor, "stroke-width": 1.4 }, parent);
     });
 
-    addMathText(parent, SRT, PLOT.x + PLOT.w / 2, PLOT.y + PLOT.h + 48, "v / c", "label", {
+    addMathText(parent, SRT, PLOT.x + PLOT.w / 2, PLOT.y + PLOT.h + 48, "*v* / *c*", "label", {
       "text-anchor": "middle", fill: "#172033", "font-size": 13, "font-weight": "850"
     });
     addMathText(parent, SRT, PLOT.x + 12, PLOT.y - 34, "K / (mc²)", "label", {
@@ -227,12 +227,12 @@
       fill: "rgba(255,255,255,0.88)", stroke: "rgba(23,32,51,0.10)" }, parent);
     SRT.el("line", { x1: x + 12, y1: y, x2: x + 48, y2: y, stroke: "#6d5dfc", "stroke-width": 4,
       "stroke-linecap": "round" }, parent);
-    addMathText(parent, SRT, x + 58, y + 4, "relativistisch: γ - 1", "tiny", {
+    addMathText(parent, SRT, x + 58, y + 4, "relativistisch: *γ* - 1", "tiny", {
       fill: "#172033", "font-size": 12, "font-weight": "850"
     });
     SRT.el("line", { x1: x + 12, y1: y + 22, x2: x + 48, y2: y + 22, stroke: "#2e7d50",
       "stroke-width": 3, "stroke-linecap": "round", "stroke-dasharray": "8 7" }, parent);
-    addMathText(parent, SRT, x + 58, y + 26, "klassisch: ½(v/c)²", "tiny", {
+    addMathText(parent, SRT, x + 58, y + 26, "klassisch: ½(*v*/*c*)²", "tiny", {
       fill: "#172033", "font-size": 12, "font-weight": "850"
     });
   }
@@ -248,22 +248,22 @@
     SRT.addText(parent, x + 16, y + 34, "Aktueller Wert", "label", {
       fill: "#172033", "font-size": 14, "font-weight": "900"
     });
-    addMathText(parent, SRT, x + 16, y + 68, `v/c = ${formatNumber(beta, 3)}`, "label", {
+    addMathText(parent, SRT, x + 16, y + 68, `*v*/*c* = ${formatNumber(beta, 3)}`, "label", {
       fill: "#6d5dfc", "font-size": 15, "font-weight": "900"
     });
-    SRT.addText(parent, x + 16, y + 86, `(${formatNumber(beta * 100, 1)} % von c)`, "tiny", {
+    SRT.addText(parent, x + 16, y + 86, `(${formatNumber(beta * 100, 1)} % von *c*)`, "tiny", {
       fill: "#6d5dfc", "font-size": 12, "font-weight": "850"
     });
-    addMathText(parent, SRT, x + 16, y + 116, `γ = ${formatNumber(g, 3)}`, "label", {
+    addMathText(parent, SRT, x + 16, y + 116, `*γ* = ${formatNumber(g, 3)}`, "label", {
       fill: "#c2414b", "font-size": 16, "font-weight": "900"
     });
 
     SRT.el("line", { x1: x + 16, y1: y + 138, x2: x + w - 16, y2: y + 138,
       stroke: "#e2e8f0", "stroke-width": 1.5 }, parent);
-    addMathText(parent, SRT, x + 16, y + 164, `Krel/(mc²) = ${formatEnergy(rel)}`, "tiny", {
+    addMathText(parent, SRT, x + 16, y + 164, `*K*rel/(*mc*²) = ${formatEnergy(rel)}`, "tiny", {
       fill: "#6d5dfc", "font-size": 12, "font-weight": "900"
     });
-    addMathText(parent, SRT, x + 16, y + 188, `Kkl/(mc²) = ${formatEnergy(klassisch)}`, "tiny", {
+    addMathText(parent, SRT, x + 16, y + 188, `*K*kl/(*mc*²) = ${formatEnergy(klassisch)}`, "tiny", {
       fill: "#2e7d50", "font-size": 12, "font-weight": "900"
     });
     SRT.el("line", { x1: x + 16, y1: y + 210, x2: x + w - 16, y2: y + 210,

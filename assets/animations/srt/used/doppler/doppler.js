@@ -210,7 +210,7 @@
     SRT.addText(parent, SL.x0, SL.y - 18, "Geschwindigkeit der Quelle", "label", {
       fill: INK, "font-size": 13, "font-weight": "850"
     });
-    SRT.addText(parent, SL.x1 + 18, SL.y + 5, `v = ${b.toFixed(2)} c`, "label", {
+    SRT.addText(parent, SL.x1 + 18, SL.y + 5, `*v* = ${b.toFixed(2)} *c*`, "label", {
       fill: MUTED, "font-size": 13, "font-weight": "850"
     });
     SRT.el("line", { x1: SL.x0, y1: SL.y, x2: SL.x1, y2: SL.y,

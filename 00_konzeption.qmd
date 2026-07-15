@@ -14,22 +14,35 @@ Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook 
 
 ## Übergreifendes
 
+### Vorwort
+
+Das Workbook beginnt mit einem Vorwort. Es bündelt, was die Lesenden einmal zentral erfahren und was sich an keiner Einzelstelle wiederholen muss: Zielgruppe und Zweck, die Arbeitsweise mit Lernzielen, Aufgabentypen und Lösungen, die Bedeutung der Gestaltungselemente (gezeigt an den Elementen selbst), die Einordnung der Veranschaulichungen als Denkstützen, die kein reales Phänomen zeigen, ihre KI-gestützte Entstehung sowie die Hinweise zu Lizenz und Quellen. Der Grundsatz dahinter: Was jede Seite gleichermaßen betrifft, steht einmal im Vorwort, und die Kapitel bleiben frei von wiederholten Hinweisen.
+
 ### Sprache
 
-::: {.column-margin .mp-discuss}
-<div class="mp-title">Zur Diskussion</div>
-Duzen oder siezen? Das Personalisierungsprinzip wurde vor allem an englischsprachigem Material untersucht; das dortige „you" lässt beides zu, die Forschung entscheidet die Frage also kaum.
+Im gesamten Workbook werden die Lesenden direkt und im Gesprächsstil angesprochen. Das folgt dem Personalisierungsprinzip des multimedialen Lernens:
 
-Für das Du spricht: Es trifft den Gesprächston, auf den das Prinzip zielt, und ist in Selbstlernmaterialien verbreitet. Für das Sie spricht: Studierende werden an der Hochschule gesiezt. Da das Workbook veröffentlicht werden soll, stellt sich die Frage, welche Anrede es tragen soll.
-:::
+> The personalization principle is that people learn better when multimedia lessons are presented in a conversational or polite style, rather than a formal or direct style [@fiorella2021social, S. 277]
 
-Im gesamten Workbook werden die Lesenden direkt angesprochen („du"). Das folgt dem Personalisierungsprinzip (Mayer): Lernende verarbeiten Inhalte tiefer, wenn ein Text sie persönlich und im Gesprächsstil anspricht, weil sie ihn dann wie ein Gegenüber behandeln und aktiver mitdenken. Für ein Selbstlernmaterial ist das relevant, denn das Workbook ersetzt das erklärende Gespräch teilweise mit einer Lehrperson.
+Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück: Soziale Signale lösen bei Lernenden eine soziale Reaktion aus, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social].
+
+Umgesetzt wird die persönliche Ansprache als Du: Das Workbook richtet sich an Studierende, und in deren Lernsituationen, der Lerngruppe und dem Tutorium, wird für gewöhnlich geduzt. Im Sinne der Social-Agency-Theorie liegt zudem nahe, dass das vertraute Du für diese Zielgruppe das stärkere soziale Signal ist als ein Sie.
 
 Personenbezeichnungen stehen in neutraler Form („die Lesenden", „die Studierenden"): So sind alle Geschlechter angesprochen, und der Lesefluss bleibt erhalten. Im Workbook selbst übernimmt die du-Ansprache das meiste, denn „du" ist geschlechtsneutral.
 
 ### Querverweise
 
 Begriffe werden dort erklärt, wo sie eingeführt werden. Greift ein späteres Kapitel einen Begriff wieder auf, führt ein Querverweis zu dieser Stelle. Die eingebaute Volltextsuche übernimmt die Funktion eines Registers; auf ein Glossar wird verzichtet, denn es würde die Erklärungen nur verdoppeln.
+
+### Seitenlänge
+
+<!-- TODO: Abschnitt ausarbeiten. Prof-Vorgabe (14.07.): Richtwert ~10 min Lesezeit pro Lernschritt; lange Seiten dürfen bleiben, wenn begründet; Aufhänger waren lange Scrollwege mobil. Mögliche Linie: Lernschritt = Unterkapitel (Kapitel 1: 3 bis 9,5 min bei 180 Wörtern/min), eine Seite pro Kapitel hält das Grundkonzept ohne Klick-Navigation zusammen; mobile Orientierung als offener Punkt (einklappbares Kapitel-TOC prüfen). -->
+
+### Literaturverzeichnis
+
+Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen die Lehrwerke, die den Stoff der Kapitel tragen und sich zum Nachschlagen eignen. Die weiterführende Literatur sammelt, was darüber hinaus zitiert wird, etwa Originalarbeiten und Vertiefungen. Die Literatur zur Konzeption steht separat: Sie begründet die Gestaltung des Workbooks, und wer nur Physik lernen will, kann sie überspringen. Technisch erzeugt die Quarto-Erweiterung [multibib](https://github.com/pandoc-ext/multibib) die Verzeichnisse aus getrennten Bibliografie-Dateien; sie arbeitet nur beim Erzeugen des Buchs, im fertigen HTML läuft dadurch kein zusätzlicher Code.
+
+<!-- TODO (Prof, Donnerstag): Klären, ob „Grundlagen für das Kapitel" so gemeint ist (globaler Abschnitt) oder als Literaturliste pro Kapitel(-ende). Der multibib-Mechanismus trägt beliebig viele Abschnitte; Einteilung der Einträge ggf. anpassen (Schecker & Wilhelm, LeifiPhysik derzeit unter „weiterführend"). -->
 
 ### Rand
 
@@ -90,13 +103,15 @@ Nach den Lernzielen folgt der Fließtext: Er erklärt das Konzept des Unterkapit
 
 ### Veranschaulichungen
 
+#### Form und Mehrwert
+
 In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks: Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den die Lesenden durch eigene Eingriffe verändern sollen, eine Simulation.
 
-Entscheidend ist der Kontext: Jede Veranschaulichung wird dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
+Entscheidend ist der Kontext: Keine Darstellungsform ist generell die beste; eine Darstellung hilft dem Lernen am meisten, wenn ihre Gestaltung zu den Anforderungen der Aufgabe passt [@ainsworth2021multiple, S. 163]. Jede Veranschaulichung wird darum dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
 
 - Räumliches auf einen Blick: Ein Aufbau braucht im Text mehrere Sätze, im Bild einen Blick.
 - Beleg: Ein Video führt das Phänomen vor, statt es nur zu behaupten.
-- Dynamik: Eine Animation zeigt einen Ablauf als Ablauf.
+- Dynamik: Eine Animation zeigt einen Ablauf als Ablauf. Gegenüber statischen Bildern kann sie vor allem dann wirksamer sein, wenn zeitbezogene Merkmale wie Geschwindigkeiten oder Beschleunigungen dargestellt werden [@lowe2021animation, S. 316].
 - Ursache und Wirkung selbst erfahren: In der Simulation verändern die Lesenden Parameter und erfahren welche Auswirkung dieser Veränderung hat.
 - Unsichtbares sichtbar machen: Photonen, Energieniveaus und Atome bekommen eine anschauliche Gestalt. Dass es sich bei solchen Darstellungen um Modellvorstellungen handelt (niemand kann ein Photon als Kugel oder Welle sehen), stellt das Vorwort des Workbooks einmal zentral klar.
 
@@ -111,7 +126,13 @@ Dagegen: Wer direkt in ein Kapitel einsteigt, hat das Vorwort womöglich übersp
 
 Die Erklärung der Konzepte bleibt dabei beim Text.
 
-Jede Veranschaulichung bekommt eine deskreptiven Unterschrift: Sie benennt, was zu sehen ist und unter welchen Bedingungen; die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich.
+#### Pausierter Start
+
+Bewegte Veranschaulichungen starten pausiert. Das Auge reagiert auf Bewegung, auch am Rand des Blickfelds: Peripher wahrgenommene Ereignisse lenken die zentrale Aufmerksamkeit um. Eine laufende Animation neben geschriebenem Text konkurriert darum zwangsläufig mit dem Lesen: Die visuelle Aufmerksamkeit teilt sich zwischen Animation und Text, und Wesentliches geht verloren [@lowe2021animation, S. 322]. Der pausierte Start stellt zudem die Reihenfolge sicher, die dieses Konzept für Text und Veranschaulichung festlegt: Erst erklärt der Text, dann starten die Lesenden die Animation bewusst. Auf einer langen Kapitelseite käme sonst bei jedem Scrollen Bewegung ins Bild, sobald eine Animation den sichtbaren Bereich erreicht, auch wenn gerade nur eine Textstelle gesucht wird. Pausieren und Starten sind auch in den Barrierefreiheits-Standards verankert: Das WCAG-Erfolgskriterium 2.2.2 („Pausieren, beenden, ausblenden", Stufe A) verlangt für automatisch startende bewegte Inhalte einen Mechanismus zum Pausieren, Beenden oder Ausblenden ([WCAG 2.0, deutsche Übersetzung](https://www.w3.org/Translations/WCAG20-de/#time-limits-pause)); mit dem pausierten Start erfüllt das Workbook diese Anforderung von selbst, denn Bewegung beginnt nur auf Klick. Damit die pausierte Animation nicht für ein statisches Bild gehalten wird, ist der Abspielknopf deutlich sichtbar und das Standbild zeigt den Ausgangszustand. Nach dem Start wird derselbe Knopf zum Pause-Button: Was gestartet wurde, lässt sich jederzeit wieder anhalten.
+
+#### Unterschrift
+
+Jede Veranschaulichung bekommt eine deskriptive Unterschrift: Sie benennt, was zu sehen ist und unter welchen Bedingungen; die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich. Übernommene Abbildungen nennen Quelle und Lizenz direkt in der Unterschrift.
 
 Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke folgend, und zwar überall: auch bei Skizzen und Simulationen innerhalb von Aufgaben. Eine Platzierung am Rand wurde erprobt und verworfen: Für die breiten Simulationen ist der Rand zu schmal, und innerhalb von Boxen ist er technisch kaum erreichbar. So sieht das Element aus:
 
@@ -128,8 +149,7 @@ Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke
 
 Die Animationen, Simulationen und Diagramme sind eigenständige JavaScript-Programme, die statischen Abbildungen teilweise KI-generierte Bilder; beides entstand KI-gestützt und iterativ. Statische Abbildungen entstanden meist aus einer eigenen einfachen Skizze, die die KI als Bild umsetzte. Erste Entwürfe waren oft roh: fachliche Ungereimtheiten, Designbrüche, technische Probleme bis hin zu doppelten Bedienelementen. Wie der Prozess im Einzelnen ablief und welches Muster sich daraus ergeben hat, zeigt der Beispielprozess unten.
 
-Für das einheitliche Aussehen sorgt zunächst eine gemeinsame technische Basis im Projekt: Die Dateien `assets/animations/shared/core.js`, `srt-workbook.js` und `srt-workbook.css` definieren Bühne, Rahmen und Pause-Button für alle Veranschaulichungen vor und stellen gemeinsame Zeichen-Werkzeuge bereit. Die konkrete Gestaltung, etwa die Farben, liegt in den einzelnen Animations-Skripten; einheitlich blieb sie durch den Kontext des jeweiligen Chat-Verlaufs und durch gezieltes Nachsteuern. Dazu kommt die Regel, dass in der Grafik so wenig Text wie möglich steht. Sie hat mehrere Gründe: Manche Modelle neigen dazu, viel Text in die Grafik einzubauen; dabei überlappen sich Elemente, die Schrift weicht oft vom Stil des Buchs ab, und die Inhalte doppeln, was der Haupttext daneben ohnehin erklärt. Die Veranschaulichung soll den wesentlichen Prozess zeigen, die Erklärung leistet der Fließtext. Wo die KI beides nicht von selbst umsetzte, wurde es im Auftrag nachgezogen, wörtlich und unkorrigiert etwa: „beim design ähnlich wie in der section darüber". Der Pause-Button hat einen didaktischen Grund: Dauerhafte Bewegung neben dem Text stört das Lesen. Pausierbarkeit bewegter Inhalte ist zudem eine Anforderung der Barrierefreiheits-Standards: Das WCAG-Erfolgskriterium 2.2.2 „Pausieren, beenden, ausblenden" (Stufe A) verlangt für bewegte Inhalte, die automatisch beginnen, länger als fünf Sekunden dauern und parallel zu anderen Inhalten stehen, einen Mechanismus zum Pausieren, Beenden oder Ausblenden ([WCAG 2.0, deutsche Übersetzung](https://www.w3.org/Translations/WCAG20-de/#time-limits-pause)). Alle drei Bedingungen treffen auf die Veranschaulichungen im Workbook zu.
-
+Für das einheitliche Aussehen sorgt zunächst eine gemeinsame technische Basis im Projekt: Die Dateien `assets/animations/shared/core.js`, `srt-workbook.js` und `srt-workbook.css` definieren Bühne, Rahmen und Pause-Button für alle Veranschaulichungen vor und stellen gemeinsame Zeichen-Werkzeuge bereit. Die konkrete Gestaltung, etwa die Farben, liegt in den einzelnen Animations-Skripten; einheitlich blieb sie durch den Kontext des jeweiligen Chat-Verlaufs und durch gezieltes Nachsteuern. Dazu kommt die Regel, dass in der Grafik so wenig Text wie möglich steht. Sie hat mehrere Gründe: Manche Modelle neigen dazu, viel Text in die Grafik einzubauen; dabei überlappen sich Elemente, die Schrift weicht oft vom Stil des Buchs ab, und die Inhalte doppeln, was der Haupttext daneben ohnehin erklärt. Die Veranschaulichung soll den wesentlichen Prozess zeigen, die Erklärung leistet der Fließtext. Wo die KI beides nicht von selbst umsetzte, wurde es im Auftrag nachgezogen, wörtlich und unkorrigiert etwa: „beim design ähnlich wie in der section darüber".
 Verwendet wurden für die Bilder GPT Image 1 und für die JavaScript-Programme aktuelle große Sprachmodelle (unter anderem Claude Opus 4.7 und 4.8, Claude Fable 5, GPT 5.5, Gemini 3.1 Flash und Pro, GLM 5.2). Das einzelne Modell war dabei selten entscheidend: Die Ausgaben sind kaum reproduzierbar, weil sich die Modelle laufend ändern und die Generierung einen Zufallsanteil hat. Ausschlaggebend war, wie klar das eigene Zielbild ist und wie gut es sich der KI vermitteln lässt.
 
 Dass die Veranschaulichungen KI-gestützt entstanden sind, stellt das Vorwort einmal zentral klar, genau wie den Hinweis auf die Modellvorstellungen: Ein Vermerk an jeder einzelnen Veranschaulichung würde nur denselben Satz wiederholen.
@@ -155,6 +175,43 @@ Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. A
 ### Formeln
 
 Zentrale Formeln stehen abgesetzt auf einer eigenen Zeile und werden nummeriert: So können Text und Aufgaben auf sie verweisen, auch über Kapitelgrenzen hinweg. In Herleitungen und Rechnungen bekommt nur das Ergebnis eine Nummer, die Umformungsschritte dorthin stehen ohne. Kurze Ausdrücke und bereits eingeführte Formeln laufen im Satz mit, ohne eigene Zeile und ohne Nummer. Die Variablen einer Formel und ihre Bedeutung erläutert der Fließtext. Wo es sinnvoll ist, unterstreicht ein Diagramm die Bedeutung. In Rechnungen mit Gleichungssystemen bekommen die Gleichungen römische Ziffern (I, II, III): So lassen sich Rechenschritte benennen („II in I einsetzen").
+
+Wie das zusammenspielt, zeigt die Herleitung der Längenkontraktion in Kapitel 1. Sie startet mit drei Gleichungen, die römische Ziffern tragen:
+
+$$
+\Delta t = \gamma\,\Delta t_0 \tag{I}
+$$
+
+$$
+L_0 = v\,\Delta t \tag{II}
+$$
+
+$$
+L = v\,\Delta t_0 \tag{III}
+$$
+
+Die Ziffern machen die Rechenschritte benennbar; im Kapitel heißt es dann: „Mit (I) wird aus (II) zunächst $L_0 = v\,\gamma\,\Delta t_0$." Solche Umformungsschritte laufen im Satz mit und bleiben ohne Nummer. Erst das Ergebnis steht abgesetzt und bekommt eine Nummer:
+
+$$
+L = \frac{L_0}{\gamma}
+$$ {#eq-konzept-laengenkontraktion}
+
+Auf diese Nummer verweisen Text und Aufgaben später, auch über Kapitelgrenzen hinweg: Das Kapitel zu Impuls und Energie greift so auf den Lorentzfaktor aus Kapitel 1 zurück (@eq-umbau-lorentzfaktor). Den Verweistext „Gleichung" samt Nummer erzeugt Quarto dabei automatisch, in jedem Kapitel gleich.
+
+Für den Satz der Zeichen gelten die internationalen SI-Regeln in der deutschen Fassung der SI-Broschüre [@ptb2025si, S. 33 f.]: Formelzeichen physikalischer Größen stehen kursiv, auch die von Naturkonstanten, denn eine Konstante wie die Lichtgeschwindigkeit ist eine Größe mit festem Wert. Aufrecht stehen Einheiten samt Vorsätzen, Zahlen und beschreibende Indizes. Im Überblick:
+
+| Element | Schriftschnitt | Beispiel |
+|---|---|---|
+| Größen, auch Naturkonstanten | kursiv | $v$, $E$, $c$, $h$ |
+| Einheiten mit Vorsätzen | aufrecht | $\mathrm{m/s}$, $\mathrm{km}$ |
+| Zahlen | aufrecht | $0{,}998$ |
+| Beschreibende Indizes | aufrecht | das E in $\Delta t_\mathrm{E}$ (Erdsystem) |
+
+: Formelsatz im Workbook nach den SI-Regeln {#tbl-formelsatz}
+
+In den Formeln leistet das der Mathematiksatz (MathJax) weitgehend von selbst: Buchstaben erscheinen kursiv, Einheiten werden ausdrücklich aufrecht ausgezeichnet. Die Regel gilt auch für Beschriftungen in Abbildungen und Simulationen.
+
+Geschwindigkeiten gibt das Workbook häufig als Vielfache der Lichtgeschwindigkeit an, etwa $v = 0{,}4\,c$. Das $c$ ist dabei kein Einheitenzeichen: Der Ausdruck ist als Produkt aus Zahl und Größe zu lesen („Rechnen mit Größen", [@ptb2025si, S. 34]), gleichbedeutend mit $v/c = 0{,}4$. Das $c$ bleibt darum kursiv, mit Leerzeichen nach der Zahl.
 
 ### Aufgaben
 
@@ -342,7 +399,7 @@ Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist un
 
 ### Rote Kästen
 
-Rote Kästen sprechen einen naheliegenden oder verbreiteten Irrtum an und korrigieren ihn. Der Titel ist die falsche Annahme selbst, als Frage gestellt: So erkennen die Lesenden den eigenen Gedanken wieder, bevor die Korrektur kommt. Wo die Fachdidaktik eine Vorstellung dokumentiert hat, steht der Beleg dabei.
+Rote Kästen sprechen einen naheliegenden oder verbreiteten Irrtum an und korrigieren ihn. Der Titel ist die falsche Annahme selbst, als Frage gestellt: So erkennen die Lesenden den eigenen Gedanken wieder, bevor die Korrektur kommt. Ein Warnzeichen vor dem Titel zeigt schon beim Überfliegen an, dass hier eine Fehlvorstellung verhandelt wird. Wo die Fachdidaktik eine Vorstellung dokumentiert hat, steht der Beleg dabei.
 
 Für die Zielgruppe leistet der Kasten doppelte Arbeit: Er korrigiert die eigene Vorstellung, und er schult den Blick für Schülervorstellungen, die künftige Lehrkräfte im Unterricht erkennen und aufgreifen sollen.
 
@@ -359,7 +416,16 @@ In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie au
 
 ### Goldene Kästen
 
-Gold ist dem Fundament des Themas vorbehalten: den wenigen Aussagen, auf die die folgenden Unterkapitel immer wieder zurückgreifen, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht: Wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt (z. B. „Einsteinsche Postulate").
+Gold ist dem Fundament des Themas vorbehalten: den wenigen Aussagen, auf die die folgenden Unterkapitel immer wieder zurückgreifen, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht: Wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt.
+
+So sieht das Element aus, mit dem Beispiel aus Kapitel 1:
+
+::: {.mp-box .mp-core}
+<div class="mp-title">Einsteinsche Postulate</div>
+
+1. **Relativitätsprinzip:** Die Naturgesetze haben in allen Inertialsystemen dieselbe Form.
+2. **Konstanz der Lichtgeschwindigkeit:** Licht breitet sich im Vakuum in allen Inertialsystemen mit derselben Geschwindigkeit $c$ aus, unabhängig von der Bewegung der Lichtquelle oder der beobachtenden Person.
+:::
 
 Alles Übrige trägt der Fließtext selbst, und es bleibt auffindbar: zentrale Formeln über ihre Nummern, Begriffe über die Rand-Stichwörter, Hauptkonzepte über die Überschriften.
 
