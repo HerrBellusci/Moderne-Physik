@@ -9,6 +9,7 @@ book:
   title: "Interaktives Quarto-Workbook Moderne Physik"
   author: "Physik PH Karlsruhe"
   date: today
+  reader-mode: true
   chapters:
     - index.qmd
     - 00_konzeption.qmd
