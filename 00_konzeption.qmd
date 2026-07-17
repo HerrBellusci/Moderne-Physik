@@ -24,7 +24,7 @@ Im gesamten Workbook werden die Lesenden direkt und im Gesprächsstil angesproch
 
 > The personalization principle is that people learn better when multimedia lessons are presented in a conversational or polite style, rather than a formal or direct style [@fiorella2021social, S. 277]
 
-Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück: Soziale Signale lösen bei Lernenden eine soziale Reaktion aus, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social].
+Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück: Soziale Signale lösen bei Lernenden eine soziale Reaktion aus, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social, S. 277].
 
 Umgesetzt wird die persönliche Ansprache als Du: Das Workbook richtet sich an Studierende, und in deren Lernsituationen, der Lerngruppe und dem Tutorium, wird für gewöhnlich geduzt. Im Sinne der Social-Agency-Theorie liegt zudem nahe, dass das vertraute Du für diese Zielgruppe das stärkere soziale Signal ist als ein Sie.
 
@@ -46,22 +46,19 @@ Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen die Lehrwerke, d
 
 ### Rand
 
-::: {.column-margin .mp-discuss}
-<div class="mp-title">Zur Diskussion</div>
-Ist die inhaltliche Nutzung des rechten Rands der richtige Umgang mit der Bildschirmbreite?
+Der rechte Seitenrand wird gezielt genutzt, nach dem Grundsatz: Der Rand trägt Kurzes und Ergänzendes, der Haupttext trägt den Inhalt. Auf schmalen Bildschirmen rückt Randinhalt automatisch in die Hauptspalte. Genutzt wird der Rand für zwei Zwecke: als Stichwort zu Fachbegriffen und als Hinweis auf Stolperstellen in Veranschaulichungen.
 
-Dafür: Text über die volle Bildschirmbreite gilt als schlecht lesbar. Spektrum, Wikipedia und fast alle Textseiten lassen beidseitig Rand oder legen Funktionen an die rechte Seite (Schriftgröße, Hell/Dunkel). Der Rand füllt diese Fläche mit Inhalt statt mit Leerraum; der Giancoli nutzt sie genauso, für Abbildungen und tragende Fachbegriffe.
-
-Dagegen: Auf hochformatigen Bildschirmen wirkt der Randinhalt weniger aufgeräumt. Bisher trägt der Rand nur wenige wichtige Begriffe; für die große Fläche bleibt das eine dünne Nutzung.
-:::
-
-Der rechte Seitenrand wird gezielt genutzt, nach dem Grundsatz: Der Rand trägt Kurzes und Ergänzendes, der Haupttext trägt den Inhalt. Auf schmalen Bildschirmen rückt Randinhalt automatisch in die Hauptspalte. Genutzt wird der Rand für:
-
-- Begriffs-Stichwörter: Führt der Fließtext einen Fachbegriff ein, der keine eigene Unterkapitel-Überschrift hat (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission), steht der Begriff als Stichwort am Rand. So bleibt die Einführungsstelle beim Scrollen auffindbar, und die Hervorhebung wandert aus dem Text an den Rand: Der Fließtext bleibt ruhig, Fettdruck entfällt. Das Muster ist aus Lehrwerken vertraut (Giancoli).
+**Begriffs-Stichwörter.** Führt der Fließtext einen Fachbegriff ein, der keine eigene Unterkapitel-Überschrift hat (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission), steht der Begriff als Stichwort am Rand, direkt neben seiner Einführungsstelle. Das Muster ist aus Lehrwerken vertraut (Giancoli). Didaktisch ist das Stichwort ein Organisationssignal im Sinne von Lorch und Lorch: ein Signal, das die Themen eines Textes betont, ohne neuen sachlichen Inhalt hinzuzufügen [@lorch1995effects, S. 537]. Zwei Funktionen ergeben sich daraus. Beim Lesen zeigt das Stichwort, welcher Begriff an dieser Stelle eingeführt wird; in der Untersuchung von Lorch und Lorch veränderten solche Signale die Verarbeitungsstrategie der Lesenden, weg vom Memorieren einzelner Fakten, hin zum Aufbau einer Themenstruktur des Textes [@lorch1995effects, S. 543]. Beim Wiederauffinden markiert das Stichwort die Einführungsstelle; dass Signale umso besser Zugang zum Inhalt geben, je näher sie ihm räumlich stehen, äußern Lorch und Lorch als begründete Vermutung für Überschriften [@lorch1995effects, S. 538]. Untersucht wurden allerdings Überschriften, Überblicke und Zusammenfassungen im Hinblick auf das Behalten von Text, nicht Randstichwörter beim Nachschlagen: Die Übertragung auf das Stichwort am Rand ist plausibel, aber keine direkte Befundübernahme. Das Stichwort entlastet zugleich den Fließtext: Die Hervorhebung wandert aus dem Text an den Rand, Fettdruck entfällt, der Fließtext bleibt ruhig.
 
 So sieht das Begriffs-Stichwort aus:
 
 Manche angeregte Zustände behalten ihre Energie deutlich länger als gewöhnliche: Sie heißen metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Der Fließtext läuft ungestört weiter und erklärt das Konzept in Ruhe.
+
+**Hinweise zu Veranschaulichungen.** Wo eine Darstellung leicht falsch gelesen werden kann, benennt ein kurzer Hinweis am Rand die Stolperstelle direkt neben der Veranschaulichung. In den Animationen zu Absorption und Emission erscheint das Photon etwa als Wellenzug; daraus lässt sich der Schluss ziehen, ein Photon sei eine ausgedehnte Welle, dabei ist der Wellenzug nur eine Modellvorstellung. Solche Vorstellungen entstehen auch aus der Darstellung des Stoffs selbst, wenn die Darstellung Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Der Randhinweis ergänzt zwei bestehende Elemente: Das Vorwort stellt den Modellcharakter der Darstellungen einmal allgemein klar, die roten Kästen bereiten einzelne Vorstellungen ausführlich auf; der Hinweis benennt die konkrete Fehllesart genau an der Stelle, an der sie droht, und bleibt dabei kurz.
+
+So sieht der Hinweis aus:
+
+Trifft ein Photon auf ein Atom und passt seine Energie zum Abstand zweier Niveaus, wird es absorbiert: Das Atom geht in den angeregten Zustand über.[Zur Darstellung: Das Photon ist hier als Wellenzug gezeichnet, eine Modellvorstellung. Ein Photon ist keine ausgedehnte Welle im Raum.]{.column-margin}
 
 ### Datenschutz
 
@@ -399,13 +396,17 @@ Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist un
 
 ### Rote Kästen
 
-Rote Kästen sprechen einen naheliegenden oder verbreiteten Irrtum an und korrigieren ihn. Der Titel ist die falsche Annahme selbst, als Frage gestellt: So erkennen die Lesenden den eigenen Gedanken wieder, bevor die Korrektur kommt. Ein Warnzeichen vor dem Titel zeigt schon beim Überfliegen an, dass hier eine Fehlvorstellung verhandelt wird. Wo die Fachdidaktik eine Vorstellung dokumentiert hat, steht der Beleg dabei.
+Zu vielen Themen bringen Lernende Vorstellungen mit. Sie stammen aus Alltagserfahrungen im Umgang mit den Phänomenen und aus der Alltagssprache [@duit2020alltagsvorstellungen, S. 339]; weitere entstehen erst beim Lernen, weil die Darstellung des Stoffs selbst Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Die Physikdidaktik hält für diese Vorstellungen ein ganzes Begriffsfeld bereit (Alltagsvorstellungen, Schülervorstellungen, Präkonzepte; die englischsprachige Literatur spricht dabei häufig von „misconceptions" [@posner1982accommodation]). Viele davon sind erforscht und dokumentiert; für den deutschsprachigen Raum versammelt das Lehrbuch „Schülervorstellungen und Physikunterricht" die dokumentierten Vorstellungen quer durch die Schulphysik [@schecker2018schuelervorstellungen].
 
-Für die Zielgruppe leistet der Kasten doppelte Arbeit: Er korrigiert die eigene Vorstellung, und er schult den Blick für Schülervorstellungen, die künftige Lehrkräfte im Unterricht erkennen und aufgreifen sollen.
+Für die Konzeption zählt zunächst, welche dieser Vorstellungen die Lesenden voraussichtlich mitbringen oder beim Lesen entwickeln und wie das Workbook ihnen begegnet. Hier setzen die roten Kästen an: Sie adressieren eine Vorstellung gezielt und regen die Lesenden an, die eigene Vorstellung zu reflektieren.
 
-Rote Kästen stehen an genau zwei Orten. Im Fließtext, wo der falsche Gedanke beim Erklären entsteht. Oder in der Lösung einer Aufgabe, die den falschen Gedanken gezielt provoziert: Dort wird die Korrektur erst nach dem eigenen Versuch sichtbar. So lässt in Kapitel 1 eine Aufgabe die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt." Erst die Lösung löst das Präkonzept Tempo gleich Geschwindigkeit auf: Die Richtung der Geschwindigkeit ändert sich auf der Kreisbahn ständig.
+Diese Vorstellungen sind oft hartnäckig und überstehen die bloße Benennung [@schecker2018physiklernen, S. 5], manche auch einen kognitiven Konflikt [@wilhelm2018strategien, S. 49]. Eine rote Box zielt deshalb auf einen Konzeptwechsel ab. Gemeint ist damit kein Austausch, bei dem die alte Vorstellung gelöscht und durch die physikalisch richtige ersetzt wird: „Beim Conceptual Change geht es darum, Lernenden eine physikalische Sichtweise zu vermitteln und diese als eine besondere, vom Alltagsdenken in vielen Aspekten unterschiedliche Sichtweise zu verdeutlichen" [@hopf2018conceptualchange, S. 35]. Posner u. a. nennen vier Bedingungen, unter denen dieser Wechsel gelingen kann: Die Lernenden müssen mit der vorhandenen Vorstellung unzufrieden sein, und die neue muss ihnen verständlich, plausibel und fruchtbar erscheinen [@posner1982accommodation, S. 214].
 
-So sieht das Element aus:
+Die Boxen sollen dahin führen, dass die Lernenden Alltagsdenken und physikalische Konzepte bewusst nebeneinander stellen und beurteilen können, in welcher Situation welche Sichtweise und Erklärung tragfähig ist [@wilhelm2018strategien, S. 40]. Zwei Lernwege führen dorthin [@wilhelm2018strategien]: Der kontinuierliche Weg ordnet die Vorstellung ein und zeigt, wo sie gültig bleibt und wo eine andere Sichtweise zum Tragen kommt. Der kontrastierende Weg konfrontiert sie mit einem Phänomen, das sich mit ihr nicht erklären lässt.
+
+Jede Box ist gleich aufgebaut: Der Titel ist die Vorstellung selbst, als Frage formuliert, so erkennen die Lesenden den eigenen Gedanken wieder. Der Text geht dann einen der beiden Wege. Das Warnzeichen vor dem Titel zeigt schon beim Überfliegen: Hier steht eine naheliegende Annahme auf dem Prüfstand. Wo die Literatur eine Vorstellung dokumentiert, steht der Beleg dabei; die übrigen stammen aus der eigenen Auseinandersetzung mit dem Stoff.
+
+So sieht das Element aus, mit dem Beispiel aus dem Laser-Kapitel; diese Box geht den kontinuierlichen Weg:
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Folgt auf die Absorption immer die Aussendung eines Photons?</div>
@@ -413,6 +414,14 @@ Das Niveauschema legt das nahe: Das Atom nimmt Energie auf, sitzt eine Weile im 
 
 In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie auch ohne Licht loswerden, zum Beispiel durch Stöße mit seinen Nachbarn: Die Anregungsenergie geht dann in Bewegung über. Das schwarze T-Shirt nimmt diesen Weg: Es wird warm statt zu leuchten.
 :::
+
+An diesem Beispiel lassen sich die Bedingungen für einen Konzeptwechsel nach Posner prüfen. Die Unzufriedenheit weckt der Alltagsbezug: Wer die Annahme auf das schwarze T-Shirt anwendet, erwartet ein Leuchten; tatsächlich wird das T-Shirt warm. Verständlich ist die neue Sicht, weil sie mit vertrauten Konzepten arbeitet: Stöße übertragen Energie, aus Anregung wird Bewegung, die Energie bleibt dabei erhalten. Plausibel wird sie, weil sie beide Fälle klärt und die alte Annahme als Spezialfall des ungestörten Atoms stehen lässt. Fruchtbar ist eine neue Vorstellung, wenn sie sich auf neue Situationen und Phänomene übertragen lässt und dort weiterhilft. Das geschieht noch im selben Kapitel: Beim Helium-Neon-Laser übergibt das angeregte Helium seine Energie durch einen Stoß an das Neon. Ein Photon könnte diesen Schritt nicht leisten, seine Energie passt nicht zum Neon-Niveau; erst der Energieübergang durch Stöße macht diesen Pumpmechanismus erklärbar.
+
+Ob der Wechsel gelingt, entscheidet sich dennoch bei den Lesenden, denn „Wissen kann nicht übergeben werden" [@duit2020alltagsvorstellungen, S. 349]: Ein Text kann Anreize setzen und plausibel machen, dass eine Vorstellung für einen bestimmten Kontext ungeeignet ist; das Reflektieren und den Wechsel leisten die Lesenden selbst.
+
+Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig: Gerade angehende Physiklehrende sollten einen Blick dafür entwickeln, wo Vorstellungen sitzen, die dem Verständnis im Weg stehen.
+
+Weil die Zielgruppe den Blick für solche Vorstellungen teils schon mitbringt, kann eine Aufgabe eine Vorstellung auch direkt zur Beurteilung vorlegen; die rote Box steht dann in der Lösung, und die Auflösung kommt erst nach dem eigenen Versuch. So lässt [eine Aufgabe in Kapitel 1](01_srt_raum_und_zeit_umbau.qmd#sec-umbau-kreisbahn-aufgabe) die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt."
 
 ### Goldene Kästen
 

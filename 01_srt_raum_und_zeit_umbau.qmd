@@ -89,6 +89,8 @@ Im Bezugssystem des Bahnsteigs lässt sich die Bewegung dagegen mit dem ersten N
 
 Bezugssysteme lassen sich danach unterscheiden, ob in ihnen das erste Newtonsche Axiom gilt oder nicht. Bezugssysteme, in denen es gilt, heißen Inertialsysteme. Beschleunigte Bezugssysteme heißen Nicht-Inertialsysteme. Der Bahnsteig ist in diesem Beispiel ein Inertialsystem, der bremsende Zug dagegen ein Nicht-Inertialsystem.
 
+[]{#sec-umbau-kreisbahn-aufgabe}
+
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
   <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
@@ -196,7 +198,7 @@ Die folgende interaktive Abbildung zeigt dir den Aufbau eines Michelson-Interfer
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="aufbau" data-srt-motion-control data-srt-label="Aufbau des Michelson-Interferometers"></div>
+  <div class="srt-workbook-stage" data-srt-animation="aufbau" data-srt-label="Aufbau des Michelson-Interferometers"></div>
   <figcaption>Interaktive Abbildung: Aufbau des Michelson-Interferometers, Bauteile per Klick einblendbar.</figcaption>
 </figure>
 ```
@@ -207,7 +209,7 @@ Die folgende Simulation zeigt dir, welche Veränderung beim Drehen erwartet wurd
 ::: {.content-visible when-format="html"}
 ```{=html}
 <figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-motion-control data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm, mit Schieberegler für die Rotation der Apparatur"></div>
+  <div class="srt-workbook-stage" data-srt-animation="mm" data-srt-motion-control="invert" data-srt-label="Michelson-Morley-Vergleich zwischen Äthererwartung und Nullresultat auf dem Schirm, mit Schieberegler für die Rotation der Apparatur"></div>
   <figcaption>Simulation zum Michelson-Morley-Experiment: Äthererwartung und Nullresultat auf dem Schirm im Vergleich (Ausrichtung drehbar).</figcaption>
 </figure>
 <p>Ein <a href="https://www.youtube.com/watch?v=8YgVQHbHR0I">Realvideo zum Michelson-Interferometer</a> zeigt, wie Laser, Strahlteiler, Spiegel und aufgeweiteter Strahl zu sichtbaren Interferenzringen führen.</p>

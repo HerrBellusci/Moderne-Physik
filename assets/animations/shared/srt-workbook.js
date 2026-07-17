@@ -256,6 +256,9 @@
     const button = document.createElement("button");
     button.type = "button";
     button.className = "srt-workbook-overlay-motion";
+    if (host.getAttribute("data-srt-motion-control") === "invert") {
+      button.classList.add("srt-workbook-overlay-motion--invert");
+    }
 
     function update() {
       const enabled = api.motionEnabled();
@@ -345,6 +348,31 @@
     host.addEventListener("srt-reset", reset);
     host.addEventListener("srt-render", renderNow);
     renderAt(0);
+
+    // Seit dem pausierten Start läuft die Zeichenschleife erst auf Klick.
+    // Interne Bedienelemente der Animationen (Schieberegler, Umschalter)
+    // ändern nur Zustand; hier wird bei pausierter Animation nach jeder
+    // Zeiger-Interaktion explizit neu gezeichnet. Die Registrierung steht
+    // bewusst nach renderAt(0), damit die window-Listener der Animationen
+    // (aus ensureInteractive) zuerst feuern und der Zustand schon aktuell ist.
+    // Capture-Phase, weil die Animationen in ihren pointerdown-Handlern
+    // stopPropagation aufrufen; capture läuft davor und bleibt unberührt.
+    // Gezeichnet wird einen Frame später, dann hat der Handler der
+    // Animation den Zustand bereits aktualisiert.
+    let pointerDragging = false;
+    host.addEventListener("pointerdown", () => {
+      pointerDragging = true;
+      if (!motionEnabled) window.requestAnimationFrame(renderNow);
+    }, true);
+    window.addEventListener("pointermove", () => {
+      if (pointerDragging && !motionEnabled) renderNow();
+    });
+    const endPointerDrag = () => {
+      if (pointerDragging && !motionEnabled) renderNow();
+      pointerDragging = false;
+    };
+    window.addEventListener("pointerup", endPointerDrag);
+    window.addEventListener("pointercancel", endPointerDrag);
     createControls(host, spec, state, {
       renderNow,
       motionEnabled: () => motionEnabled,

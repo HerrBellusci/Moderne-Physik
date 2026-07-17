@@ -32,6 +32,18 @@
   background: #334155;
 }
 
+/* Helle Variante für Animationen mit dunkler Bühne
+   (aktiviert per data-srt-motion-control="invert"). */
+.srt-workbook-overlay-motion--invert {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #94a3b8;
+}
+
+.srt-workbook-overlay-motion--invert:hover {
+  background: #e2e8f0;
+}
+
 .srt-workbook-overlay-motion:focus-visible {
   outline: 3px solid rgba(37, 99, 235, 0.45);
   outline-offset: 2px;

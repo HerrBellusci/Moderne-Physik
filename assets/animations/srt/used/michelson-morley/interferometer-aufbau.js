@@ -72,6 +72,8 @@
       e.stopPropagation();
       e.preventDefault();
       step = parseInt(role, 10);
+      // Klick-gesteuerte Grafik: explizit neu zeichnen, die Animationsschleife läuft nicht.
+      host.dispatchEvent(new Event("srt-render", { bubbles: true }));
     });
   }
 
@@ -197,7 +199,8 @@
 
   function drawBeams(parent, SRT, t, flags) {
     const { showSplit, showMirror, showLens, showScreen } = flags;
-    const pulse = 0.65 + 0.35 * (0.5 + 0.5 * Math.sin(t * 0.005));
+    // Statische Grafik: konstante Strahl-Deckkraft statt zeitabhängigem Pulsieren.
+    const pulse = 0.9;
 
     const beamStartX = LASER.x + 18;
     const preLensEndX = showLens ? LENS.x - 12 : (showSplit ? SPLIT.x - 22 : (showMirror ? SPLIT.x : APP.x + APP.w - 24));

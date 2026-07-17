@@ -12,7 +12,9 @@
     etherX: 24, etherW: 224,
     realX:  264, realW: 244
   };
-  const SLIDER = { x0: 568, x1: 820, y: 37 };
+  // Endet vor dem Abspielen/Pause-Knopf oben rechts (belegt je nach
+  // Bildschirmbreite den Bereich ab etwa x = 695).
+  const SLIDER = { x0: 540, x1: 685, y: 37 };
 
   const APP   = { x: 24,  y: 84, w: 400, h: 388, cx: 224, cy: 270, armH: 120, armV: 110 };
   const FIELD = { x: 444, y: 84, w: 394, h: 388, cx: 641, cy: 262, r: 128 };
@@ -39,6 +41,8 @@
       if (!p) return;
       const f = Math.max(0, Math.min(1, (p.x - SLIDER.x0) / (SLIDER.x1 - SLIDER.x0)));
       rotationDeg = f * 90;
+      // Auch im pausierten Zustand sofort neu zeichnen.
+      host.dispatchEvent(new Event("srt-render", { bubbles: true }));
     };
 
     host.addEventListener("pointerdown", (e) => {
@@ -48,10 +52,12 @@
       e.preventDefault();
       if (role === "mode-ether") {
         mode = "ether";
+        host.dispatchEvent(new Event("srt-render", { bubbles: true }));
         return;
       }
       if (role === "mode-real") {
         mode = "real";
+        host.dispatchEvent(new Event("srt-render", { bubbles: true }));
         return;
       }
       if (role === "slider-handle" || role === "slider-track") {
@@ -95,7 +101,7 @@
       "B · Nullresultat", "mode-real", mode === "real", "#2e7d50");
 
     SRT.addText(parent, SLIDER.x0, SLIDER.y - 14,
-      `Rotation der Apparatur:  *θ* = ${rotationDeg.toFixed(0)}°`,
+      `Rotation:  *θ* = ${rotationDeg.toFixed(0)}°`,
       "label", { fill: "#ffffff", "font-size": 12, "text-anchor": "start" });
 
     SRT.el("line", {
