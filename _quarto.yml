@@ -28,6 +28,8 @@ multibib:
 
 crossref:
   chapters: true
+  fig-title: Veranschaulichung
+  fig-prefix: Veranschaulichung
 
 format:
   html:

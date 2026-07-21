@@ -9,6 +9,7 @@ __pycache__/
 .codex
 AGENTS.md
 CLAUDE.md
+ki-kontext/
 .DS_Store
 Thumbs.db
 .vscode/
@@ -24,6 +25,7 @@ physikalisch_kontext_dazu.txt
 
 TODO_konzeption.md
 notizen_prof_gespraech.md
+todo/
 Fachwissen/
 
 /.luarc.json

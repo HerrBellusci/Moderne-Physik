@@ -391,3 +391,9 @@ a.glossary-link:focus-visible {
   font-size: 0.9em;
   text-align: left;
 }
+
+.mp-caption-warn::before {
+  content: "\26A0\FE0E\00A0";
+  font-weight: 800;
+  color: var(--mp-red);
+}

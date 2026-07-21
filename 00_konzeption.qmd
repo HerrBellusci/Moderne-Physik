@@ -5,18 +5,18 @@
 <link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/srt/used/doppler/doppler-herleitung.js"></script>
-<script src="assets/animations/laser/used/resonator.js"></script>
+<script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
 <script src="assets/animations/shared/srt-workbook.js"></script>
 ```
 :::
 
-Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern; es ist für das Selbststudium gedacht.
+Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht.
 
 ## Übergreifendes
 
 ### Vorwort
 
-Das Workbook beginnt mit einem Vorwort. Es bündelt, was die Lesenden einmal zentral erfahren und was sich an keiner Einzelstelle wiederholen muss: Zielgruppe und Zweck, die Arbeitsweise mit Lernzielen, Aufgabentypen und Lösungen, die Bedeutung der Gestaltungselemente (gezeigt an den Elementen selbst), die Einordnung der Veranschaulichungen als Denkstützen, die kein reales Phänomen zeigen, ihre KI-gestützte Entstehung sowie die Hinweise zu Lizenz und Quellen. Der Grundsatz dahinter: Was jede Seite gleichermaßen betrifft, steht einmal im Vorwort, und die Kapitel bleiben frei von wiederholten Hinweisen.
+Das Workbook beginnt mit einem Vorwort. Es bündelt, was die Lesenden einmal zentral erfahren und was sich an keiner Einzelstelle wiederholen muss: Zielgruppe und Zweck, die Arbeitsweise mit Lernzielen, Aufgabentypen und Lösungen, die Bedeutung der Gestaltungselemente (gezeigt an den Elementen selbst), die Einordnung der Veranschaulichungen als Denkstützen, die kein reales Phänomen zeigen, ihre KI-gestützte Entstehung sowie die Hinweise zu Lizenz und Quellen. Dahinter steht ein Grundsatz. Was jede Seite gleichermaßen betrifft, steht einmal im Vorwort, und die Kapitel bleiben frei von wiederholten Hinweisen.
 
 ### Sprache
 
@@ -24,55 +24,58 @@ Im gesamten Workbook werden die Lesenden direkt und im Gesprächsstil angesproch
 
 > The personalization principle is that people learn better when multimedia lessons are presented in a conversational or polite style, rather than a formal or direct style [@fiorella2021social, S. 277]
 
-Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück: Soziale Signale lösen bei Lernenden eine soziale Reaktion aus, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social, S. 277].
+Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück, nach der soziale Signale bei Lernenden eine soziale Reaktion auslösen, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social, S. 277].
 
-Umgesetzt wird die persönliche Ansprache als Du: Das Workbook richtet sich an Studierende, und in deren Lernsituationen, der Lerngruppe und dem Tutorium, wird für gewöhnlich geduzt. Im Sinne der Social-Agency-Theorie liegt zudem nahe, dass das vertraute Du für diese Zielgruppe das stärkere soziale Signal ist als ein Sie.
+Umgesetzt wird die persönliche Ansprache als Du, denn das Workbook richtet sich an Studierende, und in deren Lernsituationen, der Lerngruppe und dem Tutorium, wird für gewöhnlich geduzt. Im Sinne der Social-Agency-Theorie liegt zudem nahe, dass das vertraute Du für diese Zielgruppe das stärkere soziale Signal ist als ein Sie.
 
-Personenbezeichnungen stehen in neutraler Form („die Lesenden", „die Studierenden"): So sind alle Geschlechter angesprochen, und der Lesefluss bleibt erhalten. Im Workbook selbst übernimmt die du-Ansprache das meiste, denn „du" ist geschlechtsneutral.
+Personenbezeichnungen stehen in neutraler Form („die Lesenden", „die Studierenden"). So sind alle Geschlechter angesprochen, und der Lesefluss bleibt erhalten. Im Workbook selbst übernimmt die du-Ansprache das meiste, denn „du" ist geschlechtsneutral.
 
 ### Querverweise
 
-Begriffe werden dort erklärt, wo sie eingeführt werden. Greift ein späteres Kapitel einen Begriff wieder auf, führt ein Querverweis zu dieser Stelle. Die eingebaute Volltextsuche übernimmt die Funktion eines Registers; auf ein Glossar wird verzichtet, denn es würde die Erklärungen nur verdoppeln.
+Begriffe werden dort erklärt, wo sie eingeführt werden. Greift ein späteres Kapitel einen Begriff wieder auf, führt ein Querverweis zu dieser Stelle. Die eingebaute Volltextsuche übernimmt die Funktion eines Registers. Auf ein Glossar wird verzichtet, denn es würde die Erklärungen nur verdoppeln.
 
-### Seitenlänge
+### Nummerierung
 
-<!-- TODO: Abschnitt ausarbeiten. Prof-Vorgabe (14.07.): Richtwert ~10 min Lesezeit pro Lernschritt; lange Seiten dürfen bleiben, wenn begründet; Aufhänger waren lange Scrollwege mobil. Mögliche Linie: Lernschritt = Unterkapitel (Kapitel 1: 3 bis 9,5 min bei 180 Wörtern/min), eine Seite pro Kapitel hält das Grundkonzept ohne Klick-Navigation zusammen; mobile Orientierung als offener Punkt (einklappbares Kapitel-TOC prüfen). -->
+Formeln, Veranschaulichungen und Tabellen werden nummeriert. Die Nummern vergibt Quarto automatisch und kapitelweise, und der Fließtext greift jedes dieser Elemente über seine Nummer auf. Der Nummern-Verweis bleibt eindeutig, wo eine Lagebeschreibung wie „die folgende Abbildung" an ihre Grenzen kommt: auf einer langen Kapitelseite, aus einer Aufgabe heraus oder über Kapitelgrenzen hinweg.
+
+Veranschaulichungen laufen unter einer gemeinsamen Zählung mit dem Beschriftungswort „Veranschaulichung", dem Oberbegriff für Bild, Video, Animation und Simulation. Die Form benennt die Unterschrift, etwa „Animation zur Absorption" (@fig-konzept-absorption). Tabellen bekommen eine nummerierte Beschriftung, der Konvention folgend als Überschrift über der Tabelle (@tbl-formelsatz). Was bei Formeln eine Nummer bekommt, regelt der Abschnitt „Formeln".
+
+### Aktivierungsrhythmus
+
+Der Wechsel zwischen Input- und Verarbeitungsphasen ist den Studierenden aus der Unterrichtsplanung vertraut, etwa als Sandwichprinzip, oder aus der eigenen Studienerfahrung als Aufgabenblatt nach einer Vorlesung. In beiden Fällen soll neu aufgenommener Stoff aktiv verarbeitet werden, statt nur passiv aufgenommen zu werden und eine „Illusion des Wissens" zu hinterlassen [@glenberg1982illusion]. Dieses Vorgehen entspricht dem Prinzip generativer Aktivität, einem der Prinzipien des multimedialen Lernens nach Mayer. Danach lernen Studierende tiefer, wenn eine Lektion ihnen ausdrücklich Gelegenheit gibt, den Stoff aktiv zu verarbeiten, statt ihn nur passiv aufzunehmen:
+
+> Multimedia lessons should incorporate explicit opportunities for students to engage in generative activities during learning. [@fiorellamayer2021generative, S. 347]
+
+
+Etablierte gedruckte Fachwerke behandeln ein Kapitel oder einen Abschnitt und stellen danach passende Aufgaben zusammen, so etwa Giancoli oder Halliday [@giancoli2010physik; @hallidayresnickwalker2017physik]. Das Workbook unterscheidet sich von diesen klassischen Werken darin, dass die Aufgaben direkt an den passenden Stellen im Text verankert sind, statt gesammelt am Kapitelende zu stehen. Dahinter stehen zwei Ziele. Zum einen erreicht eine Aufgabe die Lesenden dort, wo das Konzept gerade frisch ist, sodass sie das Gelesene sofort reflektieren und anwenden. Zum anderen bleibt die Zahl der Aufgaben an einer Stelle klein, denn ein ganzer Block auf einmal wird leicht ganz übersprungen, während einzelne Aufgaben im Lesefluss eher zum aktiven Umgang mit den neuen Konzepten einladen.
+
 
 ### Literaturverzeichnis
 
-Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen die Lehrwerke, die den Stoff der Kapitel tragen und sich zum Nachschlagen eignen. Die weiterführende Literatur sammelt, was darüber hinaus zitiert wird, etwa Originalarbeiten und Vertiefungen. Die Literatur zur Konzeption steht separat: Sie begründet die Gestaltung des Workbooks, und wer nur Physik lernen will, kann sie überspringen. Technisch erzeugt die Quarto-Erweiterung [multibib](https://github.com/pandoc-ext/multibib) die Verzeichnisse aus getrennten Bibliografie-Dateien; sie arbeitet nur beim Erzeugen des Buchs, im fertigen HTML läuft dadurch kein zusätzlicher Code.
+Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen Werke, die Teile des Kapitelstoffs tragen und sich zum Nachschlagen und Vertiefen eignen. Die weiterführende Literatur sammelt, was darüber hinaus zitiert wird, etwa Originalarbeiten und Vertiefungen. Die Literatur zur Konzeption steht separat. Sie begründet die Gestaltung des Workbooks, und wer nur Physik lernen will, kann sie überspringen. Technisch erzeugt die Quarto-Erweiterung [multibib](https://github.com/pandoc-ext/multibib) die Verzeichnisse aus getrennten Bibliografie-Dateien. In einem fertigen Workbook lässt sich das Konzeptions-Verzeichnis einfach entfernen, und übrig bleibt ein zweigeteiltes Literaturverzeichnis.
 
-<!-- TODO (Prof, Donnerstag): Klären, ob „Grundlagen für das Kapitel" so gemeint ist (globaler Abschnitt) oder als Literaturliste pro Kapitel(-ende). Der multibib-Mechanismus trägt beliebig viele Abschnitte; Einteilung der Einträge ggf. anpassen (Schecker & Wilhelm, LeifiPhysik derzeit unter „weiterführend"). -->
 
 ### Rand
 
-Der rechte Seitenrand wird gezielt genutzt, nach dem Grundsatz: Der Rand trägt Kurzes und Ergänzendes, der Haupttext trägt den Inhalt. Auf schmalen Bildschirmen rückt Randinhalt automatisch in die Hauptspalte. Genutzt wird der Rand für zwei Zwecke: als Stichwort zu Fachbegriffen und als Hinweis auf Stolperstellen in Veranschaulichungen.
-
-**Begriffs-Stichwörter.** Führt der Fließtext einen Fachbegriff ein, der keine eigene Unterkapitel-Überschrift hat (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission), steht der Begriff als Stichwort am Rand, direkt neben seiner Einführungsstelle. Das Muster ist aus Lehrwerken vertraut (Giancoli). Didaktisch ist das Stichwort ein Organisationssignal im Sinne von Lorch und Lorch: ein Signal, das die Themen eines Textes betont, ohne neuen sachlichen Inhalt hinzuzufügen [@lorch1995effects, S. 537]. Zwei Funktionen ergeben sich daraus. Beim Lesen zeigt das Stichwort, welcher Begriff an dieser Stelle eingeführt wird; in der Untersuchung von Lorch und Lorch veränderten solche Signale die Verarbeitungsstrategie der Lesenden, weg vom Memorieren einzelner Fakten, hin zum Aufbau einer Themenstruktur des Textes [@lorch1995effects, S. 543]. Beim Wiederauffinden markiert das Stichwort die Einführungsstelle; dass Signale umso besser Zugang zum Inhalt geben, je näher sie ihm räumlich stehen, äußern Lorch und Lorch als begründete Vermutung für Überschriften [@lorch1995effects, S. 538]. Untersucht wurden allerdings Überschriften, Überblicke und Zusammenfassungen im Hinblick auf das Behalten von Text, nicht Randstichwörter beim Nachschlagen: Die Übertragung auf das Stichwort am Rand ist plausibel, aber keine direkte Befundübernahme. Das Stichwort entlastet zugleich den Fließtext: Die Hervorhebung wandert aus dem Text an den Rand, Fettdruck entfällt, der Fließtext bleibt ruhig.
+Der rechte Seitenrand dient den Lesenden zur Orientierung. Dort stehen Fachbegriffe, die für das Thema wichtig sind, aber keine eigene Überschrift bekommen haben (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission). Der Begriff steht als Stichwort direkt neben seiner Einführungsstelle, das Muster ist aus Lehrwerken vertraut [@giancoli2010physik]. Beim Lesen zeigt das Stichwort, welcher Begriff hier eingeführt wird, beim Scrollen durch die Seite bietet es Orientierung, und es lenkt das Augenmerk auf die Fachbegriffe, die für das Thema zentral sind.
 
 So sieht das Begriffs-Stichwort aus:
 
-Manche angeregte Zustände behalten ihre Energie deutlich länger als gewöhnliche: Sie heißen metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Der Fließtext läuft ungestört weiter und erklärt das Konzept in Ruhe.
-
-**Hinweise zu Veranschaulichungen.** Wo eine Darstellung leicht falsch gelesen werden kann, benennt ein kurzer Hinweis am Rand die Stolperstelle direkt neben der Veranschaulichung. In den Animationen zu Absorption und Emission erscheint das Photon etwa als Wellenzug; daraus lässt sich der Schluss ziehen, ein Photon sei eine ausgedehnte Welle, dabei ist der Wellenzug nur eine Modellvorstellung. Solche Vorstellungen entstehen auch aus der Darstellung des Stoffs selbst, wenn die Darstellung Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Der Randhinweis ergänzt zwei bestehende Elemente: Das Vorwort stellt den Modellcharakter der Darstellungen einmal allgemein klar, die roten Kästen bereiten einzelne Vorstellungen ausführlich auf; der Hinweis benennt die konkrete Fehllesart genau an der Stelle, an der sie droht, und bleibt dabei kurz.
-
-So sieht der Hinweis aus:
-
-Trifft ein Photon auf ein Atom und passt seine Energie zum Abstand zweier Niveaus, wird es absorbiert: Das Atom geht in den angeregten Zustand über.[Zur Darstellung: Das Photon ist hier als Wellenzug gezeichnet, eine Modellvorstellung. Ein Photon ist keine ausgedehnte Welle im Raum.]{.column-margin}
+Manche angeregte Zustände behalten ihre Energie deutlich länger als gewöhnliche. Sie heißen metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Der Fließtext läuft ungestört weiter und erklärt das Konzept.
 
 ### Datenschutz
 
-Das Workbook lädt keine Skripte, Schriften oder Stylesheets von fremden Servern: Die Veranschaulichungen sind reines JavaScript ohne externe Bibliotheken, und auch die Formeldarstellung und die Schrift liegen lokal im Projekt. Beim Laden von fremden Servern würde die IP-Adresse jeder lesenden Person an Drittanbieter übertragen; spätestens seit dem Google-Fonts-Urteil (Landgericht München, 2022) hosten deutsche Hochschulseiten solche Ressourcen üblicherweise selbst. Dazu kommen drei praktische Gründe: Fremdbibliotheken verlangen Lizenzangaben, ihre Adressen laufen erfahrungsgemäß irgendwann ins Leere, und es gab dokumentierte Fälle, in denen solche Auslieferungswege Schadcode verbreiteten. So bleibt das Workbook in sich lauffähig, auch ohne Internetverbindung; allein eingebettete Youtube Videos brauchen eine Verbindung.
+Das Workbook lädt keine Skripte, Schriften oder Stylesheets von fremden Servern. Die Veranschaulichungen sind reines JavaScript ohne externe Bibliotheken, und auch die Formeldarstellung und die Schrift liegen lokal im Projekt. Beim Laden von fremden Servern würde die IP-Adresse jeder lesenden Person an Drittanbieter übertragen. Dazu kommen drei praktische Gründe: Fremdbibliotheken verlangen Lizenzangaben, ihre Adressen laufen erfahrungsgemäß irgendwann ins Leere, und es gab dokumentierte Fälle, in denen solche Auslieferungswege Schadcode verbreiteten. So bleibt das Workbook in sich lauffähig, auch ohne Internetverbindung. Allein eingebettete Youtube-Videos brauchen eine Verbindung.
 
 ## Kapitelanfang
 
 ### Hauptüberschrift
 
-Die Hauptüberschrift benennt den Themenbereich und dahinter die tragenden Konzepte des Kapitels, z. B. „Spezielle Relativitätstheorie I: Raum und Zeit" oder „Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator". So ist das Kapitel im Inhaltsverzeichnis eindeutig auffindbar und die Überschrift zeigt vor dem Lesen, welche großen Ideen kommen; das Neugier-Wecken übernimmt der Einstiegstext darunter. Gegen eine Überschrift, die selbst Neugier weckt (etwa „Laser-Licht in Formation"), wurde bewusst entschieden: Eine kurze und zugleich fachlich haltbare Aussage findet sich voraussichtlich nur für einen Teil der Themengebiete, und die Überschriften sollen im ganzen Workbook einer Linie folgen.
+Die Hauptüberschrift benennt den Themenbereich und dahinter die tragenden Konzepte des Kapitels, z. B. „Spezielle Relativitätstheorie I: Raum und Zeit" oder „Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator". So ist das Kapitel im Inhaltsverzeichnis eindeutig auffindbar und die Überschrift zeigt vor dem Lesen, welche großen Ideen kommen. Das Neugier-Wecken übernimmt der Einstiegstext darunter. Gegen eine Überschrift, die selbst Neugier weckt (etwa „Laser-Licht in Formation"), wurde bewusst entschieden. Eine kurze und zugleich fachlich haltbare Aussage findet sich voraussichtlich nur für einen Teil der künftigen Themengebiete, und die Überschriften sollen im ganzen Workbook einer Linie folgen.
 
 ### Einstieg
 
-Direkt unter der Hauptüberschrift steht Fließtext: Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Am Ende nennt er die tragenden Konzepte aus der Überschrift noch einmal im Zusammenhang: ein, zwei Sätze, die andeuten, wie die Konzepte zusammen das Kapitel ergeben, in der Reihenfolge, in der die Unterkapitel sie behandeln. So bleibt die Begriffsliste der Überschrift keine tote Aufzählung, und der Fahrplan des Kapitels ist gesetzt.
+Direkt unter der Hauptüberschrift steht Fließtext. Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Am Ende nennt er die tragenden Konzepte aus der Überschrift noch einmal im Zusammenhang: ein, zwei Sätze, die andeuten, wie die Konzepte zusammen das Kapitel ergeben, in der Reihenfolge, in der die Unterkapitel sie behandeln. So bleibt die Begriffsliste der Überschrift keine tote Aufzählung, und der Fahrplan des Kapitels ist gesetzt.
 
 ## Unterkapitel
 
@@ -82,11 +85,11 @@ Jedes Unterkapitel behandelt ein Hauptkonzept, und seine Überschrift benennt es
 
 ### Lernziele
 
-Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele: Sie machen den Lesenden transparent, was das Ziel in diesem Unterkapitel ist.
+Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele. Sie machen den Lesenden transparent, was das Ziel in diesem Unterkapitel ist.
 
-Operationalisiert heißt: Jedes Lernziel ist mit einem Operator formuliert, einem handlungsleitenden Verb aus den Vorgaben der Kultusministerkonferenz. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Die Operationalisierung hat unteranderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
+Operationalisiert heißt, dass jedes Lernziel mit einem Operator formuliert ist, einem handlungsleitenden Verb aus den Vorgaben der Kultusministerkonferenz. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Die Operationalisierung hat unter anderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
 
-Die Lernziele stehen in einer grünen Box: Sie sind kein fachlicher Inhalt, sondern Lernziele, und die Box hebt sie sichtbar vom erklärenden Fließtext ab. So sieht das Element aus:
+Die Lernziele stehen in einer grünen Box. Sie sind kein fachlicher Inhalt, sondern Lernziele, und die Box hebt sie sichtbar vom erklärenden Fließtext ab. So sieht das Element aus:
 
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen.
@@ -96,82 +99,77 @@ Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme e
 
 ### Fließtext
 
-Nach den Lernzielen folgt der Fließtext: Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das die Lesenden kennen, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Wo es sich anbietet, zeigt diese Anknüpfung zugleich die Relevanz des Teilthemas, etwa eine Anwendung aus Natur oder Technik (der Teilchenbeschleuniger beim relativistischen Impuls, die Rotverschiebung ferner Galaxien bei der Dopplerverschiebung); sie bleibt kurz und ersetzt den Kapiteleinstieg nicht. Der Grund kommt aus der Lernpsychologie: Neues wird verstanden und behalten, wenn es an vorhandenes Wissen angeknüpft wird; ohne diesen Anker bleibt es isoliertes Wissen.
+Nach den Lernzielen folgt der Fließtext. Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das die Lesenden kennen, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Wo es sich anbietet, zeigt diese Anknüpfung zugleich die Relevanz des Teilthemas, etwa eine Anwendung aus Natur oder Technik (der Teilchenbeschleuniger beim relativistischen Impuls, die Rotverschiebung ferner Galaxien bei der Dopplerverschiebung). Sie bleibt kurz und ersetzt den Kapiteleinstieg nicht. Der Grund kommt aus der Lernpsychologie, wonach Neues verstanden und behalten wird, wenn es an vorhandenes Wissen angeknüpft wird. Ohne diesen Anker bleibt es isoliertes Wissen.
 
 ### Veranschaulichungen
 
 #### Form und Mehrwert
 
-In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks: Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den die Lesenden durch eigene Eingriffe verändern sollen, eine Simulation.
+In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks. Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den die Lesenden durch eigene Eingriffe verändern sollen, eine Simulation.
 
-Entscheidend ist der Kontext: Keine Darstellungsform ist generell die beste; eine Darstellung hilft dem Lernen am meisten, wenn ihre Gestaltung zu den Anforderungen der Aufgabe passt [@ainsworth2021multiple, S. 163]. Jede Veranschaulichung wird darum dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
+Entscheidend ist der Kontext. Keine Darstellungsform ist generell die beste. Eine Darstellung hilft dem Lernen am meisten, wenn ihre Gestaltung zu der Anforderung passt, die sie erfüllen soll, etwa einen Aufbau zeigen, einen Ablauf vorführen oder eigenes Eingreifen ermöglichen [@ainsworth2021multiple, S. 163]. Jede Veranschaulichung wird darum dort eingesetzt, wo ihre Form zum Inhalt passt und einen Mehrwert bietet. Der Mehrwert kann unter anderem in folgenden Punkten liegen:
 
 - Räumliches auf einen Blick: Ein Aufbau braucht im Text mehrere Sätze, im Bild einen Blick.
 - Beleg: Ein Video führt das Phänomen vor, statt es nur zu behaupten.
 - Dynamik: Eine Animation zeigt einen Ablauf als Ablauf. Gegenüber statischen Bildern kann sie vor allem dann wirksamer sein, wenn zeitbezogene Merkmale wie Geschwindigkeiten oder Beschleunigungen dargestellt werden [@lowe2021animation, S. 316].
 - Ursache und Wirkung selbst erfahren: In der Simulation verändern die Lesenden Parameter und erfahren welche Auswirkung dieser Veränderung hat.
-- Unsichtbares sichtbar machen: Photonen, Energieniveaus und Atome bekommen eine anschauliche Gestalt. Dass es sich bei solchen Darstellungen um Modellvorstellungen handelt (niemand kann ein Photon als Kugel oder Welle sehen), stellt das Vorwort des Workbooks einmal zentral klar.
-
-::: {.column-margin .mp-discuss}
-<div class="mp-title">Zur Diskussion</div>
-Reicht es, den Modellcharakter der Darstellungen einmal zentral im Vorwort klarzustellen?
-
-Dafür: Der Hinweis betrifft fast jede Simulation und Animation im Workbook. An jeder einzelnen wiederholt, würde er zur Floskel, die beim Lesen übersprungen wird.
-
-Dagegen: Wer direkt in ein Kapitel einsteigt, hat das Vorwort womöglich übersprungen und hält die Darstellungen für naturgetreue Abbildungen.
-:::
+- Unsichtbares sichtbar machen: Photonen, Energieniveaus und Atome bekommen eine anschauliche Gestalt.
 
 Die Erklärung der Konzepte bleibt dabei beim Text.
 
+Was die Veranschaulichungen zeigen, ist kein reales Phänomen, sondern die Darstellung von Modellen. Das Photon als Kugel oder als Wellenzug stellt ein Photonenmodell dar, sehen kann ein Photon niemand, und auch das Energieniveauschema von Atomen ist ein Modell und kein Abbild des Atoms. Modell und Darstellung sind dabei nicht identisch, denn dasselbe Modell lässt sich sprachlich, bildlich oder mathematisch darstellen, und jede Darstellung wählt aus und vereinfacht. Ein Modell ist über den Kontext seiner Nutzung definiert. Mit ihm lässt sich ein Phänomen erklären, erkunden oder vorhersagen, und welche Merkmale es abbildet, hängt von der Frage ab, die es beantworten soll. Zum selben Phänomen kann es deshalb mehrere Modelle geben, die je nach Zweck verschiedene Merkmale hervorheben. Zum Modell wird eine Darstellung erst durch die Nutzung. Ein Globus für sich genommen ist nur eine Kugel, und er wird zum Modell der Erde, sobald jemand mit ihm ein Muster versteht oder eine Frage beantwortet [@passmore2014models]. In diesem Sinn sind die Veranschaulichungen des Workbooks Denkstützen, und diese Einordnung stellt das Vorwort einmal zentral klar. 
+
+Wohin es führt, wenn eine Darstellung über ihren Nutzungskontext hinaus verstanden wird, zeigt das Planetenmodell des Atoms. Das Bild der Elektronen auf Kreisbahnen um den Atomkern ist bei Lernenden die dominante Vorstellung vom Atom, obwohl es zentrale Aussagen der Quantenmechanik nicht wiedergibt, und es bleibt auch bei denen präsent, die es besser wissen [@mueller2018quanten]. Ein einmal gesetztes Bild lässt sich nachträglich kaum ablösen. Kann eine Veranschaulichung zu einer irreführenden Modellvorstellung führen, macht darum ein kleines rotes Piktogramm in ihrer Unterschrift darauf aufmerksam, dasselbe Warnzeichen, das die roten Kästen tragen. Ein Hinweis an jeder Veranschaulichung wäre redundant, das Signal würde zur Floskel, und der Modellcharakter ist bei manchen Darstellungen ohnehin offensichtlich. Der Lichtpuls, der in den Animationen zur Relativitätstheorie als fliegende Kugel läuft, gibt sich als Denkstütze von selbst zu erkennen, denn Licht lässt sich nicht als fliegendes Objekt beobachten. Heikler ist das Photon, das als kurzer Wellenzug gezeichnet ist. Diese Darstellung könnte nahelegen, ein Photon sei ein kleines Stück Welle, das durch den Raum fliegt, ein schiefes Bild des Welle-Teilchen-Dualismus. @fig-konzept-absorption zeigt den Hinweis an diesem Fall:
+
+::: {.content-visible when-format="html"}
+::: {#fig-konzept-absorption}
+```{=html}
+<figure class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-absorption" data-srt-motion-control data-srt-label="Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand. Das Photon wird absorbiert, und das Atom wechselt in den angeregten Zustand."></div>
+</figure>
+```
+
+Animation zur Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand, wird absorbiert, und das Atom wechselt in den angeregten Zustand. <span class="mp-caption-warn">Der Wellenzug soll ein einzelnes Photon mit seiner Frequenz darstellen, ein Abbild des Photons ist er nicht.</span>
+:::
+:::
+
+Der Hinweis in der Unterschrift trägt dabei nur Fälle, in denen die Darstellungsweise selbst missverstanden werden kann, denn dort genügt ein Satz zur Einordnung. Legt dagegen der dargestellte Inhalt einen fachlichen Fehlschluss nahe, wie das Niveauschema den Schluss, auf jede Absorption folge die Aussendung eines Photons, braucht die Auflösung einen eigenen Argumentationsgang und gehört in einen [roten Kasten](#sec-konzept-rote-kaesten).
+
 #### Pausierter Start
 
-Bewegte Veranschaulichungen starten pausiert. Das Auge reagiert auf Bewegung, auch am Rand des Blickfelds: Peripher wahrgenommene Ereignisse lenken die zentrale Aufmerksamkeit um. Eine laufende Animation neben geschriebenem Text konkurriert darum zwangsläufig mit dem Lesen: Die visuelle Aufmerksamkeit teilt sich zwischen Animation und Text, und Wesentliches geht verloren [@lowe2021animation, S. 322]. Der pausierte Start stellt zudem die Reihenfolge sicher, die dieses Konzept für Text und Veranschaulichung festlegt: Erst erklärt der Text, dann starten die Lesenden die Animation bewusst. Auf einer langen Kapitelseite käme sonst bei jedem Scrollen Bewegung ins Bild, sobald eine Animation den sichtbaren Bereich erreicht, auch wenn gerade nur eine Textstelle gesucht wird. Pausieren und Starten sind auch in den Barrierefreiheits-Standards verankert: Das WCAG-Erfolgskriterium 2.2.2 („Pausieren, beenden, ausblenden", Stufe A) verlangt für automatisch startende bewegte Inhalte einen Mechanismus zum Pausieren, Beenden oder Ausblenden ([WCAG 2.0, deutsche Übersetzung](https://www.w3.org/Translations/WCAG20-de/#time-limits-pause)); mit dem pausierten Start erfüllt das Workbook diese Anforderung von selbst, denn Bewegung beginnt nur auf Klick. Damit die pausierte Animation nicht für ein statisches Bild gehalten wird, ist der Abspielknopf deutlich sichtbar und das Standbild zeigt den Ausgangszustand. Nach dem Start wird derselbe Knopf zum Pause-Button: Was gestartet wurde, lässt sich jederzeit wieder anhalten.
+Bewegte Veranschaulichungen starten pausiert. Das Auge reagiert auf Bewegung, auch am Rand des Blickfelds. Peripher wahrgenommene Ereignisse lenken die zentrale Aufmerksamkeit um. Eine laufende Animation neben geschriebenem Text konkurriert darum zwangsläufig mit dem Lesen, denn die visuelle Aufmerksamkeit teilt sich zwischen Animation und Text, und Wesentliches geht verloren [@lowe2021animation, S. 322]. Der pausierte Start stellt zudem die Reihenfolge sicher, die dieses Konzept für Text und Veranschaulichung festlegt. Erst erklärt der Text, dann starten die Lesenden die Animation bewusst. Auf einer langen Kapitelseite käme sonst bei jedem Scrollen Bewegung ins Bild, sobald eine Animation den sichtbaren Bereich erreicht, auch wenn gerade nur eine Textstelle gesucht wird. Pausieren und Starten sind auch in den Barrierefreiheits-Standards verankert. Das WCAG-Erfolgskriterium 2.2.2 („Pausieren, beenden, ausblenden", Stufe A) verlangt für automatisch startende bewegte Inhalte einen Mechanismus zum Pausieren, Beenden oder Ausblenden [@wcag20de, Kriterium 2.2.2]. Mit dem pausierten Start erfüllt das Workbook diese Anforderung von selbst, denn Bewegung beginnt nur auf Klick. Damit die pausierte Animation nicht für ein statisches Bild gehalten wird, ist der Abspielknopf deutlich sichtbar und das Standbild zeigt den Ausgangszustand. Nach dem Start wird derselbe Knopf zum Pause-Button. Was gestartet wurde, lässt sich jederzeit wieder anhalten.
 
 #### Unterschrift
 
-Jede Veranschaulichung bekommt eine deskriptive Unterschrift: Sie benennt, was zu sehen ist und unter welchen Bedingungen; die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Veranschaulichung verwirren kann oder die Gefahr einer Fehlinterpretation besteht, benennt der Text das ausdrücklich. Übernommene Abbildungen nennen Quelle und Lizenz direkt in der Unterschrift.
+Jede Veranschaulichung bekommt eine nummerierte, deskriptive Unterschrift (siehe „Nummerierung"). Sie benennt, was zu sehen ist und unter welchen Bedingungen. Die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Darstellung falsch interpretiert werden kann, weist die Unterschrift darauf hin (siehe „Form und Mehrwert", @fig-konzept-absorption). Übernommene Abbildungen nennen Quelle und Lizenz direkt in der Unterschrift.
 
-Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke folgend, und zwar überall: auch bei Skizzen und Simulationen innerhalb von Aufgaben. Eine Platzierung am Rand wurde erprobt und verworfen: Für die breiten Simulationen ist der Rand zu schmal, und innerhalb von Boxen ist er technisch kaum erreichbar. So sieht das Element aus:
-
-::: {.content-visible when-format="html"}
-```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-resonator" data-srt-motion-control data-srt-label="Interaktive Darstellung eines Lasermediums mit angeregten Atomen. Pumplicht regt Atome an. Ein Umschalter wechselt zwischen zwei Aufbauten. Ohne Resonator laufen Photonen in viele Richtungen aus dem Medium. Mit Resonator schließen ein voll reflektierender und ein teildurchlässiger Spiegel das Medium ein. Achsnahes Licht läuft zwischen den Spiegeln hin und her, wird verstärkt und tritt rechts als Laserstrahl aus."></div>
-  <figcaption>Simulation eines Lasermediums mit und ohne Resonator (umschaltbar).</figcaption>
-</figure>
-```
-:::
+Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke folgend, und zwar überall, auch bei Skizzen und Simulationen innerhalb von Aufgaben.
 
 #### Entstehung der Veranschaulichungen (KI-gestützt)
 
-Die Animationen, Simulationen und Diagramme sind eigenständige JavaScript-Programme, die statischen Abbildungen teilweise KI-generierte Bilder; beides entstand KI-gestützt und iterativ. Statische Abbildungen entstanden meist aus einer eigenen einfachen Skizze, die die KI als Bild umsetzte. Erste Entwürfe waren oft roh: fachliche Ungereimtheiten, Designbrüche, technische Probleme bis hin zu doppelten Bedienelementen. Wie der Prozess im Einzelnen ablief und welches Muster sich daraus ergeben hat, zeigt der Beispielprozess unten.
+Die Animationen, Simulationen und Diagramme sind eigenständige JavaScript-Programme, die statischen Abbildungen teilweise KI-generierte Bilder. Beides entstand KI-gestützt und iterativ. Statische Abbildungen entstanden meist aus einer eigenen einfachen Skizze, die die KI als Bild umsetzte. Erste Entwürfe waren oft roh: fachliche Ungereimtheiten, Designbrüche, technische Probleme bis hin zu doppelten Bedienelementen. Wie der Prozess im Einzelnen ablief und welches Muster sich daraus ergeben hat, zeigt der Beispielprozess unten.
 
-Für das einheitliche Aussehen sorgt zunächst eine gemeinsame technische Basis im Projekt: Die Dateien `assets/animations/shared/core.js`, `srt-workbook.js` und `srt-workbook.css` definieren Bühne, Rahmen und Pause-Button für alle Veranschaulichungen vor und stellen gemeinsame Zeichen-Werkzeuge bereit. Die konkrete Gestaltung, etwa die Farben, liegt in den einzelnen Animations-Skripten; einheitlich blieb sie durch den Kontext des jeweiligen Chat-Verlaufs und durch gezieltes Nachsteuern. Dazu kommt die Regel, dass in der Grafik so wenig Text wie möglich steht. Sie hat mehrere Gründe: Manche Modelle neigen dazu, viel Text in die Grafik einzubauen; dabei überlappen sich Elemente, die Schrift weicht oft vom Stil des Buchs ab, und die Inhalte doppeln, was der Haupttext daneben ohnehin erklärt. Die Veranschaulichung soll den wesentlichen Prozess zeigen, die Erklärung leistet der Fließtext. Wo die KI beides nicht von selbst umsetzte, wurde es im Auftrag nachgezogen, wörtlich und unkorrigiert etwa: „beim design ähnlich wie in der section darüber".
-Verwendet wurden für die Bilder GPT Image 1 und für die JavaScript-Programme aktuelle große Sprachmodelle (unter anderem Claude Opus 4.7 und 4.8, Claude Fable 5, GPT 5.5, Gemini 3.1 Flash und Pro, GLM 5.2). Das einzelne Modell war dabei selten entscheidend: Die Ausgaben sind kaum reproduzierbar, weil sich die Modelle laufend ändern und die Generierung einen Zufallsanteil hat. Ausschlaggebend war, wie klar das eigene Zielbild ist und wie gut es sich der KI vermitteln lässt.
+Für das einheitliche Aussehen sorgt zunächst eine gemeinsame technische Basis im Projekt. Die Dateien `assets/animations/shared/core.js`, `srt-workbook.js` und `srt-workbook.css` definieren Bühne, Rahmen und Pause-Button für alle Veranschaulichungen vor und stellen gemeinsame Zeichen-Werkzeuge bereit. Die konkrete Gestaltung, etwa die Farben, liegt in den einzelnen Animations-Skripten. Einheitlich blieb sie durch den Kontext des jeweiligen Chat-Verlaufs und durch gezieltes Nachsteuern. Dazu kommt die Regel, dass in der Grafik so wenig Text wie möglich steht. Sie hat mehrere Gründe: Manche Modelle neigen dazu, viel Text in die Grafik einzubauen. Dabei überlappen sich Elemente, die Schrift weicht oft vom Stil des Buchs ab, und die Inhalte doppeln, was der Haupttext daneben ohnehin erklärt. Die Veranschaulichung soll den wesentlichen Prozess zeigen, die Erklärung leistet der Fließtext. Wo die KI beides nicht von selbst umsetzte, wurde es im Auftrag nachgezogen, wörtlich und unkorrigiert etwa: „beim design ähnlich wie in der section darüber".
+Verwendet wurden für die Bilder GPT Image 1 und für die JavaScript-Programme aktuelle große Sprachmodelle (unter anderem Claude Opus 4.7 und 4.8, Claude Fable 5, GPT 5.5, Gemini 3.1 Flash und Pro, GLM 5.2). Das einzelne Modell war dabei selten entscheidend. Die Ausgaben sind kaum reproduzierbar, weil sich die Modelle laufend ändern und die Generierung einen Zufallsanteil hat. Ausschlaggebend war, wie klar das eigene Zielbild ist und wie gut es sich der KI vermitteln lässt.
 
-Dass die Veranschaulichungen KI-gestützt entstanden sind, stellt das Vorwort einmal zentral klar, genau wie den Hinweis auf die Modellvorstellungen: Ein Vermerk an jeder einzelnen Veranschaulichung würde nur denselben Satz wiederholen.
+Dass die Veranschaulichungen KI-gestützt entstanden sind, stellt das Vorwort einmal zentral klar. Ein Vermerk an jeder einzelnen Veranschaulichung würde nur denselben Satz wiederholen.
 
 #### Ein Beispielprozess: die Besetzungsinversions-Simulation
 
-Wie iterativ der Prozess tatsächlich war, zeigt ein echtes Beispiel. Die Besetzungsinversions-Simulation hatte zwei Vorbilder: eine Lehrbuch-Abbildung [@giancoli2010physik, S. 1354, Abb. 40.18] und die Abbildung „Lichtverstärkung durch wiederholte stimulierte Emission“ auf LeifiPhysik [@leifi_stimulierte_emission, Abb. 4]. Entstanden ist sie im selben Chat-Verlauf, in dem zuvor die Animationen zu Absorption, spontaner und stimulierter Emission gebaut worden waren; der Verlauf trug also bereits Kontext, was ein einheitliches Design wahrscheinlicher machte. Aus einem groben ersten Auftrag und fünf Korrekturschleifen entstand dann die Simulation. Die sechs Aufträge; Grammatik und Rechtschreibung wurden im Nachgang korrigiert: 
+Wie iterativ der Prozess tatsächlich war, zeigt ein echtes Beispiel. Die Besetzungsinversions-Simulation hatte zwei Vorbilder: eine Lehrbuch-Abbildung [@giancoli2010physik, S. 1354, Abb. 40.18] und die Abbildung „Lichtverstärkung durch wiederholte stimulierte Emission“ auf LeifiPhysik [@leifi_stimulierte_emission, Abb. 4]. Entstanden ist sie im selben Chat-Verlauf, in dem zuvor die Animationen zu Absorption, spontaner und stimulierter Emission gebaut worden waren; der Verlauf trug also bereits Kontext, was ein einheitliches Design wahrscheinlicher machte. Aus einem groben ersten Auftrag und fünf Korrekturschleifen entstand dann die Simulation. Die sechs Aufträge folgen hier im Wortlaut, nur Grammatik und Rechtschreibung wurden im Nachgang korrigiert:
 
 1. Der Auftrag: „Jetzt will ich eine Simulation zur Besetzungsinversion bauen. Dafür sollen mehrere Energieniveaus mit den kleinen blauen Kugeln befüllt werden. Normale Besetzung und Besetzungsinversion will ich nebeneinander sehen, vom Design her so wie bei den Animationen oben. Ein Photon soll hier mehrfach stimulierte Emission auslösen. Für dich als Kontext: Besetzungsinversion heißt mehr Kugeln im höheren Energieniveau, normale Besetzung mehr im niedrigeren. Bei der normalen Besetzung will ich sowohl stimulierte als auch spontane Emission ablaufen sehen." Daraus entstand eine erste Version.
-2. Ideen ausprobieren: „Vielleicht können wir die Simulation so bauen, dass man ein Photon auslösen kann: einmal ein Photon, das bei der normalen Besetzung eintritt, und es kommt zu spontaner Emission und Absorption, und einmal ein Photon, das häufig stimuliert emittiert." Der Photonendurchlauf blieb; die Auslöse-Funktion wurde später verworfen, ihr Mehrwert war nicht schlüssig, und der Pause-Button deckt sie im Kern schon ab.
+2. Ideen ausprobieren: „Vielleicht können wir die Simulation so bauen, dass man ein Photon auslösen kann: einmal ein Photon, das bei der normalen Besetzung eintritt, und es kommt zu spontaner Emission und Absorption, und einmal ein Photon, das häufig stimuliert emittiert." Der Photonendurchlauf blieb. Die Auslöse-Funktion wurde später verworfen, ihr Mehrwert war nicht schlüssig, und der Pause-Button deckt sie im Kern schon ab.
 3. Beschriftungsinkonsistenz: „Man sieht hier aber nicht mehr die beiden Zustände $E_2$ und $E_1$, sondern höheres und niedrigeres Energieniveau. Kannst du das bitte auch so beschriften wie oben, mit $E_1$ und $E_2$?" Daraufhin wurde die Beschriftung an die vorigen Animationen angeglichen.
-4. Fachliche Korrektur: „Okay, gut, aber nicht alle sind im energetisch höheren Zustand. Das hier ist noch falsch, weil man sonst denken könnte, Besetzungsinversion heißt, alle Atome sind im energetisch höheren Niveau, das ist ja aber nicht so. Lass auch eins im niedrigeren, so wie bei der normalen Besetzung ja auch eins am Anfang im energetisch höheren Niveau ist." Die Korrektur: Inversion heißt Mehrheit oben; ein Atom blieb im Grundzustand.
+4. Fachliche Korrektur: „Okay, gut, aber nicht alle sind im energetisch höheren Zustand. Das hier ist noch falsch, weil man sonst denken könnte, Besetzungsinversion heißt, alle Atome sind im energetisch höheren Niveau, das ist ja aber nicht so. Lass auch eins im niedrigeren, so wie bei der normalen Besetzung ja auch eins am Anfang im energetisch höheren Niveau ist." Die Korrektur: Inversion heißt Mehrheit oben, ein Atom blieb im Grundzustand.
 5. Bedienkonzept: „Der Photonen-senden-Button ist komplett unnötig, entferne den. Außerdem ist es besser, wenn man mit einem Button zwischen der normalen Besetzung und der Besetzungsinversion wechseln kann; sonst ist es verwirrend, wenn zwei Prozesse gleichzeitig nebeneinander ablaufen." Das Ergebnis: ein Umschalter statt der beiden nebeneinander laufenden Darstellungen.
-6. Bugfix und Vereinfachung: „Der Kopf des Pfeils bleibt bei der normalen Besetzung nach dem Ablauf stehen, bitte korrigiere das, der sollte wieder verschwinden. Und lass die spontane Emission nach der Absorption weg, wir haben die spontane Emission schon einmal drin, das reicht." Der stehenbleibende Pfeilkopf wurde behoben; die gekoppelte spontane Emission nach der Absorption entfiel.
+6. Bugfix und Vereinfachung: „Der Kopf des Pfeils bleibt bei der normalen Besetzung nach dem Ablauf stehen, bitte korrigiere das, der sollte wieder verschwinden. Und lass die spontane Emission nach der Absorption weg, wir haben die spontane Emission schon einmal drin, das reicht." Der stehenbleibende Pfeilkopf wurde behoben, und die gekoppelte spontane Emission nach der Absorption entfiel.
 
-::: {.column-margin .mp-discuss}
-<div class="mp-title">Zur Diskussion</div>
-In den ersten Veranschaulichungen werden Photonen als Wellenzüge gezeigt. Zu klären ist, ob diese Darstellung trägt: Viele Veranschaulichungen anderswo machen es genauso, ein Wellenzug ist aber nur eine Modellvorstellung des Photons.
-:::
-
-Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. Am wichtigsten ist, zuerst selbst eine Idee zu haben, wie sich etwas visualisieren lässt; dafür wurde in der Regel zunächst recherchiert, welche Visualisierungen es bereits gibt, und auch didaktisches Wissen zum Thema floss ein. Bei der speziellen Relativitätstheorie ist es beispielsweise wichtig, mehrere Beobachtungsperspektiven zu zeigen, weil die Vorstellung eines absoluten Bezugssystems ein häufiges Präkonzept ist. Dann wird diese Idee beschrieben, meist als sehr roher erster Prompt, manchmal auch mit dem Bild einer Skizze, die die KI zuerst beschreiben soll. Danach wird das Ergebnis iterativ angeschaut und angepasst, je nachdem, was fehlt oder was womöglich mehr verwirrt, als es hilft.
+Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. Am wichtigsten ist, zuerst selbst eine Idee zu haben, wie sich etwas visualisieren lässt. Dafür wurde in der Regel zunächst recherchiert, welche Visualisierungen es bereits gibt, und auch didaktisches Wissen zum Thema floss ein. Bei der speziellen Relativitätstheorie ist es beispielsweise wichtig, mehrere Beobachtungsperspektiven zu zeigen, weil die Vorstellung eines absoluten Bezugssystems ein häufiges Präkonzept ist. Dann wird diese Idee beschrieben, meist als sehr roher erster Prompt, manchmal auch mit dem Bild einer Skizze, die die KI zuerst beschreiben soll. Danach wird das Ergebnis iterativ angeschaut und angepasst, je nachdem, was fehlt oder was womöglich mehr verwirrt, als es hilft.
 
 ### Formeln
 
-Zentrale Formeln stehen abgesetzt auf einer eigenen Zeile und werden nummeriert: So können Text und Aufgaben auf sie verweisen, auch über Kapitelgrenzen hinweg. In Herleitungen und Rechnungen bekommt nur das Ergebnis eine Nummer, die Umformungsschritte dorthin stehen ohne. Kurze Ausdrücke und bereits eingeführte Formeln laufen im Satz mit, ohne eigene Zeile und ohne Nummer. Die Variablen einer Formel und ihre Bedeutung erläutert der Fließtext. Wo es sinnvoll ist, unterstreicht ein Diagramm die Bedeutung. In Rechnungen mit Gleichungssystemen bekommen die Gleichungen römische Ziffern (I, II, III): So lassen sich Rechenschritte benennen („II in I einsetzen").
+Zentrale Formeln stehen abgesetzt auf einer eigenen Zeile und werden nummeriert. So können Text und Aufgaben auf sie verweisen. In Herleitungen und Rechnungen bekommt nur das Ergebnis eine Nummer, die Umformungsschritte dorthin stehen ohne. Kurze Ausdrücke und bereits eingeführte Formeln laufen im Satz mit, ohne eigene Zeile und ohne Nummer. Die Variablen einer Formel und ihre Bedeutung erläutert der Fließtext. Wo es sinnvoll ist, zeigt ein Diagramm, was die Formel aussagt. In Rechnungen mit Gleichungssystemen bekommen die Gleichungen römische Ziffern (I, II, III). So lassen sich Rechenschritte benennen („II in I einsetzen").
 
 Wie das zusammenspielt, zeigt die Herleitung der Längenkontraktion in Kapitel 1. Sie startet mit drei Gleichungen, die römische Ziffern tragen:
 
@@ -187,15 +185,15 @@ $$
 L = v\,\Delta t_0 \tag{III}
 $$
 
-Die Ziffern machen die Rechenschritte benennbar; im Kapitel heißt es dann: „Mit (I) wird aus (II) zunächst $L_0 = v\,\gamma\,\Delta t_0$." Solche Umformungsschritte laufen im Satz mit und bleiben ohne Nummer. Erst das Ergebnis steht abgesetzt und bekommt eine Nummer:
+Die Ziffern machen die Rechenschritte benennbar. Im Kapitel heißt es dann: „Mit (I) wird aus (II) zunächst $L_0 = v\,\gamma\,\Delta t_0$." Solche Umformungsschritte laufen im Satz mit und bleiben ohne Nummer. Erst das Ergebnis steht abgesetzt und bekommt eine Nummer:
 
 $$
 L = \frac{L_0}{\gamma}
 $$ {#eq-konzept-laengenkontraktion}
 
-Auf diese Nummer verweisen Text und Aufgaben später, auch über Kapitelgrenzen hinweg: Das Kapitel zu Impuls und Energie greift so auf den Lorentzfaktor aus Kapitel 1 zurück (@eq-umbau-lorentzfaktor). Den Verweistext „Gleichung" samt Nummer erzeugt Quarto dabei automatisch, in jedem Kapitel gleich.
+Auf diese Nummer verweisen Text und Aufgaben später, auch über Kapitelgrenzen hinweg. Das Kapitel zu Impuls und Energie greift so auf den Lorentzfaktor aus Kapitel 1 zurück (@eq-umbau-lorentzfaktor). Den Verweistext „Gleichung" samt Nummer erzeugt Quarto dabei automatisch, in jedem Kapitel gleich.
 
-Für den Satz der Zeichen gelten die internationalen SI-Regeln in der deutschen Fassung der SI-Broschüre [@ptb2025si, S. 33 f.]: Formelzeichen physikalischer Größen stehen kursiv, auch die von Naturkonstanten, denn eine Konstante wie die Lichtgeschwindigkeit ist eine Größe mit festem Wert. Aufrecht stehen Einheiten samt Vorsätzen, Zahlen und beschreibende Indizes. Im Überblick:
+Für den Satz der Zeichen gelten die internationalen SI-Regeln in der deutschen Fassung der SI-Broschüre [@ptb2025si, S. 33 f.]. Formelzeichen physikalischer Größen stehen kursiv, auch die von Naturkonstanten, denn eine Konstante wie die Lichtgeschwindigkeit ist eine Größe mit festem Wert. Aufrecht stehen Einheiten samt Vorsätzen, Zahlen und beschreibende Indizes. Im Überblick:
 
 | Element | Schriftschnitt | Beispiel |
 |---|---|---|
@@ -206,24 +204,15 @@ Für den Satz der Zeichen gelten die internationalen SI-Regeln in der deutschen 
 
 : Formelsatz im Workbook nach den SI-Regeln {#tbl-formelsatz}
 
-In den Formeln leistet das der Mathematiksatz (MathJax) weitgehend von selbst: Buchstaben erscheinen kursiv, Einheiten werden ausdrücklich aufrecht ausgezeichnet. Die Regel gilt auch für Beschriftungen in Abbildungen und Simulationen.
+In den Formeln leistet das der Mathematiksatz (MathJax) weitgehend von selbst. Buchstaben erscheinen kursiv, Einheiten werden ausdrücklich aufrecht ausgezeichnet. Die Regel gilt auch für Beschriftungen in Abbildungen und Simulationen.
 
-Geschwindigkeiten gibt das Workbook häufig als Vielfache der Lichtgeschwindigkeit an, etwa $v = 0{,}4\,c$. Das $c$ ist dabei kein Einheitenzeichen: Der Ausdruck ist als Produkt aus Zahl und Größe zu lesen („Rechnen mit Größen", [@ptb2025si, S. 34]), gleichbedeutend mit $v/c = 0{,}4$. Das $c$ bleibt darum kursiv, mit Leerzeichen nach der Zahl.
+Geschwindigkeiten gibt das Workbook häufig als Vielfache der Lichtgeschwindigkeit an, etwa $v = 0{,}4\,c$. Das $c$ ist dabei kein Einheitenzeichen. Der Ausdruck ist als Produkt aus Zahl und Größe zu lesen („Rechnen mit Größen", [@ptb2025si, S. 34]), gleichbedeutend mit $v/c = 0{,}4$. Das $c$ bleibt darum kursiv, mit Leerzeichen nach der Zahl.
 
 ### Aufgaben
 
-Graue Boxen sind Aufgaben. Sie stehen direkt bei dem Konzept, auf das sie sich beziehen: Ein Workbook ist zum Arbeiten gedacht, und die aktive Auseinandersetzung wirkt unmittelbar nach der Erklärung am stärksten. Aufgaben stehen an Gelenkstellen: nach einer abgeschlossenen Erklärung, vor dem nächsten Gedanken. So bleibt der Lesefluss erhalten.
+Graue Boxen sind Aufgaben. Sie stehen an den Gelenkstellen des Textes, nach einer abgeschlossenen Erklärung und vor dem nächsten Gedanken, direkt bei dem Konzept, auf das sie sich beziehen (siehe „Aktivierungsrhythmus"). So bleibt der Lesefluss erhalten.
 
-Alle Aufgaben teilen dieselbe Form: graue Box, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt: Erst kommt der eigene Versuch, dann der Vergleich; das Verbergen ist hier der Zweck. In den Unterkapiteln gibt es vier Aufgabentypen; ein fünfter, die Schreibaufgabe, hat ihren festen Platz im Kapitelabschluss.
-
-::: {.column-margin .mp-discuss}
-<div class="mp-title">Zur Diskussion</div>
-Braucht das Workbook die sichtbare Unterteilung in vier Aufgabentypen, oder genügt eine einheitliche Aufgaben-Box für alles?
-
-Dafür: Der Typ sagt vor dem Lesen, welche Denkleistung kommt. Hinter jedem Typ steht eine eigene didaktische Idee.
-
-Dagegen: Mehr sichtbare Vielfalt im Layout. Vier Begriffe müssen konsistent verwendet werden, mit Grenzfällen bei der Zuordnung. Der unterstrichene Operator sagt die verlangte Leistung ohnehin.
-:::
+Alle Aufgaben teilen dieselbe Form: graue Box, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt, denn erst kommt der eigene Versuch, dann der Vergleich. In den Unterkapiteln gibt es vier Aufgabentypen, und ein fünfter, die Schreibaufgabe, hat ihren festen Platz im Kapitelabschluss. Der sichtbare Typ sagt vor dem Lesen, welche Denkleistung kommt, und hinter jedem Typ steht eine eigene didaktische Idee, die sein Abschnitt benennt.
 
 #### Denk-Check
 
@@ -284,12 +273,12 @@ Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Das gelin
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet; der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht.</p>
+<p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet. Der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht.</p>
 </details>
 
 #### Herleitung
 
-Eine Formel aus dem Text wird aktiv selbst hergeleitet, statt sie vorzurechnen. Das begründet die Formel auf argumentativer Ebene und verankert den Weg zu ihr: Die Formel selbst ist oft vergessen, der Weg dahin bleibt rekonstruierbar. Bei der Dopplerverschiebung etwa vergisst man schnell, wohin das Plus gehört (Rot- oder Blauverschiebung); mit den Bildern im Kopf lassen sich die drei Grundgleichungen aufstellen und die Formel daraus herleiten. Als Gerüst werden zwei Hilfswege angeboten: Sie betrachten die algebraische Seite der Herleitung und benennen die häufigsten Knackpunkte, an denen sie scheitern kann.
+Eine Formel aus dem Text wird aktiv selbst hergeleitet, statt sie vorzurechnen. Das begründet die Formel auf argumentativer Ebene und verankert den Weg zu ihr. Die Formel selbst ist oft vergessen, der Weg dahin bleibt rekonstruierbar. Bei der Dopplerverschiebung etwa vergisst man schnell, wohin das Plus gehört (Rot- oder Blauverschiebung). Mit den Bildern im Kopf lassen sich die drei Grundgleichungen aufstellen und die Formel daraus herleiten. Als Gerüst werden zwei Hilfswege angeboten. Sie betrachten die algebraische Seite der Herleitung und benennen die häufigsten Knackpunkte, an denen sie scheitern kann.
 
 :::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
@@ -313,7 +302,7 @@ $$
 ```
 :::
 
-**(II) Laufweg (aus der Skizze).** Zwischen zwei Wellenfronten vergeht im System des Beobachters die Zeit $\Delta t$. In dieser Zeit läuft die erste Wellenfront um $c\,\Delta t$ auf den Beobachter zu, während die Quelle ihr um $v\,\Delta t$ nachrückt. Die beiden Wellenfronten liegen dadurch enger beieinander; ihr Abstand, also die gemessene Wellenlänge, ist
+**(II) Laufweg (aus der Skizze).** Zwischen zwei Wellenfronten vergeht im System des Beobachters die Zeit $\Delta t$. In dieser Zeit läuft die erste Wellenfront um $c\,\Delta t$ auf den Beobachter zu, während die Quelle ihr um $v\,\Delta t$ nachrückt. Die beiden Wellenfronten liegen dadurch enger beieinander. Ihr Abstand, also die gemessene Wellenlänge, ist
 
 $$
 \lambda = c\,\Delta t - v\,\Delta t = (c - v)\,\Delta t. \tag{II}
@@ -390,23 +379,23 @@ $$
 </details>
 ::::
 
-Zur Aufgabe wird eine Herleitung nur, wenn der Weg mehrere eigenständige Schritte und echte Knackpunkte enthält, an denen sich etwas lernen lässt. Kurze Wege aus ein, zwei Einsetz-Schritten zeigt der Fließtext direkt: Zwei Gleichungen ineinander einzusetzen hat als Aufgabe keinen echten Mehrwert, und würde jeder solche Schritt zur Aufgabe, wäre das Workbook mit Boxen überladen.
+Zur Aufgabe wird eine Herleitung nur, wenn der Weg mehrere eigenständige Schritte und echte Knackpunkte enthält, an denen sich etwas lernen lässt. Kurze Wege aus ein, zwei Einsetz-Schritten zeigt der Fließtext direkt. Zwei Gleichungen ineinander einzusetzen hat als Aufgabe keinen echten Mehrwert, und würde jeder solche Schritt zur Aufgabe, wäre das Workbook mit Boxen überladen.
 
-Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist und Verständnis stiftet: Der Zielgruppe fehlt teils die mathematische Vorerfahrung, und das Workbook ersetzt kein physikalisches Fachbuch. An Stellen, wo der Weg zu einer Formel für die Lesenden interessant sein könnte, bietet ein Verweis auf die Fachliteratur eine schnelle Möglichkeit, bei Interesse tiefer einzusteigen.
+Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist und Verständnis stiftet. Der Zielgruppe fehlt teils die mathematische Vorerfahrung, und das Workbook ersetzt kein physikalisches Fachbuch. An Stellen, wo der Weg zu einer Formel für die Lesenden interessant sein könnte, bietet ein Verweis auf die Fachliteratur eine schnelle Möglichkeit, bei Interesse tiefer einzusteigen.
 
-### Rote Kästen
+### Rote Kästen {#sec-konzept-rote-kaesten}
 
-Zu vielen Themen bringen Lernende Vorstellungen mit. Sie stammen aus Alltagserfahrungen im Umgang mit den Phänomenen und aus der Alltagssprache [@duit2020alltagsvorstellungen, S. 339]; weitere entstehen erst beim Lernen, weil die Darstellung des Stoffs selbst Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Die Physikdidaktik hält für diese Vorstellungen ein ganzes Begriffsfeld bereit (Alltagsvorstellungen, Schülervorstellungen, Präkonzepte; die englischsprachige Literatur spricht dabei häufig von „misconceptions" [@posner1982accommodation]). Viele davon sind erforscht und dokumentiert; für den deutschsprachigen Raum versammelt das Lehrbuch „Schülervorstellungen und Physikunterricht" die dokumentierten Vorstellungen quer durch die Schulphysik [@schecker2018schuelervorstellungen].
+Zu vielen Themen bringen Lernende Vorstellungen mit. Sie stammen aus Alltagserfahrungen im Umgang mit den Phänomenen und aus der Alltagssprache [@duit2020alltagsvorstellungen, S. 339]. Weitere entstehen erst beim Lernen, weil die Darstellung des Stoffs selbst Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Die Physikdidaktik hält für diese Vorstellungen ein ganzes Begriffsfeld bereit (Alltagsvorstellungen, Schülervorstellungen, Präkonzepte, im Englischen häufig „misconceptions" [@posner1982accommodation]). Viele davon sind erforscht und dokumentiert. Für den deutschsprachigen Raum versammelt das Lehrbuch „Schülervorstellungen und Physikunterricht" die dokumentierten Vorstellungen quer durch die Schulphysik [@schecker2018schuelervorstellungen].
 
-Für die Konzeption zählt zunächst, welche dieser Vorstellungen die Lesenden voraussichtlich mitbringen oder beim Lesen entwickeln und wie das Workbook ihnen begegnet. Hier setzen die roten Kästen an: Sie adressieren eine Vorstellung gezielt und regen die Lesenden an, die eigene Vorstellung zu reflektieren.
+Für die Konzeption zählt zunächst, welche dieser Vorstellungen die Lesenden voraussichtlich mitbringen oder beim Lesen entwickeln und wie das Workbook ihnen begegnet. Hier setzen die roten Kästen an. Sie adressieren eine Vorstellung gezielt und regen die Lesenden an, die eigene Vorstellung zu reflektieren.
 
 Diese Vorstellungen sind oft hartnäckig und überstehen die bloße Benennung [@schecker2018physiklernen, S. 5], manche auch einen kognitiven Konflikt [@wilhelm2018strategien, S. 49]. Eine rote Box zielt deshalb auf einen Konzeptwechsel ab. Gemeint ist damit kein Austausch, bei dem die alte Vorstellung gelöscht und durch die physikalisch richtige ersetzt wird: „Beim Conceptual Change geht es darum, Lernenden eine physikalische Sichtweise zu vermitteln und diese als eine besondere, vom Alltagsdenken in vielen Aspekten unterschiedliche Sichtweise zu verdeutlichen" [@hopf2018conceptualchange, S. 35]. Posner u. a. nennen vier Bedingungen, unter denen dieser Wechsel gelingen kann: Die Lernenden müssen mit der vorhandenen Vorstellung unzufrieden sein, und die neue muss ihnen verständlich, plausibel und fruchtbar erscheinen [@posner1982accommodation, S. 214].
 
 Die Boxen sollen dahin führen, dass die Lernenden Alltagsdenken und physikalische Konzepte bewusst nebeneinander stellen und beurteilen können, in welcher Situation welche Sichtweise und Erklärung tragfähig ist [@wilhelm2018strategien, S. 40]. Zwei Lernwege führen dorthin [@wilhelm2018strategien]: Der kontinuierliche Weg ordnet die Vorstellung ein und zeigt, wo sie gültig bleibt und wo eine andere Sichtweise zum Tragen kommt. Der kontrastierende Weg konfrontiert sie mit einem Phänomen, das sich mit ihr nicht erklären lässt.
 
-Jede Box ist gleich aufgebaut: Der Titel ist die Vorstellung selbst, als Frage formuliert, so erkennen die Lesenden den eigenen Gedanken wieder. Der Text geht dann einen der beiden Wege. Das Warnzeichen vor dem Titel zeigt schon beim Überfliegen: Hier steht eine naheliegende Annahme auf dem Prüfstand. Wo die Literatur eine Vorstellung dokumentiert, steht der Beleg dabei; die übrigen stammen aus der eigenen Auseinandersetzung mit dem Stoff.
+Jede Box ist gleich aufgebaut. Der Titel ist die Vorstellung selbst, als Frage formuliert, so erkennen die Lesenden den eigenen Gedanken wieder. Der Text geht dann einen der beiden Wege. Das Warnzeichen vor dem Titel zeigt schon beim Überfliegen, dass hier eine naheliegende Annahme auf dem Prüfstand steht. Wo die Literatur eine Vorstellung dokumentiert, steht der Beleg dabei. Die übrigen stammen aus der eigenen Auseinandersetzung mit dem Stoff.
 
-So sieht das Element aus, mit dem Beispiel aus dem Laser-Kapitel; diese Box geht den kontinuierlichen Weg:
+So sieht das Element aus, mit dem Beispiel aus dem Laser-Kapitel. Diese Box geht den kontinuierlichen Weg:
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Folgt auf die Absorption immer die Aussendung eines Photons?</div>
@@ -415,17 +404,17 @@ Das Niveauschema legt das nahe: Das Atom nimmt Energie auf, sitzt eine Weile im 
 In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie auch ohne Licht loswerden, zum Beispiel durch Stöße mit seinen Nachbarn: Die Anregungsenergie geht dann in Bewegung über. Das schwarze T-Shirt nimmt diesen Weg: Es wird warm statt zu leuchten.
 :::
 
-An diesem Beispiel lassen sich die Bedingungen für einen Konzeptwechsel nach Posner prüfen. Die Unzufriedenheit weckt der Alltagsbezug: Wer die Annahme auf das schwarze T-Shirt anwendet, erwartet ein Leuchten; tatsächlich wird das T-Shirt warm. Verständlich ist die neue Sicht, weil sie mit vertrauten Konzepten arbeitet: Stöße übertragen Energie, aus Anregung wird Bewegung, die Energie bleibt dabei erhalten. Plausibel wird sie, weil sie beide Fälle klärt und die alte Annahme als Spezialfall des ungestörten Atoms stehen lässt. Fruchtbar ist eine neue Vorstellung, wenn sie sich auf neue Situationen und Phänomene übertragen lässt und dort weiterhilft. Das geschieht noch im selben Kapitel: Beim Helium-Neon-Laser übergibt das angeregte Helium seine Energie durch einen Stoß an das Neon. Ein Photon könnte diesen Schritt nicht leisten, seine Energie passt nicht zum Neon-Niveau; erst der Energieübergang durch Stöße macht diesen Pumpmechanismus erklärbar.
+An diesem Beispiel lassen sich die Bedingungen für einen Konzeptwechsel nach Posner prüfen. Die Unzufriedenheit weckt der Alltagsbezug. Wer die Annahme auf das schwarze T-Shirt anwendet, erwartet ein Leuchten, doch tatsächlich wird das T-Shirt warm. Verständlich ist die neue Sicht, weil sie mit vertrauten Konzepten arbeitet. Stöße übertragen Energie, aus Anregung wird Bewegung, die Energie bleibt dabei erhalten. Plausibel wird sie, weil sie beide Fälle klärt und die alte Annahme als Spezialfall des ungestörten Atoms stehen lässt. Fruchtbar ist eine neue Vorstellung, wenn sie sich auf neue Situationen und Phänomene übertragen lässt und dort weiterhilft. Das geschieht noch im selben Kapitel. Beim Helium-Neon-Laser übergibt das angeregte Helium seine Energie durch einen Stoß an das Neon. Ein Photon könnte diesen Schritt nicht leisten, seine Energie passt nicht zum Neon-Niveau. Erst der Energieübergang durch Stöße macht diesen Pumpmechanismus erklärbar.
 
-Ob der Wechsel gelingt, entscheidet sich dennoch bei den Lesenden, denn „Wissen kann nicht übergeben werden" [@duit2020alltagsvorstellungen, S. 349]: Ein Text kann Anreize setzen und plausibel machen, dass eine Vorstellung für einen bestimmten Kontext ungeeignet ist; das Reflektieren und den Wechsel leisten die Lesenden selbst.
+Ob der Wechsel gelingt, entscheidet sich dennoch bei den Lesenden, denn „Wissen kann nicht übergeben werden" [@duit2020alltagsvorstellungen, S. 349]. Ein Text kann Anreize setzen und plausibel machen, dass eine Vorstellung für einen bestimmten Kontext ungeeignet ist. Das Reflektieren und den Wechsel leisten die Lesenden selbst.
 
-Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig: Gerade angehende Physiklehrende sollten einen Blick dafür entwickeln, wo Vorstellungen sitzen, die dem Verständnis im Weg stehen.
+Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig. Gerade angehende Physiklehrende sollten einen Blick dafür entwickeln, wo Vorstellungen sitzen, die dem Verständnis im Weg stehen.
 
-Weil die Zielgruppe den Blick für solche Vorstellungen teils schon mitbringt, kann eine Aufgabe eine Vorstellung auch direkt zur Beurteilung vorlegen; die rote Box steht dann in der Lösung, und die Auflösung kommt erst nach dem eigenen Versuch. So lässt [eine Aufgabe in Kapitel 1](01_srt_raum_und_zeit_umbau.qmd#sec-umbau-kreisbahn-aufgabe) die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt."
+Weil die Zielgruppe den Blick für solche Vorstellungen teils schon mitbringt, kann eine Aufgabe eine Vorstellung auch direkt zur Beurteilung vorlegen. Die rote Box steht dann in der Lösung, und die Auflösung kommt erst nach dem eigenen Versuch. So lässt [eine Aufgabe in Kapitel 1](01_srt_raum_und_zeit_umbau.qmd#sec-umbau-kreisbahn-aufgabe) die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt."
 
 ### Goldene Kästen
 
-Gold ist dem Fundament des Themas vorbehalten: den wenigen Aussagen, auf die die folgenden Unterkapitel immer wieder zurückgreifen, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht: Wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt.
+Gold ist dem Fundament des Themas vorbehalten: den wenigen Aussagen, auf die die folgenden Unterkapitel immer wieder zurückgreifen, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht, denn wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt.
 
 So sieht das Element aus, mit dem Beispiel aus Kapitel 1:
 
@@ -440,7 +429,7 @@ Alles Übrige trägt der Fließtext selbst, und es bleibt auffindbar: zentrale F
 
 ## Kapitelabschluss
 
-Jedes Kapitel endet mit dem Teil „Sichern und anwenden". Die Sicherung ist den Studierenden als Phase aus der Unterrichtsplanung vertraut; das Workbook macht sie ihnen im eigenen Lernen vor. Der Teil beginnt mit der Selbstprüfung: Die Lernziele aller Unterkapitel stehen hier gebündelt, und die Lesenden prüfen an ihnen selbstständig, was sie erreicht haben. Die Operationalisierung macht jedes Ziel einzeln prüfbar, dafür wurde sie eingeführt.
+Jedes Kapitel endet mit dem Teil „Sichern und anwenden". Die Sicherung ist den Studierenden als Phase aus der Unterrichtsplanung vertraut, und das Workbook macht sie ihnen im eigenen Lernen vor. Der Teil beginnt mit der Selbstprüfung. Die Lernziele aller Unterkapitel stehen hier gebündelt, und die Lesenden prüfen an ihnen selbstständig, was sie erreicht haben. Die Operationalisierung macht jedes Ziel einzeln prüfbar, dafür wurde sie eingeführt.
 
 Aus den Lernzielen schreiben die Lesenden anschließend eine eigene Zusammenfassung des Kapitels: eine Schreibaufgabe, der fünfte Aufgabentyp, der seinen festen Platz im Abschluss hat. Selbst Formuliertes wird tiefer verarbeitet als Wiedergelesenes, und die Lernziele geben der Zusammenfassung das Gerüst.
 
