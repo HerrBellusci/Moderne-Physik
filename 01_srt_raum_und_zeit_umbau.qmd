@@ -226,9 +226,13 @@ Ergänzendes Realvideo zum Michelson-Interferometer: https://www.youtube.com/wat
 
 []{#sec-umbau-mm-deutung}
 
-Bei unterschiedlichen Ausrichtungen der Apparatur blieb das Interferenzmuster unverändert. Dieses sogenannte Nullresultat lieferte keinen Nachweis für den angenommenen Ätherwind und machte die einfache Vorstellung eines mechanischen Lichtäthers problematisch.[Nullresultat]{.column-margin .mp-randbegriff}
+Bei unterschiedlichen Ausrichtungen der Apparatur blieb das Interferenzmuster unverändert. Dieses sogenannte Nullresultat lieferte keinen Nachweis für den angenommenen Ätherwind und machte die einfache Vorstellung eines mechanischen Lichtäthers problematisch.[Nullresultat]{.column-margin .mp-randbegriff} Der Aufbau selbst wird bis heute weiterentwickelt. Die Detektoren, mit denen 2015 der erste direkte Nachweis von Gravitationswellen gelang, sind abgewandelte Michelson-Interferometer mit vier Kilometer langen Armen [@ligo2016observation].
 
-Die spezielle Relativitätstheorie wurde nicht unmittelbar aus dem Michelson-Morley-Experiment abgeleitet; Einstein erwähnte das Experiment in seiner Veröffentlichung von 1905 nicht [@einstein1905elektrodynamik]. Auch die verwendete Interferometrie ist bis heute relevant: Weiterentwickelte Michelson-Interferometer werden beispielsweise zum Nachweis von Gravitationswellen eingesetzt.
+Einstein nennt das Michelson-Morley-Experiment in seiner Arbeit von 1905 nicht beim Namen. Er verweist auf eine Unstimmigkeit in der Elektrodynamik und auf die gescheiterten Ätherversuche:
+
+> Beispiele ähnlicher Art, sowie die mißlungenen Versuche, eine Bewegung der Erde relativ zum „Lichtmedium“ zu konstatieren, führen zu der Vermutung, daß dem Begriffe der absoluten Ruhe nicht nur in der Mechanik, sondern auch in der Elektrodynamik keine Eigenschaften der Erscheinungen entsprechen. [@einstein1905elektrodynamik, S. 891]
+
+Einen Lichtäther braucht seine Theorie dann nicht mehr, denn sie kommt ohne einen absolut ruhenden Raum aus. Das Michelson-Morley-Experiment ist einer von mehreren Anstößen zur speziellen Relativitätstheorie, aus dem Nullresultat folgt sie aber nicht unmittelbar [@vandongen2009michelson].
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-write" aria-label="Skizzieren und erläutern">

@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/srt/used/doppler/doppler-herleitung.js"></script>
+<script src="assets/animations/srt/used/bezugssysteme/inertialsystem.js"></script>
 <script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
 <script src="assets/animations/shared/srt-workbook.js"></script>
 ```
@@ -18,44 +19,123 @@ Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook 
 
 Das Workbook beginnt mit einem Vorwort. Es bündelt, was die Lesenden einmal zentral erfahren und was sich an keiner Einzelstelle wiederholen muss: Zielgruppe und Zweck, die Arbeitsweise mit Lernzielen, Aufgabentypen und Lösungen, die Bedeutung der Gestaltungselemente (gezeigt an den Elementen selbst), die Einordnung der Veranschaulichungen als Denkstützen, die kein reales Phänomen zeigen, ihre KI-gestützte Entstehung sowie die Hinweise zu Lizenz und Quellen. Dahinter steht ein Grundsatz. Was jede Seite gleichermaßen betrifft, steht einmal im Vorwort, und die Kapitel bleiben frei von wiederholten Hinweisen.
 
+### Kognitive Grundlagen der multimedialen Gestaltung {#sec-konzept-rahmen}
+
+Bei der multimedialen Gestaltung des Workbooks orientiert sich die Konzeption an der kognitiven Theorie des multimedialen Lernens nach Mayer (Cognitive Theory of Multimedia Learning, CTML). Sie modelliert, wie Menschen aus Worten und Bildern lernen. Die CTML beruht auf drei Annahmen aus der Kognitionswissenschaft, die @tbl-konzept-ctml zusammenfasst [@mayer2021cognitivetheory, S. 58--59].
+
+| Annahme | Kernaussage | Von Mayer angeführte Literatur |
+|---|---|---|
+| Zwei Kanäle | Visuelle und auditive Informationen werden in getrennten Kanälen verarbeitet. | Baddeley und Paivio |
+| Begrenzte Kapazität | Jeder Kanal kann zur selben Zeit nur eine begrenzte Informationsmenge verarbeiten. | Baddeley sowie Sweller, Ayres und Kalyuga |
+| Aktive Verarbeitung | Lernende wählen relevante Informationen aus, ordnen sie zu kohärenten mentalen Repräsentationen und verknüpfen diese miteinander und mit ihrem Vorwissen. | Mayer und Wittrock |
+
+: Grundannahmen der kognitiven Theorie des multimedialen Lernens und die von Mayer angeführte Literatur (eigene Darstellung nach @mayer2021cognitivetheory, S. 59) {#tbl-konzept-ctml}
+
+Die CTML bildet den theoretischen Bezugspunkt für Mayers Designprinzipien zur Gestaltung multimedialer Lernmaterialien. Diese Prinzipien verbinden Annahmen über kognitive Verarbeitung mit empirischen Befunden darüber, welche Gestaltungen unter welchen Bedingungen lernförderlich sind [@mayer2021cognitivetheory, S. 68--70]. Für die Konzeption des Workbooks bieten die CTML und die mit ihr verbundenen Designprinzipien eine Orientierung bei Entscheidungen zur multimedialen Gestaltung. Die Konzeption greift die Prinzipien dort auf, wo sie für eine konkrete Gestaltungsfrage relevant sind, und erläutert ihre Übertragung auf das Workbook an dieser Stelle.
+
+Fachliche, fachdidaktische und technische Entscheidungen reichen über die CTML hinaus und werden eigenständig begründet.
+
 ### Sprache
 
 Im gesamten Workbook werden die Lesenden direkt und im Gesprächsstil angesprochen. Das folgt dem Personalisierungsprinzip des multimedialen Lernens:
 
 > The personalization principle is that people learn better when multimedia lessons are presented in a conversational or polite style, rather than a formal or direct style [@fiorella2021social, S. 277]
 
-Die persönliche Ansprache wirkt wie ein Gesprächsangebot. Das greift auf die Social-Agency-Theorie zurück, nach der soziale Signale bei Lernenden eine soziale Reaktion auslösen, die Motivation und Anstrengung erhöht und zu besseren Lernergebnissen führt [@fiorella2021social, S. 277].
+Die Social-Agency-Theorie beschreibt den angenommenen Wirkweg hinter diesem Prinzip. Soziale Hinweise in einem Lernmedium können eine soziale Reaktion auslösen, bei der die Lernenden den Eindruck sozialer Präsenz oder einer Partnerschaft mit der vermittelnden Person gewinnen. Fiorella und Mayer nehmen an, dass diese soziale Reaktion die Lernenden zur generativen Verarbeitung (*generative processing*) motivieren kann, also zu kognitiven Prozessen, die darauf gerichtet sind, das Lernmaterial zu verstehen [@fiorella2021social, S. 277].
 
-Umgesetzt wird die persönliche Ansprache als Du, denn das Workbook richtet sich an Studierende, und in deren Lernsituationen, der Lerngruppe und dem Tutorium, wird für gewöhnlich geduzt. Im Sinne der Social-Agency-Theorie liegt zudem nahe, dass das vertraute Du für diese Zielgruppe das stärkere soziale Signal ist als ein Sie.
+Das Workbook setzt die persönliche Ansprache als Du um. In den Lernsituationen der Zielgruppe, etwa in Lerngruppen und Tutorien, ist das Du üblich und unterstützt deshalb den angestrebten Gesprächsstil stärker als das formellere Sie.
 
 Personenbezeichnungen stehen in neutraler Form („die Lesenden", „die Studierenden"). So sind alle Geschlechter angesprochen, und der Lesefluss bleibt erhalten. Im Workbook selbst übernimmt die du-Ansprache das meiste, denn „du" ist geschlechtsneutral.
 
-### Querverweise
+### Querverweise {#sec-konzept-querverweise}
 
 Begriffe werden dort erklärt, wo sie eingeführt werden. Greift ein späteres Kapitel einen Begriff wieder auf, führt ein Querverweis zu dieser Stelle. Die eingebaute Volltextsuche übernimmt die Funktion eines Registers. Auf ein Glossar wird verzichtet, denn es würde die Erklärungen nur verdoppeln.
 
-### Nummerierung
+### Nummerierung {#sec-konzept-nummerierung}
 
 Formeln, Veranschaulichungen und Tabellen werden nummeriert. Die Nummern vergibt Quarto automatisch und kapitelweise, und der Fließtext greift jedes dieser Elemente über seine Nummer auf. Der Nummern-Verweis bleibt eindeutig, wo eine Lagebeschreibung wie „die folgende Abbildung" an ihre Grenzen kommt: auf einer langen Kapitelseite, aus einer Aufgabe heraus oder über Kapitelgrenzen hinweg.
 
 Veranschaulichungen laufen unter einer gemeinsamen Zählung mit dem Beschriftungswort „Veranschaulichung", dem Oberbegriff für Bild, Video, Animation und Simulation. Die Form benennt die Unterschrift, etwa „Animation zur Absorption" (@fig-konzept-absorption). Tabellen bekommen eine nummerierte Beschriftung, der Konvention folgend als Überschrift über der Tabelle (@tbl-formelsatz). Was bei Formeln eine Nummer bekommt, regelt der Abschnitt „Formeln".
 
-### Aktivierungsrhythmus
+### Aktivierungsrhythmus {#sec-konzept-aktivierung}
 
-Der Wechsel zwischen Input- und Verarbeitungsphasen ist den Studierenden aus der Unterrichtsplanung vertraut, etwa als Sandwichprinzip, oder aus der eigenen Studienerfahrung als Aufgabenblatt nach einer Vorlesung. In beiden Fällen soll neu aufgenommener Stoff aktiv verarbeitet werden, statt nur passiv aufgenommen zu werden und eine „Illusion des Wissens" zu hinterlassen [@glenberg1982illusion]. Dieses Vorgehen entspricht dem Prinzip generativer Aktivität, einem der Prinzipien des multimedialen Lernens nach Mayer. Danach lernen Studierende tiefer, wenn eine Lektion ihnen ausdrücklich Gelegenheit gibt, den Stoff aktiv zu verarbeiten, statt ihn nur passiv aufzunehmen:
+Der Wechsel zwischen Input- und Verarbeitungsphasen ist den Studierenden aus der Unterrichtsplanung vertraut, etwa als Sandwichprinzip, oder aus der eigenen Studienerfahrung als Aufgabenblatt nach einer Vorlesung. Im Workbook unterbrechen kleinere Aufgaben längere Phasen der reinen Rezeption und geben regelmäßig Gelegenheit, den neu aufgenommenen Stoff aktiv zu verarbeiten. Warum solche Verarbeitungsgelegenheiten nötig sein können, zeigt Fiorella am Beispiel von Lernvideos. Das bloße Ansehen gewährleistet nicht, dass sich die Lernenden aktiv um Verständnis bemühen, und kann Abschweifen sowie eine „Illusion des Verstehens" begünstigen [@fiorella2021video, S. 493]. Für den Aktivierungsrhythmus insgesamt ist das Prinzip generativer Aktivität maßgeblich. Danach lernen Studierende tiefer, wenn eine Lektion ihnen ausdrücklich Gelegenheit gibt, den Stoff aktiv zu verarbeiten, statt ihn nur passiv aufzunehmen:
 
 > Multimedia lessons should incorporate explicit opportunities for students to engage in generative activities during learning. [@fiorellamayer2021generative, S. 347]
 
 
-Etablierte gedruckte Fachwerke behandeln ein Kapitel oder einen Abschnitt und stellen danach passende Aufgaben zusammen, so etwa Giancoli oder Halliday [@giancoli2010physik; @hallidayresnickwalker2017physik]. Das Workbook unterscheidet sich von diesen klassischen Werken darin, dass die Aufgaben direkt an den passenden Stellen im Text verankert sind, statt gesammelt am Kapitelende zu stehen. Dahinter stehen zwei Ziele. Zum einen erreicht eine Aufgabe die Lesenden dort, wo das Konzept gerade frisch ist, sodass sie das Gelesene sofort reflektieren und anwenden. Zum anderen bleibt die Zahl der Aufgaben an einer Stelle klein, denn ein ganzer Block auf einmal wird leicht ganz übersprungen, während einzelne Aufgaben im Lesefluss eher zum aktiven Umgang mit den neuen Konzepten einladen.
+Etablierte gedruckte Fachwerke behandeln ein Kapitel oder einen Abschnitt und stellen danach passende Aufgaben zusammen, so etwa Giancoli oder Halliday [@giancoli2010physik; @hallidayresnickwalker2017physik]. Das Workbook enthält ebenfalls einen größeren Aufgabenteil am Kapitelende, verteilt darüber hinaus jedoch kleinere Aufgaben über den Text. Diese stehen direkt bei dem jeweils behandelten Konzept und fordern die Lesenden in kurzen Abständen dazu auf, sich aktiv damit auseinanderzusetzen. So entsteht der Aktivierungsrhythmus über das Kapitel hinweg. Der größere Aufgabenteil am Kapitelende bezieht sich auf das gesamte Kapitel. Die operationalisierten Lernziele dienen dort als Leitfaden für eine zusammenhängende Erklärung in eigener Sprache. Die Schreibaufgabe greift damit das Erklären für andere als generative Aktivität auf. Dabei ordnen die Lernenden den vorgegebenen Stoff zu einer zusammenhängenden Struktur und klären seine Bedeutung [@fiorellamayer2021generative, S. 342]. Auf die Schreibaufgabe können größere Aufgaben folgen, deren Bearbeitung mehr Zeit und eine intensivere Auseinandersetzung erfordert als die kurzen Aufgaben im Kapitel. Sie verbinden nach Möglichkeit mehrere Konzepte oder vertiefen einen einzelnen Inhalt mit einem der anderen Aufgabentypen (siehe [„Aufgaben"](#sec-konzept-aufgaben)).
+
+
+### Kästen und Signalisierung
+
+Die farbigen Kästen zeigen ihre Funktion an, bevor ihr Inhalt gelesen ist. Die einzelnen Typen und ihre Funktionen beschreiben die eigenen Abschnitte weiter unten ([Lernziele](#sec-konzept-lernziele), [Aufgaben](#sec-konzept-aufgaben), [rote Kästen](#sec-konzept-rote-kaesten) und [goldene Kästen](#sec-konzept-goldene-kaesten)). Dieses Gestaltungsmittel lässt sich als Anwendung des Signalisierungs-Prinzips des multimedialen Lernens verstehen:
+
+> The signaling principle, also known as the cueing principle, refers to the finding that people learn more deeply from a multimedia message when cues are added that guide attention to the relevant elements of the material or highlight the organization of the essential material. [@vangog2021signaling, S. 221]
+
+Neu ist diese Verwendung solcher Boxen nicht. Auch gedruckte Physiklehrwerke heben bestimmte Inhaltstypen visuell vom erklärenden Text ab, so etwa @giancoli2010physik, @hallidayresnickwalker2017physik oder das Tutorium Physik fürs Nebenfach von @kommer2025tutorium.
+
+Gleichartige Kästen stehen nicht direkt untereinander. Eine Veranschaulichung kann dagegen direkt bei einer Aufgabe stehen, wenn diese auf sie Bezug nimmt. Eine mögliche Begründung für den sparsamen Einsatz der Kästen bietet die Cognitive-Load-Theorie. Paas und Sweller bezeichnen die Belastung durch eine Gestaltung als lernirrelevant (*extraneous cognitive load*), wenn sie die Zahl der miteinander wechselwirkenden, zu verarbeitenden Elemente unnötig erhöht und begrenzte Arbeitsgedächtnisressourcen beansprucht, ohne zum Wissenserwerb beizutragen [@paassweller2021cognitiveload, S. 79]. Auf Kästen übertragen spricht das dafür, eine visuelle Hervorhebung nur mit einer klaren Funktion für den Lernprozess einzusetzen. Dafür spricht auch ihre Signalfunktion: Steht ein großer Teil der Seite in Kästen, verliert der einzelne Kasten seine Signalwirkung. Ergänzend formuliert ein Blogbeitrag von Docsie eine ähnliche Praxisempfehlung. Sie ist nicht mit der theoretischen Argumentation auf Grundlage von Paas und Sweller gleichzusetzen und dient hier nur als Beispiel aus der Dokumentationspraxis:
+
+> Maintain the impact of callout blocks by using them strategically rather than overwhelming readers with too many highlighted sections. [@docsiecallouts]
+
+Die Regel, dass zwei gleichartige Kästen nicht unmittelbar aufeinanderfolgen, ist damit keine empirisch abgeleitete Vorgabe, sondern eine plausible Gestaltungskonvention für dieses Workbook.
+
+Liegen zwei Aufgaben inhaltlich dicht beieinander, werden sie im Workbook zu Teilaufgaben einer Box zusammengefasst. Mischen sich dabei die Typen, trägt die Box den Typ, der überwiegt, und ein Typ-Piktogramm an der abweichenden Teilaufgabe zeigt deren Rolle an. Die eingeklappte Lösung direkt unter ihrer Aufgabe zählt nicht als eigener Kasten, denn sie gehört zum Aufgabenelement.
+
+So sieht eine gebündelte Aufgabe aus:
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.png" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Der rote Punkt kennzeichnet den Ursprung des betrachteten Bezugssystems. Die Animation zeigt drei Bewegungen: A gleichförmig geradlinig, B mit konstantem Tempo auf einer Kreisbahn, C eine Schwingung.
+
+::: {.content-visible when-format="html"}
+::: {#fig-konzept-inertial}
+```{=html}
+<figure class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="inertial" data-srt-motion-control data-srt-label="Vergleich von Inertialsystem und beschleunigten Systemen"></div>
+</figure>
+```
+
+Animation der Bewegungen A, B und C aus Sicht des mitbewegten Bezugssystems (roter Punkt).
+:::
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version erscheint hier eine Visualisierung zu gleichförmig geradliniger Bewegung, Kreisbewegung und Schwingung.
+:::
+:::
+
+1. <u>Ordne</u> die zu den Bewegungen A, B und C mitbewegten Bezugssysteme als Inertialsystem oder Nicht-Inertialsystem ein und <u>begründe</u> deine Zuordnung.
+2. <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer"><img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">Transfer</span> Bei Bewegung B bewegt sich der Körper mit konstantem Tempo auf einer Kreisbahn. Ein Schüler sagt: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt." <u>Beurteile</u> diese Aussage.
+
+:::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+<ol>
+  <li>Das zu Bewegung A mitbewegte Bezugssystem ist ein Inertialsystem, weil sich der Körper geradlinig mit konstanter Geschwindigkeit bewegt. Die zu den Bewegungen B und C mitbewegten Bezugssysteme sind Nicht-Inertialsysteme, weil die Körper beschleunigt sind.</li>
+  <li>Die Aussage ist falsch. Bei Bewegung B bleibt zwar das Tempo konstant, aber die Bewegungsrichtung ändert sich fortlaufend. Damit ändert sich der Geschwindigkeitsvektor und es liegt eine Beschleunigung vor.</li>
+</ol>
+
+::: {.mp-box .mp-misconception}
+Die Schüleraussage beruht auf der verbreiteten Vorstellung, Geschwindigkeit beschreibe nur, wie schnell sich ein Körper bewegt. Dabei wird übersehen, dass die Geschwindigkeit ein Vektor ist und auch eine Richtung besitzt. Bei der Kreisbewegung bleibt zwar das Tempo, also der Betrag der Geschwindigkeit, konstant. Die Richtung der Geschwindigkeit ändert sich jedoch fortlaufend. Deshalb ist der Körper beschleunigt [@schecker2018, S. 66].
+:::
+
+</details>
 
 
 ### Literaturverzeichnis
 
-Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen Werke, die Teile des Kapitelstoffs tragen und sich zum Nachschlagen und Vertiefen eignen. Die weiterführende Literatur sammelt, was darüber hinaus zitiert wird, etwa Originalarbeiten und Vertiefungen. Die Literatur zur Konzeption steht separat. Sie begründet die Gestaltung des Workbooks, und wer nur Physik lernen will, kann sie überspringen. Technisch erzeugt die Quarto-Erweiterung [multibib](https://github.com/pandoc-ext/multibib) die Verzeichnisse aus getrennten Bibliografie-Dateien. In einem fertigen Workbook lässt sich das Konzeptions-Verzeichnis einfach entfernen, und übrig bleibt ein zweigeteiltes Literaturverzeichnis.
+Das Literaturverzeichnis ist dreigeteilt. Die Grundlagen nennen die großen Lehrwerke, die Teile des Kapitelstoffs tragen und sich zum Nachschlagen und Vertiefen eignen. Die weiterführende Literatur sammelt, was darüber hinaus zitiert wird. Dort stehen Originalarbeiten, Vertiefungen zu einzelnen Themen und kleinere Arbeiten, die einzelne interessante Aussagen belegen. Die Literatur zur Konzeption steht separat. Sie begründet die Gestaltung des Workbooks. Technisch erzeugt die Quarto-Erweiterung [multibib](https://github.com/pandoc-ext/multibib) die Verzeichnisse aus getrennten Bibliografie-Dateien. In einem fertigen Workbook lässt sich das Konzeptions-Verzeichnis einfach entfernen, und übrig bleibt ein zweigeteiltes Literaturverzeichnis.
 
 
-### Rand
+### Rand {#sec-konzept-rand}
 
 Der rechte Seitenrand dient den Lesenden zur Orientierung. Dort stehen Fachbegriffe, die für das Thema wichtig sind, aber keine eigene Überschrift bekommen haben (im Unterkapitel „Stimulierte Emission" etwa Absorption und spontane Emission). Der Begriff steht als Stichwort direkt neben seiner Einführungsstelle, das Muster ist aus Lehrwerken vertraut [@giancoli2010physik]. Beim Lesen zeigt das Stichwort, welcher Begriff hier eingeführt wird, beim Scrollen durch die Seite bietet es Orientierung, und es lenkt das Augenmerk auf die Fachbegriffe, die für das Thema zentral sind.
 
@@ -73,17 +153,25 @@ Das Workbook lädt keine Skripte, Schriften oder Stylesheets von fremden Servern
 
 Die Hauptüberschrift benennt den Themenbereich und dahinter die tragenden Konzepte des Kapitels, z. B. „Spezielle Relativitätstheorie I: Raum und Zeit" oder „Der Laser: Stimulierte Emission, Besetzungsinversion, Resonator". So ist das Kapitel im Inhaltsverzeichnis eindeutig auffindbar und die Überschrift zeigt vor dem Lesen, welche großen Ideen kommen. Das Neugier-Wecken übernimmt der Einstiegstext darunter. Gegen eine Überschrift, die selbst Neugier weckt (etwa „Laser-Licht in Formation"), wurde bewusst entschieden. Eine kurze und zugleich fachlich haltbare Aussage findet sich voraussichtlich nur für einen Teil der künftigen Themengebiete, und die Überschriften sollen im ganzen Workbook einer Linie folgen.
 
-### Einstieg
+### Einstieg {#sec-konzept-einstieg}
 
 Direkt unter der Hauptüberschrift steht Fließtext. Er knüpft an Alltag, Natur und Technik an und weckt Neugier. Am Ende nennt er die tragenden Konzepte aus der Überschrift noch einmal im Zusammenhang: ein, zwei Sätze, die andeuten, wie die Konzepte zusammen das Kapitel ergeben, in der Reihenfolge, in der die Unterkapitel sie behandeln. So bleibt die Begriffsliste der Überschrift keine tote Aufzählung, und der Fahrplan des Kapitels ist gesetzt.
+
+### Vorwissen {#sec-konzept-vorwissen}
+
+Jedes Lehrmaterial braucht Vorwissen, an das es anknüpfen kann, und welches das ist, legt hier der Studiengang fest. Das Workbook begleitet den Modulteil „Moderne Physik I" im Master Lehramt Sekundarstufe I. Das zugehörige Modul (MAS-Phy-3) setzt laut Modulhandbuch keine Teilnahmevoraussetzungen und „vertieft die in den vorhergehenden Modulen erworbenen physikalischen Grundlagen" [@phka2026mhbmaster, S. 114--116]. Gelegt werden diese Grundlagen in den Experimentalphysik-Modulen des Bachelors [@phka2026mhbbachelor, S. 222--225]. An diesen Stand knüpfen die Kapitel an, und die Zugänge zum Stoff sind so gewählt, dass sie mit ihm auskommen.
+
+Das Workbook verarbeitet Vorwissen dort, wo es gebraucht wird. Ein Unterkapitel beginnt möglichst bei etwas Bekanntem, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept (siehe [„Fließtext"](#sec-konzept-fliesstext)). Setzt ein Abschnitt ein Konzept stillschweigend voraus, etwa das erste Newtonsche Axiom, frischt der Text es an dieser Stelle in ein bis zwei Sätzen auf, und wurde es früher im Workbook erarbeitet, steht ein Querverweis dorthin (siehe [„Querverweise"](#sec-konzept-querverweise)). Mathematisches Handwerkszeug bleibt vorausgesetzt, in den Herleitungen fangen die gestuften Hilfen Unsicherheiten auf (siehe [„Herleitung"](#sec-konzept-herleitung)).
+
+Alltagsvorstellungen können dem neuen Konzept auch im Weg stehen, sie sind beim Lernen Anker und Hürde zugleich. Das Workbook behandelt sie nicht als Voraussetzung, sondern greift sie dort auf, wo sie stören (siehe [„Rote Kästen"](#sec-konzept-rote-kaesten)).
 
 ## Unterkapitel
 
 ### Überschrift
 
-Jedes Unterkapitel behandelt ein Hauptkonzept, und seine Überschrift benennt es, z. B. „Stimulierte Emission" oder „Resonator". So dient sie im Inhaltsverzeichnis als Orientierung und beim Zurückscrollen als Anker. Begriffe, die dabei mit eingeführt werden, bekommen ein Stichwort am Rand (siehe „Rand").
+Jedes Unterkapitel behandelt ein Hauptkonzept, und seine Überschrift benennt es, z. B. „Stimulierte Emission" oder „Resonator". So dient sie im Inhaltsverzeichnis als Orientierung und beim Zurückscrollen als Anker. Begriffe, die dabei mit eingeführt werden, bekommen ein Stichwort am Rand (siehe [„Rand"](#sec-konzept-rand)).
 
-### Lernziele
+### Lernziele {#sec-konzept-lernziele}
 
 Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele. Sie machen den Lesenden transparent, was das Ziel in diesem Unterkapitel ist.
 
@@ -97,13 +185,13 @@ Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen.
 Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein.
 :::
 
-### Fließtext
+### Fließtext {#sec-konzept-fliesstext}
 
-Nach den Lernzielen folgt der Fließtext. Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das die Lesenden kennen, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Wo es sich anbietet, zeigt diese Anknüpfung zugleich die Relevanz des Teilthemas, etwa eine Anwendung aus Natur oder Technik (der Teilchenbeschleuniger beim relativistischen Impuls, die Rotverschiebung ferner Galaxien bei der Dopplerverschiebung). Sie bleibt kurz und ersetzt den Kapiteleinstieg nicht. Der Grund kommt aus der Lernpsychologie, wonach Neues verstanden und behalten wird, wenn es an vorhandenes Wissen angeknüpft wird. Ohne diesen Anker bleibt es isoliertes Wissen.
+Nach den Lernzielen folgt der Fließtext. Er erklärt das Konzept des Unterkapitels. Er beginnt mit etwas, das die Lesenden kennen, einer Alltagserfahrung oder dem Ergebnis des vorigen Unterkapitels, und führt von dort zum neuen Konzept. Wo es sich anbietet, zeigt diese Anknüpfung zugleich die Relevanz des Teilthemas, etwa eine Anwendung aus Natur oder Technik (der Teilchenbeschleuniger beim relativistischen Impuls, die Rotverschiebung ferner Galaxien bei der Dopplerverschiebung). Sie bleibt kurz und ersetzt den Kapiteleinstieg nicht. Der Grund kommt aus der Lernpsychologie, wonach Neues verstanden und behalten wird, wenn es an vorhandenes Wissen angeknüpft wird [@girwidz2020medien, S. 317]. Ohne diesen Anker bleibt es isoliertes Wissen.
 
 ### Veranschaulichungen
 
-#### Form und Mehrwert
+#### Form und Mehrwert {#sec-konzept-form}
 
 In den Fließtext sind Veranschaulichungen eingebunden, und hier zeigt sich der größte Vorteil eines digitalen Workbooks. Je nach Inhalt steht die passende Form zur Wahl. Für einen Aufbau reicht ein statisches Bild (etwa beim Helium-Neon-Laser), für einen realen Vorgang eignet sich ein Video (etwa das Zug-Video zu Bezugssystemen), für einen Prozess eine Animation, und für einen Prozess, den die Lesenden durch eigene Eingriffe verändern sollen, eine Simulation.
 
@@ -141,7 +229,7 @@ Bewegte Veranschaulichungen starten pausiert. Das Auge reagiert auf Bewegung, au
 
 #### Unterschrift
 
-Jede Veranschaulichung bekommt eine nummerierte, deskriptive Unterschrift (siehe „Nummerierung"). Sie benennt, was zu sehen ist und unter welchen Bedingungen. Die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Darstellung falsch interpretiert werden kann, weist die Unterschrift darauf hin (siehe „Form und Mehrwert", @fig-konzept-absorption). Übernommene Abbildungen nennen Quelle und Lizenz direkt in der Unterschrift.
+Jede Veranschaulichung bekommt eine nummerierte, deskriptive Unterschrift (siehe [„Nummerierung"](#sec-konzept-nummerierung)). Sie benennt, was zu sehen ist und unter welchen Bedingungen. Die Deutung leistet der Fließtext, der aufgreift, was die Veranschaulichung zeigt. Wo eine Darstellung falsch interpretiert werden kann, weist die Unterschrift darauf hin (siehe [„Form und Mehrwert"](#sec-konzept-form), @fig-konzept-absorption). Übernommene Abbildungen nennen Quelle und Lizenz direkt in der Unterschrift. KI-generierte Videos, die wie reale Aufnahmen wirken, kennzeichnet die Unterschrift ausdrücklich, denn als Beleg für ein Phänomen taugt nur eine reale Aufnahme.
 
 Die Unterschrift steht unter der Veranschaulichung, der Konvention der Lehrwerke folgend, und zwar überall, auch bei Skizzen und Simulationen innerhalb von Aufgaben.
 
@@ -208,9 +296,9 @@ In den Formeln leistet das der Mathematiksatz (MathJax) weitgehend von selbst. B
 
 Geschwindigkeiten gibt das Workbook häufig als Vielfache der Lichtgeschwindigkeit an, etwa $v = 0{,}4\,c$. Das $c$ ist dabei kein Einheitenzeichen. Der Ausdruck ist als Produkt aus Zahl und Größe zu lesen („Rechnen mit Größen", [@ptb2025si, S. 34]), gleichbedeutend mit $v/c = 0{,}4$. Das $c$ bleibt darum kursiv, mit Leerzeichen nach der Zahl.
 
-### Aufgaben
+### Aufgaben {#sec-konzept-aufgaben}
 
-Graue Boxen sind Aufgaben. Sie stehen an den Gelenkstellen des Textes, nach einer abgeschlossenen Erklärung und vor dem nächsten Gedanken, direkt bei dem Konzept, auf das sie sich beziehen (siehe „Aktivierungsrhythmus"). So bleibt der Lesefluss erhalten.
+Graue Boxen sind Aufgaben. Sie stehen an den Gelenkstellen des Textes, nach einer abgeschlossenen Erklärung und vor dem nächsten Gedanken, direkt bei dem Konzept, auf das sie sich beziehen (siehe [„Aktivierungsrhythmus"](#sec-konzept-aktivierung)). So bleibt der Lesefluss erhalten.
 
 Alle Aufgaben teilen dieselbe Form: graue Box, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt, denn erst kommt der eigene Versuch, dann der Vergleich. In den Unterkapiteln gibt es vier Aufgabentypen, und ein fünfter, die Schreibaufgabe, hat ihren festen Platz im Kapitelabschluss. Der sichtbare Typ sagt vor dem Lesen, welche Denkleistung kommt, und hinter jedem Typ steht eine eigene didaktische Idee, die sein Abschnitt benennt.
 
@@ -276,7 +364,7 @@ Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Das gelin
 <p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet. Der Arzt braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht.</p>
 </details>
 
-#### Herleitung
+#### Herleitung {#sec-konzept-herleitung}
 
 Eine Formel aus dem Text wird aktiv selbst hergeleitet, statt sie vorzurechnen. Das begründet die Formel auf argumentativer Ebene und verankert den Weg zu ihr. Die Formel selbst ist oft vergessen, der Weg dahin bleibt rekonstruierbar. Bei der Dopplerverschiebung etwa vergisst man schnell, wohin das Plus gehört (Rot- oder Blauverschiebung). Mit den Bildern im Kopf lassen sich die drei Grundgleichungen aufstellen und die Formel daraus herleiten. Als Gerüst werden zwei Hilfswege angeboten. Sie betrachten die algebraische Seite der Herleitung und benennen die häufigsten Knackpunkte, an denen sie scheitern kann.
 
@@ -412,7 +500,7 @@ Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig. Gera
 
 Weil die Zielgruppe den Blick für solche Vorstellungen teils schon mitbringt, kann eine Aufgabe eine Vorstellung auch direkt zur Beurteilung vorlegen. Die rote Box steht dann in der Lösung, und die Auflösung kommt erst nach dem eigenen Versuch. So lässt [eine Aufgabe in Kapitel 1](01_srt_raum_und_zeit_umbau.qmd#sec-umbau-kreisbahn-aufgabe) die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt."
 
-### Goldene Kästen
+### Goldene Kästen {#sec-konzept-goldene-kaesten}
 
 Gold ist dem Fundament des Themas vorbehalten: den wenigen Aussagen, auf die die folgenden Unterkapitel immer wieder zurückgreifen, etwa den Einsteinschen Postulaten. Die Seltenheit gibt der Box ihr Gewicht, denn wer Gold sieht, weiß, dass hier ein Fundament steht. Der Titel der Box benennt ihren Inhalt.
 
@@ -431,6 +519,6 @@ Alles Übrige trägt der Fließtext selbst, und es bleibt auffindbar: zentrale F
 
 Jedes Kapitel endet mit dem Teil „Sichern und anwenden". Die Sicherung ist den Studierenden als Phase aus der Unterrichtsplanung vertraut, und das Workbook macht sie ihnen im eigenen Lernen vor. Der Teil beginnt mit der Selbstprüfung. Die Lernziele aller Unterkapitel stehen hier gebündelt, und die Lesenden prüfen an ihnen selbstständig, was sie erreicht haben. Die Operationalisierung macht jedes Ziel einzeln prüfbar, dafür wurde sie eingeführt.
 
-Aus den Lernzielen schreiben die Lesenden anschließend eine eigene Zusammenfassung des Kapitels: eine Schreibaufgabe, der fünfte Aufgabentyp, der seinen festen Platz im Abschluss hat. Selbst Formuliertes wird tiefer verarbeitet als Wiedergelesenes, und die Lernziele geben der Zusammenfassung das Gerüst.
+Aus den Lernzielen schreiben die Lesenden anschließend eine eigene Erklärung des Kapitels: eine Schreibaufgabe, der fünfte Aufgabentyp, der seinen festen Platz im Abschluss hat. Die operationalisierten Lernziele geben die abzudeckenden Inhalte vor. Die Lesenden verbinden sie zu einer zusammenhängenden Erklärung und formulieren selbst, wie sie die Inhalte verstanden haben.
 
 Wo sich Konzepte des Kapitels zu einer größeren Anwendung verbinden lassen, folgt sie hier, etwa das Garagenparadoxon, das Längenkontraktion und Relativität der Gleichzeitigkeit zusammenführt. Solche Aufgaben nutzen dieselben Aufgabentypen wie die Unterkapitel.
