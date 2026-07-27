@@ -141,7 +141,7 @@ So sieht eine gebündelte Aufgabe aus:
   Denkcheck
 </span>
 
-Der rote Punkt kennzeichnet den Ursprung des betrachteten Bezugssystems. Die Animation zeigt drei Bewegungen: A gleichförmig geradlinig, B mit konstantem Tempo auf einer Kreisbahn, C eine Schwingung.
+Der rote Punkt kennzeichnet den Ursprung des betrachteten Bezugssystems. @fig-konzept-inertial zeigt drei Bewegungen: A gleichförmig geradlinig, B mit konstantem Tempo auf einer Kreisbahn, C eine Schwingung.
 
 ::: {.content-visible when-format="html"}
 ::: {#fig-konzept-inertial}
@@ -327,7 +327,7 @@ $$
 L = \frac{L_0}{\gamma}
 $$ {#eq-konzept-laengenkontraktion}
 
-Auf diese Nummer verweisen Text und Aufgaben später, auch über Kapitelgrenzen hinweg. Das Kapitel zu Impuls und Energie greift so auf den Lorentzfaktor aus Kapitel 1 zurück (@eq-umbau-lorentzfaktor). Den Verweistext „Gleichung“ samt Nummer erzeugt Quarto dabei automatisch, in jedem Kapitel gleich.
+Auf solche Nummern verweisen Text und Aufgaben später, auch über Kapitelgrenzen hinweg. Das Kapitel zu Impuls und Energie greift so auf den Lorentzfaktor aus Kapitel 1 zurück (@eq-umbau-lorentzfaktor). Den Verweistext „Gleichung“ samt Nummer erzeugt Quarto dabei automatisch, in jedem Kapitel gleich.
 
 Für den Satz der Zeichen gelten die internationalen SI-Regeln in der deutschen Fassung der SI-Broschüre [@ptb2025si, S. 33 f.]. Formelzeichen physikalischer Größen stehen kursiv, auch die von Naturkonstanten, denn eine Konstante wie die Lichtgeschwindigkeit ist eine Größe mit festem Wert. Aufrecht stehen Einheiten samt Vorsätzen, Zahlen und beschreibende Indizes. Im Überblick:
 
