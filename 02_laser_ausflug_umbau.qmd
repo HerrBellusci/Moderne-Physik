@@ -162,7 +162,7 @@ Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u
 Du <u>erklärst</u>, wozu ein metastabiles Niveau dient.
 :::
 
-Die stimulierte Emission aus dem letzten Abschnitt ist seit 1917 bekannt [@einstein1972quantum]. Der erste Laser gelang trotzdem erst 1960, über vierzig Jahre später. Ein wesentlicher Grund für diese Lücke steckt in diesem Abschnitt: Damit ein Medium Licht verstärkt, muss es in einen Zustand gebracht werden, der sich in gewöhnlicher Materie nie von selbst einstellt.
+Die stimulierte Emission aus dem letzten Abschnitt ist seit 1917 bekannt [@einstein1917quantum]. Der erste Laser gelang trotzdem erst 1960, über vierzig Jahre später. Ein wesentlicher Grund für diese Lücke steckt in diesem Abschnitt: Damit ein Medium Licht verstärkt, muss es in einen Zustand gebracht werden, der sich in gewöhnlicher Materie nie von selbst einstellt.
 
 Stell dir eine La-Ola-Welle im Stadion vor. Sie läuft durch die Ränge, weil immer neue Zuschauer aufspringen. Damit sie weiterläuft, müssen entlang ihres Wegs genug Leute bereit sein aufzuspringen. Sind zu wenige bereit, bricht die Welle ab.
 

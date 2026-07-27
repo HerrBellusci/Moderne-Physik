@@ -30,3 +30,23 @@ Fachwissen/
 /Präsentation Spezielle Relativitätstheorie/
 
 /.luarc.json
+
+# Leere Platzhalterdateien, die das CLI-Werkzeug im Projektordner anlegt
+/.bash_profile
+/.bashrc
+/.gitconfig
+/.gitmodules
+/.idea
+/.mcp.json
+/.profile
+/.ripgreprc
+/.vscode
+/.zprofile
+/.zshrc
+
+# Konfiguration der KI-Werkzeuge, wie .codex, AGENTS.md und CLAUDE.md
+/.claude/
+/.agents/
+
+# Arbeitsnotizen, nicht Teil des Workbooks
+/docs/
