@@ -11,7 +11,7 @@
 ```
 :::
 
-Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht.
+Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Die Festlegungen sollen für das ganze Workbook gelten, auch für Kapitel, die noch nicht geschrieben sind. Beispiele im Folgenden stammen aus den exemplarisch umgesetzten Kapiteln und zeigen, wie eine Regel eingelöst wird. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht.
 
 ## Übergreifendes
 
@@ -302,6 +302,18 @@ Wie iterativ der Prozess tatsächlich war, zeigt ein echtes Beispiel. Die Besetz
 6. Bugfix und Vereinfachung: „Der Kopf des Pfeils bleibt bei der normalen Besetzung nach dem Ablauf stehen, bitte korrigiere das, der sollte wieder verschwinden. Und lass die spontane Emission nach der Absorption weg, wir haben die spontane Emission schon einmal drin, das reicht.“ Der stehenbleibende Pfeilkopf wurde behoben, und die gekoppelte spontane Emission nach der Absorption entfiel.
 
 Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. Am wichtigsten ist, zuerst selbst eine Idee zu haben, wie sich etwas visualisieren lässt. Dafür wurde in der Regel zunächst recherchiert, welche Visualisierungen es bereits gibt, und auch didaktisches Wissen zum Thema floss ein. Bei der speziellen Relativitätstheorie ist es beispielsweise wichtig, mehrere Beobachtungsperspektiven zu zeigen, weil die Vorstellung eines absoluten Bezugssystems ein häufiges Präkonzept ist. Dann wird diese Idee beschrieben, meist als sehr roher erster Prompt, manchmal auch mit dem Bild einer Skizze, die die KI zuerst beschreiben soll. Danach wird das Ergebnis iterativ angeschaut und angepasst, je nachdem, was fehlt oder was womöglich mehr verwirrt, als es hilft.
+
+### Analogien
+
+Eine Analogie holt einen Zustand oder einen Vorgang aus einem Bereich, den die Lesenden kennen, und überträgt ihn auf das neue Konzept. Kircher und Girwidz stellen dafür zwei Bedingungen: Dieser Analogbereich muss den Lesenden vertraut sein, weil eine unvertraute Analogie nicht angenommen wird, und die Beziehungen in beiden Bereichen sollen einander weitgehend entsprechen [@kirchergirwidz2020elementarisierung, S. 189--190]. Trägt der vertraute Bereich selbst schon falsche Vorstellungen, hilft die Analogie nicht [@wilhelm2018strategien, S. 53]. Vertraut heißt also mehr als bekannt.
+
+Das Workbook unterscheidet drei Stufen von Analogien. Die erste Stufe ist ein kurzer Vergleich. Im Workbook streicht der Ätherwind an der Erde vorbei „ähnlich dem Fahrtwind beim Radfahren“ und der Rubinlaser arbeitet wie ein Fotoblitz. Kircher und Girwidz halten solche Vergleiche für „unproblematische, möglicherweise sinnvolle Lernhilfen“, sofern die Lernenden sie benutzen können und wollen [@kirchergirwidz2020elementarisierung, S. 190]. Das Workbook führt hier die Grenze nicht aus.
+
+Auf der zweiten Stufe macht die Analogie etwas anschaulich, das sich sonst nur formal beschreiben ließe. Im Workbook steht für das metastabile Niveau eine Mulde am Hang, in der eine Kugel liegen bleibt. Anschaulich werden damit der Halt auf dem Weg nach unten und die Lage der Niveaus zueinander. Den richtigen Grund für den Halt gibt die Analogie nicht her. Ihn liefert der Fließtext.
+
+Auf der dritten Stufe wird mit dem Analogbereich argumentiert und dadurch ein Teil des Konzepts erschlossen. Im Workbook stehen zwei Wege durch eine Strömung für die beiden Lichtwege des Michelson-Morley-Experiments, einer quer und einer längs dazu. Die Argumentation muss im Analogbereich funktionieren, sonst lässt sich nichts übertragen.
+
+Auf der zweiten und dritten Stufe sagt der Text, welches Element des Analogbereichs für welches Element des Konzepts steht und was daraus folgt. Kircher und Girwidz verlangen, die physikalischen Unterschiede zwischen beiden Bereichen zu thematisieren [@kirchergirwidz2020elementarisierung, S. 190]. Gemeint sind nicht alle Unterschiede, denn der Analogbereich hat immer auch Merkmale, die nichts zur Sache tun. Jede Analogie wird für eine bestimmte Aussage eingesetzt, und genannt wird der Unterschied, der diese Aussage verfälschen würde. Die Mulde steht dafür, dass die Atome lange in diesem Niveau bleiben. Sie legt zugleich nahe, dass sie Energie brauchen, um herauszukommen. Das stimmt nicht. Bleibt das unerwähnt, entsteht eine falsche Vorstellung vom metastabilen Zustand.
 
 ### Formeln
 
