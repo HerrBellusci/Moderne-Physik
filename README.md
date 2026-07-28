@@ -1,6 +1,6 @@
 # Interaktives Quarto-Workbook „Moderne Physik"
 
-Digitales Lehr-Workbook zur modernen Physik (spezielle Relativitätstheorie, Laser) für Lehramtsstudierende der Sekundarstufe I. Entstanden im Rahmen einer Masterarbeit an der PH Karlsruhe. Gebaut mit [Quarto](https://quarto.org) als Buch-Projekt; die didaktischen Gestaltungsregeln stehen im Kapitel „Konzeption des Workbooks" (`00_konzeption.qmd`).
+Digitales Lehr-Workbook zur modernen Physik (spezielle Relativitätstheorie, Laser) für Lehramtsstudierende der Sekundarstufe I. Entstanden im Rahmen einer Masterarbeit an der Belluni. Gebaut mit [Quarto](https://quarto.org) als Buch-Projekt; die didaktischen Gestaltungsregeln stehen im Kapitel „Konzeption des Workbooks" (`00_konzeption.qmd`).
 
 ## Bauen
 

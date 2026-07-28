@@ -7,7 +7,7 @@ project:
 
 book:
   title: "Interaktives Quarto-Workbook Moderne Physik"
-  author: "Physik PH Karlsruhe"
+  author: "Physik Belluni"
   date: today
   chapters:
     - index.qmd
