@@ -11,7 +11,7 @@
 ```
 :::
 
-Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Die Festlegungen sollen für das ganze Workbook gelten, auch für Kapitel, die noch nicht geschrieben sind. Beispiele im Folgenden stammen aus den exemplarisch umgesetzten Kapiteln und zeigen, wie eine Regel eingelöst wird. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht.
+Diese Seite legt den Aufbau des Workbooks fest und begründet ihn. Die Festlegungen sollen für das ganze Workbook gelten, auch für Kapitel, die noch nicht geschrieben sind. Beispiele im Folgenden stammen aus den exemplarisch umgesetzten Kapiteln und zeigen, wie eine Regel eingelöst wird. Das Workbook richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht. Welche Themen es behandelt, gibt der Modulteil „Moderne Physik I“ vor. Die Themenauswahl begründet diese Seite deshalb nicht, sie regelt den Aufbau und die Gestaltung.
 
 ## Übergreifendes
 
@@ -115,7 +115,7 @@ Der Wechsel zwischen Input- und Verarbeitungsphasen ist den Studierenden aus der
 
 > Multimedia lessons should incorporate explicit opportunities for students to engage in generative activities during learning. [@fiorellamayer2021generative, S. 347]
 
-Etablierte gedruckte Fachwerke behandeln ein Kapitel oder einen Abschnitt und stellen danach passende Aufgaben zusammen, so etwa Giancoli oder Halliday [@giancoli2010physik; @hallidayresnickwalker2017physik]. Das Workbook enthält ebenfalls einen größeren Aufgabenteil am Kapitelende, verteilt darüber hinaus jedoch kleinere Aufgaben über den Text. Diese stehen direkt bei dem jeweils behandelten Konzept und fordern die Lesenden in kurzen Abständen dazu auf, sich aktiv damit auseinanderzusetzen. So entsteht der Aktivierungsrhythmus über das Kapitel hinweg. Der größere Aufgabenteil am Kapitelende bezieht sich auf das gesamte Kapitel. Die operationalisierten Lernziele dienen dort als Leitfaden für eine zusammenhängende Erklärung in eigener Sprache. Die Schreibaufgabe greift damit das Erklären für andere als generative Aktivität auf. Dabei ordnen die Lernenden den vorgegebenen Stoff zu einer zusammenhängenden Struktur und klären seine Bedeutung [@fiorellamayer2021generative, S. 342]. Auf die Schreibaufgabe können größere Aufgaben folgen, deren Bearbeitung mehr Zeit und eine intensivere Auseinandersetzung erfordert als die kurzen Aufgaben im Kapitel. Sie verbinden nach Möglichkeit mehrere Konzepte oder vertiefen einen einzelnen Inhalt mit einem der anderen Aufgabentypen (siehe [„Aufgaben“](#sec-konzept-aufgaben)).
+Etablierte gedruckte Fachwerke behandeln ein Kapitel oder einen Abschnitt und stellen danach passende Aufgaben zusammen, so etwa Giancoli oder Halliday [@giancoli2010physik; @hallidayresnickwalker2017physik]. Das Workbook enthält ebenfalls einen größeren Aufgabenteil am Kapitelende, verteilt darüber hinaus jedoch kleinere Aufgaben über den Text. Diese stehen direkt bei dem jeweils behandelten Konzept und fordern die Lesenden in kurzen Abständen dazu auf, sich aktiv damit auseinanderzusetzen. So entsteht der Aktivierungsrhythmus über das Kapitel hinweg. Der größere Aufgabenteil am Kapitelende bezieht sich auf das gesamte Kapitel. Die operationalisierten Lernziele dienen dort als Leitfaden für eine zusammenhängende Erklärung in eigener Sprache. Der Selbstcheck greift damit das Erklären für andere als generative Aktivität auf. Dabei ordnen die Lernenden den vorgegebenen Stoff zu einer zusammenhängenden Struktur und klären seine Bedeutung [@fiorellamayer2021generative, S. 342]. Auf den Selbstcheck folgen größere Aufgaben, deren Bearbeitung mehr Zeit und eine intensivere Auseinandersetzung erfordert als die kurzen Aufgaben im Kapitel. Sie verbinden nach Möglichkeit mehrere Konzepte oder vertiefen einen einzelnen Inhalt mit einem der anderen Aufgabentypen (siehe [„Aufgaben“](#sec-konzept-aufgaben)).
 
 ### Kästen und Signalisierung
 
@@ -223,7 +223,11 @@ Jedes Unterkapitel behandelt ein Hauptkonzept, und seine Überschrift benennt es
 
 Am Anfang jedes Unterkapitels stehen zwei bis drei operationalisierte Lernziele. Sie machen den Lesenden transparent, was das Ziel in diesem Unterkapitel ist.
 
-Operationalisiert heißt, dass jedes Lernziel mit einem Operator formuliert ist, einem handlungsleitenden Verb aus den Vorgaben der Kultusministerkonferenz. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Die Operationalisierung hat unter anderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
+Operationalisiert heißt, dass jedes Lernziel mit einem Operator formuliert ist, einem handlungsleitenden Verb aus dem Grundstock von Operatoren für die gemeinsamen Abituraufgabenpools der Länder in Biologie, Chemie und Physik [@iqb2022operatoren]. Die Operatoren legen unmissverständlich fest, welche Leistung verlangt ist. Der Grundstock ist keine abgeschlossene Liste, er lässt weitere Verben zu, sofern ihre Bedeutung zusammen mit der Aufgabenstellung eindeutig ist:
+
+> Die Verwendung eines Operators, der im Folgenden nicht genannt wird, ist möglich, wenn aufgrund der standardsprachlichen Bedeutung dieses Operators in Verbindung mit der Aufgabenstellung davon auszugehen ist, dass die jeweilige Aufgabe im Sinne der Aufgabenstellung bearbeitet werden kann (z. B. „durchführen“: Führen Sie das Experiment durch.). [@iqb2022operatoren, S. 1]
+
+Das Workbook nutzt diesen Spielraum bei manchen handlungsleitenden Verben. Die Operationalisierung hat unter anderem zwei Gründe: Sie macht prüfbar, ob ein Lernziel erreicht wurde. Und sie ist lehramtsspezifisch wertvoll, denn die Studierenden müssen später selbst Aufgaben und Klassenarbeiten mit Operatoren konzipieren und für Stundenverlaufspläne eigene Lernziele formulieren.
 
 Die Lernziele stehen in einem grünen Kasten. Sie sind kein fachlicher Inhalt, sondern Lernziele, und der Kasten hebt sie sichtbar vom erklärenden Fließtext ab. So sieht das Element aus:
 
@@ -360,7 +364,7 @@ Geschwindigkeiten gibt das Workbook häufig als Vielfache der Lichtgeschwindigke
 
 Graue Kästen sind Aufgaben. Sie stehen an den Gelenkstellen des Textes, nach einer abgeschlossenen Erklärung und vor dem nächsten Gedanken, direkt bei dem Konzept, auf das sie sich beziehen (siehe [„Aktivierungsrhythmus“](#sec-konzept-aktivierung)). So bleibt der Lesefluss erhalten.
 
-Alle Aufgaben teilen dieselbe Form: grauer Kasten, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt, denn erst kommt der eigene Versuch, dann der Vergleich. In den Unterkapiteln gibt es vier Aufgabentypen, und ein fünfter, die Schreibaufgabe, hat ihren festen Platz im Kapitelabschluss. Der sichtbare Typ sagt vor dem Lesen, welche Denkleistung kommt, und hinter jedem Typ steht eine eigene didaktische Idee, die sein Abschnitt benennt.
+Alle Aufgaben teilen dieselbe Form: grauer Kasten, der Aufgabentyp steht im Titel, der Operator in der Aufgabenstellung ist unterstrichen. Lösungen und gestufte Hilfen sind eingeklappt, denn erst kommt der eigene Versuch, dann der Vergleich. In den Unterkapiteln gibt es vier Aufgabentypen, und ein fünfter, der Selbstcheck, hat seinen festen Platz im Kapitelabschluss. Der sichtbare Typ sagt vor dem Lesen, welche Denkleistung kommt, und hinter jedem Typ steht eine eigene didaktische Idee, die sein Abschnitt benennt.
 
 #### Denkcheck
 
@@ -571,8 +575,33 @@ Alles Übrige trägt der Fließtext selbst, und es bleibt auffindbar: zentrale F
 
 ## Kapitelabschluss
 
-Jedes Kapitel endet mit dem Teil „Sichern und anwenden“. Die Sicherung ist den Studierenden als Phase aus der Unterrichtsplanung vertraut, und das Workbook macht sie ihnen im eigenen Lernen vor. Der Teil beginnt mit der Selbstprüfung. Die Lernziele aller Unterkapitel stehen hier gebündelt, und die Lesenden prüfen an ihnen selbstständig, was sie erreicht haben. Die Operationalisierung macht jedes Ziel einzeln prüfbar, dafür wurde sie eingeführt.
+Jedes Kapitel endet mit dem Teil „Sichern und anwenden“. Der Selbstcheck ist der fünfte Aufgabentyp. Die Lesenden erklären das Kapitel zusammenhängend in eigenen Worten. Die Lernziele aller Unterkapitel geben vor, was in der Erklärung vorkommen sollte.
 
-Aus den Lernzielen schreiben die Lesenden anschließend eine eigene Erklärung des Kapitels: eine Schreibaufgabe, der fünfte Aufgabentyp, der seinen festen Platz im Abschluss hat. Die operationalisierten Lernziele geben die abzudeckenden Inhalte vor. Die Lesenden verbinden sie zu einer zusammenhängenden Erklärung und formulieren selbst, wie sie die Inhalte verstanden haben.
+Das eigene Erklären wiederholt die Inhalte des Kapitels und gibt Rückmeldung über den eigenen Stand. Dadurch wird den Lesenden möglicherweise eine Lücke bewusst. Sie können sich dann noch einmal vertiefend damit auseinandersetzen.
 
-Wo sich Konzepte des Kapitels zu einer größeren Anwendung verbinden lassen, folgt sie hier, etwa das Garagenparadoxon, das Längenkontraktion und Relativität der Gleichzeitigkeit zusammenführt. Solche Aufgaben nutzen dieselben Aufgabentypen wie die Unterkapitel.
+Die Erklärungen sammeln sich an einem Ort. Über die Kapitel hinweg entsteht daraus eine eigene Zusammenfassung, die für die Prüfungsvorbereitung bleibt. Mündlich zu erklären wirkt möglicherweise stärker als schriftlich [@fiorellamayer2021generative, S. 343], setzt aber ein Gegenüber voraus. Der Selbstcheck bietet die mündliche Form deshalb an und bleibt in der Grundform schriftlich, weil sie allein machbar ist und ein Ergebnis hinterlässt.
+
+Die Liste steht offen im Kasten. Jeder Eintrag nennt ein Unterkapitel und dahinter dessen Lernziele im Wortlaut des grünen Kastens. Die grüne Auszeichnung entfällt, denn die Ziele kündigen hier nichts mehr an, sie leiten die Erklärung an.
+
+So sieht das Element aus, mit dem vollständigen Selbstcheck aus Kapitel 1:
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-write" aria-label="Selbstcheck">
+  <img src="assets/task-icons/selfcheck.png" alt="" aria-hidden="true">
+  Selbstcheck
+</span>
+
+<u>Erkläre</u> die Punkte unten in deiner eigenen Sprache, so wie du sie jemandem aus deinem Kurs beibringen würdest. Schreib deine Erklärung auf und sammle alle an einem Ort. So entsteht Kapitel für Kapitel deine eigene Zusammenfassung, auf die du später zurückgreifen kannst. Wo ein Punkt eine Herleitung oder eine Rechnung nennt, führ sie aus.
+
+Ist wirklich jemand da, erklär es ihm laut, statt es aufzuschreiben. Skizziere dabei, was sich zeichnen lässt.
+
+- Bezugssysteme: Du <u>beschreibst</u> Ruhe und Bewegung in verschiedenen Bezugssystemen. Du <u>ordnest</u> Bezugssysteme als Inertialsysteme oder Nicht-Inertialsysteme ein und <u>begründest</u> deine Zuordnung unter anderem mit dem ersten Newtonschen Axiom.
+- Michelson-Morley: Du <u>beschreibst</u> den Aufbau eines Michelson-Interferometers und <u>erläuterst</u>, wie damit ein Ätherwind nachgewiesen werden sollte. Du <u>interpretierst</u> das Nullresultat als Problem für die einfache Ätherhypothese.
+- Postulate: Du <u>nennst</u> die beiden Einsteinschen Postulate. Du <u>begründest</u> mit dem zweiten Postulat, dass auf der Erde für einen aus einem mit halber Lichtgeschwindigkeit fliegenden Raumschiff ausgesandten Lichtpuls die Geschwindigkeit $c$ gemessen wird und nicht die anderthalbfache Lichtgeschwindigkeit.
+- Gleichzeitigkeit: Du <u>beschreibst</u> das Zug-Gedankenexperiment zur Gleichzeitigkeit im Zug- und im Bahnsteigsystem. Du <u>begründest</u> am Zug-Gedankenexperiment, dass Gleichzeitigkeit vom Inertialsystem abhängt.
+- Zeitdilatation: Du <u>erklärst</u> die Zeitdilatation mithilfe der Lichtuhr. Du <u>leitest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ <u>her</u>. Du <u>wendest</u> die Zeitdilatation auf die Myonen in der Atmosphäre <u>an</u>.
+- Längenkontraktion: Du <u>erklärst</u> die Längenkontraktion über den Wechsel des Bezugssystems. Du <u>wendest</u> die Beziehung $L = L_0 / \gamma$ auf die Myonen <u>an</u>.
+- Dopplerverschiebung: Du <u>erklärst</u> die Dopplerverschiebung des Lichts. Du <u>leitest</u> die Formel für die beobachtete Wellenlänge <u>her</u>. Du <u>begründest</u>, dass eine Rotverschiebung auf eine Bewegung von uns weg hinweist.
+:::
+
+Nach dem Selbstcheck folgen Aufgaben, die das Kapitel anwenden und vertiefen. Lassen sich mehrere Konzepte zu einer größeren Anwendung verbinden, steht sie hier, etwa das Garagenparadoxon, das Längenkontraktion und Relativität der Gleichzeitigkeit zusammenführt. Sonst vertiefen die Aufgaben einzelne Konzepte. Solche Aufgaben nutzen dieselben Aufgabentypen wie die Unterkapitel.
