@@ -50,3 +50,6 @@ Fachwissen/
 
 # Arbeitsnotizen, nicht Teil des Workbooks
 /docs/
+
+# LaTeX-Quellen der Masterarbeit, eigenes Overleaf-Projekt
+/Masterarbeiit Latex/
