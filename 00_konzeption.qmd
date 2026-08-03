@@ -41,35 +41,35 @@ Fachliche und technische Entscheidungen reichen über die CTML hinaus und werden
 
 #### Konzeptwechsel {#sec-konzept-konzeptwechsel}
 
-Zu vielen Themen bringen Lernende Vorstellungen mit. Sie stammen aus Alltagserfahrungen im Umgang mit den Phänomenen und aus der Alltagssprache [@duit2020alltagsvorstellungen, S. 339]. Weitere entstehen erst beim Lernen, weil die Darstellung des Stoffs selbst Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Die Physikdidaktik hält für diese Vorstellungen ein ganzes Begriffsfeld bereit (Alltagsvorstellungen, Schülervorstellungen, Präkonzepte, im Englischen häufig „misconceptions“ [@posner1982accommodation]). Viele davon sind erforscht und dokumentiert. Für den deutschsprachigen Raum versammelt das Lehrbuch „Schülervorstellungen und Physikunterricht“ die dokumentierten Vorstellungen quer durch die Schulphysik [@schecker2018schuelervorstellungen].
+Zu vielen Themen bringen Lernende Vorstellungen mit. Sie stammen aus Alltagserfahrungen im Umgang mit den Phänomenen und aus der Alltagssprache [@duit2020alltagsvorstellungen, S. 339]. Weitere entstehen erst beim Lernen, weil die Darstellung des Stoffs selbst Schlüsse nahelegt, die nur begrenzt tragen [@duit2020alltagsvorstellungen, S. 356]. Die Physikdidaktik verwendet dafür verschiedene Bezeichnungen, darunter Alltagsvorstellungen, Schülervorstellungen und Präkonzepte. In der englischsprachigen Literatur ist dafür häufig von „misconceptions“ die Rede [@posner1982accommodation; @krijtenburglewerissa2017quantum]. Für die Konzeption wird der Oberbegriff „Lernendenvorstellungen“ verwendet, weil er zur studentischen Zielgruppe passt. Viele davon sind erforscht und dokumentiert. Für den deutschsprachigen Raum versammelt das Lehrbuch „Schülervorstellungen und Physikunterricht“ die dokumentierten Vorstellungen quer durch die Schulphysik [@schecker2018schuelervorstellungen].
 
-Diese Vorstellungen sind oft hartnäckig und überstehen die bloße Benennung [@schecker2018physiklernen, S. 5], manche auch einen kognitiven Konflikt [@wilhelm2018strategien, S. 49]. Dass die Alltagsvorstellung am Ende ganz aufgegeben wird, gelingt nach den vorliegenden Untersuchungen nicht [@duit2020alltagsvorstellungen, S. 348]. Ein Konzeptwechsel ist deshalb kein Austausch, bei dem die alte Vorstellung gelöscht und durch die physikalisch richtige ersetzt wird: „Beim Conceptual Change geht es darum, Lernenden eine physikalische Sichtweise zu vermitteln und diese als eine besondere, vom Alltagsdenken in vielen Aspekten unterschiedliche Sichtweise zu verdeutlichen“ [@hopf2018conceptualchange, S. 35]. Posner u. a. nennen vier Bedingungen, unter denen dieser Wechsel gelingen kann. @tbl-konzept-posner führt sie auf.
+Diese Lernendenvorstellungen sind oft hartnäckig und überstehen die bloße Benennung [@schecker2018physiklernen, S. 5], manche auch einen kognitiven Konflikt [@wilhelm2018strategien, S. 49]. Dass die Alltagsvorstellung am Ende ganz aufgegeben wird, gelingt nach den vorliegenden Untersuchungen nicht [@duit2020alltagsvorstellungen, S. 348]. Ein Konzeptwechsel ist deshalb kein Austausch, bei dem die alte Vorstellung gelöscht und durch die physikalisch richtige ersetzt wird: „Beim Conceptual Change geht es darum, Lernenden eine physikalische Sichtweise zu vermitteln und diese als eine besondere, vom Alltagsdenken in vielen Aspekten unterschiedliche Sichtweise zu verdeutlichen“ [@hopf2018conceptualchange, S. 35]. Posner u. a. nennen vier Bedingungen, unter denen dieser Wechsel gelingen kann. @tbl-konzept-posner führt sie auf.
 
 | Bedingung | Bedeutung |
 |---|---|
-| Unzufriedenheit | Die Lernenden sind mit ihrer vorhandenen Vorstellung unzufrieden |
-| Verständlichkeit | Die neue Vorstellung ist logisch verständlich |
-| Plausibilität | Sie ist einleuchtend, also intuitiv plausibel |
-| Fruchtbarkeit | Sie ist in neuen Situationen erfolgreich |
+| Unzufriedenheit | Die Lernenden halten ihre vorhandene Vorstellung selbst nicht mehr für ausreichend |
+| Verständlichkeit | Die neue Vorstellung ist wenigstens in Grundzügen verstanden |
+| Plausibilität | Sie erscheint nicht nur nachvollziehbar, sondern intuitiv einleuchtend |
+| Fruchtbarkeit | Sie bewährt sich bei neuen Phänomenen und Situationen und beantwortet dort bisher offene Fragen |
 
-: Bedingungen für einen Konzeptwechsel (eigene Darstellung nach @duit2020alltagsvorstellungen, S. 348, dort nach @posner1982accommodation, S. 214) {#tbl-konzept-posner}
+: Bedingungen für einen Konzeptwechsel (eigene Darstellung nach @duit2020alltagsvorstellungen, S. 348, und @hopf2018conceptualchange, S. 28, dort nach @posner1982accommodation, S. 214) {#tbl-konzept-posner}
 
-Ein Konzeptwechsel ist erreicht, wenn die Lernenden Alltagsdenken und physikalische Konzepte bewusst nebeneinander stellen und beurteilen können, in welcher Situation welche Sichtweise und Erklärung tragfähig ist [@wilhelm2018strategien, S. 40]. Dorthin führen zwei Lernwege. Der kontinuierliche Weg entwickelt die vorhandene Vorstellung schrittweise weiter, der diskontinuierliche stellt sie einem Widerspruch gegenüber. Der kontinuierliche Weg kennt dabei mehrere Strategien, der diskontinuierliche im Wesentlichen eine, den kognitiven Konflikt. @tbl-konzept-strategien fasst sie zusammen.
+Ein Konzeptwechsel ist erreicht, wenn die Lernenden Alltagsdenken und physikalische Konzepte bewusst nebeneinander stellen und beurteilen können, in welcher Situation welche Sichtweise und Erklärung tragfähig ist [@wilhelm2018strategien, S. 40]. Dorthin führen zwei Lernwege. Der kontinuierliche Weg entwickelt die vorhandene Vorstellung schrittweise weiter, der diskontinuierliche stellt sie einem Widerspruch gegenüber. Der kontinuierliche Weg kennt dabei mehrere Strategien, der diskontinuierliche die Konfrontationsstrategie, die auf einen kognitiven Konflikt zielt. @tbl-konzept-strategien fasst sie zusammen.
 
 | Strategie | Kerngedanke |
 |---|---|
 | Anknüpfungsstrategie | Erfahrungen dienen als Ausgangspunkt, deren Alltagsverständnis wenig mit dem wissenschaftlichen Verständnis kollidiert |
 | Umdeutungsstrategie | Die Vorstellung ist nicht völlig falsch, sie enthält eine physikalisch sinnvolle Bedeutung, die umgedeutet wird |
 | Brückenstrategie | Zwischenschritte führen zu Übergangsbegriffen, die schrittweise bis zum Zielbegriff weiterentwickelt werden |
-| Konfrontationsstrategie | Ein Bild, ein Experiment oder gegenübergestellte Vorstellungen erzeugen einen kognitiven Konflikt |
+| Konfrontationsstrategie | Ein Widerspruch zur Erwartung der Lernenden, etwa durch ein Bild, ein Experiment oder gegenübergestellte Vorstellungen, zielt auf einen kognitiven Konflikt |
 
-: Strategien für den Umgang mit Schülervorstellungen (eigene Darstellung nach @hopf2022kompakt, S. 44--45) {#tbl-konzept-strategien}
+: Strategien für den Umgang mit Lernendenvorstellungen (eigene Darstellung nach @hopf2022kompakt, S. 44--45) {#tbl-konzept-strategien}
 
-In den roten Kästen setzt das Workbook diese Strategien um. Verwendet wird vor allem die Umdeutungsstrategie, seltener die Konfrontation.
+In den roten Kästen setzt das Workbook zwei dieser Strategien um. Verwendet wird vor allem die Umdeutungsstrategie, seltener die Konfrontation.
 
-Hat die Vorstellung einen richtigen Kern, für den die Physik einen eigenen Begriff führt, wird dieser benannt, etwa bei der Unterscheidung von Tempo und Geschwindigkeit. Wilhelm und Schecker nennen für das Umdeuten einen Vorteil auf der emotionalen Ebene, es wirke ermutigend statt entmutigend [@wilhelm2018strategien, S. 52].
+Umgedeutet wird, wenn die Vorstellung einen Kern enthält, der physikalisch trägt. Führt die Physik für diesen Kern einen eigenen Begriff, wird dieser benannt, etwa bei der Unterscheidung von Tempo und Geschwindigkeit. Bleibt die Vorstellung als Näherung gültig, wird stattdessen ihr Geltungsbereich benannt, etwa bei der einfachen Geschwindigkeitsaddition, die im Alltag unmessbar genau bleibt. Falsch wird die Vorstellung in beiden Fällen nicht. Sie reicht nur nicht aus, um das neue Konzept zu tragen. Wilhelm und Schecker nennen für das Umdeuten zusätzlich einen Vorteil auf der emotionalen Ebene, es wirke ermutigend statt entmutigend [@wilhelm2018strategien, S. 52].
 
-Konfrontiert wird dort, wo sich eine Vorstellung nicht einordnen lässt, weil an ihr nichts gültig bleibt. Auch die Literatur empfiehlt die Konfrontationsstrategie für Vorstellungen, die sich auf einem kontinuierlichen Weg nicht verändern lassen [@hopf2022kompakt, S. 45].
+Konfrontiert wird, wo sich das Zielkonzept nicht durch eine Umdeutung der vorhandenen Vorstellung entwickeln lässt. Auch die Literatur empfiehlt die Konfrontationsstrategie für Vorstellungen, die sich auf einem kontinuierlichen Weg nicht verändern lassen [@hopf2022kompakt, S. 45].
 
 Was ein Buch davon leisten kann, ist begrenzt. Die beschriebenen Strategien stammen aus dem Unterricht und rechnen mit einer Lehrkraft, die Vorstellungen erfragt, zurückspiegelt und im Gespräch bearbeitet. Ein Text kann nur eine Vorstellung benennen, die die Lesenden voraussichtlich teilen, und plausibel machen, dass sie für einen bestimmten Kontext nicht trägt. Das Reflektieren und den Wechsel leisten die Lesenden selbst, denn „Wissen kann nicht übergeben werden“ [@duit2020alltagsvorstellungen, S. 349].
 
@@ -305,7 +305,7 @@ Wie iterativ der Prozess tatsächlich war, zeigt ein echtes Beispiel. Die Besetz
 5. Bedienkonzept: „Der Photonen-senden-Button ist komplett unnötig, entferne den. Außerdem ist es besser, wenn man mit einem Button zwischen der normalen Besetzung und der Besetzungsinversion wechseln kann; sonst ist es verwirrend, wenn zwei Prozesse gleichzeitig nebeneinander ablaufen.“ Das Ergebnis: ein Umschalter statt der beiden nebeneinander laufenden Darstellungen.
 6. Bugfix und Vereinfachung: „Der Kopf des Pfeils bleibt bei der normalen Besetzung nach dem Ablauf stehen, bitte korrigiere das, der sollte wieder verschwinden. Und lass die spontane Emission nach der Absorption weg, wir haben die spontane Emission schon einmal drin, das reicht.“ Der stehenbleibende Pfeilkopf wurde behoben, und die gekoppelte spontane Emission nach der Absorption entfiel.
 
-Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. Am wichtigsten ist, zuerst selbst eine Idee zu haben, wie sich etwas visualisieren lässt. Dafür wurde in der Regel zunächst recherchiert, welche Visualisierungen es bereits gibt, und auch didaktisches Wissen zum Thema floss ein. Bei der speziellen Relativitätstheorie ist es beispielsweise wichtig, mehrere Beobachtungsperspektiven zu zeigen, weil die Vorstellung eines absoluten Bezugssystems ein häufiges Präkonzept ist. Dann wird diese Idee beschrieben, meist als sehr roher erster Prompt, manchmal auch mit dem Bild einer Skizze, die die KI zuerst beschreiben soll. Danach wird das Ergebnis iterativ angeschaut und angepasst, je nachdem, was fehlt oder was womöglich mehr verwirrt, als es hilft.
+Aus solchen Verläufen hat sich ein Muster für neue Aufträge herausgebildet. Am wichtigsten ist, zuerst selbst eine Idee zu haben, wie sich etwas visualisieren lässt. Dafür wurde in der Regel zunächst recherchiert, welche Visualisierungen es bereits gibt, und auch didaktisches Wissen zum Thema floss ein. Bei der speziellen Relativitätstheorie ist es beispielsweise wichtig, mehrere Beobachtungsperspektiven zu zeigen, weil die Annahme eines absoluten Bezugssystems eine häufige Lernendenvorstellung ist. Dann wird diese Idee beschrieben, meist als sehr roher erster Prompt, manchmal auch mit dem Bild einer Skizze, die die KI zuerst beschreiben soll. Danach wird das Ergebnis iterativ angeschaut und angepasst, je nachdem, was fehlt oder was womöglich mehr verwirrt, als es hilft.
 
 ### Analogien
 
@@ -537,9 +537,11 @@ Hergeleitet wird nur, wo der Weg mit dem Vorwissen der Zielgruppe gangbar ist un
 
 ### Rote Kästen {#sec-konzept-rote-kaesten}
 
-Für die Konzeption zählt, welche der [Vorstellungen](#sec-konzept-konzeptwechsel) die Lesenden voraussichtlich mitbringen oder beim Lesen entwickeln und wie das Workbook ihnen begegnet. Hier setzen die roten Kästen an. Sie adressieren eine Vorstellung gezielt und regen die Lesenden an, die eigene Vorstellung zu reflektieren.
+Für die Konzeption zählt, welche der [Lernendenvorstellungen](#sec-konzept-konzeptwechsel) die Lesenden voraussichtlich mitbringen oder beim Lesen entwickeln und wie das Workbook ihnen begegnet. Hier setzen die roten Kästen an. Sie adressieren eine Lernendenvorstellung gezielt und regen die Lesenden an, die eigene Vorstellung zu reflektieren.
 
 Ein roter Kasten zielt auf einen Konzeptwechsel ab. Beim Umdeuten ordnet er die Vorstellung ein und zeigt, wo sie gültig bleibt und wo eine andere Sichtweise zum Tragen kommt. Beim Konfrontieren stellt er ihr ein Phänomen gegenüber, das sich mit ihr nicht erklären lässt.
+
+Die in @tbl-konzept-posner aufgeführten Bedingungen dienen bei der Konzeption der roten Kästen als Orientierung dafür, unter welchen Voraussetzungen Lernende eine neue fachliche Vorstellung annehmen und ihre bisherige Vorstellung erweitern oder verändern können. Sie bilden kein Schema, das jeder rote Kasten vollständig erfüllen muss.
 
 Jeder Kasten ist gleich aufgebaut. Der Titel ist die Vorstellung selbst, als Frage formuliert, so erkennen die Lesenden den eigenen Gedanken wieder. Der Text deutet dann um oder konfrontiert. Das Warnzeichen vor dem Titel zeigt schon beim Überfliegen, dass hier eine naheliegende Annahme auf dem Prüfstand steht. Wo die Literatur eine Vorstellung dokumentiert, steht der Beleg dabei. Die übrigen stammen aus der eigenen Auseinandersetzung mit dem Stoff.
 
@@ -552,9 +554,9 @@ Das Niveauschema legt das nahe: Das Atom nimmt Energie auf, sitzt eine Weile im 
 In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie auch ohne Licht loswerden, zum Beispiel durch Stöße mit seinen Nachbarn: Die Anregungsenergie geht dann in Bewegung über. Das schwarze T-Shirt nimmt diesen Weg: Es wird warm statt zu leuchten.
 :::
 
-An diesem Beispiel lassen sich die Bedingungen aus @tbl-konzept-posner prüfen. Die Unzufriedenheit weckt der Alltagsbezug. Wer die Annahme auf das schwarze T-Shirt anwendet, erwartet ein Leuchten, doch tatsächlich wird das T-Shirt warm. Verständlich ist die neue Sicht, weil sie mit vertrauten Konzepten arbeitet. Stöße übertragen Energie, aus Anregung wird Bewegung, die Energie bleibt dabei erhalten. Plausibel wird sie, weil sie beide Fälle klärt und die alte Annahme als Spezialfall des ungestörten Atoms stehen lässt. Fruchtbar ist eine neue Vorstellung, wenn sie sich auf neue Situationen und Phänomene übertragen lässt und dort weiterhilft. Das geschieht noch im selben Kapitel. Beim Helium-Neon-Laser übergibt das angeregte Helium seine Energie durch einen Stoß an das Neon. Ein Photon könnte diesen Schritt nicht leisten, seine Energie passt nicht zum Neon-Niveau. Erst der Energieübergang durch Stöße macht diesen Pumpmechanismus erklärbar.
+An diesem Beispiel lassen sich die Bedingungen aus @tbl-konzept-posner zeigen. Unzufriedenheit kann der Alltagsbezug anbahnen. Wer die Annahme auf das schwarze T-Shirt anwendet, erwartet ein Leuchten, doch tatsächlich wird das T-Shirt warm. Verständlich ist die neue Sicht, weil sie mit vertrauten Konzepten arbeitet. Stöße übertragen Energie, aus Anregung wird Bewegung, die Energie bleibt dabei erhalten. Plausibel wird sie, weil sie beide Fälle klärt und die alte Annahme als Spezialfall des ungestörten Atoms stehen lässt. Fruchtbar wird die neue Sicht noch im selben Kapitel, denn beim Helium-Neon-Laser überträgt das angeregte Helium seine Energie durch einen Stoß auf das Neon. Ein Photon könnte diesen Schritt nicht leisten, seine Energie passt nicht zum Neon-Niveau. Erst der Energieübergang durch Stöße macht diesen Pumpmechanismus erklärbar.
 
-Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig. Gerade angehende Physiklehrende sollten einen Blick dafür entwickeln, wo Vorstellungen sitzen, die dem Verständnis im Weg stehen.
+Für die Zielgruppe des Workbooks sind die roten Kästen besonders wichtig. Gerade angehende Physiklehrende sollten einen Blick dafür entwickeln, welche Lernendenvorstellungen dem Verständnis im Weg stehen.
 
 Weil die Zielgruppe diesen Blick aus anderen Gebieten der Physik teils schon mitbringt, kann eine Aufgabe eine Vorstellung auch direkt zur Beurteilung vorlegen. Der rote Kasten steht dann in der Lösung, und die Auflösung kommt erst nach dem eigenen Versuch. So lässt [eine Aufgabe in Kapitel 1](01_srt_raum_und_zeit_umbau.qmd#sec-umbau-kreisbahn-aufgabe) die Aussage eines Schülers zu einer Kreisbewegung mit konstantem Tempo beurteilen: „Die Geschwindigkeit bleibt gleich, also wird der Körper nicht beschleunigt.“
 
@@ -581,7 +583,7 @@ Das eigene Erklären wiederholt die Inhalte des Kapitels und gibt Rückmeldung �
 
 Die Erklärungen sammeln sich an einem Ort. Über die Kapitel hinweg entsteht daraus eine eigene Zusammenfassung, die für die Prüfungsvorbereitung bleibt. Mündlich zu erklären wirkt möglicherweise stärker als schriftlich [@fiorellamayer2021generative, S. 343], setzt aber ein Gegenüber voraus. Der Selbstcheck bietet die mündliche Form deshalb an und bleibt in der Grundform schriftlich, weil sie allein machbar ist und ein Ergebnis hinterlässt.
 
-Die Liste steht offen im Kasten. Jeder Eintrag nennt ein Unterkapitel und dahinter dessen Lernziele im Wortlaut des grünen Kastens. Die grüne Auszeichnung entfällt, denn die Ziele kündigen hier nichts mehr an, sie leiten die Erklärung an.
+Die Liste steht offen im Kasten. Jeder Eintrag nennt ein Unterkapitel und dahinter dessen Lernziele, unverändert im Wortlaut. Grün wird die Liste hier nicht ausgezeichnet, denn Aufgaben stehen im grauen Kasten. Innerhalb der Aufgabe geben die Lernziele der Erklärung ihre Struktur.
 
 So sieht das Element aus, mit dem vollständigen Selbstcheck aus Kapitel 1:
 
@@ -591,7 +593,7 @@ So sieht das Element aus, mit dem vollständigen Selbstcheck aus Kapitel 1:
   Selbstcheck
 </span>
 
-<u>Erkläre</u> die Punkte unten in deiner eigenen Sprache, so wie du sie jemandem aus deinem Kurs beibringen würdest. Schreib deine Erklärung auf und sammle alle an einem Ort. So entsteht Kapitel für Kapitel deine eigene Zusammenfassung, auf die du später zurückgreifen kannst. Wo ein Punkt eine Herleitung oder eine Rechnung nennt, führ sie aus.
+<u>Erkläre</u> die Punkte unten in deiner eigenen Sprache, so wie du sie jemandem aus deinem Kurs beibringen würdest. Schreib deine Erklärungen auf und sammle sie an einem Ort. So entsteht Kapitel für Kapitel deine eigene Zusammenfassung, auf die du später zurückgreifen kannst. Wo ein Punkt eine Herleitung oder eine Rechnung nennt, führ sie aus.
 
 Ist wirklich jemand da, erklär es ihm laut, statt es aufzuschreiben. Skizziere dabei, was sich zeichnen lässt.
 
