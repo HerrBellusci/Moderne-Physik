@@ -1,0 +1,62 @@
+/* Scoped to the Michelson-Morley figures; other layouts are unchanged. */
+.mp-mm-figure .srt-workbook-stage svg {
+  aspect-ratio: auto;
+  font-family: inherit;
+}
+.mp-mm-figure .srt-workbook-controls,
+.mp-aufbau-controls {
+  font: inherit;
+}
+.mp-boat-heading {
+  min-height: 3.5rem;
+  padding: .8rem 8rem .8rem 1rem;
+  color: #16334a;
+  font-weight: 700;
+  text-align: left;
+  background: #fff;
+}
+.mp-boat-clocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+  padding: .8rem .5rem;
+  background: #fff;
+  border-top: 1px solid #d5dce2;
+  font: inherit;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+.mp-boat-clocks > span { display: grid; gap: .1rem; }
+.mp-boat-clocks strong::before { content: ''; display: inline-block; width: .65em; height: .65em; border-radius: 50%; margin-right: .4em; background: #eaa544; }
+.mp-boat-clocks > span:last-child strong::before { background: #7658b0; }
+.mp-boat-clocks > span + span { border-left: 1px solid #bdd5e0; }
+.mp-mm-figure [data-srt-animation="aufbau"] { background: #101725; }
+.mp-aufbau-controls {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .4rem;
+  margin: 0;
+  padding: .7rem .8rem;
+  border-top: 1px solid #374151;
+}
+.mp-aufbau-controls button { font: inherit; font-size: .85rem; padding: .45rem .15rem; min-width: 0; }
+.mp-aufbau-controls button { background: #1b293b; color: #eaf3f9; border-color: #7c99ae; }
+.mp-aufbau-controls button:hover { background: #30435a; }
+.mp-aufbau-controls button[aria-pressed="true"] { background: #146b7d; border-color: #8bd9e5; color: #fff; }
+.mp-mm-figure .mp-aufbau-explanation { font: inherit; margin: 0; padding: .2rem 1rem 1rem; text-align: left; color: #f1f5f9; }
+.mp-mm-figure [data-srt-animation="mm"] { background: #101725; }
+.mp-mm-controls { padding: .8rem 1rem; color: #f1f5f9; font: inherit; text-align: left; }
+.mp-mm-choices { display: flex; gap: .6rem; margin-bottom: .7rem; }
+.mp-mm-choices button { flex: 1; min-width: 0; padding: .45rem .5rem; border: 1px solid #7c99ae; border-radius: .35rem; background: #1b293b; color: #fff; font: inherit; cursor: pointer; }
+.mp-mm-choices button[aria-pressed="true"] { background: #146b7d; border-color: #8bd9e5; box-shadow: inset 0 -3px #8bd9e5; font-weight: 700; }
+.mp-mm-choices button:focus-visible,
+.mp-mm-angle input:focus-visible { outline: 3px solid #ffd166; outline-offset: 3px; }
+.mp-mm-angle { display: grid; grid-template-columns: 1fr auto; gap: .25rem .8rem; font: inherit; }
+.mp-mm-angle-value { font-variant-numeric: tabular-nums; }
+.mp-mm-angle input { grid-column: 1 / -1; width: 100%; margin: 0; min-height: 1.6rem; accent-color: #8bd9e5; cursor: pointer; }
+@media (max-width: 600px) {
+  .mp-mm-figure [data-srt-animation="mm"] svg text { font-size: 36px; }
+  .mp-aufbau-controls { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .mp-aufbau-controls button { grid-column: span 2; }
+  .mp-aufbau-controls button:nth-child(n+4) { grid-column: span 3; }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="900" height="550" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<use transform="translate(360.29)" xlink:href="#a"/>
+	<g id="c">
+		<g id="d">
+			<g id="a">
+				<path d="m25.08 37.027 121.36 452.92" fill="#e6e6e6" stroke="#e6e6e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="10"/>
+				<path d="m121.78 472.05 32.034 45.426 5.0266-55.357c-4.3916 5.491-10.332 9.2276-16.837 10.964-6.5051 1.7368-20.223-1.0334-20.223-1.0334z" fill="#e6e6e6" stroke="#e6e6e6" stroke-linejoin="round"/>
+			</g>
+			<use transform="translate(90.073)" xlink:href="#a"/>
+		</g>
+		<use transform="translate(180.14)" xlink:href="#d"/>
+	</g>
+	<use transform="translate(450.36)" xlink:href="#c"/>
+	<ellipse cx="451.93" cy="285.43" rx="300.13" ry="140.37" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+	<circle cx="451.93" cy="285.43" r="29.948" fill="#ff0"/>
+	<g id="b" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+		<path d="m450.06 204.31-32.034-45.427-5.027 55.358c4.3917-5.4911 10.332-9.2277 16.837-10.964 6.5053-1.7368 20.224 1.0334 20.224 1.0334z"/>
+		<path d="m424.77 184.09 27.16 101.36" fill="#255e91" stroke-linecap="round" stroke-width="7"/>
+	</g>
+	<circle cx="451.93" cy="285.43" r="29.948" fill="#ff0"/>
+	<use transform="rotate(240.01 301.39 326.24)" width="100%" height="100%" xlink:href="#b"/>
+	<use transform="rotate(60.007,522.39,546.05)" width="100%" height="100%" xlink:href="#b"/>
+	<circle cx="712.88" cy="354.76" r="24.682"/>
+	<path d="m712.88 330.08c-9.672-0.11802-19.022 6.0605-22.706 15.004-3.8888 8.8258-1.8964 19.813 4.8435 26.711 4.5801 4.8454 11.195 7.6776 17.862 7.6482-8.3146-4.088-13.801-13.184-13.547-22.445 0.0547-9.2425 5.8222-18.127 14.237-21.947 3.2551-1.5226 6.8459-2.3197 10.44-2.3167-3.4332-1.7404-7.286-2.657-11.129-2.6548z" fill="#00f"/>
+	<circle cx="190.81" cy="216.21" r="24.682"/>
+	<path d="m202.01 194.18c-9.2116-0.0975-18.17 5.4779-22.146 13.789-4.2248 8.3503-3.0557 19.043 2.8618 26.291 2.2014 2.7605 5.0035 5.0392 8.1563 6.6289 9.672 0.11724 19.021-6.0621 22.704-15.006 3.8881-8.8255 1.8945-19.812-4.8454-26.709-1.9372-2.0317-4.2236-3.7309-6.7306-4.9939z" fill="#00f"/>
+	<g font-family="DejaVu Sans" font-size="35" font-weight="bold">
+		<text x="490" y="336">Sonne</text>
+		<text x="175" y="182" text-anchor="end">Erde</text>
+		<text x="622" y="102" text-anchor="middle">Ätherwind</text>
+	</g>
+</svg>

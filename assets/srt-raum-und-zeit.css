@@ -1,0 +1,18 @@
+/* Lange Rechnungen bleiben auch auf schmalen Bildschirmen in ihrer Textspalte. */
+#quarto-document-content mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+
+/* MathJax setzt bei nummerierten Formeln eine Mindestbreite direkt am Element.
+   Die volle Formelbreite bleibt am inneren SVG erhalten und ist scrollbar. */
+#quarto-document-content mjx-container[display="true"][width="full"] {
+  min-width: 0 !important;
+}
+
+#sichern-und-anwenden .mp-task-kind {
+  max-width: 100%;
+  white-space: normal;
+}

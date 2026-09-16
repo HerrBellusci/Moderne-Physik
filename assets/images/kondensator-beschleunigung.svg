@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 280" role="img" aria-labelledby="kondensator-title kondensator-desc">
+  <title id="kondensator-title">Beschleunigung eines Protons im Plattenkondensator</title>
+  <desc id="kondensator-desc">Zwischen zwei parallelen Platten liegt die Spannung U an. Die linke Platte ist positiv geladen, die rechte negativ. Das elektrische Feld E zeigt nach rechts. Auf ein Proton zwischen den Platten wirkt die elektrische Kraft F el ebenfalls nach rechts und beschleunigt es zur negativen Platte. Das Feld ist als homogen dargestellt, Randeffekte werden vernachlässigt.</desc>
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#263445">
+    <rect x="153" y="34" width="18" height="188" rx="3" fill="#f3d8d3" stroke="#a5645b" stroke-width="1.6"/>
+    <rect x="549" y="34" width="18" height="188" rx="3" fill="#e0ebf5" stroke="#477eaa" stroke-width="1.6"/>
+
+    <g font-size="23" text-anchor="middle">
+      <text x="134" y="65">+</text>
+      <text x="134" y="107">+</text>
+      <text x="134" y="149">+</text>
+      <text x="134" y="191">+</text>
+      <text x="586" y="65">−</text>
+      <text x="586" y="107">−</text>
+      <text x="586" y="149">−</text>
+      <text x="586" y="191">−</text>
+    </g>
+
+    <g fill="none" stroke="#8795a5" stroke-width="1.8">
+      <path d="M188 77H524"/>
+      <path d="M188 199H524"/>
+    </g>
+    <g fill="#8795a5">
+      <path d="M532 77 520 71V83Z"/>
+      <path d="M532 199 520 193V205Z"/>
+    </g>
+    <text x="360" y="64" text-anchor="middle" font-style="italic" font-size="18">E</text>
+
+    <circle cx="262" cy="138" r="14" fill="#ffce55" stroke="#dd9b23" stroke-width="1.6"/>
+    <text x="262" y="144" text-anchor="middle" font-size="20">+</text>
+    <text x="262" y="174" text-anchor="middle" font-size="15">Proton</text>
+
+    <path d="M281 138H408" fill="none" stroke="#da891d" stroke-width="2.6"/>
+    <path d="M418 138 404 131V145Z" fill="#da891d"/>
+    <text x="344" y="123" font-style="italic" font-size="18">F</text>
+    <text x="356" y="128" font-size="11">el</text>
+
+    <g fill="none" stroke="#929dab" stroke-width="1.3">
+      <path d="M162 227V250H340"/>
+      <path d="M558 227V250H380"/>
+    </g>
+    <text x="360" y="257" text-anchor="middle" font-style="italic" font-size="18">U</text>
+  </g>
+</svg>

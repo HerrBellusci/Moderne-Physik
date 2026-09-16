@@ -1,0 +1,13 @@
+.srt-workbook-stage[data-srt-animation="sim"],
+.srt-workbook-stage[data-srt-animation="lightning"],
+.srt-workbook-stage[data-srt-animation="lightning-setup"] {
+  background: #fff;
+  font-family: inherit;
+}
+
+.srt-workbook-stage[data-srt-animation="sim"] > svg,
+.srt-workbook-stage[data-srt-animation="lightning"] > svg,
+.srt-workbook-stage[data-srt-animation="lightning-setup"] > svg {
+  aspect-ratio: auto;
+  font-family: inherit;
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 590" font-family="sans-serif" fill="#243447"><rect width="560" height="660" fill="white" />
+<text x="55" y="229" text-anchor="middle" font-size="25" fill="#243447" transform="rotate(-90 55 229)">Abstand zum Myon in km</text>
+<rect x="242" y="48" width="156" height="312.107864" fill="#eef2fa" />
+<line x1="154" y1="78.0" x2="442" y2="78.0" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="87.0" text-anchor="end" font-size="27" fill="#607286">0</text>
+<line x1="154" y1="138.4" x2="442" y2="138.4" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="147.4" text-anchor="end" font-size="27" fill="#607286">2</text>
+<line x1="154" y1="198.8" x2="442" y2="198.8" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="207.8" text-anchor="end" font-size="27" fill="#607286">4</text>
+<line x1="154" y1="259.2" x2="442" y2="259.2" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="268.2" text-anchor="end" font-size="27" fill="#607286">6</text>
+<line x1="154" y1="319.6" x2="442" y2="319.6" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="328.6" text-anchor="end" font-size="27" fill="#607286">8</text>
+<line x1="154" y1="380.0" x2="442" y2="380.0" stroke="#dce5ea" stroke-width="2" />
+<text x="131" y="389.0" text-anchor="end" font-size="27" fill="#607286">10</text>
+<line x1="154" y1="78" x2="154" y2="380" stroke="#a6b3c4" stroke-width="2" />
+<line x1="207" y1="360.107864" x2="442" y2="360.107864" stroke="#243447" stroke-width="3" />
+<line x1="213" y1="362.107864" x2="205" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="234" y1="362.107864" x2="226" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="255" y1="362.107864" x2="247" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="276" y1="362.107864" x2="268" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="297" y1="362.107864" x2="289" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="318" y1="362.107864" x2="310" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="339" y1="362.107864" x2="331" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="360" y1="362.107864" x2="352" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="381" y1="362.107864" x2="373" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="402" y1="362.107864" x2="394" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<line x1="423" y1="362.107864" x2="415" y2="372.107864" stroke="#9aa8b8" stroke-width="1.5" />
+<rect x="292" y="360.107864" width="56" height="15" rx="3" fill="#a9b9c8" stroke="#243447" />
+<line x1="310" y1="68" x2="330" y2="88" stroke="#b54848" stroke-width="3" />
+<line x1="310" y1="88" x2="330" y2="68" stroke="#b54848" stroke-width="3" />
+<text x="280" y="437" text-anchor="middle" font-size="27" fill="#243447">Erdboden mit Detektor</text>
+<text x="280" y="495" text-anchor="middle" font-size="23" fill="#243447">Eigenlebensdauer im Beispiel: 2,2 µs</text>
+<text x="280" y="529" text-anchor="middle" font-size="23" fill="#243447">Zeit seit Entstehung: 2,20 µs</text>
+<text x="280" y="563" text-anchor="middle" font-size="23" fill="#243447">Myon zerfallen</text>
+<text x="280" y="30" text-anchor="middle" font-size="23" font-weight="600" fill="#243447">Myonsystem</text></svg>

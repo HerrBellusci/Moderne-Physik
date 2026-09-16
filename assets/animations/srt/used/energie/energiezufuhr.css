@@ -1,0 +1,131 @@
+.srt-workbook-stage[data-srt-animation="energy-increments"] {
+  width: min(100%, 640px);
+  background: #fff;
+  color: #243447;
+  font-family: inherit;
+}
+
+.srt-workbook-stage[data-srt-animation="energy-increments"] > svg {
+  aspect-ratio: 640 / 330;
+  font-family: inherit;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: .5rem 1rem;
+  padding: .8rem .9rem 0;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-metric {
+  min-width: 0;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-label {
+  margin-bottom: .2rem;
+  color: #526675;
+  font-size: .87rem;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-energy,
+[data-srt-animation="energy-increments"] .energy-increments-speed {
+  font-size: 1.12rem;
+  color: #0b7380;
+  white-space: nowrap;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-controls {
+  padding: 0 .9rem .75rem;
+  font: inherit;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-change {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .2rem .8rem;
+  margin: 0 0 .8rem;
+  font-size: .91rem;
+  font-variant-numeric: tabular-nums;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+
+[data-srt-animation="energy-increments"] button {
+  min-height: 2.75rem;
+  margin: 0;
+  padding: .4rem .65rem;
+  border: 1px solid #bcc9d2;
+  border-radius: 8px;
+  background: #fff;
+  color: #243447;
+  font: inherit;
+  font-size: .88rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+[data-srt-animation="energy-increments"] button.energy-increments-add {
+  background: #eaf5f5;
+  border-color: #0b8793;
+  box-shadow: inset 0 0 0 1px #0b8793;
+}
+
+[data-srt-animation="energy-increments"] button:hover:not(:disabled) {
+  border-color: #0b8793;
+  background: #eaf5f5;
+}
+
+[data-srt-animation="energy-increments"] button:focus-visible {
+  outline: 3px solid #5f9aa2;
+  outline-offset: 2px;
+}
+
+[data-srt-animation="energy-increments"] button:disabled {
+  color: #7d8790;
+  background: #f5f7f8;
+  border-color: #d4dce1;
+  box-shadow: none;
+  cursor: default;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[data-srt-animation="energy-increments"] .energy-increments-limit-note {
+  margin: .6rem 0 0;
+  color: #526675;
+  font-size: .9rem;
+}
+
+@media (max-width: 460px) {
+  [data-srt-animation="energy-increments"] .energy-increments-results {
+    grid-template-columns: 1fr;
+    gap: .55rem;
+  }
+
+  [data-srt-animation="energy-increments"] .energy-increments-results,
+  [data-srt-animation="energy-increments"] .energy-increments-controls {
+    padding-left: .65rem;
+    padding-right: .65rem;
+  }
+
+  [data-srt-animation="energy-increments"] .energy-increments-actions {
+    gap: .45rem;
+  }
+}

@@ -1,0 +1,145 @@
+.srt-workbook-stage[data-srt-animation="momentum-comparison"] {
+  width: min(100%, 640px);
+  background: #fff;
+  color: #243447;
+  font-family: inherit;
+}
+
+.srt-workbook-stage[data-srt-animation="momentum-comparison"] > svg {
+  aspect-ratio: 640 / 350;
+  font-family: inherit;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-views {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-views {
+  padding: .45rem .9rem .1rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-views legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[data-srt-animation="momentum-comparison"] button {
+  margin: 0 .3rem .15rem 0;
+  min-height: 2.75rem;
+  padding: .35rem .65rem;
+  border: 1px solid #bcc9d2;
+  border-radius: 8px;
+  background: #fff;
+  color: #243447;
+  font: inherit;
+  font-size: .94rem;
+  cursor: pointer;
+}
+
+[data-srt-animation="momentum-comparison"] button:hover {
+  border-color: #0b8793;
+}
+
+[data-srt-animation="momentum-comparison"] button[aria-pressed="true"] {
+  background: #eaf5f5;
+  border-color: #0b8793;
+  box-shadow: inset 0 0 0 1px #0b8793;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-controls {
+  padding: .3rem .9rem .6rem;
+  font: inherit;
+  font-size: .95rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-range-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .15rem .7rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-presets {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-presets legend {
+  float: none;
+  width: auto;
+  margin: 0 0 .2rem;
+  padding: 0;
+  color: #526675;
+  font: inherit;
+  font-size: .9rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-presets button {
+  font-size: .86rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-speed,
+[data-srt-animation="momentum-comparison"] .momentum-results {
+  font-variant-numeric: tabular-nums;
+}
+
+[data-srt-animation="momentum-comparison"] input[type="range"] {
+  display: block;
+  width: 100%;
+  min-height: 2.75rem;
+  margin: .1rem 0;
+  accent-color: #0b8793;
+}
+
+[data-srt-animation="momentum-comparison"] button:focus-visible,
+[data-srt-animation="momentum-comparison"] input:focus-visible {
+  outline: 3px solid #5f9aa2;
+  outline-offset: 2px;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-results {
+  display: grid;
+  gap: .3rem;
+  margin: .4rem 0;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-summary,
+[data-srt-animation="momentum-comparison"] .momentum-momenta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .25rem 1.15rem;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-classic-value {
+  color: #97541c;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-rel-value {
+  color: #0b7380;
+}
+
+[data-srt-animation="momentum-comparison"] .momentum-difference {
+  font-size: .92rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 420px) {
+  [data-srt-animation="momentum-comparison"] .momentum-controls,
+  [data-srt-animation="momentum-comparison"] .momentum-views {
+    padding-left: .65rem;
+    padding-right: .65rem;
+  }
+}

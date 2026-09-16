@@ -1,0 +1,12 @@
+.srt-workbook-stage:is([data-srt-animation="myon-klassisch"], [data-srt-animation="myon-relativistisch"], [data-srt-animation="ausgangsproblem"], [data-srt-animation="myon-system-kontrahiert"]) { background: #fff; color: #243447; }
+.srt-workbook-stage:is([data-srt-animation="myon-klassisch"], [data-srt-animation="myon-relativistisch"], [data-srt-animation="ausgangsproblem"], [data-srt-animation="myon-system-kontrahiert"]) > svg { aspect-ratio: auto; }
+.muon-heading { padding: .8rem .8rem .1rem; font-size: 1rem; font-weight: 600; text-align: center; }
+.muon-values { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: .3rem .65rem; padding: .7rem .8rem; margin: 0 .7rem; border: 1px solid #dce5ea; border-radius: 9px; font-size: .95rem; text-align: left; }
+.muon-values dt { font-weight: 400; }
+.muon-values dd { margin: 0; align-self: end; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.muon-status { padding: .7rem .8rem .2rem; font-size: 1rem; min-height: 2.5rem; text-align: center; }
+.muon-status[data-outcome="decay"] { color: #b54848; }
+.muon-status[data-outcome="arrival"] { color: #0b796f; }
+.muon-reset { position: absolute; left: .65rem; bottom: .65rem; padding: .35rem .65rem; min-height: 2.75rem; border: 1px solid #bcc9d2; border-radius: 8px; background: #fff; color: #243447; font: inherit; font-size: .9rem; cursor: pointer; }
+.muon-reset:focus-visible { outline: 3px solid #5f9aa2; outline-offset: 2px; }
+@media (max-width: 420px) { .muon-values { margin: 0 .45rem; padding: .55rem; gap: .4rem; } }

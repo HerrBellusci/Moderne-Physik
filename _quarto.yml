@@ -1,0 +1,47 @@
+project:
+  type: book
+  post-render: tools/strip-polyfill.py
+  resources:
+    - assets/**
+    - "Videos einbinden/**"
+
+book:
+  title: "Interaktives Quarto-Workbook Moderne Physik"
+  author: "Physik Belluni"
+  date: today
+  chapters:
+    - index.qmd
+    - 01_srt_raum_und_zeit_umbau.qmd
+    - 03_srt_impuls_und_energie_umbau.qmd
+    - 02_laser_ausflug_umbau.qmd
+    - references.qmd
+
+lang: de
+filters:
+  - tools/learning-goal-icons.lua
+  - multibib
+citeproc: false
+multibib:
+  grundlagen: references-grundlagen.bib
+  weiterfuehrend: references-weiterfuehrend.bib
+
+crossref:
+  chapters: true
+  fig-title: Veranschaulichung
+  fig-prefix: Veranschaulichung
+
+format:
+  html:
+    theme: [cosmo, assets/no-webfont.scss]
+    crossrefs-hover: false
+    html-math-method:
+      method: mathjax
+      url: assets/mathjax/tex-svg-full.js
+    css:
+      - assets/learning-boxes.css
+      - assets/fonts/source-sans-pro.css
+    include-after-body: assets/toc-in-sidebar.html
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    number-sections: false

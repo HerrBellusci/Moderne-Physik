@@ -1,0 +1,525 @@
+:root {
+  --mp-ink: #172033;
+  --mp-muted: #516173;
+  --mp-slate: #64748b;
+  --mp-green: #2e7d50;
+  --mp-amber: #d9941e;
+  --mp-cyan: #0097a7;
+  --mp-red: #c2414b;
+  --mp-blue: #2563eb;
+  --mp-violet: #6d5dfc;
+  --mp-gold: #a16207;
+  --mp-box-margin-top: 1rem;
+  --mp-box-padding-top: 1rem;
+  --mp-box-border-top: 1px;
+  --mp-goal-margin-top: 0.75rem;
+  --mp-goal-padding-top: 0.6rem;
+  --mp-task-title-margin-top: 0.35rem;
+  --mp-task-icon-size: 1.4rem;
+}
+
+.mp-box {
+  --mp-accent: var(--mp-slate);
+  --mp-bg: #ffffff;
+  margin: var(--mp-box-margin-top) 0 1rem;
+  padding: var(--mp-box-padding-top) 1.1rem 1rem;
+  border: var(--mp-box-border-top) solid rgba(100, 116, 139, 0.28);
+  border-left: 0.38rem solid var(--mp-accent);
+  border-radius: 0.5rem;
+  background: var(--mp-bg);
+  box-shadow: 0 0.25rem 0.9rem rgba(23, 32, 51, 0.045);
+}
+
+.mp-box > :last-child {
+  margin-bottom: 0;
+}
+
+.mp-title {
+  margin: 0 0 0.45rem;
+  color: var(--mp-accent);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.mp-goal {
+  --mp-accent: var(--mp-green);
+  --mp-bg: #f4fbf7;
+  border-color: rgba(46, 125, 80, 0.28);
+}
+
+.mp-pre {
+  --mp-accent: var(--mp-red);
+  --mp-bg: #fff5f6;
+  border-color: rgba(194, 65, 75, 0.28);
+}
+
+.mp-misconception {
+  --mp-accent: var(--mp-red);
+  --mp-bg: #fff5f6;
+  border-color: rgba(194, 65, 75, 0.28);
+}
+
+.mp-misconception .mp-title::before {
+  content: "\26A0\FE0E\00A0";
+  font-weight: 800;
+}
+
+.mp-problem {
+  --mp-accent: var(--mp-ink);
+  --mp-bg: #f7f9fb;
+  border-color: rgba(23, 32, 51, 0.22);
+}
+
+.mp-lecture {
+  --mp-accent: var(--mp-red);
+  --mp-bg: #fff5f6;
+  border-color: rgba(194, 65, 75, 0.28);
+}
+
+.mp-sim {
+  --mp-accent: var(--mp-slate);
+  --mp-bg: #f7f9fb;
+  border-color: rgba(100, 116, 139, 0.26);
+}
+
+.mp-math {
+  --mp-accent: var(--mp-violet);
+  --mp-bg: #f7f5ff;
+  border-color: rgba(109, 93, 252, 0.28);
+}
+
+.mp-secure {
+  --mp-accent: var(--mp-gold);
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
+}
+
+.mp-definition {
+  --mp-accent: var(--mp-gold);
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
+}
+
+.mp-core {
+  --mp-accent: var(--mp-gold);
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
+}
+
+.mp-context {
+  --mp-accent: var(--mp-gold);
+  --mp-bg: #fdf6e7;
+  border-color: rgba(161, 98, 7, 0.30);
+}
+
+.mp-fact {
+  --mp-accent: #2563eb;
+  --mp-bg: #f4f7ff;
+  border-color: rgba(37, 99, 235, 0.26);
+}
+
+.mp-task {
+  --mp-accent: var(--mp-ink);
+  --mp-bg: #f7f9fb;
+  border-color: rgba(23, 32, 51, 0.22);
+}
+
+.mp-task-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: var(--mp-task-title-margin-top) 0 0.45rem;
+  padding: 0.18rem 0.55rem;
+  border: 1px solid rgba(23, 32, 51, 0.18);
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--mp-ink);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.mp-task-kind svg {
+  width: var(--mp-task-icon-size);
+  height: var(--mp-task-icon-size);
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: 0 0 auto;
+}
+
+.mp-task-kind img {
+  width: var(--mp-task-icon-size);
+  height: var(--mp-task-icon-size);
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.mp-task-kind-think {
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-task-kind-interpret {
+  color: #0097a7;
+  border-color: rgba(0, 151, 167, 0.28);
+}
+
+.mp-task-kind-calc,
+.mp-task-kind-calculate {
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-task-kind-derive {
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-task-kind-transfer {
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-task-kind-heute {
+  color: #0f766e;
+  border-color: rgba(15, 118, 110, 0.28);
+}
+
+.mp-task-kind-check {
+  color: #2e7d50;
+  border-color: rgba(46, 125, 80, 0.28);
+}
+
+.mp-task-kind-write {
+  color: #516173;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-transfer {
+  --mp-accent: var(--mp-muted);
+  --mp-bg: #f8fafb;
+  border-color: rgba(81, 97, 115, 0.24);
+}
+
+.mp-stepgrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.mp-step {
+  padding: 0.75rem 0.85rem;
+  border: 1px solid rgba(81, 97, 115, 0.18);
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+.mp-step strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--mp-ink);
+}
+
+.mp-materialnachweis summary {
+  cursor: pointer;
+  color: var(--mp-accent);
+  font-weight: 800;
+}
+
+.mp-materialnachweis table {
+  margin-top: 0.75rem;
+}
+
+.mp-compact {
+  padding: 0.75rem 0.9rem;
+  box-shadow: none;
+}
+
+.mp-goal-strip {
+  position: relative;
+  margin: var(--mp-goal-margin-top) 0 1rem;
+  padding: var(--mp-goal-padding-top) 0.85rem 0.6rem 3.1rem;
+  border-left: 0.28rem solid var(--mp-green);
+  border-radius: 0.35rem;
+  background: #f4fbf7;
+  color: var(--mp-ink);
+  font-weight: 600;
+}
+
+.mp-goal-strip > .mp-goal-icon {
+  position: absolute;
+  top: var(--mp-goal-padding-top);
+  left: 0.85rem;
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* Quarto ordnet eine nachfolgende Randnotiz der Kastenzeile zu.
+   Die Textausrichtung verwendet dieselben Maße wie der jeweilige Kasten.
+   Nur ausdrücklich markierte Kastennotizen, niemals Randbegriffe, versetzen. */
+@media (min-width: 992px) {
+  .mp-goal-strip + .column-margin {
+    --mp-note-offset: calc(var(--mp-goal-margin-top) + var(--mp-goal-padding-top));
+  }
+
+  .mp-box + .column-margin {
+    --mp-note-offset: calc(var(--mp-box-margin-top) + var(--mp-box-border-top) + var(--mp-box-padding-top));
+  }
+
+  .mp-box.mp-task + .column-margin {
+    --mp-note-offset: calc(var(--mp-box-margin-top) + var(--mp-box-border-top) + var(--mp-box-padding-top) + var(--mp-task-title-margin-top));
+  }
+
+  .mp-box.mp-compact + .column-margin {
+    --mp-box-padding-top: 0.75rem;
+  }
+
+  :is(.mp-goal-strip, .mp-box) + .column-margin > .mp-kastennotiz {
+    padding-top: var(--mp-note-offset);
+  }
+}
+
+.mp-linkline {
+  margin: 0.85rem 0 1rem;
+  padding: 0.65rem 0.85rem;
+  border-left: 0.24rem solid var(--mp-blue);
+  border-radius: 0.35rem;
+  background: #f7f9fb;
+}
+
+.mp-details {
+  margin: 1rem 0;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(81, 97, 115, 0.22);
+  border-radius: 0.5rem;
+  background: #ffffff;
+}
+
+.mp-details summary {
+  cursor: pointer;
+  color: var(--mp-muted);
+  font-weight: 800;
+}
+
+.mp-details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.mp-details.mp-misconception {
+  border-color: rgba(194, 65, 75, 0.28);
+  border-left: 0.38rem solid var(--mp-red);
+  background: #fff5f6;
+}
+
+.mp-details.mp-misconception summary {
+  color: var(--mp-red);
+}
+
+a.glossary-link {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+a.glossary-link:hover,
+a.glossary-link:focus {
+  color: var(--mp-blue);
+  text-decoration-style: solid;
+}
+
+a.glossary-link:focus-visible {
+  outline: 0.14rem solid rgba(37, 99, 235, 0.35);
+  outline-offset: 0.12rem;
+  border-radius: 0.12rem;
+}
+
+.glossary-popover {
+  max-width: min(24rem, calc(100vw - 2rem));
+  border-color: rgba(37, 99, 235, 0.18);
+  box-shadow: 0 0.75rem 1.8rem rgba(23, 32, 51, 0.14);
+}
+
+.glossary-popover .popover-header {
+  color: var(--mp-ink);
+  font-weight: 800;
+  background: #f7f9fb;
+}
+
+.glossary-popover .popover-body {
+  color: var(--mp-muted);
+  line-height: 1.45;
+}
+
+/* Diskussions-Kommentare (temporär, für die Abstimmung mit der Betreuung) */
+.mp-discuss {
+  margin: 1rem 0;
+  padding: 0.7rem 1rem;
+  border: 2px dashed #b3760e;
+  border-radius: 0.5rem;
+  background: #fffaf0;
+}
+.mp-discuss .mp-title {
+  color: #b3760e;
+}
+
+/* Randnotiz: haengt rechts neben der Box im freien Rand,
+   auf der Hoehe, an der sie im Quelltext steht */
+.mp-box {
+  position: relative;
+}
+.mp-marginnote {
+  position: absolute;
+  left: calc(100% + 1.25rem);
+  width: min(13rem, 18vw);
+  font-size: 0.85em;
+  line-height: 1.45;
+  color: var(--mp-muted);
+}
+@media (max-width: 1199.98px) {
+  .mp-marginnote {
+    position: static;
+    width: auto;
+    margin: 0.5rem 0 1rem;
+    padding-left: 0.75rem;
+    border-left: 0.2rem solid rgba(81, 97, 115, 0.3);
+  }
+}
+
+/* Begriffs-Stichwoerter am Rand: kraeftiger als Quartos Rand-Standard */
+.mp-randbegriff {
+  display: inline-block;
+  color: var(--mp-ink);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+/* Unterschriften unter Veranschaulichungen */
+.srt-workbook-figure figcaption {
+  max-width: 862px;
+  margin: 0.35rem auto 0;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
+}
+.srt-workbook-figure--caption-inside figcaption {
+  max-width: none;
+  margin: 0;
+  padding: 0.6rem 1rem 0.75rem;
+  border-top: 1px solid rgba(23, 32, 51, 0.1);
+  background: #f7f9fb;
+}
+
+/* Nummerierte Quarto-Unterschriften buendig unter den Veranschaulichungs-Rahmen */
+.quarto-float-fig:has(.srt-workbook-stage) .srt-workbook-figure {
+  margin-bottom: 0;
+}
+.quarto-float-fig:has(.srt-workbook-stage) .srt-workbook-stage {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.quarto-float-fig:has(.srt-workbook-stage) > figcaption.quarto-float-caption {
+  width: min(100%, 862px);
+  margin: 0 auto 1rem;
+  padding: 0.6rem 1rem 0.75rem;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  background: #f7f9fb;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* Unterschriften unter eingebetteten Videos */
+.srt-video-caption {
+  width: min(100%, 862px);
+  margin: 0.35rem auto 0;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
+}
+
+/* Lokale Zugszenen mit gemeinsamer Nummer und Unterschrift */
+.mp-train-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 0;
+}
+.mp-train-controls[hidden] {
+  display: none;
+}
+.mp-train-controls button {
+  min-height: 44px;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #64748b;
+  border-radius: 5px;
+  background: #fff;
+  color: #233247;
+  font: inherit;
+  cursor: pointer;
+}
+.mp-train-controls button:hover {
+  background: #e8edf3;
+}
+.mp-train-controls button:focus-visible {
+  outline: 3px solid #1976b9;
+  outline-offset: 3px;
+}
+.mp-train-controls .mp-train-random {
+  background: #233247;
+  color: #fff;
+}
+.mp-train-controls .mp-train-random:hover {
+  background: #394f6c;
+}
+.mp-train-video {
+  width: min(100%, 862px);
+  margin: 0.75rem auto 0;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+}
+.mp-train-video .srt-video-frame {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+.mp-train-hint,
+.mp-train-error {
+  padding: 0.5rem 1rem 0.75rem;
+  margin: 0;
+  font-size: 0.9em;
+  text-align: left;
+}
+.quarto-float-fig:has(.mp-train-video) > figcaption.quarto-float-caption {
+  width: min(100%, 862px);
+  margin: 0 auto 1rem;
+  padding: 0.6rem 1rem 0.75rem;
+  border: 1px solid rgba(23, 32, 51, 0.14);
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  background: #f7f9fb;
+  color: var(--mp-muted);
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.mp-caption-warn {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+.mp-caption-warn::before {
+  content: "\26A0\FE0E\00A0";
+  font-weight: 800;
+  color: var(--mp-red);
+}

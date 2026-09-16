@@ -1,0 +1,13 @@
+.srt-workbook-stage[data-srt-animation="drehung-invarianz"] { background: #fff; }
+.srt-workbook-stage[data-srt-animation="drehung-invarianz"] > svg { aspect-ratio: auto; }
+.invariance-values { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; padding: .2rem .9rem .8rem; color: #243447; font-size: 1rem; }
+.invariance-coordinates, .invariance-distance { padding: .65rem .8rem; border: 1px solid #dce5ea; border-radius: 10px; line-height: 1.7; }
+.invariance-coordinates { font-variant-numeric: tabular-nums; }
+.invariance-distance { background: #f1f8f6; color: #0b796f; }
+.invariance-constant { font-size: 1.35rem; }
+.invariance-controls { padding: 0 .9rem .9rem; }
+.invariance-controls button { padding: .4rem .65rem; min-height: 2.75rem; border: 1px solid #bcc9d2; border-radius: 8px; background: #fff; color: #243447; font: inherit; }
+.invariance-controls button:focus-visible { outline: 3px solid #5f9aa2; outline-offset: 2px; }
+@media (max-width: 540px) { .invariance-values { grid-template-columns: 1fr; } }
+.invariance-controls { padding: 0; }
+.invariance-controls button { position: absolute; left: .65rem; bottom: .65rem; }

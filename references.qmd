@@ -1,0 +1,16 @@
+---
+nocite: |
+  @*
+---
+
+# Literatur {.unnumbered}
+
+## Grundlagen {.unnumbered}
+
+::: {#refs-grundlagen}
+:::
+
+## Weiterführende Literatur {.unnumbered}
+
+::: {#refs-weiterfuehrend}
+:::

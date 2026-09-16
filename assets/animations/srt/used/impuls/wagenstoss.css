@@ -1,0 +1,108 @@
+.srt-workbook-stage[data-srt-animation="inelastic-carts"] {
+  width: min(100%, 640px);
+  background: #fff;
+  color: #334658;
+}
+
+.srt-workbook-stage[data-srt-animation="inelastic-carts"] > svg {
+  aspect-ratio: 640 / 320;
+  font-family: inherit;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls {
+  width: 100%;
+  margin: 0;
+  padding: .4rem .9rem .65rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: inherit;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls .srt-workbook-control-group {
+  flex-basis: 100%;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls .srt-workbook-range {
+  flex: 1 1 15rem;
+  margin: 0;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls .srt-workbook-range-label {
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls input[type="range"] {
+  min-height: 2.75rem;
+  accent-color: #0b8793;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls button {
+  border-color: #afc0ca;
+  font: inherit;
+  font-size: .92rem;
+  font-weight: 400;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls button[aria-pressed="true"] {
+  border-color: #0b8793;
+  background: #eaf5f5;
+  color: #243447;
+  box-shadow: inset 0 0 0 1px #0b8793;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls .srt-workbook-motion-button {
+  align-self: flex-end;
+  min-width: 6.5rem;
+  margin-bottom: .25rem;
+  background: #243447;
+  border-color: #243447;
+  color: #fff;
+}
+
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls button:focus-visible,
+[data-srt-animation="inelastic-carts"] + .srt-workbook-controls input:focus-visible {
+  outline: 3px solid #5f9aa2;
+  outline-offset: 2px;
+}
+
+
+/* Grafik, Bedienung und Unterschrift bilden einen gemeinsamen Rahmen. */
+#fig-ie-wagenstoss > figure {
+  width: min(100%, 640px);
+  margin: 0 auto 1rem;
+  border: 1px solid rgba(23, 32, 51, .14);
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+#fig-ie-wagenstoss .srt-workbook-stage {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+#fig-ie-wagenstoss > figure > figcaption.quarto-float-caption {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(23, 32, 51, .14);
+  border-radius: 0;
+}
