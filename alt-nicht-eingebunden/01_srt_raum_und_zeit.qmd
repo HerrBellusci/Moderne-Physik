@@ -2,25 +2,25 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
-<link rel="stylesheet" href="assets/animations/srt/used/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.css">
-<script src="assets/animations/shared/core.js"></script>
-<script src="assets/animations/srt/used/bezugssysteme/inertialsystem.js"></script>
-<script src="assets/animations/srt/used/michelson-morley/interferometer-aufbau.js"></script>
-<script src="assets/animations/srt/used/michelson-morley/aether-vs-nullresultat.js"></script>
-<script src="assets/animations/srt/used/michelson-morley/interferenz-messprinzip.js"></script>
-<script src="assets/animations/srt/used/michelson-morley/ringgeometrie.js"></script>
-<script src="assets/animations/srt/used/gleichzeitigkeit/relativitaet-gleichzeitigkeit.js"></script>
-<script src="assets/animations/srt/used/zeitdilatation/lichtuhr.js"></script>
-<script src="assets/animations/srt/used/zeitdilatation/lorentzfaktor.js"></script>
-<script src="assets/animations/srt/used/invarianz/drehung-abstand.js"></script>
-<script src="assets/animations/srt/used/zeitdilatation/myon-erdsystem.js"></script>
-<script src="assets/animations/srt/used/laengenkontraktion/ausgangsproblem.js"></script>
-<script src="assets/animations/srt/used/doppler/doppler-allgemein.js"></script>
-<script src="assets/animations/srt/used/doppler/doppler-herleitung.js"></script>
-<script src="assets/animations/srt/used/doppler/doppler.js"></script>
-<script src="assets/animations/srt/used/paradoxien/garagenparadoxon.js"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<link rel="stylesheet" href="../assets/animations/shared/workbook.css">
+<link rel="stylesheet" href="../assets/animations/srt1-raum-und-zeit/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.css">
+<script src="../assets/animations/shared/core.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/bezugssysteme/inertialsystem.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/michelson-morley/interferometer-aufbau.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/michelson-morley/aether-vs-nullresultat.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/michelson-morley/interferenz-messprinzip.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/michelson-morley/ringgeometrie.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/gleichzeitigkeit/relativitaet-gleichzeitigkeit.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/zeitdilatation/lichtuhr.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/zeitdilatation/lorentzfaktor.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/invarianz/drehung-abstand.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/zeitdilatation/myon-erdsystem.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/laengenkontraktion/ausgangsproblem.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/doppler/doppler-allgemein.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/doppler/doppler-herleitung.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/doppler/doppler.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/paradoxien/garagenparadoxon.js"></script>
+<script src="../assets/animations/shared/workbook.js"></script>
 ```
 :::
 
@@ -98,7 +98,7 @@ Ein **Inertialsystem** ist ein Bezugssystem, in dem das erste Newtonsche Axiom g
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -157,7 +157,7 @@ Ein Auto fährt auf gerader Strecke gleichförmig mit einer Geschwindigkeit von 
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-Videoimpuls für die HTML-Version: Videos einbinden/Drohne Auto.mp4
+Videoimpuls für die HTML-Version: ../Videos einbinden/Drohne Auto.mp4
 :::
 :::
 
@@ -347,7 +347,7 @@ Um dieses zweite Postulat ein bisschen greifbarer zu machen, dient die folgende 
     </div>
   </div>
 </figure>
-<script src="assets/animations/srt/used/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.js"></script>
+<script src="../assets/animations/srt1-raum-und-zeit/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.js"></script>
 ```
 :::
 
@@ -427,7 +427,7 @@ Eine zweite Variante des Zug-Gedankenexperiments beginnt anders: Zwei Blitze sch
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -555,7 +555,7 @@ Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt bestimmen w
 <div class="mp-title">Herleitung</div>
 
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Stift und Papier">
-  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/derive.png" alt="" aria-hidden="true">
   Stift und Papier
 </span>
 
@@ -664,7 +664,7 @@ Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Als Beispiel: Selbs
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -801,7 +801,7 @@ Das sind nur etwa $0{,}66\,\mathrm{km}$, viel weniger als $10\,\mathrm{km}$. Wie
 <div class="mp-title">Herleitung</div>
 
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Stift und Papier">
-  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/derive.png" alt="" aria-hidden="true">
   Stift und Papier
 </span>
 
@@ -973,7 +973,7 @@ Die Analogie erklärt die Richtung der Verschiebung: Annäherung führt zu kürz
 <div class="mp-title">Herleitung</div>
 
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Stift und Papier">
-  <img src="assets/task-icons/derive.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/derive.png" alt="" aria-hidden="true">
   Stift und Papier
 </span>
 
@@ -1214,7 +1214,7 @@ In der HTML-Version erscheint hier eine Simulation mit Umschalter zwischen den B
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 

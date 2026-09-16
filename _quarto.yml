@@ -1,9 +1,16 @@
 project:
   type: book
+  render:
+    - index.qmd
+    - "*_umbau.qmd"
+    - references.qmd
   post-render: tools/strip-polyfill.py
   resources:
     - assets/**
     - "Videos einbinden/**"
+    - licenses/**
+    - THIRD-PARTY-NOTICES.md
+    - "!alt-nicht-eingebunden/**"
 
 book:
   title: "Interaktives Quarto-Workbook Moderne Physik"
@@ -32,15 +39,15 @@ crossref:
 
 format:
   html:
-    theme: [cosmo, assets/no-webfont.scss]
+    theme: [cosmo, assets/styles/no-webfont.scss]
     crossrefs-hover: false
     html-math-method:
       method: mathjax
       url: assets/mathjax/tex-svg-full.js
     css:
-      - assets/learning-boxes.css
+      - assets/styles/learning-boxes.css
       - assets/fonts/source-sans-pro.css
-    include-after-body: assets/toc-in-sidebar.html
+    include-after-body: assets/includes/toc-in-sidebar.html
     toc: true
     toc-location: left
     toc-depth: 3

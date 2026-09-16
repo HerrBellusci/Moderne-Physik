@@ -2,10 +2,10 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
-<script src="assets/animations/shared/core.js"></script>
+<link rel="stylesheet" href="../assets/animations/shared/workbook.css">
+<script src="../assets/animations/shared/core.js"></script>
 <script src="assets/animations/srt/used/energie/kinetische-energie.js"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<script src="../assets/animations/shared/workbook.js"></script>
 ```
 :::
 
@@ -106,7 +106,7 @@ Nahe der Lichtgeschwindigkeit wächst $\gamma$ stark. Der Impuls wächst dann vi
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 
@@ -198,7 +198,7 @@ Dabei ist $\Delta m$ die fehlende Masse nach der Reaktion.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 
@@ -286,7 +286,7 @@ $$\Delta m_0 = \frac{E}{c^2} \approx \frac{3{,}8 \cdot 10^{26}\,\mathrm{J}}{(3{,
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 

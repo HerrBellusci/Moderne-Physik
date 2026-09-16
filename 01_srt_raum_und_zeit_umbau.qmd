@@ -2,39 +2,39 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/srt-raum-und-zeit.css?v=20260910b">
-<link rel="stylesheet" href="assets/formelwiederholungen.css?v=20260915">
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css?v=20260908-reglerfarben">
-<link rel="stylesheet" href="assets/animations/srt/used/michelson-morley/michelson-workbook.css?v=20260907-bedienung">
-<link rel="stylesheet" href="assets/animations/srt/used/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.css?v=20260908-bedienzeile">
+<link rel="stylesheet" href="assets/styles/srt-raum-und-zeit.css?v=20260910b">
+<link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260915">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/michelson-morley/michelson-workbook.css?v=20260907-bedienung">
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.css?v=20260908-bedienzeile">
 <script src="assets/animations/shared/core.js"></script>
-<script src="assets/train-video.js" defer></script>
-<script src="assets/animations/srt/used/bezugssysteme/inertialsystem.js?v=20260907-aussenansicht"></script>
-<script src="assets/animations/srt/used/michelson-morley/bootsanalogie.js?v=20260907-integriert"></script>
-<script src="assets/animations/srt/used/michelson-morley/interferometer-aufbau.js?v=20260907-textrunde"></script>
-<script src="assets/animations/srt/used/michelson-morley/aether-vs-nullresultat.js?v=20260907-bedienung"></script>
-<script src="assets/animations/srt/used/michelson-morley/interferenz-messprinzip.js?v=20260908-reglerfarben"></script>
-<script src="assets/animations/srt/used/michelson-morley/ringgeometrie.js?v=20260908-reglerfarben"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/gleichzeitigkeit/relativitaet-gleichzeitigkeit.css?v=20260908-bedienzeile">
-<script src="assets/animations/srt/used/gleichzeitigkeit/relativitaet-gleichzeitigkeit.js?v=20260908-beschriftungen"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/zeitdilatation/lichtuhr.css?v=20260908-schritthilfen">
-<script src="assets/animations/srt/used/zeitdilatation/lichtuhr.js?v=20260908-zugumriss"></script>
+<script src="assets/scripts/train-video.js" defer></script>
+<script src="assets/animations/srt1-raum-und-zeit/bezugssysteme/inertialsystem.js?v=20260907-aussenansicht"></script>
+<script src="assets/animations/srt1-raum-und-zeit/michelson-morley/bootsanalogie.js?v=20260907-integriert"></script>
+<script src="assets/animations/srt1-raum-und-zeit/michelson-morley/interferometer-aufbau.js?v=20260907-textrunde"></script>
+<script src="assets/animations/srt1-raum-und-zeit/michelson-morley/aether-vs-nullresultat.js?v=20260907-bedienung"></script>
+<script src="assets/animations/srt1-raum-und-zeit/michelson-morley/interferenz-messprinzip.js?v=20260908-reglerfarben"></script>
+<script src="assets/animations/srt1-raum-und-zeit/michelson-morley/ringgeometrie.js?v=20260908-reglerfarben"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/gleichzeitigkeit/relativitaet-gleichzeitigkeit.css?v=20260908-bedienzeile">
+<script src="assets/animations/srt1-raum-und-zeit/gleichzeitigkeit/relativitaet-gleichzeitigkeit.js?v=20260908-beschriftungen"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/zeitdilatation/lichtuhr.css?v=20260908-schritthilfen">
+<script src="assets/animations/srt1-raum-und-zeit/zeitdilatation/lichtuhr.js?v=20260908-zugumriss"></script>
 <script src="assets/animations/shared/formelsatz.js?v=20260908"></script>
-<script src="assets/animations/srt/used/zeitdilatation/lorentzfaktor.js?v=20260908-asymptote"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/invarianz/drehung-abstand.css?v=20260908">
-<script src="assets/animations/srt/used/invarianz/drehung-abstand.js?v=20260908-abstand"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/zeitdilatation/myon-erdsystem.css?v=20260909-myonsystem">
-<script src="assets/animations/srt/used/zeitdilatation/myon-erdsystem.js?v=20260909-abstand"></script>
-<script src="assets/animations/srt/used/laengenkontraktion/ausgangsproblem.js?v=20260909-reduziert"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/doppler/doppler.css?v=20260910b">
-<script src="assets/animations/srt/used/doppler/doppler-allgemein.js?v=20260910b"></script>
-<script src="assets/animations/srt/used/doppler/doppler-herleitung.js?v=20260910b"></script>
-<script src="assets/animations/srt/used/doppler/doppler.js?v=20260910b"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/paradoxien/garagenparadoxon.css?v=20260911-stabile-ansicht">
-<script src="assets/animations/srt/used/paradoxien/garagenparadoxon.js?v=20260911-abschlusstext"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/raumfahrt/raumfahrt-aufgabe.css?20260911-uhrsymbole">
-<script src="assets/animations/srt/used/raumfahrt/raumfahrt-aufgabe.js?20260911-uhrsymbole"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<script src="assets/animations/srt1-raum-und-zeit/zeitdilatation/lorentzfaktor.js?v=20260908-asymptote"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/invarianz/drehung-abstand.css?v=20260908">
+<script src="assets/animations/srt1-raum-und-zeit/invarianz/drehung-abstand.js?v=20260908-abstand"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/zeitdilatation/myon-erdsystem.css?v=20260909-myonsystem">
+<script src="assets/animations/srt1-raum-und-zeit/zeitdilatation/myon-erdsystem.js?v=20260909-abstand"></script>
+<script src="assets/animations/srt1-raum-und-zeit/laengenkontraktion/ausgangsproblem.js?v=20260909-reduziert"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/doppler/doppler.css?v=20260910b">
+<script src="assets/animations/srt1-raum-und-zeit/doppler/doppler-allgemein.js?v=20260910b"></script>
+<script src="assets/animations/srt1-raum-und-zeit/doppler/doppler-herleitung.js?v=20260910b"></script>
+<script src="assets/animations/srt1-raum-und-zeit/doppler/doppler.js?v=20260910b"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/paradoxien/garagenparadoxon.css?v=20260911-stabile-ansicht">
+<script src="assets/animations/srt1-raum-und-zeit/paradoxien/garagenparadoxon.js?v=20260911-abschlusstext"></script>
+<link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/raumfahrt/raumfahrt-aufgabe.css?20260911-uhrsymbole">
+<script src="assets/animations/srt1-raum-und-zeit/raumfahrt/raumfahrt-aufgabe.js?20260911-uhrsymbole"></script>
+<script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
 
@@ -69,7 +69,7 @@ Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich i
 ```{=html}
 <div class="mp-train-video" data-train-video>
   <div class="srt-video-frame">
-    <video controls preload="metadata" playsinline poster="assets/zug-relativbewegung-poster.jpg" aria-label="Videos zur Relativbewegung zweier Züge" src="Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4">
+    <video controls preload="metadata" playsinline poster="assets/images/zug-relativbewegung-poster.jpg" aria-label="Videos zur Relativbewegung zweier Züge" src="Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4">
       Dein Browser kann das Video nicht abspielen. Die beiden Dateien sind unter den folgenden Links verfügbar.
     </video>
   </div>
@@ -85,7 +85,7 @@ Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich i
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/zug-relativbewegung-poster.jpg){fig-alt="Blick auf einen Tisch im Zug am Anfang des digital erstellten Videos."}
+![](assets/images/zug-relativbewegung-poster.jpg){fig-alt="Blick auf einen Tisch im Zug am Anfang des digital erstellten Videos."}
 
 In der HTML-Version lassen sich zwei Szenen abspielen. In einer fährt der eigene Zug aus dem Bahnhof, in der anderen steht er am Bahnsteig.
 :::
@@ -387,7 +387,7 @@ In @fig-umbau-konstanz-lichtgeschwindigkeit vergleichst du Lichtpulse aus zwei Q
     </div>
   </div>
 </div>
-<script src="assets/animations/srt/used/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.js?v=20260908-tempo"></script>
+<script src="assets/animations/srt1-raum-und-zeit/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.js?v=20260908-tempo"></script>
 ```
 :::
 
@@ -559,7 +559,7 @@ Für unser Gedankenexperiment verwenden wir eine Lichtuhr.[Lichtuhr]{.column-mar
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/zeitdilatation/lichtuhr-aufbau.svg){fig-alt="Zwei parallele Spiegel im Abstand D. Lichtquelle und Zähler befinden sich am unteren Spiegel."}
+![](assets/animations/srt1-raum-und-zeit/zeitdilatation/lichtuhr-aufbau.svg){fig-alt="Zwei parallele Spiegel im Abstand D. Lichtquelle und Zähler befinden sich am unteren Spiegel."}
 :::
 
 Animation zum Aufbau einer Lichtuhr. Ein Lichtpuls bewegt sich zwischen zwei parallelen Spiegeln. Am unteren Spiegel befinden sich die Lichtquelle und ein Zähler, der bei jeder Rückkehr um eins weiterzählt.
@@ -585,7 +585,7 @@ Für die Person am Bahnsteig bewegt sich der Zug während der Laufzeit des Licht
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/zeitdilatation/lichtuhr-vergleich.svg){fig-alt="Lichtuhr im Zugsystem mit senkrechtem Lichtweg und im Bahnsteigsystem mit diagonalem Lichtweg."}
+![](assets/animations/srt1-raum-und-zeit/zeitdilatation/lichtuhr-vergleich.svg){fig-alt="Lichtuhr im Zugsystem mit senkrechtem Lichtweg und im Bahnsteigsystem mit diagonalem Lichtweg."}
 :::
 
 Simulation zur Zeitdilatation mit einer Lichtuhr. Oben ist ein vollständiger Hin- und Rückweg im Zugsystem dargestellt, unten derselbe Vorgang im Bahnsteigsystem. Die Zähler erfassen jeweils eine Rückkehr. Jede Ansicht hält nach ihrem vollständigen Tick bis zum gemeinsamen Neustart an.
@@ -872,7 +872,7 @@ Für dieses Beispiel nehmen wir an, dass das Myon in seinem Ruhesystem nach $\De
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/zeitdilatation/myon-klassisch.svg){fig-alt="Beispielmyon ohne Zeitdilatation. Seine Flugstrecke von 660 Metern bis zum angenommenen Zerfall ist viel kürzer als die Entstehungshöhe von 10 Kilometern."}
+![](assets/animations/srt1-raum-und-zeit/zeitdilatation/myon-klassisch.svg){fig-alt="Beispielmyon ohne Zeitdilatation. Seine Flugstrecke von 660 Metern bis zum angenommenen Zerfall ist viel kürzer als die Entstehungshöhe von 10 Kilometern."}
 :::
 
 Animation eines Myons ohne Zeitdilatation im Erdsystem. Das Myon bewegt sich nach unten und zerfällt bei der für dieses Beispiel angenommenen Lebensdauer nach etwa $660\,\mathrm{m}$. Die Anzeigen geben die angenommene Lebensdauer und die Zeit seit der Entstehung an.
@@ -936,7 +936,7 @@ $$
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/zeitdilatation/myon-relativistisch.svg){fig-alt="Das Beispielmyon erreicht mit Zeitdilatation den Erdboden nach 10 Kilometern Flugstrecke, bevor seine angenommene Lebensdauer im Erdsystem verstrichen ist."}
+![](assets/animations/srt1-raum-und-zeit/zeitdilatation/myon-relativistisch.svg){fig-alt="Das Beispielmyon erreicht mit Zeitdilatation den Erdboden nach 10 Kilometern Flugstrecke, bevor seine angenommene Lebensdauer im Erdsystem verstrichen ist."}
 :::
 
 Animation eines Myons mit Zeitdilatation im Erdsystem. Das Beispielmyon erreicht den Detektor vor seinem angenommenen Zerfall. Die Anzeigen geben die angenommene Lebensdauer und die Zeit seit der Entstehung an. Beide Myonenanimationen verwenden denselben Maßstab für Strecke und Wiedergabezeit.
@@ -975,7 +975,7 @@ Nehmen wir zunächst an, dass dieser Abstand auch im Myonsystem zehn Kilometer b
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/laengenkontraktion/ausgangsproblem.svg){fig-alt="Ruhendes Beispielmyon ohne Längenkontraktion. Der zunächst 10 Kilometer entfernte Boden bewegt sich während 2,2 Mikrosekunden um 659 Meter auf das Myon zu und erreicht es vor dem angenommenen Zerfall nicht."}
+![](assets/animations/srt1-raum-und-zeit/laengenkontraktion/ausgangsproblem.svg){fig-alt="Ruhendes Beispielmyon ohne Längenkontraktion. Der zunächst 10 Kilometer entfernte Boden bewegt sich während 2,2 Mikrosekunden um 659 Meter auf das Myon zu und erreicht es vor dem angenommenen Zerfall nicht."}
 :::
 
 Animation im Myonsystem unter der Annahme einer unverkürzten Strecke von zehn Kilometern. Der Boden bewegt sich auf das ruhende Beispielmyon zu.
@@ -1039,7 +1039,7 @@ $$
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/laengenkontraktion/myon-system-kontrahiert.svg){fig-alt="Ruhendes Beispielmyon mit Längenkontraktion. Der zunächst 632 Meter entfernte Boden erreicht es nach etwa 2,11 Mikrosekunden, vor seiner angenommenen Eigenlebensdauer von 2,2 Mikrosekunden."}
+![](assets/animations/srt1-raum-und-zeit/laengenkontraktion/myon-system-kontrahiert.svg){fig-alt="Ruhendes Beispielmyon mit Längenkontraktion. Der zunächst 632 Meter entfernte Boden erreicht es nach etwa 2,11 Mikrosekunden, vor seiner angenommenen Eigenlebensdauer von 2,2 Mikrosekunden."}
 :::
 
 Animation im Myonsystem mit Längenkontraktion. Der Boden erreicht das ruhende Beispielmyon vor dessen Zerfall. Vergrößerter Ausschnitt mit einer Abstandsskala von $0$ bis $0{,}7\,\mathrm{km}$. Beide Animationen im Myonsystem zeigen eine Mikrosekunde in $1{,}7$ Sekunden Wiedergabezeit, zehnmal stärker verlangsamt als die Animationen im Erdsystem.
@@ -1557,7 +1557,7 @@ Für diese Aufgabe betrachten wir zwei Ereignisse: Die Raumschiffspitze passiert
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/raumfahrt/raumfahrt-aufgabe.svg){fig-alt="Die Raumschiffspitze passiert zuerst Station A und später Station B. Im Stationssystem ruhen A und B im Abstand von neun Lichtminuten, das Raumschiff bewegt sich mit 0,6 c."}
+![](assets/animations/srt1-raum-und-zeit/raumfahrt/raumfahrt-aufgabe.svg){fig-alt="Die Raumschiffspitze passiert zuerst Station A und später Station B. Im Stationssystem ruhen A und B im Abstand von neun Lichtminuten, das Raumschiff bewegt sich mit 0,6 c."}
 :::
 
 Skizze der beiden Ereignisse bei einer Raumfahrt mit $v=0{,}6\,c$. Oben passiert die Raumschiffspitze Station A, unten Station B. Die Uhrsymbole markieren die Orte der Zeitmessung und geben keine Uhrzeiten an.
@@ -1701,7 +1701,7 @@ $$
 :::
 
 ::: {.content-visible unless-format="html"}
-![](assets/animations/srt/used/paradoxien/garagenparadoxon.svg){fig-alt="Ausgangszustand im Garagensystem vor der Einfahrt: Das bewegte Auto ist 3 Meter lang, die Garage 4 Meter. Beide Tore sind offen."}
+![](assets/animations/srt1-raum-und-zeit/paradoxien/garagenparadoxon.svg){fig-alt="Ausgangszustand im Garagensystem vor der Einfahrt: Das bewegte Auto ist 3 Meter lang, die Garage 4 Meter. Beide Tore sind offen."}
 :::
 
 Animation zur Durchfahrt eines Autos mit Eigenlänge $5\,\mathrm{m}$ durch eine Garage mit Eigenlänge $4\,\mathrm{m}$ bei $v=0{,}8\,c$. Im Garagensystem schließen und öffnen die Tore jeweils gleichzeitig. Das Bezugssystem kann gewechselt werden.

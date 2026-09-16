@@ -2,17 +2,17 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
 <script src="assets/animations/shared/core.js"></script>
-<script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
-<script src="assets/animations/laser/used/besetzungsinversion.js"></script>
-<script src="assets/animations/laser/used/metastabil.js"></script>
-<script src="assets/animations/laser/used/resonator.js"></script>
-<script src="assets/animations/laser/used/spektren-zoom.js"></script>
-<script src="assets/animations/laser/used/rubinlaser.js"></script>
-<script src="assets/animations/laser/used/he-ne.js"></script>
-<script src="assets/animations/laser/used/hene-spektroskop.js"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<script src="assets/animations/laser/atom-licht-wechselwirkungen.js"></script>
+<script src="assets/animations/laser/besetzungsinversion.js"></script>
+<script src="assets/animations/laser/metastabil.js"></script>
+<script src="assets/animations/laser/resonator.js"></script>
+<script src="assets/animations/laser/spektren-zoom.js"></script>
+<script src="assets/animations/laser/rubinlaser.js"></script>
+<script src="assets/animations/laser/he-ne.js"></script>
+<script src="assets/animations/laser/hene-spektroskop.js"></script>
+<script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
 
@@ -131,7 +131,7 @@ Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: 
 
 Für diesen Gleichschritt hat die Physik ein Wort: Solche Wellen heißen kohärent.[kohärent]{.column-margin .mp-randbegriff} Der Begriff verlangt weniger: Kohärente Wellen dürfen gegeneinander versetzt sein, solange der Versatz fest bleibt, sie halten eine feste Phasenbeziehung zueinander. Im Bild der Soldaten: Einer tritt immer etwas später auf als der andere, der zeitliche Abstand zwischen ihren Schritten bleibt dabei gleich. Die Wellenzüge aus derselben Kette zeigen den strengsten Fall, ihr Versatz ist null. Im Medium starten solche Ketten allerdings an vielen Stellen und in viele Richtungen. Wie daraus ein einziger geordneter Strahl wird, klärt der Abschnitt zum Resonator.
 
-Kohärentes Licht brauchst du überall dort, wo Licht mit Licht überlagert wird, bei der Interferenz. Moderne Michelson-Interferometer, etwa zur Messung von Gravitationswellen, arbeiten mit Laserlicht; das Michelson-Morley-Experiment hast du im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit.qmd#michelson-morley-experiment) kennengelernt.
+Kohärentes Licht brauchst du überall dort, wo Licht mit Licht überlagert wird, bei der Interferenz. Moderne Michelson-Interferometer, etwa zur Messung von Gravitationswellen, arbeiten mit Laserlicht; das Michelson-Morley-Experiment hast du im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit_umbau.qmd#michelson-morley-experiment) kennengelernt.
 
 Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
 
@@ -642,7 +642,7 @@ Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit ei
 
 Ein gelbes Dreieck mit einem Strahlensymbol: Dieses Warnzeichen findest du am Laserpointer, an Lasergeräten im Labor und manchmal sogar im eigenen Keller, am Kasten des Glasfaser-Anschlusses. Dort überträgt unsichtbares infrarotes Laserlicht die Internetdaten. Dieser Abschnitt klärt, was Laserlicht gefährlich macht und wie du dich schützt.
 
-![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](assets/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
+![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](assets/images/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
 
 Ein gewöhnlicher Laserpointer hat eine Leistung von etwa einem Milliwatt: weniger als ein Zehntausendstel einer 60-Watt-Glühlampe. Die Glühlampe kannst du anschauen, sie blendet höchstens. Der Blick in den Laserstrahl kann das Auge dagegen dauerhaft schädigen. Der Unterschied liegt in der Bündelung.
 

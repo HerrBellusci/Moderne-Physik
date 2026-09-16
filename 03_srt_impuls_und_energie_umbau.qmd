@@ -2,17 +2,17 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css?v=20260908-reglerfarben">
-<link rel="stylesheet" href="assets/formelwiederholungen.css?v=20260915">
-<link rel="stylesheet" href="assets/animations/srt/used/impuls/impuls-vergleich.css?v=20260915c">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260915">
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.css?v=20260915c">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/shared/formelsatz.js?v=20260908"></script>
-<script src="assets/animations/srt/used/impuls/impuls-vergleich.js?v=20260915c"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/impuls/wagenstoss.css?v=20260915c">
-<script src="assets/animations/srt/used/impuls/wagenstoss.js?v=20260915c"></script>
-<link rel="stylesheet" href="assets/animations/srt/used/energie/energiezufuhr.css?v=20260915">
-<script src="assets/animations/srt/used/energie/energiezufuhr.js?v=20260915c"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<script src="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.js?v=20260915c"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.css?v=20260915c">
+<script src="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.js?v=20260915c"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260915">
+<script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260915c"></script>
+<script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
 

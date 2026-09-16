@@ -2,19 +2,19 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/srt-workbook.css">
-<script src="assets/animations/shared/core.js"></script>
-<script src="assets/animations/laser/used/atom-licht-wechselwirkungen.js"></script>
-<script src="assets/animations/laser/used/besetzungsinversion.js"></script>
-<script src="assets/animations/laser/used/metastabil.js"></script>
-<script src="assets/animations/laser/used/resonator.js"></script>
-<script src="assets/animations/laser/used/spektren-zoom.js"></script>
+<link rel="stylesheet" href="../assets/animations/shared/workbook.css">
+<script src="../assets/animations/shared/core.js"></script>
+<script src="../assets/animations/laser/atom-licht-wechselwirkungen.js"></script>
+<script src="../assets/animations/laser/besetzungsinversion.js"></script>
+<script src="../assets/animations/laser/metastabil.js"></script>
+<script src="../assets/animations/laser/resonator.js"></script>
+<script src="../assets/animations/laser/spektren-zoom.js"></script>
 <script src="assets/animations/laser/unused/zeitliche-koharenz.js"></script>
 <script src="assets/animations/laser/unused/koharenz-arten.js"></script>
-<script src="assets/animations/laser/used/rubinlaser.js"></script>
-<script src="assets/animations/laser/used/he-ne.js"></script>
-<script src="assets/animations/laser/used/hene-spektroskop.js"></script>
-<script src="assets/animations/shared/srt-workbook.js"></script>
+<script src="../assets/animations/laser/rubinlaser.js"></script>
+<script src="../assets/animations/laser/he-ne.js"></script>
+<script src="../assets/animations/laser/hene-spektroskop.js"></script>
+<script src="../assets/animations/shared/workbook.js"></script>
 ```
 :::
 
@@ -236,7 +236,7 @@ In der Formel steckt folgende Aussage. Der Exponent ist bei jeder Temperatur neg
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 
@@ -290,7 +290,7 @@ In der HTML-Version erscheint hier eine Darstellung: Eine Kugel rollt einen Berg
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -402,7 +402,7 @@ Dann bildet sich eine stehende Welle aus. Solche passenden Wellen nennt man **Re
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 
@@ -618,7 +618,7 @@ In der HTML-Version erscheint hier eine Animation: der Aufbau des Rubinlasers mi
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -749,7 +749,7 @@ Das Helium wird von den Elektronen der Gasentladung angeregt und speichert die E
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
@@ -797,7 +797,7 @@ Ein gelbes Dreieck mit einem Strahlensymbol: Dieses Warnzeichen findest du am La
 Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann.
 :::
 
-![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](assets/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
+![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](../assets/images/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
 
 Ein gewöhnlicher Laserpointer hat eine Leistung von etwa einem Milliwatt: weniger als ein Zehntausendstel einer 60-Watt-Glühlampe. Die Glühlampe kannst du anschauen, sie blendet höchstens. Der Blick in den Laserstrahl kann das Auge dagegen dauerhaft schädigen. Der Unterschied liegt in der Bündelung.
 
@@ -881,7 +881,7 @@ Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit B
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
+  <img src="../assets/task-icons/transfer.png" alt="" aria-hidden="true">
   Transfer
 </span>
 
