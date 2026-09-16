@@ -1,62 +1,54 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="sonne-title sonne-desc">
   <title id="sonne-title">Strahlungsleistung der Sonne im Erdabstand</title>
-  <desc id="sonne-desc">Die Sonne steht im Mittelpunkt einer gedachten Kugel mit dem Radius r bis zur Erdbahn und der Oberfläche A gleich vier Pi r Quadrat. Radiale Pfeile zeigen die Abstrahlung. Ein vergrößerter Flächenausschnitt außerhalb der Erdatmosphäre steht senkrecht zur Strahlungsrichtung. Auf einen Quadratmeter trifft im Erdabstand eine Bestrahlungsstärke von ungefähr 1,36 mal zehn hoch drei Watt pro Quadratmeter. Größen und Abstände sind nicht maßstäblich.</desc>
-  <defs>
-    <marker id="sonne-ray" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto" markerUnits="strokeWidth">
-      <path d="M0 0 7 3.5 0 7Z" fill="#e99022"/>
-    </marker>
-  </defs>
-
-  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="16" fill="#263445">
-    <g fill="none" stroke="#929dab" stroke-width="1.4" stroke-dasharray="5 6">
-      <circle cx="190" cy="157" r="126"/>
-      <ellipse cx="190" cy="157" rx="126" ry="43"/>
+  <desc id="sonne-desc">Die Sonne steht im Mittelpunkt einer gedachten Kugel mit dem Radius r bis zur Erdbahn und der Oberfläche A gleich vier Pi r Quadrat. Radiale Pfeile zeigen die Abstrahlung. Ein vergrößerter, ein Quadratmeter großer Flächenausschnitt außerhalb der Erdatmosphäre steht senkrecht zur Strahlungsrichtung. Die Bestrahlungsstärke im Erdabstand beträgt ungefähr 1,36 mal zehn hoch drei Watt pro Quadratmeter. Größen und Abstände sind nicht maßstäblich.</desc>
+  <g font-family="DejaVu Sans, Arial, sans-serif" font-size="19" fill="#263445">
+    <g fill="none" stroke="#8b98a8" stroke-width="1.6" stroke-dasharray="5 6">
+      <circle cx="190" cy="167" r="118"/>
+      <ellipse cx="190" cy="167" rx="118" ry="40"/>
     </g>
 
-    <text x="145" y="22" font-style="italic">A</text>
-    <text x="162" y="22">= 4π</text>
-    <text x="203" y="22" font-style="italic">r</text>
-    <text x="211" y="22">²</text>
+    <text x="140" y="32" font-style="italic" font-size="21">A</text>
+    <text x="160" y="32" font-size="21">= 4π</text>
+    <text x="213" y="32" font-style="italic" font-size="21">r</text>
+    <text x="222" y="32" font-size="21">²</text>
 
-    <g fill="none" stroke="#e99022" stroke-width="2.1" marker-end="url(#sonne-ray)">
-      <path d="M190 119V54"/>
-      <path d="M163 130 117 84"/>
-      <path d="M152 157H88"/>
-      <path d="M163 184 117 230"/>
-      <path d="M190 196V258"/>
-      <path d="M216 131 263 84"/>
-      <path d="M217 184 263 230"/>
-      <path d="M228 157H303"/>
+    <g>
+      <path d="M190 125 190.00 74.00" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M190 66 194.60 76.00 185.40 76.00Z" fill="#df8a1e"/>
+      <path d="M160 137 121.66 98.66" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M116 93 126.32 96.82 119.82 103.32Z" fill="#df8a1e"/>
+      <path d="M148 167 95.00 167.00" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M87 167 97.00 162.40 97.00 171.60Z" fill="#df8a1e"/>
+      <path d="M160 197 121.66 235.34" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M116 241 119.82 230.68 126.32 237.18Z" fill="#df8a1e"/>
+      <path d="M190 209 190.00 261.00" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M190 269 185.40 259.00 194.60 259.00Z" fill="#df8a1e"/>
+      <path d="M220 137 258.34 98.66" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M264 93 260.18 103.32 253.68 96.82Z" fill="#df8a1e"/>
+      <path d="M220 197 258.34 235.34" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M264 241 253.68 237.18 260.18 230.68Z" fill="#df8a1e"/>
+      <path d="M232 167 291.00 167.00" fill="none" stroke="#df8a1e" stroke-width="2.1"/><path d="M299 167 289.00 171.60 289.00 162.40Z" fill="#df8a1e"/>
     </g>
 
-    <circle cx="190" cy="157" r="27" fill="#ffce55" stroke="#dd9b23" stroke-width="1.8"/>
-    <text x="190" y="151" text-anchor="middle" font-size="12.5">Sonne</text>
+    <circle cx="190" cy="167" r="35" fill="#ffce55" stroke="#dd9b23" stroke-width="1.8"/>
+    <text x="190" y="158" text-anchor="middle" font-size="17">Sonne</text>
+    <path d="M190 167 299.02 212.16" fill="none" stroke="#435266" stroke-width="1.6"/>
+    <circle cx="190" cy="167" r="2.7" fill="#435266"/>
+    <text x="248" y="183" font-style="italic" font-size="22">r</text>
 
-    <path d="M190 157 306.4 205.2" fill="none" stroke="#435266" stroke-width="1.4"/>
-    <circle cx="190" cy="157" r="2.5" fill="#435266"/>
-    <text x="255" y="174" font-style="italic" font-size="18">r</text>
+    <circle cx="299.02" cy="212.16" r="8.5" fill="#477eaa" stroke="#294f70" stroke-width="1.6"/>
+    <text x="299" y="246" text-anchor="middle">Erde</text>
 
-    <circle cx="306.4" cy="205.2" r="7.5" fill="#477eaa" stroke="#294f70" stroke-width="1.5"/>
-    <text x="321" y="217" font-size="15">Erde</text>
-
-    <path d="M316 143V171" fill="none" stroke="#3d729b" stroke-width="4"/>
-    <g fill="none" stroke="#a3adba" stroke-width="1.2" stroke-dasharray="4 5">
-      <path d="M321 143 444 91"/>
-      <path d="M321 171 444 259"/>
+    <path d="M308 151V183" fill="none" stroke="#3d729b" stroke-width="4"/>
+    <g fill="none" stroke="#a3adba" stroke-width="1.3" stroke-dasharray="4 5">
+      <path d="M313 151 428 96"/>
+      <path d="M313 183 428 267"/>
     </g>
 
-    <text x="478" y="63" font-size="17" font-style="italic">S</text>
-    <text x="497" y="63" font-size="17">≈ 1,36 · 10³ W/m²</text>
-    <rect x="444" y="84" width="250" height="182" rx="10" fill="#fff" stroke="#d3dbe3" stroke-width="1.5"/>
+    <text x="455" y="67" font-size="20" font-style="italic">S</text>
+    <text x="477" y="67" font-size="20">≈ 1,36 · 10³ W/m²</text>
+    <rect x="428" y="88" width="270" height="186" rx="12" fill="#fff" stroke="#c5d0dc" stroke-width="1.6"/>
 
-    <path d="M583 130 631 108V210L583 232Z" fill="#e6eff7" stroke="#3d729b" stroke-width="1.8" stroke-linejoin="round"/>
-    <text x="606" y="176" text-anchor="middle" font-size="16">1 m²</text>
-
-    <g fill="none" stroke="#e99022" stroke-width="2.1" marker-end="url(#sonne-ray)">
-      <path d="M470 151H578"/>
-      <path d="M470 181H578"/>
-      <path d="M470 211H578"/>
+    <path d="M567 131 633 107V215L567 239Z" fill="#e6eff7" stroke="#3d729b" stroke-width="1.9" stroke-linejoin="round"/>
+    <text x="600" y="178" text-anchor="middle" font-size="20">1 m²</text>
+    <g>
+      <path d="M452 150 556.00 150.00" fill="none" stroke="#df8a1e" stroke-width="2.3"/><path d="M564 150 554.00 154.60 554.00 145.40Z" fill="#df8a1e"/>
+      <path d="M452 183 556.00 183.00" fill="none" stroke="#df8a1e" stroke-width="2.3"/><path d="M564 183 554.00 187.60 554.00 178.40Z" fill="#df8a1e"/>
+      <path d="M452 216 556.00 216.00" fill="none" stroke="#df8a1e" stroke-width="2.3"/><path d="M564 216 554.00 220.60 554.00 211.40Z" fill="#df8a1e"/>
     </g>
-    <path d="M572 181V170H583" fill="none" stroke="#435266" stroke-width="1.3"/>
+    <path d="M555 183V171H567" fill="none" stroke="#435266" stroke-width="1.5"/>
   </g>
 </svg>

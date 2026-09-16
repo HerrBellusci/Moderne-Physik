@@ -22,6 +22,10 @@ book:
     - 03_srt_impuls_und_energie_umbau.qmd
     - 02_laser_ausflug_umbau.qmd
     - references.qmd
+  page-footer:
+    center:
+      - text: "Legacy-Arbeitsblätter"
+        href: legacy-arbeitsblaetter.qmd
 
 lang: de
 filters:

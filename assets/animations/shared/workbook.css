@@ -116,6 +116,21 @@
   border-radius: 0;
 }
 
+.srt-workbook-image-figure {
+  overflow: hidden;
+}
+
+.srt-workbook-image-figure > figure {
+  margin: 0;
+}
+
+.srt-workbook-image-figure > figure > figcaption {
+  margin: 0;
+  padding: 0.6rem 1rem 0.75rem;
+  border-top: 1px solid rgba(23, 32, 51, 0.1);
+  text-align: left;
+}
+
 .srt-workbook-image-figure .srt-workbook-image {
   width: 100%;
   margin: 0;

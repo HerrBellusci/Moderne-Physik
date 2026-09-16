@@ -1,0 +1,84 @@
+.srt-workbook-stage[data-srt-animation="solar-cart"] {
+  width: min(100%, 680px);
+  background: #fff;
+  color: #243447;
+  font-family: inherit;
+}
+[data-srt-animation="solar-cart"] > svg {
+  aspect-ratio: 640 / 270;
+  font-family: inherit;
+}
+[data-srt-animation="solar-cart"] .solar-top,
+[data-srt-animation="solar-cart"] .solar-bottom { padding: .85rem 1rem; }
+[data-srt-animation="solar-cart"] .solar-top { padding-bottom: 0; }
+[data-srt-animation="solar-cart"] .solar-phases { display: flex; flex-wrap: wrap; gap: .5rem; }
+[data-srt-animation="solar-cart"] button {
+  min-height: 2.75rem;
+  padding: .4rem .7rem;
+  border: 1px solid #bbc8d1;
+  border-radius: 7px;
+  background: #fff;
+  color: #243447;
+  font: inherit;
+  font-size: .9rem;
+  line-height: 1.35;
+  cursor: pointer;
+}
+[data-srt-animation="solar-cart"] button[aria-pressed="true"] {
+  color: #075c66; border-color: #0b8793; background: #edf7f7;
+  box-shadow: inset 0 0 0 1px #0b8793;
+}
+[data-srt-animation="solar-cart"] button:hover { background: #edf7f7; border-color: #0b8793; }
+[data-srt-animation="solar-cart"] button:focus-visible,
+[data-srt-animation="solar-cart"] input:focus-visible { outline: 3px solid #76b4bd; outline-offset: 3px; }
+[data-srt-animation="solar-cart"] .solar-context {
+  margin-top: .6rem; display: flex; justify-content: space-between; gap: .5rem;
+  flex-wrap: wrap; font-size: .86rem; color: #566b79;
+}
+[data-srt-animation="solar-cart"] .solar-speed { color: #243447; font-variant-numeric: tabular-nums; }
+[data-srt-animation="solar-cart"] .solar-bottom { padding-top: 0; }
+[data-srt-animation="solar-cart"] .solar-actions { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+[data-srt-animation="solar-cart"] button.solar-play {
+  background: #0b7380; color: #fff; border-color: #0b7380; min-width: 8rem;
+}
+[data-srt-animation="solar-cart"] button.solar-play:hover { background: #085e69; }
+[data-srt-animation="solar-cart"] .solar-seek { flex: 1 1 12rem; margin: .7rem 0 .75rem; display: block; }
+[data-srt-animation="solar-cart"] .solar-seek-heading { display: flex; justify-content: space-between; gap: .5rem; font-size: .86rem; color: #566b79; }
+[data-srt-animation="solar-cart"] input[type="range"] { display: block; width: 100%; margin: .3rem 0 0; min-height: 1.5rem; cursor: pointer; }
+[data-srt-animation="solar-cart"] .solar-state { font-size: .9rem; color: #566b79; min-height: 1.4em; margin: .45rem 0 .7rem; }
+[data-srt-animation="solar-cart"] .solar-reference {
+  font-size: .86rem; color: #566b79; border-top: 1px solid #dae2e6; padding-top: .8rem; margin: 0 0 .65rem;
+}
+[data-srt-animation="solar-cart"] .solar-metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: .55rem; }
+[data-srt-animation="solar-cart"] .solar-metric { min-width: 0; border-left: 2px solid #dae2e6; padding-left: .65rem; }
+[data-srt-animation="solar-cart"] .solar-metric:first-child { border-left-color: #0b8793; }
+[data-srt-animation="solar-cart"] .solar-metric:nth-child(2) { border-left-color: #ae6224; }
+[data-srt-animation="solar-cart"] .solar-metric-name { display: block; font-size: .83rem; line-height: 1.25; margin-bottom: .25rem; }
+[data-srt-animation="solar-cart"] .solar-metric-value { display: block; font-size: 1.08rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+[data-srt-animation="solar-cart"] .solar-metric:first-child .solar-metric-value { color: #076e77; }
+[data-srt-animation="solar-cart"] .solar-metric:nth-child(2) .solar-metric-value { color: #96511b; }
+[data-srt-animation="solar-cart"] em { font-family: "STIX Two Math", "Cambria Math", Georgia, serif; }
+[data-srt-animation="solar-cart"] sub { font-size: .7em; }
+[data-srt-animation="solar-cart"] .solar-mass { margin-top: 1rem; padding: .7rem .85rem; background: #f2f6f7; border-radius: 6px; }
+[data-srt-animation="solar-cart"] .solar-mass-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: .3rem .6rem; }
+[data-srt-animation="solar-cart"] .solar-mass-label { font-size: .88rem; }
+[data-srt-animation="solar-cart"] .solar-mass-value { font-size: 1.08rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+[data-srt-animation="solar-cart"] .solar-mass-note { margin: .35rem 0 0; font-size: .85rem; color: #526675; line-height: 1.45; }
+[data-srt-animation="solar-cart"] .solar-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (max-width: 480px) {
+  [data-srt-animation="solar-cart"] > svg { aspect-ratio: 420 / 270; }
+  [data-srt-animation="solar-cart"] .solar-top,
+  [data-srt-animation="solar-cart"] .solar-bottom { padding-left: .7rem; padding-right: .7rem; }
+  [data-srt-animation="solar-cart"] .solar-metric-value { font-size: .95rem; }
+  [data-srt-animation="solar-cart"] .solar-metric { padding-left: .4rem; }
+  [data-srt-animation="solar-cart"] .solar-metric-name { min-height: 2.5em; }
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-srt-animation="solar-cart"] * { scroll-behavior: auto; }
+}
+@media (max-width: 480px) {
+  [data-srt-animation="solar-cart"] .solar-metrics { grid-template-columns: 1fr; gap: .65rem; }
+  [data-srt-animation="solar-cart"] .solar-metric { display: flex; align-items: baseline; justify-content: space-between; gap: .4rem; padding-left: .55rem; }
+  [data-srt-animation="solar-cart"] .solar-metric-name { min-height: 0; margin: 0; font-size: .87rem; }
+  [data-srt-animation="solar-cart"] .solar-metric-value { font-size: 1.03rem; }
+}

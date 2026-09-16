@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="350" viewBox="0 0 760 350" role="img" aria-labelledby="title description">
+  <title id="title">Schematischer Vergleich der Wellenlängen aus der Legacy-Aufgabe</title>
+  <desc id="description">Zwei Linienpositionen auf derselben linearen Wellenlängenskala von 500 bis 535 Nanometern. Die Aufgabe nennt 513 Nanometer im Labor und 525 Nanometer für das empfangene Licht. Gezeigt sind nur diese Aufgabenwerte, keine gemessenen Intensitäten.</desc>
+  <metadata>Eigene schematische Darstellung der Zahlenwerte 513 nm und 525 nm aus dem ursprünglichen Arbeitsblatt. Keine übernommenen Bildbestandteile oder Messkurven. Gemeinsame lineare Abbildung: x=245+13*(Wellenlänge in nm-500).</metadata>
+  <rect width="760" height="350" fill="#fff"/>
+  <g font-family="Source Sans Pro, sans-serif" fill="#243447" font-size="21">
+    <text x="32" y="115">Labor</text>
+    <text x="32" y="215">Empfangenes Licht</text>
+    <g stroke="#d3dde2" stroke-width="1.5" fill="none">
+      <path d="M245 142H700 M245 242H700"/>
+      <line x1="375" y1="64" x2="375" y2="280" stroke-dasharray="3 6"/>
+      <line x1="505" y1="64" x2="505" y2="280" stroke-dasharray="3 6"/>
+      <line x1="635" y1="64" x2="635" y2="280" stroke-dasharray="3 6"/>
+    </g>
+    <path d="M414 86V142" stroke="#607286" stroke-width="5"/>
+    <path d="M570 186V242" stroke="#0b8793" stroke-width="5"/>
+    <text x="414" y="72" text-anchor="middle">513 nm</text>
+    <text x="570" y="172" text-anchor="middle">525 nm</text>
+    <g stroke="#607286" stroke-width="1.6">
+      <path d="M245 280H700 M245 280V288 M375 280V288 M505 280V288 M635 280V288 M700 280V288"/>
+    </g>
+    <g text-anchor="middle" font-size="19">
+      <text x="245" y="310">500</text>
+      <text x="375" y="310">510</text>
+      <text x="505" y="310">520</text>
+      <text x="635" y="310">530</text>
+      <text x="700" y="310">535</text>
+      <text x="472" y="340" font-size="21">Wellenlänge in nm</text>
+    </g>
+  </g>
+</svg>

@@ -1945,3 +1945,5 @@ $$
 
 </details>
 ::::
+
+Die ursprünglichen Vorlesungsaufgaben findest du unter [Legacy-Arbeitsblatt 1](legacy-arbeitsblaetter.qmd#arbeitsblatt-1) und [Legacy-Arbeitsblatt 2](legacy-arbeitsblaetter.qmd#arbeitsblatt-2).

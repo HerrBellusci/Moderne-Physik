@@ -19,6 +19,7 @@ Die aktiven Kapitel und ihre Reihenfolge stehen in `_quarto.yml`. Der Build wurd
 | `01_srt_raum_und_zeit_umbau.qmd` | SRT 1: Raum und Zeit |
 | `03_srt_impuls_und_energie_umbau.qmd` | SRT 2: Impuls und Energie |
 | `02_laser_ausflug_umbau.qmd` | Laser-Kapitel |
+| `legacy-arbeitsblaetter.qmd` | Zusatzseite mit den ersten beiden ursprünglichen SRT-Arbeitsblättern |
 | `references.qmd`, `references-*.bib` | Literaturseite mit zwei getrennten Literaturverzeichnissen |
 | `assets/animations/srt1-raum-und-zeit/` | Veranschaulichungen des ersten SRT-Kapitels, nach Thema geordnet |
 | `assets/animations/srt2-impuls-und-energie/` | Veranschaulichungen des zweiten SRT-Kapitels |
@@ -34,6 +35,8 @@ Die aktiven Kapitel und ihre Reihenfolge stehen in `_quarto.yml`. Der Build wurd
 | `alt-nicht-eingebunden/` | Frühere Kapitel und unbenutzte Veranschaulichungen; nicht Teil der Website |
 | `.github/workflows/publish.yml` | Baut das Workbook und veröffentlicht `_book/` mit GitHub Pages |
 | `licenses/`, `THIRD-PARTY-NOTICES.md` | Lizenztexte und Herkunft der Drittkomponenten |
+
+Die Legacy-Arbeitsblätter werden über `book.page-footer` eingebunden und aus beiden SRT-Kapiteln verlinkt. Die Zusatzseite erhält keinen Eintrag in `book.chapters`.
 
 `_extensions` ist der von Quarto vorgesehene Ordnername und darf nicht beliebig umbenannt werden. `_book/` und `.quarto/` entstehen lokal beim Bauen und gehören nicht in die Versionsverwaltung.
 

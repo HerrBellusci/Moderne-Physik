@@ -2,7 +2,7 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260916-bildrahmen">
 <link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260915">
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.css?v=20260915c">
 <script src="assets/animations/shared/core.js"></script>
@@ -10,8 +10,10 @@
 <script src="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.js?v=20260915c"></script>
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.css?v=20260915c">
 <script src="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.js?v=20260915c"></script>
-<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260915">
-<script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260915c"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260916-alltagsvergleich">
+<script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260916-alltagsvergleich"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/solarwagen.css?v=20260916b">
+<script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20260916b"></script>
 <script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
@@ -55,7 +57,7 @@ Auf der geraden Schiene ist die Bewegung eindimensional. Dabei kennzeichnet ein 
 Zwei Wagen mit jeweils $1\,\mathrm{kg}$ Masse bewegen sich vor dem Stoß mit $2\,\mathrm{m/s}$ und $1\,\mathrm{m/s}$ in dieselbe Richtung. Nach dem Stoß fahren sie gemeinsam mit $1{,}5\,\mathrm{m/s}$ weiter. Fährt der zweite Wagen vorher mit $1\,\mathrm{m/s}$ entgegen, beträgt die gemeinsame Geschwindigkeit danach $0{,}5\,\mathrm{m/s}$ in Richtung des ersten Wagens.
 :::
 
-Vollständig unelastischer Stoß zweier Wagen mit jeweils $1\,\mathrm{kg}$ Masse. Die Pfeile stellen die Impulse im selben Maßstab dar. Äußere Einflüsse wie Reibung werden in dieser idealisierten Darstellung vernachlässigt.
+Animation zum vollständig unelastischen Stoß zweier Wagen mit jeweils $1\,\mathrm{kg}$ Masse. Die Pfeile stellen die Impulse im selben Maßstab dar. Äußere Einflüsse wie Reibung werden in dieser idealisierten Darstellung vernachlässigt.
 ::::
 
 Auch bei Stößen zwischen sehr schnellen Teilchen gilt die Impulserhaltung. Mit der klassischen Formel $\vec p=m\vec v$ bleibt der Gesamtimpuls unter Berücksichtigung der Einsteinschen Postulate jedoch nicht in jedem Inertialsystem erhalten. Bei Geschwindigkeiten nahe der Lichtgeschwindigkeit ist deshalb eine andere Impulsformel erforderlich. Sie soll zwei Bedingungen erfüllen:
@@ -106,7 +108,7 @@ Für kleine Geschwindigkeiten ist $\gamma\approx1$, also $\vec p\approx m_0\vec 
 Für Alltagsgeschwindigkeiten stimmen klassischer und relativistischer Impuls näherungsweise überein. Bei Geschwindigkeiten nahe der Lichtgeschwindigkeit wächst der relativistische Impuls stärker als der klassische.
 :::
 
-Klassischer und relativistischer Impulsbetrag eines Protons in Abhängigkeit von seiner Geschwindigkeit. Die Punkte markieren die beiden Werte bei derselben Geschwindigkeit. Beide Achsen sind linear.
+Interaktives Diagramm zum klassischen und relativistischen Impulsbetrag eines Protons in Abhängigkeit von seiner Geschwindigkeit. Die Punkte markieren die beiden Werte bei derselben Geschwindigkeit. Beide Achsen sind linear.
 ::::
 
 In älteren Lehrbüchern zur Relativitätstheorie wird häufig davon gesprochen, dass die Masse eines Körpers mit seiner Geschwindigkeit zunimmt. Gemeint ist dabei die „relativistische Masse“ $m_\mathrm{rel}=\gamma m_0$. Mit ihr lässt sich der Impuls als $\vec p=m_\mathrm{rel}\vec v$ schreiben. Beide Schreibweisen liefern denselben Impuls.
@@ -190,9 +192,9 @@ $$
 E_\mathrm{kin}=\frac12m_0v^2.
 $$
 
-Um einen Körper schneller zu machen, muss Arbeit an ihm verrichtet werden. Wir vernachlässigen Reibung und andere Energieverluste, sodass die zugeführte Arbeit vollständig seine kinetische Energie erhöht. Für die Arbeit $W$ gilt dann $W=E_\mathrm{kin,nachher}-E_\mathrm{kin,vorher}$. Startet der Körper aus Ruhe, ist die verrichtete Arbeit gleich seiner erreichten kinetischen Energie. Seine Masse bleibt beim Beschleunigen unverändert.
+Um einen Körper schneller zu machen, muss Arbeit an ihm verrichtet werden. Dabei überträgt eine Kraft entlang des Weges Energie auf den Körper. Die Arbeit $W$ gibt an, wie viel Energie auf diese Weise übertragen wird. Wir vernachlässigen Reibung und andere Energieverluste, sodass die zugeführte Arbeit vollständig seine kinetische Energie erhöht. Für die Arbeit gilt dann $W=E_\mathrm{kin,nachher}-E_\mathrm{kin,vorher}$. Startet der Körper aus der Ruhe, ist die verrichtete Arbeit gleich seiner erreichten kinetischen Energie. Seine Masse bleibt beim Beschleunigen unverändert.
 
-Die relativistische Formel für die kinetische Energie lässt sich aus dem Arbeit-Energie-Zusammenhang und der relativistischen Impulsformel herleiten. Wenn dich diese Herleitung interessiert, kannst du sie bei @giancoli2010physik [S. 1248--1249] nachvollziehen. Das Ergebnis lautet
+Die relativistische Formel für die kinetische Energie lässt sich aus dem Arbeit-Energie-Zusammenhang und der relativistischen Impulsformel herleiten. Wenn dich diese Herleitung interessiert, kannst du sie bei @giancoli2010physik [S. 1248--1249] nachvollziehen. Das Ergebnis lautet:[kinetische Energie]{.column-margin .mp-randbegriff}
 
 $$
 E_\mathrm{kin}=(\gamma-1)m_0c^2.
@@ -200,7 +202,7 @@ $$ {#eq-ie-kinetische-energie}
 
 Der Lorentzfaktor $\gamma$ enthält die Geschwindigkeit $v$ des Körpers. Diese Geschwindigkeit und die kinetische Energie $E_\mathrm{kin}$ beziehen sich auf dasselbe Inertialsystem.
 
-Durch Ausmultiplizieren der Klammer erhalten wir zwei Terme.
+Durch Ausmultiplizieren der Klammer erhalten wir zwei Terme:
 
 $$
 E_\mathrm{kin}=\gamma m_0c^2-m_0c^2.
@@ -212,9 +214,11 @@ $$
 E_0=m_0c^2.
 $$ {#eq-ie-ruheenergie}
 
-Bei einem zusammengesetzten Körper umfasst die Ruheenergie auch die innere Energie, etwa die Energie der ungeordneten Bewegung seiner Bestandteile. Erwärmst du einen Körper und bleibt die zugeführte Energie vollständig in ihm, nimmt deshalb auch seine Masse zu. Gibt der Körper beim Abkühlen Energie an seine Umgebung ab, nimmt seine Masse wieder ab. Dabei wird jeweils derselbe Körper ohne Austausch von Materie betrachtet.
+Zur Ruheenergie eines Körpers trägt auch seine innere Energie bei, etwa die Energie der ungeordneten Bewegung seiner Bestandteile. Auch die chemische Energie einer Batterie ist in ihrer Ruheenergie enthalten.
 
-Die Gesamtenergie eines Körpers setzt sich aus seiner kinetischen Energie und seiner Ruheenergie zusammen.[Gesamtenergie]{.column-margin .mp-randbegriff}
+Erwärmst du einen Körper und bleibt die zugeführte Energie vollständig in ihm, nimmt auch seine Masse zu. Gibt der Körper beim Abkühlen Energie an seine Umgebung ab, nimmt seine Masse wieder ab. Die Masse ändert sich dabei, obwohl die Anzahl der Atome im Körper gleich bleibt.
+
+Die Gesamtenergie des betrachteten Körpers setzt sich aus seiner kinetischen Energie und seiner Ruheenergie zusammen.[Gesamtenergie]{.column-margin .mp-randbegriff}
 
 $$
 \begin{aligned}
@@ -224,12 +228,30 @@ E&=E_\mathrm{kin}+E_0\\
 \end{aligned}
 $$ {#eq-ie-gesamtenergie}
 
-Die beiden Terme in der Formel für die kinetische Energie können wir nun zuordnen.
+Die beiden Terme in der Formel für die kinetische Energie können wir nun zuordnen:
 
 $$
 E_\mathrm{kin}=\underbrace{\gamma m_0c^2}_{\text{Gesamtenergie }E}
  -\underbrace{m_0c^2}_{\text{Ruheenergie }E_0}.
 $$
+
+Ein Solarwagen kann Energie zunächst im Akku speichern und anschließend zum Anfahren nutzen. Beim Laden im Stillstand nehmen seine Ruheenergie und seine Masse zu. Beim Anfahren nutzt er Energie aus seinem eigenen Akku: Seine Ruheenergie nimmt ab, seine kinetische Energie nimmt zu. Im idealisierten Beispiel bleibt die Gesamtenergie des Wagens während des Anfahrens im Bodensystem gleich.
+
+In @fig-ie-solarwagen kannst du beide Vorgänge abspielen und anhalten. Die Anzeigen vergleichen den aktuellen Zustand mit dem ruhenden Wagen vor dem Laden. Die Massenänderung ist so klein, dass sie mit einer Alltagswaage nicht erkennbar wäre.
+
+:::: {#fig-ie-solarwagen}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="srt-workbook-stage" data-srt-animation="solar-cart" data-srt-viewbox-w="640" data-srt-viewbox-h="270" data-srt-label="Animation eines Solarwagens beim Laden und Anfahren. Im Stillstand speichert der Akku 100 Joule Energie. Beim anschließenden Anfahren nimmt die Ruheenergie ab und die kinetische Energie zu. Anzeigen zeigen die Energieänderungen, die winzige Massenänderung und die Geschwindigkeit im Bodensystem."></div>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+Der anfangs ruhende Wagen speichert beim Laden $100\,\mathrm J$ zusätzlich im Akku. Seine Masse nimmt dabei um etwa $1{,}1\cdot10^{-15}\,\mathrm{kg}$ zu. Werden diese $100\,\mathrm J$ anschließend vollständig in kinetische Energie umgewandelt, sinkt die Ruheenergie wieder auf ihren Anfangswert. Die Gesamtenergie des Wagens bleibt während des Anfahrens gleich. Am Ende fährt er mit etwa $14{,}1\,\mathrm{m/s}$.
+:::
+
+Animation zum Laden und Anfahren eines Solarwagens im Bezugssystem des Bodens. Der Wagen hat vor dem Laden eine Masse von $1\,\mathrm{kg}$ und speichert anschließend $100\,\mathrm J$ im Akku. Beim Anfahren rollt er ohne Gleiten auf ruhendem Untergrund, der Impuls, aber keine Energie überträgt. Wärmeverluste und die Rotationsenergie der Räder werden vernachlässigt.
+::::
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck: Bezugssystem">
@@ -249,17 +271,15 @@ Im Ruhesystem des Raumschiffs gilt $E_\mathrm{kin}=0$ und $E=E_0=m_0c^2$.
 
 Im Erdsystem bewegt sich das Raumschiff. Dort gilt $E_\mathrm{kin}>0$ und $E=E_\mathrm{kin}+E_0>E_0$. Die Ruheenergie ist in beiden Bezugssystemen gleich, weil die Masse desselben Raumschiffs beim Wechsel des Bezugssystems unverändert bleibt.
 
-Das widerspricht der Energieerhaltung nicht. Sie besagt, dass die Gesamtenergie eines abgeschlossenen Systems innerhalb eines festgelegten Bezugssystems über die Zeit konstant bleibt. Ein Wechsel des Bezugssystems führt dem System keine Energie zu.
-
 </details>
 
-Für kleine Geschwindigkeiten soll die relativistische Formel wieder näherungsweise die bekannte kinetische Energie $E_\mathrm{kin}=\tfrac12m_0v^2$ ergeben. Würden wir in @eq-ie-kinetische-energie sofort $\gamma\approx1$ einsetzen, verschwände mit $\gamma-1$ gerade der kleine Anteil, den wir untersuchen wollen. Deshalb bringen wir die Formel zunächst in eine Form, in der $v^2$ als Faktor vorkommt. Die Näherung verwenden wir erst am Ende. Für die Rechnung kennzeichnen wir die Energieformel mit (I).
+Für kleine Geschwindigkeiten soll die relativistische Formel wieder näherungsweise die bekannte kinetische Energie $E_\mathrm{kin}=\tfrac12m_0v^2$ ergeben. Würden wir in @eq-ie-kinetische-energie sofort $\gamma\approx1$ einsetzen, verschwände mit $\gamma-1$ gerade der kleine Anteil, den wir untersuchen wollen. Deshalb bringen wir die Formel zunächst in eine Form, in der $v^2$ als Faktor vorkommt.
 
 $$
 E_\mathrm{kin}=(\gamma-1)m_0c^2. \tag{I}
 $$
 
-Wir beginnen mit dem Lorentzfaktor und formen nach $\gamma^2-1$ um.
+Wir beginnen mit dem Lorentzfaktor und formen nach $\gamma^2-1$ um:
 
 $$
 \begin{aligned}
@@ -275,7 +295,7 @@ $$
 \end{aligned}
 $$
 
-Mit der dritten binomischen Formel $a^2-b^2=(a-b)(a+b)$ zerlegen wir die linke Seite. Anschließend teilen wir durch $\gamma+1$.
+Mit der dritten binomischen Formel $a^2-b^2=(a-b)(a+b)$ zerlegen wir die linke Seite. Anschließend teilen wir durch $\gamma+1$:
 
 $$
 \begin{align}
@@ -285,14 +305,14 @@ $$
 \end{align}
 $$
 
-Einsetzen von (II) in (I) ergibt
+Einsetzen von (II) in (I) ergibt:
 
 $$
 E_\mathrm{kin}=\frac{\gamma^2v^2}{(\gamma+1)c^2}\,m_0c^2
  =\frac{\gamma^2}{\gamma+1}\,m_0v^2.
 $$
 
-Bis hierher sind alle Umformungen exakt. Für $v\ll c$ ist $\gamma\approx1$. Der Vorfaktor wird dann näherungsweise $1^2/(1+1)=1/2$ und es folgt
+Für $v\ll c$ ist $\gamma\approx1$. Der Vorfaktor wird dann näherungsweise $1^2/(1+1)=1/2$ und es folgt:
 
 $$
 E_\mathrm{kin}\approx\frac12m_0v^2.
@@ -300,19 +320,28 @@ $$
 
 Die klassische kinetische Energie ist also die Näherung der relativistischen Formel für kleine Geschwindigkeiten. Damit erfüllt auch die Energieformel das bereits bekannte Korrespondenzprinzip.
 
-Die Energieerhaltung kennst du ebenfalls aus der klassischen Mechanik. Auch die relativistische Energiebeschreibung muss sie erfüllen. Für ein abgeschlossenes System ohne Energie- und Impulsaustausch mit seiner Umgebung bleibt die Gesamtenergie in jedem Inertialsystem über die Zeit konstant. Dabei können Energieformen ineinander umgewandelt werden.[Energieerhaltung]{.column-margin .mp-randbegriff}
+Die Energieerhaltung kennst du ebenfalls aus der klassischen Mechanik. Auch die relativistische Energiebeschreibung muss sie erfüllen. In einem abgeschlossenen System ohne Energie- und Impulsaustausch mit der Umgebung hat die Gesamtenergie zu jedem Zeitpunkt denselben Wert, auch wenn sich Energieformen ineinander umwandeln. Wie beim Impuls muss die Erhaltung in jedem Inertialsystem gelten.[Energieerhaltung]{.column-margin .mp-randbegriff}
 
-Bei Kernreaktionen können die Massen der entstehenden Teilchen zusammen kleiner sein als die der Ausgangsteilchen. Eine solche Massendifferenz wird als Massendefekt bezeichnet.[Massendefekt]{.column-margin .mp-randbegriff} Die zugehörige Differenz der Ruheenergien kann etwa als kinetische Energie der Teilchen oder als Strahlungsenergie frei werden.
+Zur Energiebilanz gehört auch die Ruheenergie. Ihre Umwandlung in andere Energieformen tritt beispielsweise bei Kernreaktionen auf. Bei solchen Reaktionen können die Massen der entstehenden Teilchen zusammen kleiner sein als die der Ausgangsteilchen. Eine solche Massendifferenz wird als Massendefekt bezeichnet.[Massendefekt]{.column-margin .mp-randbegriff} Die zugehörige Differenz der Ruheenergien kann etwa als kinetische Energie der Teilchen oder als Strahlungsenergie frei werden.
 
-Auch in der Sonne laufen Kernreaktionen ab. Dort verschmelzen Wasserstoffkerne über mehrere Schritte zu Heliumkernen. Dieser Vorgang heißt Kernfusion. Die Reaktionsprodukte haben zusammen weniger Masse als die Ausgangsteilchen. Der Unterschied ihrer Ruheenergien wird bei der Fusion frei. Der größte Teil dieser Energie wird zunächst innerhalb der Sonne übertragen. Wenn die Sonne Energie als Strahlung nach außen abgibt, nehmen ihre Ruheenergie und ihre Masse ab.
+Auch in der Sonne laufen Kernreaktionen ab. Dort verschmelzen Wasserstoffkerne über mehrere Schritte zu Heliumkernen. Dieser Vorgang heißt Kernfusion.[Kernfusion]{.column-margin .mp-randbegriff} Die Reaktionsprodukte haben zusammen weniger Masse als die Ausgangsteilchen. Der Unterschied ihrer Ruheenergien wird bei der Fusion frei. Die frei gewordene Energie wird zum großen Teil im Inneren der Sonne weitergegeben, bis sie die Oberfläche erreicht und abgestrahlt wird. Durch diese Energieabgabe sinkt die Ruheenergie der Sonne und damit auch ihre Masse.
 
-Aus $E_0=m_0c^2$ folgt allgemein der Zusammenhang zwischen einer Änderung der Ruheenergie und der zugehörigen Massenänderung.
+Ändert sich die Ruheenergie eines Körpers, ändert sich nach $E_0=m_0c^2$ auch seine Masse:
 
 $$
 \Delta E_0=\Delta m_0c^2.
 $$ {#eq-ie-masse-energieaenderung}
 
-Dabei stehen beide Änderungen für den Wert nachher minus den Wert vorher, also $\Delta E_0=E_{0,\mathrm{nachher}}-E_{0,\mathrm{vorher}}$ und $\Delta m_0=m_{0,\mathrm{nachher}}-m_{0,\mathrm{vorher}}$. Nimmt ein Körper Energie auf und bleibt dabei als Ganzes in Ruhe, sind beide Änderungen positiv. Gibt er unter diesen Bedingungen Energie ab, sind beide negativ.
+Die Änderungen berechnen wir jeweils als Differenz aus Endwert und Anfangswert:
+
+$$
+\begin{aligned}
+\Delta E_0&=E_{0,\mathrm{nachher}}-E_{0,\mathrm{vorher}},\\[6pt]
+\Delta m_0&=m_{0,\mathrm{nachher}}-m_{0,\mathrm{vorher}}.
+\end{aligned}
+$$
+
+Nimmt ein Körper Energie auf und bleibt dabei als Ganzes in Ruhe, steigt seine Ruheenergie und damit auch seine Masse. Gibt er unter diesen Bedingungen Energie ab, sinkt seine Ruheenergie und damit auch seine Masse.
 
 ::::: {#aufgabe-ie-sonne .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung: Masseverlust der Sonne">
@@ -320,22 +349,24 @@ Dabei stehen beide Änderungen für den Wert nachher minus den Wert vorher, also
   Berechnung: Masseverlust der Sonne
 </span>
 
-Im mittleren Erdabstand beträgt die Bestrahlungsstärke der Sonne außerhalb der Atmosphäre etwa $S=1{,}36\cdot10^3\,\mathrm{W/m^2}$. Eine Fläche von einem Quadratmeter empfängt also pro Sekunde etwa $1360\,\mathrm J$, wenn die Strahlung senkrecht auf sie trifft. Für die Aufgabe ist der nominale Referenzwert gerundet [@iau2015b3, S. 2].
+Die Bestrahlungsstärke $S$ gibt die eintreffende Strahlungsleistung pro Fläche an. Im mittleren Erdabstand beträgt sie außerhalb der Atmosphäre etwa $S=1{,}36\cdot10^3\,\mathrm{W/m^2}$. Eine Fläche von einem Quadratmeter empfängt also pro Sekunde etwa $1360\,\mathrm J$, wenn die Strahlung senkrecht auf sie trifft. Der Wert ist für diese Aufgabe gerundet [@iau2015b3, S. 2].
 
-Nimm an, dass die Sonne gleichmäßig in alle Richtungen abstrahlt. @fig-ie-sonnenstrahlung zeigt die gedachte Kugelfläche im Abstand der Erde. Verwende $r=1{,}5\cdot10^{11}\,\mathrm m$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$. Betrachte die Sonne in ihrem Ruhesystem und beschränke die Rechnung auf die Abgabe elektromagnetischer Strahlung.
+Nimm an, dass die Sonne gleichmäßig in alle Richtungen abstrahlt. Ihre Strahlung verteilt sich dann im Abstand der Erde auf die gedachte Kugelfläche in @fig-ie-sonnenstrahlung. Der Radius dieser Kugel ist der mittlere Abstand zwischen Erde und Sonne, $r=1{,}5\cdot10^{11}\,\mathrm m$. Verwende $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
 
 :::: {#fig-ie-sonnenstrahlung .srt-workbook-image-figure}
 ![](assets/images/sonne-strahlungsleistung.svg){.srt-workbook-image fig-alt="Die Sonne im Mittelpunkt einer gedachten Kugel im Erdabstand. Ein vergrößerter Flächenausschnitt zeigt die senkrecht einfallende Strahlung auf einen Quadratmeter."}
 
-Skizze der Abstrahlung der Sonne auf eine gedachte Kugelfläche im Erdabstand $r$. Der vergrößerte Ausschnitt zeigt eine zur Strahlungsrichtung senkrechte Fläche von $1\,\mathrm{m^2}$. Größen und Abstände sind nicht maßstäblich.
+Skizze der Abstrahlung der Sonne auf eine gedachte Kugelfläche im Erdabstand $r$. Der vergrößerte Ausschnitt zeigt eine zur Strahlungsrichtung senkrechte Fläche von $1\,\mathrm{m^2}$.
 ::::
 
-Die Kugeloberfläche beträgt $A=4\pi r^2$. Aus der Bestrahlungsstärke ergibt sich die gesamte Strahlungsleistung $P=SA$. Eine konstante Leistung $P$ entspricht in der Zeit $\Delta t$ einer abgegebenen Energie $E_\mathrm{ab}=P\Delta t$.
-
-Für diese Aufgabe benötigst du die folgenden Zusammenhänge.
+Für die Rechnung benötigst du folgende Zusammenhänge:
 
 $$
-A=4\pi r^2,\qquad P=SA,\qquad E_\mathrm{ab}=P\Delta t
+\begin{aligned}
+A&=4\pi r^2 &&\text{Kugeloberfläche},\\[6pt]
+P&=S\,A &&\text{gesamte Strahlungsleistung},\\[6pt]
+E_\mathrm{ab}&=P\,\Delta t &&\text{abgegebene Strahlungsenergie}.
+\end{aligned}
 $$
 
 ::: {.mp-formula-repeat}
@@ -346,11 +377,10 @@ $$
 ([-@eq-ie-masse-energieaenderung])
 :::
 
-Da die Sonne Energie abgibt, ist ihre Änderung der Ruheenergie negativ: $\Delta E_0=-E_\mathrm{ab}$. Der Masseverlust ist der Betrag der ebenfalls negativen Massenänderung $\Delta m_0$.
+Die Sonne bleibt bei der angenommenen gleichmäßigen Abstrahlung in ihrem Ruhesystem in Ruhe. Da sie Energie abgibt, ist ihre Änderung der Ruheenergie negativ: $\Delta E_0=-E_\mathrm{ab}$. Der Masseverlust ist der Betrag der ebenfalls negativen Massenänderung $\Delta m_0$.
 
 1. <u>Berechne</u> die gesamte Strahlungsleistung der Sonne und die in einer Sekunde abgegebene Strahlungsenergie.
 2. <u>Berechne</u> den zugehörigen Masseverlust pro Sekunde in Kilogramm und Tonnen.
-3. <u>Erläutere</u>, wo sich die von der Sonne abgegebene Energie anschließend befindet.
 :::::
 
 <details class="mp-details">
@@ -366,12 +396,10 @@ Da die Sonne Energie abgibt, ist ihre Änderung der Ruheenergie negativ: $\Delta
    $$P=SA
    \approx3{,}85\cdot10^{26}\,\mathrm W.$$
 
-   In einer Sekunde gibt die Sonne damit die Strahlungsenergie
+   In einer Sekunde gibt die Sonne damit folgende Strahlungsenergie ab:
 
    $$E_\mathrm{ab}=P\cdot1\,\mathrm s
-   \approx3{,}85\cdot10^{26}\,\mathrm J$$
-
-   ab.
+   \approx3{,}85\cdot10^{26}\,\mathrm J.$$
 
 2. Die Ruheenergie der Sonne nimmt ab. Ihre Massenänderung in einer Sekunde beträgt deshalb
 
@@ -379,13 +407,11 @@ Da die Sonne Energie abgibt, ist ihre Änderung der Ruheenergie negativ: $\Delta
    =-\frac{E_\mathrm{ab}}{c^2}
    \approx-4{,}3\cdot10^9\,\mathrm{kg}.$$
 
-   Der Masseverlust ist der Betrag dieser Änderung.
+   Der Masseverlust ist der Betrag dieser Änderung:
 
    $$|\Delta m_0|\approx4{,}3\cdot10^9\,\mathrm{kg}=4{,}3\cdot10^6\,\mathrm t.$$
 
    Durch ihre elektromagnetische Strahlung verliert die Sonne also pro Sekunde rund vier Millionen Tonnen Masse. Dieser Wert erklärt die Angabe im Kapiteleinstieg.
-
-3. Die abgegebene Energie befindet sich in der Strahlung außerhalb der Sonne. Für das System aus Sonne und abgegebener Strahlung bleibt die Gesamtenergie erhalten, wenn wir weitere Energieaustausche vernachlässigen. Die Abnahme der Ruheenergie der Sonne entspricht der Energie der Strahlung.
 
 </details>
 
@@ -393,7 +419,7 @@ Da die Sonne Energie abgibt, ist ihre Änderung der Ruheenergie negativ: $\Delta
 
 ## Sichern und anwenden
 
-Im Selbstcheck erklärst du die Zusammenhänge zwischen Impuls, Bewegung und Energie. In den anschließenden Aufgaben untersuchst du die Lichtgeschwindigkeit als Grenze und die Beschleunigung geladener Teilchen.
+Zum Abschluss sicherst du die Grundideen des Kapitels mithilfe des Selbstchecks. Anschließend kannst du dein Wissen in den Übungsaufgaben anwenden.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-selfcheck" aria-label="Selbstcheck">
@@ -401,101 +427,41 @@ Im Selbstcheck erklärst du die Zusammenhänge zwischen Impuls, Bewegung und Ene
   Selbstcheck
 </span>
 
-<u>Erkläre</u> die Grundideen dieses Kapitels zusammenhängend in deiner eigenen Sprache. Stell dir vor, dein Publikum ist jemand aus deinem Kurs. Nutze die Lernziele als Leitfaden und ergänze Formeln, Rechnungen oder Skizzen dort, wo sie deine Erklärung unterstützen.
+<u>Erkläre</u> das Kapitel zusammenhängend in deiner eigenen Sprache, so wie du es jemandem aus deinem Kurs beibringen würdest. Nutze dafür die Lernziele unten: Wer deine Erklärung liest oder hört, soll daran erkennen, dass du jedes dieser Ziele erreicht hast. Schreibe deine Erklärung auf und sammle sie an einem Ort. So entsteht Kapitel für Kapitel deine eigene Zusammenfassung, auf die du zurückgreifen kannst. Wo ein Lernziel eine Herleitung oder eine Rechnung nennt, führe sie aus.
 
-- Relativistischer Impuls: Du <u>erläuterst</u>, welche Bedingungen die relativistische Impulsdefinition erfüllen soll. Du <u>berechnest</u> den relativistischen Impuls in einem angegebenen Bezugssystem und <u>beurteilst</u>, wie gut die klassische Formel ihn annähert.
-- Relativistische Energie: Du <u>erläuterst</u> den Zusammenhang zwischen kinetischer Energie, Ruheenergie und Gesamtenergie. Du <u>berechnest</u> die kinetische Energie, Ruheenergie und Gesamtenergie eines Körpers.
+Ist jemand aus deinem Kurs da, nutze die Gelegenheit und erkläre im Gespräch. Skizziere dabei, was sich zeichnen lässt. Achte auf Rückfragen. Sie zeigen dir, wo deine Erklärung noch hakt.
 
-Halte deine Erklärung schriftlich fest oder erkläre sie jemandem aus deinem Kurs. Wenn du bei einem Lernziel nicht weiterkommst, lies den zugehörigen Abschnitt erneut und bearbeite die passende Aufgabe noch einmal.
+- **Relativistischer Impuls:** Du <u>erläuterst</u>, welche Bedingungen die relativistische Impulsdefinition erfüllen soll. Du <u>berechnest</u> den relativistischen Impuls in einem angegebenen Bezugssystem und <u>beurteilst</u>, wie gut die klassische Formel ihn annähert.
+- **Relativistische Energie:** Du <u>erläuterst</u> den Zusammenhang zwischen kinetischer Energie, Ruheenergie und Gesamtenergie. Du <u>berechnest</u> die kinetische Energie, Ruheenergie und Gesamtenergie eines Körpers.
+
 :::
 
-### Anwenden und vertiefen
+### Übungsaufgaben
 
-Mit den Energieformeln kannst du nun untersuchen, wie viel Energie zum Beschleunigen eines Körpers erforderlich ist. Die erste Aufgabe greift die Lichtgeschwindigkeit als Grenze auf.
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer: Lichtgeschwindigkeit">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
-  Transfer: Lichtgeschwindigkeit
-</span>
-
-Ein Körper mit positiver, unveränderter Ruhemasse soll durch Energiezufuhr immer weiter beschleunigt werden.
-
-1. <u>Beschreibe</u> mithilfe der beiden Formeln, wie sich seine kinetische Energie entwickelt, wenn seine Geschwindigkeit immer näher an $c$ liegt. Dabei gilt stets $v<c$.
-2. <u>Beurteile</u>, ob eine endliche Energiemenge ausreicht, um den Körper auf Lichtgeschwindigkeit zu beschleunigen.
-
-::: {.mp-formula-repeat}
-$$
-E_\mathrm{kin}=(\gamma-1)m_0c^2
-$$
-
-([-@eq-ie-kinetische-energie])
-:::
-
-::: {.mp-formula-repeat}
-$$
-\gamma=\frac{1}{\sqrt{1-v^2/c^2}}
-$$
-
-([-@eq-umbau-lorentzfaktor])
-:::
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-
-Nähert sich $v$ an $c$, ohne $c$ zu erreichen, nähert sich $v^2/c^2$ an $1$. Der Ausdruck $1-v^2/c^2$ und seine Wurzel werden dadurch immer kleiner, bleiben aber positiv. Der Lorentzfaktor wächst unbegrenzt.
-
-Weil $m_0c^2$ ein fester positiver Faktor ist, wächst auch $E_\mathrm{kin}=(\gamma-1)m_0c^2$ unbegrenzt.
-
-Eine endliche Energiemenge reicht deshalb nicht aus, um den Körper auf Lichtgeschwindigkeit zu beschleunigen. Für jede noch so nahe an $c$ liegende Geschwindigkeit unterhalb von $c$ bleibt die benötigte Energie endlich. Je näher die Zielgeschwindigkeit an $c$ liegt, desto größer wird sie.
-
-</details>
-
-Bei der Beschleunigung geladener Teilchen kannst du an die Elektrodynamik anknüpfen. Stell dir ein Proton zwischen den Platten eines geladenen Plattenkondensators vor, wie in @fig-ie-kondensator. Zwischen den Platten liegt die Spannung $U$. Die elektrische Kraft beschleunigt das positive Proton zur negativen Platte. Dabei nimmt seine elektrische potenzielle Energie ab und seine kinetische Energie zu.
+Für die folgende Aufgabe frischen wir dein Wissen zur Elektrostatik auf. Stell dir ein Proton zwischen den Platten eines geladenen Plattenkondensators vor, wie in @fig-ie-kondensator. Zwischen den Platten liegt die Spannung $U$. Die Coulomb-Kraft beschleunigt das positiv geladene Proton zur negativ geladenen Platte. Dabei nimmt seine elektrische potenzielle Energie ab und seine kinetische Energie nimmt zu.
 
 :::: {#fig-ie-kondensator .srt-workbook-image-figure}
 ![](assets/images/kondensator-beschleunigung.svg){.srt-workbook-image fig-alt="Ein Proton zwischen einer positiv geladenen Platte links und einer negativ geladenen Platte rechts. Elektrisches Feld und elektrische Kraft zeigen nach rechts. Zwischen den Platten liegt die Spannung U."}
 
-Proton im elektrischen Feld eines Plattenkondensators mit der Spannung $U$. Die Pfeile zeigen die Richtung des elektrischen Feldes und der Kraft auf das Proton. Das Feld zwischen den Platten wird als homogen angenommen, Randeffekte werden vernachlässigt.
+Skizze eines Protons im elektrischen Feld eines Plattenkondensators mit der Spannung $U$. Die Pfeile zeigen die Richtung des elektrischen Feldes und der Kraft auf das Proton. Das Feld zwischen den Platten wird als homogen angenommen, Kanteneffekte werden vernachlässigt.
 ::::
 
-Durchläuft das Proton die gesamte Spannung $U$, verrichtet das elektrische Feld die Arbeit $W=eU$ an ihm. Für ein Teilchen mit einer beliebigen positiven Ladung $q$ beträgt diese Arbeit $W=qU$. Startet das Teilchen aus Ruhe und vernachlässigen wir Energieverluste, gilt deshalb
+Durchläuft ein positiv geladenes Teilchen mit der Ladung $q$ die gesamte Beschleunigungsspannung $U$, verrichtet das elektrische Feld die Arbeit $W=qU$ an ihm. Wir nehmen an, dass diese Arbeit vollständig die kinetische Energie des Teilchens erhöht. Startet es aus der Ruhe, gilt deshalb
 
 $$
 E_\mathrm{kin}=qU.
 $$
 
-Für das Proton ist $q=e\approx1{,}60\cdot10^{-19}\,\mathrm C$. Seine Ruheenergie bleibt beim Beschleunigen unverändert, seine kinetische Energie und seine Gesamtenergie nehmen um $eU$ zu. Auch in Teilchenbeschleunigern übernehmen elektrische Felder die Energiezufuhr. Magnetische Felder können den Strahl umlenken. Die magnetische Kraft steht senkrecht zur Bewegung und verrichtet deshalb keine Arbeit am Teilchen.
+Für das Proton gilt $q=e$, wobei $e\approx1{,}60\cdot10^{-19}\,\mathrm C$ die Elementarladung ist. Damit ist $E_\mathrm{kin}=eU$. Seine Ruheenergie bleibt beim Beschleunigen unverändert, seine kinetische Energie und seine Gesamtenergie nehmen um $eU$ zu.
 
-Teilchenenergien werden häufig in Elektronenvolt angegeben.[Elektronenvolt]{.column-margin .mp-randbegriff} Ein Elektronenvolt ist die Energie, die ein Teilchen mit dem Ladungsbetrag $e$ beim Beschleunigen durch eine Spannung von $1\,\mathrm V$ gewinnt.
+Teilchenenergien werden häufig in Elektronenvolt angegeben.[Elektronenvolt]{.column-margin .mp-randbegriff} Ein Elektronenvolt ist die Energie, die ein Teilchen mit dem Ladungsbetrag $e$ beim Beschleunigen durch eine Spannung von $1\,\mathrm V$ gewinnt:
 
 $$
 1\,\mathrm{eV}=e\cdot1\,\mathrm V
 \approx1{,}60\cdot10^{-19}\,\mathrm J.
 $$
 
-Ein Megaelektronenvolt entspricht einer Million Elektronenvolt, also $1\,\mathrm{MeV}=10^6\,\mathrm{eV}$. Auch die Energie eines Protons kannst du in Elektronenvolt angeben.
-
-@fig-ie-energiezufuhr zeigt, welche Geschwindigkeiten ein Proton nach aufeinanderfolgenden Energiezufuhren erreicht. Es beginnt in Ruhe. Mit jedem Druck auf „100 MeV zuführen“ erhöhst du seine kinetische Energie um denselben Betrag. Die Markierungen zeigen die erreichten Geschwindigkeiten auf einer festen Skala von $0$ bis $c$.
-
-[Ein Schritt von $100\,\mathrm{MeV}$ entspricht etwa $1{,}6\cdot10^{-11}\,\mathrm J$. Zum Vergleich: Um $100\,\mathrm g$ um einen Meter anzuheben, brauchst du etwa $1\,\mathrm J$. Diese Energie würde ohne Verluste ausreichen, um rund 60 Milliarden Protonen jeweils $100\,\mathrm{MeV}$ zuzuführen.]{.column-margin}
-
-:::: {#fig-ie-energiezufuhr}
-::: {.content-visible when-format="html"}
-```{=html}
-<div class="srt-workbook-stage" data-srt-animation="energy-increments" data-srt-viewbox-w="640" data-srt-viewbox-h="330" data-srt-label="Energiezufuhr zu einem anfangs ruhenden Proton in Schritten von jeweils 100 Megaelektronenvolt. Die erreichten Geschwindigkeiten liegen auf einer festen linearen Skala zwischen null und der Lichtgeschwindigkeit."></div>
-```
-:::
-
-::: {.content-visible unless-format="html"}
-Nach der ersten Zufuhr von $100\,\mathrm{MeV}$ bewegt sich das Proton mit etwa $0{,}428c$. Nach insgesamt $200\,\mathrm{MeV}$ sind es etwa $0{,}566c$ und nach $300\,\mathrm{MeV}$ etwa $0{,}653c$.
-:::
-
-Interaktive Darstellung der Energiezufuhr zu einem Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, das anfangs ruht. Jeder Schritt erhöht seine kinetische Energie um $100\,\mathrm{MeV}$. Die Geschwindigkeitsskala ist linear. Energieverluste werden vernachlässigt, verwendet werden $c=3{,}0\cdot10^8\,\mathrm{m/s}$ und $e=1{,}60\cdot10^{-19}\,\mathrm C$.
-::::
-
-Bei gleicher zugeführter Energie werden die Geschwindigkeitszuwächse mit jedem Schritt kleiner. Die kinetische Energie wächst dabei weiter. Für die Geschwindigkeit bleibt $c$ die Grenze.
+Ein Megaelektronenvolt entspricht einer Million Elektronenvolt, also $1\,\mathrm{MeV}=10^6\,\mathrm{eV}$. Auch die Ruheenergie und die kinetische Energie eines Protons kannst du in Elektronenvolt angeben.
 
 ::: {#aufgabe-ie-proton-energie .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung: Proton beschleunigen">
@@ -503,7 +469,7 @@ Bei gleicher zugeführter Energie werden die Geschwindigkeitszuwächse mit jedem
   Berechnung: Proton beschleunigen
 </span>
 
-Ein Proton startet im Laborsystem aus Ruhe und wird durch ein elektrisches Feld beschleunigt. Danach beträgt seine kinetische Energie die Hälfte seiner Ruheenergie, $E_\mathrm{kin}=E_0/2$. Vernachlässige Energieverluste. Verwende $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, $e=1{,}60\cdot10^{-19}\,\mathrm C$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
+Ein Proton startet im Laborsystem aus der Ruhe und wird durch ein elektrisches Feld beschleunigt. Danach beträgt seine kinetische Energie die Hälfte seiner Ruheenergie, $E_\mathrm{kin}=E_0/2$. Seine Ruhemasse bleibt unverändert. Verwende $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, $e=1{,}60\cdot10^{-19}\,\mathrm C$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
 
 Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln.
 
@@ -546,66 +512,132 @@ $$
 1. <u>Bestimme</u> zunächst den Lorentzfaktor und daraus die Geschwindigkeit des Protons.
 2. <u>Berechne</u> seine Ruheenergie, seine kinetische Energie und seine Gesamtenergie in Joule sowie seine kinetische Energie in Megaelektronenvolt.
 3. <u>Berechne</u> die erforderliche Beschleunigungsspannung.
+4. <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck"><img src="assets/task-icons/think.svg" alt="" aria-hidden="true">Denkcheck</span> <u>Beurteile</u>, ob das Proton durch weitere Zufuhr einer endlichen Energiemenge auf Lichtgeschwindigkeit beschleunigt werden kann. <u>Begründe</u> deine Beurteilung mithilfe der Formeln für den Lorentzfaktor und die kinetische Energie.
 :::
-
-<details class="mp-details">
-<summary>Hinweis zur Geschwindigkeit anzeigen</summary>
-
-Setze die Vorgabe $E_\mathrm{kin}=E_0/2$ in $E_\mathrm{kin}=(\gamma-1)E_0$ ein. Nach Division durch $E_0$ kannst du $\gamma$ bestimmen. Bilde anschließend in der Lorentzfaktorformel auf beiden Seiten den Kehrwert und quadriere.
-
-</details>
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-1. Aus $E_\mathrm{kin}=(\gamma-1)E_0=E_0/2$ folgt nach Division durch $E_0$
+1. Mit der vorgegebenen kinetischen Energie gilt
 
-   $$\gamma-1=\frac12,\qquad\gamma=\frac32.$$
+   $$
+   \begin{align}
+   E_\mathrm{kin}&=(\gamma-1)E_0 \tag{I}\\
+   E_\mathrm{kin}&=\frac12E_0. \tag{II}
+   \end{align}
+   $$
 
-   Um die Geschwindigkeit zu bestimmen, bilden wir in der Lorentzfaktorformel den Kehrwert und quadrieren:
+   Einsetzen von (II) in (I):
 
-   $$\frac1\gamma=\sqrt{1-\frac{v^2}{c^2}},\qquad\frac1{\gamma^2}=1-\frac{v^2}{c^2}.$$
+   $$
+   \begin{aligned}
+   \frac12E_0&=(\gamma-1)E_0 &&\Big|\ :E_0\\[6pt]
+   \frac12&=\gamma-1 &&\Big|\ +1\\[6pt]
+   \gamma&=\frac32.
+   \end{aligned}
+   $$
 
-   Nach Umstellen und Wurzelziehen ergibt sich für den Geschwindigkeitsbetrag
+   Für den Geschwindigkeitsbetrag folgt
 
-   $$v=c\sqrt{1-\frac1{\gamma^2}}
-   =c\sqrt{1-\frac49}
-   =\frac{\sqrt5}{3}c
-   \approx0{,}745c
-   \approx2{,}24\cdot10^8\,\mathrm{m/s}.$$
+   $$
+   \begin{aligned}
+   \gamma&=\frac1{\sqrt{1-v^2/c^2}}
+   &&\Big|\ \text{Kehrwert bilden}\\[8pt]
+   \frac1\gamma&=\sqrt{1-\frac{v^2}{c^2}}
+   &&\Big|\ \text{quadrieren}\\[8pt]
+   \frac1{\gamma^2}&=1-\frac{v^2}{c^2}
+   &&\Big|\ +\frac{v^2}{c^2}-\frac1{\gamma^2}\\[8pt]
+   \frac{v^2}{c^2}&=1-\frac1{\gamma^2}
+   &&\Big|\ \cdot c^2\\[8pt]
+   v^2&=c^2\left(1-\frac1{\gamma^2}\right)
+   &&\Big|\ \sqrt{\phantom{x}}\\[8pt]
+   v&=c\sqrt{1-\frac1{\gamma^2}}.
+   \end{aligned}
+   $$
 
-2. Die Ruheenergie beträgt
+   Die positive Wurzel liefert den Geschwindigkeitsbetrag. Mit $\gamma=3/2$ ergibt sich
 
-   $$E_0=m_0c^2
-   =1{,}67\cdot10^{-27}\,\mathrm{kg}\cdot(3{,}0\cdot10^8\,\mathrm{m/s})^2
-   =1{,}503\cdot10^{-10}\,\mathrm J.$$
+   $$
+   \begin{aligned}
+   v&=c\sqrt{1-\frac49}
+   =\frac{\sqrt5}{3}c\\[6pt]
+   &\approx0{,}745c
+   \approx2{,}24\cdot10^8\,\mathrm{m/s}.
+   \end{aligned}
+   $$
 
-   Daraus folgen
+2. Für die Energiegrößen gilt
 
-   $$E_\mathrm{kin}=\frac12E_0=7{,}515\cdot10^{-11}\,\mathrm J,$$
+   $$
+   \begin{aligned}
+   E_0&=m_0c^2\\
+   &=1{,}67\cdot10^{-27}\,\mathrm{kg}\cdot(3{,}0\cdot10^8\,\mathrm{m/s})^2\\
+   &=1{,}503\cdot10^{-10}\,\mathrm J,\\[8pt]
+   E_\mathrm{kin}&=\frac12E_0
+   \approx7{,}52\cdot10^{-11}\,\mathrm J,\\[8pt]
+   E&=E_0+E_\mathrm{kin}=\frac32E_0
+   \approx2{,}25\cdot10^{-10}\,\mathrm J.
+   \end{aligned}
+   $$
 
-   $$E=E_0+E_\mathrm{kin}=2{,}2545\cdot10^{-10}\,\mathrm J.$$
+   Mit $1\,\mathrm{MeV}\approx1{,}60\cdot10^{-13}\,\mathrm J$ folgt
 
-   Gerundet sind das $E_0\approx1{,}50\cdot10^{-10}\,\mathrm J$, $E_\mathrm{kin}\approx7{,}52\cdot10^{-11}\,\mathrm J$ und $E\approx2{,}25\cdot10^{-10}\,\mathrm J$. Mit $1\,\mathrm{MeV}\approx1{,}60\cdot10^{-13}\,\mathrm J$ erhältst du
+   $$
+   \begin{aligned}
+   E_\mathrm{kin}&\approx
+   \frac{7{,}515\cdot10^{-11}}{1{,}60\cdot10^{-13}}\,\mathrm{MeV}\\
+   &\approx470\,\mathrm{MeV}.
+   \end{aligned}
+   $$
 
-   $$E_\mathrm{kin}\approx\frac{7{,}515\cdot10^{-11}}{1{,}60\cdot10^{-13}}\,\mathrm{MeV}
-   \approx470\,\mathrm{MeV}.$$
+3. Aus dem Zusammenhang zwischen Arbeit und kinetischer Energie folgt
 
-3. Das Proton startet aus Ruhe. Deshalb ist die übertragene elektrische Energie $eU$ gleich seiner erreichten kinetischen Energie:
-
-   $$U=\frac{E_\mathrm{kin}}e
-   =\frac{7{,}515\cdot10^{-11}\,\mathrm J}{1{,}60\cdot10^{-19}\,\mathrm C}
-   \approx4{,}70\cdot10^8\,\mathrm V
-   =470\,\mathrm{MV}.$$
+   $$
+   \begin{aligned}
+   E_\mathrm{kin}&=eU &&\Big|\ :e\\[8pt]
+   U&=\frac{E_\mathrm{kin}}e\\[8pt]
+   &=\frac{7{,}515\cdot10^{-11}\,\mathrm J}{1{,}60\cdot10^{-19}\,\mathrm C}\\[8pt]
+   &\approx4{,}70\cdot10^8\,\mathrm V
+   =470\,\mathrm{MV}.
+   \end{aligned}
+   $$
 
    Für die Spannung wird die kinetische Energie verwendet. Die Ruheenergie besaß das Proton bereits vor dem Beschleunigen.
 
+4. Nähert sich die Geschwindigkeit von unten an $c$, wird $1-v^2/c^2$ immer kleiner und nähert sich null. Der Lorentzfaktor wächst dadurch unbegrenzt. Weil $m_0c^2$ ein unveränderter positiver Faktor ist, wächst auch
+
+   $$E_\mathrm{kin}=(\gamma-1)m_0c^2$$
+
+   unbegrenzt.
+
+   Eine endliche Energiemenge reicht deshalb nicht aus, um das Proton auf Lichtgeschwindigkeit zu beschleunigen. Für jede vorgegebene Geschwindigkeit unterhalb von $c$ bleibt die benötigte Energie endlich. Je näher diese Geschwindigkeit an $c$ liegt, desto größer wird die benötigte Energie.
+
 </details>
 
+Die Simulation in @fig-ie-energiezufuhr zeigt, welche Geschwindigkeiten ein Proton nach aufeinanderfolgenden Energiezufuhren erreicht. Es beginnt in Ruhe. Mit jedem Druck auf „100 MeV zuführen“ erhöhst du seine kinetische Energie um denselben Betrag. Die Markierungen zeigen die erreichten Geschwindigkeiten auf einer festen Skala von $0$ bis $c$. Über „100 MeV im Alltag“ öffnest du einen Vergleich mit der Energie zum Anheben eines Körpers.
+
+:::: {#fig-ie-energiezufuhr}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="srt-workbook-stage" data-srt-animation="energy-increments" data-srt-viewbox-w="640" data-srt-viewbox-h="330" data-srt-label="Energiezufuhr zu einem anfangs ruhenden Proton in Schritten von jeweils 100 Megaelektronenvolt. Die erreichten Geschwindigkeiten liegen auf einer festen linearen Skala zwischen null und der Lichtgeschwindigkeit."></div>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+Nach der ersten Zufuhr von $100\,\mathrm{MeV}$ bewegt sich das Proton mit etwa $0{,}428c$. Nach insgesamt $200\,\mathrm{MeV}$ sind es etwa $0{,}566c$ und nach $300\,\mathrm{MeV}$ etwa $0{,}653c$.
+:::
+
+Simulation der Energiezufuhr zu einem Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, das anfangs ruht. Jeder Schritt erhöht seine kinetische Energie um $100\,\mathrm{MeV}$. Die Geschwindigkeitsskala ist linear. Verwendet werden $c=3{,}0\cdot10^8\,\mathrm{m/s}$ und $e=1{,}60\cdot10^{-19}\,\mathrm C$.
+::::
+
+Bei gleicher zugeführter Energie werden die Geschwindigkeitszuwächse mit jedem Schritt kleiner. Die kinetische Energie wächst dabei weiter. Für die Geschwindigkeit bleibt $c$ die Grenze.
+
+Bei der weiteren Beschleunigung vergleichst du nun die Zunahme des Impulsbetrags mit der Zunahme der kinetischen Energie.
+
 ::: {#aufgabe-ie-weiterbeschleunigen .mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer: Weiter beschleunigen">
-  <img src="assets/task-icons/transfer.png" alt="" aria-hidden="true">
-  Transfer: Weiter beschleunigen
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung: Weiter beschleunigen">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung: Weiter beschleunigen
 </span>
 
 Ein Proton wird im Laborsystem von $v_1=0{,}990c$ auf $v_2=0{,}999c$ beschleunigt. Seine Ruhemasse bleibt dabei gleich.
@@ -645,23 +677,50 @@ $$
 
 1. Die Lorentzfaktoren betragen
 
-   $$\gamma_1=\frac1{\sqrt{1-0{,}990^2}}\approx7{,}09,
-   \qquad
-   \gamma_2=\frac1{\sqrt{1-0{,}999^2}}\approx22{,}37.$$
+   $$
+   \begin{aligned}
+   \gamma_1&=\frac1{\sqrt{1-0{,}990^2}}\approx7{,}09,\\[8pt]
+   \gamma_2&=\frac1{\sqrt{1-0{,}999^2}}\approx22{,}37.
+   \end{aligned}
+   $$
 
    Im Verhältnis der Impulsbeträge kürzt sich die unveränderte Ruhemasse heraus:
 
-   $$\frac{p_2}{p_1}=\frac{\gamma_2m_0v_2}{\gamma_1m_0v_1}
-   =\frac{\gamma_2v_2}{\gamma_1v_1}
-   \approx3{,}18.$$
+   $$
+   \begin{aligned}
+   \frac{p_2}{p_1}&=\frac{\gamma_2m_0v_2}{\gamma_1m_0v_1}
+   &&\Big|\ m_0\ \text{kürzen}\\[8pt]
+   &=\frac{\gamma_2v_2}{\gamma_1v_1}\\[8pt]
+   &\approx3{,}18.
+   \end{aligned}
+   $$
 
    Für die kinetische Energie ergibt sich entsprechend
 
-   $$\frac{E_{\mathrm{kin},2}}{E_{\mathrm{kin},1}}
-   =\frac{(\gamma_2-1)m_0c^2}{(\gamma_1-1)m_0c^2}
-   =\frac{\gamma_2-1}{\gamma_1-1}
-   \approx3{,}51.$$
+   $$
+   \begin{aligned}
+   \frac{E_{\mathrm{kin},2}}{E_{\mathrm{kin},1}}
+   &=\frac{(\gamma_2-1)m_0c^2}{(\gamma_1-1)m_0c^2}
+   &&\Big|\ m_0c^2\ \text{kürzen}\\[8pt]
+   &=\frac{\gamma_2-1}{\gamma_1-1}\\[8pt]
+   &\approx3{,}51.
+   \end{aligned}
+   $$
 
-2. Die Aussage ist falsch. Obwohl die Geschwindigkeit nur um $0{,}009c$ zunimmt, steigen Impulsbetrag und kinetische Energie jeweils auf mehr als das Dreifache. Nahe der Lichtgeschwindigkeit bewirkt bereits eine kleine Geschwindigkeitszunahme eine große Zunahme des Lorentzfaktors. Weiter zugeführte Energie erhöht die kinetische Energie, während die Geschwindigkeit unter $c$ bleibt.
+2. Die Geschwindigkeit nimmt relativ zum Ausgangswert um
+
+   $$
+   \begin{aligned}
+   \frac{v_2-v_1}{v_1}
+   &=\frac{0{,}999c-0{,}990c}{0{,}990c}\\[8pt]
+   &\approx0{,}00909
+   \end{aligned}
+   $$
+
+   zu, also um etwa $0{,}91\,\%$. Gleichzeitig steigen Impulsbetrag und kinetische Energie jeweils auf mehr als das Dreifache. Die Aussage ist daher falsch.
+
+   Nahe der Lichtgeschwindigkeit verändert bereits eine kleine relative Geschwindigkeitszunahme den Lorentzfaktor stark. Dieser Faktor geht sowohl in den Impuls als auch in die kinetische Energie ein.
 
 </details>
+
+Die ursprünglichen Vorlesungsaufgaben findest du unter [Legacy-Arbeitsblatt 1](legacy-arbeitsblaetter.qmd#arbeitsblatt-1) und [Legacy-Arbeitsblatt 2](legacy-arbeitsblaetter.qmd#arbeitsblatt-2).
