@@ -16,35 +16,45 @@
 ```
 :::
 
-Laser begegnen dir ständig im Alltag. Im Glasfasernetz transportiert Laserlicht deine Daten durch das Internet. Bei Veranstaltungen erzeugen Laser Lichtshows. In Präsentationen dienen sie als Pointer. In Hautarztpraxen entfernen sie Tattoos und Pigmentflecken. Und mit Laserpulsen lassen sich Entfernungen extrem genau messen, sogar die Distanz von der Erde zum Mond.
+Laser begegnen dir ständig im Alltag. Im Glasfasernetz transportiert Laserlicht beispielsweise deine Daten durch das Internet. Bei Veranstaltungen erzeugen Laser Lichtshows, in Präsentationen dienen sie als Pointer und in Hautarztpraxen entfernen sie Tattoos und Pigmentflecken. Mit Laserpulsen lassen sich außerdem Entfernungen extrem genau messen, sogar die Distanz von der Erde zum Mond.
 
-So unterschiedlich diese Anwendungen sind: Ihnen allen liegt dieselbe Erkenntnis aus der Quantenphysik zugrunde. Drei Konzepte tragen dieses Kapitel, und sie bauen aufeinander auf: Bei der stimulierten Emission löst ein Photon ein zweites, gleiches Photon aus. Die Besetzungsinversion sorgt dafür, dass dieser Vorgang das Licht im Medium verstärkt. Der Resonator formt aus der Verstärkung den gebündelten Laserstrahl. Am Rubinlaser und am Helium-Neon-Laser setzt du diese Bausteine zu vollständigen Geräten zusammen, und zum Schluss klärst du, was Laserlicht gefährlich macht.
+Was diese unterschiedlichen Anwendungen verbindet, steckt bereits im Namen „Laser“. Das Akronym steht für „Light Amplification by Stimulated Emission of Radiation“, also Lichtverstärkung durch stimulierte Emission von Strahlung. Der Name weist zugleich den Weg durch dieses Kapitel. Zunächst untersuchst du mit der Absorption, der spontanen Emission und der stimulierten Emission drei grundlegende Prozesse bei der Wechselwirkung von Licht und Atomen. Damit im Lasermedium mehr Photonen durch stimulierte Emission entstehen als absorbiert werden, braucht es eine Besetzungsinversion. Der Resonator führt das Licht wiederholt durch das Medium. Am Rubinlaser untersuchst du anschließend, wie die einzelnen Bausteine zu einem vollständigen Laser zusammenwirken. Der Helium-Neon-Laser zeigt dir danach, wie dasselbe Grundprinzip in einem anderen Lasertyp umgesetzt wird. Da Laser auch im Physikunterricht zum Einsatz kommen können, schließt das Kapitel mit den Laserklassen und den Schutzmaßnahmen für einen sicheren Umgang.
 
 ## Stimulierte Emission
 
 ::: {.mp-goal-strip}
-Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission.
+Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission mithilfe eines Energieniveauschemas.
 
 Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann.
 
 Du <u>vergleichst</u> spontane und stimulierte Emission.
 :::
 
-Laser gibt es heute in großer Vielfalt: vom schwachen roten Pointer bis zum Schneidlaser in der Industrie, mit sichtbarem Licht oder unsichtbarem Infrarot, als Dauerstrahl oder als kurzer Puls. So verschieden ihr Licht ist, eines haben alle gemeinsam, und es steht schon im Namen: „Laser" ist ein Akronym für „Light Amplification by Stimulated Emission of Radiation", auf Deutsch: Lichtverstärkung durch stimulierte Emission von Strahlung. Was stimulierte Emission ist, klärt dieser Abschnitt.
+An einem heißen Sommertag würdest du zwischen einem schwarzen und einem weißen T-Shirt wahrscheinlich zum weißen greifen. Ein schwarzes T-Shirt erwärmt sich in der Sonne meist stärker als ein vergleichbares weißes. Seine dunklen Farbstoffe absorbieren einen größeren Teil des einfallenden Sonnenlichts.
 
-Materie wechselwirkt ständig mit Licht. Ein schwarzes T-Shirt schluckt das Sonnenlicht und wird warm: Es nimmt Energie aus dem Licht auf. Der glühende Draht einer Glühlampe gibt Energie als Licht ab. Aufnehmen und Abgeben: Das sind die zwei Richtungen im Energieaustausch zwischen Licht und Materie.
+Materie kann Licht aufnehmen und Licht aussenden. Beim schwarzen T-Shirt führt die Aufnahme von Licht zur Erwärmung. Die Glühwendel einer Glühlampe sendet dagegen sichtbares Licht aus. Für eine erste Beschreibung der Wechselwirkung zwischen Licht und Materie betrachten wir drei grundlegende Prozesse im vereinfachten Zwei-Niveau-Modell eines einzelnen Atoms. Bei der Absorption nimmt ein Atom ein Photon vollständig auf. Das Photon verschwindet, und seine Energie geht auf das Atom über. Bei der spontanen und der stimulierten Emission sendet ein angeregtes Atom ein neu entstehendes Photon aus.
 
-Bei Atomen läuft dieser Austausch in drei Grundprozessen ab: Absorption, spontane Emission und stimulierte Emission. Die ersten beiden begegnen dir überall im Alltag. Der dritte ist dort unscheinbar. Auf ihm beruht der Laser.
+Ein Atom kann nur bestimmte Energiewerte besitzen. Andere Energiewerte sind für das Atom nicht möglich. Man sagt, seine Energie ist gequantelt. Anschaulich lassen sich die erlaubten Energien mit den Stufen einer Treppe vergleichen. Das Atom kann einen Zustand auf einer Stufe einnehmen, aber keinen Zustand zwischen zwei Stufen. Anders als bei einer gewöhnlichen Treppe müssen die Abstände zwischen den Energieniveaus nicht gleich groß sein.
 
-Alle drei Prozesse laufen in festen Schritten ab: Ein Atom besitzt bestimmte Energieniveaus. Wir betrachten hier zwei davon: Das niedrigere Niveau nennen wir $E_1$. Es steht hier für den Grundzustand. Das höhere Niveau nennen wir $E_2$. Befindet sich das Atom dort, ist es angeregt. Der Energieabstand zwischen beiden Niveaus ist $\Delta E = E_2 - E_1$.
+Ein reales Atom besitzt viele Energieniveaus. Der Einfachheit halber betrachten wir hier nur zwei. Im vereinfachten Modell steht $E_1$ für den Grundzustand. Befindet sich das Atom im höheren Niveau $E_2$, ist es angeregt. Zwischen beiden Niveaus liegt der Energieabstand
 
-Ein Photon trägt die Energie $E_\text{Photon} = h f$. Dabei ist $h$ das Plancksche Wirkungsquantum und $f$ die Frequenz des Lichts. Ein Atom im Grundzustand kann ein Photon aufnehmen, wenn dessen Energie genau zum Abstand der beiden Energieniveaus passt:
+$$
+\Delta E = E_2 - E_1.
+$$
+
+Ein Photon der Frequenz $f$ trägt die Energie $E_\text{Photon} = h f$. Dabei ist $h$ das Plancksche Wirkungsquantum. Ein Atom im Grundzustand kann das Photon absorbieren, wenn dessen Energie zum Abstand der beiden Energieniveaus passt.
 
 $$
 E_\text{Photon} = h f = \Delta E = E_2 - E_1
 $$ {#eq-laser-photonenenergie}
 
-Das Photon wird absorbiert. Seine Energie geht auf das Atom über. Das Atom wechselt vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man Absorption.[Absorption]{.column-margin .mp-randbegriff} Das schwarze T-Shirt zeigt ihn millionenfach: Seine Farbstoffe absorbieren das Sonnenlicht. Die aufgenommene Energie geht dort schnell in die Bewegung der Moleküle über, und der Stoff wird warm. @fig-umbau-laser-absorption zeigt diesen Übergang. Der große Kreis deutet das Atom an. Der blaue Punkt steht für den Energiezustand des Atoms: Er sitzt auf dem Niveau, in dem sich das Atom gerade befindet.
+Für die Energie des absorbierten Photons zählt damit nicht eines der beiden Energieniveaus allein, sondern die Differenz zwischen ihnen.
+
+Erfüllt ein Photon diese Bedingung, wird es vollständig absorbiert. Es überträgt seine gesamte Energie auf das Atom und existiert danach nicht mehr als Photon. Das Atom wechselt dadurch vom Grundzustand $E_1$ in den angeregten Zustand $E_2$. Diesen Vorgang nennt man Absorption.[Absorption]{.column-margin .mp-randbegriff}
+
+Beim schwarzen T-Shirt absorbieren Farbstoffmoleküle viele der einfallenden Photonen. Die Moleküle besitzen zahlreiche Energieniveaus. Das Zwei-Niveau-Modell bildet daher nur den grundlegenden Absorptionsvorgang ab. Nach der Absorption wird ein großer Teil der aufgenommenen Energie durch strahlungslose Übergänge auf Schwingungen im Material übertragen. Dadurch steigt die Temperatur des T-Shirts.
+
+@fig-umbau-laser-absorption zeigt einen einzelnen Absorptionsvorgang im vereinfachten Zwei-Niveau-Modell. Der große Kreis kennzeichnet das betrachtete Atom. Die beiden waagerechten Linien stehen für seine Energieniveaus. Der blaue Punkt ist kein Elektron. Er markiert den Energiezustand des gesamten Atoms und wechselt bei der Absorption von $E_1$ nach $E_2$.
 
 ::: {.content-visible when-format="html"}
 ::: {#fig-umbau-laser-absorption}
@@ -64,30 +74,33 @@ In der HTML-Version erscheint hier eine Animation: Ein Photon trifft auf ein Ato
 :::
 :::
 
-Ein angeregtes Atom kann später wieder in ein niedrigeres Energieniveau wechseln. Die frei werdende Energie verlässt das Atom als neues Photon. Dieser Vorgang heißt spontane Emission.[spontane Emission]{.column-margin .mp-randbegriff}
+Ein angeregtes Atom kann in ein niedrigeres Energieniveau übergehen. Entsteht dabei ohne einfallendes Photon ein neues Photon, heißt der Vorgang spontane Emission.[spontane Emission]{.column-margin .mp-randbegriff} Die Energie des Photons entspricht dem Energieabstand $\Delta E$ zwischen den beiden Energieniveaus.
 
-Der Vorgang startet im angeregten Atom selbst. Der genaue Zeitpunkt ist zufällig. Auch die Richtung des ausgesandten Photons ist zufällig. Viele Atome senden bei spontaner Emission in viele Richtungen. Das Licht ist ungeordnet. Die Glühlampe zeigt die Folge: Ihr Licht verteilt sich in alle Richtungen. Die Animation zeigt eine solche zufällige Emission.
+„Spontan“ bedeutet hier, dass kein einfallendes Photon den Übergang auslöst. Der genaue Zeitpunkt des Übergangs und die konkrete Ausbreitungsrichtung des Photons sind nicht festgelegt. Bei vielen Atomen entstehen die Photonen daher zu unterschiedlichen Zeitpunkten und breiten sich in unterschiedliche Richtungen aus. Bei vielen Lichtquellen breitet sich das ausgesandte Licht deshalb in unterschiedliche Richtungen aus.
 
+@fig-umbau-laser-spontane-emission zeigt die spontane Emission im vereinfachten Zwei-Niveau-Modell. Zu Beginn befindet sich das Atom im angeregten Zustand $E_2$. Beim Übergang nach $E_1$ entsteht ein Photon. Bei jedem Durchlauf ändern sich der Zeitpunkt des Übergangs und die Ausbreitungsrichtung des Photons.
+
+:::: {#fig-umbau-laser-spontane-emission}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-spontane-emission" data-srt-motion-control data-srt-label="Spontane Emission: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon aus. Zeitpunkt und Richtung sind zufällig."></div>
-  <figcaption>Animation zur spontanen Emission: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet ein Photon in zufälliger Richtung aus.</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-spontane-emission" data-srt-motion-control data-srt-label="Spontane Emission: Ein angeregtes Atom geht ohne einfallendes Photon in das niedrigere Energieniveau über. Dabei entsteht ein Photon. Zeitpunkt und Ausbreitungsrichtung variieren von Durchlauf zu Durchlauf."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: Ein angeregtes Atom wechselt in ein niedrigeres Energieniveau und sendet dabei ein Photon in zufälliger Richtung aus.
+In der HTML-Version erscheint hier eine Animation zur spontanen Emission. Ein angeregtes Atom geht ohne einfallendes Photon in das niedrigere Energieniveau über. Dabei entsteht ein Photon.
 :::
 :::
+
+Animation zur spontanen Emission. Ein angeregtes Atom geht ohne einfallendes Photon in das niedrigere Energieniveau über. Dabei entsteht ein Photon. Zeitpunkt und Ausbreitungsrichtung variieren von Durchlauf zu Durchlauf.
+::::
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Folgt auf die Absorption immer die Aussendung eines Photons?</div>
-Das Niveauschema legt das nahe: Das Atom nimmt Energie auf, sitzt eine Weile im angeregten Zustand und gibt die Energie als Photon wieder ab. Für ein einzelnes, ungestörtes Atom stimmt das auch.
-
-In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie auch ohne Licht loswerden, zum Beispiel durch Stöße mit seinen Nachbarn: Die Anregungsenergie geht dann in Bewegung über. Das schwarze T-Shirt nimmt diesen Weg: Es wird warm statt zu leuchten.
+Das vereinfachte Zwei-Niveau-Modell kann diesen Eindruck erwecken. Nach der Anregung betrachten wir zunächst nur Übergänge, bei denen ein Photon entsteht. In einem Material stehen jedoch weitere Wege offen. Ein angeregtes Atom oder Molekül kann seine Energie an benachbarte Teilchen übertragen. Im Material verteilt sie sich dadurch auf die Bewegung vieler Teilchen. Der Übergang erfolgt dann strahlungslos, ohne dass ein Photon entsteht. Beim schwarzen T-Shirt wird ein großer Teil der aufgenommenen Energie auf diese Weise verteilt und führt zur Erwärmung.
 :::
 
 ::: {.mp-box .mp-task}
@@ -96,48 +109,53 @@ In dichter Materie ist ein Atom aber selten ungestört. Es kann seine Energie au
   Denkcheck
 </span>
 
-Ein Atom absorbiert Photonen der Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Nun trifft ein intensiver Lichtpuls auf das Atom. Er enthält sehr viele Photonen der Frequenz $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$.
+Im vereinfachten Modell betrachten wir die Absorption einzelner Photonen. Ein Atom absorbiert Photonen der Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Nun trifft ein intensiver Lichtpuls auf das Atom. Seine Photonen besitzen die Frequenz $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$. Die hohe Intensität bedeutet hier, dass pro Fläche und Zeit sehr viele dieser Photonen eintreffen.
 
-<u>Beurteile</u>, ob Photonen aus diesem Lichtpuls absorbiert werden können.
+<u>Beurteile</u>, ob das Atom Photonen aus diesem Lichtpuls absorbiert.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Nein. Für einen einzelnen Absorptionsvorgang zählt die Energie eines einzelnen Photons. Zu diesem Abstand der Energieniveaus gehört die Frequenz $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Ein Photon mit $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$ hat eine niedrigere Frequenz und damit eine geringere Energie. Sehr viele solche Photonen bedeuten hohe Intensität. Die Energie pro Photon bleibt aber zu klein. Photonen aus diesem Lichtpuls werden für diesen Übergang nicht absorbiert.
+Nein. Bei der Absorption eines einzelnen Photons muss dessen Energie zum Abstand der beiden Energieniveaus passen. Ein Photon mit der Frequenz $5{,}3 \cdot 10^{14}\,\mathrm{Hz}$ besitzt weniger Energie als ein Photon mit $5{,}5 \cdot 10^{14}\,\mathrm{Hz}$. Die höhere Intensität vergrößert die Zahl der eintreffenden Photonen, aber nicht die Energie eines einzelnen Photons. Im hier verwendeten Ein-Photon-Modell werden die Photonen des Lichtpulses daher nicht absorbiert. Mehrphotonenprozesse, die bei sehr hohen Intensitäten auftreten können, berücksichtigen wir in diesem Modell nicht.
 
 </details>
 
-Bleibt der dritte Grundprozess, der für den Laser ausschlaggebende: Ein passendes Photon trifft auf ein Atom, das bereits angeregt ist. Das ankommende Photon bleibt erhalten und läuft weiter. Zugleich wechselt das Atom in das niedrigere Energieniveau und sendet ein zweites Photon aus.
+Der dritte Grundprozess ist die stimulierte Emission, auf der die Lichtverstärkung im Laser beruht. Ein Photon mit passender Energie trifft auf ein Atom im angeregten Zustand $E_2$. Das Photon wird nicht absorbiert, sondern breitet sich weiter aus. Zugleich löst es den Übergang des Atoms in das niedrigere Energieniveau $E_1$ aus. Dabei entsteht ein zweites Photon.
 
-Dieses zweite Photon passt zum auslösenden Photon. Beide Photonen haben dieselbe Energie und wegen $E_\text{Photon} = h f$ auch dieselbe Frequenz. Vor allem aber laufen beide danach in dieselbe Richtung und schwingen im gleichen Takt: wie zwei Zwillingssoldaten, die nach dem Salutieren gemeinsam losmarschieren, in dieselbe Richtung und im Gleichschritt. Dieser Vorgang heißt stimulierte Emission. Die Animation zeigt, wie aus einem Photon zwei werden.
+Im Photonenmodell besitzen das einfallende und das neu entstehende Photon dieselbe Energie und dieselbe Ausbreitungsrichtung. Aus $E_\text{Photon}=hf$ folgt, dass beide auch dieselbe Frequenz besitzen. Die Frequenz allein ist allerdings noch keine Besonderheit der stimulierten Emission. Auch ein spontan emittiertes Photon dieses Übergangs trägt die Energie $\Delta E$. Entscheidend ist, dass das einfallende Licht die Ausbreitungsrichtung des neu entstehenden Photons bestimmt. Dieser Vorgang heißt stimulierte Emission.
 
+@fig-umbau-laser-stimulierte-emission zeigt die stimulierte Emission im vereinfachten Zwei-Niveau-Modell. Ein Photon trifft auf das angeregte Atom und löst den Übergang von $E_2$ nach $E_1$ aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus.
+
+:::: {#fig-umbau-laser-stimulierte-emission}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-stimulierte-emission" data-srt-motion-control data-srt-label="Stimulierte Emission: Ein passendes Photon trifft auf ein angeregtes Atom. Das ankommende Photon läuft weiter und löst ein zweites gleiches Photon aus."></div>
-  <figcaption>Animation zur stimulierten Emission: Ein passendes Photon trifft auf ein angeregtes Atom, läuft weiter und löst ein zweites, gleiches Photon aus.</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-stimulierte-emission" data-srt-motion-control data-srt-label="Stimulierte Emission: Ein Photon mit passender Energie trifft auf ein angeregtes Atom und löst den Übergang in das niedrigere Energieniveau aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: Ein passendes Photon trifft auf ein angeregtes Atom. Danach laufen zwei gleiche Photonen weiter.
+In der HTML-Version erscheint hier eine Animation zur stimulierten Emission. Ein Photon mit passender Energie trifft auf ein angeregtes Atom und löst den Übergang in das niedrigere Energieniveau aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus.
 :::
 :::
 
-Die stimulierte Emission beschreibt zunächst einen einzelnen atomaren Vorgang: Ein passendes Photon löst eine exakte Kopie seiner selbst aus. Jede Kopie kann weitere Kopien auslösen. Was heißt dabei „im gleichen Takt"? Licht lässt sich in zwei Bildern beschreiben: als Strom von Photonen und als Welle. Beide Bilder gehören zum selben Licht; je nach Phänomen ist das eine oder das andere das passende Werkzeug. Im Wellenbild laufen die Wellen aus derselben Kette im Gleichschritt: Wellenberg liegt auf Wellenberg, Wellental auf Wellental.
+Animation zur stimulierten Emission. Ein Photon mit passender Energie trifft auf ein angeregtes Atom und löst den Übergang in das niedrigere Energieniveau aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus.
+::::
 
-Für diesen Gleichschritt hat die Physik ein Wort: Solche Wellen heißen kohärent.[kohärent]{.column-margin .mp-randbegriff} Der Begriff verlangt weniger: Kohärente Wellen dürfen gegeneinander versetzt sein, solange der Versatz fest bleibt, sie halten eine feste Phasenbeziehung zueinander. Im Bild der Soldaten: Einer tritt immer etwas später auf als der andere, der zeitliche Abstand zwischen ihren Schritten bleibt dabei gleich. Die Wellenzüge aus derselben Kette zeigen den strengsten Fall, ihr Versatz ist null. Im Medium starten solche Ketten allerdings an vielen Stellen und in viele Richtungen. Wie daraus ein einziger geordneter Strahl wird, klärt der Abschnitt zum Resonator.
+Bis hierher haben wir die stimulierte Emission im Photonenmodell beschrieben. Für die Phasenbeziehung des Lichts verwenden wir nun das Wellenmodell. Beide Modelle beschreiben dasselbe Licht, beantworten aber unterschiedliche Fragen.
 
-Kohärentes Licht brauchst du überall dort, wo Licht mit Licht überlagert wird, bei der Interferenz. Moderne Michelson-Interferometer, etwa zur Messung von Gravitationswellen, arbeiten mit Laserlicht; das Michelson-Morley-Experiment hast du im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit_umbau.qmd#michelson-morley-experiment) kennengelernt.
+Im Wellenmodell ist die neu entstehende Lichtwelle gleichphasig zur einfallenden Lichtwelle. Wellenberg liegt auf Wellenberg und Wellental auf Wellental. Löst das so entstandene Licht weitere stimulierte Emissionen aus, setzt sich diese Gleichphasigkeit innerhalb der entstehenden Kette fort.
 
-Wir unterscheiden drei Wechselwirkungen von Atomen und Licht:
+Diese Gleichphasigkeit ist ein idealisierter Sonderfall von Kohärenz.[Kohärenz]{.column-margin .mp-randbegriff} Im hier verwendeten vereinfachten Grenzfall nennen wir zwei Lichtwellen kohärent, wenn ihre relative Phasenlage gleich bleibt. Sie dürfen gegeneinander verschoben sein. Der Versatz muss also nicht null sein.
 
-1. Bei der Absorption nimmt ein Atom ein Photon auf.
-2. Bei der spontanen Emission sendet ein angeregtes Atom von selbst ein Photon aus.
-3. Bei der stimulierten Emission löst ein passendes Photon die Aussendung eines zweiten, gleichen Photons aus.
+::: {.column-margin}
+Der vollständige Kohärenzbegriff geht über diese vereinfachte Beschreibung hinaus. Räumliche Kohärenz beschreibt Zusammenhänge des Lichtfeldes an verschiedenen Orten, zeitliche Kohärenz an verschiedenen Zeitpunkten. Beide sind graduelle Größen. Pieper entwickelt diese Unterscheidung experimentell am Doppelspalt und am Michelson-Interferometer [@pieper2019kohaerenz, S. 14–24].
+:::
+
+Kohärenz wird bei Interferenzversuchen über den Kontrast des Interferenzmusters beobachtbar. Ändert sich die relative Phasenlage gezielt, verschiebt sich das Muster. Schwankt sie dagegen während der Beobachtung schnell und unregelmäßig, überlagern sich unterschiedliche Lagen des Musters und sein Kontrast nimmt ab. Eine erwartete Verschiebung des Interferenzmusters hast du beim Michelson-Morley-Experiment im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit_umbau.qmd#michelson-morley-experiment) kennengelernt.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
@@ -660,7 +678,7 @@ Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf 
 
 Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einzelne, ob du es erfüllst. Für alles, was dir fehlt, führt dich das Inhaltsverzeichnis zur passenden Stelle.
 
-- **Stimulierte Emission:** Du <u>beschreibst</u> die drei Prozesse Absorption, spontane Emission und stimulierte Emission. Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann. Du <u>vergleichst</u> spontane und stimulierte Emission.
+- **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission mithilfe eines Energieniveauschemas. Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann. Du <u>vergleichst</u> spontane und stimulierte Emission.
 - **Besetzungsinversion:** Du <u>erklärst</u>, was eine Besetzungsinversion ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, wozu ein metastabiles Niveau dient.
 - **Resonator:** Du <u>beschreibst</u> den Aufbau eines optischen Resonators. Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird. Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
 - **Rubinlaser:** Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator. Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.

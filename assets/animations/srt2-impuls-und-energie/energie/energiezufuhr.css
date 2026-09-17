@@ -113,51 +113,6 @@
   font-size: .9rem;
 }
 
-[data-srt-animation="energy-increments"] .energy-increments-comparison {
-  margin-top: .75rem;
-  border-top: 1px solid #d4e4e6;
-  padding-top: .65rem;
-}
-
-[data-srt-animation="energy-increments"] button.energy-increments-comparison-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: .55rem;
-  color: #0b7380;
-  border-color: #8abcc1;
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-toggle::before {
-  content: '';
-  width: .4rem;
-  height: .4rem;
-  border-right: 2px solid currentColor;
-  border-bottom: 2px solid currentColor;
-  transform: rotate(-45deg);
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-toggle[aria-expanded="true"]::before {
-  transform: rotate(45deg);
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-panel {
-  margin-top: .6rem;
-  font-size: .91rem;
-  line-height: 1.55;
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-panel[hidden] {
-  display: none;
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-panel p {
-  margin: 0 0 .5rem;
-}
-
-[data-srt-animation="energy-increments"] .energy-increments-comparison-panel p:last-child {
-  margin-bottom: 0;
-}
-
 @media (max-width: 460px) {
   [data-srt-animation="energy-increments"] .energy-increments-results {
     grid-template-columns: 1fr;

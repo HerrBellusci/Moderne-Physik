@@ -10,8 +10,8 @@
 <script src="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.js?v=20260915c"></script>
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.css?v=20260915c">
 <script src="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.js?v=20260915c"></script>
-<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260916-alltagsvergleich">
-<script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260916-alltagsvergleich"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260917-abschluss">
+<script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260917-abschluss"></script>
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/solarwagen.css?v=20260916b">
 <script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20260916b"></script>
 <script src="assets/animations/shared/workbook.js"></script>
@@ -446,7 +446,7 @@ Für die folgende Aufgabe frischen wir dein Wissen zur Elektrostatik auf. Stell 
 Skizze eines Protons im elektrischen Feld eines Plattenkondensators mit der Spannung $U$. Die Pfeile zeigen die Richtung des elektrischen Feldes und der Kraft auf das Proton. Das Feld zwischen den Platten wird als homogen angenommen, Kanteneffekte werden vernachlässigt.
 ::::
 
-Durchläuft ein positiv geladenes Teilchen mit der Ladung $q$ die gesamte Beschleunigungsspannung $U$, verrichtet das elektrische Feld die Arbeit $W=qU$ an ihm. Wir nehmen an, dass diese Arbeit vollständig die kinetische Energie des Teilchens erhöht. Startet es aus der Ruhe, gilt deshalb
+Durchläuft ein positiv geladenes Teilchen mit der Ladung $q$ die gesamte Beschleunigungsspannung $U$, verrichtet das elektrische Feld die Arbeit $W=qU$ an ihm. Wir nehmen an, dass diese Arbeit vollständig die kinetische Energie des Teilchens erhöht. Startet es aus der Ruhe, gilt deshalb:
 
 $$
 E_\mathrm{kin}=qU.
@@ -471,7 +471,7 @@ Ein Megaelektronenvolt entspricht einer Million Elektronenvolt, also $1\,\mathrm
 
 Ein Proton startet im Laborsystem aus der Ruhe und wird durch ein elektrisches Feld beschleunigt. Danach beträgt seine kinetische Energie die Hälfte seiner Ruheenergie, $E_\mathrm{kin}=E_0/2$. Seine Ruhemasse bleibt unverändert. Verwende $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, $e=1{,}60\cdot10^{-19}\,\mathrm C$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
 
-Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln.
+Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln:
 
 ::: {.mp-formula-repeat}
 $$
@@ -518,7 +518,7 @@ $$
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-1. Mit der vorgegebenen kinetischen Energie gilt
+1. Mit der vorgegebenen kinetischen Energie gilt:
 
    $$
    \begin{align}
@@ -537,7 +537,7 @@ $$
    \end{aligned}
    $$
 
-   Für den Geschwindigkeitsbetrag folgt
+   Für den Geschwindigkeitsbetrag folgt:
 
    $$
    \begin{aligned}
@@ -555,7 +555,7 @@ $$
    \end{aligned}
    $$
 
-   Die positive Wurzel liefert den Geschwindigkeitsbetrag. Mit $\gamma=3/2$ ergibt sich
+   Die positive Wurzel liefert den Geschwindigkeitsbetrag. Mit $\gamma=3/2$ ergibt sich:
 
    $$
    \begin{aligned}
@@ -566,7 +566,7 @@ $$
    \end{aligned}
    $$
 
-2. Für die Energiegrößen gilt
+2. Für die Energiegrößen gilt:
 
    $$
    \begin{aligned}
@@ -580,7 +580,7 @@ $$
    \end{aligned}
    $$
 
-   Mit $1\,\mathrm{MeV}\approx1{,}60\cdot10^{-13}\,\mathrm J$ folgt
+   Mit $1\,\mathrm{MeV}\approx1{,}60\cdot10^{-13}\,\mathrm J$ folgt:
 
    $$
    \begin{aligned}
@@ -590,7 +590,7 @@ $$
    \end{aligned}
    $$
 
-3. Aus dem Zusammenhang zwischen Arbeit und kinetischer Energie folgt
+3. Aus dem Zusammenhang zwischen Arbeit und kinetischer Energie folgt:
 
    $$
    \begin{aligned}
@@ -614,7 +614,7 @@ $$
 
 </details>
 
-Die Simulation in @fig-ie-energiezufuhr zeigt, welche Geschwindigkeiten ein Proton nach aufeinanderfolgenden Energiezufuhren erreicht. Es beginnt in Ruhe. Mit jedem Druck auf „100 MeV zuführen“ erhöhst du seine kinetische Energie um denselben Betrag. Die Markierungen zeigen die erreichten Geschwindigkeiten auf einer festen Skala von $0$ bis $c$. Über „100 MeV im Alltag“ öffnest du einen Vergleich mit der Energie zum Anheben eines Körpers.
+Die Simulation in @fig-ie-energiezufuhr zeigt, welche Geschwindigkeiten ein Proton nach aufeinanderfolgenden Energiezufuhren erreicht. Es beginnt in Ruhe. Mit jedem Druck auf „100 MeV zuführen“ erhöhst du seine kinetische Energie um denselben Betrag. Die Markierungen zeigen die erreichten Geschwindigkeiten auf einer festen Skala von $0$ bis $c$.
 
 :::: {#fig-ie-energiezufuhr}
 ::: {.content-visible when-format="html"}
@@ -642,7 +642,7 @@ Bei der weiteren Beschleunigung vergleichst du nun die Zunahme des Impulsbetrags
 
 Ein Proton wird im Laborsystem von $v_1=0{,}990c$ auf $v_2=0{,}999c$ beschleunigt. Seine Ruhemasse bleibt dabei gleich.
 
-Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln. Es genügt, die Verhältnisse der Werte zu berechnen.
+Es genügt, die Verhältnisse der Werte zu berechnen. Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln:
 
 ::: {.mp-formula-repeat}
 $$
@@ -675,7 +675,7 @@ $$
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-1. Die Lorentzfaktoren betragen
+1. Die Lorentzfaktoren betragen:
 
    $$
    \begin{aligned}
@@ -695,7 +695,7 @@ $$
    \end{aligned}
    $$
 
-   Für die kinetische Energie ergibt sich entsprechend
+   Für die kinetische Energie ergibt sich entsprechend:
 
    $$
    \begin{aligned}

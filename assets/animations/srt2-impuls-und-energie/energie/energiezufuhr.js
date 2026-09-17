@@ -8,7 +8,6 @@
   const REST_ENERGY_MEV = MASS * C * C / (1e6 * ELEMENTARY_CHARGE);
   const STEP_MEV = 100;
   const MAX_STEPS = 100;
-  let comparisonId = 0;
   const AXIS = { x: 52, y: 174, width: 544 };
   const COLORS = { active: '#0b8793', previous: '#687f8c', history: '#bed2d7', ink: '#243447', axis: '#607286' };
   const format = (value, digits = 0) => value.toLocaleString('de-DE', {
@@ -119,39 +118,6 @@
     limitNote.hidden = true;
     controls.append(limitNote);
 
-    const comparison = document.createElement('div');
-    comparison.className = 'energy-increments-comparison';
-    const comparisonPanel = document.createElement('div');
-    comparisonPanel.className = 'energy-increments-comparison-panel';
-    comparisonPanel.id = `energy-increments-comparison-${++comparisonId}`;
-    comparisonPanel.hidden = true;
-    const comparisonToggle = button(comparison, '100 MeV im Alltag', () => {
-      comparisonPanel.hidden = !comparisonPanel.hidden;
-      comparisonToggle.setAttribute('aria-expanded', String(!comparisonPanel.hidden));
-    }, 'energy-increments-comparison-toggle');
-    comparisonToggle.setAttribute('aria-expanded', 'false');
-    comparisonToggle.setAttribute('aria-controls', comparisonPanel.id);
-
-    const comparisonMath = [];
-    const comparisonValue = (tex, fallback) => {
-      const node = document.createElement('span');
-      comparisonMath.push({ node, tex, fallback });
-      return node;
-    };
-    const stepComparison = document.createElement('p');
-    stepComparison.append('Mit jedem Schritt führst du einem Proton die Energie ',
-      comparisonValue('100\\,\\mathrm{MeV}\\approx1{,}60\\cdot10^{-11}\\,\\mathrm{J}',
-        '100 MeV ≈ 1,60 · 10⁻¹¹ J'), ' zu.');
-    const liftingComparison = document.createElement('p');
-    liftingComparison.append('Um ', comparisonValue('100\\,\\mathrm{g}', '100 g'),
-      ' um ', comparisonValue('1\\,\\mathrm{m}', '1 m'),
-      ' anzuheben, brauchst du ungefähr ', comparisonValue('1\\,\\mathrm{J}', '1 J'),
-      '. Diese Energie reicht idealisiert, um rund 60 Milliarden Protonen jeweils ',
-      comparisonValue('100\\,\\mathrm{MeV}', '100 MeV'), ' zuzuführen.');
-    comparisonPanel.append(stepComparison, liftingComparison);
-    comparison.append(comparisonPanel);
-    controls.append(comparison);
-
     const status = document.createElement('div');
     status.className = 'energy-increments-status';
     status.setAttribute('role', 'status');
@@ -167,7 +133,7 @@
     if (document.readyState === 'complete') refreshMath();
     else window.addEventListener('load', refreshMath, { once: true });
 
-    host.__energyIncrementsUi = { host, energy, speed, incrementValue, add, previous, reset, status, limitNote, comparisonMath };
+    host.__energyIncrementsUi = { host, energy, speed, incrementValue, add, previous, reset, status, limitNote };
     return host.__energyIncrementsUi;
   }
 
@@ -201,7 +167,6 @@
         `*E*kin = ${format(energy)} MeV`);
       inline(controls.speed, `v${relation}${texNumber(beta, betaDigits)}\\,c`,
         `*v* ${plainRelation} ${format(beta, betaDigits)} *c*`);
-      controls.comparisonMath.forEach(({ node, tex, fallback }) => inline(node, tex, fallback));
       if (increment === null) controls.incrementValue.textContent = '—';
       else inline(controls.incrementValue, `\\Delta v\\approx${texNumber(increment, 6)}\\,c`,
         `Δ*v* ≈ ${format(increment, 6)} *c*`);

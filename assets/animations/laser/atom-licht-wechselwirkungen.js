@@ -252,8 +252,23 @@
     }
 
     const x = mix(ATOM.cx + 104, 742, ease(after));
-    wavePacket(parent, SRT, x, ATOM.cy - 18, 0, PHOTON, phase, { len: 92 });
-    wavePacket(parent, SRT, x, ATOM.cy + 18, 0, PHOTON, phase, { len: 92 });
+    wavePacket(parent, SRT, x, ATOM.cy, 0, PHOTON, phase, { len: 92, width: 3.2 });
+    SRT.el("rect", {
+      x: x - 45,
+      y: ATOM.cy - 58,
+      width: 90,
+      height: 25,
+      rx: 12.5,
+      fill: "#fff1f2",
+      stroke: "#fecdd3",
+      "stroke-width": 1.2
+    }, parent);
+    SRT.addText(parent, x, ATOM.cy - 41, "2 Photonen", "label", {
+      fill: PHOTON,
+      "font-size": 12,
+      "font-weight": "850",
+      "text-anchor": "middle"
+    });
   }
 
   window.SRTSlide.register("laser-absorption", {
