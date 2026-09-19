@@ -17,14 +17,15 @@ Die aktiven Kapitel und ihre Reihenfolge stehen in `_quarto.yml`. Der Build wurd
 | --- | --- |
 | `index.qmd` | Vorwort und Hinweise zur Benutzung |
 | `01_srt_raum_und_zeit_umbau.qmd` | SRT 1: Raum und Zeit |
-| `03_srt_impuls_und_energie_umbau.qmd` | SRT 2: Impuls und Energie |
-| `02_laser_ausflug_umbau.qmd` | Laser-Kapitel |
+| `02_srt_impuls_und_energie_umbau.qmd` | SRT 2: Impuls und Energie |
+| `03_laser_ausflug_umbau.qmd` | Laser-Kapitel |
 | `legacy-arbeitsblaetter.qmd` | Zusatzseite mit den ersten beiden ursprünglichen SRT-Arbeitsblättern |
 | `references.qmd`, `references-*.bib` | Literaturseite mit zwei getrennten Literaturverzeichnissen |
 | `assets/animations/srt1-raum-und-zeit/` | Veranschaulichungen des ersten SRT-Kapitels, nach Thema geordnet |
 | `assets/animations/srt2-impuls-und-energie/` | Veranschaulichungen des zweiten SRT-Kapitels |
 | `assets/animations/laser/` | Veranschaulichungen des Laser-Kapitels |
 | `assets/animations/shared/` | Gemeinsame Zeichenfunktionen, Formelsatz und Bedienung der Veranschaulichungen |
+| `assets/animations/zukuenftig/` | Fachlich noch ungeklärte Animationsentwürfe; ausdrücklich vom veröffentlichten Build ausgeschlossen |
 | `assets/styles/` | Gestaltung von Lernkästen, Formelwiederholungen und Kapiteln; lokale Schriftkonfiguration |
 | `assets/images/`, `assets/task-icons/` | Abbildungen, Video-Vorschaubild und verwendete Aufgabensymbole |
 | `assets/scripts/`, `assets/includes/` | Videosteuerung und Anpassung des Inhaltsverzeichnisses |
@@ -32,7 +33,7 @@ Die aktiven Kapitel und ihre Reihenfolge stehen in `_quarto.yml`. Der Build wurd
 | `Videos einbinden/` | Selbst erstellte Zugvideos für das Workbook |
 | `_extensions/pandoc-ext/multibib/` | Quarto-Erweiterung für zwei Literaturverzeichnisse |
 | `tools/` | Filter und Nachbearbeitung beim Bauen des Workbooks |
-| `alt-nicht-eingebunden/` | Frühere Kapitel und unbenutzte Veranschaulichungen; nicht Teil der Website |
+| `planung/zukuenftige-kapitel/` | Vorläufige, nicht veröffentlichte Kapitelgerüste für eine mögliche spätere Erweiterung |
 | `.github/workflows/publish.yml` | Baut das Workbook und veröffentlicht `_book/` mit GitHub Pages |
 | `licenses/`, `THIRD-PARTY-NOTICES.md` | Lizenztexte und Herkunft der Drittkomponenten |
 
@@ -54,6 +55,6 @@ Die Kapitel binden ihre Skripte und zusätzlichen Stylesheets im Kopf der jeweil
 - **Source Sans Pro**, SIL Open Font License 1.1: lokale Schriftdateien in `assets/fonts/`. `assets/styles/no-webfont.scss` unterbindet den Google-Fonts-Import des Themes.
 - **multibib**, ISC: Pandoc-Filter in `_extensions/pandoc-ext/multibib/`. Die mitgelieferte Fassung wurde lokal angepasst und liest `multibib:` statt `bibliography:`. Bei einem Update muss diese Anpassung erhalten bleiben.
 - **Quarto und seine HTML-Komponenten**: Navigation, Suche, Theme und Bedienelemente werden beim Rendern nach `_book/site_libs/` kopiert. Komponenten und Lizenztexte sind in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) aufgeführt.
-- **Übernommene Abbildungen**: Das Laser-Warnzeichen von Wikimedia Commons ist gemeinfrei; das archivierte Ätherwind-Bild steht unter CC BY 3.0. Herkunft und Bedingungen stehen ebenfalls in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md).
+- **Übernommene Abbildungen**: Das Laser-Warnzeichen von Wikimedia Commons ist gemeinfrei. Herkunft und Bedingungen stehen ebenfalls in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md).
 
 Skripte, Stylesheets, Schriftdateien und die MathJax-Datei für die Formeldarstellung werden aus diesem Repository beziehungsweise dem Quarto-Build bereitgestellt.

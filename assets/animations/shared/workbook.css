@@ -156,6 +156,48 @@
   font-family: Inter, "Segoe UI", system-ui, sans-serif;
 }
 
+[data-srt-animation="laser-besetzungsinversion"] svg {
+  aspect-ratio: 862 / 280;
+}
+
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: 0.6rem 0.65rem 0.7rem;
+  align-items: flex-end;
+  border-right: 1px solid rgba(23, 32, 51, 0.14);
+  border-bottom: 1px solid rgba(23, 32, 51, 0.14);
+  border-left: 1px solid rgba(23, 32, 51, 0.14);
+  background: #f7f9fb;
+}
+
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls .srt-workbook-control-group {
+  min-width: 0;
+  padding: 0;
+  flex: 1 1 22rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls .srt-workbook-control-group legend {
+  margin-bottom: 0.3rem;
+  padding: 0;
+}
+
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls .srt-workbook-motion-button {
+  align-self: flex-end;
+  border-color: #475569;
+  background: #1f2937;
+  color: #fff;
+}
+
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls .srt-workbook-motion-button:hover,
+[data-srt-animation="laser-besetzungsinversion"] + .srt-workbook-controls .srt-workbook-motion-button[aria-pressed="true"] {
+  background: #334155;
+  color: #fff;
+}
+
 .srt-workbook-controls *,
 .srt-workbook-controls *::before,
 .srt-workbook-controls *::after {

@@ -1,0 +1,15 @@
+# Unschärferelationen und Grenzen des Bohrschen Atommodells
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Die genaue fachliche Darstellung der Energie-Zeit-Unschärferelation muss vor einer Ausarbeitung gesondert geprüft werden.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung:
+- Heisenbergsche Unschärferelation
+- Energie-Zeit-Unschärferelation
+- Abgrenzung von Messunsicherheit und quantenmechanischer Unschärfe
+- Konsequenzen für die Vorstellung fester Elektronenbahnen im Bohrschen Atommodell
+-->

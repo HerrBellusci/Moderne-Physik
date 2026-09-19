@@ -1,0 +1,16 @@
+# Endlicher Potentialtopf, Tunneleffekt und Alpha-Zerfall
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung und Arbeitsblatt 12-13:
+- endlicher Potentialtopf
+- exponentielles Eindringen der Wellenfunktion in klassisch verbotene Bereiche
+- Potentialbarriere und Tunneleffekt
+- qualitative und quantitative Tunnelwahrscheinlichkeit
+- Alpha-Zerfall als Anwendung des Tunneleffekts
+-->

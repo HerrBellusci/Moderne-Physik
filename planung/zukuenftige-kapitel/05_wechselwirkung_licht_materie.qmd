@@ -1,0 +1,16 @@
+# Wechselwirkung von Licht und Materie
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach Arbeitsblatt 05:
+- Röntgenstrahlung
+- Impuls eines Photons und relativistische Energie-Impuls-Beziehung
+- Photoeffekt und Compton-Effekt als Wechselwirkungen
+- Paarerzeugung und Paarvernichtung
+- de-Broglie-Wellenlänge als Übergang zum folgenden Kapitel
+-->

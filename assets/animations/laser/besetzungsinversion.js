@@ -1,17 +1,17 @@
 (function () {
   const MUTED = "#64748b";
-  const INK = "#172033";
   const LEVEL = "#334155";
   const UP = "#f59e0b";
   const DOWN = "#2563eb";
   const PHOTON = "#e11d48";
 
-  const MED_X0 = 140;
-  const MED_W = 582;
-  const BEAM = 236;
-  const YU = BEAM - 22;
-  const YL = BEAM + 22;
-  const HW = 13;
+  const CANVAS_H = 280;
+  const MED_X0 = 120;
+  const MED_W = 642;
+  const BEAM = 135;
+  const YU = BEAM - 38;
+  const YL = BEAM + 38;
+  const HW = 18;
 
   const RUN = 4600;
   const PAUSE = 1300;
@@ -50,8 +50,8 @@
   }
 
   function photon(parent, SRT, cx, cy, angle, phase, opacity) {
-    const len = 60;
-    const amp = 6;
+    const len = 68;
+    const amp = 7;
     const cos = Math.cos(angle);
     const sin = Math.sin(angle);
     let d = "";
@@ -75,14 +75,14 @@
     const upper = up > 0.5;
     SRT.el("line", {
       x1: x - HW, y1: YU, x2: x + HW, y2: YU,
-      stroke: LEVEL, "stroke-width": 2.2, "stroke-linecap": "round"
+      stroke: LEVEL, "stroke-width": 2.6, "stroke-linecap": "round"
     }, parent);
     SRT.el("line", {
       x1: x - HW, y1: YL, x2: x + HW, y2: YL,
-      stroke: LEVEL, "stroke-width": 2.2, "stroke-linecap": "round"
+      stroke: LEVEL, "stroke-width": 2.6, "stroke-linecap": "round"
     }, parent);
     SRT.el("circle", {
-      cx: x, cy: mix(YL, YU, up), r: 6.5,
+      cx: x, cy: mix(YL, YU, up), r: 8.5,
       fill: upper ? UP : DOWN, stroke: "#ffffff", "stroke-width": 1.6, filter: "url(#glow)"
     }, parent);
   }
@@ -92,15 +92,13 @@
       x1: MED_X0 + 6, y1: BEAM, x2: MED_X0 + MED_W - 6, y2: BEAM,
       stroke: "#cbd5e1", "stroke-width": 1.4, "stroke-dasharray": "5 7", opacity: 0.7
     }, parent);
-    SRT.addText(parent, MED_X0 - 22, YU + 5, "E₂", "label", { fill: MUTED, "font-size": 14, "font-weight": "800", "text-anchor": "end" });
-    SRT.addText(parent, MED_X0 - 22, YL + 5, "E₁", "label", { fill: MUTED, "font-size": 14, "font-weight": "800", "text-anchor": "end" });
-    const label = mode === "inversion" ? "Besetzungsinversion" : "normale Besetzung";
-    SRT.addText(parent, MED_X0 + MED_W / 2, 400, label, "label", { fill: INK, "font-size": 18, "font-weight": "800", "text-anchor": "middle" });
+    SRT.addText(parent, MED_X0 - 24, YU + 7, "*E*₂", "label", { fill: MUTED, "font-size": 21, "font-weight": "650", "text-anchor": "end" });
+    SRT.addText(parent, MED_X0 - 24, YL + 7, "*E*₁", "label", { fill: MUTED, "font-size": 21, "font-weight": "650", "text-anchor": "end" });
   }
 
   // Normale Besetzung: Photon wird absorbiert, Atome emittieren spontan.
   const N_FRACS = [0.08, 0.24, 0.4, 0.56, 0.72, 0.88];
-  const N_ABS = 2;  // absorbiert das einlaufende Photon, emittiert danach spontan
+  const N_ABS = 2;  // absorbiert das einlaufende Photon und wechselt nach E2
   const N_EXC = 5;  // von Anfang an angeregt, zerfaellt spontan
 
   function normalUp(i, p) {
@@ -131,7 +129,7 @@
     }
     if (p > 0.24) {
       const a = 0.72;
-      const d = mix(0, 150, (p - 0.24) / 0.5);
+      const d = mix(0, 125, (p - 0.24) / 0.5);
       photon(parent, SRT, xExc + Math.cos(a) * d, BEAM + Math.sin(a) * d, a, phase + 1.3, clamp(1 - (p - 0.24) / 0.56, 0, 1));
     }
   }
@@ -165,7 +163,7 @@
 
   function draw({ parent, t, state, SRT }) {
     SRT.clear(parent);
-    SRT.el("rect", { x: 0, y: 0, width: 862, height: 506, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
+    SRT.el("rect", { x: 0, y: 0, width: 862, height: CANVAS_H, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
 
     if (state.mode === undefined) state.mode = "normal";
     const local = t % CYCLE;
@@ -183,15 +181,15 @@
 
   window.SRTSlide.register("laser-besetzungsinversion", {
     initialState: { mode: "normal" },
-    showMotionControl: false,
+    showMotionControl: true,
     controls: [
       {
         type: "segmented",
         key: "mode",
         label: "Besetzung",
         options: [
-          { label: "normale Besetzung", value: "normal", description: "Fast alle Atome im Grundzustand" },
-          { label: "Besetzungsinversion", value: "inversion", description: "Mehr Atome angeregt als im Grundzustand" }
+          { label: "normale Besetzung", value: "normal", description: "Mehr Atome in E₁ als in E₂" },
+          { label: "Besetzungsinversion", value: "inversion", description: "Mehr Atome in E₂ als in E₁" }
         ]
       }
     ],

@@ -1,0 +1,15 @@
+# Lichtquanten: Schwarzkörperstrahlung und Photoeffekt
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach Arbeitsblatt 04:
+- Wärmestrahlung und elektromagnetisches Spektrum
+- Stefan-Boltzmann-Gesetz und Wiensches Verschiebungsgesetz
+- Plancksches Strahlungsgesetz und Quantenhypothese
+- äußerer Photoeffekt, Austrittsarbeit und Grenzfrequenz
+-->

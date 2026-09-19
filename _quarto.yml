@@ -7,10 +7,10 @@ project:
   post-render: tools/strip-polyfill.py
   resources:
     - assets/**
+    - "!assets/animations/zukuenftig/**"
     - "Videos einbinden/**"
     - licenses/**
     - THIRD-PARTY-NOTICES.md
-    - "!alt-nicht-eingebunden/**"
 
 book:
   title: "Interaktives Quarto-Workbook Moderne Physik"
@@ -19,8 +19,8 @@ book:
   chapters:
     - index.qmd
     - 01_srt_raum_und_zeit_umbau.qmd
-    - 03_srt_impuls_und_energie_umbau.qmd
-    - 02_laser_ausflug_umbau.qmd
+    - 02_srt_impuls_und_energie_umbau.qmd
+    - 03_laser_ausflug_umbau.qmd
     - references.qmd
   page-footer:
     center:

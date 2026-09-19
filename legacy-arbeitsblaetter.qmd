@@ -47,7 +47,7 @@ a) Bestimmen Sie den Gangunterschied, um den Uhren auf den GPS-Satelliten pro Ta
 
 ## Arbeitsblatt 2: Spezielle Relativitätstheorie Teil 2 {#arbeitsblatt-2}
 
-Das zweite Blatt trägt die Veranstaltungsnummer 03. Seine Themen verteilen sich im Workbook auf die Kapitel [SRT I](01_srt_raum_und_zeit_umbau.qmd) und [SRT II](03_srt_impuls_und_energie_umbau.qmd).
+Das zweite Blatt trägt die Veranstaltungsnummer 03. Seine Themen verteilen sich im Workbook auf die Kapitel [SRT I](01_srt_raum_und_zeit_umbau.qmd) und [SRT II](02_srt_impuls_und_energie_umbau.qmd).
 
 ::: {#legacy-blatt2-aufgabe1 .mp-box .mp-task}
 <span class="mp-task-kind">Aufgabe 1: Vorbereitung</span>
@@ -119,4 +119,4 @@ $$
 Anmerkung zur Übertragung: Die Klammer im ersten Satz präzisiert die Bezeichnung des Originals. Für Teilaufgabe c) wird ein Start aus Ruhe ohne Energieverluste vorausgesetzt.
 :::
 
-Zurück zum Workbook: [SRT I](01_srt_raum_und_zeit_umbau.qmd#sichern-und-anwenden) · [SRT II](03_srt_impuls_und_energie_umbau.qmd#sichern-und-anwenden)
+Zurück zum Workbook: [SRT I](01_srt_raum_und_zeit_umbau.qmd#sichern-und-anwenden) · [SRT II](02_srt_impuls_und_energie_umbau.qmd#sichern-und-anwenden)

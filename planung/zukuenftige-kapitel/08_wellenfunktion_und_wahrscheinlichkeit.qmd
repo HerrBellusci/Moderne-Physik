@@ -1,0 +1,15 @@
+# Quantenmechanik I: Wellenfunktion und Wahrscheinlichkeit
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Die Arbeitsblätter 08 und 09 fehlen; der Zuschnitt stützt sich daher vorläufig auf die eigene Vorlesungszusammenfassung.
+:::
+
+<!--
+Vorläufiger Zuschnitt:
+- Wellenfunktion als Zustandsbeschreibung
+- Wahrscheinlichkeitsinterpretation
+- Doppelspaltexperiment mit Quantenobjekten
+- Abgrenzung von Wellenfunktion, Teilchenbahn und klassischer Welle
+-->

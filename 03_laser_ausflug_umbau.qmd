@@ -2,11 +2,12 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260919-laserlayout">
+<link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260918">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/laser/atom-licht-wechselwirkungen.js"></script>
-<script src="assets/animations/laser/besetzungsinversion.js"></script>
-<script src="assets/animations/laser/metastabil.js"></script>
+<script src="assets/animations/laser/besetzungsinversion.js?v=20260918-layout2"></script>
+<script src="assets/animations/laser/metastabil.js?v=20260919"></script>
 <script src="assets/animations/laser/resonator.js"></script>
 <script src="assets/animations/laser/spektren-zoom.js"></script>
 <script src="assets/animations/laser/rubinlaser.js"></script>
@@ -64,7 +65,7 @@ Beim schwarzen T-Shirt absorbieren Farbstoffmoleküle viele der einfallenden Pho
 </figure>
 ```
 
-Animation zur Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand, wird absorbiert, und das Atom wechselt in den angeregten Zustand. <span class="mp-caption-warn">Der Wellenzug stellt ein einzelnes Photon mit seiner Frequenz dar. Die Wellenlinie ist keine Flugbahn des Photons.</span>
+Animation zur Absorption: Ein Photon mit passender Energie trifft auf ein Atom im Grundzustand, wird absorbiert, und das Atom wechselt in den angeregten Zustand. <span class="mp-caption-warn">Ein Wellenzug stellt jeweils ein einzelnes Photon mit seiner Frequenz dar. Seine Wellenlinie ist keine Flugbahn des Photons.</span>
 :::
 :::
 
@@ -95,7 +96,7 @@ In der HTML-Version erscheint hier eine Animation zur spontanen Emission. Ein an
 :::
 :::
 
-Animation zur spontanen Emission. Ein angeregtes Atom geht ohne einfallendes Photon in das niedrigere Energieniveau über. Dabei entsteht ein Photon. Zeitpunkt und Ausbreitungsrichtung variieren von Durchlauf zu Durchlauf.
+Animation zur spontanen Emission. Ein angeregtes Atom geht ohne einfallendes Photon in das niedrigere Energieniveau über. Dabei entsteht ein Photon. Zeitpunkt und Ausbreitungsrichtung variieren von Durchlauf zu Durchlauf. <span class="mp-caption-warn">Ein Wellenzug stellt jeweils ein einzelnes Photon mit seiner Frequenz dar. Seine Wellenlinie ist keine Flugbahn des Photons.</span>
 ::::
 
 ::: {.mp-box .mp-misconception}
@@ -142,20 +143,22 @@ In der HTML-Version erscheint hier eine Animation zur stimulierten Emission. Ein
 :::
 :::
 
-Animation zur stimulierten Emission. Ein Photon mit passender Energie trifft auf ein angeregtes Atom und löst den Übergang in das niedrigere Energieniveau aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus.
+Animation zur stimulierten Emission. Ein Photon mit passender Energie trifft auf ein angeregtes Atom und löst den Übergang in das niedrigere Energieniveau aus. Danach breiten sich zwei Photonen gleicher Energie in dieselbe Richtung aus. <span class="mp-caption-warn">Ein Wellenzug stellt jeweils ein einzelnes Photon mit seiner Frequenz dar. Seine Wellenlinie ist keine Flugbahn des Photons.</span>
 ::::
 
-Bis hierher haben wir die stimulierte Emission im Photonenmodell beschrieben. Für die Phasenbeziehung des Lichts verwenden wir nun das Wellenmodell. Beide Modelle beschreiben dasselbe Licht, beantworten aber unterschiedliche Fragen.
+Bis hierher haben wir die stimulierte Emission im Photonenmodell beschrieben. Dieses Modell eignet sich, um den Austausch einzelner Energiequanten bei atomaren Übergängen zu beschreiben. Für die Phasenlage des Lichts verwenden wir nun das Wellenmodell. Beide Modelle erfassen unterschiedliche Aspekte desselben Lichts.
 
-Im Wellenmodell ist die neu entstehende Lichtwelle gleichphasig zur einfallenden Lichtwelle. Wellenberg liegt auf Wellenberg und Wellental auf Wellental. Löst das so entstandene Licht weitere stimulierte Emissionen aus, setzt sich diese Gleichphasigkeit innerhalb der entstehenden Kette fort.
+Im Wellenmodell beschreiben wir das einfallende und das neu entstehende Licht jeweils als Lichtwelle. Im hier betrachteten idealisierten Fall entsteht bei der stimulierten Emission eine Lichtwelle, die gleichphasig zur einfallenden Lichtwelle ist. Wellenberg liegt auf Wellenberg und Wellental auf Wellental.
 
-Diese Gleichphasigkeit ist ein idealisierter Sonderfall von Kohärenz.[Kohärenz]{.column-margin .mp-randbegriff} Im hier verwendeten vereinfachten Grenzfall nennen wir zwei Lichtwellen kohärent, wenn ihre relative Phasenlage gleich bleibt. Sie dürfen gegeneinander verschoben sein. Der Versatz muss also nicht null sein.
+Damit lässt sich eine weitere Eigenschaft des entstehenden Lichts beschreiben. Zwei Lichtwellen heißen kohärent, wenn zwischen ihnen eine feste Phasenbeziehung besteht.[Kohärenz]{.column-margin .mp-randbegriff} Das bedeutet, dass Wellenberge und Wellentäler ihren gegenseitigen Versatz beibehalten. Dieser Versatz muss nicht null sein. Die Gleichphasigkeit bei der stimulierten Emission ist ein besonderer Fall einer solchen festen Phasenbeziehung.
 
 ::: {.column-margin}
-Der vollständige Kohärenzbegriff geht über diese vereinfachte Beschreibung hinaus. Räumliche Kohärenz beschreibt Zusammenhänge des Lichtfeldes an verschiedenen Orten, zeitliche Kohärenz an verschiedenen Zeitpunkten. Beide sind graduelle Größen. Pieper entwickelt diese Unterscheidung experimentell am Doppelspalt und am Michelson-Interferometer [@pieper2019kohaerenz, S. 14–24].
+Die Erklärung über eine feste Phasenbeziehung beschreibt Kohärenz nur vereinfacht. Eine genauere Beschreibung unterscheidet räumliche und zeitliche Kohärenz. Beide können unterschiedlich stark ausgeprägt sein, Licht kann also auch teilweise kohärent sein. Einen experimentellen Zugang findest du in [Kai Piepers Dissertation](https://phka.bsz-bw.de/frontdoor/index/index/docId/230).
 :::
 
-Kohärenz wird bei Interferenzversuchen über den Kontrast des Interferenzmusters beobachtbar. Ändert sich die relative Phasenlage gezielt, verschiebt sich das Muster. Schwankt sie dagegen während der Beobachtung schnell und unregelmäßig, überlagern sich unterschiedliche Lagen des Musters und sein Kontrast nimmt ab. Eine erwartete Verschiebung des Interferenzmusters hast du beim Michelson-Morley-Experiment im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit_umbau.qmd#michelson-morley-experiment) kennengelernt.
+Werden kohärente Lichtwellen überlagert, kann ein stabiles Interferenzmuster entstehen. Ein solches Muster hast du beim Michelson-Morley-Experiment im [Kapitel zu Raum und Zeit](01_srt_raum_und_zeit_umbau.qmd#michelson-morley-experiment) kennengelernt. Dort werden zwei Teilstrahlen derselben Lichtquelle überlagert. Ein Laser ist dafür nicht zwingend erforderlich. Sein gut sichtbarer, gerichteter Strahl erleichtert jedoch die räumliche Überlagerung der beiden Teilstrahlen. Außerdem bleibt ihre Phasenbeziehung auch bei größeren Unterschieden der optischen Wege erhalten, sodass weiterhin ein kontrastreiches Interferenzmuster entstehen kann.
+
+Eine hohe Kohärenz ist eine charakteristische Eigenschaft vieler Laserstrahlen. Sie entsteht im Zusammenspiel von stimulierter Emission und Resonator.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
@@ -176,124 +179,171 @@ Bei der spontanen und bei der stimulierten Emission sendet ein angeregtes Atom e
 ## Besetzungsinversion und Lasermedium
 
 ::: {.mp-goal-strip}
-Du <u>erklärst</u>, was eine Besetzungsinversion ist.
+Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist.
 
 Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss.
 
-Du <u>erklärst</u>, wozu ein metastabiles Niveau dient.
+Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
 :::
 
-Die stimulierte Emission aus dem letzten Abschnitt ist seit 1917 bekannt [@einstein1917quantum]. Der erste Laser gelang trotzdem erst 1960, über vierzig Jahre später. Ein wesentlicher Grund für diese Lücke steckt in diesem Abschnitt: Damit ein Medium Licht verstärkt, muss es in einen Zustand gebracht werden, der sich in gewöhnlicher Materie nie von selbst einstellt.
+Im Namen „Laser“ steckt die Lichtverstärkung. Im vorherigen Unterkapitel hast du den einzelnen Vorgang kennengelernt, auf dem sie beruht. Bei der stimulierten Emission entsteht neben dem einfallenden Photon ein weiteres. Aus einem einzelnen solchen Übergang folgt jedoch noch nicht, dass die Zahl der Photonen in einem Material insgesamt zunimmt. Ein passendes Photon kann dort auch absorbiert werden. Entscheidend ist deshalb, wie viele Atome sich im oberen und wie viele sich im unteren Energieniveau befinden.
 
-Stell dir eine La-Ola-Welle im Stadion vor. Sie läuft durch die Ränge, weil immer neue Zuschauer aufspringen. Damit sie weiterläuft, müssen entlang ihres Wegs genug Leute bereit sein aufzuspringen. Sind zu wenige bereit, bricht die Welle ab.
+Das Lasermedium ist das Material, in dem Licht verstärkt werden kann.
 
-Ein Photon, dessen Energie zum Abstand zweier Niveaus passt, kann zweierlei bewirken. Trifft es ein Atom im Grundzustand $E_1$, kann es absorbiert werden. Trifft es ein angeregtes Atom im Niveau $E_2$, kann es stimulierte Emission auslösen: Ein zweites, gleiches Photon kommt hinzu. Im Bild der La-Ola-Welle entspricht ein angeregtes Atom einem Zuschauer, der bereit ist aufzuspringen.
+Das vereinfachte Zwei-Niveau-Modell aus dem vorherigen Unterkapitel genügt, um beide Prozesse zu vergleichen. Ein Photon, dessen Energie gemäß @eq-laser-photonenenergie zum Abstand $E_2-E_1$ passt, kann von einem Atom im unteren Niveau $E_1$ absorbiert werden. An einem Atom im oberen Niveau $E_2$ kann es stimulierte Emission auslösen. Dabei entsteht ein zusätzliches Photon mit derselben Energie und derselben Ausbreitungsrichtung.
 
-Was mit einem passenden Photon geschieht, hängt von der Besetzung der Energieniveaus ab. Verstärkung bedeutet: Die stimulierte Emission überwiegt die Absorption. Dafür müssen mehr Atome im höheren Niveau $E_2$ sitzen als im tieferen $E_1$. Dann trifft ein Photon öfter auf ein angeregtes Atom als auf ein Atom im Grundzustand, und aus einem Photon werden viele gleiche. Dieser Zustand heißt Besetzungsinversion: Die Besetzung ist gegenüber dem Normalfall umgekehrt. Verglichen werden dabei genau die beiden Niveaus des Übergangs, um den es geht; die Besetzung aller anderen Niveaus spielt für die Inversion keine Rolle. Im Stadionbild sind genug Zuschauer bereit aufzuspringen, die Welle läuft. Wie ein Medium in diesen Zustand kommt, klären wir in zwei Schritten.
+Im vereinfachten Zwei-Niveau-Modell sind Absorption und stimulierte Emission pro passendem Atom gleich wahrscheinlich. $N_1$ bezeichnet die Zahl der Atome in $E_1$, $N_2$ die Zahl der Atome in $E_2$. Bei $N_2>N_1$ kommen durch stimulierte Emission im Mittel mehr Photonen hinzu, als durch Absorption verschwinden. Diese Zunahme der Photonenzahl beim Durchgang durch das Medium heißt Lichtverstärkung.[Lichtverstärkung]{.column-margin .mp-randbegriff}
 
-In der Simulation schaltest du zwischen normaler Besetzung und Besetzungsinversion um. Jedes Atom zeigt seine beiden Niveaus $E_1$ und $E_2$. Der Punkt zeigt wieder den Energiezustand des Atoms: sitzt er oben auf $E_2$, ist das Atom angeregt, unten auf $E_1$ ist es im Grundzustand. Bei normaler Besetzung wird ein durchlaufendes Photon absorbiert, und angeregte Atome emittieren spontan in zufällige Richtungen. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen.
+Der Zustand $N_2>N_1$ heißt Besetzungsinversion. Im oberen Niveau befinden sich dann mehr Atome als im unteren. Für diesen Vergleich zählen nur die beiden Niveaus des betrachteten Übergangs. Weitere Niveaus werden nicht mitgezählt. Für die Erzeugung und Aufrechterhaltung der Besetzungsinversion können sie trotzdem entscheidend sein.
 
+@fig-umbau-laser-besetzungsinversion vergleicht beide Besetzungen an sechs schematisch dargestellten Atomen. Jeder Punkt markiert den Energiezustand des gesamten Atoms. Er stellt kein Elektron dar. Bei normaler Besetzung gilt $N_1>N_2$. Im dargestellten Durchgang wird das einlaufende Photon absorbiert. Ein zunächst angeregtes Atom gibt unabhängig davon durch spontane Emission ein Photon in eine andere Richtung ab. Bei Besetzungsinversion gilt $N_2>N_1$. Das einlaufende Photon löst an mehreren Atomen im oberen Niveau nacheinander stimulierte Emission aus. Bei jedem Übergang kommt ein weiteres Photon mit derselben Energie und derselben Ausbreitungsrichtung hinzu.
+
+:::: {#fig-umbau-laser-besetzungsinversion}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-besetzungsinversion" data-srt-motion-control data-srt-label="Interaktive Darstellung mit Umschalter zwischen normaler Besetzung und Besetzungsinversion. Ein Photon läuft durch das Medium. Jedes Atom hat zwei Niveaus, ein Punkt zeigt den Energiezustand des Atoms. Bei normaler Besetzung wird das Photon absorbiert und angeregte Atome emittieren spontan. Bei Besetzungsinversion löst ein Photon an angeregten Atomen stimulierte Emission aus. Dabei entsteht eine Art Lawine aus identischen Photonen."></div>
-  <figcaption>Simulation zur Besetzungsinversion: Ein Photon durchläuft das Medium, umschaltbar zwischen normaler Besetzung und Besetzungsinversion.</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-besetzungsinversion" data-srt-viewbox-h="280" data-srt-label="Simulation zum Vergleich von normaler Besetzung und Besetzungsinversion im vereinfachten Zwei-Niveau-Modell. Sechs Atome sind mit je zwei Energieniveaus dargestellt. Ein Punkt markiert jeweils den Energiezustand des Atoms. Bei normaler Besetzung wird das einlaufende Photon absorbiert; ein angeregtes Atom emittiert unabhängig davon spontan in eine andere Richtung. Bei Besetzungsinversion löst das einlaufende Photon nacheinander stimulierte Emission aus, sodass weitere Photonen derselben Energie und Ausbreitungsrichtung entstehen."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Simulation mit einem Umschalter zwischen normaler Besetzung und Besetzungsinversion.
+In der HTML-Version erscheint hier eine Simulation zum Vergleich von normaler Besetzung und Besetzungsinversion im vereinfachten Zwei-Niveau-Modell.
 :::
 :::
 
-Den Normalfall beschreibt das thermische Gleichgewicht, der gewöhnliche Zustand der Materie: Fast alle Atome sitzen im Grundzustand.[thermisches Gleichgewicht]{.column-margin .mp-randbegriff} Ein passendes Photon trifft dann meist auf ein Atom im Grundzustand und wird absorbiert.
+Simulation zum Vergleich von normaler Besetzung und Besetzungsinversion im vereinfachten Zwei-Niveau-Modell. Die sechs dargestellten Atome veranschaulichen nur das Besetzungsverhältnis. Sie bilden die Wahrscheinlichkeitsbilanz eines realen Lasermediums nicht quantitativ ab. <span class="mp-caption-warn">Ein Wellenzug stellt jeweils ein einzelnes Photon mit seiner Frequenz dar. Seine Wellenlinie ist keine Flugbahn des Photons.</span>
+::::
 
-Diese normale Besetzung wird durch die Boltzmann-Verteilung beschrieben. Für unser Zwei-Niveau-Modell gilt im thermischen Gleichgewicht näherungsweise:
+Im Normalfall befindet sich ein Medium im thermischen Gleichgewicht.[thermisches Gleichgewicht]{.column-margin .mp-randbegriff} Für unsere Betrachtung bedeutet das, dass sich ein zeitlich stabiles Besetzungsverhältnis $N_2/N_1$ einstellt, dessen Wert vom Energieabstand und von der Temperatur abhängt.
+
+Wie sich die Atome im thermischen Gleichgewicht auf die Energieniveaus verteilen, beschreibt die Boltzmann-Verteilung. Für die beiden Niveaus $E_1$ und $E_2$ des vereinfachten Zwei-Niveau-Modells gilt
 
 $$
 \frac{N_2}{N_1} = e^{-\frac{E_2-E_1}{k_\mathrm{B}T}}
 $$ {#eq-laser-boltzmann}
 
-$N_2$ ist die Zahl der Atome im höheren Niveau. $N_1$ ist die Zahl der Atome im tieferen Niveau. $k_\mathrm{B}$ ist die Boltzmann-Konstante. $T$ ist die absolute Temperatur. Je größer der Energieabstand im Vergleich zu $k_\mathrm{B}T$ ist, desto kleiner ist der Anteil der Atome in $E_2$.
+$k_\mathrm{B}$ ist die Boltzmann-Konstante und $T$ die absolute Temperatur.
 
-In der Formel steckt folgende Aussage. Der Exponent ist bei jeder Temperatur negativ, das Verhältnis $N_2/N_1$ bleibt immer kleiner als 1. Heizt man das Medium, steigt $N_2$ zwar an. Selbst wenn die Temperatur unendlich groß sein könnte, erreicht die Besetzung höchstens die Gleichbesetzung $N_2 = N_1$. Eine Besetzungsinversion ist im thermischen Gleichgewicht unerreichbar, egal bei welcher Temperatur.
+Da $E_2$ das höhere Niveau ist, ist $E_2-E_1$ positiv. Bei einer positiven Temperatur ist der Exponent wegen des Minuszeichens negativ. Die rechte Seite der Gleichung liegt damit zwischen $0$ und $1$. Folglich gilt $N_2/N_1<1$ und damit $N_2<N_1$. Das untere Niveau ist stärker besetzt als das obere. Ein passendes Photon trifft deshalb häufiger auf ein Atom in $E_1$. Die Absorption überwiegt die stimulierte Emission.
 
-::: {.mp-box .mp-task}
+Mit steigender Temperatur wird der Betrag des Exponenten kleiner. Das Verhältnis $N_2/N_1$ nähert sich dem Wert $1$, überschreitet ihn bei positiver Temperatur aber nicht. Im thermischen Gleichgewicht entsteht daher bei positiver Temperatur keine Besetzungsinversion.
+
+:::: {#aufgabe-laser-boltzmann .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
   <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
   Berechnung
 </span>
 
-Ein Medium enthält $10^{20}$ Atome. Der Übergang hat den Energieabstand $E_2 - E_1 = 2{,}0\,\mathrm{eV} = 3{,}2 \cdot 10^{-19}\,\mathrm{J}$, das entspricht rotem Licht. Das Medium liegt bei Raumtemperatur vor: $T = 300\,\mathrm{K}$, $k_\mathrm{B} = 1{,}38 \cdot 10^{-23}\,\tfrac{\mathrm{J}}{\mathrm{K}}$.
+Im vereinfachten Zwei-Niveau-Modell verteilen sich $10^{20}$ Atome auf $E_1$ und $E_2$. Der Energieabstand $E_2-E_1=2{,}0\,\mathrm{eV}=3{,}2\cdot10^{-19}\,\mathrm{J}$ entspricht rotem Licht. Das Medium befindet sich bei Raumtemperatur mit $T=300\,\mathrm{K}$. Verwende $k_\mathrm{B}=1{,}38\cdot10^{-23}\,\tfrac{\mathrm{J}}{\mathrm{K}}$.
 
-<u>Berechne</u> das Besetzungsverhältnis $N_2/N_1$ und daraus, wie viele der $10^{20}$ Atome angeregt sind.
+Für diese Aufgabe benötigst du folgende aus dem Unterkapitel bekannte Formel.
+
+::: {.mp-formula-repeat}
+$$
+\frac{N_2}{N_1}=e^{-\frac{E_2-E_1}{k_\mathrm{B}T}}
+$$
+
+([-@eq-laser-boltzmann])
 :::
+
+<u>Berechne</u> das Besetzungsverhältnis $N_2/N_1$ und daraus die mittlere Zahl der Atome in $E_2$.
+::::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Der Exponent der Boltzmann-Verteilung ist
+Der Quotient im Betrag des Exponenten beträgt
 
 $$
 \frac{E_2 - E_1}{k_\mathrm{B}\,T}
 = \frac{3{,}2 \cdot 10^{-19}\,\mathrm{J}}{1{,}38 \cdot 10^{-23}\,\tfrac{\mathrm{J}}{\mathrm{K}} \cdot 300\,\mathrm{K}}
-\approx 77.
+\approx 77{,}3.
 $$
 
-Damit gilt $N_2/N_1 = e^{-77} \approx 10^{-34}$. Von den $10^{20}$ Atomen sind im Mittel $10^{20} \cdot 10^{-34} = 10^{-14}$ angeregt: kein einziges Atom. Ein passendes Photon trifft in diesem Medium praktisch immer auf ein Atom im Grundzustand und wird absorbiert. Für stimulierte Emission fehlen die Partner. Ohne Energiezufuhr von außen gibt es keine Verstärkung.
+Mit dem Minuszeichen in der Boltzmann-Beziehung ist der Exponent damit ungefähr $-77{,}3$. Für das Besetzungsverhältnis folgt
+
+$$
+r=\frac{N_2}{N_1}=e^{-77{,}3}\approx2{,}7\cdot10^{-34}.
+$$
+
+Die Gesamtzahl der Atome ist $N=N_1+N_2=10^{20}$. Mit $N_2=rN_1$ ergibt sich
+
+$$
+\begin{aligned}
+N&=N_1+rN_1=N_1(1+r),\\
+N_2&=\frac{r}{1+r}\,N\\
+&\approx2{,}7\cdot10^{-34}\cdot10^{20}\\
+&=2{,}7\cdot10^{-14}.
+\end{aligned}
+$$
+
+Der Wert $2{,}7\cdot10^{-14}$ ist eine mittlere Besetzungszahl und kein Bruchteil eines Atoms. Er liegt so weit unter $1$, dass das obere Niveau $E_2$ in einem Medium dieser Größe praktisch immer unbesetzt ist. Ein passendes Photon trifft daher fast ausschließlich auf ein Atom in $E_1$, sodass die Absorption überwiegt. Die Gleichgewichtsbesetzung liefert keine Besetzungsinversion.
 
 </details>
 
-Der erste Schritt zur Inversion ist eine Energiezufuhr von außen. Sie hebt Atome in höhere Energieniveaus und bringt das Medium aus dem thermischen Gleichgewicht. Diese Energiezufuhr heißt Pumpen.[Pumpen]{.column-margin .mp-randbegriff} Je nach Lasertyp geschieht das mit Licht, etwa aus einer Blitzlampe, oder mit einem elektrischen Strom, der durch ein Gas oder einen Halbleiter fließt.
+::: {#laser-pumpen}
+Um eine Besetzungsinversion zu erzeugen, muss dem Lasermedium Energie von außen zugeführt werden. Diese gezielte Energiezufuhr nennt man beim Laser Pumpen.[Pumpen]{.column-margin .mp-randbegriff} Sie kann fortlaufend oder in einzelnen Pumpimpulsen erfolgen. Durch das Pumpen werden höhere Energiezustände stärker besetzt, als es im thermischen Gleichgewicht bei derselben Temperatur der Fall wäre.
+:::
 
-Pumpen allein reicht aber noch nicht. Man könnte versuchen, die Atome mit Licht direkt vom Grundzustand $E_1$ in das obere Laserniveau $E_2$ zu pumpen. Das scheitert an einem Wettlauf: Dasselbe Pumplicht passt auch zum Übergang nach unten. Es löst an bereits angeregten Atomen stimulierte Emission aus, und beide Vorgänge sind pro Atom gleich wahrscheinlich.
+Je nach Lasertyp wird optisch oder elektrisch gepumpt. Beim optischen Pumpen liefert etwa eine Blitzlampe die Energie. Elektrisch geschieht dies beispielsweise durch eine Gasentladung oder durch Strominjektion in einen Halbleiter.
 
-Solange mehr Atome unten sitzen, überwiegt die Absorption. Je näher die Besetzung an die Hälfte rückt, desto öfter trifft das Pumplicht ein angeregtes Atom und schickt es wieder nach unten. Mit zwei Niveaus ist höchstens Gleichbesetzung erreichbar, eine Inversion nie. 
+Im hier verwendeten Zwei-Niveau-Modell lässt sich mit Pumplicht, dessen Photonenenergie genau zum Übergang zwischen $E_1$ und $E_2$ passt, keine Besetzungsinversion erzeugen. Das Pumplicht, das ein Atom von $E_1$ nach $E_2$ hebt (Absorption), kann an einem Atom in $E_2$ den Übergang nach $E_1$ auslösen (stimulierte Emission). Da beide Vorgänge pro passendem Atom gleich wahrscheinlich sind, bestimmt die jeweilige Besetzungszahl ihre Rate. Die Absorptionsrate wächst mit der Zahl $N_1$ der Atome im Grundzustand $E_1$. Die Rate der stimulierten Emission wächst mit der Zahl $N_2$ der Atome im oberen Niveau $E_2$. Bei $N_1=N_2$ gleichen sich beide Raten aus. Das Pumplicht kann die Besetzungen daher höchstens an die Gleichbesetzung annähern. Eine Besetzungsinversion lässt sich auf diesem Weg nicht erzeugen.
 
-Der zweite Schritt ist darum ein Material, dessen Atome ein metastabiles Niveau besitzen.[metastabiler Zustand]{.column-margin .mp-randbegriff} Metastabil bedeutet hier: Die Atome bleiben in einem solchen Niveau deutlich länger als in einem gewöhnlichen angeregten Zustand, oft tausend- bis millionenfach solang. Spontane Emission ist in diesem Zustand weiterhin möglich, tritt aber verzögert auf. So kann die Zahl der Atome in diesem Niveau steigen.
+Konventionelle atomare Laser umgehen diese Grenze, indem am Pumpvorgang weitere Energieniveaus beteiligt sind. Das Grundprinzip lässt sich mit einem vereinfachten Drei-Niveau-Modell erklären. Das Pumplicht hebt Atome aus dem Grundzustand $E_1$ zunächst in das kurzlebige Pumpniveau $E_3$. Von $E_3$ wechseln die Atome schnell, meist durch einen strahlungslosen Übergang, in das obere Laserniveau $E_2$.
 
-Das metastabile Niveau umgeht den Wettlauf. Gepumpt wird auf ein höheres Niveau, von dort gelangen die Atome in das metastabile Niveau. Der Laserübergang startet dort und hat eine andere Energie als das Pumplicht. Das Pumplicht kann die Atome aus diesem Niveau nicht wieder nach unten bringen.
+Das Niveau $E_2$ ist metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Metastabil bedeutet hier, dass die spontane Emission aus diesem Zustand im Mittel deutlich später einsetzt als aus einem gewöhnlichen angeregten Zustand. Während dieser Zeit bleibt Anregungsenergie im Atom gespeichert. Dadurch können sich Atome in $E_2$ ansammeln.
 
-Das metastabile Niveau kannst du dir mit einer Kugel am Berg vorstellen. Oben hat die Kugel potenzielle Energie. Auf einem glatten Hang rollt sie schnell bis nach unten. Befindet sich auf halbem Weg eine Mulde, bleibt die Kugel dort kurz liegen, bevor sie weiterrollt. Die Mulde entspricht dem metastabilen Niveau.
+Der Pumpübergang von $E_1$ nach $E_3$ und der Laserübergang von $E_2$ nach $E_1$ besitzen unterschiedliche Energieabstände. Das Pumplicht passt deshalb nicht zum Laserübergang und löst an den Atomen in $E_2$ keine stimulierte Emission nach $E_1$ aus. Gelangen durch das Pumpen ausreichend viele Atome nach $E_2$, kann schließlich $N_2>N_1$ gelten. Zwischen $E_2$ und $E_1$ liegt dann eine Besetzungsinversion vor.
 
-Die folgende Animation zeigt diese Analogie und ein Drei-Niveau-System mit metastabilem Niveau.
+Die Besetzungsinversion bleibt nicht von selbst erhalten, denn Übergänge aus $E_2$ verringern dessen Besetzung wieder. Um die Inversion aufrechtzuerhalten, müssen durch weiteres Pumpen genügend Atome nach $E_2$ gelangen.
 
+Das metastabile Niveau lässt sich durch eine Kugelmulde an einem Hang veranschaulichen. Die Höhe der Kugel steht für die Energie des Atoms. Die obere Position entspricht dem Pumpniveau $E_3$, die tiefer gelegene Mulde dem metastabilen Niveau $E_2$ und der Fuß des Hangs dem Grundzustand $E_1$. Auf einem gleichmäßig abfallenden Hang rollt die Kugel rasch nach unten. Erreicht sie die Mulde, bleibt sie dort liegen. Entsprechend wechselt ein Atom schnell von $E_3$ nach $E_2$ und verweilt anschließend deutlich länger in $E_2$.
+
+Beim Verlassen der Mulde endet die Analogie. Die Kugel könnte die Mulde nur verlassen, wenn ihr von außen Energie zugeführt würde. Das Atom benötigt dagegen keine zusätzliche Energie, um vom metastabilen Niveau $E_2$ in den Grundzustand $E_1$ zu wechseln. Es kann nach einer zufälligen Wartezeit spontan nach $E_1$ übergehen. Ein passendes Photon kann diesen Übergang stattdessen durch stimulierte Emission auslösen. Das einfallende Photon wird dabei nicht absorbiert und liefert dem Atom keine Aktivierungsenergie oder einen energetischen „Schubs“. Das einfallende Photon bleibt erhalten. Die Energie des zusätzlich entstehenden Photons stammt vollständig aus der Energiedifferenz $E_2-E_1$ des Atoms.
+
+In @fig-umbau-laser-metastabil kannst du die Kugelmulden-Analogie mit einem Energieniveauschema mit drei Niveaus vergleichen. Links bleibt die Kugel in der Mulde liegen. Rechts markiert der blaue Punkt den Energiezustand des Atoms. Er wechselt vom Pumpniveau $E_3$ schnell in das metastabile Niveau $E_2$ und nach einer längeren Wartezeit in den Grundzustand $E_1$.
+
+:::: {#fig-umbau-laser-metastabil}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-metastabil" data-srt-motion-control data-srt-label="Eine Kugel rollt einen Berg hinab und bleibt in einer Mulde auf halbem Weg liegen, bevor sie weiter zum Grundzustand rollt. Die Mulde steht für das metastabile Niveau. Rechts zeigt ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand."></div>
-  <figcaption>Animation zum metastabilen Niveau: Eine Kugel bleibt in einer Mulde auf halbem Weg liegen; daneben ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand.</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-metastabil" data-srt-motion-control data-srt-label="Links rollt eine Kugel einen Hang hinab und bleibt in einer Mulde liegen. Rechts markiert ein blauer Punkt den Energiezustand eines Atoms im Drei-Niveau-Schema. Er wechselt vom Pumpniveau E3 schnell in das metastabile Niveau E2 und nach längerer Wartezeit in den Grundzustand E1. Die Kugel bleibt währenddessen in der Mulde."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Darstellung: Eine Kugel rollt einen Berg hinab und bleibt in einer Mulde auf halbem Weg liegen, bevor sie weiter nach unten zum Grundzustand rollt. Die Mulde steht für das metastabile Niveau. Daneben steht ein Drei-Niveau-System mit Pumpniveau, metastabilem Niveau und Grundzustand.
+In der HTML-Version erscheint hier eine Animation zur Kugelmulden-Analogie und zum Drei-Niveau-Schema. Links bleibt die Kugel in der Mulde liegen. Rechts wechselt der Zustandspunkt vom Pumpniveau $E_3$ schnell in das metastabile Niveau $E_2$ und nach längerer Wartezeit in den Grundzustand $E_1$.
 :::
 :::
 
-::: {.mp-box .mp-task}
+Animation zur Kugelmulden-Analogie und zum Drei-Niveau-Schema. Links gelangt eine Kugel von oben in eine Mulde und bleibt dort liegen. Rechts wechselt der Zustandspunkt vom Pumpniveau $E_3$ schnell in das metastabile Niveau $E_2$ und nach längerer Wartezeit weiter in den Grundzustand $E_1$.
+::::
+
+::: {#aufgabe-laser-nachleuchten .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
   <img src="assets/task-icons/transfer.svg" alt="" aria-hidden="true">
   Transfer
 </span>
 
-Vielleicht kennst du nachleuchtende Sterne an der Zimmerdecke oder Leuchtstreifen auf Uhren: Sie liegen zuerst im Licht und leuchten nach dem Ausschalten noch minutenlang weiter.
+Vielleicht hast du schon einmal nachleuchtende Sterne an einer Zimmerdecke oder Leuchtstreifen auf einer Uhr gesehen. Nachdem sie eine Zeit lang beleuchtet wurden, leuchten sie im Dunkeln noch minutenlang weiter.
 
-<u>Erkläre</u> das Nachleuchten mithilfe des metastabilen Niveaus.
+<u>Stelle</u> eine Hypothese dazu <u>auf</u>, wie dieses Nachleuchten entstehen könnte. <u>Begründe</u> deine Vermutung mithilfe des Energieniveauschemas und deines Wissens über metastabile Zustände.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Das Licht regt die Teilchen des Leuchtstoffs an, sie nehmen Energie auf. Ein Teil der Teilchen gelangt in metastabile Zustände und bleibt dort deutlich länger als in gewöhnlichen angeregten Zuständen. Die spontane Emission tritt stark verzögert auf: Die gespeicherte Energie wird über Minuten nach und nach als Licht abgegeben. Die Sterne leuchten weiter, obwohl die Lichtquelle aus ist.</p>
-<p>Bei modernen nachleuchtenden Leuchtstoffen, zum Beispiel Strontiumaluminat, ist die Erklärung im Detail feiner. Vereinfacht gesagt werden Elektronen in Störstellen der Kristallstruktur eingefangen. Sie sitzen dort auf einem höheren Energieniveau. Kleine Energiemengen aus der Umgebung, oft Wärme, können sie wieder befreien. Danach wird die gespeicherte Energie als Licht abgegeben.</p>
-<p>Dieses lange Nachleuchten heißt Phosphoreszenz. Der Kern bleibt: Es gibt Zustände, aus denen die Emission stark verzögert erfolgt.</p>
+
+Beim Beleuchten nimmt der Leuchtstoff Energie auf. Mit dem vereinfachten Energieniveauschema lässt sich als Hypothese annehmen, dass ein Teil der angeregten Teilchen in einen metastabilen Zustand gelangt. Dort bleibt Anregungsenergie länger gespeichert. Die Teilchen gehen zu unterschiedlichen Zeitpunkten spontan in ein niedrigeres Niveau über und geben dabei Energie als Licht ab. Auf diese Weise könnte der Stoff nach dem Ausschalten der Lichtquelle weiterleuchten.
+
+Diese Erklärung ist eine Hypothese auf Grundlage des bisher verwendeten Energieniveauschemas. Welcher Speichermechanismus in einem konkreten Leuchtstoff wirkt, lässt sich damit noch nicht entscheiden.
+
 </details>
 
-Beide Schritte zusammen erzeugen die Besetzungsinversion. Das Pumpen hebt Atome auf ein höheres Niveau, von dort sammeln sie sich im metastabilen Niveau an, bis dort mehr Atome sitzen als im tieferen Grundzustand. Bei der stimulierten Emission wechseln Atome vom metastabilen Niveau nach unten und senden Photonen aus, die Besetzung sinkt wieder. Sich selbst überlassen, kippt das Medium in den Normalzustand zurück. Damit die Inversion bestehen bleibt, muss ständig weitergepumpt werden.
+<!-- Redaktionsnotiz: Ein mögliches Folgekapitel zu Fluoreszenz und Phosphoreszenz kann von hier auf die Hypothese zum Nachleuchten zurückverweisen. -->
 
 ## Resonator
 
@@ -679,7 +729,7 @@ Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf 
 Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einzelne, ob du es erfüllst. Für alles, was dir fehlt, führt dich das Inhaltsverzeichnis zur passenden Stelle.
 
 - **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission mithilfe eines Energieniveauschemas. Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann. Du <u>vergleichst</u> spontane und stimulierte Emission.
-- **Besetzungsinversion:** Du <u>erklärst</u>, was eine Besetzungsinversion ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, wozu ein metastabiles Niveau dient.
+- **Besetzungsinversion:** Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
 - **Resonator:** Du <u>beschreibst</u> den Aufbau eines optischen Resonators. Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird. Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
 - **Rubinlaser:** Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator. Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
 - **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers. Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht. Du <u>begründest</u>, dass dem Helium-Neon-Laser schwaches, ständiges Pumpen genügt.

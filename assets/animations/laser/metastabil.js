@@ -9,15 +9,15 @@
   const X0 = 72;
   const X1 = 526;
   const R = 13;
-  const XM = 228;   // Mulde (metastabil)
+  const XM = 238.7; // Tiefster Punkt der Mulde
   const XB = 300;   // kleine Barriere hinter der Mulde
   const BOTTOM = 476;
   const CYCLE = 6200;
   const PANEL = { x: 568, y: 82, w: 246, h: 344 };
   const LEVELS = [
-    { key: "E₃", name: "Pumpniveau", y: 142 },
-    { key: "E₂", name: "metastabil", y: 266 },
-    { key: "E₁", name: "Grundzustand", y: 390 }
+    { key: "*E*₃", name: "Pumpniveau", y: 142 },
+    { key: "*E*₂", name: "metastabil", y: 266 },
+    { key: "*E*₁", name: "Grundzustand", y: 390 }
   ];
 
   function clamp(value, min, max) {
@@ -43,14 +43,12 @@
   }
 
   function terrain(x) {
-    return yBase(x) + 42 * gauss(x, XM, 55) - 28 * gauss(x, XB, 45);
+    return yBase(x) + 42 * gauss(x, 228, 55) - 28 * gauss(x, XB, 45);
   }
 
   function ballX(cy) {
     if (cy < 0.15) return mix(X0, XM, ease(cy / 0.15));
-    if (cy < 0.70) return XM;
-    if (cy < 0.90) return mix(XM, X1, ease((cy - 0.70) / 0.20));
-    return X1;
+    return XM;
   }
 
   function levelDotY(cy) {
@@ -65,18 +63,18 @@
       x: PANEL.x, y: PANEL.y, width: PANEL.w, height: PANEL.h, rx: 8,
       fill: "#f8fafc", stroke: "#e2e8f0"
     }, parent);
-    SRT.addText(parent, PANEL.x + PANEL.w / 2, PANEL.y + 30, "Drei-Niveau-System", "label", {
-      fill: INK, "font-size": 16, "font-weight": "850", "text-anchor": "middle"
+    SRT.addText(parent, PANEL.x + PANEL.w / 2, PANEL.y + 30, "Drei-Niveau-Schema", "label", {
+      fill: INK, "font-size": 18, "font-weight": "750", "text-anchor": "middle"
     });
 
-    const x0 = PANEL.x + 116;
+    const x0 = PANEL.x + 66;
     const x1 = PANEL.x + 218;
     LEVELS.forEach((level) => {
       SRT.addText(parent, PANEL.x + 20, level.y + 5, level.key, "label", {
-        fill: INK, "font-size": 15, "font-weight": "850", "text-anchor": "start"
+        fill: INK, "font-size": 22, "font-weight": "600", "text-anchor": "start"
       });
-      SRT.addText(parent, PANEL.x + 54, level.y + 18, level.name, "label", {
-        fill: MUTED, "font-size": 12.5, "font-weight": "750", "text-anchor": "start"
+      SRT.addText(parent, PANEL.x + 20, level.y + 30, level.name, "label", {
+        fill: MUTED, "font-size": 18, "font-weight": "600", "text-anchor": "start"
       });
       SRT.el("line", {
         x1: x0, y1: level.y, x2: x1, y2: level.y,
@@ -96,7 +94,6 @@
 
   function draw({ parent, t, SRT }) {
     SRT.clear(parent);
-    SRT.el("rect", { x: 0, y: 0, width: 862, height: 506, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
 
     let edge = `M${X0} ${terrain(X0).toFixed(1)}`;
     for (let x = X0 + 4; x <= X1; x += 4) edge += ` L${x} ${terrain(x).toFixed(1)}`;
@@ -104,18 +101,16 @@
     SRT.el("path", { d: `${edge} L${X1} ${BOTTOM} L${X0} ${BOTTOM} Z`, fill: HILL_FILL, stroke: "none" }, parent);
     SRT.el("path", { d: edge, fill: "none", stroke: HILL_EDGE, "stroke-width": 3, "stroke-linecap": "round", "stroke-linejoin": "round" }, parent);
 
-    SRT.addText(parent, X0 + 4, terrain(X0) - R - 12, "angeregt", "label", { fill: MUTED, "font-size": 14, "font-weight": "750", "text-anchor": "start" });
-    SRT.addText(parent, XM, terrain(XM) - R - 16, "Mulde", "label", { fill: INK, "font-size": 15, "font-weight": "800", "text-anchor": "middle" });
-    SRT.addText(parent, X1, terrain(X1) - R - 12, "Grundzustand", "label", { fill: MUTED, "font-size": 14, "font-weight": "750", "text-anchor": "end" });
+    SRT.addText(parent, X0 + 4, terrain(X0) - R - 12, "oben", "label", { fill: MUTED, "font-size": 18, "font-weight": "600", "text-anchor": "start" });
+    SRT.addText(parent, XM, terrain(XM) - R - 16, "Mulde", "label", { fill: INK, "font-size": 18, "font-weight": "700", "text-anchor": "middle" });
+    SRT.addText(parent, X1, terrain(X1) - R - 12, "Fuß des Hangs", "label", { fill: MUTED, "font-size": 18, "font-weight": "600", "text-anchor": "end" });
 
     const cy = (t % CYCLE) / CYCLE;
-    let bx = ballX(cy);
-    if (cy >= 0.15 && cy < 0.70) bx += Math.sin(t * 0.018) * 3.5;
+    const bx = ballX(cy);
     const by = terrain(bx) - R;
 
     let op = 1;
-    if (cy < 0.05) op = ease(cy / 0.05);
-    else if (cy > 0.95) op = 1 - ease((cy - 0.95) / 0.05);
+    if (cy > 0.95) op = 1 - ease((cy - 0.95) / 0.05);
 
     SRT.el("circle", { cx: bx, cy: by, r: R, fill: BALL, stroke: "#ffffff", "stroke-width": 2, opacity: op, filter: "url(#glow)" }, parent);
     drawLevelDiagram(parent, SRT, cy, op);

@@ -1,0 +1,15 @@
+# Quantenzahlen und Zustände im Wasserstoffatom
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Da Arbeitsblatt 11 fehlt, sind Position und Umfang noch zu prüfen. Die eigene Vorlesungszusammenfassung enthält keine vollständige Lösung der dreidimensionalen Schrödingergleichung für das Wasserstoffatom.
+:::
+
+<!--
+Vorläufiger Zuschnitt:
+- Haupt-, Neben-, magnetische und Spinquantenzahl
+- Beschreibung diskreter Zustände am Beispiel des Wasserstoffatoms
+- Bedeutung und zulässige Werte der vier Quantenzahlen
+- Reichweite der Darstellung ohne vollständige Lösung des Wasserstoffatoms
+-->

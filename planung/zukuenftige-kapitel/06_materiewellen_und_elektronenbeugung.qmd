@@ -1,0 +1,15 @@
+# Materiewellen und Elektronenbeugung
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach Arbeitsblatt 06:
+- de-Broglie-Wellenlänge
+- Bragg-Reflexion und Bragg-Bedingung
+- Debye-Scherrer-Verfahren
+- Versuch zur Elektronenbeugung und Auswertung
+-->

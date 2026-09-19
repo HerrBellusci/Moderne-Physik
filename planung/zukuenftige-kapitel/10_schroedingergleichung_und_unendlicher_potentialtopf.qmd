@@ -1,0 +1,17 @@
+# Schrödingergleichung und unendlicher Potentialtopf
+
+::: {.callout-note}
+## Entwicklungsstatus
+
+Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Die eigene Vorlesungszusammenfassung dient hier nur zur Rekonstruktion des Veranstaltungsablaufs, nicht als fachliche Quelle für die spätere Ausarbeitung.
+:::
+
+<!--
+Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung:
+- zeitunabhängige Schrödingergleichung in einer Dimension
+- Energieansatz und Wellenansatz als Plausibilisierung, nicht als Herleitung aus grundlegenderen Gesetzen
+- Differentialgleichung und Lösung für das freie Teilchen
+- ebene Welle und lokalisiertes Wellenpaket
+- unendlich hoher Potentialtopf und Randbedingungen
+- diskrete Energieeigenwerte, Wellenfunktionen und Wahrscheinlichkeitsdichten
+-->

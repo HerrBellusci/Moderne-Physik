@@ -123,7 +123,7 @@ Am nächsten Bahnhof bremst der Zug. Die Trinkflasche rutscht nach vorn. Aus dem
 
 Im Bezugssystem des Bahnsteigs lässt sich die Bewegung dagegen mit dem ersten Newtonschen Axiom erklären. Auf die Flasche wirkt keine resultierende Kraft, weshalb sie ihren Bewegungszustand beibehält. Während der Zug abbremst, bewegt sich die Flasche gleichförmig weiter und rutscht dadurch im Zug nach vorn.
 
-Bezugssysteme, in denen das erste Newtonsche Axiom gilt, heißen Inertialsysteme.[Inertialsystem]{.column-margin .mp-randbegriff} Das Bezugssystem des Bahnsteigs behandeln wir in diesem Beispiel als Inertialsystem. Das Bezugssystem des bremsenden Zuges ist dagegen ein Nicht-Inertialsystem. Der Zug wird gegenüber dem Bahnsteig beschleunigt, denn auch Bremsen ist eine Beschleunigung.
+Bezugssysteme, in denen das erste Newtonsche Axiom gilt, heißen Inertialsysteme. Das Bezugssystem des Bahnsteigs behandeln wir in diesem Beispiel als Inertialsystem. Das Bezugssystem des bremsenden Zuges ist dagegen ein Nicht-Inertialsystem. Der Zug wird gegenüber dem Bahnsteig beschleunigt, denn auch Bremsen ist eine Beschleunigung.
 
 []{#sec-umbau-kreisbahn-aufgabe}
 
