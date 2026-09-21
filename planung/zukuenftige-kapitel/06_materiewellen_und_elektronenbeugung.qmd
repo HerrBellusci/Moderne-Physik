@@ -1,15 +1,31 @@
 # Materiewellen und Elektronenbeugung
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach Arbeitsblatt 06:
-- de-Broglie-Wellenlänge
-- Bragg-Reflexion und Bragg-Bedingung
-- Debye-Scherrer-Verfahren
-- Versuch zur Elektronenbeugung und Auswertung
--->
+**Anschluss:** Photonenimpuls aus Kapitel 05, Interferenz aus dem Grundstudium.
+
+**Funktion im Aufbau:** Der Zusammenhang von Impuls und Wellenlänge wird auf materielle Teilchen ausgeweitet und experimentell geprüft.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## De Broglies Hypothese
+
+Materiewellen und Zusammenhang zwischen Impuls und Wellenlänge. Vergleich mit Photonen und Größenordnungen für Elektronen.
+
+## Beugung am Kristall und Bragg-Bedingung
+
+Interferenz an Netzebenen, Gangunterschied und Bragg-Bedingung. Benötigte Wellenoptik wird an der Verwendungsstelle aufgefrischt.
+
+## Elektronenbeugung am polykristallinen Gitter
+
+Versuchsaufbau und Entstehung der Beugungsringe beim Debye-Scherrer-Verfahren.
+
+## Auswertung des Elektronenbeugungsversuchs
+
+Beschleunigungsspannung, Elektronenwellenlänge und Ringdurchmesser verknüpfen. Auswertung einschließlich einfacher Betrachtung der Messunsicherheit.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

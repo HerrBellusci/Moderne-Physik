@@ -1,17 +1,35 @@
 # Schrödingergleichung und unendlicher Potentialtopf
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Die eigene Vorlesungszusammenfassung dient hier nur zur Rekonstruktion des Veranstaltungsablaufs, nicht als fachliche Quelle für die spätere Ausarbeitung.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung:
-- zeitunabhängige Schrödingergleichung in einer Dimension
-- Energieansatz und Wellenansatz als Plausibilisierung, nicht als Herleitung aus grundlegenderen Gesetzen
-- Differentialgleichung und Lösung für das freie Teilchen
-- ebene Welle und lokalisiertes Wellenpaket
-- unendlich hoher Potentialtopf und Randbedingungen
-- diskrete Energieeigenwerte, Wellenfunktionen und Wahrscheinlichkeitsdichten
--->
+**Anschluss:** Wellenfunktion und Wahrscheinlichkeitsdichte aus Kapitel 08, Unschärfe aus Kapitel 09.
+
+**Funktion im Aufbau:** Ein Einblick in die Schrödingergleichung wird mit einem lösbaren Modell verbunden. Randbedingungen führen zu diskreten Energien.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Potentialenergie und stationäre Zustände
+
+Potentialdiagramme lesen, Gesamtenergie und Potentialenergie unterscheiden und stationäre Zustände einführen.
+
+## Die zeitunabhängige Schrödingergleichung
+
+Bedeutung der Terme in einer Dimension. Energie- und Wellenansatz als Plausibilisierung der Gleichung einordnen.
+
+## Das freie Teilchen
+
+Lösungen bei konstantem Potential und Verbindung zur De-Broglie-Beziehung. Wellenpakete aus Kapitel 09 wieder aufnehmen.
+
+## Der unendliche Potentialtopf und seine Randbedingungen
+
+Idealisierung des Modells, Randbedingungen und zulässige Wellenfunktionen.
+
+## Energieeigenwerte und Wahrscheinlichkeitsdichten
+
+Diskrete Energien, Grundzustand und Wahrscheinlichkeitsverteilungen deuten. Korrespondenz am geeigneten Grenzfall aufgreifen.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

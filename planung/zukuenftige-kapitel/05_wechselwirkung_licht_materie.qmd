@@ -1,16 +1,31 @@
 # Wechselwirkung von Licht und Materie
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach Arbeitsblatt 05:
-- Röntgenstrahlung
-- Impuls eines Photons und relativistische Energie-Impuls-Beziehung
-- Photoeffekt und Compton-Effekt als Wechselwirkungen
-- Paarerzeugung und Paarvernichtung
-- de-Broglie-Wellenlänge als Übergang zum folgenden Kapitel
--->
+**Anschluss:** Relativistischer Impuls und Energie aus Kapitel 02, Photonenenergie aus Kapitel 04.
+
+**Funktion im Aufbau:** Photonen werden in Energie- und Impulsbilanzen verwendet. Die Relativitätstheorie wird mit der Quantenphysik verbunden.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Röntgenstrahlung und Bremsstrahlung
+
+Erzeugung und Grenzwellenlänge der Bremsstrahlung. Charakteristische Linien werden knapp eingeordnet und später mit der Atomphysik verbunden.
+
+## Energie und Impuls von Photonen
+
+Relativistische Energie-Impuls-Beziehung und Photonenimpuls. Rückgriff auf die Ergebnisse aus Kapitel 02.
+
+## Compton-Effekt
+
+Streuung am Elektron und Änderung der Wellenlänge als Anwendung von Energie- und Impulserhaltung.
+
+## Paarerzeugung und Paarvernichtung
+
+Umwandlung zwischen Strahlungsenergie und Teilchenruheenergie unter Beachtung der Erhaltungssätze. De Broglies Hypothese wird erst in Kapitel 06 erarbeitet.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

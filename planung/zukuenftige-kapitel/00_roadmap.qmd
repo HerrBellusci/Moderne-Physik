@@ -1,0 +1,73 @@
+# Vorläufige Kapitelroadmap für das Workbook Moderne Physik
+
+Stand: 21.09.2026. Diskussionsgrundlage für die weitere Entwicklung.
+
+Der Prototyp der Masterarbeit umfasst weiterhin die Kapitel 01 bis 03. Die Kapitel 04 bis 14 sind eine mögliche spätere Erweiterung und werden nicht veröffentlicht. Ihre Reihenfolge und ihr Umfang sind noch nicht abschließend festgelegt.
+
+Den inhaltlichen Rahmen und die Kompetenzen setzt das Modulhandbuch der Pädagogischen Hochschule Karlsruhe für den Master Lehramt Sekundarstufe I, Modul MAS-Phy-3, Moderne Physik I (2026, S. 115–116). Die Vorlesungsunterlagen helfen, Tiefe und Gewichtung einzuschätzen. Halliday und Giancoli geben fachliche Zugänge und Vergleichsstrukturen. Die Workbookkonzeption bestimmt die Portionierung und die Gestaltung. Weder die Vorlesungsfolge noch eine Lehrbuchgliederung wird unverändert übernommen.
+
+Jedes Kapitel beginnt mit einem Einstieg und endet mit „Sichern und anwenden“. Dieser Abschluss enthält einen Selbstcheck und vertiefende Aufgaben. In der Tabelle werden diese wiederkehrenden Teile nicht bei jedem Kapitel erneut aufgeführt. Die Nummern der Unterkapitel dienen hier nur der Übersicht.
+
+## Feste Reihenfolge des Prototyps
+
+| Kapitel | Bestehende Unterkapitel in Lesereihenfolge | Funktion im Aufbau |
+| --- | --- | --- |
+| **01 SRT I: Raum und Zeit** | 01.1 Bezugssysteme und Inertialsysteme<br>01.2 Michelson-Morley-Experiment<br>01.3 Einsteinsche Postulate<br>01.4 Gleichzeitigkeit<br>01.5 Zeitdilatation<br>01.6 Längenkontraktion<br>01.7 Dopplerverschiebung des Lichts | Bezugssysteme und Postulate tragen die Erarbeitung relativistischer Raum- und Zeitmessungen. |
+| **02 SRT II: Impuls und Energie** | 02.1 Relativistischer Impuls<br>02.2 Relativistische Energie | Die relativistische Beschreibung wird auf Impuls und Energie erweitert. |
+| **03 Der Laser** | 03.1 Stimulierte Emission<br>03.2 Besetzungsinversion und Lasermedium<br>03.3 Resonator<br>03.4 Aufbau eines Lasers: der erste Laser<br>03.5 Ein zweiter Lasertyp: der Helium-Neon-Laser<br>03.6 Gefahren des Laserlichts | Stimulierte Emission, Besetzungsinversion und Resonator werden zu zwei konkreten Lasertypen verbunden. |
+
+## Vorläufige Erweiterung
+
+| Kapitel | Vorgesehene Unterkapitel in Lesereihenfolge | Anschluss und Funktion |
+| --- | --- | --- |
+| **04 Lichtquanten: Schwarzkörperstrahlung und Photoeffekt** | 04.1 Wärmestrahlung und schwarzer Körper<br>04.2 Strahlungsleistung und Strahlungsmaximum<br>04.3 Plancksches Strahlungsgesetz und Quantenhypothese<br>04.4 Beobachtungen zum Photoeffekt<br>04.5 Einsteins Deutung des Photoeffekts | Wellenoptik aus dem Grundstudium. Die Photonenenergie ist aus Kapitel 03 bekannt. Experimentelle Befunde führen zur Energiequantelung und zur Deutung der Energieübertragung durch Photonen. |
+| **05 Wechselwirkung von Licht und Materie** | 05.1 Röntgenstrahlung und Bremsstrahlung<br>05.2 Energie und Impuls von Photonen<br>05.3 Compton-Effekt<br>05.4 Paarerzeugung und Paarvernichtung | Relativistischer Impuls und Energie aus Kapitel 02, Photonenenergie aus Kapitel 04. Photonen werden in Energie- und Impulsbilanzen verwendet. Die Relativitätstheorie wird mit der Quantenphysik verbunden. |
+| **06 Materiewellen und Elektronenbeugung** | 06.1 De Broglies Hypothese<br>06.2 Beugung am Kristall und Bragg-Bedingung<br>06.3 Elektronenbeugung am polykristallinen Gitter<br>06.4 Auswertung des Elektronenbeugungsversuchs | Photonenimpuls aus Kapitel 05, Interferenz aus dem Grundstudium. Der Zusammenhang von Impuls und Wellenlänge wird auf materielle Teilchen ausgeweitet und experimentell geprüft. |
+| **07 Atomspektren und Bohrsches Atommodell** | 07.1 Kontinuierliche Spektren und Linienspektren<br>07.2 Emission, Absorption und diskrete Energieniveaus<br>07.3 Bohrsche Postulate und Drehimpulsquantisierung<br>07.4 Radien und Energien im Wasserstoffatom<br>07.5 Wasserstoffspektrum und Grenzen des Bohrschen Modells | Photonenenergie und Energieniveaus aus Kapitel 03/04, Materiewellen aus Kapitel 06. Aus Spektren werden Anforderungen an ein Atommodell entwickelt. Das Bohrsche Modell erklärt das Wasserstoffspektrum innerhalb seiner Grenzen. |
+| **08 Wellenfunktion und Wahrscheinlichkeit** | 08.1 Doppelspaltexperiment mit einzelnen Quantenobjekten<br>08.2 Wellenfunktion und Wahrscheinlichkeitsdichte<br>08.3 Überlagerung und Interferenz<br>08.4 Weginformation und Interferenz | Elektronenbeugung aus Kapitel 06 und Grenzen des Bohrschen Modells aus Kapitel 07. Einzelnachweise und Interferenzmuster führen zur Wahrscheinlichkeitsbeschreibung von Quantenzuständen. |
+| **09 Unschärferelationen und klassischer Grenzfall** | 09.1 Wellenpakete und räumliche Lokalisierung<br>09.2 Orts-Impuls-Unschärferelation<br>09.3 Energie-Zeit-Unschärferelation<br>09.4 Grenzen der Bohrschen Bahnvorstellung<br>09.5 Korrespondenzprinzip und klassischer Grenzfall | De-Broglie-Beziehung aus Kapitel 06, Wellenfunktion und Überlagerung aus Kapitel 08. Die Grenzen der Bahnvorstellung werden geklärt. Das Korrespondenzprinzip ordnet den Anschluss an die klassische Physik ein. |
+| **10 Schrödingergleichung und unendlicher Potentialtopf** | 10.1 Potentialenergie und stationäre Zustände<br>10.2 Die zeitunabhängige Schrödingergleichung<br>10.3 Das freie Teilchen<br>10.4 Der unendliche Potentialtopf und seine Randbedingungen<br>10.5 Energieeigenwerte und Wahrscheinlichkeitsdichten | Wellenfunktion und Wahrscheinlichkeitsdichte aus Kapitel 08, Unschärfe aus Kapitel 09. Ein Einblick in die Schrödingergleichung wird mit einem lösbaren Modell verbunden. Randbedingungen führen zu diskreten Energien. |
+| **11 Endlicher Potentialtopf, Tunneleffekt und Alpha-Zerfall** | 11.1 Der endliche Potentialtopf<br>11.2 Wellenfunktionen in klassisch verbotenen Bereichen<br>11.3 Potentialbarriere und Tunnelwahrscheinlichkeit<br>11.4 Alpha-Zerfall als Anwendung des Tunneleffekts | Potentialdiagramme, Randbedingungen und gebundene Zustände aus Kapitel 10. Die idealisierten Potentialwände werden verändert. Der Übergang zur endlichen Barriere ermöglicht die Erklärung des Tunneleffekts. |
+| **12 Atomzustände, Quantenzahlen und Pauli-Prinzip** | 12.1 Das Wasserstoffatom als gebundenes Quantensystem<br>12.2 Räumliche Zustände und Quantenzahlen<br>12.3 Spin und Spinquantenzahl<br>12.4 Zulässige Zustände und Zustandszählung<br>12.5 Pauli-Prinzip und Besetzung von Atomzuständen | Wasserstoffspektrum aus Kapitel 07 sowie Wellenfunktionen und gebundene Zustände aus Kapitel 08 und 10/11. Die quantenmechanische Beschreibung kehrt zum Atom zurück. Auf die Kennzeichnung einzelner Zustände folgt ihre Besetzung in Atomen mit mehreren Elektronen. |
+| **13 Optische Übergänge: Fluoreszenz und Phosphoreszenz** | 13.1 Anregung und Wege der Energieabgabe<br>13.2 Fluoreszenz<br>13.3 Phosphoreszenz<br>13.4 Optische Übergänge im Vergleich | Energieniveaus und Emissionsprozesse aus Kapitel 03/07, Atomzustände und Spin aus Kapitel 12. Anregung und verschiedene Wege der Energieabgabe erklären Leuchterscheinungen. Der Vergleich führt zum Laserprinzip zurück. |
+| **14 Plasmaphysik in Natur und Technik** | 14.1 Ionisation, Rekombination und der Plasmazustand<br>14.2 Geladene Teilchen in elektrischen und magnetischen Feldern<br>14.3 Kollektives Verhalten und elektrische Abschirmung<br>14.4 Plasmen in Natur und Technik | Ionisation und optische Übergänge aus Kapitel 07/12/13 sowie elektrische und magnetische Felder aus dem Grundstudium. Von einzelnen Atomen führt der Weg zu einem System freier Ladungsträger und seinem gemeinsamen Verhalten in Natur und Technik. |
+
+## Begründung des Zuschnitts
+
+Die Kapitel 04 bis 07 führen von experimentellen Befunden zum Photonenmodell, zu Materiewellen und zum Bohrschen Atommodell. Kapitel 08 führt die Wahrscheinlichkeitsbeschreibung ein. Kapitel 09 klärt die Unschärferelationen und den klassischen Grenzfall. Kapitel 10 verbindet den Einblick in die Schrödingergleichung unmittelbar mit einfachen Lösungen. Kapitel 11 verändert die Potentialgrenzen und führt zum Tunneleffekt.
+
+Kapitel 12 greift das Atom aus Kapitel 07 mit der quantenmechanischen Zustandsbeschreibung wieder auf. Nach der Kennzeichnung und Zählung einzelner Zustände folgt ihre Besetzung nach dem Pauli-Prinzip. Kapitel 13 nutzt Energieniveaus und Spin für die Erklärung optischer Übergänge. Kapitel 14 erweitert die Betrachtung auf ionisierte Materie und das kollektive Verhalten freier Ladungsträger.
+
+Die Reihenfolge ist keine lückenlose Voraussetzungskette. Kapitel 12 benötigt beispielsweise den Alpha-Zerfall nicht. Seine Position hält die Potentialmodelle zusammen und führt danach zur Atomphysik zurück. Kapitel 03 bleibt ein eigenständig verständlicher Prototypbaustein. Spätere Kapitel vertiefen die dort bereits eingeführten Begriffe.
+
+Das Korrespondenzprinzip wird in Kapitel 09 eingeführt und in Kapitel 10 wieder aufgegriffen. Kapitel 12 enthält das Pauli-Prinzip ausdrücklich. Fluoreszenz und Phosphoreszenz bekommen mit Kapitel 13 einen eigenen Zusammenhang. Plasmaphysik ist als Kapitel 14 eingeplant.
+
+## Abgleich mit dem Modulhandbuch
+
+| Themenbereich in Moderne Physik I | Vorgesehener Ort |
+| --- | --- |
+| Einsteinsche Postulate, Gleichzeitigkeit, Längenkontraktion, Zeitdilatation | 01 |
+| Plancksches Strahlungsgesetz und Photoeffekt | 04 |
+| Wechselwirkungen von Licht mit Materie | 03, 05, 07 und 13 |
+| Optische Übergänge, mit Laser, Fluoreszenz und Phosphoreszenz als Beispielen | 03, 07 und 13 |
+| Atommodelle | 07 und 12 |
+| Wahrscheinlichkeitsinterpretation und Wellenfunktion | 08, anschließend angewendet in 09 bis 12 |
+| Korrespondenz | 09 und 10 |
+| Unschärferelation | 09 |
+| Einblick in die Schrödingergleichung | 10 |
+| Tunneleffekt | 11 |
+| Wasserstoffatom und Quantenzahlen | 07 und 12 |
+| Pauli-Prinzip | 12 |
+| Plasmaphysik in Natur und Technik | 14 |
+
+Relativistischer Impuls und Energie, Elektronenbeugung, Potentialtöpfe und Alpha-Zerfall konkretisieren oder unterstützen diese Themen. Sie sind durch den Prototyp, die vorhandenen Veranstaltungsunterlagen oder den fachlichen Aufbau begründet. Aus der Zuordnung ergibt sich noch kein Nachweis, dass die Kompetenzziele bereits erreicht werden. Lernziele und Aufgaben sind bei der Ausarbeitung darauf abzustimmen.
+
+## Noch zu klärender Umfang
+
+- Die Trennung von Kapitel 08 und 09 sowie der Umfang von Kapitel 12 werden bei der Lernziel- und Aufgabenplanung erneut am Selbstcheck geprüft.
+- Die Schrödingergleichung bleibt ein Einblick mit einfachen Modellfällen. Eine vollständige Lösung des Wasserstoffatoms ist nicht vorgesehen.
+- Die Energie-Zeit-Unschärferelation sowie die Auswahlregeln und Modellgrenzen der Phosphoreszenzerklärung brauchen vor der Textarbeit eine gesonderte fachliche Prüfung.
+- Plasmaphysik wird zunächst qualitativ an ausgewählten Natur- und Technikbeispielen geplant. Die gewünschte Tiefe ist mit der Veranstaltung abzugleichen.
+- Die Nummernlücken der Arbeitsblätter 08, 09 und 11 sind ungeklärt. Sie belegen weder ausgefallene Sitzungen noch zusätzliche Themen. Sie bestimmen die Kapitelnummerierung des Workbooks nicht.
+
+Die bestehende Laser-Unterkapitelfolge bleibt erhalten. Die Roadmap legt keine erneute Überarbeitung der abgestimmten Abschnitte fest.

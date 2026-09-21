@@ -1,0 +1,31 @@
+# Optische Übergänge: Fluoreszenz und Phosphoreszenz
+
+**Vorläufige Roadmap · Stand 21.09.2026**
+
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
+
+**Anschluss:** Energieniveaus und Emissionsprozesse aus Kapitel 03/07, Atomzustände und Spin aus Kapitel 12.
+
+**Funktion im Aufbau:** Anregung und verschiedene Wege der Energieabgabe erklären Leuchterscheinungen. Der Vergleich führt zum Laserprinzip zurück.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Anregung und Wege der Energieabgabe
+
+Strahlende und nichtstrahlende Übergänge, Energieniveaus und Energiebilanzen. Den Übergang zu molekularen Systemen für die gewählten Beispiele ausdrücklich erklären.
+
+## Fluoreszenz
+
+Anregung, Relaxation und anschließende Emission an einem begrenzten Beispiel. Spektrale Verschiebung und zeitliches Verhalten einordnen.
+
+## Phosphoreszenz
+
+Verzögerte Emission mithilfe eines geeigneten Niveauschemas und des zuvor eingeführten Spins erklären. Die nötigen Grundlagen zu Singulett- und Triplettzuständen am Beispiel aufbauen. Andere Mechanismen anhaltenden Nachleuchtens, etwa Ladungsträgerfallen, davon abgrenzen.
+
+## Optische Übergänge im Vergleich
+
+Fluoreszenz, Phosphoreszenz und Laser anhand von Anregung, Energieabgabe und zeitlichem Verhalten vergleichen. Rückverweis auf Kapitel 03 statt erneuter Erarbeitung des Lasers.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

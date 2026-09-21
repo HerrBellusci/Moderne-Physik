@@ -1,574 +1,246 @@
 (function () {
-  const W = 862;
-  const H = 506;
+  // Qualitatives Drei-Niveau-Modell mit schematischen Zeiten und Richtungen.
+  // Alle erzeugten Photonen werden verfolgt und dauerhaft als Punkte gezeichnet.
+  const W = 862, H = 368;
+  const G = { left: 78, right: 710, top: 50, bottom: 256,
+    mx: 170, my: 80, mw: 470, mh: 144 };
+  const C = { ink: "#172033", muted: "#64748b", ground: "#94a3b8",
+    upper: "#f59e0b", pump: "#7653c4", light: "#df2551" };
+  const DT = 1 / 120, SPEED = 350, PUMP_SPEED = 350;
+  const views = new WeakMap();
+  let nextViewId = 0;
 
-  const INK = "#172033";
-  const MUTED = "#64748b";
-  const MED_FILL = "#eef2f8";
-  const MED_EDGE = "#cbd5e1";
-  const EXCITED = "#f59e0b";
-  const GROUND = "#94a3b8";
-  const PHOTON = "#e11d48";
-  const PUMP = "#5b64e0";
-  const MIRROR_FULL = "#334155";
-  const MIRROR_PART = "#94a3b8";
-
-  const GEO = {
-    mirrorL: 108,
-    mirrorR: 754,
-    mirrorT: 108,
-    mirrorB: 398,
-    medL: 254,
-    medR: 608,
-    medT: 164,
-    medB: 342,
-    cy: 253
-  };
-  GEO.medW = GEO.medR - GEO.medL;
-  GEO.medH = GEO.medB - GEO.medT;
-
-  const STEP_MS = 1000 / 60;
-  const SPEED = 3.8;
-  const CAP = 260;
-  const TX_HIST = 90;
-
-  function clamp(value, min, max) {
-    return Math.max(min, Math.min(max, value));
+  function random(sim) {
+    sim.seed = (Math.imul(1664525, sim.seed) + 1013904223) >>> 0;
+    return sim.seed / 4294967296;
   }
-
-  function mix(a, b, p) {
-    return a + (b - a) * clamp(p, 0, 1);
-  }
-
-  function rand(min, max) {
-    return min + Math.random() * (max - min);
-  }
-
-  function makeAtoms() {
-    const atoms = [];
-    const cols = 11;
-    const rows = 5;
-    const sx = GEO.medW / (cols + 1);
-    const sy = GEO.medH / (rows + 1);
-
-    for (let row = 1; row <= rows; row += 1) {
-      for (let col = 1; col <= cols; col += 1) {
-        atoms.push({
-          x: GEO.medL + col * sx + rand(-4, 4),
-          y: GEO.medT + row * sy + rand(-4, 4),
-          excited: Math.random() < 0.2,
-          cool: 0,
-          flash: 0
-        });
+  function create(mode, t) {
+    const sim = { mode, lastT: t, acc: 0, seed: 1847, nextId: 0,
+      atoms: [], cells: {}, photons: [], pumps: [], emitted: 0, outputFlux: 0 };
+    for (let row = 0; row < 5; row++) {
+      for (let col = 0; col < 11; col++) {
+        // Regelmäßige Anordnung als Lesehilfe, keine Kristallstruktur-Simulation.
+        const a = { x: 198 + col * 41, y: 102 + row * 25,
+          level: 1, timer: 0, pending: false };
+        const key = `${Math.floor(a.x / 24)},${Math.floor(a.y / 24)}`;
+        (sim.cells[key] ||= []).push(sim.atoms.length);
+        sim.atoms.push(a);
       }
-    }
-    return atoms;
-  }
-
-  function makeSim(mode) {
-    return {
-      mode,
-      lastT: 0,
-      acc: 0,
-      frame: 0,
-      pumpAcc: 0,
-      atoms: makeAtoms(),
-      photons: [],
-      pumps: [],
-      txHist: Array(TX_HIST).fill(0),
-      txIndex: 0,
-      power: 0,
-      axial: 0
-    };
-  }
-
-  function ensureSim(state, t) {
-    if (!state._sim) state._sim = makeSim(state.mode);
-    const sim = state._sim;
-    if (sim.mode !== state.mode) {
-      sim.mode = state.mode;
-      sim.photons = [];
-      sim.txHist.fill(0);
-      sim.power = 0;
-      sim.axial = 0;
-      sim.lastT = t;
-      sim.acc = 0;
     }
     return sim;
   }
-
-  function excitedFraction(sim) {
-    if (!sim.atoms.length) return 0;
-    return sim.atoms.reduce((sum, atom) => sum + (atom.excited ? 1 : 0), 0) / sim.atoms.length;
+  function photon(sim, x, y, angle, atom = -1) {
+    return { id: sim.nextId++, x, y, dx: Math.cos(angle), dy: Math.sin(angle),
+      lastAtom: atom, out: false, dead: false };
   }
-
-  function addPhoton(sim, x, y, angle, out) {
-    if (sim.photons.length >= CAP) sim.photons.shift();
-    sim.photons.push({
-      x,
-      y,
-      vx: Math.cos(angle) * SPEED,
-      vy: Math.sin(angle) * SPEED,
-      out: Boolean(out),
-      dead: false
-    });
-  }
-
-  function spawnPump(sim) {
-    const top = Math.random() < 0.5;
-    sim.pumps.push({
-      x: rand(GEO.medL + 10, GEO.medR - 10),
-      y: top ? GEO.medT - 26 : GEO.medB + 26,
-      vy: top ? 2.3 : -2.3,
-      dead: false
-    });
-  }
-
-  function emitSpontaneous(sim, atom, mode) {
-    let angle = rand(0, Math.PI * 2);
-    if (mode === "resonator" && Math.random() < 0.18) {
-      angle = (Math.random() < 0.5 ? 0 : Math.PI) + rand(-0.045, 0.045);
+  function nearest(sim, p) {
+    const cx = Math.floor(p.x / 24), cy = Math.floor(p.y / 24);
+    let near = -1, distance = 81;
+    for (let x = cx - 1; x <= cx + 1; x++) {
+      for (let y = cy - 1; y <= cy + 1; y++) {
+        for (const i of sim.cells[`${x},${y}`] || []) {
+          const a = sim.atoms[i], d = (a.x - p.x) ** 2 + (a.y - p.y) ** 2;
+          if (d < distance) { near = i; distance = d; }
+        }
+      }
     }
-    addPhoton(sim, atom.x, atom.y, angle, false);
-    atom.excited = false;
-    atom.cool = 10;
-    atom.flash = 10;
+    return near;
   }
-
-  function pumpStep(sim, pumpPower) {
-    sim.pumpAcc += pumpPower * 0.95;
-    while (sim.pumpAcc >= 1) {
-      sim.pumpAcc -= 1;
-      spawnPump(sim);
+  function step(sim, pump, reflection) {
+    const born = [];
+    let transmitted = 0;
+    sim.atoms.forEach((a, i) => {
+      if (a.level === 3) {
+        a.timer -= DT;
+        if (a.timer <= 0) a.level = 2;
+      } else if (a.level === 1 && !a.pending && random(sim) < 1 - Math.exp(-4 * pump * pump * DT)) {
+        // Optische Anregung erst bei Ankunft des Pump-Photons. Der Pumpweg
+        // ist exemplarisch, räumliche Abschattung wird nicht berechnet.
+        const top = i % 2 === 0;
+        a.pending = true;
+        sim.pumps.push({ id: sim.nextId++, x: a.x, y: top ? 60 : 244,
+          dy: top ? 1 : -1, atom: i, arrived: false, dead: false });
+      } else if (a.level === 2 && random(sim) < 1 - Math.exp(-DT / 2)) {
+        a.level = 1;
+        // Gleiche Auswahl in beiden Aufbauten, auch während des Laserbetriebs.
+        const angle = Math.floor(random(sim) * 12) * Math.PI / 6;
+        born.push(photon(sim, a.x, a.y, angle, i));
+      }
+    });
+    for (const p of sim.pumps) {
+      p.y += p.dy * PUMP_SPEED * DT;
+      const a = sim.atoms[p.atom];
+      if (!p.arrived && (p.y - a.y) * p.dy >= 0) {
+        p.arrived = true;
+        a.pending = false;
+        if (a.level === 1) {
+          a.level = 3;
+          a.timer = .12 + .08 * random(sim);
+          p.dead = true;
+        }
+      }
+      if (p.y < 46 || p.y > 258) p.dead = true;
     }
-
-    for (const pump of sim.pumps) {
-      pump.y += pump.vy;
-      if (pump.y > GEO.medT - 4 && pump.y < GEO.medB + 4) {
-        for (const atom of sim.atoms) {
-          if (atom.excited || atom.cool > 0) continue;
-          const dx = atom.x - pump.x;
-          const dy = atom.y - pump.y;
-          if (dx * dx + dy * dy < 90) {
-            atom.excited = true;
-            atom.flash = 8;
-            pump.dead = true;
-            break;
+    sim.pumps = sim.pumps.filter(p => !p.dead);
+    for (const p of sim.photons) {
+      const oldX = p.x;
+      p.x += p.dx * SPEED * DT;
+      p.y += p.dy * SPEED * DT;
+      if (sim.mode === "resonator" && !p.out && p.y >= G.top && p.y <= G.bottom) {
+        if (p.dx < 0 && oldX > G.left && p.x <= G.left) {
+          p.dx = -p.dx;
+          p.x = 2 * G.left - p.x;
+        } else if (p.dx > 0 && oldX < G.right && p.x >= G.right) {
+          if (random(sim) < reflection) {
+            p.dx = -p.dx;
+            p.x = 2 * G.right - p.x;
+          } else {
+            p.out = true;
+            sim.emitted++;
+            if (Math.abs(p.dy) < .1) transmitted++;
           }
         }
       }
-      if (pump.y < GEO.medT - 34 || pump.y > GEO.medB + 34) pump.dead = true;
-    }
-    sim.pumps = sim.pumps.filter((pump) => !pump.dead);
-  }
-
-  function atomStep(sim, mode) {
-    const inv = excitedFraction(sim);
-    for (const atom of sim.atoms) {
-      if (atom.cool > 0) atom.cool -= 1;
-      if (atom.flash > 0) atom.flash -= 1;
-      if (atom.excited && Math.random() < 0.0009) emitSpontaneous(sim, atom, mode);
-    }
-
-    if (mode === "resonator" && inv > 0.42 && sim.photons.length < 4 && Math.random() < 0.08) {
-      const excited = sim.atoms.filter((atom) => atom.excited);
-      if (excited.length) {
-        const atom = excited[Math.floor(Math.random() * excited.length)];
-        const angle = (Math.random() < 0.5 ? 0 : Math.PI) + rand(-0.03, 0.03);
-        addPhoton(sim, atom.x, atom.y, angle, false);
-      }
-    }
-  }
-
-  function inMirror(y) {
-    return y > GEO.mirrorT && y < GEO.mirrorB;
-  }
-
-  function photonAtomInteraction(sim, photon) {
-    if (photon.out) return;
-    if (photon.x < GEO.medL || photon.x > GEO.medR || photon.y < GEO.medT || photon.y > GEO.medB) return;
-
-    for (const atom of sim.atoms) {
-      const dx = atom.x - photon.x;
-      const dy = atom.y - photon.y;
-      if (dx * dx + dy * dy > 72) continue;
-
-      if (atom.excited && Math.random() < 0.42) {
-        atom.excited = false;
-        atom.cool = 12;
-        atom.flash = 14;
-        const norm = Math.hypot(photon.vx, photon.vy) || 1;
-        const angle = Math.atan2(photon.vy, photon.vx);
-        addPhoton(sim, atom.x - photon.vy / norm * 4, atom.y + photon.vx / norm * 4, angle, false);
-        break;
-      }
-
-      if (!atom.excited && atom.cool <= 0 && Math.random() < 0.025) {
-        atom.excited = true;
-        atom.cool = 5;
-        atom.flash = 8;
-        photon.dead = true;
-        break;
-      }
-    }
-  }
-
-  function mirrorStep(sim, photon, prevX, reflectivity) {
-    if (sim.mode !== "resonator" || photon.out) return 0;
-
-    if (photon.vx < 0 && photon.x <= GEO.mirrorL && prevX > GEO.mirrorL) {
-      if (inMirror(photon.y)) {
-        photon.vx = Math.abs(photon.vx);
-        photon.x = 2 * GEO.mirrorL - photon.x;
-      } else {
-        photon.dead = true;
-      }
-    }
-
-    if (photon.vx > 0 && photon.x >= GEO.mirrorR && prevX < GEO.mirrorR) {
-      if (inMirror(photon.y)) {
-        if (Math.random() < reflectivity) {
-          photon.vx = -Math.abs(photon.vx);
-          photon.x = 2 * GEO.mirrorR - photon.x;
-        } else {
-          photon.out = true;
-          return 1;
+      if (!p.out && p.x >= G.mx && p.x <= G.mx + G.mw && p.y >= G.my && p.y <= G.my + G.mh) {
+        const near = nearest(sim, p);
+        if (near !== -1 && near !== p.lastAtom) {
+          const a = sim.atoms[near];
+          // Gleiche Wahrscheinlichkeit für Absorption und stimulierte Emission.
+          if (a.level !== 3 && random(sim) < .42) {
+            if (a.level === 2) {
+              a.level = 1;
+              born.push(photon(sim, p.x - p.dx * 7, p.y - p.dy * 7,
+                Math.atan2(p.dy, p.dx), near));
+            } else {
+              a.level = 2;
+              p.dead = true;
+            }
+          }
         }
-      } else {
-        photon.dead = true;
-      }
+        p.lastAtom = near;
+      } else p.lastAtom = -1;
+      if (p.x < 16 || p.x > W - 16 || p.y < 12 || p.y > 268) p.dead = true;
     }
-
-    return 0;
+    sim.photons = sim.photons.filter(p => !p.dead).concat(born);
+    // Zeitlich gemittelter tatsächlicher Austritt entlang der Achse.
+    // Das Band bündelt die Punktdarstellung, es berechnet kein Strahlprofil.
+    const decay = Math.exp(-DT / 2.5);
+    sim.outputFlux = sim.outputFlux * decay + transmitted / DT * (1 - decay);
   }
 
-  function photonStep(sim, reflectivity) {
-    let tx = 0;
-    for (const photon of sim.photons) {
-      const prevX = photon.x;
-      photon.x += photon.vx;
-      photon.y += photon.vy;
-
-      tx += mirrorStep(sim, photon, prevX, reflectivity);
-      photonAtomInteraction(sim, photon);
-
-      if (photon.x < -30 || photon.x > W + 30 || photon.y < -30 || photon.y > H + 30) {
-        photon.dead = true;
-      }
-    }
-
-    sim.photons = sim.photons.filter((photon) => !photon.dead);
-    sim.txIndex = (sim.txIndex + 1) % sim.txHist.length;
-    sim.txHist[sim.txIndex] = tx;
-
-    const sum = sim.txHist.reduce((a, b) => a + b, 0);
-    sim.power = clamp((sum / sim.txHist.length) / 0.42, 0, 1);
-    sim.axial = sim.photons.filter((photon) => !photon.out && Math.abs(photon.vy) < SPEED * 0.16).length;
-  }
-
-  function step(sim, state) {
-    sim.frame += 1;
-    const pumpPower = clamp(Number(state.pump), 0, 1);
-    const reflectivity = clamp(Number(state.reflectivity), 0.8, 0.99);
-
-    pumpStep(sim, pumpPower);
-    atomStep(sim, state.mode);
-    photonStep(sim, reflectivity);
-  }
-
-  function drawRect(parent, SRT, x, y, width, height, rx, fill, stroke, opacity) {
-    const attrs = {
-      x,
-      y,
-      width,
-      height,
-      rx,
-      fill,
-      opacity: opacity === undefined ? 1 : opacity
-    };
-    if (stroke) {
-      attrs.stroke = stroke;
-      attrs["stroke-width"] = 1.4;
-    }
-    SRT.el("rect", attrs, parent);
-  }
-
-  function drawHud(parent, SRT, sim) {
-    const inv = excitedFraction(sim);
-    const x = 22;
-    const y = 20;
-    const bw = 112;
-
-    drawRect(parent, SRT, x, y, 196, 78, 8, "rgba(255,255,255,0.76)", "#e2e8f0", 1);
-    SRT.addText(parent, x + 12, y + 24, "Inversion", "label", {
-      fill: MUTED,
-      "font-size": 11,
-      "font-weight": "800"
-    });
-    drawRect(parent, SRT, x + 72, y + 15, bw, 6, 3, "rgba(23,32,51,0.12)", null, 1);
-    drawRect(parent, SRT, x + 72, y + 15, bw * inv, 6, 3, EXCITED, null, 1);
-
-    SRT.addText(parent, x + 12, y + 47, "Ausgang", "label", {
-      fill: MUTED,
-      "font-size": 11,
-      "font-weight": "800"
-    });
-    drawRect(parent, SRT, x + 72, y + 38, bw, 6, 3, "rgba(23,32,51,0.12)", null, 1);
-    drawRect(parent, SRT, x + 72, y + 38, bw * sim.power, 6, 3, PHOTON, null, 1);
-
-    SRT.addText(parent, x + 12, y + 68, `Photonen ${sim.photons.length}`, "label", {
-      fill: "#8a94a8",
-      "font-size": 10.5,
-      "font-weight": "750"
-    });
-    SRT.addText(parent, x + 118, y + 68, `axial ${sim.axial}`, "label", {
-      fill: "#8a94a8",
-      "font-size": 10.5,
-      "font-weight": "750"
+  function text(parent, SRT, x, y, value, size = 18, color = C.ink, anchor = "start") {
+    return SRT.addText(parent, x, y, value, "label", {
+      "font-size": size, "font-weight": 600, fill: color, "text-anchor": anchor
     });
   }
-
-  function drawPump(parent, SRT, state, sim) {
-    const pumpPower = clamp(Number(state.pump), 0, 1);
-    const op = 0.18 + pumpPower * 0.55;
-
-    drawRect(parent, SRT, GEO.medL + 8, GEO.medT - 30, GEO.medW - 16, 7, 3.5, PUMP, null, op);
-    drawRect(parent, SRT, GEO.medL + 8, GEO.medB + 23, GEO.medW - 16, 7, 3.5, PUMP, null, op);
-    SRT.addText(parent, (GEO.medL + GEO.medR) / 2, GEO.medT - 42, "Pumpe", "label", {
-      fill: PUMP,
-      "font-size": 13,
-      "font-weight": "850",
-      "text-anchor": "middle",
-      opacity: 0.74
-    });
-
-    for (const pump of sim.pumps) {
-      SRT.el("circle", {
-        cx: pump.x,
-        cy: pump.y,
-        r: 2.2,
-        fill: PUMP,
-        opacity: 0.78
-      }, parent);
-    }
+  function line(parent, SRT, x1, y1, x2, y2, color, width = 2, extra = {}) {
+    return SRT.el("line", { x1, y1, x2, y2, stroke: color,
+      "stroke-width": width, "stroke-linecap": "round", ...extra }, parent);
   }
-
-  function drawMirrors(parent, SRT, state) {
-    if (state.mode !== "resonator") return;
-    const refl = clamp(Number(state.reflectivity), 0.8, 0.99);
-
-    SRT.el("line", {
-      x1: GEO.mirrorL,
-      y1: GEO.mirrorT,
-      x2: GEO.mirrorL,
-      y2: GEO.mirrorB,
-      stroke: MIRROR_FULL,
-      "stroke-width": 9,
-      "stroke-linecap": "round"
-    }, parent);
-    SRT.el("line", {
-      x1: GEO.mirrorR,
-      y1: GEO.mirrorT,
-      x2: GEO.mirrorR,
-      y2: GEO.mirrorB,
-      stroke: MIRROR_PART,
-      "stroke-width": 9,
-      "stroke-linecap": "round",
-      opacity: 0.42 + refl * 0.56
-    }, parent);
-
-    SRT.addText(parent, GEO.mirrorL, GEO.mirrorB + 22, "Spiegel", "label", {
-      fill: MUTED,
-      "font-size": 12,
-      "font-weight": "800",
-      "text-anchor": "middle"
-    });
-    SRT.addText(parent, GEO.mirrorR, GEO.mirrorB + 22, "Auskoppler", "label", {
-      fill: MUTED,
-      "font-size": 12,
-      "font-weight": "800",
-      "text-anchor": "middle"
-    });
+  function circle(parent, SRT, x, y, r, fill, extra = {}) {
+    return SRT.el("circle", { cx: x, cy: y, r, fill, ...extra }, parent);
   }
-
-  function drawAtoms(parent, SRT, sim) {
-    for (const atom of sim.atoms) {
-      if (atom.flash > 0) {
-        SRT.el("circle", {
-          cx: atom.x,
-          cy: atom.y,
-          r: 9 + atom.flash * 0.45,
-          fill: atom.excited ? EXCITED : PHOTON,
-          opacity: 0.08 + atom.flash * 0.012,
-          filter: "url(#glow)"
-        }, parent);
-      }
-
-      SRT.el("circle", {
-        cx: atom.x,
-        cy: atom.y,
-        r: atom.excited ? 5.2 : 4.2,
-        fill: atom.excited ? EXCITED : GROUND,
-        stroke: "#ffffff",
-        "stroke-width": 1.2,
-        opacity: atom.excited ? 1 : 0.86,
-        filter: atom.excited ? "url(#glow)" : "none"
-      }, parent);
-    }
+  function rect(parent, SRT, x, y, width, height, fill, extra = {}) {
+    return SRT.el("rect", { x, y, width, height, rx: 8, fill, ...extra }, parent);
   }
-
-  function drawPhotons(parent, SRT, sim) {
-    for (const photon of sim.photons) {
-      const outOpacity = photon.out ? 0.82 : 1;
-      SRT.el("circle", {
-        cx: photon.x,
-        cy: photon.y,
-        r: 6.8,
-        fill: PHOTON,
-        opacity: 0.12 * outOpacity,
-        filter: "url(#glow)"
-      }, parent);
-      SRT.el("circle", {
-        cx: photon.x,
-        cy: photon.y,
-        r: 2.5,
-        fill: PHOTON,
-        opacity: 0.96 * outOpacity
-      }, parent);
-    }
-  }
-
-  function drawAxis(parent, SRT, sim, state) {
-    if (state.mode !== "resonator") return;
-    const axial = clamp(sim.axial / 46, 0, 1);
-    const op = Math.max(sim.power * 0.34, axial * 0.22);
-    if (op <= 0.02) return;
-
-    SRT.el("line", {
-      x1: GEO.mirrorL + 8,
-      y1: GEO.cy,
-      x2: GEO.mirrorR - 8,
-      y2: GEO.cy,
-      stroke: PHOTON,
-      "stroke-width": 22,
-      "stroke-linecap": "round",
-      opacity: op * 0.32
-    }, parent);
-    SRT.el("line", {
-      x1: GEO.mirrorR + 8,
-      y1: GEO.cy,
-      x2: W - 28,
-      y2: GEO.cy,
-      stroke: PHOTON,
-      "stroke-width": 14,
-      "stroke-linecap": "round",
-      opacity: sim.power * 0.42
-    }, parent);
-
-    if (sim.power > 0.12) {
-      SRT.addText(parent, W - 34, GEO.cy - 18, "Laserstrahl", "label", {
-        fill: PHOTON,
-        "font-size": 13,
-        "font-weight": "850",
-        "text-anchor": "end",
-        opacity: clamp(sim.power * 1.4, 0, 1)
-      });
-    }
-  }
-
-  function drawScene(parent, SRT, sim, state) {
+  function setup(parent, SRT, sim) {
     SRT.clear(parent);
-    drawRect(parent, SRT, 0, 0, W, H, 8, "#ffffff", "#e2e8f0", 1);
-
-    drawRect(parent, SRT, GEO.medL, GEO.medT, GEO.medW, GEO.medH, 10, MED_FILL, MED_EDGE, 1);
-    SRT.addText(parent, (GEO.medL + GEO.medR) / 2, GEO.medB - 12, "Lasermedium", "label", {
-      fill: MUTED,
-      "font-size": 13,
-      "font-weight": "850",
-      "text-anchor": "middle"
-    });
-
-    drawPump(parent, SRT, state, sim);
-    drawMirrors(parent, SRT, state);
-    drawAxis(parent, SRT, sim, state);
-    drawAtoms(parent, SRT, sim);
-    drawPhotons(parent, SRT, sim);
-    drawHud(parent, SRT, sim);
-
-    if (state.mode === "frei") {
-      SRT.addText(parent, W / 2, H - 18, "Ohne Resonator verlassen Photonen das Medium in viele Richtungen.", "label", {
-        fill: INK,
-        "font-size": 14,
-        "font-weight": "800",
-        "text-anchor": "middle"
+    const view = { sim, photonNodes: new Map(), pumpNodes: new Map() };
+    views.set(parent, view);
+    rect(parent, SRT, 0, 0, W, H, "#fff");
+    text(parent, SRT, 405, 42, "Pumplicht", 18, C.pump, "middle");
+    line(parent, SRT, 180, 60, 630, 60, C.pump, 5);
+    line(parent, SRT, 180, 244, 630, 244, C.pump, 5);
+    rect(parent, SRT, G.mx, G.my, G.mw, G.mh, "#f0f4f8", { stroke: "#cad5e0" });
+    line(parent, SRT, G.left + 8, 152, G.right - 8, 152, "#ccd5df", 1, { "stroke-dasharray": "5 7" });
+    if (sim.mode === "resonator") {
+      const gradientId = `resonator-beam-${nextViewId++}`;
+      const defs = SRT.el("defs", {}, parent);
+      const gradient = SRT.el("linearGradient", { id: gradientId, x1: "0%", y1: "0%", x2: "0%", y2: "100%" }, defs);
+      [[0, 0], [.18, .55], [.5, 1], [.82, .55], [1, 0]].forEach(([offset, opacity]) => {
+        SRT.el("stop", { offset, "stop-color": C.light, "stop-opacity": opacity }, gradient);
       });
+      view.beam = rect(parent, SRT, G.right + 4, 88, W - G.right - 20, 128,
+        `url(#${gradientId})`, { rx: 0, opacity: 0, "data-output-beam": "" });
+      line(parent, SRT, G.left, G.top, G.left, G.bottom, "#334155", 8);
+      line(parent, SRT, G.right, G.top, G.right, G.bottom, "#8394a9", 8);
+      text(parent, SRT, G.left, 294, "Spiegel", 18, C.muted, "middle");
+      text(parent, SRT, G.right, 294, "Auskoppelspiegel", 18, C.muted, "middle");
     }
+    text(parent, SRT, 405, 294, "Lasermedium", 18, C.muted, "middle");
+    view.atoms = sim.atoms.map(a => ({
+      dot: circle(parent, SRT, a.x, a.y, 7, C.ground, { stroke: "white", "stroke-width": 1.5 }),
+      ring: circle(parent, SRT, a.x, a.y, 10, "none", { stroke: C.upper, "stroke-width": 1.3 }),
+      center: circle(parent, SRT, a.x, a.y, 2, "white")
+    }));
+    view.lightLayer = SRT.el("g", {}, parent);
+    line(parent, SRT, 24, 314, W - 24, 314, "#e2e8f0", 1);
+    [[35, C.ground, "*E*₁: Grundzustand"], [290, C.upper, "*E*₂: oberes Laserniveau"], [622, C.pump, "*E*₃: Pumpniveau"]].forEach(([x, color, label]) => {
+      circle(parent, SRT, x, 343, 7, color);
+      if (color === C.upper) circle(parent, SRT, x, 343, 10, "none", { stroke: color, "stroke-width": 1.3 });
+      if (color === C.pump) circle(parent, SRT, x, 343, 2, "white");
+      text(parent, SRT, x + 18, 349, label);
+    });
+    return view;
   }
-
-  function render({ parent, t, state, SRT }) {
-    if (state.mode === undefined) state.mode = "resonator";
-    if (state.pump === undefined) state.pump = 0.65;
-    if (state.reflectivity === undefined) state.reflectivity = 0.96;
-
-    const sim = ensureSim(state, t);
-    if (!sim.lastT) sim.lastT = t;
-    const dt = clamp(t - sim.lastT, 0, 120);
-    sim.lastT = t;
-    sim.acc += dt;
-
-    let steps = 0;
-    while (sim.acc >= STEP_MS && steps < 5) {
-      step(sim, state);
-      sim.acc -= STEP_MS;
-      steps += 1;
-    }
-    if (sim.acc >= STEP_MS) sim.acc = 0;
-
-    drawScene(parent, SRT, sim, state);
-  }
-
-  window.SRTSlide.register("laser-resonator", {
-    initialState: {
-      mode: "resonator",
-      pump: 0.65,
-      reflectivity: 0.96
-    },
-    showMotionControl: false,
-    controls: [
-      {
-        type: "segmented",
-        key: "mode",
-        label: "Aufbau",
-        options: [
-          { label: "mit Resonator", value: "resonator", description: "Spiegel halten achsnahes Licht im Medium" },
-          { label: "ohne Resonator", value: "frei", description: "Licht verlässt das Medium in viele Richtungen" }
-        ]
-      },
-      {
-        type: "range",
-        key: "pump",
-        label: "Pumpleistung",
-        min: 0,
-        max: 1,
-        step: 0.01,
-        format: (value) => `${Math.round(Number(value) * 100)} %`
-      },
-      {
-        type: "range",
-        key: "reflectivity",
-        label: "Spiegel-Reflexion",
-        min: 0.8,
-        max: 0.99,
-        step: 0.01,
-        format: (value) => `${Math.round(Number(value) * 100)} %`
-      },
-      {
-        label: "Neu starten",
-        ariaLabel: "Simulation neu starten",
-        apply: (s) => {
-          s._sim = null;
-        }
+  function updatePoints(parent, SRT, points, nodes, color) {
+    const alive = new Set();
+    for (const p of points) {
+      alive.add(p.id);
+      let node = nodes.get(p.id);
+      if (!node) {
+        node = circle(parent, SRT, p.x, p.y, 3.2, color);
+        nodes.set(p.id, node);
       }
+      node.setAttribute("cx", p.x);
+      node.setAttribute("cy", p.y);
+    }
+    for (const [id, node] of nodes) {
+      if (!alive.has(id)) { node.remove(); nodes.delete(id); }
+    }
+  }
+  function draw(parent, SRT, sim) {
+    const view = views.get(parent)?.sim === sim ? views.get(parent) : setup(parent, SRT, sim);
+    if (view.beam) view.beam.setAttribute("opacity", .6 * (1 - Math.exp(-sim.outputFlux / 5)));
+    sim.atoms.forEach((a, i) => {
+      const nodes = view.atoms[i];
+      nodes.dot.setAttribute("fill", a.level === 3 ? C.pump : a.level === 2 ? C.upper : C.ground);
+      nodes.ring.setAttribute("visibility", a.level === 2 ? "visible" : "hidden");
+      nodes.center.setAttribute("visibility", a.level === 3 ? "visible" : "hidden");
+    });
+    // Ein Punkt bleibt seinem Photon zugeordnet, bis dieses absorbiert wird
+    // oder das Bild verlässt. Kein wechselndes Ausdünnen nach Listenposition.
+    updatePoints(view.lightLayer, SRT, sim.photons, view.photonNodes, C.light);
+    updatePoints(view.lightLayer, SRT, sim.pumps, view.pumpNodes, C.pump);
+  }
+  function render({ parent, t, state, SRT }) {
+    if (!state._sim || state._sim.mode !== state.mode || t < state._sim.lastT) state._sim = create(state.mode, t);
+    const sim = state._sim;
+    sim.acc += Math.max(0, Math.min(.1, (t - sim.lastT) / 1000));
+    sim.lastT = t;
+    while (sim.acc >= DT) {
+      step(sim, Math.max(0, Math.min(1, Number(state.pump))), Math.max(.5, Math.min(.99, Number(state.reflection))));
+      sim.acc -= DT;
+    }
+    draw(parent, SRT, sim);
+  }
+  window.SRTSlide.register("laser-resonator", {
+    initialState: { mode: "resonator", pump: .85, reflection: .95 },
+    showMotionControl: true,
+    controls: [
+      { type: "segmented", key: "mode", label: "Aufbau", options: [
+        { label: "mit Resonator", value: "resonator", description: "Mit Resonator" },
+        { label: "ohne Resonator", value: "frei", description: "Ohne Resonator" }
+      ] },
+      { label: "Neu starten", ariaLabel: "Resonator neu starten", apply: s => { s._sim = null; } },
+      { type: "segmented", key: "pump", label: "Pumpstärke", options: [
+        { label: "aus", value: 0, description: "Pumpe aus" },
+        { label: "schwach", value: .25, description: "Schwaches Pumpen" },
+        { label: "stark", value: .85, description: "Starkes Pumpen" }
+      ] },
+      { type: "range", key: "reflection", label: "Auskoppelspiegel", ariaLabel: "Reflexion des Auskoppelspiegels", min: .5, max: .99, step: .01,
+        disabled: s => s.mode === "frei",
+        format: v => `${Math.round(v * 100)} % Reflexion · ${Math.round((1 - v) * 100)} % Durchlass` }
     ],
     render
   });

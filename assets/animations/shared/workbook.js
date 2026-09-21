@@ -101,6 +101,7 @@
     input.max = control.max;
     input.step = control.step || "any";
     input.value = state[key];
+    if (control.disabled && resolve(control.disabled, state)) input.disabled = true;
     input.setAttribute("aria-label", resolve(control.ariaLabel, state) || resolve(control.label, state));
     input.setAttribute("aria-valuetext", formatRange(control, state));
     input.addEventListener("input", () => {

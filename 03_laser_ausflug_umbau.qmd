@@ -8,12 +8,14 @@
 <script src="assets/animations/laser/atom-licht-wechselwirkungen.js"></script>
 <script src="assets/animations/laser/besetzungsinversion.js?v=20260918-layout2"></script>
 <script src="assets/animations/laser/metastabil.js?v=20260919"></script>
-<script src="assets/animations/laser/resonator.js"></script>
-<script src="assets/animations/laser/spektren-zoom.js"></script>
+<link rel="stylesheet" href="assets/animations/laser/resonator.css?v=20260921d">
+<script src="assets/animations/laser/resonator.js?v=20260921d"></script>
+<link rel="stylesheet" href="assets/animations/laser/resonator-moden.css?v=20260921e">
+<script src="assets/animations/laser/resonator-moden.js?v=20260921e"></script>
 <script src="assets/animations/laser/rubinlaser.js"></script>
 <script src="assets/animations/laser/he-ne.js"></script>
 <script src="assets/animations/laser/hene-spektroskop.js"></script>
-<script src="assets/animations/shared/workbook.js"></script>
+<script src="assets/animations/shared/workbook.js?v=20260921"></script>
 ```
 :::
 
@@ -355,39 +357,35 @@ Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt un
 Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
 :::
 
-Eine Taschenlampe kann sehr hell sein. Ihr Licht breitet sich trotzdem kegelförmig aus. Ein Laserpointer bleibt über mehrere Meter ein enger Lichtfleck. Hinter diesem Unterschied steckt ein neues Bauteil: der Resonator.
+Im vorherigen Unterkapitel hast du kennengelernt, wie durch Pumpen eine Besetzungsinversion aufgebaut werden kann. Ein solches Lasermedium kann Licht verstärken. Es gibt aber weiterhin Licht in unterschiedliche Richtungen ab. Bei einem Laserpointer tritt dagegen ein schmaler, gerichteter Strahl aus. Um diesen Unterschied zu verstehen, betrachten wir zunächst die Ausbreitungsrichtungen der Photonen.
 
-Bis hierhin kann das Lasermedium Licht verstärken. Für einen Laser bleiben aber zwei Probleme offen:
+Durch spontane Emission entstehen im Lasermedium Photonen in unterschiedlichen Richtungen. Löst eines davon stimulierte Emission aus, breitet sich das zusätzliche Photon in derselben Richtung aus wie das auslösende. Licht kann deshalb zunächst in verschiedenen Richtungen verstärkt werden und das Medium anschließend verlassen.
 
-- Die entstehenden Photonen laufen zufällig in alle Richtungen.
-- Bei einem einzigen Durchgang durch das Medium bleibt die Intensität des Lichts gering.
+Ein optischer Resonator ermöglicht, dass ein Teil des Lichts das Lasermedium wiederholt durchquert. Ein einfacher optischer Resonator besteht aus zwei gegenüberliegenden Spiegeln. Zwischen ihnen liegt das Lasermedium. Einer der Spiegel reflektiert das Licht nahezu vollständig. Der andere ist teildurchlässig und lässt einen Teil des Lichts als Laserstrahl austreten. Den übrigen Teil reflektiert er zurück.
 
-Im gepumpten Medium löst schon ein einzelnes Photon eine Lawine gleicher Photonen durch stimulierte Emission aus. Dieses erste Photon entsteht durch spontane Emission, seine Richtung ist zufällig. Die ganze Lawine läuft dann in diese zufällige Richtung. Die meisten dieser Photonen verlassen das Medium seitlich oder schräg. Der enge Laserstrahl, den du kennst, entsteht so noch nicht.
+Licht, das sich annähernd entlang der Spiegelachse ausbreitet, wird abwechselnd an beiden Spiegeln reflektiert. Dabei durchquert es wiederholt das gepumpte Lasermedium und kann weitere stimulierte Emission auslösen. Die zusätzlichen Photonen besitzen dieselbe Frequenz und Ausbreitungsrichtung wie die jeweils auslösenden Photonen. Bei Licht, das sich unter einem größeren Winkel zur Spiegelachse ausbreitet, treffen die Photonen nach kurzer Zeit nicht mehr auf die Spiegel und verlassen den Bereich zwischen ihnen seitlich. Entlang der Spiegelachse sind dagegen viele Durchgänge möglich, bei denen weitere Photonen durch stimulierte Emission hinzukommen können.
 
-Der Resonator löst dieses Problem: Er ist eine Anordnung aus zwei gegenüberliegenden Spiegeln, zwischen denen Licht hin- und herlaufen kann. Im Laser liegt das Lasermedium zwischen den Spiegeln. Ein Spiegel reflektiert möglichst vollständig. Der zweite Spiegel ist teildurchlässig. Er reflektiert den größten Teil des Lichts zurück und lässt einen kleineren Teil austreten. Auf dieser Seite tritt der Laserstrahl aus.
+Solange die Verstärkung bei einem vollständigen Umlauf größer ist als die Verluste durch Auskopplung und andere Verlustprozesse, wächst die Lichtintensität im Resonator. Bei gleichbleibender Durchlässigkeit des Auskoppelspiegels nimmt damit auch die Intensität des austretenden Laserstrahls zu.
 
-Nur Licht, das ungefähr entlang der Resonatorachse läuft, trifft die Spiegel immer wieder. Dieses Licht durchquert das Lasermedium mehrfach. Bei jedem Durchgang kann es an angeregten Atomen stimulierte Emission auslösen. Die neu entstehenden Photonen haben dieselbe Frequenz und laufen in dieselbe Richtung.
+@fig-umbau-laser-resonator zeigt ein optisch gepumptes Lasermedium mit und ohne Resonator. Die Atomfarben kennzeichnen die drei bereits bekannten Energieniveaus: den grauen Grundzustand $E_1$, das gelbe obere Laserniveau $E_2$ und das violette Pumpniveau $E_3$. Violette Punkte zeigen Photonen des Pumplichts, rote Punkte die Photonen des Laserübergangs. Du kannst den Aufbau, die Pumpstärke und die Reflexion des Auskoppelspiegels verändern.
 
-Schräg ausgesandtes Licht verlässt den Resonator nach kurzer Zeit. Es wird kaum weiter verstärkt. Der Resonator wählt damit eine Richtung aus: Entlang der Spiegelachse wächst die Zahl der Photonen. Die Lichtintensität nimmt zu.
-
-Die folgende Simulation zeigt diesen Unterschied. Schalte zwischen beiden Aufbauten um. Ohne Resonator laufen die Photonen in alle Richtungen aus dem Medium. Mit Resonator läuft das Licht zwischen den Spiegeln hin und her. Es durchquert das gepumpte Medium mehrfach, wird verstärkt und tritt durch den teildurchlässigen Spiegel als Laserstrahl aus.
-
-In der Simulation stehen rote Punkte für einzelne Photonen. Diese Punktdarstellung ersetzt die längeren Wellenzüge, damit viele Photonen gleichzeitig sichtbar bleiben.
-
+:::: {#fig-umbau-laser-resonator}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-resonator" data-srt-motion-control data-srt-label="Interaktive Darstellung eines Lasermediums mit angeregten Atomen. Pumplicht regt Atome an. Ein Umschalter wechselt zwischen zwei Aufbauten. Ohne Resonator laufen Photonen in viele Richtungen aus dem Medium. Mit Resonator schließen ein voll reflektierender und ein teildurchlässiger Spiegel das Medium ein. Achsnahes Licht läuft zwischen den Spiegeln hin und her, wird verstärkt und tritt rechts als Laserstrahl aus."></div>
-  <figcaption>Simulation eines Lasermediums mit und ohne Resonator (umschaltbar).</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-resonator" data-srt-viewbox-h="368" data-srt-label="Simulation eines optisch gepumpten Drei-Niveau-Lasermediums mit und ohne Resonator. Grau bezeichnet den Grundzustand E1, Gelb mit einem Ring das obere Laserniveau E2 und Violett mit weißem Punkt das Pumpniveau E3. Violette Punkte zeigen Pump-Photonen und rote Punkte Photonen des Laserübergangs. Ein rotes Band fasst das entlang der Achse ausgekoppelte Licht zusammen. Reflexion des Auskoppelspiegels, Pumpstufe und Aufbau sind veränderbar."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Simulation mit Umschalter: Ohne Resonator senden die angeregten Atome Photonen in alle Richtungen aus, die das Medium verlassen. Mit Resonator schließen zwei Spiegel das Medium ein. Das Licht läuft zwischen ihnen hin und her, wird bei jedem Durchgang verstärkt und tritt durch den teildurchlässigen Spiegel als Laserstrahl aus.
+In der HTML-Version kannst du zwischen einem gepumpten Lasermedium mit und ohne Resonator wechseln und die Pumpstärke verändern. Die Atome durchlaufen Grundzustand, Pumpniveau und oberes Laserniveau. Ohne Spiegel verlässt das Licht das Medium nach einem Durchgang. Mit Spiegeln sind wiederholte Durchgänge möglich, und ein Teil des Lichts tritt durch den rechten Spiegel aus.
 :::
 :::
+
+Simulation zum optischen Pumpen und zur Lichtausbreitung in einem Lasermedium mit und ohne Resonator. Das rote Band fasst das entlang der Achse ausgekoppelte Licht zusammen; seine Stärke gibt den zeitlich gemittelten Photonenaustritt qualitativ wieder. Teilchenzahl, Zeiten und Lichtwege sind schematisch. Absorption und Streuung an den Spiegeln werden vernachlässigt.
+::::
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
@@ -407,81 +405,116 @@ Das Photon trifft die Spiegel nicht immer wieder. Es verlässt das Lasermedium n
 
 </details>
 
-Bisher hast du das Licht in diesem Kapitel meist als Strom von Photonen betrachtet, auch die Simulation zeigt einzelne Lichtteilchen. Nur beim gleichen Takt der Photonen kam das Wellenbild kurz ins Spiel. Das Teilchenbild eignet sich gut für die stimulierte Emission: Ein Photon löst ein zweites aus. Es zeigt aber nur eine Seite des Lichts. Aus der Optik kennst du Phänomene wie die Interferenz: Um sie zu erklären, brauchst du das Wellenbild. Erst in diesem Bild wird eine zweite Eigenschaft des Resonators sichtbar, auf die schon sein Name hinweist.
+Für die stehenden Wellen im Resonator verwenden wir das Wellenmodell. Treffen Wellen aufeinander, überlagern sich ihre Schwingungen. Je nach Phasenlage fallen die Schwingungen dabei stärker oder schwächer aus, sie können sich auch vollständig aufheben. Dieses Phänomen heißt Interferenz.[Interferenz]{.column-margin .mp-randbegriff}
 
-Im Wellenbild läuft eine Lichtwelle zwischen den Spiegeln hin und her. Nach einem Hin- und Rückweg trifft sie wieder auf sich selbst. Passt sie phasenrichtig, verstärkt sie sich bei jedem Umlauf durch konstruktive Interferenz. Passt sie nicht, löscht sie sich über viele Umläufe aus. Das kennst du von einer stehenden Schallwelle zwischen zwei Enden, etwa im Kundtschen Rohr aus der Akustik.
+Im Resonator überlagern sich die zum Spiegel gerichtete Lichtwelle und die von ihm reflektierte Lichtwelle. Die reflektierte Welle breitet sich zurück aus, der einfallenden Welle entgegen. Haben beide Wellen dieselbe Frequenz, Wellenlänge und Amplitude, entsteht bei gleicher Schwingungsrichtung eine stehende Welle.[stehende Welle]{.column-margin .mp-randbegriff} Ihr räumliches Schwingungsmuster bleibt an derselben Stelle. An den Knoten findet keine Schwingung statt. Zwischen ihnen liegen die Bäuche mit der größten Amplitude, also dem größten Schwingungsausschlag.
 
-Im einfachen Modell passt die Resonatorlänge $L$, wenn ein ganzzahliges Vielfaches der halben Wellenlänge zwischen die Spiegel passt:
+Vielleicht kennst du aus der Experimentalphysik einen Versuch mit dem Kundtschen Rohr. In diesem Rohr überlagern sich einfallende und reflektierte Schallwellen zu einer stehenden Welle. Die Bewegung der Luftteilchen verteilt das Korkmehl im Rohr um, sodass es sich an den Bewegungsknoten in Häufchen sammelt. Diese Häufchen machen die Lage der Knoten sichtbar.
+
+Das Muster aus Knoten und Bäuchen lässt sich auf Licht übertragen. Anders als beim Schall sind es hier keine Luftteilchen, die schwingen. Eine Lichtwelle besteht aus einem schwingenden elektrischen und magnetischen Feld. Bei der folgenden Betrachtung beschreibt die stehende Welle die Schwingung des elektrischen Feldes zwischen den Spiegeln.
+
+Für die Resonanzbedingung betrachten wir zunächst zwei vollständig reflektierende Spiegel. Die Wellenlänge soll zwischen ihnen überall gleich sein. An beiden Spiegeln liegen Knoten des elektrischen Feldes. Zwischen benachbarten Knoten liegt jeweils eine halbe Wellenlänge. Zwischen die Spiegel muss daher eine ganze Zahl halber Wellenlängen passen. Die Resonanzbedingung lautet:
 
 $$
-L = m \cdot \frac{\lambda}{2}
-\qquad \text{mit} \qquad m = 1, 2, 3, \dots
+L=m\cdot\frac{\lambda}{2},
+\qquad m=1,2,3,\ldots
 $$ {#eq-laser-resonanzbedingung}
 
-Diese Bedingung heißt Resonanzbedingung.[Resonanzbedingung]{.column-margin .mp-randbegriff} Ist sie erfüllt, bildet sich eine stehende Welle aus. Solche passenden Wellen nennt man Resonatormoden.[Resonatormoden]{.column-margin .mp-randbegriff} Sie bauen sich mit jedem Umlauf stärker auf. Andere Wellenlängen passen schlechter zur Spiegelanordnung und werden unterdrückt. Der Resonator wählt so wenige, scharf festgelegte Wellenlängen aus. Das trägt dazu bei, dass Laserlicht sehr einfarbig ist.
+$L$ ist der Spiegelabstand und $\lambda$ die Wellenlänge im Resonator. Die Zahl $m$ zählt die halben Wellenlängen zwischen den Spiegeln. Jedes mögliche Schwingungsmuster heißt Resonatormode.[Resonatormode]{.column-margin .mp-randbegriff} Beispielsweise bilden drei halbe Wellenlängen zusammen eine Mode mit $m=3$.
 
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
-  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
-  Berechnung
-</span>
+@fig-umbau-laser-stehende-welle zeigt die Schwingung des elektrischen Feldes zwischen den Spiegeln. Du kannst zwischen Mustern mit drei, vier und fünf Bäuchen wechseln.
 
-Ein Resonator ist $L = 35\,\mathrm{cm}$ lang. Das Lasermedium verstärkt rotes Licht mit $\lambda = 700\,\mathrm{nm}$.
-
-<u>Berechne</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
-:::
-
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
-
-Die Resonanzbedingung (@eq-laser-resonanzbedingung) wird nach $m$ aufgelöst:
-
-$$
-m = \frac{2L}{\lambda}
-  = \frac{2 \cdot 0{,}35\,\mathrm{m}}{7{,}00 \cdot 10^{-7}\,\mathrm{m}}
-  = 1\,000\,000.
-$$
-
-Eine Million halber Wellenlängen passt zwischen die Spiegel.
-
-</details>
-
-::: {.mp-box .mp-misconception}
-<div class="mp-title">Muss der Spiegelabstand exakt stimmen?</div>
-Die Bedingung $L = m \cdot \frac{\lambda}{2}$ kann den Eindruck erwecken, eine stehende Welle entstehe nur bei ganz bestimmten Spiegelabständen. Beim Kundtschen Rohr stimmt das: Dort liegen Wellenlänge und Rohrlänge in derselben Größenordnung, und zwischen zwei passenden Längen liegt ein deutlicher Abstand.
-
-Beim Laser ist die Wellenlänge des Lichts um viele Größenordnungen kleiner als der Spiegelabstand. Die Zahl $m$ liegt bei Hunderttausenden. Springt $m$ um eins weiter, ändert sich die passende Wellenlänge nur winzig. Dicht neben jeder Wellenlänge liegt also schon die nächste Resonatormode.
-
-Dazu kommt: Der Übergang zwischen den Energieniveaus liefert kein perfekt einfarbiges Licht, sondern Licht in einem schmalen Wellenlängenbereich. Die Bedingung $E_\text{Photon} = \Delta E$ aus dem ersten Abschnitt gilt mit einer entsprechend kleinen Toleranz. In diesem Bereich liegen immer passende Moden. Eine stehende Welle bildet sich damit bei praktisch jedem Spiegelabstand aus.
-
-Daraus erklärt sich auch der Unterschied zur Spektrallampe, etwa einer Natriumdampflampe. Ihr Licht stammt ebenfalls aus einem Übergang zwischen zwei Niveaus, und ihre Linie zeigt dessen volle Breite. Beim Laser bietet der Übergang denselben Bereich an. Doch verstärkt wird nur Licht, das zusätzlich in den Resonator passt: die Moden aus diesem Bereich. Jede Mode legt eine einzelne Wellenlänge scharf fest. Von diesen Moden setzt sich oft eine einzige durch. Der Laserstrahl enthält dann eine scharfe Wellenlänge statt der vollen Breite des Übergangs.
-:::
-
-Wie einfarbig Laserlicht wirklich ist, zeigt der Vergleich mit anderen Lichtquellen. $\Delta\lambda$ bezeichnet dabei die Breite des ausgesandten Wellenlängenbereichs. Von breit nach schmal:
-
-- **Glühlampe:** das ganze sichtbare Spektrum, sehr großes $\Delta\lambda$.
-- **Leuchtdiode:** ein Farbbereich von einigen zehn Nanometern.
-- **Spektrallampe:** einzelne Linien, jede mit kleiner, aber messbarer Breite.
-- **Laser:** die schmalste Linie, um viele Größenordnungen kleiner als bei der Spektrallampe.
-
-Das folgende interaktive Diagramm zeigt die vier Spektren im selben Bildausschnitt um 589 nm, alle auf gleiche Höhe gebracht. Mit dem Regler zoomst du in die Wellenlängenachse hinein. Zuerst sehen Spektrallampe und Laser gleich aus: zwei schmale Striche. Erst bei starkem Zoom zeigt die Linie der Spektrallampe ihre Breite. Der Laser bleibt auch dann ein schmaler Strich.
-
+:::: {#fig-umbau-laser-stehende-welle}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-spektren-zoom" data-srt-viewbox-h="560" data-srt-label="Interaktives Diagramm mit vier Spektren übereinander: Glühlampe, Leuchtdiode, Spektrallampe und Laser, jeweils Intensität über der Wellenlänge. Ein Zoomregler verkleinert den dargestellten Wellenlängenbereich von 300 Nanometern bis auf unter ein Tausendstel Nanometer. Beim Hineinzoomen werden Glühlampe und Leuchtdiode praktisch konstant, die Linie der Spektrallampe zeigt ihre Breite, die Linie des Lasers bleibt ein schmaler Strich."></div>
-  <figcaption>Interaktives Diagramm: die Spektren von Glühlampe, Leuchtdiode, Spektrallampe und Laser im selben Ausschnitt um 589 nm (Wellenlängenachse zoombar).</figcaption>
-</figure>
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-stehende-welle" data-srt-viewbox-h="310" data-srt-label="Elektrisches Feld einer stehenden Lichtwelle zwischen zwei Spiegeln. Drei, vier oder fünf Bäuche sind auswählbar. Jeder gewählte Verlauf ist eine einzige Resonatormode. Knoten bleiben beim Abspielen an festen Orten mit Feldstärke null."></div>
+</div>
 ```
 :::
 
 ::: {.content-visible unless-format="html"}
 ::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier ein interaktives Diagramm: vier Spektren im selben Ausschnitt, von der Glühlampe bis zum Laser. Ein Zoomregler verkleinert den dargestellten Wellenlängenbereich Schritt für Schritt. Glühlampe und Leuchtdiode werden dabei praktisch konstant, die Linie der Spektrallampe zeigt ihre Breite, die Linie des Lasers bleibt ein schmaler Strich.
+In der HTML-Version kannst du zwischen Schwingungsmustern mit drei, vier und fünf Bäuchen wechseln. Die Spiegel bleiben an denselben Orten. An den Knoten bleibt das elektrische Feld null, an den Bäuchen ist seine Schwingungsamplitude am größten. Mit zunehmender Zahl der Bäuche wird die Wellenlänge kürzer.
 :::
 :::
 
-Damit kennst du die besonderen Eigenschaften des Laserlichts und ihre gemeinsame Ursache. Die Richtungsauswahl des Resonators bündelt den Strahl, die Modenauswahl macht ihn sehr einfarbig, und die stimulierte Emission hält die Wellenzüge in fester Phasenbeziehung zueinander: Das Licht ist kohärent. Keine dieser drei Eigenschaften erzeugt die anderen. Sie entstehen gemeinsam, weil Resonator und stimulierte Emission praktisch das gesamte Licht in derselben Mode sammeln.
+Simulation stehender Lichtwellen. Die Kurve zeigt eine Komponente des elektrischen Feldes entlang der Spiegelachse. Die Lichtauskopplung ist für das Schwingungsmuster vernachlässigt. Zur Übersicht sind nur wenige Bäuche dargestellt und die Schwingung ist stark verlangsamt.
+::::
+
+:::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+Ein Resonator ist $L=35\,\mathrm{cm}$ lang. Eine seiner Moden besitzt die Wellenlänge $\lambda=700\,\mathrm{nm}$.
+
+Für diese Aufgabe benötigst du folgende aus dem Unterkapitel bekannte Formel.
+
+::: {.mp-formula-repeat}
+$$
+L=m\cdot\frac{\lambda}{2}
+$$
+
+([-@eq-laser-resonanzbedingung])
+:::
+
+<u>Berechne</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
+::::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Aus der Resonanzbedingung folgt:
+
+$$
+m=\frac{2L}{\lambda}
+=\frac{2\cdot0{,}35\,\mathrm{m}}{700\cdot10^{-9}\,\mathrm{m}}
+=1\,000\,000.
+$$
+
+Das Schwingungsmuster enthält eine Million halber Wellenlängen.
+
+</details>
+
+Im Zahlenbeispiel enthält eine einzige Mode eine Million halber Wellenlängen. Bei der benachbarten Mode passen $1\,000\,001$ halbe Wellenlängen zwischen dieselben Spiegel. Ihre Wellenlänge beträgt etwa $699{,}999300\,\mathrm{nm}$ statt $700\,\mathrm{nm}$. Der Unterschied beträgt also nur etwa $0{,}000700\,\mathrm{nm}$.
+
+Bisher haben wir dem Laserübergang eine einzelne Wellenlänge zugeordnet. Bei einem realen Lasermedium ist die Lichtverstärkung durch stimulierte Emission jedoch auf einen kleinen Wellenlängenbereich verteilt. Dessen Breite bezeichnen wir mit $\Delta\lambda$. Innerhalb dieses Bereichs können mehrere zum Resonator passende Wellenlängen liegen.
+
+Um den Einfluss des Spiegelabstands zu verstehen, stell dir zunächst ein Muster mit drei Bäuchen vor. Werden die Spiegel weiter auseinandergerückt, sollen weiterhin genau drei Bäuche zwischen ihnen liegen. Jeder Bauch muss dann breiter werden. Da ein Bauch eine halbe Wellenlänge umfasst, wird auch die Wellenlänge größer. Das gilt ebenso für das Muster mit einer Million Bäuchen aus der Rechnung.
+
+@fig-umbau-laser-modenbereich verbindet die beiden Bedingungen. Der gelbe Bereich zeigt die Wellenlängen, die das Lasermedium verstärken kann. Die Striche markieren Wellenlängen, die zum Spiegelabstand passen. Ein blauer Punkt markiert die Mode aus der Rechnung, damit du ihre Wellenlänge beim Verändern des Spiegelabstands verfolgen kannst. Du veränderst ausschließlich den Spiegelabstand. Die Eigenschaften des Lasermediums und damit der gelbe Bereich bleiben unverändert.
+
+:::: {#fig-umbau-laser-modenbereich}
+::: {.content-visible when-format="html"}
+```{=html}
+<div class="srt-workbook-figure">
+  <div class="srt-workbook-stage" data-srt-animation="laser-modenbereich" data-srt-viewbox-h="380" data-srt-label="Der feste gelbe Bereich zeigt Wellenlängen, die das Lasermedium verstärken kann. Senkrechte Striche markieren zum Spiegelabstand passende Wellenlängen. Ein blauer Punkt markiert durchgehend die Mode mit einer Million halber Wellenlängen. Ihr Wellenlängenwert wird angezeigt. Ein Pfeil zeigt die Änderung gegenüber dem Ausgangswert 700 Nanometer."></div>
+</div>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+::: {.srt-workbook-fallback}
+In der HTML-Version kannst du den Spiegelabstand um bis zu 200 nm verändern. Die markierte Mode behält eine Million halber Wellenlängen. Bei einer Verlängerung von 35 cm um 200 nm nimmt ihre Wellenlänge von 700 nm auf 700,000400 nm zu. Das beispielhafte gelbe Intervall von 699,999 bis 700,001 nm bleibt unverändert.
+:::
+:::
+
+Interaktives Diagramm der Resonanzwellenlängen für einen Spiegelabstand von $35\,\mathrm{cm}\pm200\,\mathrm{nm}$. Der gelbe Beispielbereich reicht von $699{,}999$ bis $700{,}001\,\mathrm{nm}$. Der blaue Punkt kennzeichnet die Mode mit $m=1\,000\,000$. Der Pfeil zeigt die Änderung ihrer Wellenlänge gegenüber dem Ausgangswert.
+::::
+
+Bei $35\,\mathrm{cm}$ beträgt die Wellenlänge der markierten Mode $700\,\mathrm{nm}$. Vergrößerst du den Spiegelabstand um $200\,\mathrm{nm}$, steigt sie auf $700{,}000400\,\mathrm{nm}$. Beide Werte liegen im gelben Bereich. Auch nach der Längenänderung passt diese Mode zwischen die Spiegel und das Medium kann Licht ihrer Wellenlänge verstärken.
+
+::: {.mp-box .mp-misconception}
+<div class="mp-title">Verhindert schon eine kleine Änderung des Spiegelabstands die Laseremission?</div>
+
+Die Resonanzbedingung kann diesen Eindruck erwecken, wenn man von einer einzigen vorgegebenen Wellenlänge ausgeht. Das Lasermedium verstärkt jedoch Licht in einem Bereich der Breite $\Delta\lambda$. Ist dieser Bereich breit genug, liegen auch nach einer kleinen Änderung des Spiegelabstands passende Wellenlängen darin. Der Laser kann dann weiterhin einen Strahl aussenden. Dazu passt eine Beobachtung aus dem Alltag. Ein Laserpointer lässt sich in einem kühleren und einem wärmeren Raum verwenden, obwohl sich die Abmessungen seiner Bauteile durch Wärmeausdehnung geringfügig ändern. Eine solche Änderung beendet die Laseremission also nicht zwangsläufig. Die Wellenlänge des Laserstrahls kann sich dabei ändern.
+:::
+
+Tragen nur eine oder wenige eng benachbarte Moden zum Laserlicht bei, kann es auf einen sehr schmalen Wellenlängenbereich konzentriert sein. Monochromatisches Licht besitzt idealisiert eine einzige Frequenz. Je schmaler der ausgesandte Frequenzbereich im Verhältnis zu seiner mittleren Frequenz ist, desto näher kommt das Licht diesem Ideal.
+
+Auch das gelbe Licht einer Natriumdampflampe besitzt nicht genau eine Wellenlänge. Es enthält zwei nahe beieinanderliegende starke Spektrallinien bei etwa $589{,}0$ und $589{,}6\,\mathrm{nm}$. Jede dieser Linien hat selbst eine endliche Breite. Eine einheitlich wahrgenommene Farbe bedeutet daher noch nicht, dass Licht monochromatisch ist. Mit Lasern lassen sich Spektrallinien erzeugen, die wesentlich schmaler sind als die einer solchen Lampe.
 
 ## Aufbau eines Lasers: der erste Laser
 

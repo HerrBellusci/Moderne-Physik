@@ -1,17 +1,35 @@
 # Atomspektren und Bohrsches Atommodell
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach Arbeitsblatt 07:
-- kontinuierliche Spektren und Linienspektren
-- Emissions- und Absorptionsspektren
-- diskrete Energieniveaus und atomare Übergänge
-- Bohrsche Postulate, Wasserstoffatom und Balmer-Serie
-- Reichweite und Grenzen des Bohrschen Atommodells
-- möglicher späterer Anschluss: optische Übergänge, Fluoreszenz und Phosphoreszenz
--->
+**Anschluss:** Photonenenergie und Energieniveaus aus Kapitel 03/04, Materiewellen aus Kapitel 06.
+
+**Funktion im Aufbau:** Aus Spektren werden Anforderungen an ein Atommodell entwickelt. Das Bohrsche Modell erklärt das Wasserstoffspektrum innerhalb seiner Grenzen.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Kontinuierliche Spektren und Linienspektren
+
+Spektren unterschiedlicher Lichtquellen beobachten und unterscheiden. Anschluss an einfache Spektrometerversuche.
+
+## Emission, Absorption und diskrete Energieniveaus
+
+Spektrallinien mit Energiedifferenzen verknüpfen. Bekannte Übergänge aus Kapitel 03 wieder aufnehmen.
+
+## Bohrsche Postulate und Drehimpulsquantisierung
+
+Kern-Hülle-Vorstellung kurz auffrischen, Bohrs Modellannahmen kennzeichnen und die Quantisierungsbedingung einführen. Materiewellen ermöglichen eine ergänzende Deutung.
+
+## Radien und Energien im Wasserstoffatom
+
+Bohrscher Radius, diskrete Energien und Ionisationsgrenze im Modell.
+
+## Wasserstoffspektrum und Grenzen des Bohrschen Modells
+
+Balmer-Serie und Energieübergänge anwenden. Erklärungskraft und begrenzte Reichweite des Modells gegenüberstellen.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

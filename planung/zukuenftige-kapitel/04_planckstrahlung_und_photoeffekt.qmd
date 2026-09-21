@@ -1,15 +1,35 @@
 # Lichtquanten: Schwarzkörperstrahlung und Photoeffekt
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach Arbeitsblatt 04:
-- Wärmestrahlung und elektromagnetisches Spektrum
-- Stefan-Boltzmann-Gesetz und Wiensches Verschiebungsgesetz
-- Plancksches Strahlungsgesetz und Quantenhypothese
-- äußerer Photoeffekt, Austrittsarbeit und Grenzfrequenz
--->
+**Anschluss:** Wellenoptik aus dem Grundstudium. Die Photonenenergie ist aus Kapitel 03 bekannt.
+
+**Funktion im Aufbau:** Experimentelle Befunde führen zur Energiequantelung und zur Deutung der Energieübertragung durch Photonen.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Wärmestrahlung und schwarzer Körper
+
+Elektromagnetisches Spektrum, thermische Strahlung und der schwarze Körper als Modell.
+
+## Strahlungsleistung und Strahlungsmaximum
+
+Stefan-Boltzmann-Gesetz und Wiensches Verschiebungsgesetz beschreiben unterschiedliche Merkmale des Spektrums.
+
+## Plancksches Strahlungsgesetz und Quantenhypothese
+
+Klassisches Beschreibungsproblem, Energiequantelung und Deutung des Strahlungsspektrums. Der mathematische Umfang bleibt auf den Einblick in die Zusammenhänge begrenzt.
+
+## Beobachtungen zum Photoeffekt
+
+Versuchsaufbau, Grenzfrequenz und Abhängigkeiten von Frequenz und Intensität.
+
+## Einsteins Deutung des Photoeffekts
+
+Photonenenergie, Austrittsarbeit und maximale kinetische Energie. Die aus Kapitel 03 bekannte Beziehung wird durch experimentelle Befunde begründet.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

@@ -1,21 +1,25 @@
 # Vorläufige Kapitelroadmap
 
-Die QMD-Dateien in diesem Ordner sind Gerüste für eine mögliche spätere Erweiterung des Workbooks. Sie sind nicht in `_quarto.yml` eingetragen, werden nicht gerendert und nicht veröffentlicht.
+Stand: 21.09.2026.
 
-Die Reihenfolge folgt soweit möglich den vorhandenen Vorlesungsarbeitsblättern und der Datei `Eigene_Zusammenfassung_Moderne_Physik.pdf`. Die eigene Zusammenfassung rekonstruiert den tatsächlich bearbeiteten Ablauf, ist wegen ihrer übernommenen Buchauszüge aber weder Teil des Repositorys noch eine zitierfähige fachliche Grundlage für das Workbook. Die Zuschnitte sind vorläufig. Vor einer Aktivierung muss jedes Kapitel fachlich geprüft und gemäß der Konzeption vollständig mit Einstieg, Unterkapiteln, Lernzielen, Aufgaben, Veranschaulichungen und Selbstcheck ausgearbeitet werden.
+Die vollständige Übersicht mit Unterkapiteln, Begründung und Modulhandbuchabgleich steht in [00_roadmap.qmd](00_roadmap.qmd).
 
-Vorgesehene Reihenfolge:
+Die QMD-Dateien dieses Ordners sind Planungsgerüste für eine spätere Erweiterung. Sie sind nicht in `_quarto.yml` eingetragen, werden nicht gerendert und nicht veröffentlicht. Der Prototyp bleibt auf SRT I, SRT II und Laser begrenzt.
 
-1. `04_planckstrahlung_und_photoeffekt.qmd`
-2. `05_wechselwirkung_licht_materie.qmd`
-3. `06_materiewellen_und_elektronenbeugung.qmd`
-4. `07_atomspektren_und_bohrsches_atommodell.qmd`
-5. `08_wellenfunktion_und_wahrscheinlichkeit.qmd`
-6. `09_unschaerferelationen.qmd`
-7. `10_schroedingergleichung_und_unendlicher_potentialtopf.qmd`
-8. `11_endlicher_potentialtopf_tunneleffekt_alpha_zerfall.qmd`
-9. `12_wasserstoffatom_und_quantenzahlen.qmd`
+Das Modulhandbuch setzt Themen und Kompetenzen. Vorlesungsunterlagen und Lehrbücher helfen, Tiefe und fachliche Zugänge zu bestimmen. Die Reihenfolge folgt den fachlichen Voraussetzungen und der Workbookkonzeption. Die eigene Vorlesungszusammenfassung wird ausschließlich intern zur Orientierung genutzt und ist keine veröffentlichbare fachliche Quelle.
 
-Die Aufteilung des quantenmechanischen Teils folgt der tatsächlichen Stofffolge der eigenen Zusammenfassung. Die Schrödingergleichung steht dabei nicht isoliert, sondern zusammen mit dem freien Teilchen und dem ersten lösbaren Modellfall, dem unendlich hohen Potentialtopf. Der endliche Potentialtopf führt anschließend zum Tunneleffekt und zum Alpha-Zerfall.
+## Vorgesehene Kapitel
 
-Fluoreszenz, Phosphoreszenz und Plasmaphysik gehören laut Modulhandbuch zu Moderne Physik I, sind in den vorhandenen Arbeitsblättern und in der eigenen Zusammenfassung aber nicht als eigener Veranstaltungsblock belegt. Material für einen möglichen späteren Abschnitt zu optischen Übergängen liegt vorerst unter `../../assets/animations/zukuenftig/optische-uebergaenge/`.
+- [04 Lichtquanten: Schwarzkörperstrahlung und Photoeffekt](04_planckstrahlung_und_photoeffekt.qmd)
+- [05 Wechselwirkung von Licht und Materie](05_wechselwirkung_licht_materie.qmd)
+- [06 Materiewellen und Elektronenbeugung](06_materiewellen_und_elektronenbeugung.qmd)
+- [07 Atomspektren und Bohrsches Atommodell](07_atomspektren_und_bohrsches_atommodell.qmd)
+- [08 Wellenfunktion und Wahrscheinlichkeit](08_wellenfunktion_und_wahrscheinlichkeit.qmd)
+- [09 Unschärferelationen und klassischer Grenzfall](09_unschaerferelationen.qmd)
+- [10 Schrödingergleichung und unendlicher Potentialtopf](10_schroedingergleichung_und_unendlicher_potentialtopf.qmd)
+- [11 Endlicher Potentialtopf, Tunneleffekt und Alpha-Zerfall](11_endlicher_potentialtopf_tunneleffekt_alpha_zerfall.qmd)
+- [12 Atomzustände, Quantenzahlen und Pauli-Prinzip](12_wasserstoffatom_und_quantenzahlen.qmd)
+- [13 Optische Übergänge: Fluoreszenz und Phosphoreszenz](13_optische_uebergaenge_fluoreszenz_phosphoreszenz.qmd)
+- [14 Plasmaphysik in Natur und Technik](14_plasmaphysik_natur_technik.qmd)
+
+Jedes Gerüst enthält die vorgesehenen Unterkapitel, ihren geplanten Umfang und den Anschluss an zuvor erarbeitete Begriffe. Vor einer Aktivierung sind Lernziele, Aufgaben, Lösungen, Veranschaulichungen und Selbstcheck vollständig auszuarbeiten.

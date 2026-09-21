@@ -1,16 +1,31 @@
 # Endlicher Potentialtopf, Tunneleffekt und Alpha-Zerfall
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung und Arbeitsblatt 12-13:
-- endlicher Potentialtopf
-- exponentielles Eindringen der Wellenfunktion in klassisch verbotene Bereiche
-- Potentialbarriere und Tunneleffekt
-- qualitative und quantitative Tunnelwahrscheinlichkeit
-- Alpha-Zerfall als Anwendung des Tunneleffekts
--->
+**Anschluss:** Potentialdiagramme, Randbedingungen und gebundene Zustände aus Kapitel 10.
+
+**Funktion im Aufbau:** Die idealisierten Potentialwände werden verändert. Der Übergang zur endlichen Barriere ermöglicht die Erklärung des Tunneleffekts.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Der endliche Potentialtopf
+
+Endliche Potentialhöhe und Vergleich mit dem unendlichen Topf. Gebundene Zustände und Ionisation beziehungsweise Freisetzung unterscheiden.
+
+## Wellenfunktionen in klassisch verbotenen Bereichen
+
+Exponentielles Abklingen und Wahrscheinlichkeitsdichte außerhalb des klassisch zugänglichen Bereichs.
+
+## Potentialbarriere und Tunnelwahrscheinlichkeit
+
+Durchgang durch eine räumlich begrenzte Barriere. Abhängigkeit von Energie, Höhe, Breite und Masse. Voraussetzungen einer verwendeten Näherungsformel kenntlich machen.
+
+## Alpha-Zerfall als Anwendung des Tunneleffekts
+
+Benötigte Kernphysik kurz auffrischen, Kernpotential und Coulombbarriere deuten sowie den Zusammenhang mit der Zerfallswahrscheinlichkeit erläutern.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

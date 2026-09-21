@@ -1,0 +1,58 @@
+/* Beide Modendarstellungen bilden mit ihren Bedienelementen eine Einheit. */
+:is([data-srt-animation="laser-stehende-welle"], [data-srt-animation="laser-modenbereich"]) {
+  border-radius: 8px 8px 0 0;
+  border-bottom: 0;
+}
+[data-srt-animation="laser-stehende-welle"] svg {
+  aspect-ratio: 862 / 310;
+}
+[data-srt-animation="laser-modenbereich"] svg {
+  aspect-ratio: 862 / 380;
+}
+:is([data-srt-animation="laser-stehende-welle"], [data-srt-animation="laser-modenbereich"]) + .srt-workbook-controls {
+  box-sizing: border-box;
+  margin-top: 0;
+  padding: .65rem;
+  align-items: flex-end;
+  border: 1px solid rgba(23,32,51,.14);
+  border-top: 0;
+  border-radius: 0;
+  background: #f7f9fb;
+}
+:is([data-srt-animation="laser-stehende-welle"], [data-srt-animation="laser-modenbereich"]) + .srt-workbook-controls .srt-workbook-control-group {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+[data-srt-animation="laser-stehende-welle"] + .srt-workbook-controls .srt-workbook-control-group legend {
+  float: none;
+  width: 100%;
+  padding: 0;
+  margin: 0 0 .3rem;
+  text-align: left;
+}
+[data-srt-animation="laser-stehende-welle"] + .srt-workbook-controls .srt-workbook-motion-button {
+  align-self: flex-end;
+  background: #1f2937;
+  color: #fff;
+  border-color: #475569;
+}
+[data-srt-animation="laser-stehende-welle"] + .srt-workbook-controls .srt-workbook-motion-button:hover,
+[data-srt-animation="laser-stehende-welle"] + .srt-workbook-controls .srt-workbook-motion-button[aria-pressed="true"] {
+  background: #334155;
+}
+[data-srt-animation="laser-modenbereich"] + .srt-workbook-controls .srt-workbook-range {
+  flex: 1 1 18rem;
+  margin: 0;
+  min-width: 0;
+}
+@media (max-width: 600px) {
+  [data-srt-animation="laser-stehende-welle"] + .srt-workbook-controls .srt-workbook-control-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem;
+  }
+}

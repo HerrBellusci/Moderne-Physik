@@ -1,15 +1,35 @@
-# Quantenzahlen und Zustände im Wasserstoffatom
+# Atomzustände, Quantenzahlen und Pauli-Prinzip
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Da Arbeitsblatt 11 fehlt, sind Position und Umfang noch zu prüfen. Die eigene Vorlesungszusammenfassung enthält keine vollständige Lösung der dreidimensionalen Schrödingergleichung für das Wasserstoffatom.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt:
-- Haupt-, Neben-, magnetische und Spinquantenzahl
-- Beschreibung diskreter Zustände am Beispiel des Wasserstoffatoms
-- Bedeutung und zulässige Werte der vier Quantenzahlen
-- Reichweite der Darstellung ohne vollständige Lösung des Wasserstoffatoms
--->
+**Anschluss:** Wasserstoffspektrum aus Kapitel 07 sowie Wellenfunktionen und gebundene Zustände aus Kapitel 08 und 10/11.
+
+**Funktion im Aufbau:** Die quantenmechanische Beschreibung kehrt zum Atom zurück. Auf die Kennzeichnung einzelner Zustände folgt ihre Besetzung in Atomen mit mehreren Elektronen.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Das Wasserstoffatom als gebundenes Quantensystem
+
+Coulombpotential, gebundene Zustände und Wasserstoffenergien. Ergebnisse der Schrödingergleichung einordnen, ohne ihre vollständige dreidimensionale Lösung zu verlangen.
+
+## Räumliche Zustände und Quantenzahlen
+
+Orbitale als räumliche Zustände, Bedeutung und zulässige Werte von n, l und m_l. Darstellungen von Wahrscheinlichkeitsdichten lesen.
+
+## Spin und Spinquantenzahl
+
+Spin als zusätzliche Eigenschaft und die beiden Werte von m_s beim Elektron. Von den räumlichen Quantenzahlen unterscheiden.
+
+## Zulässige Zustände und Zustandszählung
+
+Quantenzahlen kombinieren und die Zahl möglicher Zustände bestimmen, etwa für n = 3.
+
+## Pauli-Prinzip und Besetzung von Atomzuständen
+
+Zustandszahl und tatsächliche Besetzung unterscheiden. Das Pauli-Prinzip an einfachen Mehrelektronenatomen anwenden. Eine vollständige Systematik des Periodensystems ist nicht vorgesehen.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

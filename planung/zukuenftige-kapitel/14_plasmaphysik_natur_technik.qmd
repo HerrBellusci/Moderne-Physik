@@ -1,0 +1,31 @@
+# Plasmaphysik in Natur und Technik
+
+**Vorläufige Roadmap · Stand 21.09.2026**
+
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
+
+**Anschluss:** Ionisation und optische Übergänge aus Kapitel 07/12/13 sowie elektrische und magnetische Felder aus dem Grundstudium.
+
+**Funktion im Aufbau:** Von einzelnen Atomen führt der Weg zu einem System freier Ladungsträger und seinem gemeinsamen Verhalten in Natur und Technik.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Ionisation, Rekombination und der Plasmazustand
+
+Entstehung und Erhaltung freier Ladungsträger. Den Plasmazustand von einer bloßen Sammlung einzelner Ionen unterscheiden.
+
+## Geladene Teilchen in elektrischen und magnetischen Feldern
+
+Bewegung von Elektronen und Ionen. Benötigte Grundlagen zu elektrischer Kraft und Lorentzkraft auffrischen.
+
+## Kollektives Verhalten und elektrische Abschirmung
+
+Gemeinsames Verhalten vieler Ladungsträger, Quasineutralität und Abschirmung qualitativ einführen. Die mathematische Tiefe bleibt auf einen Überblick begrenzt.
+
+## Plasmen in Natur und Technik
+
+Die erarbeiteten Begriffe an ausgewählten Beispielen wie Polarlicht und Gasentladung anwenden. Spektren als Rückbezug auf die Atomphysik nutzen.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.

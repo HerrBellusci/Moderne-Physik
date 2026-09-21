@@ -1,15 +1,35 @@
-# Unschärferelationen und Grenzen des Bohrschen Atommodells
+# Unschärferelationen und klassischer Grenzfall
 
-::: {.callout-note}
-## Entwicklungsstatus
+**Vorläufige Roadmap · Stand 21.09.2026**
 
-Vorläufige Roadmap. Dieses Kapitel ist noch nicht ausgearbeitet und nicht in das Workbook eingebunden. Die genaue fachliche Darstellung der Energie-Zeit-Unschärferelation muss vor einer Ausarbeitung gesondert geprüft werden.
-:::
+Dieses Kapitel ist ein Planungsgerüst für die spätere Erweiterung des Workbooks. Es gehört nicht zum veröffentlichten Prototyp. Titel, Zuschnitt und Unterkapitel sind vorläufig. Lernziele, Aufgaben, Lösungen und Veranschaulichungen werden erst bei der Ausarbeitung ergänzt.
 
-<!--
-Vorläufiger Zuschnitt nach der eigenen Vorlesungszusammenfassung:
-- Heisenbergsche Unschärferelation
-- Energie-Zeit-Unschärferelation
-- Abgrenzung von Messunsicherheit und quantenmechanischer Unschärfe
-- Konsequenzen für die Vorstellung fester Elektronenbahnen im Bohrschen Atommodell
--->
+**Anschluss:** De-Broglie-Beziehung aus Kapitel 06, Wellenfunktion und Überlagerung aus Kapitel 08.
+
+**Funktion im Aufbau:** Die Grenzen der Bahnvorstellung werden geklärt. Das Korrespondenzprinzip ordnet den Anschluss an die klassische Physik ein.
+
+Die Unterkapitel stehen in der vorgesehenen Lesereihenfolge. Die nachfolgenden Sätze beschreiben den geplanten Umfang und sind noch kein Workbooktext.
+
+## Wellenpakete und räumliche Lokalisierung
+
+Überlagerung verschiedener Wellenlängen als anschaulicher Zugang zu räumlich lokalisierten Zuständen. Keine Fourier-Rechnung erforderlich.
+
+## Orts-Impuls-Unschärferelation
+
+Streuungen der Orts- und Impulsmesswerte und ihre Beziehung. Quantenmechanische Unschärfe von begrenzter Messgenauigkeit unterscheiden.
+
+## Energie-Zeit-Unschärferelation
+
+Ein begrenzter Zugang über Lebensdauer und spektrale Breite ist vorgesehen. Bedeutung der Größen und Reichweite der Beziehung vor der Ausarbeitung fachlich prüfen.
+
+## Grenzen der Bohrschen Bahnvorstellung
+
+Die in Kapitel 07 eingeführte Bahnvorstellung anhand der quantenmechanischen Zustandsbeschreibung beurteilen.
+
+## Korrespondenzprinzip und klassischer Grenzfall
+
+An geeigneten Größenordnungen erläutern, unter welchen Bedingungen klassische Beschreibungen brauchbar bleiben. In Kapitel 10 am Potentialtopf wieder aufgreifen.
+
+## Sichern und anwenden
+
+Vorgesehen sind der Selbstcheck entlang der Lernziele und vertiefende Aufgaben, die die Inhalte dieses Kapitels verbinden.
