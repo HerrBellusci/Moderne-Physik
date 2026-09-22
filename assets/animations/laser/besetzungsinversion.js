@@ -2,7 +2,7 @@
   const MUTED = "#64748b";
   const LEVEL = "#334155";
   const UP = "#f59e0b";
-  const DOWN = "#2563eb";
+  const DOWN = "#94a3b8";
   const PHOTON = "#e11d48";
 
   const CANVAS_H = 280;
@@ -75,11 +75,11 @@
     const upper = up > 0.5;
     SRT.el("line", {
       x1: x - HW, y1: YU, x2: x + HW, y2: YU,
-      stroke: LEVEL, "stroke-width": 2.6, "stroke-linecap": "round"
+      stroke: UP, "stroke-width": 2.6, "stroke-linecap": "round"
     }, parent);
     SRT.el("line", {
       x1: x - HW, y1: YL, x2: x + HW, y2: YL,
-      stroke: LEVEL, "stroke-width": 2.6, "stroke-linecap": "round"
+      stroke: DOWN, "stroke-width": 2.6, "stroke-linecap": "round"
     }, parent);
     SRT.el("circle", {
       cx: x, cy: mix(YL, YU, up), r: 8.5,

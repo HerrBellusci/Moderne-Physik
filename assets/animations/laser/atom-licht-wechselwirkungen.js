@@ -8,7 +8,7 @@
   const PHOTON = "#e11d48";
   const PHOTON_SOFT = "#fb7185";
   const ENERGY = "#f59e0b";
-  const ELECTRON = "#2563eb";
+  const GROUND = "#94a3b8";
 
   const ATOM = {
     cx: 430,
@@ -123,7 +123,7 @@
       y1: ATOM.e2,
       x2: ATOM.x1,
       y2: ATOM.e2,
-      stroke: activeUpper ? ENERGY : LEVEL,
+      stroke: ENERGY,
       "stroke-width": activeUpper ? 4 : 2.4,
       "stroke-linecap": "round"
     }, parent);
@@ -132,7 +132,7 @@
       y1: ATOM.e1,
       x2: ATOM.x1,
       y2: ATOM.e1,
-      stroke: activeUpper ? LEVEL : ENERGY,
+      stroke: GROUND,
       "stroke-width": activeUpper ? 2.4 : 4,
       "stroke-linecap": "round"
     }, parent);
@@ -169,7 +169,7 @@
       cx: ATOM.ex,
       cy: electronY,
       r: 9,
-      fill: ELECTRON,
+      fill: activeUpper ? ENERGY : GROUND,
       stroke: "#dbeafe",
       "stroke-width": 2,
       filter: "url(#glow)"

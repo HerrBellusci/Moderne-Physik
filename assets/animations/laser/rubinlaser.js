@@ -1,181 +1,67 @@
 (function () {
-  const W = 862;
-  const H_AUFBAU = 280;
-  const H_NIVEAUS = 270;
-  const INK = "#172033";
-  const MUTED = "#64748b";
-  const LEVEL = "#334155";
-  const PUMP = "#2563eb";
-  const RED = "#e11d48";
+  const W = 862, H = 350;
+  const C = { ink: "#172033", muted: "#64748b", ground: "#94a3b8", upper: "#f59e0b", pump: "#7653c4", light: "#df2551" };
+  const Y = { 1: 322, 2: 178, 3: 74 };
+  const CYCLE = 15000;
 
-  // Aufbau-Schema
-  const ROD = { x0: 214, x1: 606, y0: 128, y1: 188, cy: 158 };
-  const MIR_L = { x0: 198, x1: 212 };
-  const MIR_R = { x0: 608, x1: 622 };
-
-  // Drei-Niveau-Schema
-  const LX0 = 350;
-  const LX1 = 620;
-  const E3 = 82;
-  const E2 = 132;
-  const E1 = 216;
-  const DOT_X = 440;
-
-  const CYCLE = 6400;
-
-  function clamp(v, a, b) { return Math.max(a, Math.min(b, v)); }
-  function ease(v) { const x = clamp(v, 0, 1); return x * x * (3 - 2 * x); }
-  function mix(a, b, p) { return a + (b - a) * clamp(p, 0, 1); }
-  function ramp(p, a, b) { return ease((p - a) / (b - a)); }
-
-  function phases(t) {
-    const p = (t % CYCLE) / CYCLE;
-    return {
-      p,
-      flash: ramp(p, 0.05, 0.10) * (1 - ramp(p, 0.22, 0.28)),
-      glow: ramp(p, 0.34, 0.50) * (1 - ramp(p, 0.84, 0.95)),
-      beam: ramp(p, 0.50, 0.56) * (1 - ramp(p, 0.84, 0.95))
-    };
+  function text(parent, SRT, x, y, value, size = 24, color = C.ink, anchor = "start") {
+    return SRT.addText(parent, x, y, value, "label", { fill: color, "font-size": size, "font-weight": 600, "text-anchor": anchor });
   }
-
-  function vArrow(parent, SRT, x, y1, y2, color, opacity, dash) {
-    const attrs = {
-      x1: x, y1, x2: x, y2,
-      stroke: color, "stroke-width": 2.2, "stroke-linecap": "round", opacity
-    };
-    if (dash) attrs["stroke-dasharray"] = dash;
-    SRT.el("line", attrs, parent);
-    const dir = y2 > y1 ? 1 : -1;
-    SRT.el("path", {
-      d: `M${x - 5} ${y2 - dir * 8} L${x} ${y2} L${x + 5} ${y2 - dir * 8}`,
-      fill: "none", stroke: color, "stroke-width": 2.2,
-      "stroke-linecap": "round", "stroke-linejoin": "round", opacity
-    }, parent);
+  function line(parent, SRT, x1, y1, x2, y2, color, width = 3, extra = {}) {
+    return SRT.el("line", { x1, y1, x2, y2, stroke: color, "stroke-width": width, "stroke-linecap": "round", ...extra }, parent);
   }
-
-  function drawAufbau(parent, SRT, flash, glow, beam) {
-    // Lichtschein der Blitzlampe
-    if (flash > 0.01) {
-      SRT.el("rect", {
-        x: ROD.x0 - 10, y: ROD.y0 - 26, width: ROD.x1 - ROD.x0 + 20, height: ROD.y1 - ROD.y0 + 52,
-        rx: 18, fill: "#fde68a", opacity: flash * 0.35, filter: "url(#glow)"
-      }, parent);
-    }
-
-    // Rubinstab
-    SRT.el("rect", {
-      x: ROD.x0, y: ROD.y0, width: ROD.x1 - ROD.x0, height: ROD.y1 - ROD.y0,
-      rx: 8, fill: "#f6c9d4", stroke: "#d16b85", "stroke-width": 2
-    }, parent);
-
-    // Rotes Licht im Stab (Rechteck statt Linie: horizontale Linien haben
-    // eine Bounding-Box mit Höhe null, dann zeichnet der Glow-Filter nichts)
-    if (glow > 0.01) {
-      const gh = mix(2, 9, glow);
-      SRT.el("rect", {
-        x: ROD.x0 + 8, y: ROD.cy - gh / 2, width: ROD.x1 - ROD.x0 - 16, height: gh,
-        rx: gh / 2, fill: RED, opacity: glow * 0.85, filter: "url(#glow)"
-      }, parent);
-    }
-
-    // Blitzlampe als Wendel um den Stab
-    for (let x = 254; x <= 566; x += 52) {
-      SRT.el("ellipse", {
-        cx: x, cy: ROD.cy, rx: 15, ry: 48,
-        fill: "none",
-        stroke: flash > 0.15 ? "#fbbf24" : "#cbd5e1",
-        "stroke-width": mix(3, 4.5, flash),
-        opacity: mix(0.85, 1, flash),
-        filter: flash > 0.15 ? "url(#glow)" : "none"
-      }, parent);
-    }
-
-    // Spiegel
-    SRT.el("rect", { x: MIR_L.x0, y: ROD.y0 - 12, width: MIR_L.x1 - MIR_L.x0, height: ROD.y1 - ROD.y0 + 24, rx: 3, fill: "#334155" }, parent);
-    SRT.el("rect", { x: MIR_R.x0, y: ROD.y0 - 12, width: MIR_R.x1 - MIR_R.x0, height: ROD.y1 - ROD.y0 + 24, rx: 3, fill: "#94a3b8" }, parent);
-
-    // Laserstrahl (Rechteck statt Linie, siehe Hinweis oben)
-    if (beam > 0.01) {
-      const bx = mix(MIR_R.x1, 826, beam);
-      SRT.el("rect", {
-        x: MIR_R.x1, y: ROD.cy - 3.5, width: bx - MIR_R.x1, height: 7,
-        rx: 3.5, fill: RED, opacity: beam, filter: "url(#glow)"
-      }, parent);
-      SRT.el("path", {
-        d: `M${bx - 2} ${ROD.cy - 7} L${bx + 10} ${ROD.cy} L${bx - 2} ${ROD.cy + 7}`,
-        fill: RED, opacity: beam
-      }, parent);
-    }
-
-    // Beschriftungen
-    SRT.addText(parent, 410, 62, "Blitzlampe", "label", { fill: INK, "font-size": 13.5, "font-weight": "800", "text-anchor": "middle" });
-    SRT.el("line", { x1: 410, y1: 70, x2: 410, y2: 102, stroke: "#cbd5e1", "stroke-width": 1.4 }, parent);
-    SRT.addText(parent, 410, 236, "Rubinstab: Korund mit Chrom-Ionen", "label", { fill: MUTED, "font-size": 12.5, "font-weight": "750", "text-anchor": "middle" });
-    SRT.addText(parent, 205, 84, "voll reflektierender", "label", { fill: MUTED, "font-size": 12, "font-weight": "750", "text-anchor": "middle" });
-    SRT.addText(parent, 205, 100, "Spiegel", "label", { fill: MUTED, "font-size": 12, "font-weight": "750", "text-anchor": "middle" });
-    SRT.addText(parent, 617, 84, "teildurchlässiger", "label", { fill: MUTED, "font-size": 12, "font-weight": "750", "text-anchor": "middle" });
-    SRT.addText(parent, 617, 100, "Spiegel", "label", { fill: MUTED, "font-size": 12, "font-weight": "750", "text-anchor": "middle" });
-    SRT.addText(parent, 730, 134, "Laserstrahl, 694 nm", "label", { fill: INK, "font-size": 12.5, "font-weight": "750", "text-anchor": "middle" });
+  function arrow(parent, SRT, x, y1, y2, color, active, dashed = false) {
+    const opacity = active ? 1 : 0.4;
+    line(parent, SRT, x, y1, x, y2, color, active ? 5 : 3, { opacity, ...(dashed ? {"stroke-dasharray":"7 7"} : {}) });
+    const d = y2 > y1 ? 1 : -1;
+    SRT.el("path", { d: `M${x-8} ${y2-d*12} L${x} ${y2} L${x+8} ${y2-d*12}`, fill: "none", stroke: color, "stroke-width": active ? 5 : 3, opacity }, parent);
   }
+  function draw({parent, SRT, t, state}) {
+    SRT.clear(parent);
+    if (state.restart) { state.origin = t; state.restart = false; }
+    const p = ((t - state.origin) % CYCLE) / CYCLE;
+    const level = p < 0.15 ? 1 : p < 0.25 ? 3 : p < 0.72 ? 2 : 1;
+    const pump = p >= 0.07 && p < 0.25;
+    const relax = p >= 0.25 && p < 0.34;
+    const emit = p >= 0.72 && p < 0.90;
+    SRT.el("rect", { x:0, y:0, width:W, height:H, fill:"#fff" }, parent);
 
-  function dotY(p) {
-    if (p < 0.10) return E1;
-    if (p < 0.18) return mix(E1, E3, ease((p - 0.10) / 0.08));
-    if (p < 0.26) return E3;
-    if (p < 0.34) return mix(E3, E2, ease((p - 0.26) / 0.08));
-    if (p < 0.62) return E2;
-    if (p < 0.70) return mix(E2, E1, ease((p - 0.62) / 0.08));
-    return E1;
-  }
-
-  function drawNiveaus(parent, SRT, p, flash, beam) {
-    SRT.addText(parent, (LX0 + LX1) / 2, 42, "Drei-Niveau-System der Chrom-Ionen", "label", { fill: INK, "font-size": 14, "font-weight": "800", "text-anchor": "middle" });
-
-    const levels = [
-      { y: E3, key: "E₃", name: "Pumpniveau" },
-      { y: E2, key: "E₂", name: "metastabil" },
-      { y: E1, key: "E₁", name: "Grundzustand" }
-    ];
-    levels.forEach((level) => {
-      SRT.el("line", { x1: LX0, y1: level.y, x2: LX1, y2: level.y, stroke: LEVEL, "stroke-width": 2.4, "stroke-linecap": "round" }, parent);
-      SRT.addText(parent, LX0 - 12, level.y + 5, level.key, "label", { fill: INK, "font-size": 14, "font-weight": "850", "text-anchor": "end" });
-      SRT.addText(parent, LX1 + 12, level.y + 5, level.name, "label", { fill: MUTED, "font-size": 12.5, "font-weight": "750", "text-anchor": "start" });
+    [[3,"Pumpniveau (vereinfacht)",C.pump],[2,"metastabiles Laserniveau",C.upper],[1,"Grundzustand",C.ground]].forEach(([n,name,color]) => {
+      text(parent,SRT,44,Y[n]+8,`*E*${["","₁","₂","₃"][n]}`,27);
+      if (n === 3) SRT.el("rect",{x:102,y:Y[n]-12,width:702,height:24,fill:color,opacity:.10},parent);
+      line(parent,SRT,102,Y[n],804,Y[n],color,4);
+      text(parent,SRT,800,Y[n]-22,name,26,C.ink,"end");
     });
+    arrow(parent,SRT,207,Y[1]-15,Y[3]+15,C.pump,pump);
+    text(parent,SRT,192,231,"Pumpen",23,C.pump,"end");
+    arrow(parent,SRT,401,Y[3]+15,Y[2]-15,C.muted,relax,true);
+    text(parent,SRT,420,103,"schnell,",23,C.muted);
+    text(parent,SRT,420,129,"strahlungslos",23,C.muted);
+    arrow(parent,SRT,546,Y[2]+17,Y[1]-17,C.light,emit);
+    text(parent,SRT,564,239,"Laserübergang",23,C.light);
+    text(parent,SRT,564,267,"694 nm",23,C.light);
 
-    // Übergänge: Pumpen, schneller Übergang, Laserübergang
-    const decayEmph = ramp(p, 0.26, 0.30) * (1 - ramp(p, 0.36, 0.42));
-    vArrow(parent, SRT, 396, E1 - 8, E3 + 8, PUMP, 0.35 + flash * 0.65);
-    SRT.addText(parent, 388, (E1 + E3) / 2 + 4, "Pumpen", "label", { fill: PUMP, "font-size": 12, "font-weight": "750", "text-anchor": "end" });
-    vArrow(parent, SRT, 484, E3 + 8, E2 - 8, MUTED, 0.35 + decayEmph * 0.65, "4 5");
-    SRT.addText(parent, 492, (E3 + E2) / 2 + 4, "schneller Übergang", "label", { fill: MUTED, "font-size": 12, "font-weight": "750", "text-anchor": "start" });
-    vArrow(parent, SRT, 560, E2 + 8, E1 - 8, RED, 0.35 + beam * 0.65);
-    SRT.addText(parent, 568, (E2 + E1) / 2 + 4, "694 nm", "label", { fill: RED, "font-size": 12, "font-weight": "750", "text-anchor": "start" });
+    // Diskrete Zustandswechsel, keine Bahn durch Zwischenenergien.
+    const fill = level === 3 ? C.pump : level === 2 ? C.upper : C.ground;
+    SRT.el("circle", {cx:737,cy:Y[level],r:12,fill,stroke:"white","stroke-width":3},parent);
+    if (level === 2) SRT.el("circle", {cx:737,cy:Y[level],r:17,fill:"none",stroke:C.upper,"stroke-width":2},parent);
 
-    // Punkt: Energiezustand eines Chrom-Ions
-    const y = dotY(p);
-    const upper = y < (E2 + E1) / 2;
-    SRT.el("line", { x1: DOT_X, y1: E3, x2: DOT_X, y2: E1, stroke: "#cbd5e1", "stroke-width": 1.2, "stroke-dasharray": "4 7", opacity: 0.6 }, parent);
-    SRT.el("circle", {
-      cx: DOT_X, cy: y, r: 7.5,
-      fill: upper ? "#f59e0b" : PUMP, stroke: "#ffffff", "stroke-width": 1.8, filter: "url(#glow)"
-    }, parent);
+    // Ein roter Punkt steht wie beim Resonator für ein Photon.
+    // Die Photonensymbole markieren hier den Auslöser der Emission.
+    if (p >= .58 && p < .72) {
+      const x = 820 - (p-.58)/.14*83;
+      SRT.el("circle", {cx:x,cy:Y[2],r:5,fill:C.light},parent);
+    }
+    if (p >= .72 && p < .85) {
+      const x = 737 - (p-.72)/.13*100;
+      [-8,8].forEach(d => SRT.el("circle",{cx:x,cy:Y[2]+d,r:5,fill:C.light},parent));
+    }
+
   }
-
-  window.SRTSlide.register("laser-rubinlaser", {
-    render: ({ parent, t, SRT }) => {
-      SRT.clear(parent);
-      SRT.el("rect", { x: 0, y: 0, width: W, height: H_AUFBAU, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
-      const { flash, glow, beam } = phases(t);
-      drawAufbau(parent, SRT, flash, glow, beam);
-    }
-  });
-
   window.SRTSlide.register("laser-rubinlaser-niveaus", {
-    render: ({ parent, t, SRT }) => {
-      SRT.clear(parent);
-      SRT.el("rect", { x: 0, y: 0, width: W, height: H_NIVEAUS, rx: 8, fill: "#ffffff", stroke: "#e2e8f0" }, parent);
-      const { p, flash, beam } = phases(t);
-      drawNiveaus(parent, SRT, p, flash, beam);
-    }
+    initialState: {origin:0, restart:false},
+    controls: [{type:"button",label:"Zurücksetzen",apply:state=>{state.restart=true;}}],
+    showMotionControl: true,
+    render: draw
   });
 })();

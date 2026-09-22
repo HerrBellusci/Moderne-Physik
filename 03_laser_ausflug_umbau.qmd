@@ -5,14 +5,15 @@
 <link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260919-laserlayout">
 <link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260918">
 <script src="assets/animations/shared/core.js"></script>
-<script src="assets/animations/laser/atom-licht-wechselwirkungen.js"></script>
-<script src="assets/animations/laser/besetzungsinversion.js?v=20260918-layout2"></script>
-<script src="assets/animations/laser/metastabil.js?v=20260919"></script>
+<script src="assets/animations/laser/atom-licht-wechselwirkungen.js?v=20260922c"></script>
+<script src="assets/animations/laser/besetzungsinversion.js?v=20260922c"></script>
+<script src="assets/animations/laser/metastabil.js?v=20260922c"></script>
 <link rel="stylesheet" href="assets/animations/laser/resonator.css?v=20260921d">
 <script src="assets/animations/laser/resonator.js?v=20260921d"></script>
-<link rel="stylesheet" href="assets/animations/laser/resonator-moden.css?v=20260921e">
-<script src="assets/animations/laser/resonator-moden.js?v=20260921e"></script>
-<script src="assets/animations/laser/rubinlaser.js"></script>
+<link rel="stylesheet" href="assets/animations/laser/resonator-moden.css?v=20260922a">
+<script src="assets/animations/laser/resonator-moden.js?v=20260922b"></script>
+<link rel="stylesheet" href="assets/animations/laser/rubinlaser.css?v=20260922d">
+<script src="assets/animations/laser/rubinlaser.js?v=20260922d"></script>
 <script src="assets/animations/laser/he-ne.js"></script>
 <script src="assets/animations/laser/hene-spektroskop.js"></script>
 <script src="assets/animations/shared/workbook.js?v=20260921"></script>
@@ -21,7 +22,13 @@
 
 Laser begegnen dir ständig im Alltag. Im Glasfasernetz transportiert Laserlicht beispielsweise deine Daten durch das Internet. Bei Veranstaltungen erzeugen Laser Lichtshows, in Präsentationen dienen sie als Pointer und in Hautarztpraxen entfernen sie Tattoos und Pigmentflecken. Mit Laserpulsen lassen sich außerdem Entfernungen extrem genau messen, sogar die Distanz von der Erde zum Mond.
 
-Was diese unterschiedlichen Anwendungen verbindet, steckt bereits im Namen „Laser“. Das Akronym steht für „Light Amplification by Stimulated Emission of Radiation“, also Lichtverstärkung durch stimulierte Emission von Strahlung. Der Name weist zugleich den Weg durch dieses Kapitel. Zunächst untersuchst du mit der Absorption, der spontanen Emission und der stimulierten Emission drei grundlegende Prozesse bei der Wechselwirkung von Licht und Atomen. Damit im Lasermedium mehr Photonen durch stimulierte Emission entstehen als absorbiert werden, braucht es eine Besetzungsinversion. Der Resonator führt das Licht wiederholt durch das Medium. Am Rubinlaser untersuchst du anschließend, wie die einzelnen Bausteine zu einem vollständigen Laser zusammenwirken. Der Helium-Neon-Laser zeigt dir danach, wie dasselbe Grundprinzip in einem anderen Lasertyp umgesetzt wird. Da Laser auch im Physikunterricht zum Einsatz kommen können, schließt das Kapitel mit den Laserklassen und den Schutzmaßnahmen für einen sicheren Umgang.
+Was diese unterschiedlichen Anwendungen verbindet, steckt bereits im Namen „Laser“. Das Akronym steht für „Light Amplification by Stimulated Emission of Radiation“, also Lichtverstärkung durch stimulierte Emission von Strahlung. Der Name weist zugleich den Weg durch dieses Kapitel. Zunächst untersuchst du mit der Absorption, der spontanen Emission und der stimulierten Emission drei grundlegende Prozesse bei der Wechselwirkung von Licht und Atomen. Damit im Lasermedium mehr Photonen durch stimulierte Emission entstehen als absorbiert werden, braucht es eine Besetzungsinversion. Der Resonator führt das Licht wiederholt durch das Medium. Am Rubinlaser untersuchst du anschließend, wie die wichtigsten Bestandteile eines Lasers zusammenwirken. Der Helium-Neon-Laser zeigt dir danach, wie dasselbe Grundprinzip in einem anderen Lasertyp umgesetzt wird. Da Laser auch im Physikunterricht zum Einsatz kommen können, schließt das Kapitel mit den Laserklassen und den Schutzmaßnahmen für einen sicheren Umgang.
+
+::: {.column-margin}
+David Phillips führt im Vortrag [„Crystals and lasers: Constructing a laser“](https://www.rigb.org/explore-science/explore/video/crystals-and-lasers-constructing-laser-1987) mit Experimenten und Analogien durch die Grundlagen des Lasers. Der gesamte englischsprachige Vortrag eignet sich zur Vertiefung dieses Kapitels.
+
+Auch der englischsprachige MIT-Kurs [„Understanding Lasers and Fiberoptics“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/) von Shaoul Ezekiel bietet eine Vertiefung. Das Video [„Laser Fundamentals I“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/resources/laser-fundamentals-i/) behandelt insbesondere die Eigenschaften des Laserlichts. Beide Angebote findest du in der [weiterführenden Literatur](references.qmd#weiterführende-literatur).
+:::
 
 ## Stimulierte Emission
 
@@ -57,7 +64,7 @@ Erfüllt ein Photon diese Bedingung, wird es vollständig absorbiert. Es übertr
 
 Beim schwarzen T-Shirt absorbieren Farbstoffmoleküle viele der einfallenden Photonen. Die Moleküle besitzen zahlreiche Energieniveaus. Das Zwei-Niveau-Modell bildet daher nur den grundlegenden Absorptionsvorgang ab. Nach der Absorption wird ein großer Teil der aufgenommenen Energie durch strahlungslose Übergänge auf Schwingungen im Material übertragen. Dadurch steigt die Temperatur des T-Shirts.
 
-@fig-umbau-laser-absorption zeigt einen einzelnen Absorptionsvorgang im vereinfachten Zwei-Niveau-Modell. Der große Kreis kennzeichnet das betrachtete Atom. Die beiden waagerechten Linien stehen für seine Energieniveaus. Der blaue Punkt ist kein Elektron. Er markiert den Energiezustand des gesamten Atoms und wechselt bei der Absorption von $E_1$ nach $E_2$.
+@fig-umbau-laser-absorption zeigt einen einzelnen Absorptionsvorgang im vereinfachten Zwei-Niveau-Modell. Der große Kreis kennzeichnet das betrachtete Atom. Die beiden waagerechten Linien stehen für seine Energieniveaus. Der Punkt ist kein Elektron. Er markiert den Energiezustand des gesamten Atoms und wechselt bei der Absorption von $E_1$ nach $E_2$. Grau steht für den Grundzustand $E_1$, Gelb für den angeregten Zustand $E_2$.
 
 ::: {.content-visible when-format="html"}
 ::: {#fig-umbau-laser-absorption}
@@ -305,13 +312,13 @@ Das metastabile Niveau lässt sich durch eine Kugelmulde an einem Hang veranscha
 
 Beim Verlassen der Mulde endet die Analogie. Die Kugel könnte die Mulde nur verlassen, wenn ihr von außen Energie zugeführt würde. Das Atom benötigt dagegen keine zusätzliche Energie, um vom metastabilen Niveau $E_2$ in den Grundzustand $E_1$ zu wechseln. Es kann nach einer zufälligen Wartezeit spontan nach $E_1$ übergehen. Ein passendes Photon kann diesen Übergang stattdessen durch stimulierte Emission auslösen. Das einfallende Photon wird dabei nicht absorbiert und liefert dem Atom keine Aktivierungsenergie oder einen energetischen „Schubs“. Das einfallende Photon bleibt erhalten. Die Energie des zusätzlich entstehenden Photons stammt vollständig aus der Energiedifferenz $E_2-E_1$ des Atoms.
 
-In @fig-umbau-laser-metastabil kannst du die Kugelmulden-Analogie mit einem Energieniveauschema mit drei Niveaus vergleichen. Links bleibt die Kugel in der Mulde liegen. Rechts markiert der blaue Punkt den Energiezustand des Atoms. Er wechselt vom Pumpniveau $E_3$ schnell in das metastabile Niveau $E_2$ und nach einer längeren Wartezeit in den Grundzustand $E_1$.
+In @fig-umbau-laser-metastabil kannst du die Kugelmulden-Analogie mit einem Energieniveauschema mit drei Niveaus vergleichen. Links bleibt die Kugel in der Mulde liegen. Rechts markiert der Punkt den Energiezustand des Atoms. Violett steht für das Pumpniveau $E_3$, Gelb für das metastabile Niveau $E_2$ und Grau für den Grundzustand $E_1$. Er wechselt vom Pumpniveau $E_3$ schnell in das metastabile Niveau $E_2$ und nach einer längeren Wartezeit in den Grundzustand $E_1$.
 
 :::: {#fig-umbau-laser-metastabil}
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="laser-metastabil" data-srt-motion-control data-srt-label="Links rollt eine Kugel einen Hang hinab und bleibt in einer Mulde liegen. Rechts markiert ein blauer Punkt den Energiezustand eines Atoms im Drei-Niveau-Schema. Er wechselt vom Pumpniveau E3 schnell in das metastabile Niveau E2 und nach längerer Wartezeit in den Grundzustand E1. Die Kugel bleibt währenddessen in der Mulde."></div>
+  <div class="srt-workbook-stage" data-srt-animation="laser-metastabil" data-srt-motion-control data-srt-label="Links rollt eine Kugel einen Hang hinab und bleibt in einer Mulde liegen. Rechts markiert ein je nach Energieniveau violetter, gelber oder grauer Punkt den Energiezustand eines Atoms im Drei-Niveau-Schema. Er wechselt vom Pumpniveau E3 schnell in das metastabile Niveau E2 und nach längerer Wartezeit in den Grundzustand E1. Die Kugel bleibt währenddessen in der Mulde."></div>
 </div>
 ```
 :::
@@ -350,18 +357,18 @@ Diese Erklärung ist eine Hypothese auf Grundlage des bisher verwendeten Energie
 ## Resonator
 
 ::: {.mp-goal-strip}
-Du <u>beschreibst</u> den Aufbau eines optischen Resonators.
+Du <u>beschreibst</u> den Aufbau eines einfachen optischen Resonators und die Auskopplung des Laserstrahls.
 
-Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird.
+Du <u>erklärst</u>, wie die Spiegel wiederholte Durchgänge durch das Lasermedium ermöglichen und dadurch die Lichtverstärkung entlang der Spiegelachse begünstigen.
 
-Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
+Du <u>erläuterst</u> die Resonanzbedingung anhand stehender Wellen und <u>berechnest</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
 :::
 
 Im vorherigen Unterkapitel hast du kennengelernt, wie durch Pumpen eine Besetzungsinversion aufgebaut werden kann. Ein solches Lasermedium kann Licht verstärken. Es gibt aber weiterhin Licht in unterschiedliche Richtungen ab. Bei einem Laserpointer tritt dagegen ein schmaler, gerichteter Strahl aus. Um diesen Unterschied zu verstehen, betrachten wir zunächst die Ausbreitungsrichtungen der Photonen.
 
 Durch spontane Emission entstehen im Lasermedium Photonen in unterschiedlichen Richtungen. Löst eines davon stimulierte Emission aus, breitet sich das zusätzliche Photon in derselben Richtung aus wie das auslösende. Licht kann deshalb zunächst in verschiedenen Richtungen verstärkt werden und das Medium anschließend verlassen.
 
-Ein optischer Resonator ermöglicht, dass ein Teil des Lichts das Lasermedium wiederholt durchquert. Ein einfacher optischer Resonator besteht aus zwei gegenüberliegenden Spiegeln. Zwischen ihnen liegt das Lasermedium. Einer der Spiegel reflektiert das Licht nahezu vollständig. Der andere ist teildurchlässig und lässt einen Teil des Lichts als Laserstrahl austreten. Den übrigen Teil reflektiert er zurück.
+Ein optischer Resonator ermöglicht, dass ein Teil des Lichts das Lasermedium wiederholt durchquert. Ein einfacher optischer Resonator besteht aus zwei gegenüberliegenden Spiegeln. Zwischen ihnen liegt das Lasermedium. Einer der Spiegel reflektiert das Licht nahezu vollständig. Der andere ist teildurchlässig und lässt einen Teil des Lichts als Laserstrahl austreten. Dieser Spiegel heißt Auskoppelspiegel.[Auskoppelspiegel]{.column-margin .mp-randbegriff} Den übrigen Teil reflektiert er zurück.
 
 Licht, das sich annähernd entlang der Spiegelachse ausbreitet, wird abwechselnd an beiden Spiegeln reflektiert. Dabei durchquert es wiederholt das gepumpte Lasermedium und kann weitere stimulierte Emission auslösen. Die zusätzlichen Photonen besitzen dieselbe Frequenz und Ausbreitungsrichtung wie die jeweils auslösenden Photonen. Bei Licht, das sich unter einem größeren Winkel zur Spiegelachse ausbreitet, treffen die Photonen nach kurzer Zeit nicht mehr auf die Spiegel und verlassen den Bereich zwischen ihnen seitlich. Entlang der Spiegelachse sind dagegen viele Durchgänge möglich, bei denen weitere Photonen durch stimulierte Emission hinzukommen können.
 
@@ -384,7 +391,7 @@ In der HTML-Version kannst du zwischen einem gepumpten Lasermedium mit und ohne 
 :::
 :::
 
-Simulation zum optischen Pumpen und zur Lichtausbreitung in einem Lasermedium mit und ohne Resonator. Das rote Band fasst das entlang der Achse ausgekoppelte Licht zusammen; seine Stärke gibt den zeitlich gemittelten Photonenaustritt qualitativ wieder. Teilchenzahl, Zeiten und Lichtwege sind schematisch. Absorption und Streuung an den Spiegeln werden vernachlässigt.
+Simulation zum optischen Pumpen und zur Lichtausbreitung in einem Lasermedium mit und ohne Resonator. Das rote Band zeigt den austretenden Strahl. Je mehr Photonen im zeitlichen Mittel durch den Auskoppelspiegel austreten, desto kräftiger erscheint es. Teilchenzahl, Zeiten und Lichtwege sind schematisch. Absorption und Streuung an den Spiegeln werden vernachlässigt.
 ::::
 
 ::: {.mp-box .mp-task}
@@ -393,21 +400,25 @@ Simulation zum optischen Pumpen und zur Lichtausbreitung in einem Lasermedium mi
   Denkcheck
 </span>
 
-Ein Photon entsteht im Lasermedium durch spontane Emission und läuft schräg zur Resonatorachse.
+Ein Photon entsteht im Lasermedium durch spontane Emission und breitet sich schräg zur Resonatorachse aus.
 
-<u>Begründe</u>, dass es den Laserstrahl nicht aufbaut.
+<u>Begründe</u>, dass dieses Photon im dargestellten Aufbau nicht dauerhaft zwischen den Spiegeln hin und her reflektiert wird.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Das Photon trifft die Spiegel nicht immer wieder. Es verlässt das Lasermedium nach kurzer Zeit. Damit durchquert es das Medium nur selten und löst kaum stimulierte Emission in Strahlrichtung aus. Für den Laserstrahl werden vor allem Photonen verstärkt, die entlang der Resonatorachse laufen.
+Bei den dargestellten ebenen Spiegeln bleibt der Winkel zur Spiegelachse bei jeder Reflexion erhalten. Das Photon bewegt sich deshalb zugleich seitlich weiter, bis es einen Spiegel verfehlt und den Resonator verlässt. Löst es unterwegs stimulierte Emission aus, breiten sich die zusätzlichen Photonen in derselben schrägen Richtung aus.
 
 </details>
 
-Für die stehenden Wellen im Resonator verwenden wir das Wellenmodell. Treffen Wellen aufeinander, überlagern sich ihre Schwingungen. Je nach Phasenlage fallen die Schwingungen dabei stärker oder schwächer aus, sie können sich auch vollständig aufheben. Dieses Phänomen heißt Interferenz.[Interferenz]{.column-margin .mp-randbegriff}
+Bisher ging es darum, wie die Spiegel Licht wiederholt durch das Lasermedium führen. Der Resonator beeinflusst außerdem, welche Wellenlängen zum Laserlicht beitragen können. Um diesen Zusammenhang zu verstehen, betrachten wir Licht nun im Wellenmodell.
 
-Im Resonator überlagern sich die zum Spiegel gerichtete Lichtwelle und die von ihm reflektierte Lichtwelle. Die reflektierte Welle breitet sich zurück aus, der einfallenden Welle entgegen. Haben beide Wellen dieselbe Frequenz, Wellenlänge und Amplitude, entsteht bei gleicher Schwingungsrichtung eine stehende Welle.[stehende Welle]{.column-margin .mp-randbegriff} Ihr räumliches Schwingungsmuster bleibt an derselben Stelle. An den Knoten findet keine Schwingung statt. Zwischen ihnen liegen die Bäuche mit der größten Amplitude, also dem größten Schwingungsausschlag.
+Treffen Wellen aufeinander, überlagern sich ihre Schwingungen. Je nach Phasenlage fallen die Schwingungen dabei stärker oder schwächer aus, sie können sich auch vollständig aufheben. Dieses Phänomen heißt Interferenz.[Interferenz]{.column-margin .mp-randbegriff}
+
+Betrachte zunächst einen der beiden Spiegel. Eine Lichtwelle erreicht ihn und wird reflektiert. Vor diesem Spiegel überlagert sich die zurückkehrende Lichtwelle mit der Lichtwelle, die den Spiegel gerade erreicht. Die beiden Wellen breiten sich dort in entgegengesetzten Richtungen aus. Sind sie sinusförmig und stimmen ihre Frequenz, Amplitude und Schwingungsrichtung überein, entsteht eine stehende Welle.
+
+Bei einer stehenden Welle bleibt das räumliche Schwingungsmuster an derselben Stelle.[stehende Welle]{.column-margin .mp-randbegriff} An den Knoten findet keine Schwingung statt. Dazwischen liegen die Bäuche. Dort ist die Schwingungsamplitude am größten. Knoten und Bäuche sind in @fig-umbau-laser-stehende-welle markiert.
 
 Vielleicht kennst du aus der Experimentalphysik einen Versuch mit dem Kundtschen Rohr. In diesem Rohr überlagern sich einfallende und reflektierte Schallwellen zu einer stehenden Welle. Die Bewegung der Luftteilchen verteilt das Korkmehl im Rohr um, sodass es sich an den Bewegungsknoten in Häufchen sammelt. Diese Häufchen machen die Lage der Knoten sichtbar.
 
@@ -482,15 +493,15 @@ Im Zahlenbeispiel enthält eine einzige Mode eine Million halber Wellenlängen. 
 
 Bisher haben wir dem Laserübergang eine einzelne Wellenlänge zugeordnet. Bei einem realen Lasermedium ist die Lichtverstärkung durch stimulierte Emission jedoch auf einen kleinen Wellenlängenbereich verteilt. Dessen Breite bezeichnen wir mit $\Delta\lambda$. Innerhalb dieses Bereichs können mehrere zum Resonator passende Wellenlängen liegen.
 
-Um den Einfluss des Spiegelabstands zu verstehen, stell dir zunächst ein Muster mit drei Bäuchen vor. Werden die Spiegel weiter auseinandergerückt, sollen weiterhin genau drei Bäuche zwischen ihnen liegen. Jeder Bauch muss dann breiter werden. Da ein Bauch eine halbe Wellenlänge umfasst, wird auch die Wellenlänge größer. Das gilt ebenso für das Muster mit einer Million Bäuchen aus der Rechnung.
+Um den Einfluss des Spiegelabstands zu verstehen, betrachten wir zunächst die Mode mit $m=3$. Bei ihr passen drei halbe Wellenlängen zwischen die Spiegel. Vergrößern wir den Abstand und behalten $m=3$ bei, müssen sich diese drei halben Wellenlängen über eine längere Strecke verteilen. Die Abstände zwischen benachbarten Knoten und damit die Wellenlänge nehmen zu. Das gilt für jede festgehaltene Modenordnung $m$, auch für $m=1\,000\,000$ aus der Rechnung. Daraus folgt jedoch noch nicht, dass die Wellenlänge des ausgesandten Laserlichts mit dem Spiegelabstand immer größer wird. Es können auch andere Moden zum Laserlicht beitragen.
 
-@fig-umbau-laser-modenbereich verbindet die beiden Bedingungen. Der gelbe Bereich zeigt die Wellenlängen, die das Lasermedium verstärken kann. Die Striche markieren Wellenlängen, die zum Spiegelabstand passen. Ein blauer Punkt markiert die Mode aus der Rechnung, damit du ihre Wellenlänge beim Verändern des Spiegelabstands verfolgen kannst. Du veränderst ausschließlich den Spiegelabstand. Die Eigenschaften des Lasermediums und damit der gelbe Bereich bleiben unverändert.
+In @fig-umbau-laser-modenbereich kannst du den Spiegelabstand verändern. Der gelbe Bereich zeigt, bei welchen Wellenlängen das Lasermedium Licht durch stimulierte Emission verstärken kann. Die senkrechten Striche markieren die Wellenlängen, bei denen sich zwischen den Spiegeln eine stehende Welle bilden kann. Violette Striche liegen zusätzlich im gelben Bereich. Bei diesen Wellenlängen ist sowohl eine stehende Welle zwischen den Spiegeln als auch Lichtverstärkung durch das Lasermedium möglich. Der blaue Punkt markiert die Mode mit $m=1\,000\,000$. Ihre Wellenlänge ändert sich mit dem Spiegelabstand, während der gelbe Bereich unverändert bleibt.
 
 :::: {#fig-umbau-laser-modenbereich}
 ::: {.content-visible when-format="html"}
 ```{=html}
 <div class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="laser-modenbereich" data-srt-viewbox-h="380" data-srt-label="Der feste gelbe Bereich zeigt Wellenlängen, die das Lasermedium verstärken kann. Senkrechte Striche markieren zum Spiegelabstand passende Wellenlängen. Ein blauer Punkt markiert durchgehend die Mode mit einer Million halber Wellenlängen. Ihr Wellenlängenwert wird angezeigt. Ein Pfeil zeigt die Änderung gegenüber dem Ausgangswert 700 Nanometer."></div>
+  <div class="srt-workbook-stage" data-srt-animation="laser-modenbereich" data-srt-viewbox-h="300" data-srt-label="Der feste gelbe Bereich zeigt Wellenlängen möglicher Lichtverstärkung. Senkrechte Striche markieren Resonanzwellenlängen. Violette Striche liegen innerhalb dieses Bereichs, graue außerhalb. Violett kennzeichnet mögliche Laserwellenlängen, keine gemessenen Emissionslinien. Der blaue Punkt verfolgt die Mode mit einer Million halber Wellenlängen. Ihr Wellenlängenwert wird angezeigt."></div>
 </div>
 ```
 :::
@@ -501,36 +512,43 @@ In der HTML-Version kannst du den Spiegelabstand um bis zu 200 nm verändern. Di
 :::
 :::
 
-Interaktives Diagramm der Resonanzwellenlängen für einen Spiegelabstand von $35\,\mathrm{cm}\pm200\,\mathrm{nm}$. Der gelbe Beispielbereich reicht von $699{,}999$ bis $700{,}001\,\mathrm{nm}$. Der blaue Punkt kennzeichnet die Mode mit $m=1\,000\,000$. Der Pfeil zeigt die Änderung ihrer Wellenlänge gegenüber dem Ausgangswert.
+Interaktives Diagramm der Resonanzwellenlängen bei einem Spiegelabstand von $35\,\mathrm{cm}\pm200\,\mathrm{nm}$. Der beispielhafte Bereich möglicher Lichtverstärkung reicht von $699{,}999$ bis $700{,}001\,\mathrm{nm}$.
 ::::
-
-Bei $35\,\mathrm{cm}$ beträgt die Wellenlänge der markierten Mode $700\,\mathrm{nm}$. Vergrößerst du den Spiegelabstand um $200\,\mathrm{nm}$, steigt sie auf $700{,}000400\,\mathrm{nm}$. Beide Werte liegen im gelben Bereich. Auch nach der Längenänderung passt diese Mode zwischen die Spiegel und das Medium kann Licht ihrer Wellenlänge verstärken.
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Verhindert schon eine kleine Änderung des Spiegelabstands die Laseremission?</div>
 
-Die Resonanzbedingung kann diesen Eindruck erwecken, wenn man von einer einzigen vorgegebenen Wellenlänge ausgeht. Das Lasermedium verstärkt jedoch Licht in einem Bereich der Breite $\Delta\lambda$. Ist dieser Bereich breit genug, liegen auch nach einer kleinen Änderung des Spiegelabstands passende Wellenlängen darin. Der Laser kann dann weiterhin einen Strahl aussenden. Dazu passt eine Beobachtung aus dem Alltag. Ein Laserpointer lässt sich in einem kühleren und einem wärmeren Raum verwenden, obwohl sich die Abmessungen seiner Bauteile durch Wärmeausdehnung geringfügig ändern. Eine solche Änderung beendet die Laseremission also nicht zwangsläufig. Die Wellenlänge des Laserstrahls kann sich dabei ändern.
+Diese Vorstellung kann entstehen, wenn du an das Kundtsche Rohr denkst. Wird der Ton dort mit einer festen Frequenz erzeugt, muss die Länge der Luftsäule dazu passen, damit eine ausgeprägte Resonanz entsteht und sich das Korkmehlmuster deutlich ausbildet.
+
+Beim Laser ist die mögliche Lichtverstärkung jedoch auf einen Wellenlängenbereich der Breite $\Delta\lambda$ verteilt. Nach einer kleinen Änderung des Spiegelabstands können weiterhin Resonanzwellenlängen in diesem Bereich liegen. Dann ist Laseremission weiterhin möglich. Ein einziger exakt vorgeschriebener Spiegelabstand ist dafür also nicht erforderlich. Dazu passt, dass ein Laserpointer in einem kühleren und einem wärmeren Raum einen Strahl aussenden kann, obwohl sich seine Bauteile durch Wärmeausdehnung geringfügig verändern. Dabei können sich die ausgesandten Wellenlängen etwas verschieben oder andere Moden zum Laserlicht beitragen.
 :::
 
-Tragen nur eine oder wenige eng benachbarte Moden zum Laserlicht bei, kann es auf einen sehr schmalen Wellenlängenbereich konzentriert sein. Monochromatisches Licht besitzt idealisiert eine einzige Frequenz. Je schmaler der ausgesandte Frequenzbereich im Verhältnis zu seiner mittleren Frequenz ist, desto näher kommt das Licht diesem Ideal.
+Tragen nur eine oder wenige eng benachbarte Moden zum Laserlicht bei, kann es auf einen sehr schmalen Wellenlängenbereich konzentriert sein. Monochromatisches Licht besitzt idealisiert eine einzige Wellenlänge.[monochromatisch]{.column-margin .mp-randbegriff} Je kleiner die Breite des ausgesandten Wellenlängenbereichs im Verhältnis zu seiner zentralen Wellenlänge ist, desto näher kommt das Licht diesem Ideal. Dabei vergleichen wir die Wellenlängen stets im selben Ausbreitungsmedium.
 
-Auch das gelbe Licht einer Natriumdampflampe besitzt nicht genau eine Wellenlänge. Es enthält zwei nahe beieinanderliegende starke Spektrallinien bei etwa $589{,}0$ und $589{,}6\,\mathrm{nm}$. Jede dieser Linien hat selbst eine endliche Breite. Eine einheitlich wahrgenommene Farbe bedeutet daher noch nicht, dass Licht monochromatisch ist. Mit Lasern lassen sich Spektrallinien erzeugen, die wesentlich schmaler sind als die einer solchen Lampe.
+Auch eine einzelne Spektrallinie einer Natriumdampflampe umfasst einen kleinen Wellenlängenbereich. Das gilt für jede der beiden starken gelben Linien bei etwa $589{,}0$ und $589{,}6\,\mathrm{nm}$. Mit Lasern lassen sich Spektrallinien erzeugen, die wesentlich schmaler sind als die einer solchen Lampe.
 
-## Aufbau eines Lasers: der erste Laser
+
+In @fig-umbau-laser-spektrallinien kannst du die Linienbreite einer tatsächlich verwendeten Natrium-Spektrallampe mit der eines gezielt schmalbandigen Diodenlasers vergleichen. Für die Lampe wird in einem Versuchsbericht eine Frequenzbreite von etwa $8\,\mathrm{GHz}$ angegeben. Bei der gelben Natriumlinie um $589\,\mathrm{nm}$ entspricht das etwa $9{,}3\,\mathrm{pm}$. Für den Diodenlaser DBR780PN nennt Thorlabs bei etwa $780\,\mathrm{nm}$ eine typische Frequenzbreite von $1\,\mathrm{MHz}$. Umgerechnet sind das etwa $0{,}0020\,\mathrm{pm}$. Die Frequenzbreiten sind hier in Wellenlängenbreiten umgerechnet, damit du beide im selben Maßstab vergleichen kannst. Die Laserlinie erscheint darin fast wie ein senkrechter Strich. Dieses Beispiel zeigt, wie schmal eine Laserlinie sein kann. Es steht nicht für die spektrale Breite jedes Lasers oder Laserpointers.
+
+Beide Kurven sind auf dieselbe maximale Höhe skaliert. Auf der waagerechten Achse steht die Abweichung $\lambda-\lambda_0$ von der jeweiligen Linienmitte. Bei null liegt also die Linienmitte $\lambda_0$. Negative Werte bedeuten kürzere, positive Werte längere Wellenlängen. Die Linienbreite $\Delta\lambda$ ist hier der Abstand zwischen den beiden Stellen, an denen die Kurve die halbe maximale Höhe erreicht. Diese Breitenangabe heißt volle Halbwertsbreite.
+
+![Vergleich belegter Linienbreiten bei gleichen Achsenmaßstäben und gleicher maximaler Höhe. A: Natrium-Spektrallampe aus dem beschriebenen Experiment, etwa 8 GHz beziehungsweise 9,3 pm [@budker2002magneto, Abschn. II.C.2]. B: Diodenlaser DBR780PN, typisch 1 MHz beziehungsweise 0,0020 pm nach Herstellerangabe [@thorlabs_dbr780pn]. Die Kurvenformen sind für den Breitenvergleich vereinfacht und geben keine gemessenen Kurvenverläufe wieder. 1 pm entspricht 0,001 nm.](assets/images/laser/spektrallinien-vergleich.svg){#fig-umbau-laser-spektrallinien fig-alt="Zwei Diagramme mit gleichem Wellenlängenmaßstab von minus zwanzig bis plus zwanzig Pikometer relativ zur jeweiligen Linienmitte. A zeigt ein vereinfachtes Profil mit der veröffentlichten Linienbreite einer Natrium-Spektrallampe von etwa 9,3 Pikometern. B zeigt ein vereinfachtes Profil mit der typischen Hersteller-Linienbreite des DBR780PN von etwa 0,0020 Pikometern. Die Laserlinie ist im gemeinsamen Maßstab kaum in ihrer Breite auflösbar. A und B stehen unter den Diagrammen."}
+
+## Der Rubinlaser {#aufbau-eines-lasers-der-erste-laser}
 
 ::: {.mp-goal-strip}
-Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator.
+Du <u>beschreibst</u> den Aufbau des Rubinlasers und <u>ordnest</u> Lasermedium, Pumpquelle und Resonator ihre Funktionen <u>zu</u>.
 
-Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
+Du <u>erklärst</u>, wie beim Rubinlaser durch optisches Pumpen, Besetzungsinversion und stimulierte Emission Laserlicht entsteht.
 :::
 
-1960 baute der Physiker Theodore Maiman den ersten funktionierenden Laser. Sein Lasermedium war ein Rubinkristall. Schon neun Jahre später vermaßen die Pulse eines Rubinlasers die Entfernung zum Mond, und bis heute ist dieser Lasertyp im Einsatz: In Hautarztpraxen entfernen Rubinlaser zum Beispiel Tattoos.
+Du kennst inzwischen die Voraussetzungen dafür, dass ein Laser Licht verstärken und als gerichteten Strahl aussenden kann. Am Rubinlaser untersuchst du nun, wie Lasermedium, Pumpquelle und Resonator zusammenwirken. Mit diesem Lasertyp baute Theodore Maiman 1960 den ersten funktionierenden Laser.
 
-Bisher kennst du die Bausteine einzeln: ein Lasermedium mit Besetzungsinversion, das Pumpen und den Resonator. Jetzt setzt du sie am Beispiel des Rubinlasers zu einem echten Gerät zusammen.
+Seinen Namen verdankt der Rubinlaser seinem Lasermedium, einem Rubinkristall.[Lasermedium]{.column-margin .mp-randbegriff} Rubin besteht aus Korund, also Aluminiumoxid, in dessen Kristallgitter ein kleiner Teil der Aluminium-Ionen durch Chrom-Ionen ersetzt ist. Die Chrom-Ionen geben dem Rubin seine rote Farbe. An diesen Ionen findet auch die Lichtverstärkung durch stimulierte Emission statt.
 
-Rubin ist ein Kristall: Korund (Aluminiumoxid) mit einer kleinen Beimischung von Chrom. Einige Aluminium-Ionen im Kristallgitter sind durch Chrom-Ionen ersetzt. In der Gitterumgebung des Korunds besitzen diese Chrom-Ionen die passenden Energieniveaus für den Laser. Sie geben dem Rubin auch seine rote Farbe. Das Lasermedium ist der Rubinkristall als Ganzes. Die aktiven Zentren darin sind die Chrom-Ionen.
+Die für den Laserbetrieb wesentlichen Übergänge lassen sich mit dem bereits bekannten [Drei-Niveau-Modell](#besetzungsinversion-und-lasermedium) beschreiben. $E_1$ bezeichnet den Grundzustand, $E_2$ das metastabile Laserniveau und $E_3$ das höher liegende Pumpniveau. Der Laserübergang führt von $E_2$ nach $E_1$. Das Pumpniveau $E_3$ steht hier vereinfacht für mehrere höhere Energiezustände der Chrom-Ionen im Rubin.
 
-Die Chrom-Ionen bilden das Drei-Niveau-System aus dem letzten Abschnitt: den Grundzustand, ein hohes Pumpniveau und dazwischen ein metastabiles Niveau. Um den Rubinstab liegt eine Blitzlampe. Ihr grünes und blaues Licht hebt die Chrom-Ionen vom Grundzustand in das Pumpniveau. Von dort wechseln sie schnell in das metastabile Niveau und sammeln sich.
+Als Pumpquelle dient eine Blitzlampe, die den Rubinstab umgibt.[optisches Pumpen]{.column-margin .mp-randbegriff} Die Lampe enthält das Edelgas Xenon. Bei einer kurzen elektrischen Entladung regen Elektronenstöße das Gas an, sodass es einen hellen Lichtblitz aussendet. Die Chrom-Ionen absorbieren vor allem dessen grüne und blauviolette Anteile und gelangen von $E_1$ in das Pumpniveau $E_3$. Anschließend geben sie einen Teil der aufgenommenen Energie an den Kristall ab und erreichen rasch das metastabile Niveau $E_2$. Dort können sich viele angeregte Ionen ansammeln.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
@@ -538,57 +556,85 @@ Die Chrom-Ionen bilden das Drei-Niveau-System aus dem letzten Abschnitt: den Gru
   Denkcheck
 </span>
 
-Die Blitzlampe pumpt mit grünem und blauem Licht.
+Die Blitzlampe pumpt den Rubinlaser mit grünem und blauviolettem Licht.
 
-<u>Begründe</u>, dass rotes Licht die Chrom-Ionen nicht in das Pumpniveau heben kann.
+Für diese Aufgabe benötigst du den Zusammenhang zwischen Wellenlänge und Photonenenergie. Im Vakuum gilt $c=\lambda f$, in Luft näherungsweise ebenfalls. Zusammen mit $E_\text{Photon}=hf$ ergibt sich
+
+$$
+E_\text{Photon}=\frac{hc}{\lambda}.
+$$
+
+<u>Beurteile</u>, ob ein sehr intensiver roter Lichtstrahl die Chrom-Ionen ebenfalls vom Grundzustand $E_1$ in das Pumpniveau $E_3$ anregen könnte.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Der Abstand vom Grundzustand zum Pumpniveau ist größer als der Abstand des Laserübergangs. Ein Photon zum Pumpen braucht darum mehr Energie als ein rotes Photon. Wegen $E_\text{Photon} = h f$ gehört zu mehr Energie eine höhere Frequenz, und wegen $c = \lambda \cdot f$ eine kürzere Wellenlänge. Grünes und blaues Licht hat kürzere Wellenlängen als rotes und passt zum großen Abstand. Ein rotes Photon trägt zu wenig Energie: Es kann die Chrom-Ionen nicht in das Pumpniveau heben.
+Rotes Licht hat eine längere Wellenlänge als grünes und blauviolettes Licht. Seine Photonen besitzen deshalb weniger Energie. Ihre Energie reicht nicht für den Übergang vom Grundzustand $E_1$ in das Pumpniveau $E_3$. Auch ein intensiverer roter Lichtstrahl würde daran im betrachteten Modell nichts ändern, denn er liefert mehr Photonen, aber keine höhere Energie pro Photon.
 
 </details>
 
-Die Animation zeigt den Weg eines einzelnen Chrom-Ions durch das Niveauschema: Pumpen in das Pumpniveau, schneller Übergang in das metastabile Niveau, dann der Laserübergang zurück in den Grundzustand.
+@fig-umbau-rubin-niveaus zeigt die Übergänge eines einzelnen Chrom-Ions im Rubin. Grau kennzeichnet $E_1$, Gelb $E_2$ und Violett $E_3$, wie in den vorherigen Niveauschemata. Der große Punkt markiert den Zustand des Ions. Die kleinen roten Punkte stehen für Photonen des Laserübergangs. Trifft ein solches Photon auf das Ion in $E_2$, kann es stimulierte Emission auslösen. Dabei entsteht ein weiteres Photon und das Ion geht in den Grundzustand $E_1$ über.
 
+:::: {#fig-umbau-rubin-niveaus}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-rubinlaser-niveaus" data-srt-viewbox-h="270" data-srt-motion-control data-srt-label="Drei-Niveau-System der Chrom-Ionen mit Grundzustand, metastabilem Niveau und Pumpniveau. Ein Punkt zeigt den Energiezustand eines Chrom-Ions: Es wird in das Pumpniveau gepumpt, wechselt schnell in das metastabile Niveau und fällt beim Laserübergang mit 694 Nanometern in den Grundzustand zurück."></div>
-  <figcaption>Animation zum Drei-Niveau-System der Chrom-Ionen: Pumpen in das Pumpniveau, schneller Übergang in das metastabile Niveau, Laserübergang in den Grundzustand.</figcaption>
-</figure>
+<div class="srt-workbook-stage" data-srt-animation="laser-rubinlaser-niveaus" data-srt-viewbox-h="350" data-srt-label="Vereinfachtes Drei-Niveau-Schema eines Chrom-Ions im Rubin. E1 ist der Grundzustand, E2 das metastabile Laserniveau und E3 das Pumpniveau. Die Animation zeigt Pumpen, schnelle strahlungslose Energieabgabe und stimulierte Emission beim Übergang von E2 nach E1."></div>
+```
+:::
+::: {.content-visible unless-format="html" .srt-workbook-fallback}
+Im vereinfachten Drei-Niveau-Schema wird ein Chrom-Ion von $E_1$ nach $E_3$ gepumpt. Es gibt Energie an den Kristall ab und erreicht rasch $E_2$. Stimulierte Emission führt es von dort nach $E_1$ zurück.
+:::
+
+Animation der Energieübergänge eines Chrom-Ions im Rubin. Niveauabstände und Zeitablauf sind schematisch dargestellt. Die Animation zeigt einen möglichen Ablauf mit stimulierter Emission.
+::::
+
+Beim Rubinlaser muss die Blitzlampe so viele Chrom-Ionen anregen, dass sich mehr von ihnen im metastabilen Niveau $E_2$ als im Grundzustand $E_1$ befinden. Dann liegt zwischen diesen beiden Niveaus eine Besetzungsinversion vor.[Besetzungsinversion]{.column-margin .mp-randbegriff} Verglichen werden dabei nur die Besetzungen von $E_2$ und $E_1$. Das Pumpniveau $E_3$ ermöglicht die Anregung der Ionen auf dem Weg nach $E_2$.
+
+Beim frühen Rubinlaser waren die beiden Stirnflächen des Rubinstabs verspiegelt und bildeten den Resonator.[Resonator]{.column-margin .mp-randbegriff} Eine Fläche reflektierte das Licht nahezu vollständig, die andere war als Auskoppelspiegel teildurchlässig. Ein Teil des spontan ausgesandten Lichts läuft entlang der Stabachse und wird zwischen diesen Flächen wiederholt durch den angeregten Rubin geführt. Bei jedem Durchgang können durch stimulierte Emission weitere Photonen hinzukommen. Gleichzeitig verlässt ein Teil des Lichts den Resonator durch den Auskoppelspiegel, ein weiterer Teil geht durch Absorption und Streuung verloren. Damit sich die Laserstrahlung aufbaut, müssen bei einem vollständigen Umlauf mehr Photonen hinzukommen, als auf diesen Wegen verloren gehen. Durch den Auskoppelspiegel tritt rotes Laserlicht mit einer Wellenlänge von etwa $694\,\mathrm{nm}$ aus.
+
+Dieser mit einer Blitzlampe gepumpte Rubinlaser arbeitet in Pulsen. Er sendet sein Laserlicht in zeitlich begrenzten Impulsen aus. Diese Betriebsart heißt gepulster Betrieb.[gepulster Betrieb]{.column-margin .mp-randbegriff} Der Blitz liefert die nötige Pumpenergie nur für kurze Zeit. Bereits während des Blitzes kann der Rubinlaser Licht aussenden. Sobald die Anregung nicht mehr ausreicht, um die Lichtverstärkung aufrechtzuerhalten, endet die Laseremission. Ein Lampenblitz kann mehrere kurze Intensitätsspitzen der Laseremission hervorrufen.
+
+@fig-umbau-rubin-aufbau zeigt die auseinandergelegten Teile von Maimans Rubinlaser. Im zusammengesetzten Aufbau befindet sich der Rubinstab innerhalb der wendelförmigen Blitzlampe. Der Aluminiumreflektor umschließt beide und lenkt einen Teil des nach außen abgestrahlten Pumplichts zum Rubin zurück. Die Resonatorspiegel sind auf dem Foto nicht einzeln erkennbar, denn sie befinden sich direkt auf den Stirnflächen des Rubinstabs.
+
+::: {.column-margin}
+Im [SPIE-Video „Celebrating 50 Years of the Laser“](https://www.youtube.com/watch?v=eQQeSUvgmJE&t=327s) zeigt Theodore Maiman die Bauteile seines Rubinlasers. Der kurze Ausschnitt beginnt bei etwa 5:27 und endet bei etwa 5:45.
+:::
+
+:::: {#fig-umbau-rubin-aufbau}
+```{=html}
+<div class="rubin-photo" role="group" aria-label="Beschriftete Fotografie der Bauteile von Maimans Rubinlaser">
+  <img src="assets/images/laser/maiman-komponenten.jpg" width="960" height="640" alt="Oben liegt der abgenommene Aluminiumreflektor mit Halterung. Darunter liegen links die wendelförmige Xenon-Blitzlampe und rechts der rosafarbene Rubinstab mit seiner Halterung. Die verspiegelten Stirnflächen sind nicht einzeln zu erkennen.">
+  <svg class="rubin-photo-guides" viewBox="0 0 960 640" aria-hidden="true"><g fill="none" stroke="#172033" stroke-width="3"><path d="M480 65V155"/><path d="M270 568L350 477"/><path d="M697 568L642 448"/></g><g fill="#172033"><circle cx="480" cy="155" r="5"/><circle cx="350" cy="477" r="5"/><circle cx="642" cy="448" r="5"/></g></svg>
+  <span class="rubin-photo-label rubin-photo-label--reflector">Aluminiumreflektor</span>
+  <span class="rubin-photo-label rubin-photo-label--lamp">Xenon-Blitzlampe</span>
+  <span class="rubin-photo-label rubin-photo-label--ruby">Rubinstab</span>
+</div>
+```
+::: {.content-visible unless-format="html"}
+![](assets/images/laser/maiman-komponenten.jpg){fig-alt="Auseinandergelegte Bauteile von Maimans Rubinlaser, oben der Aluminiumreflektor, unten links die Blitzlampe und unten rechts der Rubinstab."}
+:::
+
+Fotografie der Bauteile von Maimans Rubinlaser. Die Beschriftungen ordnen Pumpquelle, Lasermedium und den zusätzlichen Reflektor zu. Aufnahme von Guy Immega, 2010, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:5_Maiman_Laser_Components.jpg), freigegeben unter [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Das Foto ist unverändert, Beschriftungen und Hinweislinien wurden für das Workbook ergänzt.
+::::
+
+Am Rubinlaser kannst du damit die bekannten Grundprinzipien einem konkreten Aufbau zuordnen. Die Blitzlampe liefert Pumpenergie, die Chrom-Ionen im Rubin ermöglichen die Lichtverstärkung und die verspiegelten Stirnflächen führen das Licht wiederholt durch das Lasermedium.
+
+@fig-umbau-tattoo-video zeigt eine Tattooentfernung mit einem Laser. Ab etwa 0:30 sind schwarze und rote Bereiche der Tätowierung zu sehen. Die folgende Aufgabe bezieht sich auf die Behandlung eines roten Tattoos mit einem Rubinlaser.
+
+:::: {#fig-umbau-tattoo-video}
+::: {.content-visible when-format="html"}
+```{=html}
+<video controls preload="none" playsinline width="854" height="480" style="width:100%;height:auto" aria-label="Laser tattoo removal: Video einer Tattooentfernung" poster="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Laser_tattoo_removal.ogv/960px--Laser_tattoo_removal.ogv.jpg">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/15/Laser_tattoo_removal.ogv/Laser_tattoo_removal.ogv.480p.vp9.webm" type="video/webm">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/1/15/Laser_tattoo_removal.ogv" type="video/ogg">
+  <a href="https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv">Video auf Wikimedia Commons ansehen</a>
+</video>
 ```
 :::
 
-::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: das Drei-Niveau-System der Chrom-Ionen. Ein Punkt zeigt den Energiezustand eines Ions, das gepumpt wird, schnell in das metastabile Niveau wechselt und beim Laserübergang in den Grundzustand zurückfällt.
-:::
-:::
-
-Das untere Niveau des Laserübergangs ist beim Rubin der Grundzustand. Für eine Besetzungsinversion muss die Blitzlampe also mehr als die Hälfte aller Chrom-Ionen anheben. Ein kurzer, sehr heller Blitz schafft das. Der Rubinlaser arbeitet in Pulsen: Auf jeden Blitz folgt ein Laserpuls.
-
-An den Enden des Stabs sitzen die beiden Spiegel des Resonators. Nach dem Blitz startet ein spontan ausgesandtes Photon auf dem Laserübergang die Lawine: Es löst an angeregten Chrom-Ionen stimulierte Emission aus. Der Resonator wählt die Richtung entlang der Stabachse aus und schickt das Licht immer wieder durch den Stab. Durch den teildurchlässigen Spiegel verlässt ein roter Laserpuls den Kristall. Seine Wellenlänge: 694 nm.
-
-Die Animation zeigt einen Puls des Rubinlasers im Aufbau-Schema: Die Blitzlampe blitzt, rotes Licht baut sich im Stab auf, und der Laserpuls verlässt den Stab durch den teildurchlässigen Spiegel.
-
-::: {.content-visible when-format="html"}
-```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-rubinlaser" data-srt-viewbox-h="280" data-srt-motion-control data-srt-label="Aufbau eines Rubinlasers: ein Rubinstab zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel, umgeben von einer wendelförmigen Blitzlampe. Die Lampe blitzt, danach baut sich rotes Licht im Stab auf und ein roter Laserstrahl mit 694 Nanometern tritt rechts aus."></div>
-  <figcaption>Animation zum Aufbau des Rubinlasers: Rubinstab zwischen zwei Spiegeln, umgeben von der Blitzlampe; nach dem Blitz tritt rechts ein roter Laserpuls mit 694 nm aus.</figcaption>
-</figure>
-```
-:::
-
-::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine Animation: der Aufbau des Rubinlasers mit Rubinstab, Blitzlampe und den beiden Spiegeln. Die Lampe blitzt, und ein roter Laserpuls mit 694 nm verlässt den Stab durch den teildurchlässigen Spiegel.
-:::
-:::
-
-Damit sind alle drei Bausteine beisammen: das Lasermedium (der Rubinstab mit seinen Chrom-Ionen), die Pumpquelle (die Blitzlampe) und der Resonator (die beiden Spiegel an den Stabenden).
+Video „Laser tattoo removal“ von Melissa Findley, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.de). Inhaltlich unverändert eingebunden. Lasertyp und Behandlungswellenlänge sind in der Quelle nicht angegeben.
+::::
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
@@ -596,18 +642,25 @@ Damit sind alle drei Bausteine beisammen: das Lasermedium (der Rubinstab mit sei
   Transfer
 </span>
 
-Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Der kurze Laserpuls zerlegt die Farbpigmente in der Haut. Das gelingt nur, wenn das Pigment das Laserlicht absorbiert. Zur Erinnerung: Ein Körper zeigt die Farbe des Lichts, das er zurückstreut; die übrigen Anteile absorbiert er. Eine Person möchte ein rotes Tattoo entfernen lassen.
+Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Kurze Laserpulse können Farbpigmente in der Haut in kleinere Bruchstücke zerlegen. Das gelingt nur, wenn das Pigment das Laserlicht ausreichend absorbiert. Eine Person möchte ein rotes Tattoo entfernen lassen.
 
-<u>Beurteile</u>, ob der Rubinlaser mit seiner Wellenlänge von 694 nm (rotes Licht) dafür geeignet ist.
+<u>Beurteile</u> anhand der Farbe, ob das rote Licht eines Rubinlasers dafür geeignet ist.
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
-<p>Das rote Pigment erscheint rot, weil es rotes Licht zurückstreut und die übrigen Anteile des sichtbaren Lichts absorbiert. Das Licht des Rubinlasers ist selbst rot. Das Pigment absorbiert es kaum, die Pulsenergie kommt im Pigment nicht an. Für ein rotes Tattoo ist der Rubinlaser ungeeignet.</p>
-<p>Die Praxis braucht einen Laser, dessen Licht das rote Pigment absorbiert, zum Beispiel mit grünem Licht. Eine andere Wellenlänge gehört zu einem anderen Laserübergang: Es braucht einen Laser mit einem anderen Lasermedium.</p>
+
+Ein rotes Pigment streut einen vergleichsweise großen Anteil des roten Lichts zurück. Deshalb ist zu erwarten, dass es das ebenfalls rote Licht des Rubinlasers nur schwach absorbiert. Nach dieser vereinfachten Betrachtung ist der Rubinlaser für das rote Tattoo wenig geeignet.
+
+Günstiger wäre eine Wellenlänge, bei der das Pigment stärker absorbiert, bei vielen roten Tattoofarben beispielsweise grünes Licht. Die genaue Eignung hängt vom Absorptionsspektrum des verwendeten Pigments ab. Aus dem Farbeindruck allein lässt sie sich nicht abschließend bestimmen.
+
 </details>
 
-Die Pulse des Rubinlasers vermaßen auch die Entfernung zum Mond. Im Juli 1969 stellten die Astronauten von Apollo 11 einen Spiegelreflektor auf dem Mond auf. Am 1. August 1969 gelang am Lick-Observatorium in Kalifornien der erste Treffer: Die Blitze eines Rubinlasers liefen durch ein 3-Meter-Teleskop zum Reflektor und zurück, Laufzeit rund 2,5 Sekunden für etwa 770&#8239;000 km. Aus der Laufzeit folgt die Entfernung zum Mond, so genau wie mit keiner Methode zuvor. Unterwegs geht fast das gesamte Licht verloren: Trotz der starken Bündelung läuft der Strahl auf der langen Strecke auseinander, denn perfekt parallel ist kein Lichtstrahl, auch kein Laserstrahl. Am Mond war der Blitz mehrere Kilometer breit, der Reflektor misst nur etwa einen halben Meter. Von den etwa $3 \cdot 10^{17}$ Photonen eines Blitzes erreichten am Ende nur einzelne den Detektor. Gemessen wird so bis heute, inzwischen mit anderen Lasertypen.
+Die Pulse von Rubinlasern ermöglichten auch Entfernungsmessungen zum Mond. Im Juli 1969 stellten die Astronauten von Apollo 11 einen Retroreflektor auf der Mondoberfläche auf. Er schickt einfallendes Licht zur Quelle zurück. Am 1. August 1969 gelang am Lick-Observatorium in Kalifornien der erste Nachweis von Laserpulsen, die an diesem Reflektor zurückgeworfen wurden. Die Pulse eines Rubinlasers wurden durch ein 3-Meter-Teleskop zum Mond geschickt. Für den Hin- und Rückweg benötigte das Licht rund $2{,}5\,\mathrm{s}$. Aus dieser Laufzeit lässt sich mit $d=\frac{c\,\Delta t}{2}$ die Entfernung bestimmen.
+
+Auf der langen Strecke weitet sich auch ein Laserstrahl auf. Am Mond war der beleuchtete Bereich mehrere Kilometer breit, während der Reflektor nur etwa einen halben Meter maß. Auch auf dem Rückweg verteilte sich das Licht wieder auf eine große Fläche. Ein ausgesandter Puls enthielt rund $3\cdot10^{19}$ Photonen. Nur ein winziger Anteil des ausgesandten Lichts erreichte wieder den Detektor auf der Erde. Dennoch ließ sich ein Rückkehrsignal nachweisen und aus seiner Laufzeit die Entfernung zum Mond bestimmen.
+
+Die Entfernung zum Mond wird bis heute mit Laserpulsen gemessen, inzwischen mit anderen Lasertypen. Laufzeitmessungen mit Laserlicht werden auch auf der Erde eingesetzt, etwa zur Vermessung von Gebäuden.
 
 ## Ein zweiter Lasertyp: der Helium-Neon-Laser
 
@@ -619,7 +672,7 @@ Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht.
 Du <u>begründest</u>, dass dem Helium-Neon-Laser schwaches, ständiges Pumpen genügt.
 :::
 
-Der Rubinlaser liefert pro Lampenblitz einen einzelnen Lichtpuls. Danach ist Pause, bis die Blitzlampe die Besetzungsinversion neu aufgebaut hat: Er arbeitet wie ein Fotoblitz. Viele Anwendungen brauchen stattdessen einen Strahl, der ununterbrochen leuchtet: der stehende rote Punkt eines Laserpointers, der Abtaststrahl einer Scannerkasse, die dauerhaft projizierte Linie eines Baustellenlasers.
+Der gerade betrachtete Rubinlaser wird nur während der Lampenblitze gepumpt und sendet deshalb zeitlich begrenzt Laserlicht aus. Viele Anwendungen brauchen stattdessen einen Strahl, der ununterbrochen leuchtet: der stehende rote Punkt eines Laserpointers, der Abtaststrahl einer Scannerkasse, die dauerhaft projizierte Linie eines Baustellenlasers.
 
 Ende 1960 gelang in den Bell Laboratories der erste Gaslaser: der Helium-Neon-Laser. Er war der erste Laser mit dauerhaftem Strahl und über Jahrzehnte der Standardlaser in Laboren; auch die ersten Scannerkassen arbeiteten mit ihm. Sein bekanntester Übergang liefert rotes Licht mit der Wellenlänge 632,8 nm.
 
@@ -763,8 +816,8 @@ Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einze
 
 - **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission mithilfe eines Energieniveauschemas. Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann. Du <u>vergleichst</u> spontane und stimulierte Emission.
 - **Besetzungsinversion:** Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
-- **Resonator:** Du <u>beschreibst</u> den Aufbau eines optischen Resonators. Du <u>erklärst</u>, wie der Resonator die Richtung des Laserstrahls festlegt und wie der Strahl ausgekoppelt wird. Du <u>erläuterst</u> die Resonanzbedingung und <u>wendest</u> sie <u>an</u>.
-- **Rubinlaser:** Du <u>beschreibst</u> den Aufbau eines Lasers aus Lasermedium, Pumpquelle und Resonator. Du <u>erklärst</u> am Beispiel des Rubinlasers das Zusammenwirken dieser Bauteile.
+- **Resonator:** Du <u>beschreibst</u> den Aufbau eines einfachen optischen Resonators und die Auskopplung des Laserstrahls. Du <u>erklärst</u>, wie die Spiegel wiederholte Durchgänge durch das Lasermedium ermöglichen und dadurch die Lichtverstärkung entlang der Spiegelachse begünstigen. Du <u>erläuterst</u> die Resonanzbedingung anhand stehender Wellen und <u>berechnest</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
+- **Rubinlaser:** Du <u>beschreibst</u> den Aufbau des Rubinlasers und <u>ordnest</u> Lasermedium, Pumpquelle und Resonator ihre Funktionen <u>zu</u>. Du <u>erklärst</u>, wie beim Rubinlaser durch optisches Pumpen, Besetzungsinversion und stimulierte Emission Laserlicht entsteht.
 - **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers. Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht. Du <u>begründest</u>, dass dem Helium-Neon-Laser schwaches, ständiges Pumpen genügt.
 - **Gefahren des Laserlichts:** Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann. Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit eines Lasergeräts aussagen.
 
@@ -796,7 +849,7 @@ Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typi
 
 1. Sehr intensives Licht wird von einem Atom immer absorbiert.
 2. Wenn man ein Lasermedium stark genug erhitzt, entsteht eine Besetzungsinversion.
-3. Beim Rubinlaser muss die Blitzlampe mehr als die Hälfte aller Chrom-Ionen anheben, damit eine Besetzungsinversion entsteht.
+3. Beim Rubinlaser liegt eine Besetzungsinversion vor, wenn mehr Chrom-Ionen im metastabilen Niveau $E_2$ als im Grundzustand $E_1$ sind.
 4. Bei jeder Besetzungsinversion ist mehr als die Hälfte aller Atome angeregt.
 5. In einem metastabilen Niveau gibt es keine spontane Emission.
 6. Erst der Resonator macht die Photonen untereinander gleich.
@@ -809,7 +862,7 @@ Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typi
 
 <p><strong>2. Falsch.</strong> Im thermischen Gleichgewicht ist das höhere Niveau immer schwächer besetzt. Selbst bei beliebig hoher Temperatur nähert sich die Besetzung höchstens der Gleichbesetzung.</p>
 
-<p><strong>3. Richtig.</strong> Das untere Laserniveau des Rubins ist der Grundzustand. Für eine Inversion müssen im oberen Laserniveau mehr Ionen sitzen als im Grundzustand, also mehr als die Hälfte aller Ionen. Erst dann trifft ein passendes Photon öfter auf ein angeregtes Ion als auf eines im Grundzustand, und aus einem Photon werden viele.</p>
+<p><strong>3. Richtig.</strong> Für die Besetzungsinversion werden die Besetzungen der beiden Niveaus des Laserübergangs verglichen. Beim Rubinlaser muss das metastabile Niveau $E_2$ stärker besetzt sein als der Grundzustand $E_1$.</p>
 
 <p><strong>4. Falsch.</strong> Verglichen werden nur die beiden Niveaus des Laserübergangs. Beim Vier-Niveau-System des Neons ist das untere Laserniveau praktisch leer: Schon wenige angeregte Atome ergeben eine Inversion, während fast alle Atome im Grundzustand sitzen.</p>
 
@@ -831,7 +884,7 @@ Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit B
 
 <u>Vergleiche</u> Rubinlaser und Helium-Neon-Laser nach Lasermedium, Pumpquelle, Niveausystem und Betriebsart.
 
-<u>Begründe</u> mit dem unteren Laserniveau, dass der Rubinlaser einzelne Pulse liefert, während der Helium-Neon-Laser dauerhaft leuchtet.
+<u>Begründe</u> mit dem unteren Laserniveau, weshalb der Rubinlaser eine stärkere Anregung für die Besetzungsinversion benötigt. <u>Erkläre</u>, wie die jeweilige Pumpquelle mit dem Puls- beziehungsweise Dauerstrichbetrieb der hier betrachteten Laser zusammenhängt.
 :::
 
 <details class="mp-details">
@@ -845,7 +898,7 @@ Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit B
 | Betriebsart | Pulsbetrieb | Dauerstrichbetrieb |
 | Wellenlänge | 694 nm | 632,8 nm |
 
-Beim Rubinlaser ist das untere Laserniveau der Grundzustand. Dort sitzen zu Beginn alle Chrom-Ionen. Für eine Besetzungsinversion muss die Blitzlampe mehr als die Hälfte aller Ionen anheben. Das schafft nur ein kurzer, sehr heller Blitz, und nach dem Laserpuls ist die Inversion verbraucht: Der Rubinlaser blitzt.
+Beim Rubinlaser ist das untere Laserniveau der Grundzustand. Für eine Besetzungsinversion müssen mehr Ionen im oberen Laserniveau als im Grundzustand sein. Dazu müssen viele Ionen aus dem zunächst stark besetzten Grundzustand angeregt werden. Im hier betrachteten Aufbau liefert die Blitzlampe die Pumpenergie nur kurzzeitig, sodass auch die Laseremission zeitlich begrenzt bleibt. Aus dem Drei-Niveau-Modell allein folgt jedoch kein zwingender Pulsbetrieb.
 
 Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und leert sich von selbst sehr schnell. Es ist praktisch immer leer, und schon wenige Neonatome im oberen Laserniveau ergeben eine Besetzungsinversion. Eine schwache, ständig laufende Gasentladung hält diesen Zustand aufrecht: Der Helium-Neon-Laser leuchtet ununterbrochen.
 

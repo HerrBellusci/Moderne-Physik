@@ -3,7 +3,6 @@
   const MUTED = "#64748b";
   const HILL_FILL = "#eef2f8";
   const HILL_EDGE = "#94a3b8";
-  const BALL = "#2563eb";
   const LEVEL = "#334155";
 
   const X0 = 72;
@@ -15,9 +14,9 @@
   const CYCLE = 6200;
   const PANEL = { x: 568, y: 82, w: 246, h: 344 };
   const LEVELS = [
-    { key: "*E*₃", name: "Pumpniveau", y: 142 },
-    { key: "*E*₂", name: "metastabil", y: 266 },
-    { key: "*E*₁", name: "Grundzustand", y: 390 }
+    { key: "*E*₃", name: "Pumpniveau", y: 142, color: "#7653c4" },
+    { key: "*E*₂", name: "metastabil", y: 266, color: "#f59e0b" },
+    { key: "*E*₁", name: "Grundzustand", y: 390, color: "#94a3b8" }
   ];
 
   function clamp(value, min, max) {
@@ -78,7 +77,7 @@
       });
       SRT.el("line", {
         x1: x0, y1: level.y, x2: x1, y2: level.y,
-        stroke: LEVEL, "stroke-width": 2.4, "stroke-linecap": "round"
+        stroke: level.color, "stroke-width": 2.4, "stroke-linecap": "round"
       }, parent);
     });
 
@@ -88,7 +87,7 @@
     }, parent);
     SRT.el("circle", {
       cx: PANEL.x + 210, cy: levelDotY(cy), r: 7.5,
-      fill: BALL, stroke: "#ffffff", "stroke-width": 1.8, opacity, filter: "url(#glow)"
+      fill: LEVELS[cy < 0.15 ? 0 : cy < 0.90 ? 1 : 2].color, stroke: "#ffffff", "stroke-width": 1.8, opacity, filter: "url(#glow)"
     }, parent);
   }
 
@@ -112,7 +111,7 @@
     let op = 1;
     if (cy > 0.95) op = 1 - ease((cy - 0.95) / 0.05);
 
-    SRT.el("circle", { cx: bx, cy: by, r: R, fill: BALL, stroke: "#ffffff", "stroke-width": 2, opacity: op, filter: "url(#glow)" }, parent);
+    SRT.el("circle", { cx: bx, cy: by, r: R, fill: LEVELS[cy < 0.15 ? 0 : 1].color, stroke: "#ffffff", "stroke-width": 2, opacity: op, filter: "url(#glow)" }, parent);
     drawLevelDiagram(parent, SRT, cy, op);
   }
 

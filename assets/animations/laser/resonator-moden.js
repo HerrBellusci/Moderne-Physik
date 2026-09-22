@@ -75,38 +75,36 @@
       const length=.35+Number(state.length)*1e-9;
       const trackedOrder=1000000, trackedLambda=2*length/trackedOrder*1e9;
       const origin=x(700), current=x(trackedLambda);
-      text(parent,S,28,30,'Wellenlängen, die das Lasermedium verstärkt');
-      S.el('rect',{x:x(low),y:48,width:x(high)-x(low),height:196,rx:4,fill:C.range,'fill-opacity':.25},parent);
-      S.el('rect',{x:x(low),y:48,width:x(high)-x(low),height:44,rx:4,fill:C.range,'data-gain-range':''},parent);
-      text(parent,S,(x(low)+x(high))/2,78,'Δ*λ* = 0,002 nm','middle');
-      text(parent,S,28,128,'Wellenlängen, die zum Spiegelabstand passen');
+      S.el('rect',{x:x(low),y:20,width:x(high)-x(low),height:150,rx:4,fill:C.range,'fill-opacity':.25},parent);
+      S.el('rect',{x:x(low),y:20,width:x(high)-x(low),height:40,rx:4,fill:C.range,'data-gain-range':''},parent);
+      text(parent,S,(x(low)+x(high))/2,48,'Δ*λ* = 0,002 nm','middle');
       const first=Math.ceil(2*length/(max*1e-9)),last=Math.floor(2*length/(min*1e-9));
       for(let m=first;m<=last;m++){
         const lambda=2*length/m*1e9;
         const inside=lambda>=low&&lambda<=high, color=inside?C.selected:C.outside;
-        line(parent,S,x(lambda),154,x(lambda),239,color,inside?3:2,{'data-mode':m,'data-wavelength':lambda,'data-in-range':inside});
+        line(parent,S,x(lambda),80,x(lambda),165,color,inside?3:2,{'data-mode':m,'data-wavelength':lambda,'data-in-range':inside});
       }
       // Dieselbe Modenordnung bleibt beim Verschieben sichtbar markiert.
       // Der Pfeil vergleicht ihren aktuellen Wert mit L=35 cm, nicht mit
       // einer anderen Mode. Alle Resonanzen folgen weiterhin lambda=2L/m.
-      S.el('circle',{cx:current,cy:154,r:7,fill:C.wave,'data-tracked-mode':trackedOrder},parent);
-      const arrowY=253, shift=current-origin;
+      S.el('circle',{cx:current,cy:80,r:7,fill:C.wave,'data-tracked-mode':trackedOrder},parent);
+      const arrowY=180, shift=current-origin;
       if(Math.abs(shift)>1){
         line(parent,S,origin,arrowY,current,arrowY,C.wave,2,{'data-wavelength-shift':''});
         const direction=Math.sign(shift),head=Math.min(7,Math.abs(shift));
         S.el('path',{d:`M${current-direction*head},${arrowY-5} L${current},${arrowY} L${current-direction*head},${arrowY+5}`,fill:'none',stroke:C.wave,'stroke-width':2},parent);
       }
       line(parent,S,origin,arrowY-4,origin,arrowY+4,C.muted,1.5);
-      line(parent,S,left,274,right,274,C.muted);
+      line(parent,S,left,202,right,202,C.muted);
       for(const value of [min,700,max]){
         const label=value===700?'700':value.toFixed(3).replace('.',',');
-        line(parent,S,x(value),270,x(value),280,C.muted);
-        text(parent,S,x(value),301,label,'middle');
+        line(parent,S,x(value),198,x(value),208,C.muted);
+        text(parent,S,x(value),229,label,'middle');
       }
-      text(parent,S,(left+right)/2,331,'Wellenlänge *λ* in nm','middle');
-      S.el('circle',{cx:36,cy:361,r:6,fill:C.wave},parent);
-      text(parent,S,52,369,'Markierte Mode:','start',C.wave);
-      text(parent,S,798,369,`${trackedLambda.toFixed(6).replace('.',',')} nm`,'end',C.wave);
+      text(parent,S,(left+right)/2,258,'Wellenlänge *λ* in nm','middle');
+      S.el('circle',{cx:36,cy:283,r:6,fill:C.wave},parent);
+      text(parent,S,52,291,'Mode m = 1 000 000:','start',C.wave);
+      text(parent,S,798,291,`${trackedLambda.toFixed(6).replace('.',',')} nm`,'end',C.wave);
 
     }
   });

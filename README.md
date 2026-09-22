@@ -55,6 +55,8 @@ Die Kapitel binden ihre Skripte und zusätzlichen Stylesheets im Kopf der jeweil
 - **Source Sans Pro**, SIL Open Font License 1.1: lokale Schriftdateien in `assets/fonts/`. `assets/styles/no-webfont.scss` unterbindet den Google-Fonts-Import des Themes.
 - **multibib**, ISC: Pandoc-Filter in `_extensions/pandoc-ext/multibib/`. Die mitgelieferte Fassung wurde lokal angepasst und liest `multibib:` statt `bibliography:`. Bei einem Update muss diese Anpassung erhalten bleiben.
 - **Quarto und seine HTML-Komponenten**: Navigation, Suche, Theme und Bedienelemente werden beim Rendern nach `_book/site_libs/` kopiert. Komponenten und Lizenztexte sind in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) aufgeführt.
-- **Übernommene Abbildungen**: Das Laser-Warnzeichen von Wikimedia Commons ist gemeinfrei. Herkunft und Bedingungen stehen ebenfalls in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md).
+- **Übernommene Abbildungen**: Das Laser-Warnzeichen ist gemeinfrei, das Foto von Maimans Rubinlaser ist unter CC0 1.0 freigegeben. Weitere Bildquellen, individuelle Bedingungen und Angaben zu ergänzten Beschriftungen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) sowie unmittelbar an den Abbildungen.
+
+- **Externes Video**: „Laser tattoo removal“ von Melissa Findley, CC BY-SA 3.0, wird im Laser-Kapitel direkt von Wikimedia eingebunden. Die Videodatei liegt nicht im Repository. Quelle, Lizenz und Nutzungsform stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) und am Video. Die Vorträge von Royal Institution, MIT OpenCourseWare und SPIE sind als externe Links aufgenommen.
 
 Skripte, Stylesheets, Schriftdateien und die MathJax-Datei für die Formeldarstellung werden aus diesem Repository beziehungsweise dem Quarto-Build bereitgestellt.
