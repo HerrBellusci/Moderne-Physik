@@ -12,23 +12,19 @@
 <script src="assets/animations/laser/resonator.js?v=20260921d"></script>
 <link rel="stylesheet" href="assets/animations/laser/resonator-moden.css?v=20260922a">
 <script src="assets/animations/laser/resonator-moden.js?v=20260922b"></script>
-<link rel="stylesheet" href="assets/animations/laser/rubinlaser.css?v=20260922d">
+<link rel="stylesheet" href="assets/animations/laser/rubinlaser.css?v=20260923b">
 <script src="assets/animations/laser/rubinlaser.js?v=20260922d"></script>
-<script src="assets/animations/laser/he-ne.js"></script>
-<script src="assets/animations/laser/hene-spektroskop.js"></script>
+<link rel="stylesheet" href="assets/animations/laser/he-ne.css?v=20260923e">
+<script src="assets/animations/laser/he-ne.js?v=20260923e"></script>
+<script src="assets/animations/laser/hene-spektroskop.js?v=20260923e"></script>
 <script src="assets/animations/shared/workbook.js?v=20260921"></script>
+<script src="assets/scripts/video-start.js?v=20260923b"></script>
 ```
 :::
 
 Laser begegnen dir ständig im Alltag. Im Glasfasernetz transportiert Laserlicht beispielsweise deine Daten durch das Internet. Bei Veranstaltungen erzeugen Laser Lichtshows, in Präsentationen dienen sie als Pointer und in Hautarztpraxen entfernen sie Tattoos und Pigmentflecken. Mit Laserpulsen lassen sich außerdem Entfernungen extrem genau messen, sogar die Distanz von der Erde zum Mond.
 
 Was diese unterschiedlichen Anwendungen verbindet, steckt bereits im Namen „Laser“. Das Akronym steht für „Light Amplification by Stimulated Emission of Radiation“, also Lichtverstärkung durch stimulierte Emission von Strahlung. Der Name weist zugleich den Weg durch dieses Kapitel. Zunächst untersuchst du mit der Absorption, der spontanen Emission und der stimulierten Emission drei grundlegende Prozesse bei der Wechselwirkung von Licht und Atomen. Damit im Lasermedium mehr Photonen durch stimulierte Emission entstehen als absorbiert werden, braucht es eine Besetzungsinversion. Der Resonator führt das Licht wiederholt durch das Medium. Am Rubinlaser untersuchst du anschließend, wie die wichtigsten Bestandteile eines Lasers zusammenwirken. Der Helium-Neon-Laser zeigt dir danach, wie dasselbe Grundprinzip in einem anderen Lasertyp umgesetzt wird. Da Laser auch im Physikunterricht zum Einsatz kommen können, schließt das Kapitel mit den Laserklassen und den Schutzmaßnahmen für einen sicheren Umgang.
-
-::: {.column-margin}
-David Phillips führt im Vortrag [„Crystals and lasers: Constructing a laser“](https://www.rigb.org/explore-science/explore/video/crystals-and-lasers-constructing-laser-1987) mit Experimenten und Analogien durch die Grundlagen des Lasers. Der gesamte englischsprachige Vortrag eignet sich zur Vertiefung dieses Kapitels.
-
-Auch der englischsprachige MIT-Kurs [„Understanding Lasers and Fiberoptics“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/) von Shaoul Ezekiel bietet eine Vertiefung. Das Video [„Laser Fundamentals I“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/resources/laser-fundamentals-i/) behandelt insbesondere die Eigenschaften des Laserlichts. Beide Angebote findest du in der [weiterführenden Literatur](references.qmd#weiterführende-literatur).
-:::
 
 ## Stimulierte Emission
 
@@ -300,7 +296,9 @@ Je nach Lasertyp wird optisch oder elektrisch gepumpt. Beim optischen Pumpen lie
 
 Im hier verwendeten Zwei-Niveau-Modell lässt sich mit Pumplicht, dessen Photonenenergie genau zum Übergang zwischen $E_1$ und $E_2$ passt, keine Besetzungsinversion erzeugen. Das Pumplicht, das ein Atom von $E_1$ nach $E_2$ hebt (Absorption), kann an einem Atom in $E_2$ den Übergang nach $E_1$ auslösen (stimulierte Emission). Da beide Vorgänge pro passendem Atom gleich wahrscheinlich sind, bestimmt die jeweilige Besetzungszahl ihre Rate. Die Absorptionsrate wächst mit der Zahl $N_1$ der Atome im Grundzustand $E_1$. Die Rate der stimulierten Emission wächst mit der Zahl $N_2$ der Atome im oberen Niveau $E_2$. Bei $N_1=N_2$ gleichen sich beide Raten aus. Das Pumplicht kann die Besetzungen daher höchstens an die Gleichbesetzung annähern. Eine Besetzungsinversion lässt sich auf diesem Weg nicht erzeugen.
 
+::: {#laser-drei-niveau-modell}
 Konventionelle atomare Laser umgehen diese Grenze, indem am Pumpvorgang weitere Energieniveaus beteiligt sind. Das Grundprinzip lässt sich mit einem vereinfachten Drei-Niveau-Modell erklären. Das Pumplicht hebt Atome aus dem Grundzustand $E_1$ zunächst in das kurzlebige Pumpniveau $E_3$. Von $E_3$ wechseln die Atome schnell, meist durch einen strahlungslosen Übergang, in das obere Laserniveau $E_2$.
+:::
 
 Das Niveau $E_2$ ist metastabil.[metastabiler Zustand]{.column-margin .mp-randbegriff} Metastabil bedeutet hier, dass die spontane Emission aus diesem Zustand im Mittel deutlich später einsetzt als aus einem gewöhnlichen angeregten Zustand. Während dieser Zeit bleibt Anregungsenergie im Atom gespeichert. Dadurch können sich Atome in $E_2$ ansammeln.
 
@@ -534,7 +532,7 @@ Beide Kurven sind auf dieselbe maximale Höhe skaliert. Auf der waagerechten Ach
 
 ![Vergleich belegter Linienbreiten bei gleichen Achsenmaßstäben und gleicher maximaler Höhe. A: Natrium-Spektrallampe aus dem beschriebenen Experiment, etwa 8 GHz beziehungsweise 9,3 pm [@budker2002magneto, Abschn. II.C.2]. B: Diodenlaser DBR780PN, typisch 1 MHz beziehungsweise 0,0020 pm nach Herstellerangabe [@thorlabs_dbr780pn]. Die Kurvenformen sind für den Breitenvergleich vereinfacht und geben keine gemessenen Kurvenverläufe wieder. 1 pm entspricht 0,001 nm.](assets/images/laser/spektrallinien-vergleich.svg){#fig-umbau-laser-spektrallinien fig-alt="Zwei Diagramme mit gleichem Wellenlängenmaßstab von minus zwanzig bis plus zwanzig Pikometer relativ zur jeweiligen Linienmitte. A zeigt ein vereinfachtes Profil mit der veröffentlichten Linienbreite einer Natrium-Spektrallampe von etwa 9,3 Pikometern. B zeigt ein vereinfachtes Profil mit der typischen Hersteller-Linienbreite des DBR780PN von etwa 0,0020 Pikometern. Die Laserlinie ist im gemeinsamen Maßstab kaum in ihrer Breite auflösbar. A und B stehen unter den Diagrammen."}
 
-## Der Rubinlaser {#aufbau-eines-lasers-der-erste-laser}
+## Rubinlaser {#aufbau-eines-lasers-der-erste-laser}
 
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> den Aufbau des Rubinlasers und <u>ordnest</u> Lasermedium, Pumpquelle und Resonator ihre Funktionen <u>zu</u>.
@@ -546,33 +544,30 @@ Du kennst inzwischen die Voraussetzungen dafür, dass ein Laser Licht verstärke
 
 Seinen Namen verdankt der Rubinlaser seinem Lasermedium, einem Rubinkristall.[Lasermedium]{.column-margin .mp-randbegriff} Rubin besteht aus Korund, also Aluminiumoxid, in dessen Kristallgitter ein kleiner Teil der Aluminium-Ionen durch Chrom-Ionen ersetzt ist. Die Chrom-Ionen geben dem Rubin seine rote Farbe. An diesen Ionen findet auch die Lichtverstärkung durch stimulierte Emission statt.
 
-Die für den Laserbetrieb wesentlichen Übergänge lassen sich mit dem bereits bekannten [Drei-Niveau-Modell](#besetzungsinversion-und-lasermedium) beschreiben. $E_1$ bezeichnet den Grundzustand, $E_2$ das metastabile Laserniveau und $E_3$ das höher liegende Pumpniveau. Der Laserübergang führt von $E_2$ nach $E_1$. Das Pumpniveau $E_3$ steht hier vereinfacht für mehrere höhere Energiezustände der Chrom-Ionen im Rubin.
+Als Pumpquelle dient eine wendelförmige Blitzlampe, die den Rubinstab umgibt.
 
-Als Pumpquelle dient eine Blitzlampe, die den Rubinstab umgibt.[optisches Pumpen]{.column-margin .mp-randbegriff} Die Lampe enthält das Edelgas Xenon. Bei einer kurzen elektrischen Entladung regen Elektronenstöße das Gas an, sodass es einen hellen Lichtblitz aussendet. Die Chrom-Ionen absorbieren vor allem dessen grüne und blauviolette Anteile und gelangen von $E_1$ in das Pumpniveau $E_3$. Anschließend geben sie einen Teil der aufgenommenen Energie an den Kristall ab und erreichen rasch das metastabile Niveau $E_2$. Dort können sich viele angeregte Ionen ansammeln.
+@fig-umbau-rubin-aufbau zeigt die auseinandergelegten Teile von Maimans Rubinlaser. Im zusammengesetzten Aufbau umschließt der Aluminiumreflektor Blitzlampe und Rubinstab und lenkt einen Teil des nach außen abgestrahlten Pumplichts zum Rubin zurück. Die Resonatorspiegel sind auf dem Foto nicht einzeln erkennbar, denn sie befinden sich direkt auf den Stirnflächen des Rubinstabs.
 
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
-  <img src="assets/task-icons/think.svg" alt="" aria-hidden="true">
-  Denkcheck
-</span>
-
-Die Blitzlampe pumpt den Rubinlaser mit grünem und blauviolettem Licht.
-
-Für diese Aufgabe benötigst du den Zusammenhang zwischen Wellenlänge und Photonenenergie. Im Vakuum gilt $c=\lambda f$, in Luft näherungsweise ebenfalls. Zusammen mit $E_\text{Photon}=hf$ ergibt sich
-
-$$
-E_\text{Photon}=\frac{hc}{\lambda}.
-$$
-
-<u>Beurteile</u>, ob ein sehr intensiver roter Lichtstrahl die Chrom-Ionen ebenfalls vom Grundzustand $E_1$ in das Pumpniveau $E_3$ anregen könnte.
+:::: {#fig-umbau-rubin-aufbau}
+```{=html}
+<div class="rubin-photo" role="group" aria-label="Beschriftete Fotografie der Bauteile von Maimans Rubinlaser">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/5_Maiman_Laser_Components.jpg" width="960" height="640" alt="Oben liegt der abgenommene Aluminiumreflektor mit Halterung. Darunter liegen links die wendelförmige Xenon-Blitzlampe und rechts der rosafarbene Rubinstab mit seiner Halterung. Die verspiegelten Stirnflächen sind nicht einzeln zu erkennen.">
+  <svg class="rubin-photo-guides" viewBox="0 0 960 640" aria-hidden="true"><g fill="none" stroke="#172033" stroke-width="3"><path d="M480 65V155"/><path d="M270 568L350 477"/><path d="M697 568L642 448"/></g><g fill="#172033"><circle cx="480" cy="155" r="5"/><circle cx="350" cy="477" r="5"/><circle cx="642" cy="448" r="5"/></g></svg>
+  <span class="rubin-photo-label rubin-photo-label--reflector">Aluminiumreflektor</span>
+  <span class="rubin-photo-label rubin-photo-label--lamp">Xenon-Blitzlampe</span>
+  <span class="rubin-photo-label rubin-photo-label--ruby">Rubinstab</span>
+</div>
+```
+::: {.content-visible unless-format="html"}
+![](https://upload.wikimedia.org/wikipedia/commons/7/7d/5_Maiman_Laser_Components.jpg){fig-alt="Auseinandergelegte Bauteile von Maimans Rubinlaser, oben der Aluminiumreflektor, unten links die Blitzlampe und unten rechts der Rubinstab."}
 :::
 
-<details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
+Fotografie der Bauteile von Maimans Rubinlaser. Die Beschriftungen ordnen Pumpquelle, Lasermedium und den zusätzlichen Reflektor zu. Aufnahme von Guy Immega, 2010, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:5_Maiman_Laser_Components.jpg), freigegeben unter [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Das Foto ist unverändert, Beschriftungen und Hinweislinien wurden für das Workbook ergänzt.
+::::
 
-Rotes Licht hat eine längere Wellenlänge als grünes und blauviolettes Licht. Seine Photonen besitzen deshalb weniger Energie. Ihre Energie reicht nicht für den Übergang vom Grundzustand $E_1$ in das Pumpniveau $E_3$. Auch ein intensiverer roter Lichtstrahl würde daran im betrachteten Modell nichts ändern, denn er liefert mehr Photonen, aber keine höhere Energie pro Photon.
+Die für den Laserbetrieb wesentlichen Übergänge lassen sich mit dem bereits bekannten [Drei-Niveau-Modell](#laser-drei-niveau-modell) beschreiben. $E_1$ bezeichnet den Grundzustand, $E_2$ das metastabile Laserniveau und $E_3$ das höher liegende Pumpniveau. Der Laserübergang führt von $E_2$ nach $E_1$. Das Pumpniveau $E_3$ steht hier vereinfacht für mehrere höhere Energiezustände der Chrom-Ionen im Rubin.
 
-</details>
+Die Blitzlampe enthält das Edelgas Xenon. Bei einer kurzen elektrischen Entladung regen Elektronenstöße das Gas an, sodass es einen hellen Lichtblitz aussendet. Die Chrom-Ionen absorbieren vor allem dessen grüne und blauviolette Anteile und gelangen von $E_1$ in das Pumpniveau $E_3$.[optisches Pumpen]{.column-margin .mp-randbegriff} Anschließend geben sie einen Teil der aufgenommenen Energie an den Kristall ab und erreichen rasch das metastabile Niveau $E_2$. Dort können sich viele angeregte Ionen ansammeln.
 
 @fig-umbau-rubin-niveaus zeigt die Übergänge eines einzelnen Chrom-Ions im Rubin. Grau kennzeichnet $E_1$, Gelb $E_2$ und Violett $E_3$, wie in den vorherigen Niveauschemata. Der große Punkt markiert den Zustand des Ions. Die kleinen roten Punkte stehen für Photonen des Laserübergangs. Trifft ein solches Photon auf das Ion in $E_2$, kann es stimulierte Emission auslösen. Dabei entsteht ein weiteres Photon und das Ion geht in den Grundzustand $E_1$ über.
 
@@ -589,54 +584,47 @@ Im vereinfachten Drei-Niveau-Schema wird ein Chrom-Ion von $E_1$ nach $E_3$ gepu
 Animation der Energieübergänge eines Chrom-Ions im Rubin. Niveauabstände und Zeitablauf sind schematisch dargestellt. Die Animation zeigt einen möglichen Ablauf mit stimulierter Emission.
 ::::
 
+::::: {#aufgabe-rubin-pumplicht .mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+  <img src="assets/task-icons/think.svg" alt="" aria-hidden="true">
+  Denkcheck
+</span>
+
+Die Blitzlampe pumpt den Rubinlaser mit grünem und blauviolettem Licht.
+
+Für diese Aufgabe benötigst du den Zusammenhang zwischen Wellenlänge und Photonenenergie. Im Vakuum gilt $c=\lambda f$, in Luft näherungsweise ebenfalls. Zusammen mit $E_\text{Photon}=hf$ ergibt sich
+
+$$
+E_\text{Photon}=\frac{hc}{\lambda}.
+$$
+
+@fig-laser-elektromagnetisches-spektrum ordnet die Bereiche des elektromagnetischen Spektrums nach Wellenlänge und Frequenz. Oben ist der sichtbare Bereich vergrößert dargestellt.
+
+:::: {#fig-laser-elektromagnetisches-spektrum}
+![](https://upload.wikimedia.org/wikipedia/commons/0/07/Electromagnetic_spectrum_-de.svg){.lightbox fig-alt="Elektromagnetisches Spektrum mit zugeordneten Skalen für Wellenlänge und Frequenz. Oben ist sichtbares Licht von Violett bei kurzen bis Rot bei langen Wellenlängen vergrößert. Darunter reichen die Bereiche von Gamma- und Röntgenstrahlung über Ultraviolett, sichtbares Licht und Infrarot bis zu Radiowellen." width="100%"}
+
+Diagramm des elektromagnetischen Spektrums mit Wellenlängen- und Frequenzskala sowie vergrößertem sichtbarem Bereich. Horst Frank und Jailbird, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Electromagnetic_spectrum_-de.svg), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.de). Unverändert übernommen. Zum Vergrößern auf die Grafik klicken.
+::::
+
+<u>Beurteile</u>, ob ein sehr intensiver roter Lichtstrahl die Chrom-Ionen ebenfalls vom Grundzustand $E_1$ in das Pumpniveau $E_3$ anregen könnte.
+:::::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+Rotes Licht hat eine längere Wellenlänge als grünes und blauviolettes Licht. Seine Photonen besitzen deshalb weniger Energie. Ihre Energie reicht nicht für den Übergang vom Grundzustand $E_1$ in das Pumpniveau $E_3$. Auch ein intensiverer roter Lichtstrahl würde daran im betrachteten Modell nichts ändern, denn er liefert mehr Photonen, aber keine höhere Energie pro Photon.
+
+</details>
+
 Beim Rubinlaser muss die Blitzlampe so viele Chrom-Ionen anregen, dass sich mehr von ihnen im metastabilen Niveau $E_2$ als im Grundzustand $E_1$ befinden. Dann liegt zwischen diesen beiden Niveaus eine Besetzungsinversion vor.[Besetzungsinversion]{.column-margin .mp-randbegriff} Verglichen werden dabei nur die Besetzungen von $E_2$ und $E_1$. Das Pumpniveau $E_3$ ermöglicht die Anregung der Ionen auf dem Weg nach $E_2$.
 
 Beim frühen Rubinlaser waren die beiden Stirnflächen des Rubinstabs verspiegelt und bildeten den Resonator.[Resonator]{.column-margin .mp-randbegriff} Eine Fläche reflektierte das Licht nahezu vollständig, die andere war als Auskoppelspiegel teildurchlässig. Ein Teil des spontan ausgesandten Lichts läuft entlang der Stabachse und wird zwischen diesen Flächen wiederholt durch den angeregten Rubin geführt. Bei jedem Durchgang können durch stimulierte Emission weitere Photonen hinzukommen. Gleichzeitig verlässt ein Teil des Lichts den Resonator durch den Auskoppelspiegel, ein weiterer Teil geht durch Absorption und Streuung verloren. Damit sich die Laserstrahlung aufbaut, müssen bei einem vollständigen Umlauf mehr Photonen hinzukommen, als auf diesen Wegen verloren gehen. Durch den Auskoppelspiegel tritt rotes Laserlicht mit einer Wellenlänge von etwa $694\,\mathrm{nm}$ aus.
 
-Dieser mit einer Blitzlampe gepumpte Rubinlaser arbeitet in Pulsen. Er sendet sein Laserlicht in zeitlich begrenzten Impulsen aus. Diese Betriebsart heißt gepulster Betrieb.[gepulster Betrieb]{.column-margin .mp-randbegriff} Der Blitz liefert die nötige Pumpenergie nur für kurze Zeit. Bereits während des Blitzes kann der Rubinlaser Licht aussenden. Sobald die Anregung nicht mehr ausreicht, um die Lichtverstärkung aufrechtzuerhalten, endet die Laseremission. Ein Lampenblitz kann mehrere kurze Intensitätsspitzen der Laseremission hervorrufen.
-
-@fig-umbau-rubin-aufbau zeigt die auseinandergelegten Teile von Maimans Rubinlaser. Im zusammengesetzten Aufbau befindet sich der Rubinstab innerhalb der wendelförmigen Blitzlampe. Der Aluminiumreflektor umschließt beide und lenkt einen Teil des nach außen abgestrahlten Pumplichts zum Rubin zurück. Die Resonatorspiegel sind auf dem Foto nicht einzeln erkennbar, denn sie befinden sich direkt auf den Stirnflächen des Rubinstabs.
-
-::: {.column-margin}
-Im [SPIE-Video „Celebrating 50 Years of the Laser“](https://www.youtube.com/watch?v=eQQeSUvgmJE&t=327s) zeigt Theodore Maiman die Bauteile seines Rubinlasers. Der kurze Ausschnitt beginnt bei etwa 5:27 und endet bei etwa 5:45.
-:::
-
-:::: {#fig-umbau-rubin-aufbau}
-```{=html}
-<div class="rubin-photo" role="group" aria-label="Beschriftete Fotografie der Bauteile von Maimans Rubinlaser">
-  <img src="assets/images/laser/maiman-komponenten.jpg" width="960" height="640" alt="Oben liegt der abgenommene Aluminiumreflektor mit Halterung. Darunter liegen links die wendelförmige Xenon-Blitzlampe und rechts der rosafarbene Rubinstab mit seiner Halterung. Die verspiegelten Stirnflächen sind nicht einzeln zu erkennen.">
-  <svg class="rubin-photo-guides" viewBox="0 0 960 640" aria-hidden="true"><g fill="none" stroke="#172033" stroke-width="3"><path d="M480 65V155"/><path d="M270 568L350 477"/><path d="M697 568L642 448"/></g><g fill="#172033"><circle cx="480" cy="155" r="5"/><circle cx="350" cy="477" r="5"/><circle cx="642" cy="448" r="5"/></g></svg>
-  <span class="rubin-photo-label rubin-photo-label--reflector">Aluminiumreflektor</span>
-  <span class="rubin-photo-label rubin-photo-label--lamp">Xenon-Blitzlampe</span>
-  <span class="rubin-photo-label rubin-photo-label--ruby">Rubinstab</span>
-</div>
-```
-::: {.content-visible unless-format="html"}
-![](assets/images/laser/maiman-komponenten.jpg){fig-alt="Auseinandergelegte Bauteile von Maimans Rubinlaser, oben der Aluminiumreflektor, unten links die Blitzlampe und unten rechts der Rubinstab."}
-:::
-
-Fotografie der Bauteile von Maimans Rubinlaser. Die Beschriftungen ordnen Pumpquelle, Lasermedium und den zusätzlichen Reflektor zu. Aufnahme von Guy Immega, 2010, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:5_Maiman_Laser_Components.jpg), freigegeben unter [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/). Das Foto ist unverändert, Beschriftungen und Hinweislinien wurden für das Workbook ergänzt.
-::::
+Dieser mit einer Blitzlampe gepumpte Rubinlaser arbeitet in Pulsen. Er sendet sein Laserlicht in zeitlich begrenzten Impulsen aus. Diese Betriebsart heißt gepulster Betrieb.[gepulster Betrieb]{.column-margin .mp-randbegriff style="margin-top: 1.5em;"} Der Blitz liefert die nötige Pumpenergie nur für kurze Zeit. Bereits während des Blitzes sendet der Rubinlaser Licht aus. Sobald die Anregung nicht mehr ausreicht, um die Lichtverstärkung aufrechtzuerhalten, endet die Laseremission. Ein Lampenblitz kann mehrere kurze Intensitätsspitzen der Laseremission hervorrufen.
 
 Am Rubinlaser kannst du damit die bekannten Grundprinzipien einem konkreten Aufbau zuordnen. Die Blitzlampe liefert Pumpenergie, die Chrom-Ionen im Rubin ermöglichen die Lichtverstärkung und die verspiegelten Stirnflächen führen das Licht wiederholt durch das Lasermedium.
 
-@fig-umbau-tattoo-video zeigt eine Tattooentfernung mit einem Laser. Ab etwa 0:30 sind schwarze und rote Bereiche der Tätowierung zu sehen. Die folgende Aufgabe bezieht sich auf die Behandlung eines roten Tattoos mit einem Rubinlaser.
-
-:::: {#fig-umbau-tattoo-video}
-::: {.content-visible when-format="html"}
-```{=html}
-<video controls preload="none" playsinline width="854" height="480" style="width:100%;height:auto" aria-label="Laser tattoo removal: Video einer Tattooentfernung" poster="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Laser_tattoo_removal.ogv/960px--Laser_tattoo_removal.ogv.jpg">
-  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/15/Laser_tattoo_removal.ogv/Laser_tattoo_removal.ogv.480p.vp9.webm" type="video/webm">
-  <source src="https://upload.wikimedia.org/wikipedia/commons/1/15/Laser_tattoo_removal.ogv" type="video/ogg">
-  <a href="https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv">Video auf Wikimedia Commons ansehen</a>
-</video>
-```
-:::
-
-Video „Laser tattoo removal“ von Melissa Findley, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.de). Inhaltlich unverändert eingebunden. Lasertyp und Behandlungswellenlänge sind in der Quelle nicht angegeben.
-::::
-
-::: {.mp-box .mp-task}
+::::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
   <img src="assets/task-icons/transfer.svg" alt="" aria-hidden="true">
   Transfer
@@ -645,7 +633,22 @@ Video „Laser tattoo removal“ von Melissa Findley, [Wikimedia Commons](https:
 Rubinlaser werden in der Medizin zum Entfernen von Tattoos eingesetzt. Kurze Laserpulse können Farbpigmente in der Haut in kleinere Bruchstücke zerlegen. Das gelingt nur, wenn das Pigment das Laserlicht ausreichend absorbiert. Eine Person möchte ein rotes Tattoo entfernen lassen.
 
 <u>Beurteile</u> anhand der Farbe, ob das rote Licht eines Rubinlasers dafür geeignet ist.
+
+@fig-umbau-tattoo-video zeigt eine Tattooentfernung mit einem Laser. Am Gerät sind $1064\,\mathrm{nm}$ eingestellt, also infrarotes Licht. Wie beim Rubinlaser hängt die Wirkung davon ab, welche Tattoofarben das Laserlicht absorbieren. Vielleicht fällt dir im Video noch etwas auf, das dir beim Bearbeiten der Aufgabe hilft.
+
+:::: {#fig-umbau-tattoo-video}
+::: {.content-visible when-format="html"}
+```{=html}
+<video controls preload="none" data-start-time="26" playsinline width="854" height="480" style="width:100%;height:auto" aria-label="Laser tattoo removal: Video einer Tattooentfernung">
+  <source src="https://upload.wikimedia.org/wikipedia/commons/transcoded/1/15/Laser_tattoo_removal.ogv/Laser_tattoo_removal.ogv.480p.vp9.webm#t=26" type="video/webm">
+  <a href="https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv">Video auf Wikimedia Commons ansehen</a>
+</video>
+```
 :::
+
+Video „Laser tattoo removal“ von Melissa Findley, [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Laser_tattoo_removal.ogv), [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.de). Inhaltlich unverändert eingebunden.
+::::
+:::::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
@@ -662,76 +665,76 @@ Auf der langen Strecke weitet sich auch ein Laserstrahl auf. Am Mond war der bel
 
 Die Entfernung zum Mond wird bis heute mit Laserpulsen gemessen, inzwischen mit anderen Lasertypen. Laufzeitmessungen mit Laserlicht werden auch auf der Erde eingesetzt, etwa zur Vermessung von Gebäuden.
 
-## Ein zweiter Lasertyp: der Helium-Neon-Laser
+## Helium-Neon-Laser {#ein-zweiter-lasertyp-der-helium-neon-laser}
 
 ::: {.mp-goal-strip}
 Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers.
 
-Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht.
+Du <u>erklärst</u>, wie Elektronenstöße und die Energieübertragung von Helium auf Neon zum Aufbau einer Besetzungsinversion beitragen.
 
-Du <u>begründest</u>, dass dem Helium-Neon-Laser schwaches, ständiges Pumpen genügt.
+Du <u>vergleichst</u> Rubinlaser und Helium-Neon-Laser hinsichtlich ihrer Pumpweise und ihrer Betriebsart.
 :::
 
-Der gerade betrachtete Rubinlaser wird nur während der Lampenblitze gepumpt und sendet deshalb zeitlich begrenzt Laserlicht aus. Viele Anwendungen brauchen stattdessen einen Strahl, der ununterbrochen leuchtet: der stehende rote Punkt eines Laserpointers, der Abtaststrahl einer Scannerkasse, die dauerhaft projizierte Linie eines Baustellenlasers.
+Beim Rubinlaser hast du kennengelernt, wie eine Blitzlampe dem Lasermedium Pumpenergie zuführt. Beim Helium-Neon-Laser übernimmt diese Aufgabe eine elektrische Entladung im Lasermedium. Sie kann fortlaufend Energie liefern und so einen kontinuierlichen Laserstrahl ermöglichen. Lasermedium, Pumpquelle und Resonator erfüllen dabei dieselben grundlegenden Funktionen wie beim Rubinlaser.
 
-Ende 1960 gelang in den Bell Laboratories der erste Gaslaser: der Helium-Neon-Laser. Er war der erste Laser mit dauerhaftem Strahl und über Jahrzehnte der Standardlaser in Laboren; auch die ersten Scannerkassen arbeiteten mit ihm. Sein bekanntester Übergang liefert rotes Licht mit der Wellenlänge 632,8 nm.
+Bereits Ende 1960, wenige Monate nach Maimans Rubinlaser, gelang der erste Helium-Neon-Laser. Er war der erste Gaslaser und der erste Laser, der kontinuierlich Licht aussandte. Diese erste Ausführung arbeitete im Infraroten. Im Folgenden betrachten wir den später entwickelten roten Helium-Neon-Laser mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$.
 
-Das Lasermedium ist diesmal ein Gas: ein Gemisch aus etwa 85 Prozent Helium und 15 Prozent Neon bei geringem Druck in einem Glasrohr. Das Laserlicht stammt vom Neon; das Helium übernimmt eine Hilfsrolle beim Pumpen. An den Enden des Rohrs sitzen wieder die beiden Spiegel des Resonators.
+Helium-Neon-Laser werden bis heute für optische Versuche in Lehre und Forschung eingesetzt. Auch frühe Scannerkassen arbeiteten mit diesem Lasertyp [@smithsonian_supermarket_scanner]. Heutige Kassenscanner können Barcodes dagegen beispielsweise mit Bildsensoren erfassen. Bei solchen Geräten können rote LEDs den Barcode beleuchten, damit der Bildsensor ihn zuverlässig erfasst. Rotes Licht an einer Scannerkasse muss daher kein Laserlicht sein.
 
-Gepumpt wird elektrisch. Zwischen zwei Elektroden liegt eine Hochspannung, durch das Gas fließt eine Gasentladung:[Gasentladung]{.column-margin .mp-randbegriff} Freie Elektronen werden beschleunigt und stoßen mit den Atomen zusammen. Solche Stöße können Atome anregen, ganz ohne Licht.
+Das Lasermedium ist diesmal ein Gemisch aus Helium und Neon bei geringem Druck in einem Glasrohr. Dabei überwiegt der Heliumanteil. Die Lichtverstärkung durch stimulierte Emission findet an den Neonatomen statt. Das Helium unterstützt die Anregung des Neons. An den Enden des Rohrs befinden sich die beiden Spiegel des Resonators.
 
-Das Bild zeigt den Aufbau: das Glasrohr mit der Gasentladung zwischen Kathode und Anode und den dauerhaft leuchtenden Laserstrahl.
+Gepumpt wird elektrisch. Zwischen zwei Elektroden liegt eine Hochspannung. Das elektrische Feld beschleunigt freie Elektronen im Gas. Bei Zusammenstößen können sie weitere Elektronen aus Atomen lösen und dadurch zusätzliche Ladungsträger erzeugen. Diesen Vorgang nennt man Ionisation. Die Bewegung freier Elektronen und Ionen ermöglicht einen elektrischen Strom durch das Gas. Eine solche elektrische Stromleitung in einem Gas bezeichnet man als Gasentladung.[Gasentladung]{.column-margin .mp-randbegriff}
 
+Bei einem Elektronenstoß muss das getroffene Atom aber nicht ionisiert werden. Es kann auch einen Teil der Bewegungsenergie des Elektrons aufnehmen und in einen angeregten Zustand gelangen. Die Anregung durch Elektronenstöße kennst du bereits von der Xenon-Blitzlampe. Beim Helium-Neon-Laser findet die Gasentladung direkt im Lasermedium statt und wird kontinuierlich aufrechterhalten.
+
+@fig-umbau-hene-aufbau zeigt den Aufbau schematisch. Die Kathode ist mit dem Minuspol, die Anode mit dem Pluspol der Hochspannungsquelle verbunden. Die beiden Spiegel bilden den Resonator. Durch den teildurchlässigen Spiegel rechts tritt der Laserstrahl aus. Das Leuchten im Rohr kennzeichnet die Gasentladung, die rote Linie entlang der Spiegelachse den Verlauf des Laserstrahls.
+
+:::: {#fig-umbau-hene-aufbau}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene" data-srt-viewbox-h="280" data-srt-label="Aufbau eines Helium-Neon-Lasers: ein Glasrohr mit Helium und Neon zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel. Kathode und Anode sind an eine Hochspannung angeschlossen, im Rohr leuchtet eine Gasentladung. Rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 Nanometern aus."></div>
-  <figcaption>Abbildung des Helium-Neon-Lasers: Glasrohr mit Gasentladung zwischen Kathode und Anode, Spiegel an den Rohrenden; rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 nm aus.</figcaption>
-</figure>
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene" data-srt-viewbox-h="390" data-srt-label="Aufbau eines Helium-Neon-Lasers: ein Glasrohr mit Helium und Neon zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel. Kathode und Anode sind an eine Hochspannung angeschlossen, im Rohr leuchtet eine Gasentladung. Rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 Nanometern aus."></div>
 ```
 :::
 
-::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier ein Bild: das Glasrohr des Helium-Neon-Lasers mit Kathode, Anode und Hochspannung, der Gasentladung und den beiden Spiegeln. Rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 nm aus.
-:::
+::: {.content-visible unless-format="html" .srt-workbook-fallback}
+Die Skizze in der HTML-Version zeigt ein Glasrohr mit Helium und Neon zwischen zwei Resonatorspiegeln. Kathode und Anode sind an eine Hochspannungsquelle angeschlossen. Durch den teildurchlässigen Spiegel tritt der Laserstrahl aus.
 :::
 
-Die Elektronenstöße heben vor allem Heliumatome in einen angeregten Zustand an, der 20,61 eV über dem Grundzustand liegt. Dieser Zustand ist metastabil: Das Heliumatom speichert die Stoßenergie. Ein glücklicher Zufall macht daraus einen Laser: Ein Energieniveau des Neons liegt mit 20,66 eV fast genau auf derselben Höhe, nur eine Winzigkeit darüber. Stößt ein angeregtes Heliumatom mit einem Neonatom im Grundzustand zusammen, übergibt es seine Energie. Das Helium kehrt in den Grundzustand zurück, das Neon sitzt nun im oberen Laserniveau. Den winzigen Rest von 0,05 eV liefert die Bewegung der stoßenden Atome.
+Skizze des Helium-Neon-Lasers mit Gasentladung, Elektroden und Resonatorspiegeln. Rechts tritt der Laserstrahl mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ aus. Die rote Linie markiert den Strahlverlauf und gibt nicht die seitliche Sichtbarkeit des Strahls wieder.
+::::
+
+Elektronenstöße können sowohl Helium- als auch Neonatome anregen. Für den Aufbau der Besetzungsinversion ist ein zusätzlicher Weg über das Helium entscheidend. Dabei gelangt ein Heliumatom zunächst in einen metastabilen Zustand. Es kann die aufgenommene Energie dort vergleichsweise lange behalten.
+
+Um die Energieübertragung zwischen beiden Atomsorten zu verstehen, betrachtest du nun konkrete Energiewerte. Sie geben jeweils die Energie über dem Grundzustand der betreffenden Atomsorte an.
+
+Der betrachtete metastabile Zustand des Heliums liegt bei $20{,}61\,\mathrm{eV}$. Das obere Laserniveau des Neons liegt mit $20{,}66\,\mathrm{eV}$ nur wenig höher. Stößt ein entsprechend angeregtes Heliumatom mit einem Neonatom im Grundzustand zusammen, kann es seine Anregungsenergie auf das Neonatom übertragen. Das Heliumatom kehrt dabei in seinen Grundzustand zurück und das Neonatom erreicht das obere Laserniveau. Die zusätzlich benötigten $0{,}05\,\mathrm{eV}$ stammen aus der Bewegungsenergie der stoßenden Atome.
+
+Hier wirken also zwei verschiedene Stoßprozesse zusammen. Zunächst regt ein freies Elektron ein Heliumatom an. Anschließend überträgt das angeregte Heliumatom Energie auf ein Neonatom.
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Übergibt das Helium seine Energie nicht per Photon?</div>
-Auf den ersten Blick liegt das nahe: Das angeregte Helium sendet ein Photon aus, und das Neon absorbiert es. Die Energien passen dafür aber nicht. Für die Absorption müsste die Photonenenergie genau zum Niveauabstand des Neons passen. Ein Photon aus dem Helium-Übergang trüge 20,61 eV, für das Neon-Niveau bei 20,66 eV wäre es zu energiearm.
+Beim Rubinlaser überträgt Licht Energie von der Blitzlampe zum Lasermedium. Du hast aber bereits kennengelernt, dass ein angeregtes Atom Energie auch ohne Aussendung eines Photons an andere Teilchen abgeben kann. Beim Helium-Neon-Laser führt eine solche Energieübertragung zur Anregung eines anderen Atoms.
 
-Beim Stoß ist das kein Hindernis, die fehlenden 0,05 eV liefert die Bewegungsenergie der Atome. Im Gas stoßen die Atome ständig zusammen, die Übergabe klappt darum zuverlässig.
+Beim Stoß überträgt das Heliumatom seine Anregungsenergie auf das Neonatom. Die fehlenden $0{,}05\,\mathrm{eV}$ stammen aus der Bewegungsenergie der Atome. Ein Photon mit der Anregungsenergie des Heliums von $20{,}61\,\mathrm{eV}$ würde dagegen nicht ausreichen, um das Neonatom in das obere Laserniveau bei $20{,}66\,\mathrm{eV}$ anzuheben.
 :::
 
-Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau leert sich von selbst sehr schnell weiter. Es ist darum praktisch immer leer, und schon wenige Neonatome im oberen Niveau sind mehr als im unteren: Zwischen diesen beiden Niveaus herrscht Besetzungsinversion, obwohl fast alle Neonatome im Grundzustand sitzen. Ein Zahlenbeispiel für 1000 Neonatome, angeordnet wie im Niveauschema:
+Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau liegt bei etwa $18{,}70\,\mathrm{eV}$. Beim Übergang vom oberen zum unteren Laserniveau wird rotes Licht mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ ausgesandt. Aus dem unteren Laserniveau gelangen die Atome rasch in weitere Zustände. Über weitere Übergänge und Stöße mit der Rohrwand können sie schließlich den Grundzustand erreichen.
 
-| Niveau | Besetzung |
-|---|---:|
-| oberes Laserniveau | 10 Atome |
-| unteres Laserniveau | 0 Atome |
-| Grundzustand | 990 Atome |
+@fig-umbau-hene-niveaus ordnet diese Vorgänge in einem Niveauschema. Links stehen ausgewählte Zustände des Heliums, rechts die des Neons. Der Pfeil zwischen den beiden Spalten kennzeichnet die Energieübertragung beim Stoß. Über die Schaltflächen kannst du die einzelnen Prozesse hervorheben.
 
-Für die Inversion zählt nur der Vergleich der beiden Laserniveaus: 10 gegen 0. Die 990 Atome im Grundzustand stören den Laser nicht: Das rote Photon passt zu keinem Übergang aus dem Grundzustand und wird von ihnen nicht absorbiert. Man spricht von einem Vier-Niveau-System: Grundzustand, unteres und oberes Laserniveau und darüber der Pumpweg. Eine schwache, dauernd laufende Gasentladung hält die Inversion aufrecht, der Strahl leuchtet ununterbrochen: Man nennt das Dauerstrichbetrieb.[Dauerstrichbetrieb]{.column-margin .mp-randbegriff}
-
-Das Bild zeigt das Niveauschema: Ein Elektronenstoß regt das Helium an, ein Stoß übergibt die Energie an das Neon, der Laserübergang liefert das rote Licht, und das untere Niveau leert sich schnell.
-
+:::: {#fig-umbau-hene-niveaus}
 ::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure srt-workbook-figure--caption-inside">
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene-niveaus" data-srt-viewbox-h="320" data-srt-label="Niveauschema des Helium-Neon-Lasers mit zwei Spalten. Links Helium mit Grundzustand und metastabilem Niveau, rechts Neon mit Grundzustand, unterem und oberem Laserniveau. Pfeile zeigen den Elektronenstoß im Helium, die Energieübergabe durch Stoß an das Neon auf fast gleicher Höhe, den roten Laserübergang mit 632,8 Nanometern und die schnelle Entleerung des unteren Niveaus."></div>
-  <figcaption>Abbildung des Niveauschemas des Helium-Neon-Lasers: Elektronenstoß im Helium, Energieübergabe durch Stoß an das Neon, Laserübergang mit 632,8 nm und schnelle Entleerung des unteren Niveaus.</figcaption>
-</figure>
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene-niveaus" data-srt-viewbox-h="610" data-srt-label="Niveauschema des Helium-Neon-Lasers mit zwei Spalten. Links Helium mit Grundzustand und metastabilem Niveau, rechts Neon mit Grundzustand, unterem und oberem Laserniveau. Pfeile zeigen den Elektronenstoß im Helium, die Energieübergabe durch Stoß an das Neon mit einer zusätzlichen Bewegungsenergie von 0,05 eV, den roten Laserübergang mit 632,8 Nanometern und die raschen Übergänge aus dem unteren Laserniveau."></div>
 ```
 :::
 
-::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier ein Bild: das Niveauschema des Helium-Neon-Lasers. Pfeile zeigen den Elektronenstoß im Helium, die Energieübergabe an das Neon, den Laserübergang und die schnelle Entleerung des unteren Niveaus.
+::: {.content-visible unless-format="html" .srt-workbook-fallback}
+Das metastabile Helium-Niveau liegt 20,61 eV über seinem Grundzustand. Im Neon liegt das obere Laserniveau bei 20,66 eV und das untere bei 18,70 eV. Die Differenz von 0,05 eV beim Stoßtransfer stammt aus der Bewegungsenergie der Atome.
 :::
-:::
+
+Interaktive Darstellung zum Niveauschema des Helium-Neon-Lasers. Ausgewählte Energiezustände und die zugehörigen Übergänge sind dargestellt. Energieabstände sind nicht maßstäblich, die Differenz von 0,05 eV ist vergrößert dargestellt.
+::::
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
@@ -747,9 +750,21 @@ Das Laserlicht des Helium-Neon-Lasers stammt allein vom Neon.
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Das Helium wird von den Elektronen der Gasentladung angeregt und speichert die Energie in einem metastabilen Zustand. Ein Energieniveau des Neons liegt fast genau auf derselben Höhe. Beim Stoß übergibt das Helium seine Energie an ein Neonatom und hebt es direkt in das obere Laserniveau. Das Helium arbeitet als Zwischenspeicher und füllt das obere Laserniveau des Neons auf.
+Elektronenstöße regen Heliumatome in einen metastabilen Zustand an. Bei Stößen mit Neonatomen können sie ihre Anregungsenergie übertragen und diese in das obere Laserniveau bringen. Das Helium ermöglicht damit einen zusätzlichen Weg, dieses Niveau zu besetzen.
 
 </details>
+
+Weil sich das untere Laserniveau des Neons rasch leert, muss für eine Besetzungsinversion nur ein kleiner Teil der Neonatome angeregt sein. Die Tabelle zeigt ein vereinfachtes Zahlenbeispiel für 1000 Neonatome.
+
+| Niveau | Besetzung |
+|---|---:|
+| oberes Laserniveau | 10 Atome |
+| unteres Laserniveau | 0 Atome |
+| Grundzustand | 990 Atome |
+
+Im oberen Laserniveau befinden sich zehn Atome, im unteren keines. Zwischen diesen beiden Niveaus liegt deshalb eine Besetzungsinversion vor. Die 990 Atome im Grundzustand gehören nicht zu den beiden verglichenen Besetzungen.
+
+Die fortlaufende Gasentladung kann dem oberen Laserniveau ständig neue Atome zuführen. Reicht die dadurch mögliche Lichtverstärkung aus, um die Verluste im Resonator auszugleichen, kann der Laser kontinuierlich Licht aussenden. Diese Betriebsart heißt Dauerstrichbetrieb.[Dauerstrichbetrieb]{.column-margin .mp-randbegriff}
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
@@ -757,32 +772,49 @@ Das Helium wird von den Elektronen der Gasentladung angeregt und speichert die E
   Transfer
 </span>
 
-Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält mehrere Farben, also verschiedene Wellenlängen. Der Laserstrahl enthält nur eine einzige Wellenlänge: 632,8 nm.
+Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält mehrere Farben, also verschiedene Wellenlängen. Das Licht des roten Laserstrahls ist dagegen auf einen sehr schmalen Wellenlängenbereich um $632{,}8\,\mathrm{nm}$ konzentriert.
+
+In @fig-umbau-hene-spektren wählst du zwischen dem seitlichen Licht der Röhre und dem Licht am Strahlaustritt. Zum Schema kannst du jeweils ein reales Bild anzeigen lassen.
 
 <u>Begründe</u> diesen Unterschied.
 
+::::: {#fig-umbau-hene-spektren}
 :::: {.content-visible when-format="html"}
 ```{=html}
-<figure class="srt-workbook-figure">
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="450" data-srt-label="Schaltbare Grafik: der Aufbau des Helium-Neon-Lasers, davor ein Gitterspektroskop. Hält man es seitlich ans Rohr, zeigt das Spektrum darunter viele farbige Linien zwischen 450 und 700 Nanometern. Hält man es in den Laserstrahl, zeigt das Spektrum genau eine rote Linie."></div>
-  <figcaption>Interaktive Abbildung: Gitterspektroskop am seitlichen Licht des Rohrs und im Laserstrahl (umschaltbar), darunter das jeweilige Spektrum.</figcaption>
-</figure>
+<div class="hene-spectrum">
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="515" data-srt-label="Helium-Neon-Röhre mit zwei Stellen zur Untersuchung des Lichts. A liegt seitlich an der Röhre, B am Strahlaustritt. Je nach Auswahl erscheinen mehrere Spektrallinien des Entladungslichts oder die rote Laserlinie. Alternativ sind eine reale Fotografie beziehungsweise eine Messkurve auswählbar."></div>
+  <div class="hene-real-image" data-hene-photo="seitlich" hidden>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Hene_spektrum.jpg" target="_blank" rel="noopener" aria-label="Fotografie des Entladungsspektrums vergrößern">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hene_spektrum.jpg" width="1760" height="2462" loading="lazy" alt="Eine leuchtende Helium-Neon-Röhre und darunter ihre verschiedenfarbigen, durch ein Gitter erzeugten Bilder.">
+    </a>
+    <p>Fotografie einer Helium-Neon-Röhre mit Gitterspektrum. Stefan/StefanPohl, 2012, <a href="https://commons.wikimedia.org/wiki/File:Hene_spektrum.jpg">Wikimedia Commons</a>, vom Urheber gemeinfrei freigegeben. Unverändert eingebunden. Zum Vergrößern auf das Bild klicken.</p>
+  </div>
+  <div class="hene-real-image" data-hene-photo="strahl" hidden>
+    <a href="https://upload.wikimedia.org/wikipedia/commons/d/d7/Helium_neon_laser_spectrum.png" target="_blank" rel="noopener" aria-label="Messkurve des Laserstrahls vergrößern">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Helium_neon_laser_spectrum.png" width="2641" height="1751" loading="lazy" alt="Gemessenes Spektrum eines Helium-Neon-Laserstrahls mit einem schmalen Peak bei 632,8 Nanometern auf einer Wellenlängenskala von 300 bis 800 Nanometern.">
+    </a>
+    <p>Messkurve des Spektrums eines Helium-Neon-Laserstrahls. Deglr6328, 2006, <a href="https://commons.wikimedia.org/wiki/File:Helium_neon_laser_spectrum.png">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.de">CC BY-SA 3.0</a>. Unverändert eingebunden. Zum Vergrößern auf das Bild klicken.</p>
+  </div>
+</div>
 ```
 ::::
 
-:::: {.content-visible unless-format="html"}
-::: {.srt-workbook-fallback}
-In der HTML-Version erscheint hier eine schaltbare Grafik: Ein Gitterspektroskop vor dem seitlichen Licht des Rohrs zeigt viele Spektrallinien, im Laserstrahl nur eine einzige rote Linie.
-:::
+:::: {.content-visible unless-format="html" .srt-workbook-fallback}
+Das seitliche Entladungslicht enthält mehrere Helium- und Neonlinien. Im Spektrum des roten Laserstrahls erscheint eine schmale Linie bei 632,8 nm.
 ::::
+
+Interaktive Darstellung zum Vergleich von seitlichem Entladungslicht und Laserstrahl. A und B markieren die beiden Stellen zur Untersuchung des Lichts. Das Schema zeigt ausgewählte Spektrallinien mit vereinfachten Breiten und Helligkeiten. Die ergänzenden realen Bilder stammen aus zwei verschiedenen Aufnahmen.
+:::::
+
+
 :::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Jede Wellenlänge gehört zu einem bestimmten Übergang zwischen zwei Energieniveaus: $E_\text{Photon} = \Delta E$. Die Gasentladung regt Helium- und Neonatome in viele verschiedene Niveaus an. Beim Zurückfallen senden die Atome spontan Photonen auf vielen verschiedenen Übergängen aus, und zu jedem Übergang gehört eine andere Wellenlänge. Das seitliche Licht enthält deshalb viele Farben.
+Die Gasentladung regt Helium- und Neonatome in verschiedene Energiezustände an. Bei Übergängen in tiefere Zustände senden sie durch spontane Emission Licht unterschiedlicher Wellenlängen aus. Dieses Licht tritt auch seitlich aus der Röhre aus. Sein Spektrum enthält deshalb mehrere Linien.
 
-Verstärkt wird dagegen nur ein einziger Übergang: der Laserübergang des Neons mit 632,8 nm. Nur auf ihm besteht die Besetzungsinversion, nur sein Licht läuft im Resonator immer wieder durch das Medium und wächst zur Lawine an. Der Laserstrahl enthält darum nur diese eine Wellenlänge.
+Der rote Laserstrahl entsteht durch stimulierte Emission beim Neonübergang um $632{,}8\,\mathrm{nm}$. Licht dieses Übergangs wird im Resonator wiederholt durch das angeregte Gas geführt und dabei verstärkt. Dadurch dominiert im Laserstrahl ein schmaler Wellenlängenbereich um $632{,}8\,\mathrm{nm}$. Im Gitterspektrometer erscheint er als einzelne rote Spektrallinie.
 
 </details>
 
@@ -796,7 +828,7 @@ Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit ei
 
 Ein gelbes Dreieck mit einem Strahlensymbol: Dieses Warnzeichen findest du am Laserpointer, an Lasergeräten im Labor und manchmal sogar im eigenen Keller, am Kasten des Glasfaser-Anschlusses. Dort überträgt unsichtbares infrarotes Laserlicht die Internetdaten. Dieser Abschnitt klärt, was Laserlicht gefährlich macht und wie du dich schützt.
 
-![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](assets/images/iso-7010-w004-laser.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
+![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/e/ed/ISO_7010_W004.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
 
 Ein gewöhnlicher Laserpointer hat eine Leistung von etwa einem Milliwatt: weniger als ein Zehntausendstel einer 60-Watt-Glühlampe. Die Glühlampe kannst du anschauen, sie blendet höchstens. Der Blick in den Laserstrahl kann das Auge dagegen dauerhaft schädigen. Der Unterschied liegt in der Bündelung.
 
@@ -818,7 +850,7 @@ Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einze
 - **Besetzungsinversion:** Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
 - **Resonator:** Du <u>beschreibst</u> den Aufbau eines einfachen optischen Resonators und die Auskopplung des Laserstrahls. Du <u>erklärst</u>, wie die Spiegel wiederholte Durchgänge durch das Lasermedium ermöglichen und dadurch die Lichtverstärkung entlang der Spiegelachse begünstigen. Du <u>erläuterst</u> die Resonanzbedingung anhand stehender Wellen und <u>berechnest</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
 - **Rubinlaser:** Du <u>beschreibst</u> den Aufbau des Rubinlasers und <u>ordnest</u> Lasermedium, Pumpquelle und Resonator ihre Funktionen <u>zu</u>. Du <u>erklärst</u>, wie beim Rubinlaser durch optisches Pumpen, Besetzungsinversion und stimulierte Emission Laserlicht entsteht.
-- **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers. Du <u>erklärst</u>, wie die Besetzungsinversion im Neon durch Stöße entsteht. Du <u>begründest</u>, dass dem Helium-Neon-Laser schwaches, ständiges Pumpen genügt.
+- **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers. Du <u>erklärst</u>, wie Elektronenstöße und die Energieübertragung von Helium auf Neon zum Aufbau einer Besetzungsinversion beitragen. Du <u>vergleichst</u> Rubinlaser und Helium-Neon-Laser hinsichtlich ihrer Pumpweise und ihrer Betriebsart.
 - **Gefahren des Laserlichts:** Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann. Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit eines Lasergeräts aussagen.
 
 ### In eigener Sprache erklären
@@ -905,3 +937,9 @@ Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und l
 </details>
 
 **Ausblick: Weitere Lasertypen.** Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?
+
+### Vorträge zum Nacharbeiten
+
+David Phillips führt im Vortrag [„Crystals and lasers: Constructing a laser“](https://www.rigb.org/explore-science/explore/video/crystals-and-lasers-constructing-laser-1987) mit Experimenten und Analogien durch die Grundlagen des Lasers. Der gesamte englischsprachige Vortrag eignet sich zur Vertiefung dieses Kapitels.
+
+Auch der englischsprachige MIT-Kurs [„Understanding Lasers and Fiberoptics“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/) von Shaoul Ezekiel bietet eine Vertiefung. Das Video [„Laser Fundamentals I“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/resources/laser-fundamentals-i/) behandelt insbesondere die Eigenschaften des Laserlichts. Beide Angebote findest du in der [weiterführenden Literatur](references.qmd#weiterführende-literatur).

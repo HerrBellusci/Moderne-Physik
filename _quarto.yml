@@ -11,6 +11,7 @@ project:
     - "Videos einbinden/**"
     - licenses/**
     - THIRD-PARTY-NOTICES.md
+    - LICENSE.md
 
 book:
   title: "Interaktives Quarto-Workbook Moderne Physik"

@@ -83,7 +83,7 @@ a) Begründen Sie, ob sich die Galaxie von der Erde wegbewegt oder sich auf die 
 b) Bestimmen Sie die radiale Geschwindigkeit der Galaxie NGC 7319 relativ zur Erde.
 
 ::: {.srt-workbook-image-figure}
-![](assets/images/legacy-srt-galaxie.jpg){.srt-workbook-image width=60% fig-alt="Galaxienaufnahme aus dem ursprünglichen Arbeitsblatt. Die Originalunterschrift bezeichnet sie als NGC 7319."}
+![](https://upload.wikimedia.org/wikipedia/commons/c/c8/NGC_7319.jpg){.srt-workbook-image width=60% fig-alt="Galaxienaufnahme aus dem ursprünglichen Arbeitsblatt. Die Originalunterschrift bezeichnet sie als NGC 7319."}
 
 Abbildung 1: Die Galaxie NGC 7319. Aufnahme: [NASA, ESA and the Hubble SM4 ERO Team](https://esahubble.org/images/heic0910i/), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Ausschnitt von Rbrausse auf Wikimedia Commons](https://commons.wikimedia.org/wiki/File:NGC_7319.jpg).
 :::

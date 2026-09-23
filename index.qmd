@@ -59,9 +59,12 @@ Die Animationen, Simulationen und die meisten Abbildungen sind eigene Entwicklun
 
 ## Lizenz
 
-Dieses Workbook steht unter der Lizenz CC BY-SA 4.0 (Creative Commons Namensnennung, Weitergabe unter gleichen Bedingungen 4.0 International). Du darfst die Inhalte teilen und bearbeiten, auch für deinen Unterricht, solange du „Physik Belluni" als Quelle nennst und Bearbeitungen unter derselben Lizenz weitergibst. Der vollständige Lizenztext steht unter <https://creativecommons.org/licenses/by-sa/4.0/deed.de>.
+Die eigenen Texte, Aufgaben, Abbildungen und Videos dieser Fassung stehen unter CC BY-NC-SA 4.0 (Creative Commons Namensnennung, nicht kommerziell, Weitergabe unter gleichen Bedingungen 4.0 International), soweit daran eigene Rechte bestehen. Du darfst diese Inhalte für nichtkommerzielle Zwecke teilen und bearbeiten. Nenne dabei „Physik Belluni“, verlinke die Lizenz und kennzeichne Änderungen. Wenn du Bearbeitungen weitergibst, müssen sie unter derselben Lizenz stehen. Die [Lizenzbedingungen](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de) erläutern die erlaubten Nutzungen.
 
 Von dieser Lizenz ausgenommen sind:
 
-- Übernommene Abbildungen: Sie tragen Quelle und Lizenz in der Bildunterschrift und behalten ihre eigenen Bedingungen.
-- Eingebundene Schriften und Software (z. B. MathJax): Sie stehen unter ihren jeweiligen Lizenzen; die Angaben dazu liegen im Quell-Repository.
+- Übernommene Abbildungen, Videos und sonstige fremde Inhalte behalten ihre eigenen Bedingungen. Ihre Kennzeichnung und die [Drittanbieter-Hinweise](THIRD-PARTY-NOTICES.md) sind maßgeblich.
+- Eingebundene Schriften und fremde Software (z. B. MathJax) stehen unter ihren jeweiligen Lizenzen, die in den Drittanbieter-Hinweisen aufgeführt sind.
+- Eigener Programmcode, einschließlich des Codes der Animationen und Simulationen, erhält vorerst keine zusätzliche Nutzungslizenz. Seine gesonderte Lizenzierung wird noch festgelegt. Die Nutzung des Workbooks im Browser ist vorgesehen und bleibt möglich.
+
+Bereits unter CC BY-SA 4.0 veröffentlichte eigene Bestandteile bleiben unter dieser Lizenz nutzbar. Die neue Regelung nimmt diese Rechte nicht zurück. Die [Lizenzübersicht](LICENSE.md) grenzt die Fassungen und Bestandteile voneinander ab.

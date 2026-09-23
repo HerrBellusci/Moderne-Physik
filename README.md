@@ -27,7 +27,7 @@ Die aktiven Kapitel und ihre Reihenfolge stehen in `_quarto.yml`. Der Build wurd
 | `assets/animations/shared/` | Gemeinsame Zeichenfunktionen, Formelsatz und Bedienung der Veranschaulichungen |
 | `assets/animations/zukuenftig/` | Fachlich noch ungeklärte Animationsentwürfe; ausdrücklich vom veröffentlichten Build ausgeschlossen |
 | `assets/styles/` | Gestaltung von Lernkästen, Formelwiederholungen und Kapiteln; lokale Schriftkonfiguration |
-| `assets/images/`, `assets/task-icons/` | Abbildungen, Video-Vorschaubild und verwendete Aufgabensymbole |
+| `assets/images/`, `assets/task-icons/` | Eigene Abbildungen und verwendete Aufgabensymbole |
 | `assets/scripts/`, `assets/includes/` | Videosteuerung und Anpassung des Inhaltsverzeichnisses |
 | `assets/fonts/`, `assets/mathjax/` | Lokal bereitgestellte Schriftarten und Formeldarstellung |
 | `Videos einbinden/` | Selbst erstellte Zugvideos für das Workbook |
@@ -49,14 +49,21 @@ Die Kapitel binden ihre Skripte und zusätzlichen Stylesheets im Kopf der jeweil
 
 `tools/strip-polyfill.py` entfernt nach dem Rendern das von Quarto eingefügte externe Polyfill-Skript von cdnjs.cloudflare.com. Es entfernt weder beliebige externe Links noch beliebige Bibliotheken. Der Schritt ist in `_quarto.yml` eingetragen.
 
+## Lizenz der eigenen Inhalte
+
+Für neue eigene Texte, Aufgaben, Abbildungen und Videos gilt vorläufig **CC BY-NC-SA 4.0**, soweit daran eigene Rechte bestehen. Eigener Programmcode ist von dieser Freigabe ausgenommen und erhält bis zur gesonderten Lizenzentscheidung keine zusätzliche Nutzungslizenz. Bereits wirksam unter CC BY-SA 4.0 veröffentlichte eigene Bestandteile bleiben unter dieser Lizenz nutzbar. Die Nutzung des veröffentlichten Workbooks im Browser ist gestattet.
+
+Die [Lizenzübersicht](LICENSE.md) erläutert den Geltungsbereich und den Übergang zwischen den Fassungen. Fremde Bestandteile behalten ihre eigenen Bedingungen.
+
 ## Drittkomponenten
 
 - **MathJax 3.2.2**, Apache-2.0: lokale Formeldarstellung in `assets/mathjax/`.
 - **Source Sans Pro**, SIL Open Font License 1.1: lokale Schriftdateien in `assets/fonts/`. `assets/styles/no-webfont.scss` unterbindet den Google-Fonts-Import des Themes.
 - **multibib**, ISC: Pandoc-Filter in `_extensions/pandoc-ext/multibib/`. Die mitgelieferte Fassung wurde lokal angepasst und liest `multibib:` statt `bibliography:`. Bei einem Update muss diese Anpassung erhalten bleiben.
 - **Quarto und seine HTML-Komponenten**: Navigation, Suche, Theme und Bedienelemente werden beim Rendern nach `_book/site_libs/` kopiert. Komponenten und Lizenztexte sind in [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md) aufgeführt.
-- **Übernommene Abbildungen**: Das Laser-Warnzeichen ist gemeinfrei, das Foto von Maimans Rubinlaser ist unter CC0 1.0 freigegeben. Weitere Bildquellen, individuelle Bedingungen und Angaben zu ergänzten Beschriftungen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) sowie unmittelbar an den Abbildungen.
+- **Übernommene Abbildungen**: Das Laser-Warnzeichen ist gemeinfrei, das Foto von Maimans Rubinlaser ist unter CC0 1.0 freigegeben. Die Übersicht des elektromagnetischen Spektrums von Horst Frank und Jailbird wird unverändert unter CC BY-SA 3.0 mitgeliefert. Weitere Bildquellen, individuelle Bedingungen und Angaben zu ergänzten Beschriftungen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) sowie unmittelbar an den Abbildungen.
 
-- **Externes Video**: „Laser tattoo removal“ von Melissa Findley, CC BY-SA 3.0, wird im Laser-Kapitel direkt von Wikimedia eingebunden. Die Videodatei liegt nicht im Repository. Quelle, Lizenz und Nutzungsform stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) und am Video. Die Vorträge von Royal Institution, MIT OpenCourseWare und SPIE sind als externe Links aufgenommen.
+- **Externe Medien**: Galaxienaufnahme, Laserwarnzeichen, Maiman-Foto, Spektrumgrafik und Tattoo-Video werden direkt von Wikimedia geladen. Ihre Dateien werden nicht mit dem Repository ausgeliefert. Quellen und Lizenzen stehen an den Medien und in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md). Die Darstellung benötigt eine Internetverbindung und erreichbare Quelldateien. Das Tattoo-Video beginnt pausiert bei Sekunde 26. Die Vorträge von Royal Institution und MIT OpenCourseWare sind als externe Links aufgenommen.
+- **Bildvergrößerung**: Die Spektrumgrafik lässt sich innerhalb der Seite öffnen. Dafür verwendet Quarto die lokal mitgelieferte Bibliothek GLightbox (MIT-Lizenz), siehe [Drittanbieter-Hinweise](THIRD-PARTY-NOTICES.md).
 
 Skripte, Stylesheets, Schriftdateien und die MathJax-Datei für die Formeldarstellung werden aus diesem Repository beziehungsweise dem Quarto-Build bereitgestellt.
