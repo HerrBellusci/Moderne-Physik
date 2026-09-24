@@ -1,0 +1,8 @@
+#tbl-laserklassen th:first-child,
+#tbl-laserklassen td:first-child {
+  white-space: nowrap;
+}
+
+#tbl-laserklassen col:nth-child(1) { width: 20% !important; }
+#tbl-laserklassen col:nth-child(2) { width: 50% !important; }
+#tbl-laserklassen col:nth-child(3) { width: 30% !important; }

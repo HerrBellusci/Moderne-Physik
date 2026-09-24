@@ -50,7 +50,7 @@
     if (!window.MathJax?.startup?.promise) return;
     await window.MathJax.startup.promise;
     api.ready = true;
-    for (const host of document.querySelectorAll('[data-srt-animation="gamma-plot"], [data-srt-animation="drehung-invarianz"]'))
+    for (const host of document.querySelectorAll('[data-srt-animation="gamma-plot"], [data-srt-animation="drehung-invarianz"], [data-srt-animation="laser-hene"], [data-srt-animation="laser-hene-niveaus"]'))
       host.dispatchEvent(new Event('srt-render'));
   }
   if (document.readyState === 'complete') start();

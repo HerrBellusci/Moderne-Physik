@@ -7,19 +7,19 @@
 .garage-views button, .garage-controls button { min-height: 44px; border: 1px solid #b8c7d1; border-radius: 7px; background: #fff; color: #243447; font: inherit; font-size: .9rem; }
 .garage-views button, .garage-controls button { padding: .4rem .7rem; cursor: pointer; }
 .garage-views button { flex: 1; }
-.garage-views button[aria-pressed="true"] { background: #e7f2f3; border-color: #0b8793; }
-.garage-views button:hover, .garage-controls button:hover { border-color: #0b8793; }
+.garage-views button[aria-pressed="true"] { background: #2563eb; border-color: #2563eb; color: #fff; }
+.garage-views button:hover, .garage-controls button:hover { border-color: #2563eb; }
 .garage-controls { padding: .1rem .65rem .6rem; }
 .garage-play-row { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; justify-content: space-between; }
 .garage-controls button.garage-play { margin-left: auto; min-width: 6.3rem; background: #243447; border-color: #243447; color: #fff; font-weight: 600; }
 .garage-range { display: block; margin: 0 0 .2rem; font-size: .9rem; color: #526372; }
 .garage-range input { display: block; width: 100%; min-height: 36px; margin: .1rem 0; cursor: pointer; }
 .garage-light-toggle { display: flex; align-items: center; gap: .5rem; width: fit-content; min-height: 44px; margin-top: .2rem; font-size: .9rem; cursor: pointer; }
-.garage-light-toggle input { width: 1.05rem; height: 1.05rem; flex-shrink: 0; accent-color: #0b8793; }
+.garage-light-toggle input { width: 1.05rem; height: 1.05rem; flex-shrink: 0; accent-color: #2563eb; }
 .garage-light-text { margin: .05rem 0 0; font-size: .85rem; line-height: 1.45; color: #526372; text-align: left; }
 .garage-light-text + .garage-light-text { margin-top: .5rem; }
 .garage-light-text[hidden] { display: none; }
-.garage-views button:focus-visible, .garage-controls button:focus-visible, .garage-controls input:focus-visible { outline: 3px solid #5f9aa2; outline-offset: 2px; }
+.garage-views button:focus-visible, .garage-controls button:focus-visible, .garage-controls input:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
 @media (max-width: 480px) {
   .garage-views { gap: .3rem; padding: .4rem .4rem .1rem; }
   .garage-controls { padding: .1rem .4rem .4rem; }

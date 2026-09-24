@@ -74,9 +74,9 @@ Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich i
     </video>
   </div>
   <div class="mp-train-controls" role="group" aria-label="Zugszene starten" hidden>
-    <button type="button" data-train-choice="random" class="mp-train-random">Zufällig starten</button>
-    <button type="button" data-train-choice="moving">Zug fährt aus</button>
-    <button type="button" data-train-choice="stationary">Zug steht</button>
+    <button type="button" data-train-choice="random" aria-pressed="false">Zufällig starten</button>
+    <button type="button" data-train-choice="moving" aria-pressed="false">Zug fährt aus</button>
+    <button type="button" data-train-choice="stationary" aria-pressed="false">Zug steht</button>
   </div>
   <p class="mp-train-error" role="status" hidden></p>
   <noscript><p>Ohne JavaScript kannst du die Szenen einzeln öffnen: <a href="Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4">Zug fährt aus</a> oder <a href="Videos%20einbinden/Zug%20steht.mp4">Zug steht</a>.</p></noscript>

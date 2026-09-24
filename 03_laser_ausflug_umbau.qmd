@@ -14,9 +14,11 @@
 <script src="assets/animations/laser/resonator-moden.js?v=20260922b"></script>
 <link rel="stylesheet" href="assets/animations/laser/rubinlaser.css?v=20260923b">
 <script src="assets/animations/laser/rubinlaser.js?v=20260922d"></script>
-<link rel="stylesheet" href="assets/animations/laser/he-ne.css?v=20260923e">
-<script src="assets/animations/laser/he-ne.js?v=20260923e"></script>
-<script src="assets/animations/laser/hene-spektroskop.js?v=20260923e"></script>
+<link rel="stylesheet" href="assets/animations/laser/he-ne.css?v=20260924e">
+<script src="assets/animations/shared/formelsatz.js?v=20260924b"></script>
+<script src="assets/animations/laser/he-ne.js?v=20260924c"></script>
+<script src="assets/animations/laser/hene-spektroskop.js?v=20260924e"></script>
+<link rel="stylesheet" href="assets/animations/laser/gefahren.css?v=20260924c">
 <script src="assets/animations/shared/workbook.js?v=20260921"></script>
 <script src="assets/scripts/video-start.js?v=20260923b"></script>
 ```
@@ -681,18 +683,18 @@ Bereits Ende 1960, wenige Monate nach Maimans Rubinlaser, gelang der erste Heliu
 
 Helium-Neon-Laser werden bis heute für optische Versuche in Lehre und Forschung eingesetzt. Auch frühe Scannerkassen arbeiteten mit diesem Lasertyp [@smithsonian_supermarket_scanner]. Heutige Kassenscanner können Barcodes dagegen beispielsweise mit Bildsensoren erfassen. Bei solchen Geräten können rote LEDs den Barcode beleuchten, damit der Bildsensor ihn zuverlässig erfasst. Rotes Licht an einer Scannerkasse muss daher kein Laserlicht sein.
 
-Das Lasermedium ist diesmal ein Gemisch aus Helium und Neon bei geringem Druck in einem Glasrohr. Dabei überwiegt der Heliumanteil. Die Lichtverstärkung durch stimulierte Emission findet an den Neonatomen statt. Das Helium unterstützt die Anregung des Neons. An den Enden des Rohrs befinden sich die beiden Spiegel des Resonators.
+Das Lasermedium ist diesmal ein Gemisch aus Helium und Neon bei geringem Druck in einem Glasrohr. Dabei überwiegt der Heliumanteil. Die Lichtverstärkung durch stimulierte Emission findet an den Neonatomen statt. Angeregte Heliumatome übertragen bei Stößen Energie auf Neonatome. An den Enden des Rohrs befinden sich die beiden Spiegel des Resonators.
 
-Gepumpt wird elektrisch. Zwischen zwei Elektroden liegt eine Hochspannung. Das elektrische Feld beschleunigt freie Elektronen im Gas. Bei Zusammenstößen können sie weitere Elektronen aus Atomen lösen und dadurch zusätzliche Ladungsträger erzeugen. Diesen Vorgang nennt man Ionisation. Die Bewegung freier Elektronen und Ionen ermöglicht einen elektrischen Strom durch das Gas. Eine solche elektrische Stromleitung in einem Gas bezeichnet man als Gasentladung.[Gasentladung]{.column-margin .mp-randbegriff}
+Gepumpt wird elektrisch. Zwischen Kathode und Anode liegt eine hohe Gleichspannung. Das elektrische Feld beschleunigt freie Elektronen im Gas. Bei Zusammenstößen können sie weitere Elektronen aus Atomen lösen und dadurch zusätzliche Ladungsträger erzeugen. Diesen Vorgang nennt man Ionisation. Die Bewegung freier Elektronen und Ionen ermöglicht einen elektrischen Strom durch das Gas. Eine solche elektrische Stromleitung in einem Gas bezeichnet man als Gasentladung.[Gasentladung]{.column-margin .mp-randbegriff}
 
-Bei einem Elektronenstoß muss das getroffene Atom aber nicht ionisiert werden. Es kann auch einen Teil der Bewegungsenergie des Elektrons aufnehmen und in einen angeregten Zustand gelangen. Die Anregung durch Elektronenstöße kennst du bereits von der Xenon-Blitzlampe. Beim Helium-Neon-Laser findet die Gasentladung direkt im Lasermedium statt und wird kontinuierlich aufrechterhalten.
+Bei einem Elektronenstoß muss das getroffene Atom aber nicht ionisiert werden. Es kann auch einen Teil der Bewegungsenergie des Elektrons aufnehmen und in einen angeregten Zustand gelangen. Die Anregung durch Elektronenstöße kennst du unter anderem von der Xenon-Blitzlampe beim Rubinlaser. Beim Helium-Neon-Laser findet die Gasentladung im Unterschied dazu direkt im Lasermedium statt und wird kontinuierlich aufrechterhalten. Ein Laser, der kontinuierlich statt in einzelnen Pulsen Licht aussendet, arbeitet im Dauerstrichbetrieb und wird als Dauerstrichlaser bezeichnet.[Dauerstrichlaser]{.column-margin .mp-randbegriff}
 
 @fig-umbau-hene-aufbau zeigt den Aufbau schematisch. Die Kathode ist mit dem Minuspol, die Anode mit dem Pluspol der Hochspannungsquelle verbunden. Die beiden Spiegel bilden den Resonator. Durch den teildurchlässigen Spiegel rechts tritt der Laserstrahl aus. Das Leuchten im Rohr kennzeichnet die Gasentladung, die rote Linie entlang der Spiegelachse den Verlauf des Laserstrahls.
 
 :::: {#fig-umbau-hene-aufbau}
 ::: {.content-visible when-format="html"}
 ```{=html}
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene" data-srt-viewbox-h="390" data-srt-label="Aufbau eines Helium-Neon-Lasers: ein Glasrohr mit Helium und Neon zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel. Kathode und Anode sind an eine Hochspannung angeschlossen, im Rohr leuchtet eine Gasentladung. Rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 Nanometern aus."></div>
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene" data-srt-viewbox-h="390" data-srt-label="Aufbau eines Helium-Neon-Lasers: ein Glasrohr mit Helium und Neon zwischen einem voll reflektierenden und einem teildurchlässigen Spiegel. Die Kathode ist mit dem Minuspol und die Anode mit dem Pluspol einer Hochspannungsquelle verbunden. Im Rohr leuchtet eine Gasentladung. Rechts tritt dauerhaft ein roter Laserstrahl mit 632,8 Nanometern aus."></div>
 ```
 :::
 
@@ -700,32 +702,32 @@ Bei einem Elektronenstoß muss das getroffene Atom aber nicht ionisiert werden. 
 Die Skizze in der HTML-Version zeigt ein Glasrohr mit Helium und Neon zwischen zwei Resonatorspiegeln. Kathode und Anode sind an eine Hochspannungsquelle angeschlossen. Durch den teildurchlässigen Spiegel tritt der Laserstrahl aus.
 :::
 
-Skizze des Helium-Neon-Lasers mit Gasentladung, Elektroden und Resonatorspiegeln. Rechts tritt der Laserstrahl mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ aus. Die rote Linie markiert den Strahlverlauf und gibt nicht die seitliche Sichtbarkeit des Strahls wieder.
+Skizze des Helium-Neon-Lasers mit Gasentladung, Kathode, Anode und Resonatorspiegeln. Rechts tritt der Laserstrahl mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ aus. Die rote Linie markiert den Strahlverlauf und gibt nicht die seitliche Sichtbarkeit des Strahls wieder.
 ::::
 
-Elektronenstöße können sowohl Helium- als auch Neonatome anregen. Für den Aufbau der Besetzungsinversion ist ein zusätzlicher Weg über das Helium entscheidend. Dabei gelangt ein Heliumatom zunächst in einen metastabilen Zustand. Es kann die aufgenommene Energie dort vergleichsweise lange behalten.
+Elektronenstöße können sowohl Helium- als auch Neonatome anregen. Bei Stößen mit angeregten Heliumatomen können Neonatome in das obere Laserniveau gelangen. Dazu wird zunächst ein Heliumatom in einen metastabilen Zustand angeregt. Es bleibt vergleichsweise lange in diesem Zustand und kann während dieser Zeit seine Anregungsenergie bei einem Stoß auf ein Neonatom übertragen.
 
-Um die Energieübertragung zwischen beiden Atomsorten zu verstehen, betrachtest du nun konkrete Energiewerte. Sie geben jeweils die Energie über dem Grundzustand der betreffenden Atomsorte an.
+Um die Energieübertragung zwischen Helium und Neon zu verstehen, betrachtest du nun konkrete Energiewerte. Sie geben jeweils die Energiedifferenz zwischen dem angeregten Zustand und dem Grundzustand des Helium- beziehungsweise Neonatoms an.
 
-Der betrachtete metastabile Zustand des Heliums liegt bei $20{,}61\,\mathrm{eV}$. Das obere Laserniveau des Neons liegt mit $20{,}66\,\mathrm{eV}$ nur wenig höher. Stößt ein entsprechend angeregtes Heliumatom mit einem Neonatom im Grundzustand zusammen, kann es seine Anregungsenergie auf das Neonatom übertragen. Das Heliumatom kehrt dabei in seinen Grundzustand zurück und das Neonatom erreicht das obere Laserniveau. Die zusätzlich benötigten $0{,}05\,\mathrm{eV}$ stammen aus der Bewegungsenergie der stoßenden Atome.
+Der betrachtete metastabile Zustand des Heliums liegt bei $20{,}61\,\mathrm{eV}$. Das obere Laserniveau des Neons liegt mit $20{,}66\,\mathrm{eV}$ nur wenig höher. Stößt ein entsprechend angeregtes Heliumatom mit einem Neonatom im Grundzustand zusammen, kann es seine Anregungsenergie auf das Neonatom übertragen. Das Heliumatom kehrt dabei in seinen Grundzustand zurück und das Neonatom erreicht das obere Laserniveau.
 
-Hier wirken also zwei verschiedene Stoßprozesse zusammen. Zunächst regt ein freies Elektron ein Heliumatom an. Anschließend überträgt das angeregte Heliumatom Energie auf ein Neonatom.
+Hier finden also zwei verschiedene Stoßprozesse statt. Zunächst regt ein freies Elektron ein Heliumatom an. Anschließend überträgt das angeregte Heliumatom Energie auf ein Neonatom.
 
 ::: {.mp-box .mp-misconception}
 <div class="mp-title">Übergibt das Helium seine Energie nicht per Photon?</div>
-Beim Rubinlaser überträgt Licht Energie von der Blitzlampe zum Lasermedium. Du hast aber bereits kennengelernt, dass ein angeregtes Atom Energie auch ohne Aussendung eines Photons an andere Teilchen abgeben kann. Beim Helium-Neon-Laser führt eine solche Energieübertragung zur Anregung eines anderen Atoms.
+Beim Rubinlaser überträgt Licht Energie von der Blitzlampe zum Lasermedium. Beim schwarzen T-Shirt hast du außerdem gesehen, dass aufgenommene Lichtenergie ohne Aussendung eines Photons auf die Bewegung der Teilchen übertragen werden kann. Auch die umgekehrte Richtung ist möglich. Bei einem Elektronenstoß kann Bewegungsenergie zur Anregung eines Atoms führen.
 
-Beim Stoß überträgt das Heliumatom seine Anregungsenergie auf das Neonatom. Die fehlenden $0{,}05\,\mathrm{eV}$ stammen aus der Bewegungsenergie der Atome. Ein Photon mit der Anregungsenergie des Heliums von $20{,}61\,\mathrm{eV}$ würde dagegen nicht ausreichen, um das Neonatom in das obere Laserniveau bei $20{,}66\,\mathrm{eV}$ anzuheben.
+Auch die anschließende Energieübertragung vom Helium auf das Neon lässt sich hier nicht durch Aussendung und Absorption eines Photons erklären. Ein Photon mit der Anregungsenergie des Heliums von $20{,}61\,\mathrm{eV}$ würde nicht ausreichen, um das Neonatom in das obere Laserniveau bei $20{,}66\,\mathrm{eV}$ anzuheben. Beim Stoß ist diese Anregung dagegen möglich. Das Heliumatom überträgt dabei seine Anregungsenergie auf das Neonatom. Die fehlenden $0{,}05\,\mathrm{eV}$ stammen aus der Bewegungsenergie der Atome.
 :::
 
-Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau liegt bei etwa $18{,}70\,\mathrm{eV}$. Beim Übergang vom oberen zum unteren Laserniveau wird rotes Licht mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ ausgesandt. Aus dem unteren Laserniveau gelangen die Atome rasch in weitere Zustände. Über weitere Übergänge und Stöße mit der Rohrwand können sie schließlich den Grundzustand erreichen.
+Der Laserübergang des Neons endet nicht im Grundzustand, sondern in einem tieferen angeregten Niveau. Dieses untere Laserniveau liegt bei etwa $18{,}70\,\mathrm{eV}$. Beim Übergang vom oberen zum unteren Laserniveau wird rotes Licht mit einer Wellenlänge von $632{,}8\,\mathrm{nm}$ ausgesandt. Die Atome bleiben nur kurze Zeit im unteren Laserniveau und gehen durch spontane Emission in tiefere Zustände über. Über weitere Übergänge und Stöße mit der Rohrwand können sie schließlich den Grundzustand erreichen.
 
 @fig-umbau-hene-niveaus ordnet diese Vorgänge in einem Niveauschema. Links stehen ausgewählte Zustände des Heliums, rechts die des Neons. Der Pfeil zwischen den beiden Spalten kennzeichnet die Energieübertragung beim Stoß. Über die Schaltflächen kannst du die einzelnen Prozesse hervorheben.
 
 :::: {#fig-umbau-hene-niveaus}
 ::: {.content-visible when-format="html"}
 ```{=html}
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene-niveaus" data-srt-viewbox-h="610" data-srt-label="Niveauschema des Helium-Neon-Lasers mit zwei Spalten. Links Helium mit Grundzustand und metastabilem Niveau, rechts Neon mit Grundzustand, unterem und oberem Laserniveau. Pfeile zeigen den Elektronenstoß im Helium, die Energieübergabe durch Stoß an das Neon mit einer zusätzlichen Bewegungsenergie von 0,05 eV, den roten Laserübergang mit 632,8 Nanometern und die raschen Übergänge aus dem unteren Laserniveau."></div>
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene-niveaus" data-srt-viewbox-h="560" data-srt-label="Niveauschema des Helium-Neon-Lasers mit zwei Spalten. Links Helium mit Grundzustand und metastabilem Niveau, rechts Neon mit Grundzustand, unterem und oberem Laserniveau. Pfeile zeigen den Elektronenstoß im Helium, die Energieübergabe durch Stoß an das Neon mit einer zusätzlichen Bewegungsenergie von 0,05 eV, den roten Laserübergang mit 632,8 Nanometern sowie spontane Emission aus dem unteren Laserniveau und weitere Übergänge und Stöße."></div>
 ```
 :::
 
@@ -754,17 +756,19 @@ Elektronenstöße regen Heliumatome in einen metastabilen Zustand an. Bei Stöß
 
 </details>
 
-Weil sich das untere Laserniveau des Neons rasch leert, muss für eine Besetzungsinversion nur ein kleiner Teil der Neonatome angeregt sein. Die Tabelle zeigt ein vereinfachtes Zahlenbeispiel für 1000 Neonatome.
+Für eine Besetzungsinversion müssen mehr Neonatome im oberen als im unteren Laserniveau sein. Da die Atome nur kurz im unteren Laserniveau bleiben, kann diese Bedingung erfüllt sein, obwohl sich die meisten Neonatome im Grundzustand befinden. @tbl-umbau-hene-besetzung zeigt ein vereinfachtes Zahlenbeispiel für 1000 Neonatome.
 
-| Niveau | Besetzung |
+| Energieniveau | Besetzung |
 |---|---:|
 | oberes Laserniveau | 10 Atome |
 | unteres Laserniveau | 0 Atome |
 | Grundzustand | 990 Atome |
 
+: Frei gewähltes Zahlenbeispiel zur Besetzung der Energieniveaus von 1000 Neonatomen. {#tbl-umbau-hene-besetzung}
+
 Im oberen Laserniveau befinden sich zehn Atome, im unteren keines. Zwischen diesen beiden Niveaus liegt deshalb eine Besetzungsinversion vor. Die 990 Atome im Grundzustand gehören nicht zu den beiden verglichenen Besetzungen.
 
-Die fortlaufende Gasentladung kann dem oberen Laserniveau ständig neue Atome zuführen. Reicht die dadurch mögliche Lichtverstärkung aus, um die Verluste im Resonator auszugleichen, kann der Laser kontinuierlich Licht aussenden. Diese Betriebsart heißt Dauerstrichbetrieb.[Dauerstrichbetrieb]{.column-margin .mp-randbegriff}
+Die Gasentladung regt fortlaufend Heliumatome an. Durch ihre Stöße mit Neonatomen wird das obere Laserniveau immer wieder besetzt. Reicht die dadurch mögliche Lichtverstärkung aus, um die Verluste im Resonator auszugleichen, kann der Laser kontinuierlich Licht aussenden.
 
 ::: {.mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
@@ -772,22 +776,22 @@ Die fortlaufende Gasentladung kann dem oberen Laserniveau ständig neue Atome zu
   Transfer
 </span>
 
-Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält mehrere Farben, also verschiedene Wellenlängen. Das Licht des roten Laserstrahls ist dagegen auf einen sehr schmalen Wellenlängenbereich um $632{,}8\,\mathrm{nm}$ konzentriert.
+Das Licht, das seitlich aus dem Rohr eines Helium-Neon-Lasers tritt, enthält verschiedene Wellenlängen. Das Licht des roten Laserstrahls ist dagegen auf einen sehr schmalen Wellenlängenbereich um $632{,}8\,\mathrm{nm}$ konzentriert.
 
-In @fig-umbau-hene-spektren wählst du zwischen dem seitlichen Licht der Röhre und dem Licht am Strahlaustritt. Zum Schema kannst du jeweils ein reales Bild anzeigen lassen.
+In @fig-umbau-hene-spektren wählst du zwischen dem seitlichen Licht der Röhre und dem Licht am Strahlaustritt. Bei A wird das seitliche Licht mit einem Gitterspektroskop untersucht, beispielsweise mit dem selbst gebauten Handy-Gitterspektrometer aus der Vorlesung. Bei B steht ein Gitter im Laserstrahl. Auf einem Schirm dahinter erscheinen rote Beugungsmaxima in verschiedenen Beugungsordnungen. Zum Schema kannst du ein Foto des Gitterspektrums des seitlichen Lichts oder eine Messkurve des Laserstrahls anzeigen lassen.
 
-<u>Begründe</u> diesen Unterschied.
+<u>Begründe</u> den Unterschied zwischen dem Spektrum des seitlichen Lichts und dem des Laserstrahls.
 
 ::::: {#fig-umbau-hene-spektren}
 :::: {.content-visible when-format="html"}
 ```{=html}
 <div class="hene-spectrum">
-  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="515" data-srt-label="Helium-Neon-Röhre mit zwei Stellen zur Untersuchung des Lichts. A liegt seitlich an der Röhre, B am Strahlaustritt. Je nach Auswahl erscheinen mehrere Spektrallinien des Entladungslichts oder die rote Laserlinie. Alternativ sind eine reale Fotografie beziehungsweise eine Messkurve auswählbar."></div>
+  <div class="srt-workbook-stage" data-srt-animation="laser-hene-spektroskop" data-srt-viewbox-h="580" data-srt-label="Helium-Neon-Laser mit einem Gitterspektroskop A seitlich an der Röhre. Bei B durchläuft der Laserstrahl ein Gitter und erzeugt auf einem Schirm rote Beugungsmaxima der Ordnungen 0, +1 und −1. Darunter erscheinen je nach Auswahl mehrere Spektrallinien des Entladungslichts oder eine rote Laserlinie. Alternativ sind eine Fotografie beziehungsweise eine Messkurve auswählbar."></div>
   <div class="hene-real-image" data-hene-photo="seitlich" hidden>
     <a href="https://upload.wikimedia.org/wikipedia/commons/4/49/Hene_spektrum.jpg" target="_blank" rel="noopener" aria-label="Fotografie des Entladungsspektrums vergrößern">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hene_spektrum.jpg" width="1760" height="2462" loading="lazy" alt="Eine leuchtende Helium-Neon-Röhre und darunter ihre verschiedenfarbigen, durch ein Gitter erzeugten Bilder.">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Hene_spektrum.jpg" width="1760" height="2462" loading="lazy" alt="Eine leuchtende Helium-Neon-Röhre und daneben ihre verschiedenfarbigen, durch ein Gitter erzeugten Bilder. Die Fotografie ist um 90 Grad nach links gedreht.">
     </a>
-    <p>Fotografie einer Helium-Neon-Röhre mit Gitterspektrum. Stefan/StefanPohl, 2012, <a href="https://commons.wikimedia.org/wiki/File:Hene_spektrum.jpg">Wikimedia Commons</a>, vom Urheber gemeinfrei freigegeben. Unverändert eingebunden. Zum Vergrößern auf das Bild klicken.</p>
+    <p>Fotografie einer Helium-Neon-Röhre mit Gitterspektrum. Stefan/StefanPohl, 2012, <a href="https://commons.wikimedia.org/wiki/File:Hene_spektrum.jpg">Wikimedia Commons</a>, vom Urheber gemeinfrei freigegeben. Für die Darstellung um 90° nach links gedreht. Zum Vergrößern auf das Bild klicken.</p>
   </div>
   <div class="hene-real-image" data-hene-photo="strahl" hidden>
     <a href="https://upload.wikimedia.org/wikipedia/commons/d/d7/Helium_neon_laser_spectrum.png" target="_blank" rel="noopener" aria-label="Messkurve des Laserstrahls vergrößern">
@@ -803,7 +807,7 @@ In @fig-umbau-hene-spektren wählst du zwischen dem seitlichen Licht der Röhre 
 Das seitliche Entladungslicht enthält mehrere Helium- und Neonlinien. Im Spektrum des roten Laserstrahls erscheint eine schmale Linie bei 632,8 nm.
 ::::
 
-Interaktive Darstellung zum Vergleich von seitlichem Entladungslicht und Laserstrahl. A und B markieren die beiden Stellen zur Untersuchung des Lichts. Das Schema zeigt ausgewählte Spektrallinien mit vereinfachten Breiten und Helligkeiten. Die ergänzenden realen Bilder stammen aus zwei verschiedenen Aufnahmen.
+Interaktive Darstellung zum Vergleich von seitlichem Entladungslicht und Laserstrahl. Oben zeigt das Schema bei A ein Gitterspektroskop und bei B ein Gitter mit Schirm. Auf dem Schirm sind die Maxima der Ordnungen $m=0$ und $m=\pm1$ dargestellt; weitere mögliche Ordnungen sind ausgelassen. Das schwarze Feld unter dem Aufbau zeigt für A ausgewählte Helium- und Neonlinien, für B die Laserlinie bei $632{,}8\,\mathrm{nm}$ auf einer Wellenlängenskala. Wellenlängen nach NIST [@nist_handbook]. Farben, Helligkeiten und Linienbreiten sind schematisch.
 :::::
 
 
@@ -812,62 +816,126 @@ Interaktive Darstellung zum Vergleich von seitlichem Entladungslicht und Laserst
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-Die Gasentladung regt Helium- und Neonatome in verschiedene Energiezustände an. Bei Übergängen in tiefere Zustände senden sie durch spontane Emission Licht unterschiedlicher Wellenlängen aus. Dieses Licht tritt auch seitlich aus der Röhre aus. Sein Spektrum enthält deshalb mehrere Linien.
+Die Gasentladung regt Helium- und Neonatome in verschiedene Energiezustände an. Bei Übergängen in tiefere Zustände senden sie durch spontane Emission Licht unterschiedlicher Wellenlängen aus. Dieses Licht tritt auch seitlich aus der Röhre aus. Sein Spektrum enthält deshalb mehrere Spektrallinien.
 
 Der rote Laserstrahl entsteht durch stimulierte Emission beim Neonübergang um $632{,}8\,\mathrm{nm}$. Licht dieses Übergangs wird im Resonator wiederholt durch das angeregte Gas geführt und dabei verstärkt. Dadurch dominiert im Laserstrahl ein schmaler Wellenlängenbereich um $632{,}8\,\mathrm{nm}$. Im Gitterspektrometer erscheint er als einzelne rote Spektrallinie.
 
 </details>
 
-## Gefahren des Laserlichts
+## Laser im Unterricht {#gefahren-des-laserlichts}
 
 ::: {.mp-goal-strip}
-Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann.
+Du <u>erklärst</u>, weshalb Laserlicht das Auge gefährden kann, und <u>berechnest</u>, wie sich die Intensität beim Fokussieren verändert.
 
-Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit eines Lasergeräts aussagen.
+Du <u>beschreibst</u>, was die Laserklasse über die zugängliche Strahlung eines Geräts aussagt und worauf beim Umgang mit Lasern zu achten ist.
 :::
 
-Ein gelbes Dreieck mit einem Strahlensymbol: Dieses Warnzeichen findest du am Laserpointer, an Lasergeräten im Labor und manchmal sogar im eigenen Keller, am Kasten des Glasfaser-Anschlusses. Dort überträgt unsichtbares infrarotes Laserlicht die Internetdaten. Dieser Abschnitt klärt, was Laserlicht gefährlich macht und wie du dich schützt.
+Vielleicht hat eine deiner damaligen Lehrkräfte einen Laser verwendet, um Reflexion oder Brechung vorzuführen. Sein schmales, wenig divergierendes Lichtbündel eignet sich dazu, das Strahlenmodell des Lichts zu veranschaulichen. Seitlich sichtbar wird das Lichtbündel durch Licht, das etwa an Staubteilchen oder Tröpfchen in unsere Richtung gestreut wird. Für viele Beugungs- und Interferenzversuche sind darüber hinaus der enge Wellenlängenbereich und die Kohärenz des Laserlichts nützlich. Wenn du später selbst Laserversuche im Unterricht durchführst, gehört dazu auch, über die Gefahren aufzuklären und Schutzmaßnahmen verständlich zu begründen.
 
-![Warnzeichen W004 „Warnung vor Laserstrahl" nach DIN EN ISO 7010 (Zeichnung: Maxxl2, gemeinfrei, via Wikimedia Commons)](https://upload.wikimedia.org/wikipedia/commons/e/ed/ISO_7010_W004.svg){width="180" fig-alt="Gelbes Warndreieck mit schwarzem Rand, darin ein schwarzes Symbol aus einem Punkt, von dem ein Strahlenbündel ausgeht."}
+Eine wesentliche Gefahr betrifft die Augen. Die Iris regelt die Größe der Pupillenöffnung, durch die Licht eintritt. Ist ein Laserbündel schmaler als die Pupille, kann nahezu seine gesamte Strahlungsleistung ins Auge gelangen. Hornhaut und Linse können das annähernd parallele Licht auf einen sehr kleinen Fleck der Netzhaut fokussieren. Dadurch trifft selbst bei geringer Leistung viel Strahlungsenergie pro Zeit auf eine kleine Fläche.
 
-Ein gewöhnlicher Laserpointer hat eine Leistung von etwa einem Milliwatt: weniger als ein Zehntausendstel einer 60-Watt-Glühlampe. Die Glühlampe kannst du anschauen, sie blendet höchstens. Der Blick in den Laserstrahl kann das Auge dagegen dauerhaft schädigen. Der Unterschied liegt in der Bündelung.
+Die Strahlungsleistung pro Fläche bezeichnen wir als Intensität $I$.[Intensität]{.column-margin .mp-randbegriff} Für die auf eine Fläche treffende Strahlung heißt diese Größe auch Bestrahlungsstärke. Bei gleichmäßiger Verteilung der Leistung $P$ auf die senkrecht zur Ausbreitungsrichtung liegende Fläche $A$ gilt
 
-Die Glühlampe verteilt ihre Leistung in alle Richtungen. Durch die Pupille fällt nur ein winziger Bruchteil, und weil die Lampe ausgedehnt ist, verteilt sich dieser Bruchteil auf der Netzhaut über einen größeren Fleck. Der Laserstrahl passt dagegen vollständig durch die Pupille: Seine gesamte Leistung kommt im Auge an. Die Augenlinse bündelt das parallele Laserlicht weiter auf einen winzigen Fleck der Netzhaut, wenige hundertstel Millimeter klein. Dort übertrifft die Bestrahlungsstärke die der Glühlampe um viele Größenordnungen. Die Netzhaut kann verbrennen; solche Schäden sind teils irreparabel und werden oft erst spät bemerkt. Das gilt auch für unsichtbares Laserlicht im nahen Infrarot: Das Auge ist bis etwa 1200 nm durchlässig und fokussiert einen solchen Strahl genauso, nur siehst du ihn dabei nicht.
+$$
+I=\frac{P}{A}.
+$$ {#eq-laser-bestrahlungsstaerke}
 
-Daraus folgen die zwei wichtigsten Verhaltensregeln: Blicke nie in einen Laserstrahl, auch nicht in einen reflektierten, und richte einen Laser nie auf Menschen, Tiere oder Fahrzeuge.
+Die Einheit ist $\frac{\mathrm{W}}{\mathrm{m}^2}$. Bei gleicher Leistung steigt die Intensität, wenn die bestrahlte Fläche kleiner wird.
 
-Lasergeräte tragen darum eine Kennzeichnung mit einer Laserklasse.[Laserklasse]{.column-margin .mp-randbegriff} Sie reicht von Klasse 1 (ungefährlich oder Strahlung vollständig eingeschlossen) über Klasse 2 (nur sichtbares Licht; bei kurzem Blick unter 0,25 Sekunden fürs Auge ungefährlich; hierzu gehören zugelassene Laserpointer) und Klasse 3 (gefährlich für das Auge) bis Klasse 4 (gefährlich für Auge und Haut, selbst gestreutes Licht; dazu Brandgefahr). Ab Klasse 3 gehören Schutzbrille und geschultes Personal dazu. Laser zur Materialbearbeitung und viele Forschungslaser sind Klasse 4.
+Absorbiert das Gewebe genügend Strahlungsenergie, kann es sich so stark erwärmen, dass bleibende Schäden entstehen. Dabei können Proteine denaturieren und damit ihre Funktion verlieren. Neben der Intensität und der Einwirkungsdauer zählt die Wellenlänge. Von ihr hängt ab, wie viel Strahlung bis zur Netzhaut gelangt und wie stark das Gewebe sie absorbiert. Sichtbares Licht und nahes Infrarot können die Netzhaut erreichen, während UV-Strahlung und längerwelliges Infrarot überwiegend in den vorderen Augenabschnitten absorbiert werden. Diese können dadurch ebenfalls geschädigt werden [@udovicic2022laser, S. 8--10].
+
+Unsichtbare Laserstrahlung im nahen Infrarot kann somit die Netzhaut schädigen, ohne hell zu erscheinen. Auch bei sichtbarem Laserlicht bietet der Lidschlussreflex keinen verlässlichen Schutz. Die Augenlider schließen sich bei einem unbeabsichtigten Treffer nicht bei allen Menschen rechtzeitig [@udovicic2022laser, S. 23--24].
+
+:::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
+  <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
+  Berechnung
+</span>
+
+Ein roter Experimentierlaser der Klasse 2 hat laut Hersteller eine Leistung von $P=1{,}0\,\mathrm{mW}$ und am Ausgang einen Strahldurchmesser von $d_1=1{,}0\,\mathrm{mm}$ [@phywe0876199, S. 2]. Für eine vereinfachte Abschätzung nehmen wir diesen Durchmesser auch unmittelbar vor dem Auge an und setzen einen Netzhautfleck mit $d_2=20\,\mathrm{\mu m}$ voraus. Das gesamte Bündel tritt durch die Pupille ein. Vernachlässige Verluste auf dem Weg zur Netzhaut und nimm jeweils eine gleichmäßige Leistungsverteilung auf der Kreisfläche an.
+
+Für diese Aufgabe benötigst du die Intensität und die Kreisfläche.
+
+::: {.mp-formula-repeat}
+$$
+I=\frac{P}{A},\qquad A=\pi\left(\frac{d}{2}\right)^2
+$$
+
+([-@eq-laser-bestrahlungsstaerke])
+:::
+
+1. <u>Berechne</u> die Intensität vor dem Auge und auf der Netzhaut sowie den Faktor, um den sie zunimmt.
+2. <u>Erkläre</u>, weshalb die Intensität zunimmt, obwohl die Leistung gleich bleibt.
+::::
+
+<details class="mp-details">
+<summary>Mögliche Lösung anzeigen</summary>
+
+1. Mit $P=1{,}0\cdot10^{-3}\,\mathrm{W}$ ergeben sich
+
+   $$
+   I_1=\frac{1{,}0\cdot10^{-3}\,\mathrm{W}}{\pi\,(5{,}0\cdot10^{-4}\,\mathrm{m})^2}
+   \approx 1{,}3\cdot10^3\,\frac{\mathrm{W}}{\mathrm{m}^2}
+   $$
+
+   und
+
+   $$
+   I_2=\frac{1{,}0\cdot10^{-3}\,\mathrm{W}}{\pi\,(1{,}0\cdot10^{-5}\,\mathrm{m})^2}
+   \approx 3{,}2\cdot10^6\,\frac{\mathrm{W}}{\mathrm{m}^2}.
+   $$
+
+   Der Faktor ergibt sich ohne Rundung der Zwischenergebnisse zu
+
+   $$
+   \frac{I_2}{I_1}=\frac{A_1}{A_2}=\left(\frac{d_1}{d_2}\right)^2=50^2=2500.
+   $$
+
+2. Der Durchmesser sinkt um den Faktor 50, die Fläche um den Faktor 2500. Dieselbe Leistung verteilt sich deshalb auf eine 2500-mal kleinere Fläche. Die Intensität steigt entsprechend. Das Auge verstärkt dabei nicht die Leistung. Eine Netzhauttemperatur oder eine sichere Einwirkungsdauer lässt sich aus dieser Rechnung allein nicht bestimmen.
+
+</details>
+
+Um die Gefährdung durch ein Lasergerät einzuordnen, gibt es Laserklassen.[Laserklasse]{.column-margin .mp-randbegriff} Sie beziehen sich auf die zugängliche Strahlung, also auf Strahlung, die aus dem Gerät austreten und Menschen erreichen kann. Für den Schulunterricht verweist das ZSL auf das DGUV-Portal „Sichere Schule“. Dort werden Versuche unter Aufsicht der Lehrkraft auf die Klassen 1, 1M, 2 und 2M beschränkt [@zslsicherheitphysik; @dguvsichereschuleoptik]. Bei den M-Klassen darf sammelnde Optik die Gefährdung nicht erhöhen. @tbl-laserklassen stellt diese und weitere Klassen mit Gerätebeispielen gegenüber. Maßgeblich ist die Klassifizierung des konkreten Geräts, denn derselbe Gerätetyp kann in verschiedenen Klassen vorkommen. Das Warnzeichen in @fig-laser-warnzeichen weist auf Laserstrahlung hin. Welche Klasse vorliegt, lässt sich am Symbol allein nicht erkennen.
+
+![Warnzeichen für Laserstrahlung (ISO 7010 W004). Urheber: Maxxl2, spätere Bearbeitungen laut Versionsgeschichte. Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ISO_7010_W004.svg). Vom Urheber als gemeinfrei freigegeben (Public Domain, ergänzende unbedingte Nutzungserlaubnis auf der Dateiseite). Unverändert eingebunden.](https://upload.wikimedia.org/wikipedia/commons/e/ed/ISO_7010_W004.svg){#fig-laser-warnzeichen width="140" fig-alt="Gelbes dreieckiges Warnzeichen mit schwarzem Rand und stilisiertem Laserstrahl."}
+
+| Klasse | Aussage zur Gefährdung | Gerätebeispiele |
+|:--|:--|:--|
+| 1 | Bei vorgesehenem Gebrauch besteht keine Gefahr durch die erreichbare Laserstrahlung. Das kann auch durch Abschirmung eines stärkeren Lasers erreicht werden. | Laserdrucker, Blu-Ray-Player, Glasfaser-Modem 2 der Telekom [@telekomglasfasermodem2, S. 25] |
+| 2 | Betrifft sichtbares Licht. Für eine zufällige Einwirkung von höchstens 0,25 Sekunden werden keine Augenschäden erwartet. Bewusstes Hineinschauen ist zu vermeiden. | Laserpointer, Laserwasserwaage |
+| 1M und 2M | Ohne zusätzliche Optik gelten die Aussagen zu 1 beziehungsweise 2. Sammelnde Instrumente können jedoch mehr Strahlung ins Auge lenken und es dadurch gefährden. | Bestimmte Strichcode-Lesegeräte (1M), Motivlaserprojektoren (2M) |
+| 3R | Direkte Strahlung kann bei einem Treffer im Auge Schäden verursachen. | Bestimmte Nivellierlaser |
+| 3B | Ein direkter Treffer gefährdet das Auge. Je nach Gerät ist auch die Haut gefährdet. | Bestimmte Showlaser |
+| 4 | Neben dem direkten Strahl kann schon Streulicht Augen und Haut schädigen. Brennbare Materialien können sich entzünden. | Frei zugängliche Laser zur Materialbearbeitung |
+
+: Vereinfachte Übersicht ausgewählter Laserklassen mit Gerätebeispielen. Angaben zu den Klassen und weitere Beispiele: @udovicic2022laser [S. 14--18]. Die Beispiele gelten für entsprechend klassifizierte Ausführungen. {#tbl-laserklassen}
+
+Als Lehrkraft planst du nicht nur den fachlichen Ablauf eines Laserversuchs, sondern auch den Schutz deiner Klasse. Dazu gehören eine geeignete Lichtquelle mit möglichst geringer Gefährdung, sicher befestigte Geräte und ein Strahlengang, bei dem weder direktes noch spiegelnd reflektiertes Licht Augen erreichen kann. Ein Strahlfänger beendet den Strahlengang, indem er das Laserlicht aufnimmt, ohne es gefährlich zurückzuwerfen. Vor der Durchführung muss die Gefährdungsbeurteilung zum tatsächlichen Aufbau passen und dokumentiert sein. Du unterweist die Schülerinnen und Schüler und erläuterst ihnen die Schutzmaßnahmen. Hinweise zur Vorbereitung bietet das Zentrum für Schulqualität und Lehrerbildung (ZSL) auf der Seite „Sicherheit im Physikunterricht“ [@zslsicherheitphysik].
 
 ## Sichern und anwenden
 
-Lernen ist ein aktiver Prozess. Erst wenn du ein Thema selbst erklären und auf eine neue Situation übertragen kannst, merkst du, ob du es verinnerlicht hast. In diesem Abschnitt prüfst du zuerst an den Lernzielen, was du erreicht hast. Danach sicherst du die Grundideen des Kapitels in deiner eigenen Sprache, prüfst dein Verständnis an typischen Stolperfallen und vergleichst zum Schluss die beiden Lasertypen dieses Kapitels.
+Zum Abschluss sicherst du die Grundideen des Kapitels mithilfe des Selbstchecks. Anschließend kannst du dein Wissen in den Übungsaufgaben anwenden.
 
-### Lernziele prüfen
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-selfcheck" aria-label="Selbstcheck">
+  <img src="assets/task-icons/selfcheck.png" alt="" aria-hidden="true">
+  Selbstcheck
+</span>
 
-Hier stehen die Lernziele aller Unterkapitel gebündelt. Prüfe für jedes einzelne, ob du es erfüllst. Für alles, was dir fehlt, führt dich das Inhaltsverzeichnis zur passenden Stelle.
+<u>Erkläre</u> das Kapitel zusammenhängend in deiner eigenen Sprache, so wie du es jemandem aus deinem Kurs beibringen würdest. Nutze dafür die Lernziele unten: Wer deine Erklärung liest oder hört, soll daran erkennen, dass du jedes dieser Ziele erreicht hast. Schreibe deine Erklärung auf und sammle sie an einem Ort. So entsteht Kapitel für Kapitel deine eigene Zusammenfassung, auf die du zurückgreifen kannst. Wo ein Lernziel eine Herleitung oder eine Rechnung nennt, führe sie aus.
+
+Ist jemand aus deinem Kurs da, nutze die Gelegenheit und erkläre im Gespräch. Skizziere dabei, was sich zeichnen lässt. Achte auf Rückfragen. Sie zeigen dir, wo deine Erklärung noch hakt.
 
 - **Stimulierte Emission:** Du <u>beschreibst</u> Absorption, spontane Emission und stimulierte Emission mithilfe eines Energieniveauschemas. Du <u>beurteilst</u> mit der Bedingung $E_\text{Photon} = \Delta E = h f$, ob ein Atom ein Photon absorbieren kann. Du <u>vergleichst</u> spontane und stimulierte Emission.
-- **Besetzungsinversion:** Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
+- **Besetzungsinversion und Lasermedium:** Du <u>erklärst</u>, wann zwischen zwei Energieniveaus eine Besetzungsinversion vorliegt und weshalb sie für die Lichtverstärkung erforderlich ist. Du <u>berechnest</u> Besetzungsverhältnisse im thermischen Gleichgewicht und <u>begründest</u> damit, dass ein Lasermedium gepumpt werden muss. Du <u>erklärst</u>, welche Funktion ein metastabiles Niveau beim Aufbau einer Besetzungsinversion erfüllt.
 - **Resonator:** Du <u>beschreibst</u> den Aufbau eines einfachen optischen Resonators und die Auskopplung des Laserstrahls. Du <u>erklärst</u>, wie die Spiegel wiederholte Durchgänge durch das Lasermedium ermöglichen und dadurch die Lichtverstärkung entlang der Spiegelachse begünstigen. Du <u>erläuterst</u> die Resonanzbedingung anhand stehender Wellen und <u>berechnest</u>, wie viele halbe Wellenlängen zwischen die Spiegel passen.
 - **Rubinlaser:** Du <u>beschreibst</u> den Aufbau des Rubinlasers und <u>ordnest</u> Lasermedium, Pumpquelle und Resonator ihre Funktionen <u>zu</u>. Du <u>erklärst</u>, wie beim Rubinlaser durch optisches Pumpen, Besetzungsinversion und stimulierte Emission Laserlicht entsteht.
 - **Helium-Neon-Laser:** Du <u>beschreibst</u> den Aufbau des Helium-Neon-Lasers. Du <u>erklärst</u>, wie Elektronenstöße und die Energieübertragung von Helium auf Neon zum Aufbau einer Besetzungsinversion beitragen. Du <u>vergleichst</u> Rubinlaser und Helium-Neon-Laser hinsichtlich ihrer Pumpweise und ihrer Betriebsart.
-- **Gefahren des Laserlichts:** Du <u>erklärst</u> mit der Bündelung des Laserlichts, dass schon ein schwacher Laser das Auge schädigen kann. Du <u>beschreibst</u>, was die Laserklassen 1 bis 4 über die Gefährlichkeit eines Lasergeräts aussagen.
+- **Laser im Unterricht:** Du <u>erklärst</u>, weshalb Laserlicht das Auge gefährden kann, und <u>berechnest</u>, wie sich die Intensität beim Fokussieren verändert. Du <u>beschreibst</u>, was die Laserklasse über die zugängliche Strahlung eines Geräts aussagt und worauf beim Umgang mit Lasern zu achten ist.
 
-### In eigener Sprache erklären
-
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-write" aria-label="Schreibaufgabe">
-  <svg viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M4 20h4l11-11-4-4L4 16v4Z"></path>
-    <path d="m13.5 6.5 4 4"></path>
-  </svg>
-  Schreibaufgabe
-</span>
-
-<u>Erkläre</u> die Grundideen dieses Kapitels zusammenhängend in deiner eigenen Sprache. Stell dir vor, dein Publikum ist jemand aus deinem Kurs. Benutze dafür gerne auch Skizzen, um deine Erklärungen zu veranschaulichen.
-
-Nutze die Lernziele aus der Prüfliste oben als Leitfaden. Hangle dich an ihnen entlang, formuliere aber selbst: Erkläre es so, wie du es verstanden hast.
 :::
+
+### Übungsaufgaben
 
 Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typischen Stolperfallen dieses Kapitels.
 
@@ -904,7 +972,7 @@ Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typi
 
 </details>
 
-### Zwei Lasertypen im Vergleich
+#### Zwei Lasertypen im Vergleich
 
 Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit Besetzungsinversion, eine Pumpquelle und ein Resonator. An jeder dieser drei Stellen sind sie verschieden gebaut, und ein Unterschied prägt den Charakter der beiden Geräte: Der eine blitzt, der andere leuchtet.
 
@@ -937,6 +1005,29 @@ Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und l
 </details>
 
 **Ausblick: Weitere Lasertypen.** Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?
+
+#### Physikalische Forschung und Verantwortung
+
+Laser werden in Medizin und Forschung eingesetzt. @fig-laser-verantwortung zeigt eine weitere Anwendung. Ein Bericht von 1978 beschreibt einen Helium-Neon-Laser als Zielhilfe an einer Schusswaffe.
+
+:::: {#fig-laser-verantwortung}
+```{=html}
+<a href="https://upload.wikimedia.org/wikipedia/commons/0/0a/American_180_Rifle_System_with_Laser_LOK_Sight.jpg" target="_blank" rel="noopener">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/American_180_Rifle_System_with_Laser_LOK_Sight.jpg" width="1200" height="269" loading="lazy" style="width:100%;height:auto" alt="Historische Schwarz-Weiß-Aufnahme einer American-180-Schusswaffe mit einem großen rechteckigen Laser-LOK-Zielgerät unter dem Lauf.">
+</a>
+```
+
+Fotografie einer American 180 mit Laser-LOK-Zielgerät, das einen Helium-Neon-Laser enthält. U.S. Army, *Infantry*, März–April 1978, Band 68, Nr. 2, S. 7. [Quelle und Rechteangabe auf Wikimedia Commons](https://commons.wikimedia.org/wiki/File:American_180_Rifle_System_with_Laser_LOK_Sight.jpg), als amtliches Werk der U.S. Army in den USA gemeinfrei (Public Domain). Unverändert extern eingebunden.
+::::
+
+::: {.mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+  <img src="assets/task-icons/transfer.svg" alt="" aria-hidden="true">
+  Transfer
+</span>
+
+<u>Bewerte</u>, welche Verantwortung Forschende für mögliche Anwendungen ihrer Ergebnisse tragen. Beziehe eine zivile Anwendung und das historische Beispiel in deine Überlegungen ein. Lege offen, welche Maßstäbe für dein Urteil wichtig sind, etwa der Schutz von Menschen, der gesellschaftliche Nutzen oder die Freiheit der Forschung. Berücksichtige auch ein Gegenargument zu deiner Position.
+:::
 
 ### Vorträge zum Nacharbeiten
 

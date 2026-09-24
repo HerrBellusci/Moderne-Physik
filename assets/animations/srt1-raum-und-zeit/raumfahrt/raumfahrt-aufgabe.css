@@ -3,9 +3,9 @@
 .srt-workbook-stage[data-srt-animation="raumfahrt-aufgabe"] > svg { aspect-ratio: 640 / 396; font-family: inherit; }
 .raumfahrt-views { display: flex; gap: .4rem; padding: .6rem .65rem .15rem; }
 .raumfahrt-views button { flex: 1; min-width: 0; min-height: 44px; padding: .4rem .5rem; border: 1px solid #b8c7d1; border-radius: 7px; background: #fff; color: #243447; font: inherit; font-size: .9rem; cursor: pointer; }
-.raumfahrt-views button[aria-pressed="true"] { background: #e7f2f3; border-color: #0b8793; }
-.raumfahrt-views button:hover { border-color: #0b8793; }
-.raumfahrt-views button:focus-visible { outline: 3px solid #5f9aa2; outline-offset: 2px; }
+.raumfahrt-views button[aria-pressed="true"] { background: #2563eb; border-color: #2563eb; color: #fff; }
+.raumfahrt-views button:hover { border-color: #2563eb; }
+.raumfahrt-views button:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
 .raumfahrt-view-note { margin: .2rem .7rem .15rem; color: #526372; font-size: .84rem; line-height: 1.4; }
 @media (max-width: 480px) {
   .raumfahrt-views { gap: .3rem; padding: .4rem .4rem .1rem; }

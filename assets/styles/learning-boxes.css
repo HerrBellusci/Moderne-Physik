@@ -459,26 +459,27 @@ a.glossary-link:focus-visible {
 .mp-train-controls button {
   min-height: 44px;
   padding: 0.4rem 0.8rem;
-  border: 1px solid #64748b;
-  border-radius: 5px;
+  border: 1px solid rgba(37, 99, 235, 0.35);
+  border-radius: 8px;
   background: #fff;
   color: #233247;
   font: inherit;
   cursor: pointer;
 }
 .mp-train-controls button:hover {
-  background: #e8edf3;
+  background: #f4f7ff;
 }
 .mp-train-controls button:focus-visible {
-  outline: 3px solid #1976b9;
-  outline-offset: 3px;
+  outline: 3px solid rgba(37, 99, 235, 0.35);
+  outline-offset: 2px;
 }
-.mp-train-controls .mp-train-random {
-  background: #233247;
+.mp-train-controls button[aria-pressed="true"] {
+  border-color: #2563eb;
+  background: #2563eb;
   color: #fff;
 }
-.mp-train-controls .mp-train-random:hover {
-  background: #394f6c;
+.mp-train-controls button[aria-pressed="true"]:hover {
+  background: #1d4ed8;
 }
 .mp-train-video {
   width: min(100%, 862px);

@@ -59,14 +59,14 @@
 .srt-workbook-stage[data-srt-animation="gamma-plot"] > svg { aspect-ratio: auto; font-family: inherit; }
 .gamma-controls { padding: .7rem .9rem 1rem; color: #243447; font: inherit; }
 .gamma-controls label { display: grid; gap: .25rem; }
-.gamma-controls input { width: 100%; min-height: 2.75rem; margin: 0; accent-color: #0b8793; }
+.gamma-controls input { width: 100%; min-height: 2.75rem; margin: 0; accent-color: #2563eb; }
 .gamma-values { display: grid; gap: .35rem; margin: .5rem 0 .8rem; font-size: 1rem; font-variant-numeric: tabular-nums; }
 .gamma-ratio { display: block; color: #526675; }
 .gamma-difference { color: #526675; }
 .gamma-presets { display: flex; flex-wrap: wrap; gap: .4rem; }
 .gamma-presets button { padding: .4rem .65rem; min-height: 2.75rem; border: 1px solid #bcc9d2; border-radius: 8px; background: #fff; color: #243447; font: inherit; }
-.gamma-presets button[aria-pressed="true"] { background: #eaf5f5; border-color: #0b8793; }
-.gamma-presets button:focus-visible, .gamma-controls input:focus-visible { outline: 3px solid #5f9aa2; outline-offset: 2px; }
+.gamma-presets button[aria-pressed="true"] { background: #2563eb; border-color: #2563eb; color: #fff; }
+.gamma-presets button:focus-visible, .gamma-controls input:focus-visible { outline: 3px solid #93c5fd; outline-offset: 2px; }
 .mp-lichtuhr-rechnung { min-width: 0; }
 .mp-lichtuhr-rechnung mjx-container[display="true"] { display: block; max-width: 100%; overflow-x: auto; overflow-y: hidden; text-align: left; padding: .3rem 0; }
 

@@ -14,7 +14,14 @@
         stationary: "Videos%20einbinden/Zug%20steht.mp4"
       };
       let request = 0;
+      let selectedChoice = null;
       const randomScene = () => Math.random() < 0.5 ? "moving" : "stationary";
+      const showChoice = (choice) => {
+        selectedChoice = choice;
+        controls.querySelectorAll("button[data-train-choice]").forEach((button) => {
+          button.setAttribute("aria-pressed", String(button.dataset.trainChoice === choice));
+        });
+      };
 
       // A random scene is ready for the native play button, without autoplay.
       video.src = sources[randomScene()];
@@ -26,6 +33,7 @@
         const currentRequest = ++request;
         const choice = button.dataset.trainChoice;
         const scene = choice === "random" ? randomScene() : choice;
+        showChoice(choice);
         video.pause();
         message.hidden = true;
         video.src = sources[scene];
@@ -37,6 +45,10 @@
           message.textContent = "Die Wiedergabe konnte nicht starten. Versuche es mit dem Abspielknopf im Video.";
           message.hidden = false;
         }
+      });
+
+      video.addEventListener("play", () => {
+        if (selectedChoice === null) showChoice("random");
       });
 
       video.addEventListener("error", () => {

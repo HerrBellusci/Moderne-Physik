@@ -71,7 +71,7 @@
 
 .zp2 button:focus-visible,
 .zp2 input:focus-visible {
-  outline: 2px solid var(--zp-accent);
+  outline: 3px solid #93c5fd;
   outline-offset: 2px;
 }
 
@@ -83,13 +83,14 @@
 }
 
 .zp2-segmented button {
+  min-height: 44px;
   padding: 8px 14px;
   border: 0;
   border-radius: 0;
 }
 
 .zp2-segmented button[aria-pressed="true"] {
-  background: var(--zp-accent);
+  background: #2563eb;
   color: #fff;
 }
 

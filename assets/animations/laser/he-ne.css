@@ -1,6 +1,6 @@
 [data-srt-animation="laser-hene"] > svg { aspect-ratio: 862 / 390; }
-[data-srt-animation="laser-hene-niveaus"] > svg { aspect-ratio: 862 / 610; }
-[data-srt-animation="laser-hene-spektroskop"] > svg { aspect-ratio: 862 / 515; }
+[data-srt-animation="laser-hene-niveaus"] > svg { aspect-ratio: 862 / 560; }
+[data-srt-animation="laser-hene-spektroskop"] > svg { aspect-ratio: 862 / 580; }
 [data-srt-animation^="laser-hene"] { background: white; }
 [data-srt-animation^="laser-hene"] .hene-label { font-family: inherit; }
 [data-srt-animation^="laser-hene"] + .srt-workbook-controls {
@@ -23,7 +23,6 @@
 [data-srt-animation^="laser-hene"] + .srt-workbook-controls button {
   flex: 0 0 auto;
   min-width: 0;
-  min-height: 2rem;
   padding: .3rem .6rem;
   font-size: .85rem;
 }
@@ -32,3 +31,54 @@
 .hene-real-image[hidden] { display: none; }
 .hene-real-image img { width: auto; max-width: 100%; max-height: 440px; object-fit: contain; }
 .hene-real-image p { margin: .4rem .6rem; font-size: .82rem; line-height: 1.4; text-align: left; }
+
+/* Ein gemeinsamer Rahmen um Darstellung, Bedienung und ergänzende Aufnahme. */
+.hene-spectrum {
+  width: min(100%, 862px);
+  margin: 0 auto;
+  border: 1px solid rgba(23, 32, 51, .14);
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+.hene-spectrum > .srt-workbook-stage {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+}
+.hene-spectrum > .srt-workbook-controls {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: .7rem .9rem .85rem;
+  border-top: 1px solid rgba(23, 32, 51, .14);
+}
+.hene-spectrum > .srt-workbook-controls .srt-workbook-control-group {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.hene-spectrum > .srt-workbook-controls legend { padding: 0; }
+#fig-umbau-hene-spektren figcaption { margin-top: .65rem; }
+.hene-real-image[data-hene-photo="seitlich"] > a {
+  display: block;
+  position: relative;
+  width: min(100%, 615px);
+  aspect-ratio: 2462 / 1760;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.hene-real-image[data-hene-photo="seitlich"] img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 71.4866%;
+  height: 139.8864%;
+  max-width: none;
+  max-height: none;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
