@@ -2,6 +2,21 @@
 // Verschiebt das Seiten-Inhaltsverzeichnis (Unterüberschriften) in der linken
 // Seitenleiste direkt unter den Eintrag des aktuellen Kapitels.
 document.addEventListener("DOMContentLoaded", function () {
+  var sidebar = document.querySelector("#quarto-sidebar");
+  var header = document.querySelector("#quarto-header");
+  if (sidebar && header) {
+    // Breite Formeln können den Layout-Viewport vergrößern. Das Menü muss
+    // dennoch innerhalb des tatsächlich sichtbaren Bildschirmbereichs scrollen.
+    var fitSidebar = function () {
+      var height = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+      var top = Math.max(0, header.getBoundingClientRect().bottom);
+      sidebar.style.setProperty("--mp-sidebar-height", Math.max(0, height - top) + "px");
+    };
+    fitSidebar();
+    window.addEventListener("resize", fitSidebar);
+    sidebar.addEventListener("shown.bs.collapse", fitSidebar);
+    if (window.visualViewport) window.visualViewport.addEventListener("resize", fitSidebar);
+  }
   var toc = document.querySelector("#quarto-sidebar #TOC");
   var active = document.querySelector("#quarto-sidebar .sidebar-link.active");
   if (!toc || !active) return;
@@ -11,6 +26,14 @@ document.addEventListener("DOMContentLoaded", function () {
   if (title) title.remove();
   toc.classList.add("toc-under-chapter");
   item.appendChild(toc);
+
+  // Nach der Abschnittswahl den Lesetext auf kleinen Bildschirmen freigeben.
+  toc.addEventListener("click", function (event) {
+    if (!event.target.closest("a[data-scroll-target]")) return;
+    if (!window.matchMedia("(max-width: 991.98px)").matches) return;
+    var toggle = document.querySelector(".quarto-btn-toggle[aria-expanded='true']");
+    if (toggle) toggle.click();
+  });
 });
 </script>
 <style>
@@ -28,5 +51,40 @@ document.addEventListener("DOMContentLoaded", function () {
 }
 #quarto-sidebar .toc-under-chapter ul ul {
   padding-left: 0.75rem;
+}
+
+@media (max-width: 991.98px) {
+  #quarto-sidebar {
+    width: 100vw;
+    max-width: 100vw;
+    min-height: 0;
+    height: auto !important;
+    max-height: var(--mp-sidebar-height, 100dvh) !important;
+    bottom: 0;
+    overscroll-behavior: contain;
+  }
+  #quarto-sidebar .sidebar-menu-container {
+    min-width: 0;
+    white-space: normal;
+    padding-bottom: 1rem;
+  }
+  #quarto-sidebar .sidebar-title,
+  #quarto-sidebar .sidebar-link,
+  #quarto-sidebar #TOC a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+  #quarto-sidebar #TOC,
+  #quarto-sidebar #TOC ul.collapse {
+    display: block;
+  }
+  #quarto-sidebar .sidebar-link,
+  #quarto-sidebar #TOC a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 }
 </style>

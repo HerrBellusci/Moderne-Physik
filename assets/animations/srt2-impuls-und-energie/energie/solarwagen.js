@@ -6,7 +6,7 @@
   const INITIAL_MASS = 1;
   const CHARGE = 100;
   const DURATION = 6500;
-  const colors = { ink: '#243447', muted: '#566b79', teal: '#0b8793', amber: '#ae6224', sun: '#d79e30' };
+  const colors = { ink: '#243447', muted: '#566b79', teal: '#0b8793', amber: '#ae6224' };
   const number = (n, digits = 1) => n.toLocaleString('de-DE', { minimumFractionDigits: digits, maximumFractionDigits: digits });
   const el = (name, attrs, parent) => SRT.el(name, attrs, parent);
   function label(parent, x, y, content, attrs = {}) {
@@ -134,7 +134,6 @@
         const a = i * Math.PI / 4;
         line(sun, 49 + 23 * Math.cos(a), 40 + 23 * Math.sin(a), 49 + 30 * Math.cos(a), 40 + 30 * Math.sin(a), { stroke: '#d8a544', 'stroke-width': 2 });
       }
-      for (let i = 0; i < 3; i++) arrow(parent, 76 + i * 19, 48 + i * 2, x - 42 + i * 26, 108 - i * 2, colors.sun, 2.5);
     }
     const cart = el('g', { transform: `translate(${x} 0)`, 'data-solar-cart': '' }, parent);
     // Solarzelle über einem offenen Chassis, Akku und Antrieb sichtbar.

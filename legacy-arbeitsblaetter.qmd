@@ -10,7 +10,11 @@ number-sections: false
 ```
 :::
 
-Hier findest du die ersten beiden Arbeitsblätter zur speziellen Relativitätstheorie aus der Vorlesung „Moderne Physik I“. Die ursprüngliche Reihenfolge und Nummerierung der Aufgaben sind erhalten. Die Verweise auf Stud.IP beziehen sich auf die Materialien der damaligen Veranstaltung. Fachliche Anmerkungen zur Übertragung stehen bei den betreffenden Aufgaben.
+::: {.mp-workbook-return}
+[← Zum Workbook](index.qmd){.btn .btn-outline-primary} [SRT I](01_srt_raum_und_zeit_umbau.qmd#sichern-und-anwenden){.btn .btn-outline-primary} [SRT II](02_srt_impuls_und_energie_umbau.qmd#sichern-und-anwenden){.btn .btn-outline-primary}
+:::
+
+Hier findest du die ersten beiden Arbeitsblätter zur speziellen Relativitätstheorie aus der Vorlesung „Moderne Physik I“. Die ursprüngliche Reihenfolge und Nummerierung der Aufgaben sind erhalten.
 
 [Arbeitsblatt 1](#arbeitsblatt-1) · [Arbeitsblatt 2](#arbeitsblatt-2)
 

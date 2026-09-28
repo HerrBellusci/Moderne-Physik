@@ -1,4 +1,4 @@
-# Spezielle Relativitätstheorie II: Impuls und Energie (Umbau) {#sec-srt-impuls-energie-umbau}
+# Spezielle Relativitätstheorie II: Impuls und Energie {#sec-srt-impuls-energie-umbau}
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -13,7 +13,7 @@
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260917-abschluss">
 <script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260917-abschluss"></script>
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/solarwagen.css?v=20260916b">
-<script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20260916b"></script>
+<script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20260928"></script>
 <script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
@@ -723,4 +723,4 @@ $$
 
 </details>
 
-Die ursprünglichen Vorlesungsaufgaben findest du unter [Legacy-Arbeitsblatt 1](legacy-arbeitsblaetter.qmd#arbeitsblatt-1) und [Legacy-Arbeitsblatt 2](legacy-arbeitsblaetter.qmd#arbeitsblatt-2).
+Die ursprünglichen Vorlesungsaufgaben zum SRT-Kapitel findest du [hier](legacy-arbeitsblaetter.qmd).

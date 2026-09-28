@@ -10,6 +10,7 @@ Diese Hinweise betreffen fremde Bestandteile. Sie ändern deren Lizenzbedingunge
 | mhchemParser 4.1.1, Bestandteil der MathJax-Datei | Copyright 2015–2021 Martin Hensel; [mhchemParser](https://github.com/mhchem/mhchemParser), Apache-2.0. Der ursprüngliche Hinweis ist in der unveränderten MathJax-Datei enthalten. | [Apache-2.0](assets/mathjax/LICENSE) |
 | Source Sans Pro, `assets/fonts/` | Adobe Systems Incorporated; Copyright 2010–2018, Reserved Font Name „Source“, SIL OFL 1.1. Copyright aus den mitgelieferten Fontdateien. | [OFL.txt](assets/fonts/OFL.txt) |
 | multibib, lokal angepasste Fassung | Copyright 2018–2024 Albert Krewinkel; [pandoc-ext/multibib](https://github.com/pandoc-ext/multibib). Maßgeblich ist der ISC-Hinweis im mitgelieferten Lua-Code. Anpassung: Metadaten aus `multibib:`. | [ISC](licenses/multibib-ISC.txt) |
+| APA-7-Zitierstil, `assets/styles/apa.csl` | Brenton M. Wiernik; [Citation Style Language](https://github.com/citation-style-language/styles/blob/master/apa.csl). Unverändert übernommen, Stand 16.07.2023. Namens- und Lizenzangaben stehen zusätzlich in der Datei. | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
 ## Beim Rendern von Quarto bereitgestellt
 

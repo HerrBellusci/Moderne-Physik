@@ -15,7 +15,7 @@ project:
 
 book:
   title: "Interaktives Quarto-Workbook Moderne Physik"
-  author: "Physik Belluni"
+  author: "Herr Bellusci"
   date: today
   chapters:
     - index.qmd
@@ -29,6 +29,9 @@ book:
         href: legacy-arbeitsblaetter.qmd
 
 lang: de
+language:
+  title-block-author-single: "Autor"
+csl: assets/styles/apa.csl
 filters:
   - tools/learning-goal-icons.lua
   - multibib

@@ -1,3 +1,20 @@
+/* Lange Literatur-URLs dürfen auch auf schmalen Bildschirmen umbrechen. */
+.csl-entry {
+  overflow-wrap: anywhere;
+}
+
+.mp-workbook-return > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.mp-workbook-return .btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
 :root {
   --mp-ink: #172033;
   --mp-muted: #516173;

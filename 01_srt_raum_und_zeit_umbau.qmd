@@ -1,4 +1,4 @@
-# Spezielle Relativitätstheorie I: Raum und Zeit (Umbau)
+# Spezielle Relativitätstheorie I: Raum und Zeit
 
 ::: {.content-visible when-format="html"}
 ```{=html}
@@ -167,9 +167,9 @@ Animation zu geradliniger Bewegung, Kreisbewegung und Schwingung. A zeigt eine g
 2. ::: {.mp-box .mp-misconception}
    <div class="mp-title">Gleiches Tempo bedeutet keine Beschleunigung?</div>
 
-   Die Aussage ist falsch. Sie setzt gleichbleibendes Tempo mit gleichbleibender Geschwindigkeit gleich. Bei der Kreisbewegung bleibt zwar das Tempo, also der Betrag der Geschwindigkeit, konstant. Die Bewegungsrichtung ändert sich jedoch fortlaufend. Damit ändert sich der Geschwindigkeitsvektor. Der Körper ist deshalb beschleunigt.
+   Wer unter Geschwindigkeit nur versteht, wie schnell sich ein Körper bewegt, erwartet bei gleichbleibendem Tempo keine Beschleunigung. In der Physik gehört zur Geschwindigkeit jedoch auch die Bewegungsrichtung. Fährt ein Auto mit gleichbleibendem Tempo durch eine Kurve, ändert sich seine Bewegungsrichtung. Damit ändert sich seine Geschwindigkeit und das Auto ist beschleunigt, obwohl die Tachonadel unverändert bleibt. Das Tempo beschreibt also den Betrag der Geschwindigkeit. Für die Frage nach einer Beschleunigung muss zusätzlich die Richtung berücksichtigt werden.
 
-   Die Schüleraussage entspricht der beschriebenen Lernendenvorstellung, Geschwindigkeit erfasse nur, wie schnell sich ein Körper bewegt, nicht aber dessen Bewegungsrichtung [@schecker2018, S. 66].
+   Die Gleichsetzung von Geschwindigkeit mit Tempo ist als Lernendenvorstellung dokumentiert [@schecker2018, S. 65--66].
    :::
 
 </details>
@@ -1946,4 +1946,4 @@ $$
 </details>
 ::::
 
-Die ursprünglichen Vorlesungsaufgaben findest du unter [Legacy-Arbeitsblatt 1](legacy-arbeitsblaetter.qmd#arbeitsblatt-1) und [Legacy-Arbeitsblatt 2](legacy-arbeitsblaetter.qmd#arbeitsblatt-2).
+Die ursprünglichen Vorlesungsaufgaben zum SRT-Kapitel findest du [hier](legacy-arbeitsblaetter.qmd).
