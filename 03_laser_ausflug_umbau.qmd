@@ -854,11 +854,11 @@ Unsichtbare Laserstrahlung im nahen Infrarot kann somit die Netzhaut schädigen,
 
 Ein roter Experimentierlaser der Klasse 2 hat laut Hersteller eine Leistung von $P=1{,}0\,\mathrm{mW}$ und am Ausgang einen Strahldurchmesser von $d_1=1{,}0\,\mathrm{mm}$ [@phywe0876199, S. 2]. Für eine vereinfachte Abschätzung nehmen wir diesen Durchmesser auch unmittelbar vor dem Auge an und setzen einen Netzhautfleck mit $d_2=20\,\mathrm{\mu m}$ voraus. Das gesamte Bündel tritt durch die Pupille ein. Vernachlässige Verluste auf dem Weg zur Netzhaut und nimm jeweils eine gleichmäßige Leistungsverteilung auf der Kreisfläche an.
 
-Für diese Aufgabe benötigst du die Intensität und die Kreisfläche.
+Für diese Aufgabe benötigst du die Intensität und die Kreisfläche mit dem Radius $r$.
 
 ::: {.mp-formula-repeat}
 $$
-I=\frac{P}{A},\qquad A=\pi\left(\frac{d}{2}\right)^2
+I=\frac{P}{A},\qquad A=\pi r^2
 $$
 
 ([-@eq-laser-bestrahlungsstaerke])
@@ -895,9 +895,13 @@ $$
 
 </details>
 
-Um die Gefährdung durch ein Lasergerät einzuordnen, gibt es Laserklassen.[Laserklasse]{.column-margin .mp-randbegriff} Sie beziehen sich auf die zugängliche Strahlung, also auf Strahlung, die aus dem Gerät austreten und Menschen erreichen kann. Für den Schulunterricht verweist das ZSL auf das DGUV-Portal „Sichere Schule“. Dort werden Versuche unter Aufsicht der Lehrkraft auf die Klassen 1, 1M, 2 und 2M beschränkt [@zslsicherheitphysik; @dguvsichereschuleoptik]. Bei den M-Klassen darf sammelnde Optik die Gefährdung nicht erhöhen. @tbl-laserklassen stellt diese und weitere Klassen mit Gerätebeispielen gegenüber. Maßgeblich ist die Klassifizierung des konkreten Geräts, denn derselbe Gerätetyp kann in verschiedenen Klassen vorkommen. Das Warnzeichen in @fig-laser-warnzeichen weist auf Laserstrahlung hin. Welche Klasse vorliegt, lässt sich am Symbol allein nicht erkennen.
+Um die Gefährdung durch ein Lasergerät einzuordnen, gibt es Laserklassen.[Laserklasse]{.column-margin .mp-randbegriff} Sie beziehen sich auf die zugängliche Strahlung, also auf Strahlung, die aus dem Gerät austreten und Menschen erreichen kann. Das Warnzeichen in @fig-laser-warnzeichen weist auf Laserstrahlung hin. Welche Klasse vorliegt, lässt sich am Symbol allein nicht erkennen.
 
 ![Warnzeichen für Laserstrahlung (ISO 7010 W004). Urheber: Maxxl2, spätere Bearbeitungen laut Versionsgeschichte. Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:ISO_7010_W004.svg). Vom Urheber als gemeinfrei freigegeben (Public Domain, ergänzende unbedingte Nutzungserlaubnis auf der Dateiseite). Unverändert eingebunden.](https://upload.wikimedia.org/wikipedia/commons/e/ed/ISO_7010_W004.svg){#fig-laser-warnzeichen width="140" fig-alt="Gelbes dreieckiges Warnzeichen mit schwarzem Rand und stilisiertem Laserstrahl."}
+
+Für den Schulunterricht verweist das Zentrum für Schulqualität und Lehrerbildung (ZSL) auf das Portal „Sichere Schule“ der Deutschen Gesetzlichen Unfallversicherung (DGUV). Dort werden Versuche unter Aufsicht der Lehrkraft auf die Klassen 1, 1M, 2 und 2M beschränkt [@zslsicherheitphysik; @dguvsichereschuleoptik]. Ohne zusätzliche sammelnde Optik ist die Augengefahr bei 1M und 2M mit derjenigen bei 1 beziehungsweise 2 vergleichbar. Sammellinsen könnten jedoch mehr Strahlung ins Auge lenken. Deshalb kommen die M-Klassen für Versuche mit Sammellinsen nicht infrage. Für solche Linsenversuche wählst du einen geeigneten Experimentierlaser der Klasse 1 oder 2 und sicherst den gesamten Strahlengang.
+
+@tbl-laserklassen stellt diese und weitere Klassen mit Gerätebeispielen gegenüber. Maßgeblich ist die Klassifizierung des konkreten Geräts, denn derselbe Gerätetyp kann in verschiedenen Klassen vorkommen.
 
 | Klasse | Aussage zur Gefährdung | Gerätebeispiele |
 |:--|:--|:--|
@@ -910,7 +914,11 @@ Um die Gefährdung durch ein Lasergerät einzuordnen, gibt es Laserklassen.[Lase
 
 : Vereinfachte Übersicht ausgewählter Laserklassen mit Gerätebeispielen. Angaben zu den Klassen und weitere Beispiele: @udovicic2022laser [S. 14--18]. Die Beispiele gelten für entsprechend klassifizierte Ausführungen. {#tbl-laserklassen}
 
-Als Lehrkraft planst du nicht nur den fachlichen Ablauf eines Laserversuchs, sondern auch den Schutz deiner Klasse. Dazu gehören eine geeignete Lichtquelle mit möglichst geringer Gefährdung, sicher befestigte Geräte und ein Strahlengang, bei dem weder direktes noch spiegelnd reflektiertes Licht Augen erreichen kann. Ein Strahlfänger beendet den Strahlengang, indem er das Laserlicht aufnimmt, ohne es gefährlich zurückzuwerfen. Vor der Durchführung muss die Gefährdungsbeurteilung zum tatsächlichen Aufbau passen und dokumentiert sein. Du unterweist die Schülerinnen und Schüler und erläuterst ihnen die Schutzmaßnahmen. Hinweise zur Vorbereitung bietet das Zentrum für Schulqualität und Lehrerbildung (ZSL) auf der Seite „Sicherheit im Physikunterricht“ [@zslsicherheitphysik].
+Beim Aufbau eines Laserversuchs achtest du darauf, dass weder der direkte Strahl noch spiegelnd reflektiertes Laserlicht in ein Auge gelangen kann. Am Ende trifft der Strahl auf einen lichtundurchlässigen Schirm mit matter Oberfläche, der für den verwendeten Laser geeignet ist.
+
+Vor dem Laserversuch beurteilst du die Gefährdungen und legst die Schutzmaßnahmen fest. Diese Gefährdungsbeurteilung muss dokumentiert sein [@zslsicherheitphysik]. Eine vorhandene Beurteilung kannst du weiterverwenden, wenn sie den tatsächlichen Aufbau, die räumlichen Bedingungen und die Lerngruppe abdeckt. Du prüfst, ob sie noch zutrifft. Bei Bedarf passt du sie an. Bei einer Wiederholung ist deshalb nicht jedes Mal ein neues Dokument nötig [@kmk2023risu, S. 244].
+
+Auch bei Demonstrationsversuchen erläuterst du der Klasse die Gefahren und die erforderlichen Verhaltensregeln. Experimentieren die Schülerinnen und Schüler selbst, geschieht dies unter deiner Aufsicht. Vor Beginn erklärst du ihnen den sicheren Umgang mit den Geräten und die Schutzmaßnahmen. Du vergewisserst dich, dass sie diese verstanden haben. Unterweisungen solltest du immer dokumentieren [@dguvsichereschuleunterweisung]. Weitere Hinweise zur Vorbereitung findest du beim ZSL auf der Seite „Sicherheit im Physikunterricht“ [@zslsicherheitphysik].
 
 ## Sichern und anwenden
 
@@ -937,78 +945,162 @@ Ist jemand aus deinem Kurs da, nutze die Gelegenheit und erkläre im Gespräch. 
 
 ### Übungsaufgaben
 
-Danach prüfst du dein Verständnis an sechs Aussagen. In ihnen stecken die typischen Stolperfallen dieses Kapitels.
+Die folgenden Aufgaben greifen die Grundlagen des Lasers und Fragen zu seinen Anwendungen auf.
 
-::: {.mp-box .mp-task}
+::: {#aufgabe-laser-aussagen .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
   <img src="assets/task-icons/think.svg" alt="" aria-hidden="true">
   Denkcheck
 </span>
 
-<u>Beurteile</u>, welche der folgenden Aussagen zutreffen. Korrigiere die falschen.
+<u>Beurteile</u> die folgenden Aussagen. Wähle jeweils „Trifft zu“ oder „Trifft nicht zu“. <u>Begründe</u> deine Urteile und berichtige die falschen Aussagen.
 
-1. Sehr intensives Licht wird von einem Atom immer absorbiert.
-2. Wenn man ein Lasermedium stark genug erhitzt, entsteht eine Besetzungsinversion.
-3. Beim Rubinlaser liegt eine Besetzungsinversion vor, wenn mehr Chrom-Ionen im metastabilen Niveau $E_2$ als im Grundzustand $E_1$ sind.
-4. Bei jeder Besetzungsinversion ist mehr als die Hälfte aller Atome angeregt.
-5. In einem metastabilen Niveau gibt es keine spontane Emission.
-6. Erst der Resonator macht die Photonen untereinander gleich.
+::: {.content-visible when-format="html"}
+Mit „Antworten prüfen“ unter der Tabelle kannst du deine Auswahl auswerten lassen.
+:::
+
+::: {.content-visible when-format="html"}
+```{=html}
+<link rel="stylesheet" href="assets/styles/laser-abschluss.css?v=20260928-3">
+<div class="laser-aussagencheck">
+<table aria-label="Aussagen zu den Grundlagen des Lasers">
+<thead><tr><th scope="col">Aussage</th><th scope="col" id="laser-check-ja">Trifft zu</th><th scope="col" id="laser-check-nein">Trifft nicht zu</th><th scope="col" class="laser-check-heading">Ergebnis</th></tr></thead>
+<tbody>
+  <tr data-answer="nein">
+    <th scope="row"><span id="laser-aussage-1">a) Bei ausreichend hoher Lichtintensität kann ein Atom durch die Absorption eines einzelnen Photons angeregt werden, auch wenn dessen Energie zu keinem seiner Energieübergänge passt.</span></th>
+    <td><label><input type="radio" name="laser-aussage-1" value="ja" aria-labelledby="laser-aussage-1 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-1" value="nein" aria-labelledby="laser-aussage-1 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+  <tr data-answer="nein">
+    <th scope="row"><span id="laser-aussage-2">b) Durch genügend starkes Erhitzen entsteht im thermischen Gleichgewicht eine Besetzungsinversion.</span></th>
+    <td><label><input type="radio" name="laser-aussage-2" value="ja" aria-labelledby="laser-aussage-2 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-2" value="nein" aria-labelledby="laser-aussage-2 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+  <tr data-answer="ja">
+    <th scope="row"><span id="laser-aussage-3">c) Für eine Besetzungsinversion muss beim Rubinlaser das obere Laserniveau stärker besetzt sein als der Grundzustand.</span></th>
+    <td><label><input type="radio" name="laser-aussage-3" value="ja" aria-labelledby="laser-aussage-3 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-3" value="nein" aria-labelledby="laser-aussage-3 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+  <tr data-answer="ja">
+    <th scope="row"><span id="laser-aussage-4">d) Beim Helium-Neon-Laser kann eine Besetzungsinversion vorliegen, obwohl sich die meisten Neonatome im Grundzustand befinden.</span></th>
+    <td><label><input type="radio" name="laser-aussage-4" value="ja" aria-labelledby="laser-aussage-4 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-4" value="nein" aria-labelledby="laser-aussage-4 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+  <tr data-answer="nein">
+    <th scope="row"><span id="laser-aussage-5">e) Aus einem metastabilen Zustand tritt keine spontane Emission auf.</span></th>
+    <td><label><input type="radio" name="laser-aussage-5" value="ja" aria-labelledby="laser-aussage-5 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-5" value="nein" aria-labelledby="laser-aussage-5 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+  <tr data-answer="ja">
+    <th scope="row"><span id="laser-aussage-6">f) Auch ohne Resonatorspiegel kann Licht bei einem Durchgang durch ein Medium durch stimulierte Emission verstärkt werden.</span></th>
+    <td><label><input type="radio" name="laser-aussage-6" value="ja" aria-labelledby="laser-aussage-6 laser-check-ja"></label></td>
+    <td><label><input type="radio" name="laser-aussage-6" value="nein" aria-labelledby="laser-aussage-6 laser-check-nein"></label></td>
+    <td class="laser-check-outcome"><span class="laser-check-feedback" role="img" hidden></span></td>
+  </tr>
+</tbody>
+</table>
+<div class="laser-check-actions" hidden>
+  <button type="button" data-action="check">Antworten prüfen</button>
+  <button type="button" data-action="reset">Zurücksetzen</button>
+</div>
+<div class="laser-check-result" role="status" aria-live="polite" aria-atomic="true"></div>
+<noscript>Vergleiche deine Auswahl mit den Beurteilungen und Begründungen unter der Aufgabe.</noscript>
+</div>
+<script src="assets/scripts/laser-aussagencheck.js?v=20260928-3" defer></script>
+```
+:::
+
+::: {.content-visible unless-format="html"}
+a) Bei ausreichend hoher Lichtintensität kann ein Atom durch die Absorption eines einzelnen Photons angeregt werden, auch wenn dessen Energie zu keinem seiner Energieübergänge passt.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+
+b) Durch genügend starkes Erhitzen entsteht im thermischen Gleichgewicht eine Besetzungsinversion.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+
+c) Für eine Besetzungsinversion muss beim Rubinlaser das obere Laserniveau stärker besetzt sein als der Grundzustand.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+
+d) Beim Helium-Neon-Laser kann eine Besetzungsinversion vorliegen, obwohl sich die meisten Neonatome im Grundzustand befinden.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+
+e) Aus einem metastabilen Zustand tritt keine spontane Emission auf.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+
+f) Auch ohne Resonatorspiegel kann Licht bei einem Durchgang durch ein Medium durch stimulierte Emission verstärkt werden.
+
+$\square$ Trifft zu $\qquad\square$ Trifft nicht zu
+:::
 :::
 
 <details class="mp-details">
-<summary>Mögliche Lösung anzeigen</summary>
+<summary>Beurteilungen und Begründungen anzeigen</summary>
 
-<p><strong>1. Falsch.</strong> Für die Absorption zählt die Energie des einzelnen Photons: Sie muss zum Niveauabstand passen. Hohe Intensität bedeutet viele Photonen, sie ändert die Energie pro Photon aber nicht.</p>
+a. Trifft nicht zu. Die Energie eines Atoms ist gequantelt: Es kann nur bestimmte Energiewerte annehmen. Bei der Anregung durch Absorption eines einzelnen Photons muss dessen Energie zum Unterschied zwischen dem Ausgangs- und einem höheren Energieniveau passen. Eine höhere Intensität bedeutet bei gleicher Frequenz mehr Photonen pro Fläche und Zeit. Die Energie des einzelnen Photons bleibt gleich.
 
-<p><strong>2. Falsch.</strong> Im thermischen Gleichgewicht ist das höhere Niveau immer schwächer besetzt. Selbst bei beliebig hoher Temperatur nähert sich die Besetzung höchstens der Gleichbesetzung.</p>
+b. Trifft nicht zu. Nach der Boltzmann-Verteilung nähern sich die Besetzungen der beiden betrachteten Energieniveaus beim Erhitzen einander an. Das obere Niveau wird dadurch nicht stärker besetzt als das untere. Für eine Besetzungsinversion muss dem Medium durch Pumpen gezielt Energie zugeführt werden.
 
-<p><strong>3. Richtig.</strong> Für die Besetzungsinversion werden die Besetzungen der beiden Niveaus des Laserübergangs verglichen. Beim Rubinlaser muss das metastabile Niveau $E_2$ stärker besetzt sein als der Grundzustand $E_1$.</p>
+c. Trifft zu. Beim Rubinlaser ist der Grundzustand zugleich das untere Laserniveau. Eine Besetzungsinversion liegt vor, wenn sich mehr Chrom-Ionen im oberen Laserniveau als im Grundzustand befinden.
 
-<p><strong>4. Falsch.</strong> Verglichen werden nur die beiden Niveaus des Laserübergangs. Beim Vier-Niveau-System des Neons ist das untere Laserniveau praktisch leer: Schon wenige angeregte Atome ergeben eine Inversion, während fast alle Atome im Grundzustand sitzen.</p>
+d. Trifft zu. Die Besetzungsinversion betrifft beim Helium-Neon-Laser zwei angeregte Energieniveaus. Im oberen Laserniveau befinden sich mehr Neonatome als im unteren. Zugleich kann die Mehrzahl der Neonatome im Grundzustand bleiben.
 
-<p><strong>5. Falsch.</strong> Auch aus einem metastabilen Niveau tritt spontane Emission auf, nur deutlich verzögert. Diese Verzögerung erlaubt es, dort viele Atome anzusammeln.</p>
+e. Trifft nicht zu. Auch aus einem metastabilen Zustand ist spontane Emission möglich. Die lange mittlere Lebensdauer erleichtert es, viele Atome durch Pumpen in diesem Zustand anzusammeln.
 
-<p><strong>6. Falsch.</strong> Die gleichartigen Photonen erzeugt die stimulierte Emission: Jedes neue Photon ist eine Kopie des auslösenden. Der Resonator wählt Richtung und Wellenlänge aus und schickt das Licht immer wieder durch das Medium.</p>
+f. Trifft zu. Bei einer passenden Besetzungsinversion können beim Durchgang mehr Photonen durch stimulierte Emission hinzukommen, als durch Absorption verschwinden. Dann verlassen mehr Photonen das Medium, als hineingelangt sind. Resonatorspiegel ermöglichen wiederholte Durchgänge durch das Medium.
 
 </details>
 
-#### Zwei Lasertypen im Vergleich
+In einem Laserversuch mit Luftballons der Universität Freiburg befindet sich ein kleiner grüner Ballon im Inneren eines größeren roten Ballons. Die Farbangaben beziehen sich auf weiße Beleuchtung. Wird die Anordnung von außen mit rotem Laserlicht bestrahlt, platzt der grüne Ballon, während der rote unbeschädigt bleibt [@freiburgballon].
 
-Rubinlaser und Helium-Neon-Laser folgen demselben Bauplan: ein Lasermedium mit Besetzungsinversion, eine Pumpquelle und ein Resonator. An jeder dieser drei Stellen sind sie verschieden gebaut, und ein Unterschied prägt den Charakter der beiden Geräte: Der eine blitzt, der andere leuchtet.
+@fig-laser-ballons-schema zeigt die Anordnung. Die dünne rote Hülle reflektiert einen Teil des roten Lichts und lässt einen weiteren Teil hindurch.
 
-::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+![Skizze des Versuchs mit einem grünen Ballon im Inneren eines roten Ballons. Der rote Laserstrahl ist bis zur inneren Ballonhülle eingezeichnet.](assets/images/laser-ballons-schema.svg){#fig-laser-ballons-schema fig-alt="Skizze: Rotes Laserlicht gelangt durch die äußere rote Ballonhülle zur grünen Hülle im Inneren."}
+
+:::: {#aufgabe-laser-ballons .mp-box .mp-task}
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer: Zwei Ballons im Laserlicht">
   <img src="assets/task-icons/transfer.svg" alt="" aria-hidden="true">
-  Transfer
+  Transfer: Zwei Ballons im Laserlicht
 </span>
 
-<u>Vergleiche</u> Rubinlaser und Helium-Neon-Laser nach Lasermedium, Pumpquelle, Niveausystem und Betriebsart.
+1. <u>Erkläre</u>, weshalb bei diesem Versuch der grüne Ballon platzt und der rote unbeschädigt bleibt.
 
-<u>Begründe</u> mit dem unteren Laserniveau, weshalb der Rubinlaser eine stärkere Anregung für die Besetzungsinversion benötigt. <u>Erkläre</u>, wie die jeweilige Pumpquelle mit dem Puls- beziehungsweise Dauerstrichbetrieb der hier betrachteten Laser zusammenhängt.
-:::
+2. <u>Beurteile</u> die folgende Aussage eines Lernenden: „Der rote Ballon müsste das rote Laserlicht besonders gut absorbieren, weil beide dieselbe Farbe haben.“ <u>Nenne</u> eine mögliche Vorstellung, die dieser Aussage zugrunde liegt. Beziehe in deine Begründung ein, wie der rote Farbeindruck bei weißer Beleuchtung entsteht.
+
+3. <u>Begründe</u> eine Vermutung dazu, was mit den beiden Ballons bei grünem statt rotem Laserlicht geschehen könnte.
+::::
 
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-| | Rubinlaser | Helium-Neon-Laser |
-|---|---|---|
-| Lasermedium | Rubinstab mit Chrom-Ionen | Neonatome im Helium-Neon-Gasgemisch |
-| Pumpquelle | Blitzlampe um den Stab | Gasentladung, Energieübergabe über Helium-Stöße |
-| Niveausystem | Drei-Niveau-System | Vier-Niveau-System |
-| Betriebsart | Pulsbetrieb | Dauerstrichbetrieb |
-| Wellenlänge | 694 nm | 632,8 nm |
+1. Die rote Hülle absorbiert das rote Laserlicht nur schwach und erwärmt sich deshalb wenig. Ein Teil des Lichts tritt durch sie hindurch und erreicht die grüne Hülle. Diese absorbiert genügend Strahlungsenergie, um sich an der bestrahlten Stelle so stark zu erwärmen, dass sie reißt.
 
-Beim Rubinlaser ist das untere Laserniveau der Grundzustand. Für eine Besetzungsinversion müssen mehr Ionen im oberen Laserniveau als im Grundzustand sein. Dazu müssen viele Ionen aus dem zunächst stark besetzten Grundzustand angeregt werden. Im hier betrachteten Aufbau liefert die Blitzlampe die Pumpenergie nur kurzzeitig, sodass auch die Laseremission zeitlich begrenzt bleibt. Aus dem Drei-Niveau-Modell allein folgt jedoch kein zwingender Pulsbetrieb.
+2. Die Aussage trifft nicht zu. Dahinter könnte die Vorstellung stehen, dass ein Körper vor allem Licht seiner wahrgenommenen Farbe absorbiert. Dabei werden das Licht, das in unser Auge gelangt, und das vom Material absorbierte Licht verwechselt.
 
-Beim Helium-Neon-Laser liegt das untere Laserniveau über dem Grundzustand und leert sich von selbst sehr schnell. Es ist praktisch immer leer, und schon wenige Neonatome im oberen Laserniveau ergeben eine Besetzungsinversion. Eine schwache, ständig laufende Gasentladung hält diesen Zustand aufrecht: Der Helium-Neon-Laser leuchtet ununterbrochen.
+   ::: {.mp-box .mp-misconception}
+   <div class="mp-title">Absorbiert ein roter Ballon besonders gut rotes Licht?</div>
+
+   Die rote Hülle reflektiert bei weißer Beleuchtung überwiegend rote Lichtanteile. Andere sichtbare Lichtanteile werden stärker absorbiert. Das reflektierte rote Licht gelangt in unsere Augen und lässt uns den Ballon rot sehen.
+   :::
+
+3. Aus den Farben der Ballons ergibt sich die Vermutung, dass nun der äußere rote Ballon platzt und der innere grüne unbeschädigt bleibt. Die rote Hülle absorbiert grünes Licht stärker als rotes und könnte sich dadurch bis zum Reißen erwärmen. Die grüne Hülle absorbiert grünes Licht dagegen nur schwach und würde sich entsprechend weniger erwärmen. Ob eine Hülle tatsächlich platzt, hängt auch von der Laserleistung, der Bestrahlungsdauer und dem Material ab.
 
 </details>
 
-**Ausblick: Weitere Lasertypen.** Nach demselben Bauplan arbeiten auch alle anderen Lasertypen. Wenn dir ein neuer Laser begegnet, kannst du ihn mit drei Fragen einordnen: Was ist das Lasermedium? Wie wird gepumpt? Wie ist der Resonator gebaut?
+::: {#physikalische-forschung-und-verantwortung}
+Im [Kapitel zu Impuls und Energie](02_srt_impuls_und_energie_umbau.qmd#relativistische-energie) hast du den Zusammenhang zwischen Masse und Ruheenergie $E_0=m_0c^2$ kennengelernt. Er beschreibt auch die Energiebilanz bei Kernreaktionen. Im Manhattan-Projekt wurden während des Zweiten Weltkriegs Erkenntnisse der Kernphysik gezielt zur Entwicklung von Atombomben genutzt [@npsmanhattan]. Zwischen einer physikalischen Erkenntnis, der Entwicklung einer Waffe und der Entscheidung über ihren Einsatz liegen unterschiedliche Entscheidungen.
 
-#### Physikalische Forschung und Verantwortung
+Auch Laser werden für sehr verschiedene Zwecke genutzt. Du hast die Entfernung von Tattoos und die Entfernungsmessung zum Mond kennengelernt. Bei bewaffneten Drohnen wie der MQ-9 Reaper werden Laser zur Entfernungsmessung und zur Markierung von Zielen für lasergelenkte Munition eingesetzt [@usafmq9]. Damit stellt sich auch beim Laser die Frage nach der Verantwortung der Beteiligten.
 
-Laser werden in Medizin und Forschung eingesetzt. @fig-laser-verantwortung zeigt eine weitere Anwendung. Ein Bericht von 1978 beschreibt einen Helium-Neon-Laser als Zielhilfe an einer Schusswaffe.
+@fig-laser-verantwortung zeigt eine American 180 mit einem Laser-LOK-Zielgerät, das einen Helium-Neon-Laser enthält. Ein Bericht von 1978 nennt die Nutzung des Systems durch einige US-Polizeibehörden und die damalige Untersuchung möglicher militärischer Anwendungen [@militaryreview1978laserlok, S. 84].
 
 :::: {#fig-laser-verantwortung}
 ```{=html}
@@ -1017,20 +1109,40 @@ Laser werden in Medizin und Forschung eingesetzt. @fig-laser-verantwortung zeigt
 </a>
 ```
 
-Fotografie einer American 180 mit Laser-LOK-Zielgerät, das einen Helium-Neon-Laser enthält. U.S. Army, *Infantry*, März–April 1978, Band 68, Nr. 2, S. 7. [Quelle und Rechteangabe auf Wikimedia Commons](https://commons.wikimedia.org/wiki/File:American_180_Rifle_System_with_Laser_LOK_Sight.jpg), als amtliches Werk der U.S. Army in den USA gemeinfrei (Public Domain). Unverändert extern eingebunden.
+Fotografie einer American 180 mit Laser-LOK-Zielgerät, das einen Helium-Neon-Laser enthält. U.S. Army, Infantry, März–April 1978, Band 68, Nr. 2, S. 7. Quelle: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:American_180_Rifle_System_with_Laser_LOK_Sight.jpg). Dort als amtliches Werk der U.S. Army in den USA als gemeinfrei ausgewiesen (Public Domain). Unverändert extern eingebunden.
 ::::
 
 ::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer">
+<span class="mp-task-kind mp-task-kind-transfer" aria-label="Transfer: Forschung und Verantwortung">
   <img src="assets/task-icons/transfer.svg" alt="" aria-hidden="true">
-  Transfer
+  Transfer: Forschung und Verantwortung
 </span>
 
-<u>Bewerte</u>, welche Verantwortung Forschende für mögliche Anwendungen ihrer Ergebnisse tragen. Beziehe eine zivile Anwendung und das historische Beispiel in deine Überlegungen ein. Lege offen, welche Maßstäbe für dein Urteil wichtig sind, etwa der Schutz von Menschen, der gesellschaftliche Nutzen oder die Freiheit der Forschung. Berücksichtige auch ein Gegenargument zu deiner Position.
+<u>Diskutiere</u>, inwiefern Forschende Verantwortung für mögliche schädliche Anwendungen ihrer Erkenntnisse tragen.
 :::
 
-### Vorträge zum Nacharbeiten
+<details class="mp-details">
+<summary>Mögliche Beurteilung und didaktische Hinweise anzeigen</summary>
 
-David Phillips führt im Vortrag [„Crystals and lasers: Constructing a laser“](https://www.rigb.org/explore-science/explore/video/crystals-and-lasers-constructing-laser-1987) mit Experimenten und Analogien durch die Grundlagen des Lasers. Der gesamte englischsprachige Vortrag eignet sich zur Vertiefung dieses Kapitels.
+Eine mögliche Position lautet:
 
-Auch der englischsprachige MIT-Kurs [„Understanding Lasers and Fiberoptics“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/) von Shaoul Ezekiel bietet eine Vertiefung. Das Video [„Laser Fundamentals I“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/resources/laser-fundamentals-i/) behandelt insbesondere die Eigenschaften des Laserlichts. Beide Angebote findest du in der [weiterführenden Literatur](references.qmd#weiterführende-literatur).
+Forschende tragen Mitverantwortung, soweit sie Folgen ihrer Arbeit vorhersehen und beeinflussen können. Das Wissen über Laser ermöglicht medizinische Behandlungen und wissenschaftliche Messungen. Bei Grundlagenforschung lassen sich spätere Anwendungen oft nur teilweise absehen. Wer dagegen gezielt ein Zielgerät für eine bewaffnete Drohne entwickelt oder an der Entwicklung einer Atombombe mitarbeitet, muss sich mit dem vorgesehenen Waffeneinsatz auseinandersetzen. Daraus folgt für mich eine größere Verantwortung für absehbare Schäden. Die Verantwortung der Personen, die einen Einsatz anordnen und ausführen, entlastet die Entwickelnden nicht vollständig.
+
+Diese Position lässt sich mit dem Einwand angreifen, dass Verantwortung für einen Waffeneinsatz ausschließlich bei denjenigen liegen sollte, die ihn beschließen oder ausführen. Forschende stellen Wissen oder technische Mittel bereit, entscheiden aber nicht über den konkreten Einsatz. Aus dieser Sicht reicht die Vorhersehbarkeit möglicher Schäden nicht aus, um ihnen Mitverantwortung zuzuschreiben.
+
+Dagegen spricht, dass auch die gezielte Entwicklung einer Waffe eine eigene Entscheidung ist. Wer ihren vorgesehenen Einsatz kennt und die technischen Voraussetzungen dafür schafft, trägt zu den absehbaren Folgen bei. Deshalb würde ich Mitverantwortung nicht auf die letzte Entscheidung über den Einsatz beschränken.
+
+Als zukünftige Lehrkraft wirst du auch Aufgaben stellen, in denen Lernende ein begründetes Werturteil entwickeln sollen. Der Bildungsplan Physik für die Sekundarstufe I in Baden-Württemberg nennt im Kompetenzbereich Bewertung das Ziel, „sich dazu begründet eine eigene Meinung zu bilden (Werturteil)“ [@bw2026physik, Abschnitt 2.4, einleitender Absatz]. Bei dieser Aufgabe zählt die begründete Abwägung, nicht die Übereinstimmung mit einer vorgegebenen Meinung.
+
+</details>
+:::
+
+### Weiterführende Videos {#vorträge-zum-nacharbeiten}
+
+Wenn dich das Thema interessiert und du weitere Zugänge kennenlernen möchtest, findest du hier zwei Empfehlungen für englischsprachige Videos.
+
+David Phillips zeigt in [„Crystals and lasers: Constructing a laser“](https://www.rigb.org/explore-science/explore/video/crystals-and-lasers-constructing-laser-1987), wie ein Laser aufgebaut ist und wie Laserlicht entsteht. Der Vortrag gehört zu den CHRISTMAS LECTURES der Royal Institution von 1987, einer Vortragsreihe, die sich besonders an ein junges Publikum richtet. Anhand von Experimenten behandelt Phillips unter anderem den Rubinlaser und die Besetzungsinversion [@phillips1987constructing]. Für dich als zukünftige Lehrkraft bietet das Video damit auch ein Beispiel für die Vermittlung des Themas an Jugendliche.
+
+Der Videokurs [„Understanding Lasers and Fiberoptics“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/) von Shaoul Ezekiel wird vom MIT dem Undergraduate-Niveau zugeordnet. Er richtet sich zugleich an Menschen aus technischen, wissenschaftlichen und medizinischen Berufen, die wenig Vorwissen über Laser und Glasfasern mitbringen. Die Erklärungen arbeiten mit Laborvorführungen und wenig Mathematik. Behandelt werden der Laseraufbau und optische Eigenschaften wie Strahlbündelung, Spektralbreite und Moden sowie die Lichtausbreitung in Glasfasern. Der Kurs umfasst fünf Videos [@ezekiel2008lasers]. Als Einstieg bietet sich [„Laser Fundamentals I“](https://ocw.mit.edu/courses/res-6-005-understanding-lasers-and-fiberoptics-spring-2008/resources/laser-fundamentals-i/) an.
+
+Die vollständigen Nachweise zu beiden Angeboten stehen mit Links und Abrufdatum in der [weiterführenden Literatur](references.qmd#weiterführende-literatur).

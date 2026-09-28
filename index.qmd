@@ -59,12 +59,10 @@ Die Animationen, Simulationen und die meisten Abbildungen sind eigene Entwicklun
 
 ## Lizenz
 
-Die eigenen Texte, Aufgaben, Abbildungen und Videos dieser Fassung stehen unter CC BY-NC-SA 4.0 (Creative Commons Namensnennung, nicht kommerziell, Weitergabe unter gleichen Bedingungen 4.0 International), soweit daran eigene Rechte bestehen. Du darfst diese Inhalte für nichtkommerzielle Zwecke teilen und bearbeiten. Nenne dabei „Physik Belluni“, verlinke die Lizenz und kennzeichne Änderungen. Wenn du Bearbeitungen weitergibst, müssen sie unter derselben Lizenz stehen. Die [Lizenzbedingungen](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de) erläutern die erlaubten Nutzungen.
+Die eigenen Texte, Aufgaben, Abbildungen und Videos dieses Workbooks stehen unter [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de), soweit daran eigene Rechte bestehen. Du darfst diese Inhalte für nichtkommerzielle Zwecke teilen und bearbeiten. Nenne dabei „Physik Belluni“ als Pseudonym, verlinke die Lizenz und kennzeichne Änderungen. Wenn du Bearbeitungen veröffentlichst, gelten die Weitergabebedingungen der Lizenz.
 
-Von dieser Lizenz ausgenommen sind:
+Für eigenen Programmcode, auch für Animationen und Simulationen, gilt stattdessen die [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0), soweit daran eigene Rechte bestehen. Sie erlaubt die Nutzung, Änderung und Weitergabe für die in ihr zugelassenen Zwecke. Bei der Weitergabe müssen der Lizenzlink und der Hinweis aus der [Lizenzübersicht](LICENSE.md) mitgegeben werden.
 
-- Übernommene Abbildungen, Videos und sonstige fremde Inhalte behalten ihre eigenen Bedingungen. Ihre Kennzeichnung und die [Drittanbieter-Hinweise](THIRD-PARTY-NOTICES.md) sind maßgeblich.
-- Eingebundene Schriften und fremde Software (z. B. MathJax) stehen unter ihren jeweiligen Lizenzen, die in den Drittanbieter-Hinweisen aufgeführt sind.
-- Eigener Programmcode, einschließlich des Codes der Animationen und Simulationen, erhält vorerst keine zusätzliche Nutzungslizenz. Seine gesonderte Lizenzierung wird noch festgelegt. Die Nutzung des Workbooks im Browser ist vorgesehen und bleibt möglich.
+Fremde Bestandteile sind von beiden Freigaben ausgenommen. Herkunft, Verwendung und Lizenzen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md) und bei den jeweiligen Inhalten.
 
-Bereits unter CC BY-SA 4.0 veröffentlichte eigene Bestandteile bleiben unter dieser Lizenz nutzbar. Die neue Regelung nimmt diese Rechte nicht zurück. Die [Lizenzübersicht](LICENSE.md) grenzt die Fassungen und Bestandteile voneinander ab.
+Den genauen Geltungsbereich beschreibt die [Lizenzübersicht](LICENSE.md).

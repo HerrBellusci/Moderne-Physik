@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="330" viewBox="0 0 760 330" role="img" aria-labelledby="title desc">
+  <title id="title">Grüner Ballon in einem roten Ballon</title>
+  <desc id="desc">Skizze der ineinanderliegenden Ballons. Rotes Laserlicht gelangt von außen durch die rote Ballonhülle bis zur grünen Hülle im Inneren. Nur der Lichtweg bis zur inneren Hülle ist eingezeichnet.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#c52d37"/></marker>
+  </defs>
+  <rect width="760" height="330" fill="white"/>
+  <g font-family="sans-serif" font-size="22" fill="#172033">
+    <path d="M442 282 C365 266 299 190 302 129 C305 65 365 28 447 30 C532 31 589 72 592 137 C596 207 532 264 459 282 L463 294 L436 294 Z" fill="#fff1f2" stroke="#c52d37" stroke-width="3"/>
+    <path d="M472 225 C434 215 403 178 405 139 C407 97 438 78 476 80 C519 80 549 110 548 150 C547 188 516 218 489 226 L494 236 L468 236 Z" fill="#d8edcc" stroke="#38763e" stroke-width="3"/>
+    <path d="M54 148 H404" fill="none" stroke="#c52d37" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="54" y="123">rotes Laserlicht</text>
+    <path d="M564 72 L609 49 H732" fill="none" stroke="#516173" stroke-width="1.5"/>
+    <text x="600" y="35">roter Ballon</text>
+    <path d="M531 192 L593 236 H735" fill="none" stroke="#516173" stroke-width="1.5"/>
+    <text x="592" y="261">grüner Ballon</text>
+  </g>
+</svg>

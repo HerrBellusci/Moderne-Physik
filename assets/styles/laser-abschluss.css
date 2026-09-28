@@ -1,0 +1,92 @@
+.laser-aussagencheck table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+  font-size: inherit;
+  line-height: 1.35;
+}
+
+.laser-aussagencheck th,
+.laser-aussagencheck td {
+  padding: 0.5rem 0.3rem;
+  border-bottom: 1px solid rgba(23, 32, 51, 0.16);
+  vertical-align: middle;
+}
+
+.laser-aussagencheck tbody th {
+  font-weight: normal;
+  text-align: left;
+}
+
+.laser-aussagencheck thead th:not(:first-child),
+.laser-aussagencheck td {
+  width: 3.6rem;
+  text-align: center;
+}
+
+.laser-aussagencheck label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 2rem;
+  min-height: 2rem;
+  cursor: pointer;
+}
+
+.laser-aussagencheck input {
+  width: 1.05rem;
+  height: 1.05rem;
+  margin: 0;
+  accent-color: #244a69;
+  cursor: pointer;
+}
+
+.laser-aussagencheck .laser-check-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.85rem;
+}
+
+.laser-aussagencheck button {
+  border: 1px solid #516173;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #172033;
+  padding: 0.35rem 0.65rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.laser-aussagencheck input:focus-visible,
+.laser-aussagencheck button:focus-visible {
+  outline: 2px solid #244a69;
+  outline-offset: 3px;
+}
+
+.laser-aussagencheck .laser-check-feedback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8rem;
+  height: 1.8rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 1.15rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.laser-aussagencheck .laser-check-heading { font-size: 0.8em; }
+.laser-aussagencheck .laser-check-feedback[data-state="correct"] { color: #155332; background: #e4f3e9; }
+.laser-aussagencheck .laser-check-feedback[data-state="incorrect"] { color: #8e1e2b; background: #fbe6e8; }
+.laser-aussagencheck .laser-check-feedback[data-state="missing"] { color: #644500; background: #fff2cd; }
+.laser-aussagencheck [hidden] { display: none; }
+.laser-aussagencheck .laser-check-result:not(:empty) { margin-top: 0.6rem; }
+
+@media print {
+  .laser-aussagencheck tr {
+    break-inside: avoid;
+  }
+  .laser-aussagencheck .laser-check-actions { display: none; }
+}

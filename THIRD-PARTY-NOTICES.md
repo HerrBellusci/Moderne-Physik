@@ -1,6 +1,6 @@
 # Drittkomponenten und übernommene Medien
 
-Diese Hinweise betreffen fremde Bestandteile. Sie ändern deren Lizenzbedingungen nicht. Die gesonderte [Lizenzübersicht für eigene Beiträge](LICENSE.md) nimmt fremde Bestandteile ausdrücklich aus. Stand der Ergänzungen: 23.09.2026, Komponentenprüfung vom 16.09.2026 mit Quarto 1.9.36.
+Diese Hinweise betreffen fremde Bestandteile. Sie ändern deren Lizenzbedingungen nicht. Die gesonderte [Lizenzübersicht für eigene Beiträge](LICENSE.md) nimmt fremde Bestandteile ausdrücklich aus. Komponentenprüfung vom 16.09.2026 mit Quarto 1.9.36.
 
 ## Im Repository mitgeliefert
 

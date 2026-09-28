@@ -34,10 +34,11 @@
 
 /* Ein gemeinsamer Rahmen um Darstellung, Bedienung und ergänzende Aufnahme. */
 .hene-spectrum {
+  box-sizing: border-box;
   width: min(100%, 862px);
   margin: 0 auto;
   border: 1px solid rgba(23, 32, 51, .14);
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
   overflow: hidden;
   background: white;
 }
@@ -63,7 +64,6 @@
   background: transparent;
 }
 .hene-spectrum > .srt-workbook-controls legend { padding: 0; }
-#fig-umbau-hene-spektren figcaption { margin-top: .65rem; }
 .hene-real-image[data-hene-photo="seitlich"] > a {
   display: block;
   position: relative;

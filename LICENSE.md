@@ -1,26 +1,21 @@
 # Lizenz und Geltungsbereich
 
-Stand: 23.09.2026. Rechteinhaber eigener geschützter Beiträge: Physik Belluni.
+## Eigene Beiträge
 
-## Eigene Lehrinhalte
+Eigene Texte, Aufgaben, Abbildungen und Videos dieses Workbooks stehen unter **[Creative Commons Namensnennung – Nicht kommerziell – Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)**, soweit daran eigene Rechte bestehen.
 
-Eigene Texte, Aufgaben, Abbildungen und Videos dieser Fassung stehen unter **Creative Commons Namensnennung – Nicht kommerziell – Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-NC-SA 4.0)**, soweit daran eigene Rechte bestehen.
-
-- [Lizenzübersicht](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de)
-- [Vollständiger Lizenztext](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.de)
-
-Bei Weitergabe sind „Physik Belluni“, die Lizenz und vorgenommene Änderungen anzugeben. Veröffentlichte Bearbeitungen unterliegen den Weitergabebedingungen der Lizenz. Kommerzielle Nutzungen werden durch diese Lizenz nicht erlaubt. Gesetzlich erlaubte Nutzungen bleiben unberührt.
+Bei der Weitergabe sind „Physik Belluni“ als Pseudonym für die Namensnennung, die Lizenz und vorgenommene Änderungen anzugeben. Die Lizenz erlaubt die nichtkommerzielle Nutzung, Weitergabe und Bearbeitung. Für veröffentlichte Bearbeitungen gelten ihre Weitergabebedingungen. Der [vollständige Lizenztext](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.de) ist maßgeblich.
 
 ## Eigener Programmcode
 
-Eigener Programmcode, insbesondere JavaScript, CSS, Lua und Python sowie der Code der Animationen und Simulationen, ist von der vorstehenden CC-BY-NC-SA-Freigabe ausgenommen. Für noch nicht anderweitig freigegebene eigene Codebeiträge wird vorerst keine zusätzliche Nutzungslizenz erteilt. Die gesonderte Softwarelizenz wird noch festgelegt. Die bestimmungsgemäße Nutzung des veröffentlichten Workbooks im Browser ist gestattet. Gesetzliche Rechte und Rechte aus früheren Freigaben bleiben unberührt.
+Eigener Programmcode, einschließlich des Codes für Animationen und Simulationen, steht unter der **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**, soweit daran eigene Rechte bestehen. Die Lizenz erlaubt, den Code für ihre zugelassenen Zwecke zu nutzen, zu verändern und weiterzugeben. Bei der Weitergabe sind die Lizenzbedingungen oder ihr Link und der folgende Hinweis mitzugeben:
 
-## Frühere Freigaben
+```text
+Required Notice: Physik Belluni, Workbook „Moderne Physik“
+```
 
-Bereits wirksam unter [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.de) freigegebene eigene Bestandteile bleiben darunter nutzbar. Für neue eigene Beiträge gilt die oben beschriebene Regelung. Eine spätere weitergehende Freigabe bleibt möglich.
+Der eigene Programmcode ist von der oben genannten CC-BY-NC-SA-Freigabe ausgenommen. Maßgeblich ist der verlinkte [vollständige PolyForm-Lizenztext](https://polyformproject.org/licenses/noncommercial/1.0.0).
 
 ## Fremde Bestandteile
 
-Übernommene Medien, Aufgabenformulierungen, Schriften und Software werden durch diese Erklärung nicht neu lizenziert. Für sie gelten ihre jeweiligen Nutzungsrechte und Lizenzbedingungen. Maßgeblich sind die Kennzeichnungen an den Inhalten und die [Drittanbieter-Hinweise](THIRD-PARTY-NOTICES.md).
-
-Insbesondere bleiben das extern eingebundene Tattoo-Video und die Spektrumgrafik unter CC BY-SA 3.0. Die Nichtkommerziell-Bedingung für eigene Lehrinhalte schränkt die gesonderte Nutzung dieser fremden Dateien nicht ein. Die Verwendung im Workbook und eine Quellenangabe allein begründen keine zusätzliche Nutzungserlaubnis für fremdes Material.
+Fremde Bestandteile sind von diesen Freigaben ausgenommen. Für übernommene Medien, Schriften und Software gelten ihre jeweiligen Rechte und Lizenzbedingungen. Herkunft, Verwendung und Bedingungen stehen an den Inhalten und in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md).
