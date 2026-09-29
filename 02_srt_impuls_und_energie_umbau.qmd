@@ -36,9 +36,7 @@ Aus der klassischen Mechanik kennst du den Gesamtimpuls als Erhaltungsgröße. Z
 
 Dafür betrachtest du beide Wagen vor, während und nach dem Stoß zusammen als abgeschlossenes System.[abgeschlossenes System]{.column-margin .mp-randbegriff} Das bedeutet hier, dass kein Impuls mit der Umgebung ausgetauscht wird. Dazu vernachlässigen wir äußere Einflüsse wie Reibung. Die resultierende äußere Kraft auf das System ist damit null.
 
-Aus der klassischen Mechanik kennst du die Formel für den Impuls eines Körpers:
-
-$$\vec p = m\,\vec v.$$
+Aus der klassischen Mechanik kennst du die Formel für den Impuls eines Körpers, $\vec p = m\,\vec v$.
 
 Der Impuls hat dieselbe Richtung wie die Geschwindigkeit. Der Gesamtimpuls ergibt sich als Summe der Impulsvektoren aller Körper des Systems. Für unser Beispiel gilt $\vec p_\mathrm{ges}=\vec p_1+\vec p_2$.
 
