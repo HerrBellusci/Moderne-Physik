@@ -189,20 +189,22 @@
       controls.range.value = beta;
       const metresPerSecond = beta * C;
       const speedUnit = metresPerSecond >= 1e6 ? 'm/s' : 'km/h';
+      const speedUnitTex = metresPerSecond >= 1e6
+        ? '\\frac{\\mathrm{m}}{\\mathrm{s}}' : '\\frac{\\mathrm{km}}{\\mathrm{h}}';
       const speed = number(metresPerSecond >= 1e6 ? metresPerSecond : metresPerSecond * 3.6,
         metresPerSecond >= 1e6);
       const ratio = number(beta);
       controls.range.setAttribute('aria-valuetext', metresPerSecond >= 1e6
         ? `${fmt(metresPerSecond, 0)} Meter pro Sekunde`
         : `${speed.plain} Kilometer pro Stunde`);
-      inline(controls.speed, `${speed.tex}\\,\\mathrm{${speedUnit}}\\quad(v/c=${ratio.tex})`,
+      inline(controls.speed, `${speed.tex}\\,${speedUnitTex}\\quad(\\frac{v}{c}=${ratio.tex})`,
         `${speed.plain} ${speedUnit} (*v* / *c* = ${ratio.plain})`);
       const relation = beta === 0 ? '=' : '\\approx';
       const relationText = beta === 0 ? '=' : '≈';
       inline(controls.gamma, `\\gamma${relation}${texNumber(q.gamma, 4)}`, `*γ* ${relationText} ${fmt(q.gamma, 4)}`);
       for (const [node, symbol, value] of [[controls.classic, 'klass', q.classic], [controls.rel, 'rel', q.rel]]) {
         const formatted = number(value, true);
-        inline(node, `p_\\mathrm{${symbol}}${relation}${formatted.tex}\\,\\mathrm{kg\\,m/s}`,
+        inline(node, `p_\\mathrm{${symbol}}${relation}${formatted.tex}\\,\\frac{\\mathrm{kg}\\,\\mathrm{m}}{\\mathrm{s}}`,
           `*p* (${symbol === 'klass' ? 'klassisch' : 'relativistisch'}) ${relationText} ${formatted.plain} kg m/s`);
       }
       controls.difference.replaceChildren();
@@ -248,8 +250,8 @@
       line(parent, P.x, P.y + P.h, P.x + P.w + 7, P.y + P.h, { stroke: COLORS.axis, 'stroke-width': 2 });
       SRT.el('path', { d: `M${P.x} ${P.y - 16} l-6 12 h12 Z`, fill: COLORS.axis }, parent);
       SRT.el('path', { d: `M${P.x + P.w + 17} ${P.y + P.h} l-12 -6 v12 Z`, fill: COLORS.axis }, parent);
-      mathLabel(parent, P.x, 25, 'p\\;\\text{in }10^{-19}\\,\\mathrm{kg\\,m/s}', '*p* in 10⁻¹⁹ kg m/s', 24);
-      mathLabel(parent, P.x + P.w / 2, 307, 'v/c', '*v* / *c*', 27, 'middle');
+      mathLabel(parent, P.x, 29, 'p\\;\\text{in }10^{-19}\\,\\frac{\\mathrm{kg}\\,\\mathrm{m}}{\\mathrm{s}}', '*p* in 10⁻¹⁹ kg m/s', 24);
+      mathLabel(parent, P.x + P.w / 2, 307, '\\frac{v}{c}', '*v* / *c*', 27, 'middle');
 
       const curves = SRT.el('g', { 'clip-path': `url(#${clipId})` }, parent);
       const points = [];

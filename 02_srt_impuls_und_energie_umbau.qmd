@@ -2,7 +2,7 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260916-bildrahmen">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20261005-knopfposition">
 <link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260915">
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/impuls/impuls-vergleich.css?v=20260915c">
 <script src="assets/animations/shared/core.js"></script>
@@ -12,8 +12,8 @@
 <script src="assets/animations/srt2-impuls-und-energie/impuls/wagenstoss.js?v=20260915c"></script>
 <link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.css?v=20260917-abschluss">
 <script src="assets/animations/srt2-impuls-und-energie/energie/energiezufuhr.js?v=20260917-abschluss"></script>
-<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/solarwagen.css?v=20260916b">
-<script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20260928"></script>
+<link rel="stylesheet" href="assets/animations/srt2-impuls-und-energie/energie/solarwagen.css?v=20261005-knopfposition">
+<script src="assets/animations/srt2-impuls-und-energie/energie/solarwagen.js?v=20261005-knopfposition"></script>
 <script src="assets/animations/shared/workbook.js"></script>
 ```
 :::
@@ -52,7 +52,7 @@ Auf der geraden Schiene ist die Bewegung eindimensional. Dabei kennzeichnet ein 
 :::
 
 ::: {.content-visible unless-format="html"}
-Zwei Wagen mit jeweils $1\,\mathrm{kg}$ Masse bewegen sich vor dem Stoß mit $2\,\mathrm{m/s}$ und $1\,\mathrm{m/s}$ in dieselbe Richtung. Nach dem Stoß fahren sie gemeinsam mit $1{,}5\,\mathrm{m/s}$ weiter. Fährt der zweite Wagen vorher mit $1\,\mathrm{m/s}$ entgegen, beträgt die gemeinsame Geschwindigkeit danach $0{,}5\,\mathrm{m/s}$ in Richtung des ersten Wagens.
+Zwei Wagen mit jeweils $1\,\mathrm{kg}$ Masse bewegen sich vor dem Stoß mit $2\,\frac{\mathrm{m}}{\mathrm{s}}$ und $1\,\frac{\mathrm{m}}{\mathrm{s}}$ in dieselbe Richtung. Nach dem Stoß fahren sie gemeinsam mit $1{,}5\,\frac{\mathrm{m}}{\mathrm{s}}$ weiter. Fährt der zweite Wagen vorher mit $1\,\frac{\mathrm{m}}{\mathrm{s}}$ entgegen, beträgt die gemeinsame Geschwindigkeit danach $0{,}5\,\frac{\mathrm{m}}{\mathrm{s}}$ in Richtung des ersten Wagens.
 :::
 
 Animation zum vollständig unelastischen Stoß zweier Wagen mit jeweils $1\,\mathrm{kg}$ Masse. Die Pfeile stellen die Impulse im selben Maßstab dar. Äußere Einflüsse wie Reibung werden in dieser idealisierten Darstellung vernachlässigt.
@@ -123,7 +123,7 @@ Problematisch wird die Verwendung der relativistischen Masse, wenn man sie als a
 
 Bei der Protonentherapie wird ein Strahl schneller Protonen zur Behandlung von Tumoren eingesetzt. Er soll das Tumorgewebe gezielt bestrahlen und umliegendes gesundes Gewebe möglichst schonen. Magnetfelder lenken den Strahl auf seiner Bahn. Damit er das vorgesehene Zielgebiet erreicht, muss seine Ablenkung korrekt berechnet werden. Sie hängt vom Impuls der Protonen ab: Bei gleichem Magnetfeld und senkrechter Bewegung zum Feld ist die Bahn umso weniger gekrümmt, je größer der Impuls ist.
 
-Ein Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$ bewegt sich im Laborsystem mit $v=0{,}60\,c$. Verwende $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
+Ein Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$ bewegt sich im Laborsystem mit $v=0{,}60\,c$. Verwende $c=3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 
 Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln. Bei den Impulsen genügt für diese Aufgabe der Betrag.
 
@@ -141,7 +141,7 @@ $$
 
 ::: {.mp-formula-repeat}
 $$
-\gamma=\frac{1}{\sqrt{1-v^2/c^2}}
+\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 $$
 
 ([-@eq-umbau-lorentzfaktor])
@@ -154,15 +154,15 @@ $$
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-1. Mit $v=1{,}8\cdot10^8\,\mathrm{m/s}$ folgt
+1. Mit $v=1{,}8\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$ folgt
 
-   $$p_\mathrm{klass}=m_0\,v=3{,}006\cdot10^{-19}\,\mathrm{kg\,m/s}.$$
+   $$p_\mathrm{klass}=m_0\,v=3{,}006\cdot10^{-19}\,\frac{\mathrm{kg}\,\mathrm{m}}{\mathrm{s}}.$$
 
-   Der Lorentzfaktor ist $\gamma=1/\sqrt{1-0{,}60^2}=1{,}25$. Damit erhältst du
+   Der Lorentzfaktor ist $\gamma=\frac{1}{\sqrt{1-0{,}60^2}}=1{,}25$. Damit erhältst du
 
-   $$p_\mathrm{rel}=\gamma\,m_0\,v=3{,}7575\cdot10^{-19}\,\mathrm{kg\,m/s}.$$
+   $$p_\mathrm{rel}=\gamma\,m_0\,v=3{,}7575\cdot10^{-19}\,\frac{\mathrm{kg}\,\mathrm{m}}{\mathrm{s}}.$$
 
-   Gerundet sind das $3{,}0\cdot10^{-19}\,\mathrm{kg\,m/s}$ und $3{,}8\cdot10^{-19}\,\mathrm{kg\,m/s}$.
+   Gerundet sind das $3{,}0\cdot10^{-19}\,\frac{\mathrm{kg}\,\mathrm{m}}{\mathrm{s}}$ und $3{,}8\cdot10^{-19}\,\frac{\mathrm{kg}\,\mathrm{m}}{\mathrm{s}}$.
 
 2. Mit den ungerundeten Zwischenwerten beträgt die relative Abweichung
 
@@ -245,16 +245,16 @@ In @fig-ie-solarwagen kannst du beide Vorgänge abspielen und anhalten. Die Anze
 :::
 
 ::: {.content-visible unless-format="html"}
-Der anfangs ruhende Wagen speichert beim Laden $100\,\mathrm J$ zusätzlich im Akku. Seine Masse nimmt dabei um etwa $1{,}1\cdot10^{-15}\,\mathrm{kg}$ zu. Werden diese $100\,\mathrm J$ anschließend vollständig in kinetische Energie umgewandelt, sinkt die Ruheenergie wieder auf ihren Anfangswert. Die Gesamtenergie des Wagens bleibt während des Anfahrens gleich. Am Ende fährt er mit etwa $14{,}1\,\mathrm{m/s}$.
+Der anfangs ruhende Wagen speichert beim Laden $100\,\mathrm J$ zusätzlich im Akku. Seine Masse nimmt dabei um etwa $1{,}1\cdot10^{-15}\,\mathrm{kg}$ zu. Werden diese $100\,\mathrm J$ anschließend vollständig in kinetische Energie umgewandelt, sinkt die Ruheenergie wieder auf ihren Anfangswert. Die Gesamtenergie des Wagens bleibt während des Anfahrens gleich. Am Ende fährt er mit etwa $14{,}1\,\frac{\mathrm{m}}{\mathrm{s}}$.
 :::
 
 Animation zum Laden und Anfahren eines Solarwagens im Bezugssystem des Bodens. Der Wagen hat vor dem Laden eine Masse von $1\,\mathrm{kg}$ und speichert anschließend $100\,\mathrm J$ im Akku. Beim Anfahren rollt er ohne Gleiten auf ruhendem Untergrund, der Impuls, aber keine Energie überträgt. Wärmeverluste und die Rotationsenergie der Räder werden vernachlässigt.
 ::::
 
 ::: {.mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck: Bezugssystem">
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
   <img src="assets/task-icons/think.svg" alt="" aria-hidden="true">
-  Denkcheck: Bezugssystem
+  Denkcheck
 </span>
 
 Ein Raumschiff fliegt geradlinig und gleichförmig an der Erde vorbei. Du beschreibst dasselbe Raumschiff einmal in seinem Ruhesystem und einmal im Erdsystem.
@@ -281,9 +281,9 @@ Wir beginnen mit dem Lorentzfaktor und formen nach $\gamma^2-1$ um:
 
 $$
 \begin{aligned}
-\gamma &= \frac{1}{\sqrt{1-v^2/c^2}}
+\gamma &= \frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
   && \Big|\ \text{quadrieren} \\[10pt]
-\gamma^2 &= \frac{1}{1-v^2/c^2}
+\gamma^2 &= \frac{1}{1-\frac{v^2}{c^2}}
   && \Big|\ \cdot\left(1-\frac{v^2}{c^2}\right) \\[10pt]
 \gamma^2\left(1-\frac{v^2}{c^2}\right)&=1
   && \Big|\ \text{ausmultiplizieren} \\[10pt]
@@ -310,7 +310,7 @@ E_\mathrm{kin}=\frac{\gamma^2v^2}{(\gamma+1)c^2}\,m_0c^2
  =\frac{\gamma^2}{\gamma+1}\,m_0v^2.
 $$
 
-Für $v\ll c$ ist $\gamma\approx1$. Der Vorfaktor wird dann näherungsweise $1^2/(1+1)=1/2$ und es folgt:
+Für $v\ll c$ ist $\gamma\approx1$. Der Vorfaktor wird dann näherungsweise $\frac{1^2}{1+1}=\frac{1}{2}$ und es folgt:
 
 $$
 E_\mathrm{kin}\approx\frac12m_0v^2.
@@ -342,14 +342,14 @@ $$
 Nimmt ein Körper Energie auf und bleibt dabei als Ganzes in Ruhe, steigt seine Ruheenergie und damit auch seine Masse. Gibt er unter diesen Bedingungen Energie ab, sinkt seine Ruheenergie und damit auch seine Masse.
 
 ::::: {#aufgabe-ie-sonne .mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung: Masseverlust der Sonne">
+<span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
   <img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">
-  Berechnung: Masseverlust der Sonne
+  Berechnung
 </span>
 
-Die Bestrahlungsstärke $S$ gibt die eintreffende Strahlungsleistung pro Fläche an. Im mittleren Erdabstand beträgt sie außerhalb der Atmosphäre etwa $S=1{,}36\cdot10^3\,\mathrm{W/m^2}$. Eine Fläche von einem Quadratmeter empfängt also pro Sekunde etwa $1360\,\mathrm J$, wenn die Strahlung senkrecht auf sie trifft. Der Wert ist für diese Aufgabe gerundet [@iau2015b3, S. 2].
+Die Bestrahlungsstärke $S$ gibt die eintreffende Strahlungsleistung pro Fläche an. Im mittleren Erdabstand beträgt sie außerhalb der Atmosphäre etwa $S=1{,}36\cdot10^3\,\frac{\mathrm{W}}{\mathrm{m}^2}$. Eine Fläche von einem Quadratmeter empfängt also pro Sekunde etwa $1360\,\mathrm J$, wenn die Strahlung senkrecht auf sie trifft. Der Wert ist für diese Aufgabe gerundet [@iau2015b3, S. 2].
 
-Nimm an, dass die Sonne gleichmäßig in alle Richtungen abstrahlt. Ihre Strahlung verteilt sich dann im Abstand der Erde auf die gedachte Kugelfläche in @fig-ie-sonnenstrahlung. Der Radius dieser Kugel ist der mittlere Abstand zwischen Erde und Sonne, $r=1{,}5\cdot10^{11}\,\mathrm m$. Verwende $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
+Nimm an, dass die Sonne gleichmäßig in alle Richtungen abstrahlt. Ihre Strahlung verteilt sich dann im Abstand der Erde auf die gedachte Kugelfläche in @fig-ie-sonnenstrahlung. Der Radius dieser Kugel ist der mittlere Abstand zwischen Erde und Sonne, $r=1{,}5\cdot10^{11}\,\mathrm m$. Verwende $c=3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 
 :::: {#fig-ie-sonnenstrahlung .srt-workbook-image-figure}
 ![](assets/images/sonne-strahlungsleistung.svg){.srt-workbook-image fig-alt="Die Sonne im Mittelpunkt einer gedachten Kugel im Erdabstand. Ein vergrößerter Flächenausschnitt zeigt die senkrecht einfallende Strahlung auf einen Quadratmeter."}
@@ -467,7 +467,7 @@ Ein Megaelektronenvolt entspricht einer Million Elektronenvolt, also $1\,\mathrm
   Berechnung: Proton beschleunigen
 </span>
 
-Ein Proton startet im Laborsystem aus der Ruhe und wird durch ein elektrisches Feld beschleunigt. Danach beträgt seine kinetische Energie die Hälfte seiner Ruheenergie, $E_\mathrm{kin}=E_0/2$. Seine Ruhemasse bleibt unverändert. Verwende $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, $e=1{,}60\cdot10^{-19}\,\mathrm C$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$.
+Ein Proton startet im Laborsystem aus der Ruhe und wird durch ein elektrisches Feld beschleunigt. Danach beträgt seine kinetische Energie die Hälfte seiner Ruheenergie, $E_\mathrm{kin}=\frac{E_0}{2}$. Seine Ruhemasse bleibt unverändert. Verwende $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, $e=1{,}60\cdot10^{-19}\,\mathrm C$ und $c=3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 
 Für diese Aufgabe benötigst du folgende aus dem Kapitel bekannte Formeln:
 
@@ -497,7 +497,7 @@ $$
 
 ::: {.mp-formula-repeat}
 $$
-\gamma=\frac{1}{\sqrt{1-v^2/c^2}}
+\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 $$
 
 ([-@eq-umbau-lorentzfaktor])
@@ -539,7 +539,7 @@ $$
 
    $$
    \begin{aligned}
-   \gamma&=\frac1{\sqrt{1-v^2/c^2}}
+   \gamma&=\frac1{\sqrt{1-\frac{v^2}{c^2}}}
    &&\Big|\ \text{Kehrwert bilden}\\[8pt]
    \frac1\gamma&=\sqrt{1-\frac{v^2}{c^2}}
    &&\Big|\ \text{quadrieren}\\[8pt]
@@ -553,14 +553,14 @@ $$
    \end{aligned}
    $$
 
-   Die positive Wurzel liefert den Geschwindigkeitsbetrag. Mit $\gamma=3/2$ ergibt sich:
+   Die positive Wurzel liefert den Geschwindigkeitsbetrag. Mit $\gamma=\frac{3}{2}$ ergibt sich:
 
    $$
    \begin{aligned}
    v&=c\sqrt{1-\frac49}
    =\frac{\sqrt5}{3}c\\[6pt]
    &\approx0{,}745c
-   \approx2{,}24\cdot10^8\,\mathrm{m/s}.
+   \approx2{,}24\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}.
    \end{aligned}
    $$
 
@@ -569,7 +569,7 @@ $$
    $$
    \begin{aligned}
    E_0&=m_0c^2\\
-   &=1{,}67\cdot10^{-27}\,\mathrm{kg}\cdot(3{,}0\cdot10^8\,\mathrm{m/s})^2\\
+   &=1{,}67\cdot10^{-27}\,\mathrm{kg}\cdot(3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}})^2\\
    &=1{,}503\cdot10^{-10}\,\mathrm J,\\[8pt]
    E_\mathrm{kin}&=\frac12E_0
    \approx7{,}52\cdot10^{-11}\,\mathrm J,\\[8pt]
@@ -602,7 +602,7 @@ $$
 
    Für die Spannung wird die kinetische Energie verwendet. Die Ruheenergie besaß das Proton bereits vor dem Beschleunigen.
 
-4. Nähert sich die Geschwindigkeit von unten an $c$, wird $1-v^2/c^2$ immer kleiner und nähert sich null. Der Lorentzfaktor wächst dadurch unbegrenzt. Weil $m_0c^2$ ein unveränderter positiver Faktor ist, wächst auch
+4. Nähert sich die Geschwindigkeit von unten an $c$, wird $1-\frac{v^2}{c^2}$ immer kleiner und nähert sich null. Der Lorentzfaktor wächst dadurch unbegrenzt. Weil $m_0c^2$ ein unveränderter positiver Faktor ist, wächst auch
 
    $$E_\mathrm{kin}=(\gamma-1)m_0c^2$$
 
@@ -625,7 +625,7 @@ Die Simulation in @fig-ie-energiezufuhr zeigt, welche Geschwindigkeiten ein Prot
 Nach der ersten Zufuhr von $100\,\mathrm{MeV}$ bewegt sich das Proton mit etwa $0{,}428c$. Nach insgesamt $200\,\mathrm{MeV}$ sind es etwa $0{,}566c$ und nach $300\,\mathrm{MeV}$ etwa $0{,}653c$.
 :::
 
-Simulation der Energiezufuhr zu einem Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, das anfangs ruht. Jeder Schritt erhöht seine kinetische Energie um $100\,\mathrm{MeV}$. Die Geschwindigkeitsskala ist linear. Verwendet werden $c=3{,}0\cdot10^8\,\mathrm{m/s}$ und $e=1{,}60\cdot10^{-19}\,\mathrm C$.
+Simulation der Energiezufuhr zu einem Proton mit $m_0=1{,}67\cdot10^{-27}\,\mathrm{kg}$, das anfangs ruht. Jeder Schritt erhöht seine kinetische Energie um $100\,\mathrm{MeV}$. Die Geschwindigkeitsskala ist linear. Verwendet werden $c=3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$ und $e=1{,}60\cdot10^{-19}\,\mathrm C$.
 ::::
 
 Bei gleicher zugeführter Energie werden die Geschwindigkeitszuwächse mit jedem Schritt kleiner. Die kinetische Energie wächst dabei weiter. Für die Geschwindigkeit bleibt $c$ die Grenze.
@@ -644,7 +644,7 @@ Es genügt, die Verhältnisse der Werte zu berechnen. Für diese Aufgabe benöti
 
 ::: {.mp-formula-repeat}
 $$
-\gamma=\frac{1}{\sqrt{1-v^2/c^2}}
+\gamma=\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}
 $$
 
 ([-@eq-umbau-lorentzfaktor])

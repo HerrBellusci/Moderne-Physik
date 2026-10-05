@@ -41,13 +41,13 @@
     top.innerHTML = `<div class="solar-phases" role="group" aria-label="Vorgang auswählen">
       <button type="button" data-solar-phase="charge" aria-pressed="true">1. Akku laden</button>
       <button type="button" data-solar-phase="drive" aria-pressed="false">2. Mit Akku anfahren</button>
-      </div><div class="solar-context"><span>Bezugssystem: Boden</span><span class="solar-speed"><em>v</em> = <span data-solar-speed>0,00</span> m/s</span></div>`;
+      </div><div class="solar-context"><span>Bezugssystem: Boden</span><span class="solar-speed"><em>v</em> = <span data-solar-speed>0,00</span> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi mathvariant="normal">m</mi><mi mathvariant="normal">s</mi></mfrac></math></span></div>`;
     host.prepend(top);
     const bottom = document.createElement('div');
     bottom.className = 'solar-bottom';
     bottom.innerHTML = `<div class="solar-actions">
-      <button type="button" class="solar-play" aria-label="Animation abspielen">▶ Abspielen</button>
       <button type="button" class="solar-reset">Zurücksetzen</button>
+      <button type="button" class="solar-play" aria-label="Animation abspielen">▶ Abspielen</button>
       </div><label class="solar-seek"><span class="solar-seek-heading"><span>Ablauf</span><span data-solar-progress>0 %</span></span>
       <input type="range" min="0" max="100" step="0.1" value="0" aria-label="Fortschritt des ausgewählten Vorgangs"></label>
       <p class="solar-state"></p>

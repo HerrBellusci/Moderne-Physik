@@ -42,7 +42,8 @@
       el('rect', { y: 330, width: 580, height: 55, fill: '#ede8d7' });
       el('line', { x1: 0, y1: 90, x2: 580, y2: 90, stroke: '#b3ad98', 'stroke-width': 2 });
       el('line', { x1: 0, y1: 330, x2: 580, y2: 330, stroke: '#b3ad98', 'stroke-width': 2 });
-      text(325, 135, 'Strömung 3 m/s');
+      if (!window.SRTMath?.label(parent, 325, 135, '\\text{Strömung }3\\,\\frac{\\mathrm{m}}{\\mathrm{s}}', 21, 'start', '#16334a'))
+        text(325, 135, 'Strömung 3 Meter pro Sekunde');
       for (const y of [165, 210, 255]) {
         el('path', { d: `M325 ${y}h130m-12 -7 12 7-12 7`, fill: 'none', stroke: '#4485a2', 'stroke-width': 2 });
       }

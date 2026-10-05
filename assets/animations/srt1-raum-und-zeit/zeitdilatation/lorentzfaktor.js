@@ -39,13 +39,18 @@
     for (const [name, b] of [['100 km/h', 100 / (C * 3.6)], ['900 km/h', 900 / (C * 3.6)], ['0,4 % von c', .004]]) {
       const button = document.createElement('button'); button.type = 'button';
       if (name.endsWith(' c')) { button.append('0,4 % von '); const i = document.createElement('i'); i.textContent = 'c'; button.append(i); }
-      else button.textContent = name;
+      else button.append(name.split(' ')[0] + ' ', speedUnit());
       button.dataset.beta = b;
       button.addEventListener('click', () => update(b)); presets.append(button);
     }
     wrap.append(rangeLabel, values, presets); host.append(wrap);
     host.__gammaUi = { input, speed, factor, presets };
     return host.__gammaUi;
+  }
+  function speedUnit() {
+    const span = document.createElement('span');
+    span.innerHTML = '<math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mi mathvariant="normal">km</mi><mi mathvariant="normal">h</mi></mfrac></math>';
+    return span;
   }
   function math(el, symbol, rest) {
     const tex = symbol === 'γ' ? '\\gamma' : symbol;
@@ -64,7 +69,8 @@
       controls.input.value = b;
       controls.input.setAttribute('aria-valuetext', `${fmt(b * 100, 8)} Prozent der Lichtgeschwindigkeit, ${fmt(b * C * 3.6, 0)} Kilometer pro Stunde`);
       controls.speed.replaceChildren();
-      math(controls.speed, 'v', ' = ' + fmt(b * C * 3.6, 0) + ' km/h');
+      math(controls.speed, 'v', ' = ' + fmt(b * C * 3.6, 0) + ' ');
+      controls.speed.append(speedUnit());
       const ratio = document.createElement('span'); ratio.className = 'gamma-ratio';
       ratio.append(' (' + fmt(b * 100, 8) + ' % von '); math(ratio, 'c', ')'); controls.speed.append(ratio);
       controls.factor.replaceChildren();
@@ -87,7 +93,7 @@
       line(parent, P.x, py(1), P.x + P.w, py(1), { stroke: '#93a7b1', 'stroke-dasharray': '4 5' });
       if (!window.SRTMath?.label(parent, P.x + 18, py(1) - 12, '\\gamma=1', 23, 'start', '#607286')) label(parent, P.x + 18, py(1) - 12, '*γ* = 1');
       if (!window.SRTMath?.label(parent, P.x - 20, 27, '\\gamma', 29)) label(parent, P.x - 20, 27, '*γ*');
-      if (!window.SRTMath?.label(parent, P.x + P.w / 2, 414, 'v/c', 28, 'middle')) label(parent, P.x + P.w / 2, 414, '*v* / *c*', { 'text-anchor': 'middle' });
+      if (!window.SRTMath?.label(parent, P.x + P.w / 2, 406, '\\frac{v}{c}', 28, 'middle')) label(parent, P.x + P.w / 2, 414, '*v* / *c*', { 'text-anchor': 'middle' });
       const points = [];
       // Die Kurve reicht über den sichtbaren Bereich hinaus. Bei v/c = 1
       // liegt die senkrechte Asymptote, kein endlicher Kurvenpunkt.

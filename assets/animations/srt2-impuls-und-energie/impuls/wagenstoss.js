@@ -151,9 +151,17 @@
       line(parent, origin, 203, origin, 292, { stroke: '#d8e0e5', 'stroke-dasharray': '3 4' });
       line(parent, firstEnd, 217, firstEnd, 249, { stroke: '#a8b7c0', 'stroke-dasharray': '3 4' });
       line(parent, sumEnd, 249, sumEnd, 285, { stroke: '#a8b7c0', 'stroke-dasharray': '3 4' });
-      text(parent, 28, 224, `*p*₁ = ${signed(q.momentum[0])} kg m/s`, { fill: COLORS.first });
-      text(parent, 28, 256, `*p*₂ = ${signed(q.momentum[1])} kg m/s`, { fill: COLORS.second });
-      text(parent, 28, 293, `Summe: ${signed(q.total)} kg m/s`);
+      for (const [y, symbol, value, color] of [
+        [224, 'p_1', q.momentum[0], COLORS.first],
+        [256, 'p_2', q.momentum[1], COLORS.second],
+        [293, '\\text{Summe:}', q.total, COLORS.total]
+      ]) {
+        const number = signed(value).replace('−', '-').replace(',', '{,}');
+        const separator = symbol.startsWith('p') ? '=' : '\\;';
+        if (!window.SRTMath?.label(parent, 28, y,
+          `${symbol}${separator}${number}\\,\\frac{\\mathrm{kg}\\,\\mathrm{m}}{\\mathrm{s}}`, 23, 'start', color))
+          text(parent, 28, y, `${symbol.startsWith('p') ? '*p*' + symbol.slice(2) + ' =' : 'Summe:'} ${signed(value)} kg m pro s`, { fill: color });
+      }
       arrow(parent, origin, 217, q.momentum[0], COLORS.first, { 'data-carts-vector': 'first' });
       arrow(parent, firstEnd, 249, q.momentum[1], COLORS.second, { 'data-carts-vector': 'second' });
       arrow(parent, origin, 285, q.total, COLORS.total, { 'data-carts-vector': 'total' });

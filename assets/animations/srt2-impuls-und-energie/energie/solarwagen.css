@@ -39,7 +39,7 @@
 [data-srt-animation="solar-cart"] .solar-bottom { padding-top: 0; }
 [data-srt-animation="solar-cart"] .solar-actions { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
 [data-srt-animation="solar-cart"] button.solar-play {
-  background: #0b7380; color: #fff; border-color: #0b7380; min-width: 8rem;
+  background: #0b7380; color: #fff; border-color: #0b7380; min-width: 8rem; margin-left: auto;
 }
 [data-srt-animation="solar-cart"] button.solar-play:hover { background: #085e69; }
 [data-srt-animation="solar-cart"] .solar-seek { flex: 1 1 12rem; margin: .7rem 0 .75rem; display: block; }

@@ -10,8 +10,8 @@
       const controls = container.querySelector(".mp-train-controls");
       const message = container.querySelector(".mp-train-error");
       const sources = {
-        moving: "Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4",
-        stationary: "Videos%20einbinden/Zug%20steht.mp4"
+        moving: "assets/videos/srt1-raum-und-zeit/zug-faehrt-aus.mp4",
+        stationary: "assets/videos/srt1-raum-und-zeit/zug-steht.mp4"
       };
       let request = 0;
       let selectedChoice = null;

@@ -8,7 +8,6 @@ project:
   resources:
     - assets/**
     - "!assets/animations/zukuenftig/**"
-    - "Videos einbinden/**"
     - licenses/**
     - THIRD-PARTY-NOTICES.md
     - LICENSE.md

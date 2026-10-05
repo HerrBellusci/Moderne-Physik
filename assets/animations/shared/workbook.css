@@ -305,8 +305,9 @@
   }
 
   .srt-workbook-motion-button {
-    margin-left: 0;
-    width: 100%;
+    margin-left: auto;
+    width: auto;
+    justify-self: end;
   }
 }
 

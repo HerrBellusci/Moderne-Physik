@@ -4,11 +4,11 @@
 ```{=html}
 <link rel="stylesheet" href="assets/styles/srt-raum-und-zeit.css?v=20260910b">
 <link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260915">
-<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260908-reglerfarben">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20261005-knopfposition">
 <link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/michelson-morley/michelson-workbook.css?v=20260907-bedienung">
 <link rel="stylesheet" href="assets/animations/srt1-raum-und-zeit/einsteinsche-postulate/konstanz-lichtgeschwindigkeit.css?v=20260908-bedienzeile">
 <script src="assets/animations/shared/core.js"></script>
-<script src="assets/scripts/train-video.js" defer></script>
+<script src="assets/scripts/train-video.js?v=20261005-blender" defer></script>
 <script src="assets/animations/srt1-raum-und-zeit/bezugssysteme/inertialsystem.js?v=20260907-aussenansicht"></script>
 <script src="assets/animations/srt1-raum-und-zeit/michelson-morley/bootsanalogie.js?v=20260907-integriert"></script>
 <script src="assets/animations/srt1-raum-und-zeit/michelson-morley/interferometer-aufbau.js?v=20260907-textrunde"></script>
@@ -69,7 +69,7 @@ Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich i
 ```{=html}
 <div class="mp-train-video" data-train-video>
   <div class="srt-video-frame">
-    <video controls preload="metadata" playsinline poster="assets/images/zug-relativbewegung-poster.jpg" aria-label="Videos zur Relativbewegung zweier Züge" src="Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4">
+    <video controls preload="metadata" playsinline poster="assets/images/zug-relativbewegung-poster.jpg" aria-label="Videos zur Relativbewegung zweier Züge" src="assets/videos/srt1-raum-und-zeit/zug-faehrt-aus.mp4">
       Dein Browser kann das Video nicht abspielen. Die beiden Dateien sind unter den folgenden Links verfügbar.
     </video>
   </div>
@@ -79,7 +79,7 @@ Im Alltag sagen wir schnell, etwas sei „wirklich in Ruhe“ oder „wirklich i
     <button type="button" data-train-choice="stationary" aria-pressed="false">Zug steht</button>
   </div>
   <p class="mp-train-error" role="status" hidden></p>
-  <noscript><p>Ohne JavaScript kannst du die Szenen einzeln öffnen: <a href="Videos%20einbinden/Zugf%C3%A4hrt%20aus.mp4">Zug fährt aus</a> oder <a href="Videos%20einbinden/Zug%20steht.mp4">Zug steht</a>.</p></noscript>
+  <noscript><p>Ohne JavaScript kannst du die Szenen einzeln öffnen: <a href="assets/videos/srt1-raum-und-zeit/zug-faehrt-aus.mp4">Zug fährt aus</a> oder <a href="assets/videos/srt1-raum-und-zeit/zug-steht.mp4">Zug steht</a>.</p></noscript>
 </div>
 ```
 :::
@@ -198,7 +198,7 @@ Die erwarteten Laufzeitunterschiede lassen sich mit zwei Booten auf einem Fluss 
 
 Auf der Längsstrecke erhöht die Strömung das Tempo gegenüber dem Ufer auf dem Hinweg und verringert es auf dem Rückweg. Bei der Querfahrt muss das Boot auf beiden Wegen schräg gegen die Strömung steuern, damit es nicht abgetrieben wird. Auch hier kommt es gegenüber dem Ufer langsamer voran als in ruhendem Wasser.
 
-In @fig-umbau-bootsanalogie fahren beide Boote mit $5\,\mathrm{m/s}$ relativ zum Wasser. Die Strömung hat gegenüber dem Ufer eine Geschwindigkeit von $3\,\mathrm{m/s}$. Bis zum jeweiligen Wendepunkt sind es $60\,\mathrm{m}$.
+In @fig-umbau-bootsanalogie fahren beide Boote mit $5\,\frac{\mathrm{m}}{\mathrm{s}}$ relativ zum Wasser. Die Strömung hat gegenüber dem Ufer eine Geschwindigkeit von $3\,\frac{\mathrm{m}}{\mathrm{s}}$. Bis zum jeweiligen Wendepunkt sind es $60\,\mathrm{m}$.
 
 :::: {#fig-umbau-bootsanalogie .mp-mm-figure}
 ::: {.content-visible when-format="html"}
@@ -313,12 +313,12 @@ Du <u>nennst</u> die beiden Einsteinschen Postulate.
 Du <u>begründest</u> mit dem zweiten Postulat, weshalb sich die Geschwindigkeit einer Lichtquelle nicht zur Lichtgeschwindigkeit addiert.
 :::
 
-Die Einsteinschen Postulate bilden den Ausgangspunkt der speziellen Relativitätstheorie. Du sitzt in einem Zug, der geradlinig und gleichförmig mit $100\,\mathrm{km/h}$ fährt.
+Die Einsteinschen Postulate bilden den Ausgangspunkt der speziellen Relativitätstheorie. Du sitzt in einem Zug, der geradlinig und gleichförmig mit $100\,\frac{\mathrm{km}}{\mathrm{h}}$ fährt.
 
 1. Du lässt einen Ball fallen. Erwartest du, dass er innerhalb des Zuges anders fällt als bei demselben Versuch im stehenden Zug?
-2. Eine Person geht im Zug mit $5\,\mathrm{km/h}$ in Fahrtrichtung. Welche Geschwindigkeit hat sie aus Sicht einer Person am Bahnsteig?
+2. Eine Person geht im Zug mit $5\,\frac{\mathrm{km}}{\mathrm{h}}$ in Fahrtrichtung. Welche Geschwindigkeit hat sie aus Sicht einer Person am Bahnsteig?
 
-Der Ball fällt in beiden Fällen senkrecht nach unten, jeweils aus Sicht einer Person im Zug. An diesem Versuch im Zug lässt sich die gleichförmige Fahrt nicht erkennen. Die gehende Person bewegt sich aus Sicht des Bahnsteigs näherungsweise mit $105\,\mathrm{km/h}$.
+Der Ball fällt in beiden Fällen senkrecht nach unten, jeweils aus Sicht einer Person im Zug. An diesem Versuch im Zug lässt sich die gleichförmige Fahrt nicht erkennen. Die gehende Person bewegt sich aus Sicht des Bahnsteigs näherungsweise mit $105\,\frac{\mathrm{km}}{\mathrm{h}}$.
 
 Das Zugbeispiel verbindet zwei vertraute Vorstellungen aus der klassischen Mechanik. Die mechanischen Gesetze gelten in allen Inertialsystemen in derselben Form. Das ist das Relativitätsprinzip der klassischen Mechanik. Geschwindigkeiten lassen sich beim Wechsel zwischen diesen Systemen durch Addition oder Subtraktion umrechnen.
 
@@ -334,10 +334,10 @@ Die roten Kästen greifen verbreitete Lernendenvorstellungen auf und erläutern 
 Die Lichtgeschwindigkeit im Vakuum wird mit $c$ bezeichnet. Ihr Wert beträgt exakt[Lichtgeschwindigkeit]{.column-margin .mp-randbegriff}
 
 $$
-c = 299\,792\,458\,\mathrm{m/s}.
+c = 299\,792\,458\,\frac{\mathrm{m}}{\mathrm{s}}.
 $$
 
-Für die Rechnungen in diesem Kapitel verwenden wir den gerundeten Wert $c\approx3{,}0\cdot10^8\,\mathrm{m/s}$.
+Für die Rechnungen in diesem Kapitel verwenden wir den gerundeten Wert $c\approx3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 
 Einstein erweitert das aus der Mechanik bekannte Relativitätsprinzip auf alle physikalischen Gesetze. Es soll also auch für die Gesetze der Optik und Elektrodynamik gelten. Hinzu kommt die konstante Lichtgeschwindigkeit im Vakuum. Diese beiden Annahmen bilden die Grundlage seiner Theorie.
 
@@ -569,7 +569,7 @@ Animation zum Aufbau einer Lichtuhr. Ein Lichtpuls bewegt sich zwischen zwei par
 
 Wir betrachten wieder einen Zug, der geradlinig und gleichförmig an einem Bahnsteig vorbeifährt. Die Lichtuhr fährt im Zug mit. Ihre Spiegel liegen übereinander, sodass ihre Verbindung senkrecht zur Fahrtrichtung steht. Eine Person fährt zusammen mit der Lichtuhr im Zug. Eine zweite Person steht am Bahnsteig und beschreibt denselben Vorgang im Bahnsteigsystem. Ein Tick wird durch zwei Ereignisse begrenzt. Das erste ist die Aussendung des Lichtpulses am unteren Spiegel. Das zweite ist seine Rückkehr an diesen Spiegel nach der Reflexion am oberen Spiegel.
 
-Für die mitfahrende Person bewegt sich der Lichtpuls senkrecht vom unteren Spiegel zum oberen Spiegel und wieder zurück. Der Spiegelabstand beträgt $D$, der gesamte Lichtweg also $2D$. Die Lichtuhr misst für diesen Tick die Zeit $\Delta t_0 = \frac{2D}{c}$. Aussendung und Rückkehr finden im Zugsystem am selben Ort statt. Die Zeitdauer zwischen diesen beiden Ereignissen, die eine dort ruhende Uhr misst, heißt Eigenzeit $\Delta t_0$.[Eigenzeit]{.column-margin .mp-randbegriff}
+Für die mitfahrende Person bewegt sich der Lichtpuls senkrecht vom unteren Spiegel zum oberen Spiegel und wieder zurück. Der Spiegelabstand beträgt $D$, der gesamte Lichtweg also $2D$. Die Lichtuhr misst für diesen Tick die Zeit $\Delta t_0 = \frac{2D}{c}$. Aussendung und Rückkehr finden im Zugsystem am selben Ort statt. Du könntest deshalb an diesem Ort am unteren Spiegel eine Uhr befestigen und ihren Stand bei der Aussendung und bei der Rückkehr ablesen. Beide Zeitpunkte werden so mit derselben im Zugsystem ruhenden Uhr erfasst. Die Differenz ihrer Anzeigen ist die Eigenzeit $\Delta t_0$ zwischen diesen beiden Ereignissen.[Eigenzeit]{.column-margin .mp-randbegriff}
 
 Für die Person am Bahnsteig bewegt sich der Zug während der Laufzeit des Lichtpulses nach rechts. Deshalb verläuft der Lichtweg diagonal und ist länger als $2D$. Wenn der Lichtpuls zum unteren Spiegel zurückkehrt, befindet sich dieser weiter rechts als bei der Aussendung. Dieselben beiden Ereignisse finden im Bahnsteigsystem daher an unterschiedlichen Orten statt. Die Zeitdauer, die dem Tick im Bahnsteigsystem zugeordnet wird, bezeichnen wir mit $\Delta t$.
 
@@ -604,7 +604,7 @@ Das Zwillingsparadoxon knüpft an die wechselseitige Zeitdilatation an. Dabei st
 
 Die Zeitdilatation ist dabei wechselseitig. Im Zugsystem ruht die mitfahrende Person, während sich der Bahnsteig an ihr vorbeibewegt. Eine am Bahnsteig ruhende Uhr geht deshalb aus Sicht des Zuges langsamer. Bei diesem umgekehrten Vergleich betrachten wir die Ticks der Bahnsteiguhr. Zuvor haben wir die Ticks der Zuguhr betrachtet. Beide Beschreibungen sind gleichberechtigt.
 
-Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt leitest du eine Beziehung zwischen den beiden Zeitdauern her. Dafür genügen der Satz des Pythagoras und einige Umformungen. Dabei ergibt sich der Lorentzfaktor. Er gibt das Verhältnis $\Delta t/\Delta t_0$ an und wird uns in der speziellen Relativitätstheorie noch häufiger begegnen.
+Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt leitest du eine Beziehung zwischen den beiden Zeitdauern her. Dafür genügen der Satz des Pythagoras und einige Umformungen. Dabei ergibt sich der Lorentzfaktor. Er gibt das Verhältnis $\frac{\Delta t}{\Delta t_0}$ an und wird uns in der speziellen Relativitätstheorie noch häufiger begegnen.
 
 :::::: {#aufgabe-lichtuhr-herleitung .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-derive" aria-label="Herleitung">
@@ -612,7 +612,7 @@ Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt leitest du 
   Herleitung
 </span>
 
-Im Bahnsteigsystem betrachtest du zunächst den Hinweg vom unteren zum oberen Spiegel. Der Lichtweg dieses halben Ticks bildet zusammen mit dem Spiegelabstand und der seitlichen Verschiebung der Lichtuhr ein rechtwinkliges Dreieck. @fig-umbau-lichtuhr-halbtick zeigt die drei Seiten. Der Lichtweg $c\,\Delta t/2$ ist die Hypotenuse. Der Spiegelabstand $D$ und die seitliche Verschiebung $v\,\Delta t/2$ sind die Katheten.
+Im Bahnsteigsystem betrachtest du zunächst den Hinweg vom unteren zum oberen Spiegel. Der Lichtweg dieses halben Ticks bildet zusammen mit dem Spiegelabstand und der seitlichen Verschiebung der Lichtuhr ein rechtwinkliges Dreieck. @fig-umbau-lichtuhr-halbtick zeigt die drei Seiten. Der Lichtweg $\frac{c\,\Delta t}{2}$ ist die Hypotenuse. Der Spiegelabstand $D$ und die seitliche Verschiebung $\frac{v\,\Delta t}{2}$ sind die Katheten.
 
 :::: {#fig-umbau-lichtuhr-halbtick}
 ![](assets/images/lichtuhr-pythagoras-bahnsteig.png){.srt-workbook-image fig-alt="Rechtwinkliges Dreieck im Bahnsteigsystem mit dem Lichtweg c Delta t/2 als Hypotenuse und den Katheten D und v Delta t/2."}
@@ -674,7 +674,7 @@ Bearbeite die Herleitung ohne weitere Hinweise. Du kannst während der Rechnung 
 
    </details>
 
-3. Führe die Quadrate aus. Dabei gilt $(a/b)^2=a^2/b^2$, insbesondere $2^2=4$.
+3. Führe die Quadrate aus. Dabei gilt $\left(\frac{a}{b}\right)^2=\frac{a^2}{b^2}$, insbesondere $2^2=4$.
 
    <details class="mp-details mp-step-check">
    <summary>Zwischenergebnis 3 anzeigen</summary>
@@ -718,7 +718,7 @@ Bearbeite die Herleitung ohne weitere Hinweise. Du kannst während der Rechnung 
 
    </details>
 
-7. Teile beide Seiten durch $c^2$. Im Bruch $(c^2-v^2)/c^2$ wird jeder Summand durch $c^2$ geteilt.
+7. Teile beide Seiten durch $c^2$. Im Bruch $\frac{c^2-v^2}{c^2}$ wird jeder Summand durch $c^2$ geteilt.
 
    <details class="mp-details mp-step-check">
    <summary>Zwischenergebnis 7 anzeigen</summary>
@@ -799,7 +799,7 @@ $$ {#eq-umbau-zeitdilatation}
 
 Dabei ist $\Delta t_0$ die Eigenzeit, welche die mitfahrende Lichtuhr für ihren Tick misst. $\Delta t$ ist die Zeitdauer, die demselben Tick im Bahnsteigsystem zugeordnet wird.
 
-Das Verhältnis der beiden Zeitdauern hängt allein von $v/c$ ab. @fig-umbau-lorentzfaktor zeigt, wie sich der Lorentzfaktor mit diesem Verhältnis verändert. Mit dem Regler veränderst du die Relativgeschwindigkeit. Die Anzeige in km/h und die auswählbaren Geschwindigkeiten helfen dir, die Größenordnung bei Alltagsgeschwindigkeiten einzuordnen.
+Das Verhältnis der beiden Zeitdauern hängt allein von $\frac{v}{c}$ ab. @fig-umbau-lorentzfaktor zeigt, wie sich der Lorentzfaktor mit diesem Verhältnis verändert. Mit dem Regler veränderst du die Relativgeschwindigkeit. Die Anzeige in $\frac{\mathrm{km}}{\mathrm{h}}$ und die auswählbaren Geschwindigkeiten helfen dir, die Größenordnung bei Alltagsgeschwindigkeiten einzuordnen.
 
 :::: {#fig-umbau-lorentzfaktor}
 ::: {.content-visible when-format="html"}
@@ -814,10 +814,10 @@ In der HTML-Version erscheint hier ein interaktives Diagramm zum Lorentzfaktor $
 :::
 :::
 
-Interaktives Diagramm zum Lorentzfaktor in Abhängigkeit von $v/c$. Der gelb markierte Punkt folgt der eingestellten Relativgeschwindigkeit. Angezeigt werden die Geschwindigkeit in km/h und als Anteil von $c$ sowie der Lorentzfaktor.
+Interaktives Diagramm zum Lorentzfaktor in Abhängigkeit von $\frac{v}{c}$. Der gelb markierte Punkt folgt der eingestellten Relativgeschwindigkeit. Angezeigt werden die Geschwindigkeit in $\frac{\mathrm{km}}{\mathrm{h}}$ und als Anteil von $c$ sowie der Lorentzfaktor.
 ::::
 
-Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Selbst bei einer Relativgeschwindigkeit von rund $4{,}3$ Millionen $\mathrm{km/h}$ (das sind $0{,}4\,\%$ der Lichtgeschwindigkeit) ist $\gamma \approx 1{,}000008$. Bei den Geschwindigkeiten von Autos, Bahnen und Verkehrsflugzeugen ist die Abweichung noch kleiner. Für solche Geschwindigkeiten liefert die klassische Physik meist eine ausreichend genaue Näherung. Dass die spezielle Relativitätstheorie für kleine Geschwindigkeiten die Ergebnisse der klassischen Physik näherungsweise wiedergibt, ist ein Beispiel für das Korrespondenzprinzip.[Korrespondenzprinzip]{.column-margin .mp-randbegriff}
+Für Alltagsgeschwindigkeiten bleibt $\gamma$ ungefähr $1$. Selbst bei einer Relativgeschwindigkeit von rund $4{,}3$ Millionen $\frac{\mathrm{km}}{\mathrm{h}}$ (das sind $0{,}4\,\%$ der Lichtgeschwindigkeit) ist $\gamma \approx 1{,}000008$. Bei den Geschwindigkeiten von Autos, Bahnen und Verkehrsflugzeugen ist die Abweichung noch kleiner. Für solche Geschwindigkeiten liefert die klassische Physik meist eine ausreichend genaue Näherung. Dass die spezielle Relativitätstheorie für kleine Geschwindigkeiten die Ergebnisse der klassischen Physik näherungsweise wiedergibt, ist ein Beispiel für das Korrespondenzprinzip.[Korrespondenzprinzip]{.column-margin .mp-randbegriff}
 
 Die kleine $0$ kennzeichnet bei unserer Lichtuhr die Eigenzeit $\Delta t_0$. Sie begegnet dir später auch bei der Eigenlänge $L_0$, der Ruhemasse $m_0$ und der Ruheenergie $E_0$. Diese Größen werden jeweils im zugehörigen Ruhesystem bestimmt.
 
@@ -844,7 +844,7 @@ Ein Testfall für die Zeitdilatation kommt aus der Natur. Kosmische Strahlung tr
   Berechnung
 </span>
 
-Rechne durchgehend im Erdsystem. Ein Myon entsteht in einer Höhe von $h\approx10\,\mathrm{km}$ und bewegt sich mit konstanter Geschwindigkeit $v=0{,}998\,c$ senkrecht zum Boden. Verwende $c\approx3{,}0\cdot10^8\,\mathrm{m/s}$.
+Rechne durchgehend im Erdsystem. Ein Myon entsteht in einer Höhe von $h\approx10\,\mathrm{km}$ und bewegt sich mit konstanter Geschwindigkeit $v=0{,}998\,c$ senkrecht zum Boden. Verwende $c\approx3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 
 Für dieses Beispiel nehmen wir an, dass das Myon in seinem Ruhesystem nach $\Delta t_{0,\mathrm{M}}=2{,}2\,\mathrm{\mu s}=2{,}2\cdot10^{-6}\,\mathrm{s}$ zerfällt. Dieser gewählte Wert entspricht der mittleren Lebensdauer ruhender Myonen. Einzelne Myonen können früher oder später zerfallen.
 
@@ -956,7 +956,7 @@ Berechnungsaufgaben geben dir ein Gefühl für Größenverhältnisse und üben d
 ::: {.mp-goal-strip}
 Du <u>erklärst</u> die Längenkontraktion durch den Vergleich von Erd- und Myonsystem.
 
-Du <u>erläuterst</u>, wie die Beziehung $L = L_0 / \gamma$ aus der Zeitdilatation folgt.
+Du <u>erläuterst</u>, wie die Beziehung $L = \frac{L_0}{\gamma}$ aus der Zeitdilatation folgt.
 :::
 
 Im Erdsystem erklärt die Zeitdilatation, dass unser Beispielmyon den Boden vor seinem Zerfall erreicht. Nun wechseln wir das Bezugssystem. Wenn du gedanklich auf dem Myon mitreitest, ruhst du selbst. Nicht das Myon rast dann auf die Erde zu, sondern die Erde mitsamt Atmosphäre rast dir mit $v=0{,}998\,c$ entgegen.
@@ -1375,7 +1375,7 @@ $$
 1. <u>Bestimme</u>, ob eine Rot- oder Blauverschiebung vorliegt, und <u>begründe</u> deine Zuordnung.
 2. <u>Begründe</u>, ob sich die Quelle auf uns zu oder von uns weg bewegt.
 
-3. <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung"><img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">Berechnung</span> <u>Berechne</u> die Relativgeschwindigkeit $v$ bei direkter Annäherung oder Entfernung. Wähle dafür die passende der beiden obenstehenden Formeln. Gib $v$ als Anteil von $c$ und in $\mathrm{m/s}$ an. Verwende $c \approx 3{,}0\cdot10^8\,\mathrm{m/s}$.
+3. <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung"><img src="assets/task-icons/calculate.png" alt="" aria-hidden="true">Berechnung</span> <u>Berechne</u> die Relativgeschwindigkeit $v$ bei direkter Annäherung oder Entfernung. Wähle dafür die passende der beiden obenstehenden Formeln. Gib $v$ als Anteil von $c$ und in $\frac{\mathrm{m}}{\mathrm{s}}$ an. Verwende $c \approx 3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$.
 :::
 
 <details class="mp-details">
@@ -1417,8 +1417,8 @@ $$
 
    $$
    \begin{aligned}
-   v&\approx 0{,}0582\cdot 3{,}0\cdot10^8\,\mathrm{m/s}\\[4pt]
-   &\approx 1{,}75\cdot10^7\,\mathrm{m/s}.
+   v&\approx 0{,}0582\cdot 3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}\\[4pt]
+   &\approx 1{,}75\cdot10^7\,\frac{\mathrm{m}}{\mathrm{s}}.
    \end{aligned}
    $$
 
@@ -1447,7 +1447,7 @@ Ist jemand aus deinem Kurs da, nutze die Gelegenheit und erkläre im Gespräch. 
 - **Postulate:** Du <u>nennst</u> die beiden Einsteinschen Postulate. Du <u>begründest</u> mit dem zweiten Postulat, weshalb sich die Geschwindigkeit einer Lichtquelle nicht zur Lichtgeschwindigkeit addiert.
 - **Gleichzeitigkeit:** Du <u>beschreibst</u> das Zug-Gedankenexperiment zur Gleichzeitigkeit im Zug- und im Bahnsteigsystem. Du <u>begründest</u> mithilfe des Zug-Gedankenexperiments, dass die Gleichzeitigkeit räumlich getrennter Ereignisse vom Inertialsystem abhängt.
 - **Zeitdilatation:** Du <u>erklärst</u> die Zeitdilatation mithilfe der Lichtuhr. Du <u>leitest</u> die Beziehung $\Delta t = \gamma \Delta t_0$ <u>her</u>. Du <u>berechnest</u> die mittlere Lebensdauer bewegter Myonen im Erdsystem und <u>erklärst</u> damit, dass sie den Erdboden erreichen können.
-- **Längenkontraktion:** Du <u>erklärst</u> die Längenkontraktion durch den Vergleich von Erd- und Myonsystem. Du <u>erläuterst</u>, wie die Beziehung $L = L_0 / \gamma$ aus der Zeitdilatation folgt.
+- **Längenkontraktion:** Du <u>erklärst</u> die Längenkontraktion durch den Vergleich von Erd- und Myonsystem. Du <u>erläuterst</u>, wie die Beziehung $L = \frac{L_0}{\gamma}$ aus der Zeitdilatation folgt.
 - **Dopplerverschiebung:** Du <u>erklärst</u>, wie bei Annäherung und Entfernung einer Lichtquelle Blau- und Rotverschiebung entstehen. Du <u>leitest</u> die Beziehung zwischen der Eigenwellenlänge $\lambda_0$, der empfangenen Wellenlänge $\lambda$ und der Relativgeschwindigkeit $v$ <u>her</u>. Du <u>deutest</u> die Verschiebung einer Spektrallinie und <u>berechnest</u> daraus die Relativgeschwindigkeit bei direkter Annäherung oder Entfernung.
 
 :::
@@ -1466,7 +1466,7 @@ Bei der Zeitdilatation hast du gesehen, dass $\gamma$ für kleine Geschwindigkei
   Berechnung: Gangunterschied bei GPS
 </span>
 
-Ein GPS-Satellit bewegt sich mit $v=3{,}9\,\mathrm{km/s}$ relativ zum Erdsystem. Wir behandeln dieses System als Inertialsystem mit ruhendem Erdmittelpunkt. Eine darin ruhende Referenzuhr misst die Zeitspanne $\Delta t=24\,\mathrm{h}$. Gesucht ist die Zeitspanne $\Delta t_0$, die währenddessen auf der mitgeführten Satellitenuhr verstreicht. Diese Uhr misst ihre Eigenzeit.
+Ein GPS-Satellit bewegt sich mit $v=3{,}9\,\frac{\mathrm{km}}{\mathrm{s}}$ relativ zum Erdsystem. Wir behandeln dieses System als Inertialsystem mit ruhendem Erdmittelpunkt. Eine darin ruhende Referenzuhr misst die Zeitspanne $\Delta t=24\,\mathrm{h}$. Gesucht ist die Zeitspanne $\Delta t_0$, die währenddessen auf der mitgeführten Satellitenuhr verstreicht. Diese Uhr misst ihre Eigenzeit.
 
 Berücksichtige ausschließlich die Zeitdilatation aufgrund der Bewegung bei gleichbleibendem Betrag der Geschwindigkeit. Einflüsse der Erdrotation und der Gravitation bleiben in dieser Rechnung ausgeblendet.
 
@@ -1498,7 +1498,7 @@ Für diese Rechnung brauchst du eine hohe Rechengenauigkeit. Falls dein Taschenr
 <details class="mp-details">
 <summary>Mögliche Lösung anzeigen</summary>
 
-1. Die Referenzuhr misst $\Delta t=24\cdot3600\,\mathrm{s}=86400\,\mathrm{s}$. Mit $v=3900\,\mathrm{m/s}$ und $c=3{,}0\cdot10^8\,\mathrm{m/s}$ ergibt sich
+1. Die Referenzuhr misst $\Delta t=24\cdot3600\,\mathrm{s}=86400\,\mathrm{s}$. Mit $v=3900\,\frac{\mathrm{m}}{\mathrm{s}}$ und $c=3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}$ ergibt sich
 
    $$
    \begin{aligned}
@@ -1533,7 +1533,7 @@ Für diese Rechnung brauchst du eine hohe Rechengenauigkeit. Falls dein Taschenr
 
    $$
    \begin{aligned}
-   c\,\delta t&\approx3{,}0\cdot10^8\,\mathrm{m/s}\\
+   c\,\delta t&\approx3{,}0\cdot10^8\,\frac{\mathrm{m}}{\mathrm{s}}\\
    &\quad\cdot7{,}30\cdot10^{-6}\,\mathrm{s}\\[4pt]
    &\approx2190\,\mathrm{m}=2{,}19\,\mathrm{km}
    \end{aligned}
@@ -1725,7 +1725,7 @@ Animation zur Durchfahrt eines Autos mit Eigenlänge $5\,\mathrm{m}$ durch eine 
    $$
    \begin{aligned}
    L_\mathrm{A}&=\frac{L_{0,\mathrm{A}}}{\gamma}\\[4pt]
-   &=\frac{5\,\mathrm{m}}{5/3}=3\,\mathrm{m}.
+   &=\frac{5\,\mathrm{m}}{\frac{5}{3}}=3\,\mathrm{m}.
    \end{aligned}
    $$
 
@@ -1736,7 +1736,7 @@ Animation zur Durchfahrt eines Autos mit Eigenlänge $5\,\mathrm{m}$ durch eine 
    $$
    \begin{aligned}
    L_\mathrm{G}&=\frac{L_{0,\mathrm{G}}}{\gamma}\\[4pt]
-   &=\frac{4\,\mathrm{m}}{5/3}=2{,}4\,\mathrm{m}.
+   &=\frac{4\,\mathrm{m}}{\frac{5}{3}}=2{,}4\,\mathrm{m}.
    \end{aligned}
    $$
 

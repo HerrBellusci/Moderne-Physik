@@ -2,7 +2,7 @@
 
 ::: {.content-visible when-format="html"}
 ```{=html}
-<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20260919-laserlayout">
+<link rel="stylesheet" href="assets/animations/shared/workbook.css?v=20261005-knopfposition">
 <link rel="stylesheet" href="assets/styles/formelwiederholungen.css?v=20260918">
 <script src="assets/animations/shared/core.js"></script>
 <script src="assets/animations/laser/atom-licht-wechselwirkungen.js?v=20260922c"></script>
@@ -223,7 +223,7 @@ In der HTML-Version erscheint hier eine Simulation zum Vergleich von normaler Be
 Simulation zum Vergleich von normaler Besetzung und Besetzungsinversion im vereinfachten Zwei-Niveau-Modell. Die sechs dargestellten Atome veranschaulichen nur das Besetzungsverhältnis. Sie bilden die Wahrscheinlichkeitsbilanz eines realen Lasermediums nicht quantitativ ab. <span class="mp-caption-warn">Ein Wellenzug stellt jeweils ein einzelnes Photon mit seiner Frequenz dar. Seine Wellenlinie ist keine Flugbahn des Photons.</span>
 ::::
 
-Im Normalfall befindet sich ein Medium im thermischen Gleichgewicht.[thermisches Gleichgewicht]{.column-margin .mp-randbegriff} Für unsere Betrachtung bedeutet das, dass sich ein zeitlich stabiles Besetzungsverhältnis $N_2/N_1$ einstellt, dessen Wert vom Energieabstand und von der Temperatur abhängt.
+Im Normalfall befindet sich ein Medium im thermischen Gleichgewicht.[thermisches Gleichgewicht]{.column-margin .mp-randbegriff} Für unsere Betrachtung bedeutet das, dass sich ein zeitlich stabiles Besetzungsverhältnis $\frac{N_2}{N_1}$ einstellt, dessen Wert vom Energieabstand und von der Temperatur abhängt.
 
 Wie sich die Atome im thermischen Gleichgewicht auf die Energieniveaus verteilen, beschreibt die Boltzmann-Verteilung. Für die beiden Niveaus $E_1$ und $E_2$ des vereinfachten Zwei-Niveau-Modells gilt
 
@@ -233,9 +233,9 @@ $$ {#eq-laser-boltzmann}
 
 $k_\mathrm{B}$ ist die Boltzmann-Konstante und $T$ die absolute Temperatur.
 
-Da $E_2$ das höhere Niveau ist, ist $E_2-E_1$ positiv. Bei einer positiven Temperatur ist der Exponent wegen des Minuszeichens negativ. Die rechte Seite der Gleichung liegt damit zwischen $0$ und $1$. Folglich gilt $N_2/N_1<1$ und damit $N_2<N_1$. Das untere Niveau ist stärker besetzt als das obere. Ein passendes Photon trifft deshalb häufiger auf ein Atom in $E_1$. Die Absorption überwiegt die stimulierte Emission.
+Da $E_2$ das höhere Niveau ist, ist $E_2-E_1$ positiv. Bei einer positiven Temperatur ist der Exponent wegen des Minuszeichens negativ. Die rechte Seite der Gleichung liegt damit zwischen $0$ und $1$. Folglich gilt $\frac{N_2}{N_1}<1$ und damit $N_2<N_1$. Das untere Niveau ist stärker besetzt als das obere. Ein passendes Photon trifft deshalb häufiger auf ein Atom in $E_1$. Die Absorption überwiegt die stimulierte Emission.
 
-Mit steigender Temperatur wird der Betrag des Exponenten kleiner. Das Verhältnis $N_2/N_1$ nähert sich dem Wert $1$, überschreitet ihn bei positiver Temperatur aber nicht. Im thermischen Gleichgewicht entsteht daher bei positiver Temperatur keine Besetzungsinversion.
+Mit steigender Temperatur wird der Betrag des Exponenten kleiner. Das Verhältnis $\frac{N_2}{N_1}$ nähert sich dem Wert $1$, überschreitet ihn bei positiver Temperatur aber nicht. Im thermischen Gleichgewicht entsteht daher bei positiver Temperatur keine Besetzungsinversion.
 
 :::: {#aufgabe-laser-boltzmann .mp-box .mp-task}
 <span class="mp-task-kind mp-task-kind-calculate" aria-label="Berechnung">
@@ -255,7 +255,7 @@ $$
 ([-@eq-laser-boltzmann])
 :::
 
-<u>Berechne</u> das Besetzungsverhältnis $N_2/N_1$ und daraus die mittlere Zahl der Atome in $E_2$.
+<u>Berechne</u> das Besetzungsverhältnis $\frac{N_2}{N_1}$ und daraus die mittlere Zahl der Atome in $E_2$.
 ::::
 
 <details class="mp-details">
@@ -948,9 +948,9 @@ Ist jemand aus deinem Kurs da, nutze die Gelegenheit und erkläre im Gespräch. 
 Die folgenden Aufgaben greifen die Grundlagen des Lasers und Fragen zu seinen Anwendungen auf.
 
 ::: {#aufgabe-laser-aussagen .mp-box .mp-task}
-<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck">
+<span class="mp-task-kind mp-task-kind-think" aria-label="Denkcheck: Grundlagen des Lasers">
   <img src="assets/task-icons/think.svg" alt="" aria-hidden="true">
-  Denkcheck
+  Denkcheck: Grundlagen des Lasers
 </span>
 
 <u>Beurteile</u> die folgenden Aussagen. Wähle jeweils „Trifft zu“ oder „Trifft nicht zu“. <u>Begründe</u> deine Urteile und berichtige die falschen Aussagen.

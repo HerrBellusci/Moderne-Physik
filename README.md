@@ -24,7 +24,7 @@ Die Veröffentlichung über GitHub Pages verwendet Quarto 1.9.36. Die Kapitel un
 | `legacy-arbeitsblaetter.qmd` | Frühere Arbeitsblätter |
 | `references.qmd`, `references-*.bib` | Literaturseite und Literaturdaten |
 | `assets/` | Gestaltung, Abbildungen, Symbole, Schriften, Skripte und Veranschaulichungen |
-| `Videos einbinden/` | Eingebundene eigene Videos |
+| `assets/videos/` | Eingebundene eigene Videos, nach Kapiteln geordnet |
 | `_extensions/` | Quarto-Erweiterung für die Literaturverzeichnisse |
 | `tools/` | Filter und Nachbearbeitung beim Bauen |
 | `planung/` | Entwürfe für weitere Kapitel |
