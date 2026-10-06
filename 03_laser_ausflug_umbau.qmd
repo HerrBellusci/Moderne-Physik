@@ -20,7 +20,7 @@
 <script src="assets/animations/laser/hene-spektroskop.js?v=20260924e"></script>
 <link rel="stylesheet" href="assets/animations/laser/gefahren.css?v=20260924c">
 <script src="assets/animations/shared/workbook.js?v=20260921"></script>
-<script src="assets/scripts/video-start.js?v=20260923b"></script>
+<script src="assets/scripts/video-start.js?v=20261006a"></script>
 ```
 :::
 

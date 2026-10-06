@@ -4,7 +4,10 @@ project:
     - index.qmd
     - "*_umbau.qmd"
     - references.qmd
-  post-render: tools/strip-polyfill.py
+    - datenschutz.qmd
+  post-render:
+    - tools/strip-polyfill.py
+    - tools/defer-wikimedia.py
   resources:
     - assets/**
     - "!assets/animations/zukuenftig/**"
@@ -26,6 +29,8 @@ book:
     center:
       - text: "Legacy-Arbeitsblätter"
         href: legacy-arbeitsblaetter.qmd
+      - text: "Datenschutz"
+        href: datenschutz.qmd
 
 lang: de
 language:
@@ -54,7 +59,10 @@ format:
     css:
       - assets/styles/learning-boxes.css
       - assets/fonts/source-sans-pro.css
-    include-after-body: assets/includes/toc-in-sidebar.html
+      - assets/styles/external-media.css
+    include-after-body:
+      - assets/includes/toc-in-sidebar.html
+      - assets/includes/external-media.html
     toc: true
     toc-location: left
     toc-depth: 3

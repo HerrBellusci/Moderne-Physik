@@ -1,11 +1,13 @@
 (() => {
   "use strict";
+  const initialized = new WeakSet();
 
   function initVideos() {
     document.querySelectorAll("video[data-start-time]").forEach(async (video) => {
       const source = video.querySelector("source");
       const start = Number(video.dataset.startTime);
-      if (!source || !Number.isFinite(start) || start < 0) return;
+      if (!source?.getAttribute("src") || !Number.isFinite(start) || start < 0 || initialized.has(video)) return;
+      initialized.add(video);
 
       // A complete Blob supports seeking even on servers
       // that do not implement HTTP range requests.
@@ -34,6 +36,8 @@
       });
     });
   }
+
+  document.addEventListener("wikimedia-media-enabled", initVideos);
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", initVideos, { once: true });

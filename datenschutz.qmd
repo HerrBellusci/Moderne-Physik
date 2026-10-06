@@ -1,0 +1,37 @@
+---
+title: "Datenschutzhinweise"
+toc: false
+number-sections: false
+---
+
+Stand: 6. Oktober 2026.
+
+## Verantwortlichkeit und Kontakt
+
+Das Workbook wird derzeit persönlich von Herrn Bellusci betrieben. Für Fragen zum Datenschutz ist er unter [herrbellusci.quaking885@passinbox.com](mailto:herrbellusci.quaking885@passinbox.com) erreichbar.
+
+## Bereitstellung über GitHub Pages
+
+Die Website wird über GitHub Pages bereitgestellt. Beim Aufruf erhält GitHub deine IP-Adresse und technische Angaben der Browseranfrage. GitHub protokolliert nach eigenen Angaben die IP-Adresse zu Sicherheitszwecken, auch ohne Anmeldung bei GitHub.
+
+Weitere Informationen enthalten die [Dokumentation zu GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection) und die [Datenschutzerklärung von GitHub](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
+
+## Medien von Wikimedia Commons
+
+Einige Bilder und Videos stammen von Wikimedia Commons. Sie bleiben zunächst gesperrt. Mit der zentralen Schaltfläche „Wikimedia-Medien laden“ gibst du die eingebundenen Wikimedia-Medien frei. Die Freigabe gilt auch beim Wechsel zwischen den Kapiteln in demselben Browser-Tab. Texte und eigene Veranschaulichungen kannst du auch ohne diese Freigabe nutzen.
+
+Nach der Freigabe ruft dein Browser die Medien direkt von Wikimedia-Servern ab. Dabei erhält Wikimedia deine IP-Adresse und technische Angaben der Browseranfrage. Wikimedia kann Cookies zur Besucherzählung, für A/B-Tests und zum Schutz vor DDoS-Attacken setzen. Für das Cookie WMF-Uniq nennt Wikimedia eine Laufzeit von 365 Tagen mit wöchentlicher Erneuerung. Die Wikimedia Foundation sitzt in den USA. Eine Verarbeitung von Daten kann auch außerhalb der Europäischen Union stattfinden.
+
+Die Entscheidung wird im Sitzungsspeicher deines Browser-Tabs unter `workbook-wikimedia-v1` gespeichert. Sie bleibt beim Kapitelwechsel erhalten und endet beim Schließen des Tabs. Über „Externe Medien“ in der Fußzeile kannst du die Einstellungen wieder öffnen. „Freigabe widerrufen“ lädt die aktuelle Seite mit gesperrten Medien neu und sperrt sie auch bei weiteren Kapitelaufrufen in diesem Tab. Bereits übermittelte Daten werden dadurch nicht zurückgeholt. Bereits gesetzte Wikimedia-Cookies kannst du in den Browsereinstellungen löschen. Ein neuer Besuch ohne gespeicherte Sitzungsentscheidung beginnt wieder mit gesperrten Medien.
+
+Weitere Informationen enthalten die [Datenschutzerklärung der Wikimedia Foundation](https://foundation.wikimedia.org/wiki/Policy:Privacy_policy/en) und ihre [Cookie-Erklärung](https://foundation.wikimedia.org/wiki/Policy:Cookie_statement).
+
+## Funktionen des Workbooks
+
+Die selbst entwickelten Veranschaulichungen werden zusammen mit dem Workbook bereitgestellt. Auch die verwendeten Schriften und Dateien für den Formelsatz sind im Projekt enthalten. Im Workbook sind keine eigenen Analyse- oder Werbedienste eingerichtet, die dein Nutzungsverhalten auswerten.
+
+Die Quarto-Oberfläche verwendet den lokalen Browserspeicher für die Auswahl von Registerkarten. Dafür legt sie in deinem Browser einen Eintrag namens `quarto-persistent-tabsets-data` an. Er bleibt bis zum Löschen der Website-Daten im Browser erhalten. Die Entscheidung über Wikimedia-Medien wird getrennt davon im Sitzungsspeicher gehalten.
+
+## Externe Links
+
+Wenn du einem externen Link folgst, öffnest du die Website eines anderen Betreibers. Für die Datenverarbeitung dort gelten dessen Datenschutzhinweise. Quellen- und Lizenzlinks bleiben auch bei gesperrten Medien zugänglich.
