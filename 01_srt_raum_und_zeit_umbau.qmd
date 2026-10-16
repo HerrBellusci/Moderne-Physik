@@ -1088,13 +1088,13 @@ Du <u>deutest</u> die Verschiebung einer Spektrallinie und <u>berechnest</u> dar
 
 Die Spektrallinien ferner Galaxien erreichen uns meist mit größeren Wellenlängen, als wir für dieselben atomaren Übergänge im Labor messen. Diese Rotverschiebung ist ein Hinweis auf die Expansion des Universums. Während das Licht unterwegs ist, vergrößern sich die Abstände zwischen weit entfernten Galaxien und seine Wellenlänge wird gedehnt [@bennett2017cosmic, S. 615 und 620--621]. Auch eine Relativbewegung zwischen einer Lichtquelle und einer Person, die ihr Licht empfängt, kann die gemessene Wellenlänge verändern. Diese Dopplerverschiebung untersuchst du hier.
 
-Bei einem vorbeifahrenden Krankenwagen kannst du eine Änderung der Tonhöhe hören. Die beiden Töne der Sirene klingen bei der Annäherung höher als nach der Vorbeifahrt.
+Bei einem vorbeifahrenden Krankenwagen kannst du eine Änderung der Tonhöhe hören. Die beiden Töne der Sirene klingen bei der Annäherung höher als nach der Vorbeifahrt. Schall breitet sich in Luft als Longitudinalwelle aus. Die Luftteilchen schwingen dabei parallel zur Ausbreitungsrichtung hin und her, wodurch Bereiche mit höherer und geringerer Luftdichte entstehen. Diese Verdichtungen und Verdünnungen breiten sich durch die Luft aus.[Longitudinalwelle]{.column-margin .mp-randbegriff}
 
-Die Tonhöhe hängt von der Frequenz der Schallwelle ab. Je mehr Wellenberge pro Sekunde dein Ohr erreichen, desto höher klingt der Ton. Der Abstand zweier aufeinanderfolgender Wellenberge ist die Wellenlänge.[Frequenz und Wellenlänge]{.column-margin .mp-randbegriff} In @fig-umbau-doppler-schall markieren Kreislinien die Ausbreitung ausgewählter Wellenberge. Diese Linien stellen Wellenfronten dar.
+Die Tonhöhe hängt von der Frequenz der Schallwelle ab. Je mehr solcher Verdichtungen pro Sekunde dein Ohr erreichen, desto höher klingt der Ton. Der Abstand zwischen zwei aufeinanderfolgenden Verdichtungen ist die Wellenlänge.[Frequenz und Wellenlänge]{.column-margin .mp-randbegriff} Trägt man den Luftdruck zu einem festen Zeitpunkt gegen den Ort auf, entsprechen die Wellenberge dieser Kurve den Stellen größter Luftverdichtung und die Wellentäler den Stellen geringster Luftdichte (bei einem reinen Ton ergibt sich die möglicherweise bekannte Sinuskurve).
 
-Betrachten wir einen der beiden Sirenentöne. Bewegt sich die Schallquelle auf dich zu, entsteht jede neue Wellenfront ein Stück näher an der vorherigen. Vor der Quelle sind die Abstände deshalb kleiner. Pro Sekunde erreichen dich mehr Wellenberge, die Frequenz steigt und der Ton klingt höher. Hinter der sich entfernenden Quelle sind die Abstände größer. Dich erreichen weniger Wellenberge pro Sekunde, die Frequenz sinkt und der Ton klingt tiefer.
+Betrachten wir einen der beiden Sirenentöne. Bewegt sich die Schallquelle auf dich zu, rückt sie zwischen dem Aussenden zweier Wellenfronten ein Stück nach vorn. Vor der Quelle sind die Abstände deshalb kleiner. Pro Sekunde erreichen dich mehr Verdichtungen, die Frequenz steigt und der Ton klingt höher. Hinter der sich entfernenden Quelle sind die Abstände größer. Dich erreichen weniger Verdichtungen pro Sekunde, die Frequenz sinkt und der Ton klingt tiefer.
 
-@fig-umbau-doppler-schall zeigt diesen Vorgang bei einem vorbeifahrenden Krankenwagen. Über das Lautsprechersymbol kannst du den Ton am Standort der Person einschalten.
+@fig-umbau-doppler-schall zeigt diesen Vorgang bei einem vorbeifahrenden Krankenwagen. Die Kreislinien markieren ausgewählte Wellenfronten als Stellen größter Luftverdichtung. Über das Lautsprechersymbol kannst du den Ton am Standort der Person einschalten.
 
 ::::: {#fig-umbau-doppler-schall}
 ::: {.content-visible when-format="html"}
@@ -1109,12 +1109,12 @@ Ein Krankenwagen fährt an einer am Straßenrand stehenden Person vorbei. Kreisl
 :::
 :::
 
-Animation zum Schall-Dopplereffekt. Ein Krankenwagen fährt an einer Person vorbei. Kreislinien zeigen ausgewählte Wellenfronten.
+Animation zum Schall-Dopplereffekt. Ein Krankenwagen fährt an einer Person vorbei. Kreislinien zeigen ausgewählte Wellenfronten als Stellen größter Luftverdichtung. <span class="mp-caption-warn">Die nach außen laufenden Kreislinien markieren keine mitwandernden Luftteilchen. Bei der Ausbreitung werden nacheinander andere Bereiche der Luft verdichtet [@hopfwilhelm2018felderwellen, S. 199].</span>
 :::::
 
 Auch bei Licht hängt die empfangene Wellenlänge von der Relativbewegung ab. Nähert sich eine Lichtquelle direkt, messen wir kürzere Wellenlängen. Diese Verschiebung heißt Blauverschiebung. Entfernt sich die Quelle, messen wir längere Wellenlängen und sprechen von Rotverschiebung.[Rot- und Blauverschiebung]{.column-margin .mp-randbegriff} Die Namen bezeichnen die Richtung der Verschiebung im Spektrum.
 
-Die Schallanalogie macht anschaulich, wie durch Bewegung kleinere oder größere Wellenabstände entstehen. Schall breitet sich in einem Medium wie Luft aus. Licht breitet sich auch im Vakuum aus. Für die Dopplerverschiebung von Licht müssen wir zusätzlich die Zeitdilatation berücksichtigen.
+Die Schallanalogie macht anschaulich, wie durch Bewegung kleinere oder größere Wellenabstände entstehen. Licht ist jedoch eine Transversalwelle. Eine solche Welle kannst du dir an einer gespannten Schnur vorstellen, deren Ende du auf und ab bewegst. Die Welle läuft entlang der Schnur, während die einzelnen Schnurstücke senkrecht dazu schwingen.[Transversalwelle]{.column-margin .mp-randbegriff} Bei einer ebenen Lichtwelle schwingen die elektrischen und magnetischen Felder senkrecht zur Ausbreitungsrichtung.
 
 Jetzt leitest du her, wie die empfangene Wellenlänge von der Relativgeschwindigkeit abhängt. Im Folgenden bewegt sich die Lichtquelle mit gleichbleibender Geschwindigkeit direkt auf die empfangende Person zu oder von ihr weg.
 

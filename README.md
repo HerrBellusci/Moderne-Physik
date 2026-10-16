@@ -39,9 +39,9 @@ Lernziel-Symbole ergänzt `tools/learning-goal-icons.lua` automatisch. Das Warns
 
 ## Lizenz und fremde Bestandteile
 
-Eigene Texte, Aufgaben, Abbildungen und Videos stehen unter [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de). Eigener Programmcode steht unter der [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0). Die Bedingungen und den genauen Geltungsbereich beschreibt [LICENSE.md](LICENSE.md).
+Eigene Texte, Aufgaben, Abbildungen und Videos sowie der eigene Programmcode einschließlich der Animationen und Simulationen stehen unter [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.de), soweit daran eigene Rechte bestehen. Die Bedingungen und den genauen Geltungsbereich beschreibt [LICENSE.md](LICENSE.md).
 
-Fremde Bestandteile sind von diesen Freigaben ausgenommen. Ihre Herkunft, Verwendung und jeweiligen Lizenzbedingungen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md). Angaben zu übernommenen Medien stehen zusätzlich direkt bei den jeweiligen Abbildungen und Videos. Extern eingebundene Medien benötigen eine Internetverbindung.
+Fremde Bestandteile sind von dieser Freigabe ausgenommen. Ihre Herkunft, Verwendung und jeweiligen Lizenzbedingungen stehen in den [Drittanbieter-Hinweisen](THIRD-PARTY-NOTICES.md). Angaben zu übernommenen Medien stehen zusätzlich direkt bei den jeweiligen Abbildungen und Videos. Extern eingebundene Medien benötigen eine Internetverbindung.
 
 ## Externe Medien und Datenschutz
 

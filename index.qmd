@@ -1,6 +1,17 @@
 # Vorwort {.unnumbered}
 
-Dieses interaktive Workbook führt dich durch Themen der Modernen Physik. Dazu gehören die Relativitätstheorie sowie die Quanten- und Atomphysik. Es richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht. Das Konzept wurde im Rahmen einer Masterarbeit für die Veranstaltung Moderne Physik I entwickelt.
+Dieses interaktive Workbook führt dich durch ausgewählte Themen der Modernen Physik. Es richtet sich an Lehramtsstudierende der Sekundarstufe I in höheren Semestern und ist für das Selbststudium gedacht. Das Konzept wurde im Rahmen einer Masterarbeit für die Veranstaltung Moderne Physik I entwickelt.
+
+Die vorliegende Fassung enthält zwei Kapitel zur speziellen Relativitätstheorie und ein ergänzendes Kapitel zum Laser. Das Workbook soll schrittweise erweitert werden. Die folgende Tabelle zeigt, welche Themen bereits enthalten und welche für spätere Fassungen geplant sind.
+
+| Themenbereich | In dieser Fassung enthalten | Für spätere Fassungen geplant |
+| --- | --- | --- |
+| Spezielle Relativitätstheorie | Raum und Zeit; Impuls und Energie | — |
+| Lichtquanten und Materiewellen | — | Schwarzkörperstrahlung, Photoeffekt, Wechselwirkung von Licht mit Materie, Materiewellen und Elektronenbeugung |
+| Spektren, Laser und Lumineszenz | Laser | Atomspektren und Bohrsches Atommodell, Fluoreszenz und Phosphoreszenz |
+| Grundlagen der Quantenmechanik | — | Wellenfunktion und Wahrscheinlichkeit, Unschärferelationen, Schrödingergleichung und unendlicher Potentialtopf, endlicher Potentialtopf und Tunneleffekt |
+
+Zum jetzigen Stand sind die Themen der Veranstaltung noch nicht vollständig im Workbook abgedeckt.
 
 ## Grundgedanken
 
@@ -42,6 +53,6 @@ Die für dieses Workbook entwickelten Animationen, Simulationen und Abbildungen 
 
 ## Lizenz
 
-Die eigenen Texte, Aufgaben, Abbildungen und Videos stehen unter CC BY-NC-SA 4.0. Diese Lizenz erlaubt die nichtkommerzielle Weitergabe und Bearbeitung unter Namensnennung. Die Lizenz ist anzugeben, Änderungen sind zu kennzeichnen und veröffentlichte Bearbeitungen unter derselben oder einer kompatiblen Lizenz weiterzugeben. Für den Programmcode des Workbooks gilt die PolyForm Noncommercial License 1.0.0. Beide Freigaben gelten, soweit eigene Rechte bestehen.
+Die eigenen Texte, Aufgaben, Abbildungen und Videos sowie der eigene Programmcode einschließlich der Animationen und Simulationen stehen unter CC BY-NC-SA 4.0. Diese Lizenz erlaubt die nichtkommerzielle Weitergabe und Bearbeitung unter Namensnennung. Die Lizenz ist anzugeben, Änderungen sind zu kennzeichnen und veröffentlichte Bearbeitungen unter derselben oder einer kompatiblen Lizenz weiterzugeben. Die Freigabe gilt, soweit eigene Rechte bestehen.
 
 Als Quellenangabe für die eigenen Beiträge genügt „Workbook Moderne Physik“ mit einem Link zum [GitHub-Projekt](https://github.com/HerrBellusci/Moderne-Physik). Für übernommene Abbildungen und Videos sowie eingebundene Schriftarten und Software-Komponenten gelten deren jeweilige Lizenzbedingungen. Die [Lizenzübersicht](LICENSE.md) enthält die Lizenztexte beziehungsweise ihre Links und erläutert die Bedingungen zur Weitergabe.
