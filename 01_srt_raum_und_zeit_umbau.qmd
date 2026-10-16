@@ -615,7 +615,7 @@ Bisher kennen wir nur die Ungleichung $\Delta t > \Delta t_0$. Jetzt leitest du 
 Im Bahnsteigsystem betrachtest du zunächst den Hinweg vom unteren zum oberen Spiegel. Der Lichtweg dieses halben Ticks bildet zusammen mit dem Spiegelabstand und der seitlichen Verschiebung der Lichtuhr ein rechtwinkliges Dreieck. @fig-umbau-lichtuhr-halbtick zeigt die drei Seiten. Der Lichtweg $\frac{c\,\Delta t}{2}$ ist die Hypotenuse. Der Spiegelabstand $D$ und die seitliche Verschiebung $\frac{v\,\Delta t}{2}$ sind die Katheten.
 
 :::: {#fig-umbau-lichtuhr-halbtick}
-![](assets/images/lichtuhr-pythagoras-bahnsteig.png){.srt-workbook-image fig-alt="Rechtwinkliges Dreieck im Bahnsteigsystem mit dem Lichtweg c Delta t/2 als Hypotenuse und den Katheten D und v Delta t/2."}
+![](assets/images/lichtuhr-pythagoras-bahnsteig.svg){.srt-workbook-image fig-alt="Rechtwinkliges Dreieck im Bahnsteigsystem mit dem Lichtweg c Delta t/2 als Hypotenuse und den Katheten D und v Delta t/2."}
 
 Skizze zum halben Tick einer Lichtuhr im Bahnsteigsystem. Der diagonale Lichtweg, der senkrechte Spiegelabstand und die waagrechte Verschiebung bilden ein rechtwinkliges Dreieck.
 ::::
