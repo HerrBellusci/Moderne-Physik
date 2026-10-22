@@ -25,7 +25,7 @@ Das erste Blatt trägt die Veranstaltungsnummer 02 und den Zusatz „Aufgaben zu
 ::: {#legacy-blatt1-aufgabe1 .mp-box .mp-task}
 <span class="mp-task-kind">Aufgabe 1: Vorbereitung</span>
 
-Bereiten Sie die Veranstaltung mit Unterstützung des Videos (Reiter Video in Stud.IP) vor. Zentrale Begriffe sind:
+Bereiten Sie die Veranstaltung mit Unterstützung des [Videos](https://youtu.be/Y2EL-GjEsHo) vor. Zentrale Begriffe sind:
 
 1. Bezugssystem/Inertialsystem
 2. Einsteinsche Postulate
@@ -56,7 +56,7 @@ Das zweite Blatt trägt die Veranstaltungsnummer 03. Seine Themen verteilen sich
 ::: {#legacy-blatt2-aufgabe1 .mp-box .mp-task}
 <span class="mp-task-kind">Aufgabe 1: Vorbereitung</span>
 
-Bereiten Sie die Veranstaltung mit Unterstützung des Videos (Reiter Video in Stud.IP) vor. Zentrale Begriffe sind:
+Bereiten Sie die Veranstaltung mit Unterstützung des [Videos](https://youtu.be/KcKC_c79p9A) vor. Zentrale Begriffe sind:
 
 1. Zwillingsparadoxon
 2. Längenkontraktion
